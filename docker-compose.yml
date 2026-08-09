@@ -10,6 +10,7 @@ services:
       [
         "/bin/sh",
         "-c",
+        # "ollama serve & sleep 10 && ollama pull deepseek-r1:1.5b && wait"
         "ollama serve & sleep 10 && ollama pull qwen2.5:7b && wait"
       ]
     deploy:
