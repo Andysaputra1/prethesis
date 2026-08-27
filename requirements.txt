@@ -1,3 +1,5 @@
+--extra-index-url https://download.pytorch.org/whl/cu121
+
 langchain
 langchain-core
 langchain-google-genai
@@ -10,3 +12,9 @@ python-dotenv
 joblib
 networkx
 matplotlib
+accelerate
+transformers
+datasets
+torch>=2.6.0
+torchvision
+torchaudio

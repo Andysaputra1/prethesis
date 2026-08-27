@@ -59,9 +59,10 @@ kasih output yang dataset friendly
 
 print("Model:", llm.model_name)
 print("Temperature:", llm.temperature)
+model = llm.model_name
 
 def generate_dataset():
-    print("Mulai men-generate dataset sintetis menggunakan GPT-4o...\n")
+    print("Mulai men-generate dataset sintetis menggunakan " + model + "...\n")
     
     os.makedirs("data", exist_ok=True)
     dataset_path = "data/chat_dataset2.csv"
