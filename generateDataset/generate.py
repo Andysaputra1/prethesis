@@ -140,6 +140,4 @@ def generate_dataset():
 
     print(f"Selesai! Dataset berhasil disimpan di: {dataset_path}")
 
-if __name__ == "__main__":
-    # print("Memulai proses generate dataset...")
-    generate_dataset()
+generate_dataset()
