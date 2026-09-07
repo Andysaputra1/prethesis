@@ -3,15 +3,17 @@ services:
     image: ollama/ollama:latest
     container_name: ollama_training
     ports:
-      - "11434:11434"
+      - "11435:11434"
     volumes:
       - ollama_data:/root/.ollama
+    environment:
+      OLLAMA_CONTEXT_LENGTH: "2048"
+      OLLAMA_KEEP_ALIVE: "10m"
     entrypoint:
       [
         "/bin/sh",
         "-c",
-        # "ollama serve & sleep 10 && ollama pull deepseek-r1:1.5b && wait"
-        "ollama serve & sleep 10 && ollama pull qwen2.5:7b && wait"
+        "ollama serve & sleep 10 && ollama pull qwen3:8b && ollama pull qwen3:14b && wait"
       ]
     deploy:
       resources:
