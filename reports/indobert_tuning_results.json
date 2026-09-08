@@ -1,0 +1,603 @@
+{
+  "ai_1_nlu_v3_600": {
+    "status": "completed",
+    "previous_metrics": {
+      "accuracy": 0.8205,
+      "f1_macro": 0.8223,
+      "f1_weighted": 0.8201,
+      "classification_report": "              precision    recall  f1-score   support\n\n    accusing       0.85      0.78      0.81       144\n    bluffing       0.67      0.65      0.66       144\n    claiming       0.67      0.71      0.69       145\n   defending       0.80      0.78      0.79       138\n  deflecting       0.87      0.84      0.85       132\n     neutral       0.99      0.97      0.98       140\n  persuading       0.82      0.87      0.84       144\n     probing       0.92      0.99      0.96       133\n\n    accuracy                           0.82      1120\n   macro avg       0.82      0.82      0.82      1120\nweighted avg       0.82      0.82      0.82      1120\n"
+    },
+    "previous_protocol": "legacy_test_selection",
+    "metrics": {
+      "accuracy": 0.7955,
+      "f1_macro": 0.7967,
+      "f1_weighted": 0.7945,
+      "classification_report": "              precision    recall  f1-score   support\n\n    accusing       0.77      0.71      0.74       144\n    bluffing       0.72      0.61      0.66       144\n    claiming       0.68      0.72      0.70       145\n   defending       0.73      0.76      0.75       138\n  deflecting       0.83      0.79      0.81       132\n     neutral       0.95      0.99      0.97       140\n  persuading       0.73      0.87      0.79       144\n     probing       0.98      0.94      0.96       133\n\n    accuracy                           0.80      1120\n   macro avg       0.80      0.80      0.80      1120\nweighted avg       0.80      0.80      0.79      1120\n",
+      "confusion_matrix": [
+        [
+          102,
+          0,
+          0,
+          4,
+          7,
+          0,
+          31,
+          0
+        ],
+        [
+          2,
+          88,
+          35,
+          14,
+          2,
+          1,
+          2,
+          0
+        ],
+        [
+          2,
+          27,
+          104,
+          10,
+          0,
+          1,
+          1,
+          0
+        ],
+        [
+          2,
+          6,
+          13,
+          105,
+          7,
+          2,
+          3,
+          0
+        ],
+        [
+          11,
+          0,
+          0,
+          7,
+          104,
+          0,
+          8,
+          2
+        ],
+        [
+          0,
+          0,
+          0,
+          2,
+          0,
+          138,
+          0,
+          0
+        ],
+        [
+          13,
+          1,
+          0,
+          1,
+          4,
+          0,
+          125,
+          0
+        ],
+        [
+          0,
+          0,
+          2,
+          0,
+          1,
+          4,
+          1,
+          125
+        ]
+      ],
+      "labels": [
+        "accusing",
+        "bluffing",
+        "claiming",
+        "defending",
+        "deflecting",
+        "neutral",
+        "persuading",
+        "probing"
+      ]
+    },
+    "training_summary": {
+      "model_name": "indobenchmark/indobert-base-p1",
+      "seed": 42,
+      "torch_version": "2.5.1+cu121",
+      "transformers_version": "4.46.3",
+      "device": "cuda",
+      "max_epochs": 12,
+      "max_length": 128,
+      "batch_size": 8,
+      "eval_batch_size": 16,
+      "gradient_accumulation_steps": 2,
+      "effective_batch_size": 16,
+      "weight_decay": 0.01,
+      "warmup_ratio": 0.1,
+      "lr_scheduler_type": "linear",
+      "dropout": 0.1,
+      "label_smoothing_factor": 0.0,
+      "max_grad_norm": 1.0,
+      "gradient_checkpointing": false,
+      "early_stopping_patience": 3,
+      "early_stopping_threshold": 0.001,
+      "split_sizes": {
+        "train": 3636,
+        "validation": 840,
+        "test": 1120
+      },
+      "validation_size": 0.15,
+      "data_report": {
+        "dataset_path": "C:\\Users\\andyc\\Documents\\a_skripsi\\training\\prethesis\\ai_1_nlu_v3_600\\data\\chat_dataset2 copy.csv",
+        "rows_raw": 5615,
+        "missing_cells_raw": 0,
+        "empty_rows_removed": 0,
+        "legacy_context_rows_removed": 15,
+        "exact_duplicates_removed": 4,
+        "conflicting_texts_removed": 0,
+        "rows_clean": 5596,
+        "class_count": 8,
+        "class_distribution": {
+          "accusing": 721,
+          "bluffing": 720,
+          "claiming": 722,
+          "defending": 690,
+          "deflecting": 660,
+          "neutral": 701,
+          "persuading": 720,
+          "probing": 662
+        },
+        "min_class_size": 660,
+        "max_class_size": 722
+      },
+      "selection_metric": "validation_f1_macro",
+      "test_used_for_selection": false,
+      "best_trial": {
+        "trial": 3,
+        "learning_rate": 3e-05,
+        "best_validation_f1_macro": 0.8235632678315016,
+        "best_epoch": 4.997802197802198,
+        "epochs_trained": 8.0,
+        "best_checkpoint": "C:\\Users\\andyc\\Documents\\a_skripsi\\training\\prethesis\\ai_1_nlu_v3_600\\models\\transformer_results\\run_jnbo7ita\\trial_3\\checkpoint-1137"
+      },
+      "trials": [
+        {
+          "trial": 1,
+          "learning_rate": 1e-05,
+          "best_validation_f1_macro": 0.8121415631603011,
+          "best_epoch": 4.0,
+          "epochs_trained": 6.997802197802198,
+          "best_checkpoint": "C:\\Users\\andyc\\Documents\\a_skripsi\\training\\prethesis\\ai_1_nlu_v3_600\\models\\transformer_results\\run_jnbo7ita\\trial_1\\checkpoint-910",
+          "history": [
+            {
+              "loss": 1.6742,
+              "grad_norm": 16.125225067138672,
+              "learning_rate": 8.315018315018316e-06,
+              "epoch": 0.9978021978021978,
+              "step": 227
+            },
+            {
+              "eval_loss": 0.8956820368766785,
+              "eval_accuracy": 0.6714285714285714,
+              "eval_f1_macro": 0.6463655289550142,
+              "eval_f1_weighted": 0.6424378876010454,
+              "eval_runtime": 0.9477,
+              "eval_samples_per_second": 886.328,
+              "eval_steps_per_second": 55.923,
+              "epoch": 0.9978021978021978,
+              "step": 227
+            },
+            {
+              "loss": 0.6729,
+              "grad_norm": 19.851064682006836,
+              "learning_rate": 9.257445940432477e-06,
+              "epoch": 2.0,
+              "step": 455
+            },
+            {
+              "eval_loss": 0.5809690952301025,
+              "eval_accuracy": 0.7845238095238095,
+              "eval_f1_macro": 0.7847083971280797,
+              "eval_f1_weighted": 0.7826189076517307,
+              "eval_runtime": 0.888,
+              "eval_samples_per_second": 945.904,
+              "eval_steps_per_second": 59.682,
+              "epoch": 2.0,
+              "step": 455
+            },
+            {
+              "loss": 0.4415,
+              "grad_norm": 17.57391357421875,
+              "learning_rate": 8.331293349653204e-06,
+              "epoch": 2.997802197802198,
+              "step": 682
+            },
+            {
+              "eval_loss": 0.5103464126586914,
+              "eval_accuracy": 0.8047619047619048,
+              "eval_f1_macro": 0.8051788647255063,
+              "eval_f1_weighted": 0.8025868421087734,
+              "eval_runtime": 0.8549,
+              "eval_samples_per_second": 982.56,
+              "eval_steps_per_second": 61.995,
+              "epoch": 2.997802197802198,
+              "step": 682
+            },
+            {
+              "loss": 0.3152,
+              "grad_norm": 28.296926498413086,
+              "learning_rate": 7.401060791513669e-06,
+              "epoch": 4.0,
+              "step": 910
+            },
+            {
+              "eval_loss": 0.5047407150268555,
+              "eval_accuracy": 0.8095238095238095,
+              "eval_f1_macro": 0.8121415631603011,
+              "eval_f1_weighted": 0.8101831455987103,
+              "eval_runtime": 1.1175,
+              "eval_samples_per_second": 751.71,
+              "eval_steps_per_second": 47.429,
+              "epoch": 4.0,
+              "step": 910
+            },
+            {
+              "loss": 0.2262,
+              "grad_norm": 9.037025451660156,
+              "learning_rate": 6.474908200734394e-06,
+              "epoch": 4.997802197802198,
+              "step": 1137
+            },
+            {
+              "eval_loss": 0.5968506932258606,
+              "eval_accuracy": 0.7976190476190477,
+              "eval_f1_macro": 0.7960828283334148,
+              "eval_f1_weighted": 0.7933657402320752,
+              "eval_runtime": 0.9868,
+              "eval_samples_per_second": 851.194,
+              "eval_steps_per_second": 53.706,
+              "epoch": 4.997802197802198,
+              "step": 1137
+            },
+            {
+              "loss": 0.1489,
+              "grad_norm": 16.766876220703125,
+              "learning_rate": 5.548755609955121e-06,
+              "epoch": 6.0,
+              "step": 1365
+            },
+            {
+              "eval_loss": 0.6234042048454285,
+              "eval_accuracy": 0.8023809523809524,
+              "eval_f1_macro": 0.8011995210103898,
+              "eval_f1_weighted": 0.7986898899516216,
+              "eval_runtime": 1.0062,
+              "eval_samples_per_second": 834.842,
+              "eval_steps_per_second": 52.675,
+              "epoch": 6.0,
+              "step": 1365
+            },
+            {
+              "loss": 0.107,
+              "grad_norm": 7.171252727508545,
+              "learning_rate": 4.622603019175847e-06,
+              "epoch": 6.997802197802198,
+              "step": 1592
+            },
+            {
+              "eval_loss": 0.7082265019416809,
+              "eval_accuracy": 0.8023809523809524,
+              "eval_f1_macro": 0.8040211459538121,
+              "eval_f1_weighted": 0.8022441381242139,
+              "eval_runtime": 0.9331,
+              "eval_samples_per_second": 900.231,
+              "eval_steps_per_second": 56.8,
+              "epoch": 6.997802197802198,
+              "step": 1592
+            },
+            {
+              "train_runtime": 254.5498,
+              "train_samples_per_second": 171.408,
+              "train_steps_per_second": 10.701,
+              "total_flos": 340681390983168.0,
+              "train_loss": 0.5120032097227011,
+              "epoch": 6.997802197802198,
+              "step": 1592
+            }
+          ]
+        },
+        {
+          "trial": 2,
+          "learning_rate": 2e-05,
+          "best_validation_f1_macro": 0.8071335813225711,
+          "best_epoch": 2.997802197802198,
+          "epochs_trained": 4.997802197802198,
+          "best_checkpoint": "C:\\Users\\andyc\\Documents\\a_skripsi\\training\\prethesis\\ai_1_nlu_v3_600\\models\\transformer_results\\run_jnbo7ita\\trial_2\\checkpoint-682",
+          "history": [
+            {
+              "loss": 1.4424,
+              "grad_norm": 19.953073501586914,
+              "learning_rate": 1.6630036630036632e-05,
+              "epoch": 0.9978021978021978,
+              "step": 227
+            },
+            {
+              "eval_loss": 0.7437451481819153,
+              "eval_accuracy": 0.694047619047619,
+              "eval_f1_macro": 0.6685720786409671,
+              "eval_f1_weighted": 0.6635896047914763,
+              "eval_runtime": 0.9157,
+              "eval_samples_per_second": 917.359,
+              "eval_steps_per_second": 57.881,
+              "epoch": 0.9978021978021978,
+              "step": 227
+            },
+            {
+              "loss": 0.5864,
+              "grad_norm": 14.92331600189209,
+              "learning_rate": 1.8514891880864954e-05,
+              "epoch": 2.0,
+              "step": 455
+            },
+            {
+              "eval_loss": 0.546481192111969,
+              "eval_accuracy": 0.805952380952381,
+              "eval_f1_macro": 0.8069464421465029,
+              "eval_f1_weighted": 0.8049552191617348,
+              "eval_runtime": 0.939,
+              "eval_samples_per_second": 894.59,
+              "eval_steps_per_second": 56.444,
+              "epoch": 2.0,
+              "step": 455
+            },
+            {
+              "loss": 0.377,
+              "grad_norm": 18.035879135131836,
+              "learning_rate": 1.6662586699306407e-05,
+              "epoch": 2.997802197802198,
+              "step": 682
+            },
+            {
+              "eval_loss": 0.5474686026573181,
+              "eval_accuracy": 0.805952380952381,
+              "eval_f1_macro": 0.8071335813225711,
+              "eval_f1_weighted": 0.8048236415948912,
+              "eval_runtime": 0.9437,
+              "eval_samples_per_second": 890.107,
+              "eval_steps_per_second": 56.162,
+              "epoch": 2.997802197802198,
+              "step": 682
+            },
+            {
+              "loss": 0.2403,
+              "grad_norm": 27.18355941772461,
+              "learning_rate": 1.4802121583027337e-05,
+              "epoch": 4.0,
+              "step": 910
+            },
+            {
+              "eval_loss": 0.5753625631332397,
+              "eval_accuracy": 0.8011904761904762,
+              "eval_f1_macro": 0.8041903897879883,
+              "eval_f1_weighted": 0.8021363797687914,
+              "eval_runtime": 0.9032,
+              "eval_samples_per_second": 929.991,
+              "eval_steps_per_second": 58.678,
+              "epoch": 4.0,
+              "step": 910
+            },
+            {
+              "loss": 0.1452,
+              "grad_norm": 20.41354751586914,
+              "learning_rate": 1.2949816401468788e-05,
+              "epoch": 4.997802197802198,
+              "step": 1137
+            },
+            {
+              "eval_loss": 0.721391499042511,
+              "eval_accuracy": 0.7976190476190477,
+              "eval_f1_macro": 0.794896469796754,
+              "eval_f1_weighted": 0.7921880882121538,
+              "eval_runtime": 0.9162,
+              "eval_samples_per_second": 916.879,
+              "eval_steps_per_second": 57.851,
+              "epoch": 4.997802197802198,
+              "step": 1137
+            },
+            {
+              "train_runtime": 159.1424,
+              "train_samples_per_second": 274.169,
+              "train_steps_per_second": 17.117,
+              "total_flos": 243226384081920.0,
+              "train_loss": 0.557987065512356,
+              "epoch": 4.997802197802198,
+              "step": 1137
+            }
+          ]
+        },
+        {
+          "trial": 3,
+          "learning_rate": 3e-05,
+          "best_validation_f1_macro": 0.8235632678315016,
+          "best_epoch": 4.997802197802198,
+          "epochs_trained": 8.0,
+          "best_checkpoint": "C:\\Users\\andyc\\Documents\\a_skripsi\\training\\prethesis\\ai_1_nlu_v3_600\\models\\transformer_results\\run_jnbo7ita\\trial_3\\checkpoint-1137",
+          "history": [
+            {
+              "loss": 1.3253,
+              "grad_norm": 20.743919372558594,
+              "learning_rate": 2.4945054945054948e-05,
+              "epoch": 0.9978021978021978,
+              "step": 227
+            },
+            {
+              "eval_loss": 0.7445171475410461,
+              "eval_accuracy": 0.6964285714285714,
+              "eval_f1_macro": 0.6728395299282232,
+              "eval_f1_weighted": 0.6682358198805534,
+              "eval_runtime": 0.9142,
+              "eval_samples_per_second": 918.84,
+              "eval_steps_per_second": 57.974,
+              "epoch": 0.9978021978021978,
+              "step": 227
+            },
+            {
+              "loss": 0.5812,
+              "grad_norm": 14.792230606079102,
+              "learning_rate": 2.7784577723378214e-05,
+              "epoch": 2.0,
+              "step": 455
+            },
+            {
+              "eval_loss": 0.5581106543540955,
+              "eval_accuracy": 0.7833333333333333,
+              "eval_f1_macro": 0.7834171070899195,
+              "eval_f1_weighted": 0.7810642498191528,
+              "eval_runtime": 0.9295,
+              "eval_samples_per_second": 903.718,
+              "eval_steps_per_second": 57.02,
+              "epoch": 2.0,
+              "step": 455
+            },
+            {
+              "loss": 0.3785,
+              "grad_norm": 27.875417709350586,
+              "learning_rate": 2.500611995104039e-05,
+              "epoch": 2.997802197802198,
+              "step": 682
+            },
+            {
+              "eval_loss": 0.5845621228218079,
+              "eval_accuracy": 0.7904761904761904,
+              "eval_f1_macro": 0.7882995560311857,
+              "eval_f1_weighted": 0.7857456972964467,
+              "eval_runtime": 0.9281,
+              "eval_samples_per_second": 905.034,
+              "eval_steps_per_second": 57.103,
+              "epoch": 2.997802197802198,
+              "step": 682
+            },
+            {
+              "loss": 0.2375,
+              "grad_norm": 25.334026336669922,
+              "learning_rate": 2.2215422276621788e-05,
+              "epoch": 4.0,
+              "step": 910
+            },
+            {
+              "eval_loss": 0.6562888026237488,
+              "eval_accuracy": 0.7988095238095239,
+              "eval_f1_macro": 0.7987575012404418,
+              "eval_f1_weighted": 0.797148586046708,
+              "eval_runtime": 0.9366,
+              "eval_samples_per_second": 896.873,
+              "eval_steps_per_second": 56.588,
+              "epoch": 4.0,
+              "step": 910
+            },
+            {
+              "loss": 0.1423,
+              "grad_norm": 7.476477146148682,
+              "learning_rate": 1.9436964504283964e-05,
+              "epoch": 4.997802197802198,
+              "step": 1137
+            },
+            {
+              "eval_loss": 0.6940699815750122,
+              "eval_accuracy": 0.8226190476190476,
+              "eval_f1_macro": 0.8235632678315016,
+              "eval_f1_weighted": 0.821336696968741,
+              "eval_runtime": 1.2572,
+              "eval_samples_per_second": 668.135,
+              "eval_steps_per_second": 42.156,
+              "epoch": 4.997802197802198,
+              "step": 1137
+            },
+            {
+              "loss": 0.0862,
+              "grad_norm": 2.808367967605591,
+              "learning_rate": 1.6646266829865362e-05,
+              "epoch": 6.0,
+              "step": 1365
+            },
+            {
+              "eval_loss": 1.009461522102356,
+              "eval_accuracy": 0.8011904761904762,
+              "eval_f1_macro": 0.8014205031105816,
+              "eval_f1_weighted": 0.7992101406844716,
+              "eval_runtime": 1.0302,
+              "eval_samples_per_second": 815.348,
+              "eval_steps_per_second": 51.445,
+              "epoch": 6.0,
+              "step": 1365
+            },
+            {
+              "loss": 0.0454,
+              "grad_norm": 0.07209789007902145,
+              "learning_rate": 1.386780905752754e-05,
+              "epoch": 6.997802197802198,
+              "step": 1592
+            },
+            {
+              "eval_loss": 1.0537960529327393,
+              "eval_accuracy": 0.8166666666666667,
+              "eval_f1_macro": 0.8184836514684293,
+              "eval_f1_weighted": 0.8165170834516363,
+              "eval_runtime": 1.0997,
+              "eval_samples_per_second": 763.877,
+              "eval_steps_per_second": 48.197,
+              "epoch": 6.997802197802198,
+              "step": 1592
+            },
+            {
+              "loss": 0.017,
+              "grad_norm": 0.01542504783719778,
+              "learning_rate": 1.1077111383108936e-05,
+              "epoch": 8.0,
+              "step": 1820
+            },
+            {
+              "eval_loss": 1.1501692533493042,
+              "eval_accuracy": 0.8095238095238095,
+              "eval_f1_macro": 0.8108629697542984,
+              "eval_f1_weighted": 0.8088519250141798,
+              "eval_runtime": 1.0991,
+              "eval_samples_per_second": 764.272,
+              "eval_steps_per_second": 48.222,
+              "epoch": 8.0,
+              "step": 1820
+            },
+            {
+              "train_runtime": 286.6208,
+              "train_samples_per_second": 152.229,
+              "train_steps_per_second": 9.504,
+              "total_flos": 389211550511616.0,
+              "train_loss": 0.3514061236119532,
+              "epoch": 8.0,
+              "step": 1820
+            }
+          ]
+        }
+      ],
+      "run_dir": "C:\\Users\\andyc\\Documents\\a_skripsi\\training\\prethesis\\ai_1_nlu_v3_600\\models\\transformer_results\\run_jnbo7ita"
+    },
+    "elapsed_seconds": 706.8
+  },
+  "ai_1_nlu_v3_300": {
+    "status": "interrupted_by_user",
+    "previous_metrics": {
+      "accuracy": 0.8097,
+      "f1_macro": 0.8129,
+      "f1_weighted": 0.8091,
+      "classification_report": "              precision    recall  f1-score   support\n\n    accusing       0.76      0.85      0.80        72\n    bluffing       0.65      0.71      0.68        72\n    claiming       0.71      0.67      0.69        73\n   defending       0.82      0.81      0.81        72\n  deflecting       0.81      0.79      0.80        66\n     neutral       0.96      0.99      0.97        70\n  persuading       0.87      0.72      0.79        72\n     probing       0.94      0.98      0.96        60\n\n    accuracy                           0.81       557\n   macro avg       0.81      0.81      0.81       557\nweighted avg       0.81      0.81      0.81       557\n"
+    },
+    "previous_protocol": "legacy_test_selection",
+    "note": "Training dihentikan atas permintaan pengguna; pengguna akan menjalankan eksperimen sendiri."
+  }
+}

@@ -15,7 +15,7 @@ import joblib
 import numpy as np
 from sklearn.calibration import CalibratedClassifierCV
 from sklearn.feature_extraction.text import TfidfVectorizer
-from sklearn.metrics import accuracy_score, classification_report, f1_score
+from sklearn.metrics import accuracy_score, classification_report, confusion_matrix, f1_score
 from sklearn.model_selection import GridSearchCV, StratifiedKFold, train_test_split
 from sklearn.naive_bayes import MultinomialNB
 from sklearn.pipeline import Pipeline
@@ -53,6 +53,27 @@ def _cv_folds(y_train, desired_folds: int = 5) -> StratifiedKFold:
     if folds < 2:
         raise ValueError("Data train tiap intent perlu minimal 2 sampel untuk cross-validation.")
     return StratifiedKFold(n_splits=folds, shuffle=True, random_state=RANDOM_STATE)
+
+
+def _split_transformer_dataset(dataset_path: str | Path, validation_size: float = 0.15):
+    """Pertahankan test 20% yang sama dengan SVM/NB; ambil validation dari train.
+
+    validation_size adalah proporsi terhadap seluruh data (default 65/15/20).
+    Indeks data bersih dipertahankan agar pemisahan dapat diaudit.
+    """
+    if not 0 < validation_size < 0.8:
+        raise ValueError("validation_size harus di antara 0 dan 0.8.")
+    x_pool, x_test, y_pool, y_test, report = _split_dataset(dataset_path)
+    try:
+        x_train, x_val, y_train, y_val = train_test_split(
+            x_pool, y_pool, test_size=validation_size / 0.8,
+            random_state=RANDOM_STATE, stratify=y_pool,
+        )
+    except ValueError as error:
+        raise ValueError("Data per intent tidak cukup untuk split train/validation/test stratified.") from error
+    if set(y_train) != set(y_pool) or set(y_val) != set(y_pool):
+        raise ValueError("Setiap intent harus tersedia pada train dan validation; tambah data per intent.")
+    return x_train, x_val, x_test, y_train, y_val, y_test, report
 
 
 def _evaluate(model: Any, x_test, y_test, title: str) -> dict[str, Any]:
@@ -317,23 +338,48 @@ def train_transformer(
     dataset_path: str | Path,
     model_dir: str | Path,
     model_name: str = "indobenchmark/indobert-base-p1",
-    epochs: int = 4,
+    epochs: int = 12,
     max_length: int = 128,
     learning_rate: float = 2e-5,
     device: str = "cuda",
+    *,
+    learning_rates: tuple[float, ...] | None = None,
+    validation_size: float = 0.15,
+    batch_size: int = 8,
+    eval_batch_size: int = 16,
+    gradient_accumulation_steps: int = 2,
+    weight_decay: float = 0.01,
+    warmup_ratio: float = 0.1,
+    lr_scheduler_type: str = "linear",
+    dropout: float = 0.1,
+    label_smoothing_factor: float = 0.0,
+    max_grad_norm: float = 1.0,
+    early_stopping_patience: int = 3,
+    early_stopping_threshold: float = 0.001,
+    gradient_checkpointing: bool = False,
 ) -> dict[str, Any]:
-    """Fine-tune IndoBERT secara reproducible untuk klasifikasi intent GPU.
+    """Full fine-tuning IndoBERT, seleksi validation, lalu satu evaluasi test.
 
-    Dependensi Transformer diimpor saat fungsi dipanggil agar SVM/NB tetap
-    dapat dipakai pada environment tanpa PyTorch atau Hugging Face. Transformer
-    default memakai CUDA; SVM dan Naive Bayes tetap CPU lewat scikit-learn.
+    ``epochs`` adalah batas maksimum; early stopping memantau validation
+    macro-F1. ``learning_rates`` mengaktifkan pencarian LR, setiap trial mulai
+    dari pretrained dan seed yang sama. Jika None, gunakan ``learning_rate``.
+    Test 20% identik dengan model klasik; validation 15% diambil dari pool train.
+    Checkpoint dan riwayat setiap run disimpan terpisah untuk audit eksperimen.
     """
+    import gc
+    import math
+    import tempfile
+
     try:
         import torch
+        import transformers
         from datasets import Dataset
-        from transformers import AutoModelForSequenceClassification, AutoTokenizer, Trainer, TrainingArguments, set_seed
+        from transformers import (
+            AutoModelForSequenceClassification, AutoTokenizer, DataCollatorWithPadding,
+            EarlyStoppingCallback, Trainer, TrainingArguments, set_seed,
+        )
     except ImportError as error:
-        raise ImportError("Transformer butuh torch, datasets, dan transformers.") from error
+        raise ImportError("Transformer butuh torch, datasets, transformers, dan accelerate.") from error
 
     from sklearn.preprocessing import LabelEncoder
 
@@ -342,39 +388,56 @@ def train_transformer(
         raise ValueError("device harus 'cpu' atau 'cuda'.")
     if device == "cuda" and not torch.cuda.is_available():
         raise RuntimeError("device='cuda' dipilih, tetapi CUDA tidak tersedia.")
+    for name, value in {
+        "epochs": epochs, "max_length": max_length, "batch_size": batch_size,
+        "eval_batch_size": eval_batch_size,
+        "gradient_accumulation_steps": gradient_accumulation_steps,
+        "early_stopping_patience": early_stopping_patience,
+    }.items():
+        if not isinstance(value, int) or isinstance(value, bool) or value < 1:
+            raise ValueError(f"{name} harus bilangan bulat positif.")
+    rates = list(dict.fromkeys(learning_rates if learning_rates is not None else [learning_rate]))
+    if not rates or any(not math.isfinite(rate) or rate <= 0 for rate in rates):
+        raise ValueError("learning rate harus positif dan daftar trial tidak boleh kosong.")
+    if not 0 <= dropout < 1 or not 0 <= label_smoothing_factor < 1:
+        raise ValueError("dropout dan label_smoothing_factor harus di rentang [0, 1).")
+    if not 0 <= warmup_ratio <= 1 or not math.isfinite(weight_decay) or weight_decay < 0:
+        raise ValueError("warmup_ratio harus di [0, 1] dan weight_decay harus nonnegatif.")
+    if not math.isfinite(max_grad_norm) or max_grad_norm <= 0:
+        raise ValueError("max_grad_norm harus positif.")
+    if not math.isfinite(early_stopping_threshold) or early_stopping_threshold < 0:
+        raise ValueError("early_stopping_threshold harus nonnegatif.")
 
-    x_train, x_test, y_train, y_test, report = _split_dataset(dataset_path)
-    encoder = LabelEncoder()
-    y_train_encoded = encoder.fit_transform(y_train)
-    y_test_encoded = encoder.transform(y_test)
-    labels = list(encoder.classes_)
-    set_seed(RANDOM_STATE)
-
-    train_frame = {TEXT_COLUMN: x_train.tolist(), "labels": y_train_encoded.tolist()}
-    test_frame = {TEXT_COLUMN: x_test.tolist(), "labels": y_test_encoded.tolist()}
-    train_dataset = Dataset.from_dict(train_frame)
-    test_dataset = Dataset.from_dict(test_frame)
-    # Model dasar sudah dipersiapkan di cache lokal. Memakai cache langsung
-    # menghindari retry jaringan ketika Hugging Face tidak dapat diakses.
-    tokenizer = AutoTokenizer.from_pretrained(model_name, local_files_only=True)
-
-    def tokenize(examples):
-        return tokenizer(examples[TEXT_COLUMN], truncation=True, max_length=max_length)
-
-    train_dataset = train_dataset.map(tokenize, batched=True, remove_columns=[TEXT_COLUMN])
-    test_dataset = test_dataset.map(tokenize, batched=True, remove_columns=[TEXT_COLUMN])
-    id2label = {index: label for index, label in enumerate(labels)}
-    label2id = {label: index for index, label in id2label.items()}
-    model = AutoModelForSequenceClassification.from_pretrained(
-        model_name,
-        num_labels=len(labels),
-        id2label=id2label,
-        label2id=label2id,
-        local_files_only=True,
+    x_train, x_val, x_test, y_train, y_val, y_test, report = _split_transformer_dataset(
+        dataset_path, validation_size,
     )
+    encoder = LabelEncoder().fit(y_train)
+    labels = encoder.classes_.tolist()
+    y_test_encoded = encoder.transform(y_test)
+    id2label = dict(enumerate(labels))
+    label2id = {label: index for index, label in id2label.items()}
+    tokenizer = AutoTokenizer.from_pretrained(model_name, local_files_only=True)
+    if max_length > tokenizer.model_max_length:
+        raise ValueError(f"max_length melebihi kapasitas tokenizer: {tokenizer.model_max_length}.")
 
-    output_dir = Path(model_dir) / "transformer_results"
-    output_dir.mkdir(parents=True, exist_ok=True)
+    def make_dataset(texts, actual):
+        dataset = Dataset.from_dict({TEXT_COLUMN: texts.tolist(), "labels": encoder.transform(actual).tolist()})
+        return dataset.map(
+            lambda examples: tokenizer(examples[TEXT_COLUMN], truncation=True, max_length=max_length),
+            batched=True, remove_columns=[TEXT_COLUMN],
+        )
+
+    train_dataset = make_dataset(x_train, y_train)
+    validation_dataset = make_dataset(x_val, y_val)
+    collator = DataCollatorWithPadding(tokenizer, pad_to_multiple_of=8 if device == "cuda" else None)
+    output_root = Path(model_dir) / "transformer_results"
+    output_root.mkdir(parents=True, exist_ok=True)
+    output_dir = Path(tempfile.mkdtemp(prefix="run_", dir=output_root)).resolve()
+    split_indices = {
+        name: texts.index.tolist()
+        for name, texts in (("train", x_train), ("validation", x_val), ("test", x_test))
+    }
+    (output_dir / "split_indices.json").write_text(json.dumps(split_indices, indent=2), encoding="utf-8")
 
     def compute_metrics(eval_prediction):
         logits, actual = eval_prediction
@@ -385,62 +448,137 @@ def train_transformer(
             "f1_weighted": f1_score(actual, predicted, average="weighted", zero_division=0),
         }
 
-    training_args = TrainingArguments(
-        output_dir=str(output_dir),
-        eval_strategy="epoch",
-        save_strategy="epoch",
-        load_best_model_at_end=True,
-        metric_for_best_model="f1_macro",
-        greater_is_better=True,
-        learning_rate=learning_rate,
-        per_device_train_batch_size=16,
-        per_device_eval_batch_size=32,
-        num_train_epochs=epochs,
-        weight_decay=0.01,
-        warmup_ratio=0.1,
-        logging_strategy="epoch",
-        save_total_limit=1,
-        report_to="none",
-        seed=RANDOM_STATE,
-        data_seed=RANDOM_STATE,
-        dataloader_num_workers=0,
-        use_cpu=device == "cpu",
-        fp16=device == "cuda",
-    )
+    trial_results = []
+    for trial_index, rate in enumerate(rates, start=1):
+        set_seed(RANDOM_STATE)
+        model = AutoModelForSequenceClassification.from_pretrained(
+            model_name, num_labels=len(labels), id2label=id2label, label2id=label2id,
+            hidden_dropout_prob=dropout, attention_probs_dropout_prob=dropout,
+            classifier_dropout=dropout, local_files_only=True,
+        )
+        if max_length > model.config.max_position_embeddings:
+            raise ValueError("max_length melebihi max_position_embeddings model.")
+        model.config.nlu_max_length = max_length
+        training_args = TrainingArguments(
+            output_dir=str(output_dir / f"trial_{trial_index}"),
+            eval_strategy="epoch", save_strategy="epoch", logging_strategy="epoch",
+            load_best_model_at_end=True, metric_for_best_model="f1_macro", greater_is_better=True,
+            learning_rate=rate, per_device_train_batch_size=batch_size,
+            per_device_eval_batch_size=eval_batch_size,
+            gradient_accumulation_steps=gradient_accumulation_steps,
+            num_train_epochs=epochs, weight_decay=weight_decay, warmup_ratio=warmup_ratio,
+            lr_scheduler_type=lr_scheduler_type, label_smoothing_factor=label_smoothing_factor,
+            max_grad_norm=max_grad_norm, gradient_checkpointing=gradient_checkpointing,
+            save_total_limit=1, save_only_model=True, report_to="none",
+            disable_tqdm=True,
+            seed=RANDOM_STATE, data_seed=RANDOM_STATE, dataloader_num_workers=0,
+            use_cpu=device == "cpu", fp16=device == "cuda",
+        )
+        trainer = Trainer(
+            model=model, args=training_args, train_dataset=train_dataset,
+            eval_dataset=validation_dataset, processing_class=tokenizer,
+            data_collator=collator, compute_metrics=compute_metrics,
+            callbacks=[EarlyStoppingCallback(
+                early_stopping_patience=early_stopping_patience,
+                early_stopping_threshold=early_stopping_threshold,
+            )],
+        )
+        print(
+            f"Transformer trial {trial_index}/{len(rates)} | {model_name} | {device.upper()} | "
+            f"train={len(x_train)} val={len(x_val)} test={len(x_test)} | "
+            f"max_epoch={epochs} lr={rate:g} effective_batch="
+            f"{batch_size * gradient_accumulation_steps * training_args.world_size}",
+            flush=True,
+        )
+        trainer.train()
+        history = trainer.state.log_history
+        eval_history = [row for row in history if "eval_f1_macro" in row]
+        best_eval = max(eval_history, key=lambda row: row["eval_f1_macro"])
+        trial_result = {
+            "trial": trial_index, "learning_rate": rate,
+            "best_validation_f1_macro": float(trainer.state.best_metric),
+            "best_epoch": float(best_eval["epoch"]),
+            "epochs_trained": float(trainer.state.epoch),
+            "best_checkpoint": trainer.state.best_model_checkpoint,
+            "history": history,
+        }
+        trial_results.append(trial_result)
+        (output_dir / "trials.json").write_text(json.dumps(trial_results, indent=2), encoding="utf-8")
+        print(f"Trial {trial_index}: best epoch={best_eval['epoch']}, val macro-F1={trainer.state.best_metric:.4f}", flush=True)
+        # Hanya satu model/optimizer di GPU selama pencarian.
+        del trainer, model
+        gc.collect()
+        if device == "cuda":
+            torch.cuda.empty_cache()
+
+    best_trial = max(trial_results, key=lambda row: row["best_validation_f1_macro"])
+    model = AutoModelForSequenceClassification.from_pretrained(best_trial["best_checkpoint"], local_files_only=True)
     trainer = Trainer(
         model=model,
-        args=training_args,
-        train_dataset=train_dataset,
-        eval_dataset=test_dataset,
-        tokenizer=tokenizer,
-        compute_metrics=compute_metrics,
+        args=TrainingArguments(
+            output_dir=str(output_dir / "evaluation"), per_device_eval_batch_size=eval_batch_size,
+            report_to="none", use_cpu=device == "cpu", dataloader_num_workers=0,
+            disable_tqdm=True,
+        ),
+        processing_class=tokenizer, data_collator=collator,
     )
-    print(
-        f"Transformer {model_name} | device={device.upper()} | "
-        f"train={len(x_train)} | test={len(x_test)} | epoch={epochs}"
-    )
-    trainer.train()
-    prediction_output = trainer.predict(test_dataset)
+    # Test baru diprediksi setelah semua trial selesai dan pemenang terkunci.
+    prediction_output = trainer.predict(make_dataset(x_test, y_test))
     y_pred = np.argmax(prediction_output.predictions, axis=-1)
     metrics = {
         "accuracy": round(float(accuracy_score(y_test_encoded, y_pred)), 4),
         "f1_macro": round(float(f1_score(y_test_encoded, y_pred, average="macro", zero_division=0)), 4),
         "f1_weighted": round(float(f1_score(y_test_encoded, y_pred, average="weighted", zero_division=0)), 4),
-        "classification_report": classification_report(y_test_encoded, y_pred, target_names=labels, zero_division=0),
+        "classification_report": classification_report(
+            y_test_encoded, y_pred, labels=list(id2label), target_names=labels, zero_division=0,
+        ),
+        "confusion_matrix": confusion_matrix(y_test_encoded, y_pred, labels=list(id2label)).tolist(),
+        "labels": labels,
     }
-    print("\n--- Evaluasi Transformer (holdout test set) ---")
-    print(f"Accuracy    : {metrics['accuracy']:.4f}")
-    print(f"Macro F1    : {metrics['f1_macro']:.4f}")
-    print(f"Weighted F1 : {metrics['f1_weighted']:.4f}")
+    summary = {
+        "model_name": model_name, "seed": RANDOM_STATE,
+        "torch_version": torch.__version__, "transformers_version": transformers.__version__,
+        "device": device, "max_epochs": epochs, "max_length": max_length,
+        "batch_size": batch_size, "eval_batch_size": eval_batch_size,
+        "gradient_accumulation_steps": gradient_accumulation_steps,
+        "effective_batch_size": batch_size * gradient_accumulation_steps * training_args.world_size,
+        "weight_decay": weight_decay, "warmup_ratio": warmup_ratio,
+        "lr_scheduler_type": lr_scheduler_type, "dropout": dropout,
+        "label_smoothing_factor": label_smoothing_factor, "max_grad_norm": max_grad_norm,
+        "gradient_checkpointing": gradient_checkpointing,
+        "early_stopping_patience": early_stopping_patience,
+        "early_stopping_threshold": early_stopping_threshold,
+        "split_sizes": {name: len(indices) for name, indices in split_indices.items()},
+        "validation_size": validation_size, "data_report": report,
+        "selection_metric": "validation_f1_macro", "test_used_for_selection": False,
+        "best_trial": {key: value for key, value in best_trial.items() if key != "history"},
+        "trials": trial_results, "run_dir": str(output_dir),
+    }
+    print("\n--- Evaluasi Transformer (test; seleksi hanya dari validation) ---")
+    print(f"Best LR: {best_trial['learning_rate']:g} | best epoch: {best_trial['best_epoch']}")
+    print(f"Accuracy: {metrics['accuracy']:.4f} | Macro F1: {metrics['f1_macro']:.4f}")
     print(metrics["classification_report"])
 
     final_dir = Path(model_dir) / "intent_classifier_transformer"
     trainer.save_model(str(final_dir))
     tokenizer.save_pretrained(str(final_dir))
     joblib.dump(encoder, final_dir / "label_encoder.pkl")
-    (final_dir / "metrics.json").write_text(json.dumps(metrics, indent=2), encoding="utf-8")
+    for name, payload in (("metrics.json", metrics), ("training_summary.json", summary)):
+        (final_dir / name).write_text(json.dumps(payload, indent=2), encoding="utf-8")
+        (output_dir / name).write_text(json.dumps(payload, indent=2), encoding="utf-8")
+    predictions = x_test.to_frame(name=TEXT_COLUMN)
+    predictions["actual"] = y_test.to_numpy()
+    predictions["predicted"] = encoder.inverse_transform(y_pred)
+    predictions.to_csv(final_dir / "test_predictions.csv", index_label="clean_row_index")
+    # Notebook dapat melakukan retraining tanpa restart kernel; buang cache model lama.
+    for key in list(_TRANSFORMER_INFERENCE_CACHE):
+        if key[0] == str(final_dir.resolve()):
+            del _TRANSFORMER_INFERENCE_CACHE[key]
     print(f"Model Transformer tersimpan: {final_dir}")
-    return _result(model, metrics, report, final_dir, tokenizer=tokenizer, label_encoder=encoder)
+    return _result(
+        model, metrics, report, final_dir, tokenizer=tokenizer,
+        label_encoder=encoder, training_summary=summary,
+    )
 
 
 def predict_transformer_intent(
@@ -483,7 +621,10 @@ def predict_transformer_intent(
         _TRANSFORMER_INFERENCE_CACHE[cache_key] = (tokenizer, model)
     tokenizer, model = _TRANSFORMER_INFERENCE_CACHE[cache_key]
     runtime_device = next(model.parameters()).device
-    encoded = tokenizer(str(text), return_tensors="pt", truncation=True, max_length=128)
+    encoded = tokenizer(
+        str(text), return_tensors="pt", truncation=True,
+        max_length=getattr(model.config, "nlu_max_length", 128),
+    )
     encoded = {name: value.to(runtime_device) for name, value in encoded.items()}
     with torch.no_grad():
         probabilities = torch.softmax(model(**encoded).logits, dim=-1)[0]
@@ -514,8 +655,9 @@ def run_all_nlu_models(
     *,
     run_transformer: bool = True,
     run_tuning: bool = True,
-    transformer_epochs: int = 4,
+    transformer_epochs: int = 12,
     transformer_device: str = "cuda",
+    transformer_options: dict[str, Any] | None = None,
 ) -> tuple[dict[str, Any], Any, Any]:
     """Latih seluruh classifier dan bandingkan holdout serta 10 chat game.
 
@@ -528,6 +670,12 @@ def run_all_nlu_models(
     import pandas as pd
 
     model_dir = Path(model_dir)
+    transformer_config = {"epochs": transformer_epochs, "device": transformer_device}
+    if transformer_options:
+        reserved = {"dataset_path", "model_dir", "epochs", "device"}.intersection(transformer_options)
+        if reserved:
+            raise ValueError(f"Gunakan argumen utama untuk opsi: {sorted(reserved)}")
+        transformer_config.update(transformer_options)
     model_runs: list[tuple[str, Any, str | None, str]] = [
         ("SVM baseline", lambda: train_svm(dataset_path, model_dir), "intent_classifier_svm.pkl", "sklearn"),
         ("Naive Bayes baseline", lambda: train_naive_bayes(dataset_path, model_dir), "intent_classifier_nb.pkl", "sklearn"),
@@ -546,8 +694,7 @@ def run_all_nlu_models(
                 lambda: train_transformer(
                     dataset_path,
                     model_dir,
-                    epochs=transformer_epochs,
-                    device=transformer_device,
+                    **transformer_config,
                 ),
                 None,
                 "transformer",
