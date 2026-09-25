@@ -3,6 +3,11 @@
 Semua model dilatih dari kolom publik ``teks_chat`` dan ``label_intent``.
 Setiap fungsi membuat split stratified yang sama, memilih hyperparameter hanya
 di data train, lalu melaporkan macro-F1 pada test set yang tidak disentuh.
+
+Alur baca: split data -> helper evaluasi -> baseline/Grid Search -> Optuna
+-> IndoBERT -> runner perbandingan. Fungsi publik menerima path dataset dan
+folder model sehingga tidak bergantung pada variabel notebook.
+Grid Search mencoba seluruh kombinasi; Optuna mencoba konfigurasi melalui TPE.
 """
 
 from __future__ import annotations
@@ -15,8 +20,18 @@ import joblib
 import numpy as np
 from sklearn.calibration import CalibratedClassifierCV
 from sklearn.feature_extraction.text import TfidfVectorizer
-from sklearn.metrics import accuracy_score, classification_report, confusion_matrix, f1_score
-from sklearn.model_selection import GridSearchCV, StratifiedKFold, train_test_split
+from sklearn.metrics import (
+    accuracy_score,
+    classification_report,
+    confusion_matrix,
+    f1_score,
+)
+from sklearn.model_selection import (
+    GridSearchCV,
+    StratifiedKFold,
+    cross_val_score,
+    train_test_split,
+)
 from sklearn.naive_bayes import MultinomialNB
 from sklearn.pipeline import Pipeline
 from sklearn.svm import LinearSVC
@@ -34,6 +49,10 @@ DEFAULT_MODEL_FILENAMES = (
 )
 _TRANSFORMER_INFERENCE_CACHE: dict[tuple[str, str], tuple[Any, Any]] = {}
 
+
+# -----------------------------------------------------------------------------
+# Data: cleaning bersama dan split deterministik untuk semua model.
+# -----------------------------------------------------------------------------
 
 def _split_dataset(dataset_path: str | Path, test_size: float = 0.2):
     data, data_report = load_clean_nlu_dataset(dataset_path)
@@ -76,6 +95,10 @@ def _split_transformer_dataset(dataset_path: str | Path, validation_size: float 
     return x_train, x_val, x_test, y_train, y_val, y_test, report
 
 
+# -----------------------------------------------------------------------------
+# Evaluasi, penyimpanan artefak, dan prediksi model klasik.
+# -----------------------------------------------------------------------------
+
 def _evaluate(model: Any, x_test, y_test, title: str) -> dict[str, Any]:
     y_pred = model.predict(x_test)
     metrics = {
@@ -102,7 +125,10 @@ def _save_sklearn_model(model: Any, model_dir: str | Path, filename: str) -> Pat
 
 
 def resolve_model_path(model_dir: str | Path, filename: str | None = None) -> Path:
-    """Pilih model eksplisit atau model klasik terbaik yang tersedia."""
+    """Pilih nama eksplisit atau prioritas file lama; bukan ranking metrik.
+
+    Untuk model Optuna, berikan filename agar varian yang dipakai jelas.
+    """
     directory = Path(model_dir)
     candidates = (filename,) if filename else DEFAULT_MODEL_FILENAMES
     for candidate in candidates:
@@ -133,9 +159,26 @@ def predict_intent(
     return predicted, round(confidence, 2)
 
 
-def _result(model: Any, metrics: dict[str, Any], report: dict[str, Any], model_path: Path, **extra: Any) -> dict[str, Any]:
-    return {"model": model, "metrics": metrics, "data_report": report, "model_path": str(model_path), **extra}
+def _result(
+    model: Any,
+    metrics: dict[str, Any],
+    report: dict[str, Any],
+    model_path: Path,
+    **extra: Any,
+) -> dict[str, Any]:
+    """Samakan format hasil agar notebook dapat membandingkan semua model."""
+    return {
+        "model": model,
+        "metrics": metrics,
+        "data_report": report,
+        "model_path": str(model_path),
+        **extra,
+    }
 
+
+# -----------------------------------------------------------------------------
+# Model klasik: baseline dan Grid Search (parameter lama dipertahankan).
+# -----------------------------------------------------------------------------
 
 def _baseline_tfidf() -> TfidfVectorizer:
     return TfidfVectorizer(
@@ -209,8 +252,8 @@ def train_svm_tuned(
             "tfidf__ngram_range": [(1, 1), (1, 2), (1, 3)],
             "tfidf__min_df": [1, 2],
             "tfidf__max_df": [0.95, 1.0],
-            "tfidf__sublinear_tf": [True],
-            "svm__C": [0.25, 0.5, 1.0, 2.0, 4.0, 8.0],
+            "tfidf__sublinear_tf": [True, False],
+            "svm__C": [0.25, 0.5, 0.75, 1.0, 1.25, 1.5, 2.0, 4.0, 8.0],
             "svm__class_weight": [None, "balanced"],
         },
         {
@@ -218,8 +261,8 @@ def train_svm_tuned(
             "tfidf__ngram_range": [(3, 5), (3, 6)],
             "tfidf__min_df": [1, 2],
             "tfidf__max_df": [0.95, 1.0],
-            "tfidf__sublinear_tf": [True],
-            "svm__C": [0.25, 0.5, 1.0, 2.0, 4.0, 8.0],
+            "tfidf__sublinear_tf": [True, False],
+            "svm__C": [0.25, 0.5, 0.75, 1.0, 1.25, 1.5, 2.0, 4.0, 8.0],
             "svm__class_weight": [None, "balanced"],
         },
     ]
@@ -303,9 +346,10 @@ def train_naive_bayes_tuned(
         "tfidf__ngram_range": [(1, 1), (1, 2)],
         "tfidf__min_df": [1, 2],
         "tfidf__max_df": [0.95, 1.0],
-        "tfidf__sublinear_tf": [True],
+        "tfidf__sublinear_tf": [True, False],
         "tfidf__use_idf": [True, False],
-        "nb__alpha": [0.01, 0.05, 0.1, 0.25, 0.5, 1.0, 2.0],
+        "tfidf__norm": ["l2", "l1", None],
+        "nb__alpha": [0.01, 0.05, 0.075, 0.1, 0.15, 0.2, 0.25, 0.5, 1.0, 2.0],
         "nb__fit_prior": [True, False],
     }
     print("Memulai Naive Bayes Grid Search pada train set...")
@@ -333,6 +377,248 @@ def train_naive_bayes_tuned(
         cv_f1_macro=round(float(search.best_score_), 4),
     )
 
+
+# -----------------------------------------------------------------------------
+# Tuning Optuna: sampling -> CV pada train -> refit -> evaluasi test -> simpan.
+# -----------------------------------------------------------------------------
+
+def _suggest_optuna_params(trial: Any, model_kind: str) -> dict[str, Any]:
+    """Usulkan fitur dan classifier; rentang lama tetap tercakup di Optuna."""
+    analyzer = (
+        trial.suggest_categorical("analyzer", ["word", "char_wb"])
+        if model_kind == "svm" else "word"
+    )
+    # Nama parameter dipisah agar pilihan kategorikal tidak berubah antar-trial.
+    if analyzer == "word":
+        upper = trial.suggest_categorical(
+            "word_ngram_max", [1, 2, 3] if model_kind == "svm" else [1, 2]
+        )
+        ngram_range = (1, upper)
+    else:
+        upper = trial.suggest_categorical("char_ngram_max", [5, 6])
+        ngram_range = (3, upper)
+
+    params = {
+        "tfidf__analyzer": analyzer,
+        "tfidf__ngram_range": ngram_range,
+        "tfidf__min_df": trial.suggest_categorical("min_df", [1, 2]),
+        "tfidf__max_df": trial.suggest_categorical("max_df", [0.95, 1.0]),
+        "tfidf__sublinear_tf": trial.suggest_categorical("sublinear_tf", [True, False]),
+    }
+    if model_kind == "svm":
+        params.update({
+            "svm__C": trial.suggest_float("C", 0.25, 8.0, log=True),
+            "svm__class_weight": trial.suggest_categorical(
+                "class_weight", [None, "balanced"]
+            ),
+        })
+    else:
+        params.update({
+            "tfidf__use_idf": trial.suggest_categorical("use_idf", [True, False]),
+            "tfidf__norm": trial.suggest_categorical("norm", ["l2", "l1", None]),
+            "nb__alpha": trial.suggest_float("alpha", 0.01, 2.0, log=True),
+            "nb__fit_prior": trial.suggest_categorical("fit_prior", [True, False]),
+        })
+    return params
+
+
+def _build_optuna_model(
+    model_kind: str, params: dict[str, Any], calibration_folds: int = 3,
+) -> Any:
+    """Bangun estimator yang sama untuk CV dan refit akhir."""
+    classifier = (
+        LinearSVC(random_state=RANDOM_STATE, max_iter=10000)
+        if model_kind == "svm" else MultinomialNB()
+    )
+    pipeline = Pipeline([
+        ("tfidf", TfidfVectorizer(strip_accents="unicode")),
+        (model_kind, classifier),
+    ])
+    pipeline.set_params(**params)
+    if model_kind == "svm":
+        # Kalibrator membungkus seluruh pipeline: TF-IDF ikut fit hanya pada
+        # train fold internal. Fold kalibrasi tidak membentuk vocabulary/IDF.
+        return CalibratedClassifierCV(
+            estimator=pipeline,
+            method="sigmoid",
+            cv=StratifiedKFold(
+                n_splits=calibration_folds, shuffle=True, random_state=RANDOM_STATE,
+            ),
+            n_jobs=1,
+        )
+    return pipeline
+
+
+def _train_classical_optuna(
+    dataset_path: str | Path,
+    model_dir: str | Path,
+    filename: str,
+    *,
+    model_kind: str,
+    n_trials: int,
+    cv_folds: int,
+    timeout: float | None,
+    n_jobs: int,
+) -> dict[str, Any]:
+    """Alur bersama Optuna; test tidak pernah dipakai oleh objective."""
+    import math
+    import tempfile
+
+    try:
+        import optuna
+    except ImportError as error:
+        raise ImportError("Tuning Optuna memerlukan paket optuna: pip install optuna") from error
+
+    if isinstance(n_trials, bool) or not isinstance(n_trials, int) or n_trials < 1:
+        raise ValueError("n_trials harus bilangan bulat positif.")
+    if isinstance(cv_folds, bool) or not isinstance(cv_folds, int) or cv_folds < 2:
+        raise ValueError("cv_folds harus bilangan bulat minimal 2.")
+    if timeout is not None and (not math.isfinite(timeout) or timeout <= 0):
+        raise ValueError("timeout harus positif atau None.")
+    if isinstance(n_jobs, bool) or not isinstance(n_jobs, int) or n_jobs == 0:
+        raise ValueError("n_jobs harus bilangan bulat selain 0.")
+
+    # 1. Gunakan split test yang sama dengan baseline dan Grid Search.
+    x_train, x_test, y_train, y_test, report = _split_dataset(dataset_path)
+    cv = _cv_folds(y_train, cv_folds)
+    folds = list(cv.split(x_train, y_train))
+    calibration_folds = 3
+    if model_kind == "svm":
+        smallest_inner_class = min(
+            int(y_train.iloc[train_idx].value_counts().min())
+            for train_idx, _ in folds
+        )
+        calibration_folds = min(3, smallest_inner_class)
+        if calibration_folds < 2:
+            raise ValueError("Data train per kelas tidak cukup untuk CV dan kalibrasi SVM.")
+
+    # Setiap pemanggilan memiliki direktori sendiri agar riwayat tidak tertimpa.
+    output_root = Path(model_dir) / "optuna_results"
+    output_root.mkdir(parents=True, exist_ok=True)
+    run_dir = Path(tempfile.mkdtemp(prefix=f"{model_kind}_", dir=output_root))
+    study = optuna.create_study(
+        direction="maximize",
+        sampler=optuna.samplers.TPESampler(seed=RANDOM_STATE),
+        pruner=optuna.pruners.NopPruner(),
+        study_name=f"{model_kind}_macro_f1",
+    )
+
+    # 2. Tiap trial dievaluasi pada fold yang identik. Seluruh preprocessing
+    # berada di estimator. Simpan skor tiap fold untuk menilai variasi hasil.
+    def objective(trial):
+        params = _suggest_optuna_params(trial, model_kind)
+        estimator = _build_optuna_model(model_kind, params, calibration_folds)
+        scores = cross_val_score(
+            estimator, x_train, y_train, cv=folds,
+            scoring="f1_macro", n_jobs=n_jobs, error_score="raise",
+        )
+        trial.set_user_attr("pipeline_params", params)
+        trial.set_user_attr("fold_scores", scores.tolist())
+        trial.set_user_attr("cv_std", float(scores.std()))
+        return float(scores.mean())
+
+    def save_trials(study, trial):
+        study.trials_dataframe().to_csv(run_dir / "trials.csv", index=False)
+
+    print(f"Optuna {model_kind.upper()}: {n_trials} trial, {len(folds)} fold, macro-F1.")
+    # Trial berurutan menjaga urutan sampling TPE; hanya fold CV diparalelkan.
+    study.optimize(
+        objective, n_trials=n_trials, timeout=timeout,
+        n_jobs=1, callbacks=[save_trials],
+    )
+    best = dict(study.best_trial.user_attrs["pipeline_params"])
+    best["tfidf__ngram_range"] = tuple(best["tfidf__ngram_range"])
+    print("Parameter Optuna terbaik:", best)
+    print(f"Macro-F1 CV terbaik: {study.best_value:.4f}")
+
+    # 3. Latih konfigurasi terpilih pada train, lalu evaluasi test satu kali.
+    model = _build_optuna_model(model_kind, best, calibration_folds)
+    model.fit(x_train, y_train)
+    metrics = _evaluate(model, x_test, y_test, f"{model_kind.upper()} Optuna")
+    model_path = _save_sklearn_model(model, model_dir, filename)
+
+    # 4. Catat hasil dan indeks split untuk pelaporan serta audit eksperimen.
+    summary = {
+        "method": "Optuna TPE", "model_kind": model_kind,
+        "optuna_version": optuna.__version__, "seed": RANDOM_STATE,
+        "n_trials_requested": n_trials, "n_trials_completed": len(study.trials),
+        "cv_folds": len(folds), "timeout": timeout, "cv_n_jobs": n_jobs,
+        "calibration_folds": calibration_folds if model_kind == "svm" else None,
+        "selection_metric": "cv_f1_macro", "test_used_for_selection": False,
+        "best_trial": study.best_trial.number, "best_params": best,
+        "cv_f1_macro": study.best_value,
+        "cv_std": study.best_trial.user_attrs["cv_std"],
+        "metrics": metrics, "data_report": report, "model_path": str(model_path),
+    }
+    (run_dir / "summary.json").write_text(
+        json.dumps(summary, indent=2, ensure_ascii=False), encoding="utf-8",
+    )
+    split_indices = {
+        "train": x_train.index.tolist(), "test": x_test.index.tolist(),
+        "cv": [
+            {"train": x_train.iloc[a].index.tolist(), "validation": x_train.iloc[b].index.tolist()}
+            for a, b in folds
+        ],
+    }
+    (run_dir / "split_indices.json").write_text(
+        json.dumps(split_indices, indent=2), encoding="utf-8",
+    )
+    return _result(
+        model, metrics, report, model_path, best_params=best,
+        cv_f1_macro=round(float(study.best_value), 4),
+        cv_std=float(study.best_trial.user_attrs["cv_std"]),
+        study=study, run_dir=str(run_dir), training_summary=summary,
+    )
+
+
+def train_naive_bayes_optuna(
+    dataset_path: str | Path,
+    model_dir: str | Path,
+    filename: str = "intent_classifier_nb_optuna.pkl",
+    *,
+    n_trials: int = 50,
+    cv_folds: int = 5,
+    timeout: float | None = None,
+    n_jobs: int = -1,
+) -> dict[str, Any]:
+    """Tuning TF-IDF + MultinomialNB memakai TPE dan macro-F1 CV.
+
+    n_trials membatasi jumlah konfigurasi; timeout membatasi waktu pencarian
+    dalam detik (trial yang berjalan diselesaikan). n_jobs mengatur paralel CV.
+    Model, ringkasan JSON, dan trials.csv disimpan terpisah dari Grid Search.
+    """
+    return _train_classical_optuna(
+        dataset_path, model_dir, filename, model_kind="nb",
+        n_trials=n_trials, cv_folds=cv_folds, timeout=timeout, n_jobs=n_jobs,
+    )
+
+
+def train_svm_optuna(
+    dataset_path: str | Path,
+    model_dir: str | Path,
+    filename: str = "intent_classifier_svm_optuna.pkl",
+    *,
+    n_trials: int = 50,
+    cv_folds: int = 5,
+    timeout: float | None = None,
+    n_jobs: int = -1,
+) -> dict[str, Any]:
+    """Tuning SVM terkalibrasi memakai TPE dan macro-F1 CV.
+
+    Setiap fold luar memuat kalibrasi internal atas pipeline TF-IDF + SVM.
+    Skor CV dan model akhir memakai struktur yang sama. Karena kalibrasi
+    bertingkat, satu trial SVM membutuhkan lebih banyak fit daripada NB.
+    Argumen kendali pencarian sama dengan train_naive_bayes_optuna.
+    """
+    return _train_classical_optuna(
+        dataset_path, model_dir, filename, model_kind="svm",
+        n_trials=n_trials, cv_folds=cv_folds, timeout=timeout, n_jobs=n_jobs,
+    )
+
+
+# -----------------------------------------------------------------------------
+# IndoBERT: fine-tuning, seleksi validation, dan inferensi.
+# -----------------------------------------------------------------------------
 
 def train_transformer(
     dataset_path: str | Path,
@@ -635,6 +921,10 @@ def predict_transformer_intent(
     return str(label), confidence
 
 
+# -----------------------------------------------------------------------------
+# Runner notebook: pelatihan model terpilih dan pengujian contoh chat.
+# -----------------------------------------------------------------------------
+
 HOSTAGE_BENCHMARK_TESTS = (
     ("accusing", "B kena Gag Order ketika mulai ditanya alibinya, menurutku itu pola Hitman."),
     ("defending", "Aku bukan Hitman. Tuduhan itu tidak punya bukti dari chat publik."),
@@ -658,16 +948,22 @@ def run_all_nlu_models(
     transformer_epochs: int = 12,
     transformer_device: str = "cuda",
     transformer_options: dict[str, Any] | None = None,
+    benchmark_tests: list[tuple[str, str]] | tuple[tuple[str, str], ...] | None = None,
 ) -> tuple[dict[str, Any], Any, Any]:
     """Latih seluruh classifier dan bandingkan holdout serta 10 chat game.
 
     Mengembalikan ``(artifacts, hasil_holdout, hasil_10_chat)``. Split untuk
     setiap model deterministik (random state sama), sehingga perbandingan
     holdout tidak bercampur dengan data training/tuning.
+    ``benchmark_tests`` dapat mengganti 10 chat uji untuk dataset tertentu.
     """
     import time
 
     import pandas as pd
+
+    test_cases = HOSTAGE_BENCHMARK_TESTS if benchmark_tests is None else tuple(benchmark_tests)
+    if len(test_cases) != 10:
+        raise ValueError("benchmark_tests harus berisi tepat 10 chat uji.")
 
     model_dir = Path(model_dir)
     transformer_config = {"epochs": transformer_epochs, "device": transformer_device}
@@ -738,7 +1034,7 @@ def run_all_nlu_models(
     for model_name, saved in artifacts.items():
         correct = 0
         print(f"\n--- 10 chat uji: {model_name} ---")
-        for expected, chat in HOSTAGE_BENCHMARK_TESTS:
+        for expected, chat in test_cases:
             if saved["kind"] == "transformer":
                 predicted, confidence = predict_transformer_intent(chat, model_dir, device=transformer_device)
             else:
@@ -753,7 +1049,7 @@ def run_all_nlu_models(
             {
                 "model": model_name,
                 "benar_dari_10": correct,
-                "akurasi_10_chat": round(correct / len(HOSTAGE_BENCHMARK_TESTS), 2),
+                "akurasi_10_chat": round(correct / len(test_cases), 2),
             }
         )
 
