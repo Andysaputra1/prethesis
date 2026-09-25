@@ -8,7 +8,7 @@ from unittest.mock import patch
 
 import pandas as pd
 
-from modules.nlu_training import (
+from lama.modules.nlu_training import (
     _split_dataset,
     _split_transformer_dataset,
     predict_transformer_intent,

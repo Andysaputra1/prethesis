@@ -21,7 +21,7 @@ from sklearn.naive_bayes import MultinomialNB
 from sklearn.pipeline import Pipeline
 from sklearn.svm import LinearSVC
 
-from modules.nlu_eda import LABEL_COLUMN, TEXT_COLUMN, load_clean_nlu_dataset
+from lama.modules.nlu_eda import LABEL_COLUMN, TEXT_COLUMN, load_clean_nlu_dataset
 
 
 RANDOM_STATE = 42

@@ -14,7 +14,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 
-from modules.nlu_training import train_transformer
+from lama.modules.nlu_training import train_transformer
 
 
 DATASETS = {

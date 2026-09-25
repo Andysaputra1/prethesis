@@ -10,7 +10,7 @@ import pandas as pd
 from sklearn.calibration import CalibratedClassifierCV
 from sklearn.pipeline import Pipeline
 
-from modules import nlu_training as nt
+from lama.modules import nlu_training as nt
 
 
 class OptunaTrainingTests(unittest.TestCase):

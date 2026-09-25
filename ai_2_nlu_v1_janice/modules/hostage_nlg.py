@@ -13,7 +13,7 @@ from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Any
 
-from modules.hostage_fuzzy import calculate_ai_defense_score, describe_ai_defense_intent
+from lama.modules.hostage_fuzzy import calculate_ai_defense_score, describe_ai_defense_intent
 
 
 @dataclass(frozen=True)

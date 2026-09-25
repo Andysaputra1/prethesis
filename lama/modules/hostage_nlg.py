@@ -13,7 +13,7 @@ from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Any
 
-from modules.hostage_fuzzy import calculate_bluff_indicator, describe_bluff_level
+from lama.modules.hostage_fuzzy import calculate_bluff_indicator, describe_bluff_level
 
 
 @dataclass(frozen=True)
