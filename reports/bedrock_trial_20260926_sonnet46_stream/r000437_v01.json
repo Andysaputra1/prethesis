@@ -1,0 +1,150 @@
+{
+  "job": {
+    "job_id": "r000437_v01",
+    "case_name": "topic_switch",
+    "case_description": "Pembahasan berganti pemain; pesan sekarang mengikuti topik baru, bukan otomatis target lama.",
+    "source": {
+      "source_row": 437,
+      "source_group": "93372ec09680e7f3ebec",
+      "teks_chat": "sumpah aku bukan pelaku, posisi vote-ku dari tadi juga jelas",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 8,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "topic_switch",
+    "participants": [
+      "Nisa",
+      "Bayu",
+      "Tara",
+      "Egi"
+    ],
+    "focus_player": "Tara",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Nisa",
+        "teks_chat": "Bayu kemarin vote ke Egi tanpa alasan jelas",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Bayu",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Bayu",
+        "teks_chat": "aku punya alasan, hanya tidak sempat jelaskan",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Bayu",
+            "relasi": "defend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Egi",
+        "teks_chat": "oke lupakan itu dulu, sekarang kita bahas Tara yang pindah vote di detik terakhir",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Tara",
+            "relasi": "offend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Nisa",
+        "teks_chat": "iya, perpindahan vote Tara itu memang aneh",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Tara",
+            "relasi": "offend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Bayu",
+        "teks_chat": "aku juga heran dengan itu",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Tara",
+            "relasi": "offend",
+            "bukti_pesan": [
+              3,
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Tara",
+        "teks_chat": "aku pindah vote karena dapat informasi baru, bukan karena mencurigakan",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Tara",
+            "relasi": "defend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Egi",
+        "teks_chat": "informasi apa? kamu tidak bilang apa-apa sebelumnya",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Tara",
+            "relasi": "offend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Tara",
+        "teks_chat": "aku tidak bisa ungkap sekarang, tapi vote aku bukan asal pindah",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Tara",
+            "relasi": "defend",
+            "bukti_pesan": [
+              8
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "validation_status": "local_structure_only",
+  "human_review_status": "pending",
+  "generation_settings": {
+    "provider": "aws_bedrock",
+    "model": "global.anthropic.claude-sonnet-4-6",
+    "thinking": "not_requested"
+  }
+}

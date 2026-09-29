@@ -1,0 +1,712 @@
+[
+  {
+    "job_id": "r004951_v00",
+    "case_name": "original",
+    "case_description": "Satu pesan tanpa riwayat. Pertahankan teks dan intent sumber persis; jangan mengarang riwayat asli.",
+    "source": {
+      "source_row": 4951,
+      "source_group": "5ea28b94ec59dcb0f43f",
+      "teks_chat": "bukan aku yang nyandera, gw bukan hitman",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 1,
+    "pesan_typo_ringan": []
+  },
+  {
+    "job_id": "r001307_v01",
+    "case_name": "explicit",
+    "case_description": "Target eksplisit di pesan sekarang. Contoh: Aku yakin bukan Andy = defend Andy.",
+    "source": {
+      "source_row": 1307,
+      "source_group": "b5a1534f64f79abc904c",
+      "teks_chat": "siapa yang paling mencurigakan setelah Gag Order tadi?",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 2,
+    "pesan_typo_ringan": []
+  },
+  {
+    "job_id": "r002305_v01",
+    "case_name": "reference_start",
+    "case_description": "Tepat 12 konteks. Penyebutan target eksplisit di pesan konteks pertama; pesan sekarang memakai kata ganti.",
+    "source": {
+      "source_row": 2305,
+      "source_group": "b223be79c5656a4902cb",
+      "teks_chat": "kalau klaimku bohong, kenapa harus percaya klaim dia yang lebih cepat?",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 13,
+    "pesan_typo_ringan": []
+  },
+  {
+    "job_id": "r002184_v01",
+    "case_name": "reference_middle",
+    "case_description": "Tepat 12 konteks. Penyebutan target eksplisit di pesan konteks ke-6 atau ke-7.",
+    "source": {
+      "source_row": 2184,
+      "source_group": "cd30256c07467548cf11",
+      "teks_chat": "saya Civilian, tidak memiliki kemampuan malam, tetapi setelah menyimpulkan percakapan, Naya paling layak dicurigai",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 13,
+    "pesan_typo_ringan": []
+  },
+  {
+    "job_id": "r003747_v01",
+    "case_name": "reference_end",
+    "case_description": "Tepat 12 konteks. Penyebutan target eksplisit di pesan konteks terakhir.",
+    "source": {
+      "source_row": 3747,
+      "source_group": "cd7502384dde3218de51",
+      "teks_chat": "mereka mungkin percaya aku hitman, padahal aku spy yang gagal baca situasi",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 13,
+    "pesan_typo_ringan": []
+  },
+  {
+    "job_id": "r002823_v01",
+    "case_name": "memory_outside_window",
+    "case_description": "14-16 pesan total. Nama target hanya disebut sebelum 12 konteks terakhir. Dalam jendela, ada pesan yang meneruskan acuan dengan jelas dan menyimpan anotasi target berdasarkan pesan lama. Pesan sekarang merujuk target sama. Nama target tidak muncul dalam teks 12 konteks terakhir atau pesan sekarang; target diketahui lewat memori.",
+    "source": {
+      "source_row": 2823,
+      "source_group": "98d8300d81798892cc51",
+      "teks_chat": "si N punya alasan untuk memakai Gag Order, lalu langsung menyerang pemain yang kehilangan kesempatan membela diri",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 14,
+    "pesan_typo_ringan": []
+  },
+  {
+    "job_id": "r000522_v01",
+    "case_name": "outside_window_unknown",
+    "case_description": "14-16 pesan total. Pembahasan lama telah putus/beralih. Teks dan anotasi 12 konteks terakhir tidak cukup menentukan acuan sekarang. Target harus tidak_diketahui; jangan menggunakan informasi lama yang tidak tersedia dalam input.",
+    "source": {
+      "source_row": 522,
+      "source_group": "f31a94b3ecd5c5ab8df6",
+      "teks_chat": "lu nuduh gw karena fakta atau karena gw nggak ikut arus?",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 14,
+    "pesan_typo_ringan": []
+  },
+  {
+    "job_id": "r001326_v01",
+    "case_name": "interruption",
+    "case_description": "Pembahasan target disela obrolan waktu/ronde; kaitan kembali ke target masih jelas.",
+    "source": {
+      "source_row": 1326,
+      "source_group": "942c6d5adab631f4899a",
+      "teks_chat": "kalau memang Spy, siapa yang lu kawal semalam?",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 9,
+    "pesan_typo_ringan": []
+  },
+  {
+    "job_id": "r000437_v01",
+    "case_name": "topic_switch",
+    "case_description": "Pembahasan berganti pemain; pesan sekarang mengikuti topik baru, bukan otomatis target lama.",
+    "source": {
+      "source_row": 437,
+      "source_group": "93372ec09680e7f3ebec",
+      "teks_chat": "sumpah aku bukan pelaku, posisi vote-ku dari tadi juga jelas",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 8,
+    "pesan_typo_ringan": []
+  },
+  {
+    "job_id": "r001724_v01",
+    "case_name": "ambiguous",
+    "case_description": "Beberapa acuan sama-sama mungkin; target tidak_diketahui, bukan nama terakhir.",
+    "source": {
+      "source_row": 1724,
+      "source_group": "4bfcdc376a0c022e7614",
+      "teks_chat": "K terlihat sengaja membangun konflik antara dua pemain lalu mundur dari diskusi, pola itu khas hitman, vote K",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 11,
+    "pesan_typo_ringan": [
+      7
+    ]
+  },
+  {
+    "job_id": "r000559_v01",
+    "case_name": "self",
+    "case_description": "Defend diri sendiri atau offend/vote diri sendiri sesuai label. Target = pengirim.",
+    "source": {
+      "source_row": 559,
+      "source_group": "1f3e283be1c996fcc011",
+      "teks_chat": "kalau mau vote aku, minimal jelaskan bukti konkretnya",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 10,
+    "pesan_typo_ringan": []
+  },
+  {
+    "job_id": "r001426_v01",
+    "case_name": "witness",
+    "case_description": "Nama saksi/korban disebut, tetapi bukan target serangan atau pembelaan.",
+    "source": {
+      "source_row": 1426,
+      "source_group": "c228834058903f321231",
+      "teks_chat": "bukan gue, tadi yang mulai framing itu si I",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 13,
+    "pesan_typo_ringan": [
+      8
+    ]
+  },
+  {
+    "job_id": "r001523_v01",
+    "case_name": "multiple_targets",
+    "case_description": "Dua atau lebih pemain menjadi target relasi yang sama secara jelas.",
+    "source": {
+      "source_row": 1523,
+      "source_group": "fa8c2859e825a54e0f2d",
+      "teks_chat": "kalau aku Hitman, kenapa target malam kemarin bukan pemain yang paling mengancamku?",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 2,
+    "pesan_typo_ringan": []
+  },
+  {
+    "job_id": "r004295_v01",
+    "case_name": "mixed_relations",
+    "case_description": "Membela satu pemain dan menuduh pemain lain. Intent utama offend; simpan kedua relasi.",
+    "source": {
+      "source_row": 4295,
+      "source_group": "9e1a602297b2b3d12488",
+      "teks_chat": "kalau memang ada yang jeli, harusnya kalian sadar si Oki selalu muncul setelah arah vote berubah",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 2,
+    "pesan_typo_ringan": []
+  },
+  {
+    "job_id": "r005123_v01",
+    "case_name": "quotation",
+    "case_description": "Ada tuduhan yang dikutip; bedakan sikap pengirim dari ucapan orang yang dikutip.",
+    "source": {
+      "source_row": 5123,
+      "source_group": "f4c8edfdd7d77c480c9d",
+      "teks_chat": "gw Spy, target guard-ku selamat dari serangan malam, tapi gue belum tahu siapa yang nyerang",
+      "label_intent": "neutral"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 2,
+    "pesan_typo_ringan": []
+  },
+  {
+    "job_id": "r004432_v01",
+    "case_name": "negation",
+    "case_description": "Negasi menentukan relasi: Andy Hitman berbeda dari Andy bukan Hitman.",
+    "source": {
+      "source_row": 4432,
+      "source_group": "3204895157f67418b647",
+      "teks_chat": "serius, kenapa cuma aku yang dibahas padahal si H tidak pernah ikut membantu analisis",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 7,
+    "pesan_typo_ringan": []
+  },
+  {
+    "job_id": "r001919_v01",
+    "case_name": "second_person",
+    "case_description": "Kamu/lu: gunakan pergantian pembicara dan teks yang jelas. Tanpa acuan jelas, target tidak_diketahui.",
+    "source": {
+      "source_row": 1919,
+      "source_group": "7a715d48c38c25f7d5f7",
+      "teks_chat": "aku paham belum ada kepastian, tapi dibanding kandidat lain, Seno punya alibi paling lemah, jadi pilih Seno",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 2,
+    "pesan_typo_ringan": []
+  },
+  {
+    "job_id": "r005261_v01",
+    "case_name": "first_message",
+    "case_description": "Pesan pertama permainan, tanpa konteks. Neutral boleh menyapa/membuka diskusi; offend/defend menyebut target jelas. Jangan mengarang kejadian malam, voting, atau percakapan yang belum terjadi.",
+    "source": {
+      "source_row": 5261,
+      "source_group": "63bda58fc5da0695d7f8",
+      "teks_chat": "ini voting-nya langsung eksekusi, serius?",
+      "label_intent": "neutral"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 1,
+    "pesan_typo_ringan": []
+  },
+  {
+    "job_id": "r000537_v01",
+    "case_name": "first_message_unknown",
+    "case_description": "Pesan pertama tanpa konteks memakai dia/kamu/lu tanpa acuan jelas. Intent offend/defend tetap diketahui tetapi target tidak_diketahui; roster bukan bukti lawan bicara.",
+    "source": {
+      "source_row": 537,
+      "source_group": "731f3249499b4e0ae1eb",
+      "teks_chat": "saya menolak tuduhan itu, tidak ada bukti yang menghubungkan saya dengan Hostage",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 1,
+    "pesan_typo_ringan": []
+  },
+  {
+    "job_id": "r004860_v01",
+    "case_name": "first_message_self",
+    "case_description": "Pesan pertama tanpa konteks membela atau menuduh diri sendiri. Target = pengirim; tidak perlu riwayat untuk memahami aku.",
+    "source": {
+      "source_row": 4860,
+      "source_group": "8aa78b4e18c508539141",
+      "teks_chat": "aku sudah cek alurnya dari awal, tidak ada yang lebih mencurigakan daripada Maya",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 1,
+    "pesan_typo_ringan": []
+  },
+  {
+    "job_id": "r001322_v01",
+    "case_name": "short_history_1",
+    "case_description": "Awal diskusi dengan tepat 1 pesan sebelumnya. Jangan menambah riwayat fiktif atau mengisi sampai 12.",
+    "source": {
+      "source_row": 1322,
+      "source_group": "61f0769487e4876294af",
+      "teks_chat": "dari semua pemain, siapa yang paling layak kita lindungi di voting ini?",
+      "label_intent": "neutral"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 2,
+    "pesan_typo_ringan": []
+  },
+  {
+    "job_id": "r004065_v01",
+    "case_name": "short_history_2",
+    "case_description": "Awal diskusi dengan tepat 2 pesan sebelumnya. Gunakan hanya petunjuk yang tersedia.",
+    "source": {
+      "source_row": 4065,
+      "source_group": "ebe6b78de7242a51d2f9",
+      "teks_chat": "kalau target Spy selamat, siapa yang kira-kira diserang semalam?",
+      "label_intent": "neutral"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 3,
+    "pesan_typo_ringan": []
+  },
+  {
+    "job_id": "r002738_v01",
+    "case_name": "short_history_3",
+    "case_description": "Awal diskusi dengan tepat 3 pesan sebelumnya. Acuan tidak harus berada di pesan terakhir.",
+    "source": {
+      "source_row": 2738,
+      "source_group": "260c17416b736e8f20ab",
+      "teks_chat": "ini tribunalnya auto eksekusi yang vote terbanyak ya, serem juga",
+      "label_intent": "neutral"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 4,
+    "pesan_typo_ringan": []
+  },
+  {
+    "job_id": "r003790_v01",
+    "case_name": "neutral_names",
+    "case_description": "Neutral menyebut nama tanpa menuduh/membela; target kosong.",
+    "source": {
+      "source_row": 3790,
+      "source_group": "eec437abc62c4acb2064",
+      "teks_chat": "Kalau kalian tetap vote aku, silakan, tapi gw Stalker dan info soal Bimo valid",
+      "label_intent": "neutral"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 13,
+    "pesan_typo_ringan": []
+  },
+  {
+    "job_id": "r002759_v01",
+    "case_name": "neutral_after_accusation",
+    "case_description": "Konteks berisi tuduhan, tetapi pesan sekarang neutral; jangan mewarisi relasi lama.",
+    "source": {
+      "source_row": 2759,
+      "source_group": "3be849cc5bbec47c81f6",
+      "teks_chat": "nggak nyangka game tanpa polisi bisa setegang ini",
+      "label_intent": "neutral"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 2,
+    "pesan_typo_ringan": []
+  },
+  {
+    "job_id": "r005352_v01",
+    "case_name": "neutral_status",
+    "case_description": "Klaim status/role atau pertanyaan informasi saja tanpa pembelaan/serangan; target kosong.",
+    "source": {
+      "source_row": 5352,
+      "source_group": "fcca1a5f019454ded048",
+      "teks_chat": "oh, jadi chat memang dikunci saat malam",
+      "label_intent": "neutral"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 3,
+    "pesan_typo_ringan": []
+  },
+  {
+    "job_id": "r003375_v01",
+    "case_name": "agreement",
+    "case_description": "Pesan sekarang menyetujui atau membantah pesan pemain lain di konteks tanpa menyebut ulang nama target. Setuju dengan tuduhan = offend pemain yang dituduh; membantah tuduhan atau setuju dengan pembelaan = defend. Identitas target diwarisi dari pesan yang ditanggapi.",
+    "source": {
+      "source_row": 3375,
+      "source_group": "674690dad65809f847d1",
+      "teks_chat": "kalau gw hitman, ngapain gw malah ngebantah pola yang mengarah ke dia?",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 6,
+    "pesan_typo_ringan": []
+  },
+  {
+    "job_id": "r004621_v01",
+    "case_name": "plural_reference",
+    "case_description": "Pesan sekarang memakai mereka/kalian/keduanya/berdua untuk dua pemain atau lebih yang jelas dari konteks, tanpa menyebut ulang nama mereka. Simpan semua pemain itu sebagai target.",
+    "source": {
+      "source_row": 4621,
+      "source_group": "2ba34d8d005f5a047cfc",
+      "teks_chat": "Gw nggak pernah kena Gag Order dan bukan pengguna skill itu; klaim Aldi soal urutan kejadian janggal, jadi jangan biarkan dia memimpin voting",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 4,
+    "pesan_typo_ringan": [
+      3
+    ]
+  },
+  {
+    "job_id": "r002298_v01",
+    "case_name": "rhetorical_question",
+    "case_description": "Pesan sekarang berbentuk pertanyaan retoris yang sebenarnya menuduh atau membela, misalnya 'kenapa Andy diam terus?' (offend) atau 'masa sih Andy Hitman?' (defend). Bukan pertanyaan informasi.",
+    "source": {
+      "source_row": 2298,
+      "source_group": "d7b901679f6357083f8b",
+      "teks_chat": "gw klaim Spy, tapi kalau kalian mau vote gw silakan cek siapa yang paling diuntungkan",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 9,
+    "pesan_typo_ringan": []
+  },
+  {
+    "job_id": "r002685_v01",
+    "case_name": "nickname",
+    "case_description": "Pesan sekarang menyebut pemain dengan nama panggilan, singkatan, atau salah ketik ringan (Andy -> ndy, andi, si And) tanpa menulis nama aslinya. Catat sebutan itu di panggilan. Target tetap memakai nama asli; jika neutral, target kosong.",
+    "source": {
+      "source_row": 2685,
+      "source_group": "ffd88e3648e0969b4f3a",
+      "teks_chat": "aku kira fase malamnya bakal lebih lama",
+      "label_intent": "neutral"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 12,
+    "pesan_typo_ringan": []
+  },
+  {
+    "job_id": "r001608_v01",
+    "case_name": "stance_change",
+    "case_description": "Pengirim pesan sekarang sebelumnya menuduh atau membela seorang pemain di konteks, lalu berubah sikap terhadap pemain yang sama. Anotasi mengikuti sikap terbaru.",
+    "source": {
+      "source_row": 1608,
+      "source_group": "7a0fae9f2513ae4d66d8",
+      "teks_chat": "kalau gw benar Hitman, mestinya gw nggak akan sejelas ini nunjuk si Ardi",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 3,
+    "pesan_typo_ringan": []
+  },
+  {
+    "job_id": "r000970_v01",
+    "case_name": "ambiguous",
+    "case_description": "Beberapa acuan sama-sama mungkin; target tidak_diketahui, bukan nama terakhir.",
+    "source": {
+      "source_row": 970,
+      "source_group": "2fc23a5b01400f7c31c4",
+      "teks_chat": "kalau gw hitman, harusnya dari tadi sudah ada yang kena gag order",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 13,
+    "pesan_typo_ringan": [
+      2
+    ]
+  },
+  {
+    "job_id": "r000649_v01",
+    "case_name": "explicit",
+    "case_description": "Target eksplisit di pesan sekarang. Contoh: Aku yakin bukan Andy = defend Andy.",
+    "source": {
+      "source_row": 649,
+      "source_group": "897a81cdaf440b74e8cc",
+      "teks_chat": "aku tidak menyembunyikan apa pun; silakan cocokkan semua pernyataanku dengan log chat",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 4,
+    "pesan_typo_ringan": []
+  },
+  {
+    "job_id": "r003301_v01",
+    "case_name": "first_message",
+    "case_description": "Pesan pertama permainan, tanpa konteks. Neutral boleh menyapa/membuka diskusi; offend/defend menyebut target jelas. Jangan mengarang kejadian malam, voting, atau percakapan yang belum terjadi.",
+    "source": {
+      "source_row": 3301,
+      "source_group": "b0363c5850d4d5174d65",
+      "teks_chat": "tadi chat gw sempat kekunci, jadi wajar kalau respons gw telat",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 1,
+    "pesan_typo_ringan": []
+  },
+  {
+    "job_id": "r000702_v01",
+    "case_name": "first_message_self",
+    "case_description": "Pesan pertama tanpa konteks membela atau menuduh diri sendiri. Target = pengirim; tidak perlu riwayat untuk memahami aku.",
+    "source": {
+      "source_row": 702,
+      "source_group": "8beda19d93e84b91979b",
+      "teks_chat": "gw kena bungkam mendadak pas mau jawab, makanya penjelasan gw kepotong",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 1,
+    "pesan_typo_ringan": []
+  },
+  {
+    "job_id": "r000737_v01",
+    "case_name": "interruption",
+    "case_description": "Pembahasan target disela obrolan waktu/ronde; kaitan kembali ke target masih jelas.",
+    "source": {
+      "source_row": 737,
+      "source_group": "dc31a89d47844dea66c0",
+      "teks_chat": "kalau kalian eksekusi aku, kalian kehilangan Spy yang bisa lindungi target malam ini",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 8,
+    "pesan_typo_ringan": []
+  },
+  {
+    "job_id": "r000683_v01",
+    "case_name": "memory_outside_window",
+    "case_description": "14-16 pesan total. Nama target hanya disebut sebelum 12 konteks terakhir. Dalam jendela, ada pesan yang meneruskan acuan dengan jelas dan menyimpan anotasi target berdasarkan pesan lama. Pesan sekarang merujuk target sama. Nama target tidak muncul dalam teks 12 konteks terakhir atau pesan sekarang; target diketahui lewat memori.",
+    "source": {
+      "source_row": 683,
+      "source_group": "d311c1c308a7c88a7ba8",
+      "teks_chat": "kalau aku pelaku, harusnya aku tidak akan minta semua orang cek alibi malam",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 14,
+    "pesan_typo_ringan": []
+  },
+  {
+    "job_id": "r000792_v01",
+    "case_name": "nickname",
+    "case_description": "Pesan sekarang menyebut pemain dengan nama panggilan, singkatan, atau salah ketik ringan (Andy -> ndy, andi, si And) tanpa menulis nama aslinya. Catat sebutan itu di panggilan. Target tetap memakai nama asli; jika neutral, target kosong.",
+    "source": {
+      "source_row": 792,
+      "source_group": "770eba7aaf0ce0b008ac",
+      "teks_chat": "jangan dipelintir, gw stalker dan info gw valid, si Bimo bukan hitman",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 3,
+    "pesan_typo_ringan": []
+  },
+  {
+    "job_id": "r003376_v01",
+    "case_name": "plural_reference",
+    "case_description": "Pesan sekarang memakai mereka/kalian/keduanya/berdua untuk dua pemain atau lebih yang jelas dari konteks, tanpa menyebut ulang nama mereka. Simpan semua pemain itu sebagai target.",
+    "source": {
+      "source_row": 3376,
+      "source_group": "35012525a58758d541a2",
+      "teks_chat": "sumpah bukan aku, kalian terlalu cepat menganggap mayoritas itu pasti benar",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 7,
+    "pesan_typo_ringan": []
+  },
+  {
+    "job_id": "r003636_v01",
+    "case_name": "quotation",
+    "case_description": "Ada tuduhan yang dikutip; bedakan sikap pengirim dari ucapan orang yang dikutip.",
+    "source": {
+      "source_row": 3636,
+      "source_group": "eb40c85df0eb7924fa91",
+      "teks_chat": "fix bukan gw Hitman, role gw Spy dan target Guard semalam adalah Seno",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 3,
+    "pesan_typo_ringan": []
+  },
+  {
+    "job_id": "r000429_v01",
+    "case_name": "reference_middle",
+    "case_description": "Tepat 12 konteks. Penyebutan target eksplisit di pesan konteks ke-6 atau ke-7.",
+    "source": {
+      "source_row": 429,
+      "source_group": "add451fdd1213834aafa",
+      "teks_chat": "dia nuduh aku buat ngalihin perhatian, jangan langsung kemakan omongannya",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 13,
+    "pesan_typo_ringan": [
+      5
+    ]
+  },
+  {
+    "job_id": "r003435_v01",
+    "case_name": "second_person",
+    "case_description": "Kamu/lu: gunakan pergantian pembicara dan teks yang jelas. Tanpa acuan jelas, target tidak_diketahui.",
+    "source": {
+      "source_row": 3435,
+      "source_group": "e33cc6503d3ece4b99a8",
+      "teks_chat": "bukan aku yang pakai Gag Order, jangan asal cocoklogi",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 6,
+    "pesan_typo_ringan": []
+  },
+  {
+    "job_id": "r000450_v01",
+    "case_name": "short_history_1",
+    "case_description": "Awal diskusi dengan tepat 1 pesan sebelumnya. Jangan menambah riwayat fiktif atau mengisi sampai 12.",
+    "source": {
+      "source_row": 450,
+      "source_group": "946fc2c76d2e0c9499ca",
+      "teks_chat": "aku membela diri karena namaku diseret tanpa bukti yang valid",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 2,
+    "pesan_typo_ringan": []
+  },
+  {
+    "job_id": "r003660_v01",
+    "case_name": "short_history_2",
+    "case_description": "Awal diskusi dengan tepat 2 pesan sebelumnya. Gunakan hanya petunjuk yang tersedia.",
+    "source": {
+      "source_row": 3660,
+      "source_group": "40fdd0d487b462022352",
+      "teks_chat": "gw hitman? lucu, padahal gw spy yang semalam jagain korban kalian",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 3,
+    "pesan_typo_ringan": []
+  },
+  {
+    "job_id": "r002287_v01",
+    "case_name": "short_history_3",
+    "case_description": "Awal diskusi dengan tepat 3 pesan sebelumnya. Acuan tidak harus berada di pesan terakhir.",
+    "source": {
+      "source_row": 2287,
+      "source_group": "3bcd36b1ba2cdc3c5c35",
+      "teks_chat": "sumpah aku Spy, jangan asal vote cuma karena aku beda pendapat",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 4,
+    "pesan_typo_ringan": []
+  },
+  {
+    "job_id": "r003378_v01",
+    "case_name": "stance_change",
+    "case_description": "Pengirim pesan sekarang sebelumnya menuduh atau membela seorang pemain di konteks, lalu berubah sikap terhadap pemain yang sama. Anotasi mengikuti sikap terbaru.",
+    "source": {
+      "source_row": 3378,
+      "source_group": "18ea75af9291e96916ae",
+      "teks_chat": "aku tidak punya alasan untuk menyandera siapa pun, periksa lagi alibinya",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 9,
+    "pesan_typo_ringan": []
+  },
+  {
+    "job_id": "r000629_v01",
+    "case_name": "witness",
+    "case_description": "Nama saksi/korban disebut, tetapi bukan target serangan atau pembelaan.",
+    "source": {
+      "source_row": 629,
+      "source_group": "3e48f3a651256934a3e3",
+      "teks_chat": "lu boleh curiga, tapi jangan pakai spekulasi itu sebagai alasan eksekusi",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 8,
+    "pesan_typo_ringan": []
+  },
+  {
+    "job_id": "r002622_v00",
+    "case_name": "original",
+    "case_description": "Satu pesan tanpa riwayat. Pertahankan teks dan intent sumber persis; jangan mengarang riwayat asli.",
+    "source": {
+      "source_row": 2622,
+      "source_group": "fc50b3703067c144e6e9",
+      "teks_chat": "sumpah kaget pas layar berubah ke fase pagi",
+      "label_intent": "neutral"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 1,
+    "pesan_typo_ringan": []
+  },
+  {
+    "job_id": "r003679_v01",
+    "case_name": "agreement",
+    "case_description": "Pesan sekarang menyetujui atau membantah pesan pemain lain di konteks tanpa menyebut ulang nama target. Setuju dengan tuduhan = offend pemain yang dituduh; membantah tuduhan atau setuju dengan pembelaan = defend. Identitas target diwarisi dari pesan yang ditanggapi.",
+    "source": {
+      "source_row": 3679,
+      "source_group": "b98834d8c24f47a0fb7c",
+      "teks_chat": "Dia lagi nyamar jadi Spy, padahal role asliku Civilian",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 10,
+    "pesan_typo_ringan": []
+  },
+  {
+    "job_id": "r002834_v01",
+    "case_name": "first_message",
+    "case_description": "Pesan pertama permainan, tanpa konteks. Neutral boleh menyapa/membuka diskusi; offend/defend menyebut target jelas. Jangan mengarang kejadian malam, voting, atau percakapan yang belum terjadi.",
+    "source": {
+      "source_row": 2834,
+      "source_group": "60db4e945ea6bd0d6688",
+      "teks_chat": "gw nggak punya banyak info, tapi D paling sus di chat",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 1,
+    "pesan_typo_ringan": []
+  }
+]

@@ -1,0 +1,137 @@
+{
+  "job": {
+    "job_id": "r000437_v01",
+    "case_name": "topic_switch",
+    "case_description": "Pembahasan berganti pemain; pesan sekarang mengikuti topik baru, bukan otomatis target lama.",
+    "source": {
+      "source_row": 437,
+      "source_group": "93372ec09680e7f3ebec",
+      "teks_chat": "sumpah aku bukan pelaku, posisi vote-ku dari tadi juga jelas",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 8,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "topic_switch",
+    "participants": [
+      "Putra",
+      "Qori",
+      "Rizal",
+      "Sela",
+      "Tomi"
+    ],
+    "focus_player": "",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Putra",
+        "teks_chat": "Aku curiga Rizal dari cara dia ngomong tadi",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Rizal",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Qori",
+        "teks_chat": "Hmm bisa jadi sih, tapi aku belum yakin",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Rizal",
+        "teks_chat": "Aku tidak melakukan apa-apa, kalian salah sasaran",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Rizal",
+            "relasi": "defend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Sela",
+        "teks_chat": "Eh tunggu, aku mau bahas soal pola vote kemarin",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Tomi",
+        "teks_chat": "Iya benar, kemarin Putra pindah vote di detik terakhir, itu aneh",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Putra",
+            "relasi": "offend",
+            "bukti_pesan": [
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Sela",
+        "teks_chat": "Nah itu yang aku maksud, perpindahan vote-nya mencurigakan",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Putra",
+            "relasi": "offend",
+            "bukti_pesan": [
+              5,
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Qori",
+        "teks_chat": "Wah iya ya, kenapa Putra pindah vote mendadak begitu?",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Putra",
+            "relasi": "offend",
+            "bukti_pesan": [
+              5,
+              7
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Putra",
+        "teks_chat": "Aku pindah vote karena ada info baru, bukan tanpa alasan",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Putra",
+            "relasi": "defend",
+            "bukti_pesan": [
+              5,
+              8
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "validation_status": "local_structure_only",
+  "human_review_status": "pending",
+  "generation_settings": {
+    "provider": "aws_bedrock",
+    "model": "us.anthropic.claude-opus-4-6-v1",
+    "thinking": "not_requested"
+  }
+}

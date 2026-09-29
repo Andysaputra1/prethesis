@@ -1,0 +1,115 @@
+{
+  "job": {
+    "job_id": "r003790_v01",
+    "case_name": "neutral_names",
+    "case_description": "Neutral menyebut nama tanpa menuduh/membela; target kosong.",
+    "source": {
+      "source_row": 3790,
+      "source_group": "eec437abc62c4acb2064",
+      "teks_chat": "Kalau kalian tetap vote aku, silakan, tapi gw Stalker dan info soal Bimo valid",
+      "label_intent": "neutral"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 13,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "neutral_names",
+    "participants": [
+      "Hilda",
+      "Roni",
+      "Sandi",
+      "Tuti"
+    ],
+    "focus_player": "",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Hilda",
+        "teks_chat": "siapa yang berubah tuduhan dari ronde sebelumnya?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Roni",
+        "teks_chat": "Sandi sempat nuduh Tuti, lalu ganti ke aku",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Sandi",
+        "teks_chat": "aku punya alasan untuk keduanya",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Tuti",
+        "teks_chat": "aku tidak masalah, asal ada dasar yang jelas",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Hilda",
+        "teks_chat": "kita catat semua perubahan tuduhan untuk referensi",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Roni",
+        "teks_chat": "baik, aku juga ingat Hilda sempat ragu-ragu di ronde dua",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Sandi",
+        "teks_chat": "iya, banyak yang berubah pikiran di tengah jalan",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Tuti",
+        "teks_chat": "itu wajar kalau dapat informasi baru",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Hilda",
+        "teks_chat": "yang penting ada alasan yang bisa dijelaskan",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Roni",
+        "teks_chat": "setuju, perubahan tanpa alasan yang mencurigakan",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Sandi",
+        "teks_chat": "kita rekap semua perubahan vote dari awal saja",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Tuti",
+        "teks_chat": "oke, aku catat dari ronde pertama",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Hilda",
+        "teks_chat": "Roni, Sandi, dan Tuti semua pernah ganti tuduhan, kita bahas satu per satu",
+        "label_intent": "neutral",
+        "target": []
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "validation_status": "local_structure_only",
+  "human_review_status": "pending",
+  "generation_settings": {
+    "provider": "aws_bedrock",
+    "model": "global.anthropic.claude-sonnet-4-6",
+    "thinking": "not_requested"
+  }
+}

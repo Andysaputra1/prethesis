@@ -1,0 +1,163 @@
+{
+  "job": {
+    "job_id": "r000970_v01",
+    "case_name": "ambiguous",
+    "case_description": "Beberapa acuan sama-sama mungkin; target tidak_diketahui, bukan nama terakhir.",
+    "source": {
+      "source_row": 970,
+      "source_group": "2fc23a5b01400f7c31c4",
+      "teks_chat": "kalau gw hitman, harusnya dari tadi sudah ada yang kena gag order",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 13,
+    "pesan_typo_ringan": [
+      2
+    ]
+  },
+  "session": {
+    "case_name": "ambiguous",
+    "participants": [
+      "Fani",
+      "Geri",
+      "Hana",
+      "Iko"
+    ],
+    "focus_player": "",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Fani",
+        "teks_chat": "ada yang terlalu cepat bela diri tadi",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "tidak_diketahui",
+            "relasi": "offend",
+            "bukti_pesan": []
+          }
+        ]
+      },
+      {
+        "pengirim": "Geri",
+        "teks_chat": "siapa yg kamu maksud?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Fani",
+        "teks_chat": "yang langsung angkat bicara sebelum ada tuduhan",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "tidak_diketahui",
+            "relasi": "offend",
+            "bukti_pesan": []
+          }
+        ]
+      },
+      {
+        "pengirim": "Hana",
+        "teks_chat": "aku tidak merasa melakukan itu",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Hana",
+            "relasi": "defend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Iko",
+        "teks_chat": "aku juga tidak",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Iko",
+            "relasi": "defend",
+            "bukti_pesan": [
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Geri",
+        "teks_chat": "mungkin Fani salah ingat",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "tidak_diketahui",
+            "relasi": "defend",
+            "bukti_pesan": []
+          }
+        ]
+      },
+      {
+        "pengirim": "Fani",
+        "teks_chat": "aku tidak salah ingat, aku perhatikan dari tadi",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "tidak_diketahui",
+            "relasi": "offend",
+            "bukti_pesan": []
+          }
+        ]
+      },
+      {
+        "pengirim": "Hana",
+        "teks_chat": "kalau memang ada, sebutkan siapa orangnya",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Iko",
+        "teks_chat": "iya, jangan hanya klaim tanpa nama",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Geri",
+        "teks_chat": "aku juga ingin tahu siapa yang dimaksud",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Fani",
+        "teks_chat": "aku masih mengamati, belum mau sebut nama sekarang",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Hana",
+        "teks_chat": "kalau tidak mau sebut, kita tidak bisa diskusi lebih lanjut",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Iko",
+        "teks_chat": "aku tidak tahu siapa yang dimaksud Fani, tapi aku tidak melakukan pembelaan terlalu cepat",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "tidak_diketahui",
+            "relasi": "defend",
+            "bukti_pesan": []
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "validation_status": "local_structure_only",
+  "human_review_status": "pending",
+  "generation_settings": {
+    "provider": "aws_bedrock",
+    "model": "global.anthropic.claude-sonnet-4-6",
+    "thinking": "not_requested"
+  }
+}

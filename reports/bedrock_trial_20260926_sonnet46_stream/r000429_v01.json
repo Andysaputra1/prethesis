@@ -1,0 +1,158 @@
+{
+  "job": {
+    "job_id": "r000429_v01",
+    "case_name": "reference_middle",
+    "case_description": "Tepat 12 konteks. Penyebutan target eksplisit di pesan konteks ke-6 atau ke-7.",
+    "source": {
+      "source_row": 429,
+      "source_group": "add451fdd1213834aafa",
+      "teks_chat": "dia nuduh aku buat ngalihin perhatian, jangan langsung kemakan omongannya",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 13,
+    "pesan_typo_ringan": [
+      5
+    ]
+  },
+  "session": {
+    "case_name": "reference_middle",
+    "participants": [
+      "Rani",
+      "Seno",
+      "Tara",
+      "Udi"
+    ],
+    "focus_player": "Seno",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Rani",
+        "teks_chat": "diskusi dimulai, ada yang mau buka informasi?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Tara",
+        "teks_chat": "aku tidak punya info khusus malam ini",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Udi",
+        "teks_chat": "sama, aku juga tidak ada klaim",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Rani",
+        "teks_chat": "baik, kita lihat dari pola diskusi saja",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Tara",
+        "teks_chat": "belum ada yang terlalu menonjol sejauh ini",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Udi",
+        "teks_chat": "Seno berubah tuduhan dari ronde sebelumnya, itu mencurigakan",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Seno",
+            "relasi": "offend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Rani",
+        "teks_chat": "iya, aku juga perhatikan itu",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Seno",
+            "relasi": "offend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Tara",
+        "teks_chat": "mungkin dia dapat informasi baru",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Seno",
+            "relasi": "defend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Udi",
+        "teks_chat": "informasi apa? tidak ada yang tahu",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Seno",
+            "relasi": "offend",
+            "bukti_pesan": [
+              6,
+              8
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Rani",
+        "teks_chat": "kita tanya langsung ke dia",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Tara",
+        "teks_chat": "setuju, beri dia kesempatan jelaskan",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Udi",
+        "teks_chat": "aku tunggu penjelasannya",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Seno",
+        "teks_chat": "aku tidak asal ganti tuduhan, ada alasan yang bisa aku jelaskan",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Seno",
+            "relasi": "defend",
+            "bukti_pesan": [
+              13
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "validation_status": "local_structure_only",
+  "human_review_status": "pending",
+  "generation_settings": {
+    "provider": "aws_bedrock",
+    "model": "global.anthropic.claude-sonnet-4-6",
+    "thinking": "not_requested"
+  }
+}

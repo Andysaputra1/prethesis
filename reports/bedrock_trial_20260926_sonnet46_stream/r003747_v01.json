@@ -1,0 +1,131 @@
+{
+  "job": {
+    "job_id": "r003747_v01",
+    "case_name": "reference_end",
+    "case_description": "Tepat 12 konteks. Penyebutan target eksplisit di pesan konteks terakhir.",
+    "source": {
+      "source_row": 3747,
+      "source_group": "cd7502384dde3218de51",
+      "teks_chat": "mereka mungkin percaya aku hitman, padahal aku spy yang gagal baca situasi",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 13,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "reference_end",
+    "participants": [
+      "Wulan",
+      "Arif",
+      "Citra",
+      "Bimo"
+    ],
+    "focus_player": "Arif",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Wulan",
+        "teks_chat": "ada yang mau klaim role sekarang?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Citra",
+        "teks_chat": "aku Civilian biasa, tidak punya informasi khusus",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Bimo",
+        "teks_chat": "aku juga tidak ada klaim khusus",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Wulan",
+        "teks_chat": "baik, kita lihat siapa yang paling mencurigakan",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Citra",
+        "teks_chat": "belum ada yang terlalu menonjol menurutku",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Bimo",
+        "teks_chat": "iya, diskusi masih awal",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Wulan",
+        "teks_chat": "kita tunggu saja perkembangan",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Citra",
+        "teks_chat": "ada yang perlu dibahas lebih lanjut?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Bimo",
+        "teks_chat": "belum ada dari aku",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Wulan",
+        "teks_chat": "aku juga belum punya info baru",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Citra",
+        "teks_chat": "kita tunggu yang lain bicara",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Bimo",
+        "teks_chat": "Arif klaim Spy tapi belum ada bukti yang mendukung klaimnya",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Arif",
+            "relasi": "offend",
+            "bukti_pesan": [
+              12
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Arif",
+        "teks_chat": "klaim aku memang belum bisa dibuktikan sekarang, tapi bukan berarti aku bohong",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Arif",
+            "relasi": "defend",
+            "bukti_pesan": [
+              13
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "validation_status": "local_structure_only",
+  "human_review_status": "pending",
+  "generation_settings": {
+    "provider": "aws_bedrock",
+    "model": "global.anthropic.claude-sonnet-4-6",
+    "thinking": "not_requested"
+  }
+}

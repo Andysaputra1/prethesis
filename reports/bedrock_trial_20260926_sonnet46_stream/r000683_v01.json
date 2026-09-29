@@ -1,0 +1,235 @@
+{
+  "job": {
+    "job_id": "r000683_v01",
+    "case_name": "memory_outside_window",
+    "case_description": "14-16 pesan total. Nama target hanya disebut sebelum 12 konteks terakhir. Dalam jendela, ada pesan yang meneruskan acuan dengan jelas dan menyimpan anotasi target berdasarkan pesan lama. Pesan sekarang merujuk target sama. Nama target tidak muncul dalam teks 12 konteks terakhir atau pesan sekarang; target diketahui lewat memori.",
+    "source": {
+      "source_row": 683,
+      "source_group": "d311c1c308a7c88a7ba8",
+      "teks_chat": "kalau aku pelaku, harusnya aku tidak akan minta semua orang cek alibi malam",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 14,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "memory_outside_window",
+    "participants": [
+      "Andi",
+      "Bela",
+      "Ciko",
+      "Doni"
+    ],
+    "focus_player": "Andi",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Bela",
+        "teks_chat": "Andi pindah vote terus dari ronde ke ronde",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Andi",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Ciko",
+        "teks_chat": "iya, pola votenya tidak jelas",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Andi",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Doni",
+        "teks_chat": "kita tanya alasannya dulu",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Bela",
+        "teks_chat": "sudah ditanya tapi tidak ada jawaban yang memuaskan",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Andi",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1,
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Ciko",
+        "teks_chat": "aku tetap curiga dengan pola votenya",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Andi",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1,
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Doni",
+        "teks_chat": "beri dia kesempatan jelaskan dulu",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Andi",
+            "relasi": "defend",
+            "bukti_pesan": [
+              4,
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Bela",
+        "teks_chat": "sudah terlalu lama menunggu penjelasan",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Andi",
+            "relasi": "offend",
+            "bukti_pesan": [
+              4,
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Ciko",
+        "teks_chat": "aku setuju, kita tidak bisa terus menunggu",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Andi",
+            "relasi": "offend",
+            "bukti_pesan": [
+              7
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Doni",
+        "teks_chat": "oke, aku mulai ragu juga sekarang",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Andi",
+            "relasi": "offend",
+            "bukti_pesan": [
+              7,
+              8
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Bela",
+        "teks_chat": "pola vote yang tidak konsisten itu tanda yang jelas",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Andi",
+            "relasi": "offend",
+            "bukti_pesan": [
+              8,
+              9
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Ciko",
+        "teks_chat": "aku setuju, sudah cukup bukti",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Andi",
+            "relasi": "offend",
+            "bukti_pesan": [
+              9,
+              10
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Doni",
+        "teks_chat": "dia memang tidak bisa jelaskan pola votenya dari tadi",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Andi",
+            "relasi": "offend",
+            "bukti_pesan": [
+              10,
+              11
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Bela",
+        "teks_chat": "aku masih ingat dari awal, pola itu tidak wajar",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Andi",
+            "relasi": "offend",
+            "bukti_pesan": [
+              11,
+              12
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Ciko",
+        "teks_chat": "aku tidak setuju dia di-vote, pola vote bisa berubah karena informasi baru",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Andi",
+            "relasi": "defend",
+            "bukti_pesan": [
+              12,
+              13
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "validation_status": "local_structure_only",
+  "human_review_status": "pending",
+  "generation_settings": {
+    "provider": "aws_bedrock",
+    "model": "global.anthropic.claude-sonnet-4-6",
+    "thinking": "not_requested"
+  }
+}

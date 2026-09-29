@@ -1,0 +1,198 @@
+{
+  "job": {
+    "job_id": "r002305_v01",
+    "case_name": "reference_start",
+    "case_description": "Tepat 12 konteks. Penyebutan target eksplisit di pesan konteks pertama; pesan sekarang memakai kata ganti.",
+    "source": {
+      "source_row": 2305,
+      "source_group": "b223be79c5656a4902cb",
+      "teks_chat": "kalau klaimku bohong, kenapa harus percaya klaim dia yang lebih cepat?",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 13,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "reference_start",
+    "participants": [
+      "Bayu",
+      "Citra",
+      "Doni",
+      "Elsa",
+      "Fajar",
+      "Hana"
+    ],
+    "focus_player": "Doni",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Fajar",
+        "teks_chat": "Aku curiga Doni itu Hitman, klaim Stalker-nya aneh banget",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Doni",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Bayu",
+        "teks_chat": "Memang aneh ya, hasil Peek-nya tidak masuk akal",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Doni",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1,
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Citra",
+        "teks_chat": "Tapi kalian sudah dengar penjelasannya belum sampai selesai?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Elsa",
+        "teks_chat": "Aku dengar kok, tetap tidak meyakinkan menurutku",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Doni",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1,
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Hana",
+        "teks_chat": "Jangan buru-buru dong, kita diskusi dulu yang benar",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Doni",
+        "teks_chat": "Aku benar-benar Stalker, hasil Peek-ku ke Elsa itu bersih",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Doni",
+            "relasi": "defend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Fajar",
+        "teks_chat": "Kalau memang Stalker kenapa baru ngomong sekarang?",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Doni",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1,
+              6,
+              7
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Bayu",
+        "teks_chat": "Iya betul, timing-nya mencurigakan",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Doni",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1,
+              7,
+              8
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Citra",
+        "teks_chat": "Hmm aku masih ragu sih, belum yakin dia pelaku",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Elsa",
+        "teks_chat": "Kalau dia bohong soal Peek ke aku, berarti dia bukan Stalker kan",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Doni",
+            "relasi": "offend",
+            "bukti_pesan": [
+              6,
+              10
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Hana",
+        "teks_chat": "Oke tapi siapa lagi yang mencurigakan selain dia?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Fajar",
+        "teks_chat": "Untuk sekarang dia yang paling mencurigakan, vote dia aja",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Doni",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1,
+              12
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Doni",
+        "teks_chat": "Kalian salah, aku sudah buktikan dari awal kalau aku bukan pelakunya",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Doni",
+            "relasi": "defend",
+            "bukti_pesan": [
+              6,
+              13
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "validation_status": "local_structure_only",
+  "human_review_status": "pending",
+  "generation_settings": {
+    "provider": "aws_bedrock",
+    "model": "us.anthropic.claude-opus-4-6-v1",
+    "thinking": "not_requested"
+  }
+}

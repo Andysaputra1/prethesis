@@ -1,0 +1,59 @@
+{
+  "job": {
+    "job_id": "r001307_v01",
+    "case_name": "explicit",
+    "case_description": "Target eksplisit di pesan sekarang. Contoh: Aku yakin bukan Andy = defend Andy.",
+    "source": {
+      "source_row": 1307,
+      "source_group": "b5a1534f64f79abc904c",
+      "teks_chat": "siapa yang paling mencurigakan setelah Gag Order tadi?",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 2,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "explicit",
+    "participants": [
+      "Farhan",
+      "Gilang",
+      "Nadia",
+      "Reza",
+      "Sinta"
+    ],
+    "focus_player": "",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Farhan",
+        "teks_chat": "Gilang klaim Stalker tadi, katanya dia Peek ke Reza dan hasilnya bersih",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Nadia",
+        "teks_chat": "Aku tidak percaya Gilang, klaim Stalker-nya terlalu pas waktu dia hampir di-vote",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Gilang",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1,
+              2
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "validation_status": "local_structure_only",
+  "human_review_status": "pending",
+  "generation_settings": {
+    "provider": "aws_bedrock",
+    "model": "us.anthropic.claude-opus-4-6-v1",
+    "thinking": "not_requested"
+  }
+}

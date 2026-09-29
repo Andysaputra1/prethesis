@@ -1,0 +1,159 @@
+{
+  "job": {
+    "job_id": "r003378_v01",
+    "case_name": "stance_change",
+    "case_description": "Pengirim pesan sekarang sebelumnya menuduh atau membela seorang pemain di konteks, lalu berubah sikap terhadap pemain yang sama. Anotasi mengikuti sikap terbaru.",
+    "source": {
+      "source_row": 3378,
+      "source_group": "18ea75af9291e96916ae",
+      "teks_chat": "aku tidak punya alasan untuk menyandera siapa pun, periksa lagi alibinya",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 9,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "stance_change",
+    "participants": [
+      "Aldi",
+      "Bela",
+      "Ciko",
+      "Dara"
+    ],
+    "focus_player": "Bela",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Aldi",
+        "teks_chat": "Bela dari tadi tidak bicara, itu mencurigakan",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Bela",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Ciko",
+        "teks_chat": "iya, pemain pasif perlu dipertanyakan",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Bela",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Dara",
+        "teks_chat": "mungkin dia sedang mengamati saja",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Bela",
+            "relasi": "defend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Aldi",
+        "teks_chat": "mengamati atau menyembunyikan sesuatu?",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Bela",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1,
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Ciko",
+        "teks_chat": "aku tetap curiga",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Bela",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1,
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Dara",
+        "teks_chat": "kita tanya langsung ke dia dulu",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Bela",
+        "teks_chat": "aku memang mengamati, itu cara aku bermain",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Bela",
+            "relasi": "defend",
+            "bukti_pesan": [
+              7
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Aldi",
+        "teks_chat": "oke, aku terima penjelasan itu, Bela tidak mencurigakan",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Bela",
+            "relasi": "defend",
+            "bukti_pesan": [
+              7,
+              8
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Ciko",
+        "teks_chat": "aku masih ragu, tapi aku tidak akan vote dia sekarang",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Bela",
+            "relasi": "defend",
+            "bukti_pesan": [
+              7,
+              8
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "validation_status": "local_structure_only",
+  "human_review_status": "pending",
+  "generation_settings": {
+    "provider": "aws_bedrock",
+    "model": "global.anthropic.claude-sonnet-4-6",
+    "thinking": "not_requested"
+  }
+}

@@ -1,0 +1,135 @@
+{
+  "job": {
+    "job_id": "r000737_v01",
+    "case_name": "interruption",
+    "case_description": "Pembahasan target disela obrolan waktu/ronde; kaitan kembali ke target masih jelas.",
+    "source": {
+      "source_row": 737,
+      "source_group": "dc31a89d47844dea66c0",
+      "teks_chat": "kalau kalian eksekusi aku, kalian kehilangan Spy yang bisa lindungi target malam ini",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 8,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "interruption",
+    "participants": [
+      "Nana",
+      "Oki",
+      "Pita",
+      "Qori"
+    ],
+    "focus_player": "Oki",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Nana",
+        "teks_chat": "Oki klaim Stalker tapi hasilnya tidak konsisten",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Oki",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Pita",
+        "teks_chat": "iya, Peek yang dia klaim tidak masuk akal",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Oki",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Qori",
+        "teks_chat": "sebentar, timer hampir habis ya?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Nana",
+        "teks_chat": "masih ada waktu, lanjut bahas Oki dulu",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Pita",
+        "teks_chat": "kembali ke tadi, klaim Stalker Oki perlu dipertanyakan",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Oki",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1,
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Qori",
+        "teks_chat": "aku setuju, hasilnya tidak masuk akal",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Oki",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1,
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Oki",
+        "teks_chat": "klaim aku valid, Peek itu memang yang aku lihat",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Oki",
+            "relasi": "defend",
+            "bukti_pesan": [
+              7
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Nana",
+        "teks_chat": "kalau valid, kenapa hasilnya tidak konsisten dengan situasi malam itu?",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Oki",
+            "relasi": "defend",
+            "bukti_pesan": [
+              7
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "validation_status": "local_structure_only",
+  "human_review_status": "pending",
+  "generation_settings": {
+    "provider": "aws_bedrock",
+    "model": "global.anthropic.claude-sonnet-4-6",
+    "thinking": "not_requested"
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "job": {
+    "job_id": "r004860_v01",
+    "case_name": "first_message_self",
+    "case_description": "Pesan pertama tanpa konteks membela atau menuduh diri sendiri. Target = pengirim; tidak perlu riwayat untuk memahami aku.",
+    "source": {
+      "source_row": 4860,
+      "source_group": "8aa78b4e18c508539141",
+      "teks_chat": "aku sudah cek alurnya dari awal, tidak ada yang lebih mencurigakan daripada Maya",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 1,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "first_message_self",
+    "participants": [
+      "Reza"
+    ],
+    "focus_player": "",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Reza",
+        "teks_chat": "chat aku tadi terlambat masuk, jadi kelihatan seperti aku tidak respon",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Reza",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "validation_status": "local_structure_only",
+  "human_review_status": "pending",
+  "generation_settings": {
+    "provider": "aws_bedrock",
+    "model": "global.anthropic.claude-sonnet-4-6",
+    "thinking": "not_requested"
+  }
+}

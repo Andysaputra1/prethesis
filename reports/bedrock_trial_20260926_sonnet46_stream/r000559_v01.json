@@ -1,0 +1,166 @@
+{
+  "job": {
+    "job_id": "r000559_v01",
+    "case_name": "self",
+    "case_description": "Defend diri sendiri atau offend/vote diri sendiri sesuai label. Target = pengirim.",
+    "source": {
+      "source_row": 559,
+      "source_group": "1f3e283be1c996fcc011",
+      "teks_chat": "kalau mau vote aku, minimal jelaskan bukti konkretnya",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 10,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "self",
+    "participants": [
+      "Dara",
+      "Heru",
+      "Sinta",
+      "Bagas"
+    ],
+    "focus_player": "Dara",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Heru",
+        "teks_chat": "Dara tadi bilang tidak tahu apa-apa, tapi sekarang tiba-tiba punya informasi",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Dara",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Sinta",
+        "teks_chat": "iya, ucapannya bertentangan",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Dara",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Bagas",
+        "teks_chat": "mungkin dia baru ingat sesuatu?",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Dara",
+            "relasi": "defend",
+            "bukti_pesan": [
+              1,
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Heru",
+        "teks_chat": "baru ingat atau sengaja sembunyikan dari tadi?",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Dara",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1,
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Sinta",
+        "teks_chat": "aku juga curiga, pola seperti ini tidak wajar",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Dara",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1,
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Bagas",
+        "teks_chat": "kita dengarkan penjelasannya dulu",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Heru",
+        "teks_chat": "baik, tapi aku tetap curiga",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Dara",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1,
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Sinta",
+        "teks_chat": "aku juga masih ragu",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Dara",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1,
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Bagas",
+        "teks_chat": "beri dia kesempatan bicara dulu",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Dara",
+        "teks_chat": "aku tidak berbohong, informasi itu baru aku dapat tadi dan langsung aku sampaikan",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Dara",
+            "relasi": "defend",
+            "bukti_pesan": [
+              10
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "validation_status": "local_structure_only",
+  "human_review_status": "pending",
+  "generation_settings": {
+    "provider": "aws_bedrock",
+    "model": "global.anthropic.claude-sonnet-4-6",
+    "thinking": "not_requested"
+  }
+}

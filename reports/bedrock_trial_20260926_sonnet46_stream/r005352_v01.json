@@ -1,0 +1,54 @@
+{
+  "job": {
+    "job_id": "r005352_v01",
+    "case_name": "neutral_status",
+    "case_description": "Klaim status/role atau pertanyaan informasi saja tanpa pembelaan/serangan; target kosong.",
+    "source": {
+      "source_row": 5352,
+      "source_group": "fcca1a5f019454ded048",
+      "teks_chat": "oh, jadi chat memang dikunci saat malam",
+      "label_intent": "neutral"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 3,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "neutral_status",
+    "participants": [
+      "Dimas",
+      "Rara",
+      "Joni"
+    ],
+    "focus_player": "",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Dimas",
+        "teks_chat": "chat aku tadi terlambat masuk karena koneksi",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Rara",
+        "teks_chat": "aku juga sempat tidak bisa kirim pesan tadi",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Joni",
+        "teks_chat": "aku Guard, tidak ada klaim khusus selain itu",
+        "label_intent": "neutral",
+        "target": []
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "validation_status": "local_structure_only",
+  "human_review_status": "pending",
+  "generation_settings": {
+    "provider": "aws_bedrock",
+    "model": "global.anthropic.claude-sonnet-4-6",
+    "thinking": "not_requested"
+  }
+}

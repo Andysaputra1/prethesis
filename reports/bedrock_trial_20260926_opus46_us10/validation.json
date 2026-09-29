@@ -1,0 +1,41 @@
+{
+  "requested": 10,
+  "accepted_local_structure": 6,
+  "rejected": [
+    {
+      "job_id": "r002184_v01",
+      "reason": "Posisi penyebutan dan target belum sesuai kasus."
+    },
+    {
+      "job_id": "r003747_v01",
+      "reason": "Posisi penyebutan dan target belum sesuai kasus."
+    },
+    {
+      "job_id": "r002823_v01",
+      "reason": "Tidak ada jejak identitas pada teks atau memori yang dirujuk."
+    },
+    {
+      "job_id": "r000522_v01",
+      "reason": "Kasus luar jendela harus kehilangan acuan teks dan memori target lama."
+    }
+  ],
+  "model_verification": "not_run",
+  "human_review": "pending",
+  "generation_requests": 1,
+  "cost": {
+    "usd_before_tax": "0.18708",
+    "usage": {
+      "inputTokens": 5516,
+      "outputTokens": 6380,
+      "serverToolUsage": {},
+      "totalTokens": 11896
+    },
+    "price_per_million": {
+      "input": "5",
+      "output": "25"
+    },
+    "price_source": "https://platform.claude.com/docs/en/about-claude/pricing",
+    "basis": "Public Global Standard token rates; excludes tax/discounts; AWS bill is authoritative."
+  },
+  "sample_purpose": "case coverage; not representative of production cost"
+}

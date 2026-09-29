@@ -1,0 +1,56 @@
+{
+  "job": {
+    "job_id": "r005123_v01",
+    "case_name": "quotation",
+    "case_description": "Ada tuduhan yang dikutip; bedakan sikap pengirim dari ucapan orang yang dikutip.",
+    "source": {
+      "source_row": 5123,
+      "source_group": "f4c8edfdd7d77c480c9d",
+      "teks_chat": "gw Spy, target guard-ku selamat dari serangan malam, tapi gue belum tahu siapa yang nyerang",
+      "label_intent": "neutral"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 2,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "quotation",
+    "participants": [
+      "Lia",
+      "Beni",
+      "Ciko"
+    ],
+    "focus_player": "",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Beni",
+        "teks_chat": "Ciko bilang tadi 'aku yakin Lia yang Hitman'",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Lia",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Lia",
+        "teks_chat": "Ciko memang bilang begitu, tapi aku tidak setuju dengan ucapannya itu",
+        "label_intent": "neutral",
+        "target": []
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "validation_status": "local_structure_only",
+  "human_review_status": "pending",
+  "generation_settings": {
+    "provider": "aws_bedrock",
+    "model": "global.anthropic.claude-sonnet-4-6",
+    "thinking": "not_requested"
+  }
+}

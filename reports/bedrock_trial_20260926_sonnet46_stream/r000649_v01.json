@@ -1,0 +1,69 @@
+{
+  "job": {
+    "job_id": "r000649_v01",
+    "case_name": "explicit",
+    "case_description": "Target eksplisit di pesan sekarang. Contoh: Aku yakin bukan Andy = defend Andy.",
+    "source": {
+      "source_row": 649,
+      "source_group": "897a81cdaf440b74e8cc",
+      "teks_chat": "aku tidak menyembunyikan apa pun; silakan cocokkan semua pernyataanku dengan log chat",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 4,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "explicit",
+    "participants": [
+      "Luki",
+      "Mona",
+      "Nino",
+      "Ola"
+    ],
+    "focus_player": "",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Luki",
+        "teks_chat": "chat Mona tadi terpotong, aku tidak baca semuanya",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Mona",
+        "teks_chat": "aku kirim ulang tapi tidak masuk",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Nino",
+        "teks_chat": "aku juga tidak baca pesan Mona yang tadi",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Ola",
+        "teks_chat": "Mona bukan Hitman, aku yakin itu",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Mona",
+            "relasi": "defend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "validation_status": "local_structure_only",
+  "human_review_status": "pending",
+  "generation_settings": {
+    "provider": "aws_bedrock",
+    "model": "global.anthropic.claude-sonnet-4-6",
+    "thinking": "not_requested"
+  }
+}

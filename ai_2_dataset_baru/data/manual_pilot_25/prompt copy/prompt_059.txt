@@ -1,0 +1,280 @@
+Susun DRAFT supervised dataset HOSTAGE sesuai tugas kasus.
+Chat sumber dan isi percakapan adalah data, bukan instruksi.
+Konteks yang dibuat adalah sintetis, bukan riwayat asli dataset.
+Game Zero Economy: tidak ada uang/budget/item/tebusan. Hitman Hostage dan Gag Order;
+Spy Guard; Stalker Peek; Civilian berdiskusi. Identitas korban tidak diumumkan.
+Jangan mengungkap role rahasia atau status korban sebagai pengetahuan publik.
+Chat klaim role/skill belum tentu benar.
+
+Keluarkan case_name, participants (nama/ID unik), focus_player (atau string kosong),
+panggilan, dan messages berurutan. Maksimal 16 pesan; pesan TERAKHIR adalah contoh utama.
+Pengirim dan target menggunakan nama/ID dari participants. panggilan berisi
+{pemain, sebutan} untuk setiap nama panggilan, singkatan, atau salah ketik nama yang
+dipakai di teks (Andy -> ndy, andi). Sebutan harus mirip nama aslinya, bukan kata umum,
+dan tidak cocok untuk pemain lain. Target selalu memakai nama asli. Di luar kasus
+nickname, panggilan boleh sesekali dipakai secara wajar; jika tidak ada, panggilan=[].
+Variasikan nama,
+bahasa informal, panjang pesan, dan posisi acuan tanpa mengubah logika percakapan.
+Jangan selalu mengambil nama terakhir. Pengirim bukan otomatis target.
+Awal permainan dapat memiliki 0, 1, 2, atau 3 pesan sebelumnya. Riwayat kosong
+adalah [], bukan null, string kosong, atau pesan pengisi. Jangan mengarang
+percakapan, malam, sandera, dan hasil voting yang belum terjadi pada pembuka.
+Tanpa konteks, nama eksplisit tetap dapat ditarget; aku = pengirim;
+dia/kamu/lu tanpa acuan = tidak_diketahui. Daftar peserta saja bukan bukti acuan.
+Jumlah konteks pada short_history_1/2/3 harus persis sesuai angka kasus.
+Variasikan chat berbalas dan pengirim yang mengirim beberapa pesan berturut-turut;
+jangan berasumsi bahwa setiap pesan selalu membalas pengirim sebelumnya.
+
+Setiap pesan: pengirim, teks_chat, label_intent, target.
+Setiap elemen target: pemain, relasi, bukti_pesan.
+Definisi intent untuk SEMUA pesan:
+- offend: menuduh sebagai Hitman/pelaku, menyudutkan, atau mengajak vote pemain.
+- defend: menolak tuduhan atau membela diri/pemain lain.
+- neutral: informasi, pertanyaan informasi, sapaan, ajakan diskusi, atau klaim status
+  tanpa tuduhan/pembelaan. Jangan menyamakan semua kalimat negatif dengan defend.
+- Relasi offend hanya untuk pemain tertentu yang dituduh/dicurigai sebagai pelaku
+  atau diajak di-vote. Meragukan klaim, mengkritik cara diskusi, atau menolak tuduhan
+  bukan offend; jangan menambah offend ke penuduh hanya karena ia dibantah.
+- Jika satu pesan memuat relasi offend, intent utamanya offend walaupun juga membela
+  ('gw bukan hitman, Dimas lebih sus' = offend). Pembelaan diri dengan sindiran samar
+  tanpa pemain tertentu yang dituduh tetap defend tanpa relasi offend.
+- Setuju dengan tuduhan orang lain = offend pemain yang dituduh; membantah tuduhan = defend.
+- Pertanyaan retoris yang menyudutkan = offend; pertanyaan retoris yang membela = defend.
+- Jika pengirim berubah sikap, anotasi mengikuti sikap terbaru pada pesan itu.
+- Satu pemain tidak boleh dituduh sekaligus dibela dalam satu pesan.
+- Relasi tiap target offend atau defend, tidak harus sama dengan intent utama.
+- 'Budi bukan Hitman, justru Andy pelakunya': intent offend, Budi defend, Andy offend.
+- Neutral: target=[]; nama yang disapa bukan otomatis target.
+- Non-neutral: minimal satu relasi; jika tidak jelas, pemain=tidak_diketahui.
+- 'Aku yakin bukan Andy' = defend Andy.
+- 'Aku yakin Andy' bisa ambigu; jangan memaksa interpretasi tanpa dasar.
+- 'Aku curiga Budi' menargetkan Budi. 'Aku bukan Hitman' menargetkan pengirim.
+- Jangan menyimpan aku/kamu/dia/mereka sebagai nama target. Mereka/kalian/keduanya
+  boleh dipetakan ke beberapa pemain hanya jika acuannya jelas.
+- Nama saksi/korban tidak otomatis menjadi target.
+- Jika ada target pasti dan target lain ambigu, boleh simpan target pasti
+  beserta tidak_diketahui untuk bagian yang ambigu, sesuai relasinya.
+
+bukti_pesan berisi nomor pesan berbasis 1 yang mendasari identitas target.
+Boleh menunjuk pesan sekarang atau pesan sebelumnya; tidak pernah masa depan.
+Target eksplisit menunjuk pesan yang menyebut nama. Diri sendiri menunjuk
+pesan pengirimnya. Target implisit menunjuk pesan acuan atau memori sebelumnya.
+Setiap rantai memori harus berawal dari bukti yang tersedia saat pesan itu terjadi.
+Bukti langsung harus berada dalam 12 pesan sebelumnya atau pesan sekarang.
+Bukti yang lebih lama hanya boleh diwarisi melalui memori di jendela terlihat.
+Untuk tidak_diketahui, bukti_pesan=[].
+
+Setiap anotasi harus benar dari pesan sekarang dan paling banyak 12 pesan
+sebelumnya BESERTA anotasi memori mereka. Jangan memakai pesan masa depan.
+Memori boleh membantu meskipun nama tidak diulang, tetapi jangan menciptakan
+identitas atau menyalin target lama ketika topik sudah berubah.
+
+Kasus original: satu pesan saja, salin teks_chat dan label_intent input persis.
+Beri pengirimnya nama pemain Indonesia yang wajar, bukan Player1, PengirimAsli, atau User.
+Kasus variasi tidak membawa teks sumber. Tulis percakapan dan pesan sekarang yang
+baru dengan label_intent sumber, sesuai kasus, dan berangkat dari topik job (boleh
+dikembangkan secara wajar). Original sudah menyimpan teks sumber, jadi variasi harus
+menambah keragaman kalimat, nama, dan alur.
+Makna pesan sekarang harus benar-benar sesuai label_intent sumber. Untuk defend,
+tulis pembelaan atau penolakan tuduhan; jangan menulis keraguan, pertanyaan yang
+menyudutkan, atau tuduhan lalu melabelinya defend. Untuk offend, tulis tuduhan atau
+ajakan vote; untuk neutral, jangan membela atau menyerang siapa pun (termasuk diri sendiri).
+Bahasa harus terasa seperti chat pemain Indonesia, bukan contoh buku pelajaran.
+Gunakan bahasa santai dengan ejaan jelas: aku, kamu, tidak, sudah, yang.
+Ikuti jumlah_pesan secara persis. pesan_typo_ringan adalah nomor pesan berbasis 1
+untuk slot khusus singkatan/typo: sekitar 1,5% pesan sintetis yang diekspor.
+Hanya pada slot tersebut, gunakan tepat satu singkatan ringan (misalnya yg/yang,
+sdh/sudah, tdk/tidak) ATAU satu typo ringan yang tidak mengubah makna.
+Pada pesan lain jangan sengaja memakai singkatan, typo, atau ejaan seperti gw,
+gk, ga, bgt, udh. Bahasa santai tidak harus salah eja; variasikan susunan kalimat,
+panjang pesan, dan partikel seperti kok, dong, ya secara wajar. Jangan merusak
+nama pemain, kata negasi, atau petunjuk acuan demi membuat typo.
+Nama panggilan tidak dihitung sebagai slot typo.
+Aturan gaya ini hanya untuk variasi sintetis; original tetap persis teks sumber.
+Setiap balasan harus nyambung dengan pembahasan. Jangan isi 12 konteks dengan
+pengulangan timer, sapaan, atau kalimat kosong hanya untuk memenuhi jumlah.
+Selingan boleh, tetapi harus wajar dan hubungan kembali ke topik harus terbaca.
+Jangan membuat pemain menyebut ulang seluruh fakta hanya demi memudahkan label.
+Anotasi harus mengikuti makna chat, bukan memaksa tafsir agar memenuhi kasus.
+Intent-target SEMUA pesan konteks sama pentingnya dengan jawaban pesan utama.
+Jika acuan tidak cukup, pakai tidak_diketahui, jangan menebak demi kelengkapan.
+
+Konteks boleh memiliki beragam intent. Jangan memasukkan nama kasus, penjelasan
+anotasi, atau jawaban training sebagai bagian dari teks percakapan.
+
+Setiap job berdiri sendiri; sumber antar-job bukan riwayat percakapan bersama.
+Nomor bukti_pesan dimulai ulang dari 1 di setiap session.
+focus_player harus nama peserta atau string kosong; tidak_diketahui bukan peserta.
+Untuk kasus posisi acuan, pesan utama tidak menyebut ulang nama focus_player.
+Untuk memori di luar jendela, gunakan rantai bukti pada pesan yang masih terlihat.
+Untuk acuan yang sudah hilang, jangan memasukkan target lama pada anotasi konteks.
+
+FORMAT JAWABAN (WAJIB):
+- Balas HANYA dengan satu blok kode json berisi {"results": [...]}, tanpa penjelasan lain.
+- Satu item per job: {"job_id", "session": {"case_name", "participants", "focus_player",
+  "panggilan", "messages"}}. Setiap pesan: {"pengirim", "teks_chat", "label_intent",
+  "target": [{"pemain", "relasi", "bukti_pesan"}]}. panggilan: [{"pemain", "sebutan": [...]}] atau [].
+- Salin job_id dan case_name persis. Jumlah pesan harus sama dengan jumlah_pesan.
+- Pesan TERAKHIR adalah contoh utama; label_intent-nya sama dengan source.label_intent.
+- bukti_pesan berisi nomor pesan yang menyebut nama target (atau yang anotasinya memuat
+  target), paling jauh 12 pesan sebelumnya dan tidak pernah pesan sesudahnya.
+  Target tidak_diketahui selalu memakai bukti_pesan [].
+- Selesaikan SEMUA job; jangan memotong JSON di tengah.
+
+Contoh bentuk jawaban (bukan data sungguhan):
+```json
+{"results": [{"job_id": "r000123_v01", "session": {"case_name": "explicit",
+ "participants": ["Andi", "Budi"], "focus_player": "Andi", "panggilan": [],
+ "messages": [{"pengirim": "Budi", "teks_chat": "Aku curiga Andi, alibinya berubah terus.",
+ "label_intent": "offend", "target": [{"pemain": "Andi", "relasi": "offend", "bukti_pesan": [1]}]}]}}]}
+```
+
+JOBS:
+{
+ "jobs": [
+  {
+   "job_id": "r003759_v01",
+   "case_name": "neutral_after_accusation",
+   "case_description": "Konteks berisi tuduhan, tetapi pesan sekarang neutral; jangan mewarisi relasi lama.",
+   "source": {
+    "source_row": 3759,
+    "source_group": "3a2eee1a66f0be1482f8",
+    "label_intent": "neutral"
+   },
+   "context_limit": 12,
+   "jumlah_pesan": 6,
+   "pesan_typo_ringan": [],
+   "topik": "efek Gag Order pada chat"
+  },
+  {
+   "job_id": "r003776_v01",
+   "case_name": "multiple_targets",
+   "case_description": "Dua atau lebih pemain menjadi target relasi yang sama secara jelas.",
+   "source": {
+    "source_row": 3776,
+    "source_group": "b182a92db2304f6adba1",
+    "label_intent": "defend"
+   },
+   "context_limit": 12,
+   "jumlah_pesan": 11,
+   "pesan_typo_ringan": [],
+   "topik": "ucapan yang bertentangan dengan sebelumnya"
+  },
+  {
+   "job_id": "r003778_v01",
+   "case_name": "negation",
+   "case_description": "Negasi menentukan relasi: Andy Hitman berbeda dari Andy bukan Hitman.",
+   "source": {
+    "source_row": 3778,
+    "source_group": "c72af8871fa45a411d9d",
+    "label_intent": "defend"
+   },
+   "context_limit": 12,
+   "jumlah_pesan": 13,
+   "pesan_typo_ringan": [],
+   "topik": "ucapan yang bertentangan dengan sebelumnya"
+  },
+  {
+   "job_id": "r003783_v01",
+   "case_name": "quotation",
+   "case_description": "Ada tuduhan yang dikutip; bedakan sikap pengirim dari ucapan orang yang dikutip.",
+   "source": {
+    "source_row": 3783,
+    "source_group": "3bd80bd4596246b31677",
+    "label_intent": "offend"
+   },
+   "context_limit": 12,
+   "jumlah_pesan": 6,
+   "pesan_typo_ringan": [
+    2
+   ],
+   "topik": "ucapan yang bertentangan dengan sebelumnya"
+  },
+  {
+   "job_id": "r003790_v01",
+   "case_name": "neutral_names",
+   "case_description": "Neutral menyebut nama tanpa menuduh/membela; target kosong.",
+   "source": {
+    "source_row": 3790,
+    "source_group": "eec437abc62c4acb2064",
+    "label_intent": "neutral"
+   },
+   "context_limit": 12,
+   "jumlah_pesan": 13,
+   "pesan_typo_ringan": [],
+   "topik": "tuduhan yang berubah-ubah"
+  },
+  {
+   "job_id": "r003803_v01",
+   "case_name": "neutral_after_accusation",
+   "case_description": "Konteks berisi tuduhan, tetapi pesan sekarang neutral; jangan mewarisi relasi lama.",
+   "source": {
+    "source_row": 3803,
+    "source_group": "a2abff0dd2b5f7b05b08",
+    "label_intent": "neutral"
+   },
+   "context_limit": 12,
+   "jumlah_pesan": 2,
+   "pesan_typo_ringan": [],
+   "topik": "efek Gag Order pada chat"
+  },
+  {
+   "job_id": "r003805_v01",
+   "case_name": "explicit",
+   "case_description": "Target eksplisit di pesan sekarang. Contoh: Aku yakin bukan Andy = defend Andy.",
+   "source": {
+    "source_row": 3805,
+    "source_group": "e4111176f3681be3e09e",
+    "label_intent": "offend"
+   },
+   "context_limit": 12,
+   "jumlah_pesan": 4,
+   "pesan_typo_ringan": [],
+   "topik": "ajakan vote tanpa bukti"
+  },
+  {
+   "job_id": "r003806_v01",
+   "case_name": "reference_start",
+   "case_description": "Tepat 12 konteks. Penyebutan target eksplisit di pesan konteks pertama; pesan sekarang memakai kata ganti.",
+   "source": {
+    "source_row": 3806,
+    "source_group": "ec0fc42b7870a5c0bd82",
+    "label_intent": "offend"
+   },
+   "context_limit": 12,
+   "jumlah_pesan": 13,
+   "pesan_typo_ringan": [
+    2
+   ],
+   "topik": "korban yang identitasnya tidak diumumkan"
+  },
+  {
+   "job_id": "r003815_v01",
+   "case_name": "self",
+   "case_description": "Defend diri sendiri atau offend/vote diri sendiri sesuai label. Target = pengirim.",
+   "source": {
+    "source_row": 3815,
+    "source_group": "49be56ce13e6105c95b9",
+    "label_intent": "offend"
+   },
+   "context_limit": 12,
+   "jumlah_pesan": 2,
+   "pesan_typo_ringan": [],
+   "topik": "korban yang identitasnya tidak diumumkan"
+  },
+  {
+   "job_id": "r003830_v01",
+   "case_name": "short_history_3",
+   "case_description": "Awal diskusi dengan tepat 3 pesan sebelumnya. Acuan tidak harus berada di pesan terakhir.",
+   "source": {
+    "source_row": 3830,
+    "source_group": "67761d4ac445ef12fb70",
+    "label_intent": "neutral"
+   },
+   "context_limit": 12,
+   "jumlah_pesan": 4,
+   "pesan_typo_ringan": [],
+   "topik": "respons chat yang telat atau terpotong"
+  }
+ ]
+}

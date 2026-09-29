@@ -1,0 +1,79 @@
+{
+  "job": {
+    "job_id": "r001523_v01",
+    "case_name": "multiple_targets",
+    "case_description": "Dua atau lebih pemain menjadi target relasi yang sama secara jelas.",
+    "source": {
+      "source_row": 1523,
+      "source_group": "fa8c2859e825a54e0f2d",
+      "teks_chat": "kalau aku Hitman, kenapa target malam kemarin bukan pemain yang paling mengancamku?",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 2,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "multiple_targets",
+    "participants": [
+      "Rafi",
+      "Dian",
+      "Yuda",
+      "Mega"
+    ],
+    "focus_player": "",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Rafi",
+        "teks_chat": "Dian dan Yuda diam terus dari tadi, tidak ada kontribusi sama sekali",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Dian",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          },
+          {
+            "pemain": "Yuda",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Mega",
+        "teks_chat": "aku tidak setuju, diam bukan berarti mencurigakan, mereka berdua mungkin sedang mengamati",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Dian",
+            "relasi": "defend",
+            "bukti_pesan": [
+              1
+            ]
+          },
+          {
+            "pemain": "Yuda",
+            "relasi": "defend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "validation_status": "local_structure_only",
+  "human_review_status": "pending",
+  "generation_settings": {
+    "provider": "aws_bedrock",
+    "model": "global.anthropic.claude-sonnet-4-6",
+    "thinking": "not_requested"
+  }
+}

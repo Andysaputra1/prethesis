@@ -1,0 +1,61 @@
+{
+  "job": {
+    "job_id": "r002738_v01",
+    "case_name": "short_history_3",
+    "case_description": "Awal diskusi dengan tepat 3 pesan sebelumnya. Acuan tidak harus berada di pesan terakhir.",
+    "source": {
+      "source_row": 2738,
+      "source_group": "260c17416b736e8f20ab",
+      "teks_chat": "ini tribunalnya auto eksekusi yang vote terbanyak ya, serem juga",
+      "label_intent": "neutral"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 4,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "short_history_3",
+    "participants": [
+      "Eko",
+      "Mira",
+      "Tono",
+      "Yuli"
+    ],
+    "focus_player": "",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Eko",
+        "teks_chat": "ada yang klaim Spy? aku belum dengar ada yang angkat tangan",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Mira",
+        "teks_chat": "aku bukan Spy, hanya Civilian biasa",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Tono",
+        "teks_chat": "aku juga tidak ada klaim khusus",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Yuli",
+        "teks_chat": "kalau memang ada Spy di sini, harusnya sudah klaim dari tadi",
+        "label_intent": "neutral",
+        "target": []
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "validation_status": "local_structure_only",
+  "human_review_status": "pending",
+  "generation_settings": {
+    "provider": "aws_bedrock",
+    "model": "global.anthropic.claude-sonnet-4-6",
+    "thinking": "not_requested"
+  }
+}

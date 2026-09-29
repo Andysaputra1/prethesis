@@ -1,0 +1,46 @@
+{
+  "job": {
+    "job_id": "r000537_v01",
+    "case_name": "first_message_unknown",
+    "case_description": "Pesan pertama tanpa konteks memakai dia/kamu/lu tanpa acuan jelas. Intent offend/defend tetap diketahui tetapi target tidak_diketahui; roster bukan bukti lawan bicara.",
+    "source": {
+      "source_row": 537,
+      "source_group": "731f3249499b4e0ae1eb",
+      "teks_chat": "saya menolak tuduhan itu, tidak ada bukti yang menghubungkan saya dengan Hostage",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 1,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "first_message_unknown",
+    "participants": [
+      "Yanto"
+    ],
+    "focus_player": "",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Yanto",
+        "teks_chat": "dia kena Gag Order jadi tidak bisa bicara, itu bukan salahnya",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "tidak_diketahui",
+            "relasi": "defend",
+            "bukti_pesan": []
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "validation_status": "local_structure_only",
+  "human_review_status": "pending",
+  "generation_settings": {
+    "provider": "aws_bedrock",
+    "model": "global.anthropic.claude-sonnet-4-6",
+    "thinking": "not_requested"
+  }
+}

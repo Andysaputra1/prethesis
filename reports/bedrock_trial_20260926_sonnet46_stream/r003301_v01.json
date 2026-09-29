@@ -1,0 +1,50 @@
+{
+  "job": {
+    "job_id": "r003301_v01",
+    "case_name": "first_message",
+    "case_description": "Pesan pertama permainan, tanpa konteks. Neutral boleh menyapa/membuka diskusi; offend/defend menyebut target jelas. Jangan mengarang kejadian malam, voting, atau percakapan yang belum terjadi.",
+    "source": {
+      "source_row": 3301,
+      "source_group": "b0363c5850d4d5174d65",
+      "teks_chat": "tadi chat gw sempat kekunci, jadi wajar kalau respons gw telat",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 1,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "first_message",
+    "participants": [
+      "Bima",
+      "Rara",
+      "Seto"
+    ],
+    "focus_player": "",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Bima",
+        "teks_chat": "Rara dari tadi tidak bicara sama sekali, itu tidak wajar",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Rara",
+            "relasi": "defend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "validation_status": "local_structure_only",
+  "human_review_status": "pending",
+  "generation_settings": {
+    "provider": "aws_bedrock",
+    "model": "global.anthropic.claude-sonnet-4-6",
+    "thinking": "not_requested"
+  }
+}

@@ -1,0 +1,159 @@
+{
+  "job": {
+    "job_id": "r001326_v01",
+    "case_name": "interruption",
+    "case_description": "Pembahasan target disela obrolan waktu/ronde; kaitan kembali ke target masih jelas.",
+    "source": {
+      "source_row": 1326,
+      "source_group": "942c6d5adab631f4899a",
+      "teks_chat": "kalau memang Spy, siapa yang lu kawal semalam?",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 9,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "interruption",
+    "participants": [
+      "Galih",
+      "Hesti",
+      "Ivan",
+      "Juli",
+      "Kiki"
+    ],
+    "focus_player": "",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Galih",
+        "teks_chat": "Ivan kemarin malam kemana sih? Kok tidak ada kabar sama sekali",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Ivan",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Hesti",
+        "teks_chat": "Iya aku juga penasaran, Ivan tidak pernah cerita alibinya",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Ivan",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1,
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Ivan",
+        "teks_chat": "Aku ada di tempat aman kok, tidak perlu khawatir",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Ivan",
+            "relasi": "defend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Juli",
+        "teks_chat": "Eh sebentar, waktunya tinggal berapa menit ya?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Kiki",
+        "teks_chat": "Masih cukup kok, lanjut aja diskusinya",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Galih",
+        "teks_chat": "Oke balik ke Ivan, alibi tempat aman itu tidak meyakinkan",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Ivan",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1,
+              3,
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Hesti",
+        "teks_chat": "Betul, harusnya dia bisa kasih detail lebih jelas",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Ivan",
+            "relasi": "offend",
+            "bukti_pesan": [
+              2,
+              3,
+              7
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Juli",
+        "teks_chat": "Hmm aku mulai setuju sih, Ivan memang tidak jelas alibinya",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Ivan",
+            "relasi": "offend",
+            "bukti_pesan": [
+              3,
+              6,
+              7,
+              8
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Kiki",
+        "teks_chat": "Aku vote Ivan, aktivitasnya malam itu tidak bisa dijelaskan",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Ivan",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1,
+              3,
+              6,
+              9
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "validation_status": "local_structure_only",
+  "human_review_status": "pending",
+  "generation_settings": {
+    "provider": "aws_bedrock",
+    "model": "us.anthropic.claude-opus-4-6-v1",
+    "thinking": "not_requested"
+  }
+}

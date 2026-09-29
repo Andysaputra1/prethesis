@@ -1,0 +1,32 @@
+{
+  "model": "us.anthropic.claude-opus-4-6-v1",
+  "region": "us-east-1",
+  "source_sha256": "2677534e3e1395d48955156f43ea5f0e159b8273c1a809ef7ca1d53ace80bab9",
+  "base_script_sha256": "3d4a793d9d45e3bb76ffc1ec28f29640c84d11b8258aa4b650422d7fd2f88543",
+  "trial_script_sha256": "1720082b7e10d8d7c9bd2f6fd14afef99fcbca9077abf24fd2100b58106c8696",
+  "request_sha256": "9923d9583f93e78500849bae6f69316038b89548b35f43157b41c72252a4716c",
+  "planned_total": 11230,
+  "unfinished_total": 11230,
+  "selected": 10,
+  "case_counts": {
+    "original": 1,
+    "explicit": 1,
+    "reference_start": 1,
+    "reference_middle": 1,
+    "reference_end": 1,
+    "memory_outside_window": 1,
+    "outside_window_unknown": 1,
+    "interruption": 1,
+    "topic_switch": 1,
+    "ambiguous": 1
+  },
+  "intent_counts": {
+    "defend": 5,
+    "offend": 5
+  },
+  "total_messages": 98,
+  "verification": "local_structure_only",
+  "automatic_retries": 0,
+  "max_output_tokens": 20000,
+  "sample_purpose": "diagnostic case coverage"
+}

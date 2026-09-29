@@ -1,0 +1,54 @@
+{
+  "job": {
+    "job_id": "r004065_v01",
+    "case_name": "short_history_2",
+    "case_description": "Awal diskusi dengan tepat 2 pesan sebelumnya. Gunakan hanya petunjuk yang tersedia.",
+    "source": {
+      "source_row": 4065,
+      "source_group": "ebe6b78de7242a51d2f9",
+      "teks_chat": "kalau target Spy selamat, siapa yang kira-kira diserang semalam?",
+      "label_intent": "neutral"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 3,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "short_history_2",
+    "participants": [
+      "Bowo",
+      "Lani",
+      "Rudi"
+    ],
+    "focus_player": "",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Bowo",
+        "teks_chat": "semalam aku di area selatan, tidak kemana-mana",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Lani",
+        "teks_chat": "aku juga tidak ada pergerakan mencurigakan dari tempatku",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Rudi",
+        "teks_chat": "baik, kita catat alibi masing-masing dulu sebelum diskusi lebih jauh",
+        "label_intent": "neutral",
+        "target": []
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "validation_status": "local_structure_only",
+  "human_review_status": "pending",
+  "generation_settings": {
+    "provider": "aws_bedrock",
+    "model": "global.anthropic.claude-sonnet-4-6",
+    "thinking": "not_requested"
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "job": {
+    "job_id": "r000702_v01",
+    "case_name": "first_message_self",
+    "case_description": "Pesan pertama tanpa konteks membela atau menuduh diri sendiri. Target = pengirim; tidak perlu riwayat untuk memahami aku.",
+    "source": {
+      "source_row": 702,
+      "source_group": "8beda19d93e84b91979b",
+      "teks_chat": "gw kena bungkam mendadak pas mau jawab, makanya penjelasan gw kepotong",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 1,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "first_message_self",
+    "participants": [
+      "Wawan"
+    ],
+    "focus_player": "",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Wawan",
+        "teks_chat": "aku bukan Hitman, identitas korban juga bukan urusanku",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Wawan",
+            "relasi": "defend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "validation_status": "local_structure_only",
+  "human_review_status": "pending",
+  "generation_settings": {
+    "provider": "aws_bedrock",
+    "model": "global.anthropic.claude-sonnet-4-6",
+    "thinking": "not_requested"
+  }
+}

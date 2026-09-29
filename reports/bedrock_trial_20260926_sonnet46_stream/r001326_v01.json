@@ -1,0 +1,150 @@
+{
+  "job": {
+    "job_id": "r001326_v01",
+    "case_name": "interruption",
+    "case_description": "Pembahasan target disela obrolan waktu/ronde; kaitan kembali ke target masih jelas.",
+    "source": {
+      "source_row": 1326,
+      "source_group": "942c6d5adab631f4899a",
+      "teks_chat": "kalau memang Spy, siapa yang lu kawal semalam?",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 9,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "interruption",
+    "participants": [
+      "Riko",
+      "Sela",
+      "Anto",
+      "Vera"
+    ],
+    "focus_player": "Riko",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Sela",
+        "teks_chat": "Riko kemana semalam? tidak ada yang lihat dia",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Riko",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Anto",
+        "teks_chat": "iya, alibinya tidak jelas",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Riko",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Vera",
+        "teks_chat": "eh sebentar, ronde ini sudah hampir habis ya?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Anto",
+        "teks_chat": "masih ada waktu, lanjut dulu",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Sela",
+        "teks_chat": "kembali ke tadi, Riko tidak bisa jelaskan aktivitasnya",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Riko",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1,
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Vera",
+        "teks_chat": "benar, alibi yang tidak jelas itu mencurigakan",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Riko",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1,
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Riko",
+        "teks_chat": "aku ada di area tengah semalam, bisa tanya ke Vera",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Riko",
+            "relasi": "defend",
+            "bukti_pesan": [
+              7
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Sela",
+        "teks_chat": "Vera juga tidak konfirmasi itu tadi",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Riko",
+            "relasi": "offend",
+            "bukti_pesan": [
+              7
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Anto",
+        "teks_chat": "alibi yang bergantung pada orang lain tanpa konfirmasi tetap mencurigakan, aku vote Riko",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Riko",
+            "relasi": "offend",
+            "bukti_pesan": [
+              7,
+              8
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "validation_status": "local_structure_only",
+  "human_review_status": "pending",
+  "generation_settings": {
+    "provider": "aws_bedrock",
+    "model": "global.anthropic.claude-sonnet-4-6",
+    "thinking": "not_requested"
+  }
+}

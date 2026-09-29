@@ -1,0 +1,55 @@
+{
+  "job": {
+    "job_id": "r002759_v01",
+    "case_name": "neutral_after_accusation",
+    "case_description": "Konteks berisi tuduhan, tetapi pesan sekarang neutral; jangan mewarisi relasi lama.",
+    "source": {
+      "source_row": 2759,
+      "source_group": "3be849cc5bbec47c81f6",
+      "teks_chat": "nggak nyangka game tanpa polisi bisa setegang ini",
+      "label_intent": "neutral"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 2,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "neutral_after_accusation",
+    "participants": [
+      "Wendi",
+      "Ayu"
+    ],
+    "focus_player": "",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Wendi",
+        "teks_chat": "Ayu mencurigakan, aku curiga dia Hitman",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Ayu",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Ayu",
+        "teks_chat": "efek Gag Order memang membuat diskusi jadi tidak lancar ronde ini",
+        "label_intent": "neutral",
+        "target": []
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "validation_status": "local_structure_only",
+  "human_review_status": "pending",
+  "generation_settings": {
+    "provider": "aws_bedrock",
+    "model": "global.anthropic.claude-sonnet-4-6",
+    "thinking": "not_requested"
+  }
+}

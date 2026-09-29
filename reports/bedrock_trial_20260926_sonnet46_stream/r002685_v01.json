@@ -1,0 +1,166 @@
+{
+  "job": {
+    "job_id": "r002685_v01",
+    "case_name": "nickname",
+    "case_description": "Pesan sekarang menyebut pemain dengan nama panggilan, singkatan, atau salah ketik ringan (Andy -> ndy, andi, si And) tanpa menulis nama aslinya. Catat sebutan itu di panggilan. Target tetap memakai nama asli; jika neutral, target kosong.",
+    "source": {
+      "source_row": 2685,
+      "source_group": "ffd88e3648e0969b4f3a",
+      "teks_chat": "aku kira fase malamnya bakal lebih lama",
+      "label_intent": "neutral"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 12,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "nickname",
+    "participants": [
+      "Andika",
+      "Rosi",
+      "Tegar",
+      "Wulan"
+    ],
+    "focus_player": "",
+    "panggilan": [
+      {
+        "pemain": "Andika",
+        "sebutan": [
+          "Andi",
+          "Dika"
+        ]
+      }
+    ],
+    "messages": [
+      {
+        "pengirim": "Rosi",
+        "teks_chat": "siapa yang berubah tuduhan dari ronde sebelumnya?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Tegar",
+        "teks_chat": "Andika sempat nuduh Wulan, lalu ganti ke Rosi",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Wulan",
+        "teks_chat": "iya, aku ingat itu",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Rosi",
+        "teks_chat": "perubahan itu mencurigakan",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Andika",
+            "relasi": "offend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Tegar",
+        "teks_chat": "mungkin dia dapat informasi baru",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Andika",
+            "relasi": "defend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Wulan",
+        "teks_chat": "kita tanya langsung saja ke dia",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Andika",
+        "teks_chat": "aku punya alasan untuk perubahan itu",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Andika",
+            "relasi": "defend",
+            "bukti_pesan": [
+              7
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Rosi",
+        "teks_chat": "alasan apa? tidak ada yang tahu",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Andika",
+            "relasi": "offend",
+            "bukti_pesan": [
+              7
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Tegar",
+        "teks_chat": "beri dia kesempatan jelaskan",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Andika",
+            "relasi": "defend",
+            "bukti_pesan": [
+              7
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Wulan",
+        "teks_chat": "aku tunggu penjelasannya",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Rosi",
+        "teks_chat": "sudah terlalu lama menunggu penjelasan dari dia",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Andika",
+            "relasi": "offend",
+            "bukti_pesan": [
+              7,
+              8
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Tegar",
+        "teks_chat": "Andi memang belum kasih penjelasan yang memuaskan, tapi aku belum mau vote dia sekarang",
+        "label_intent": "neutral",
+        "target": []
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "validation_status": "local_structure_only",
+  "human_review_status": "pending",
+  "generation_settings": {
+    "provider": "aws_bedrock",
+    "model": "global.anthropic.claude-sonnet-4-6",
+    "thinking": "not_requested"
+  }
+}

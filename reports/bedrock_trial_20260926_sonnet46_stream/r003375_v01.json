@@ -1,0 +1,122 @@
+{
+  "job": {
+    "job_id": "r003375_v01",
+    "case_name": "agreement",
+    "case_description": "Pesan sekarang menyetujui atau membantah pesan pemain lain di konteks tanpa menyebut ulang nama target. Setuju dengan tuduhan = offend pemain yang dituduh; membantah tuduhan atau setuju dengan pembelaan = defend. Identitas target diwarisi dari pesan yang ditanggapi.",
+    "source": {
+      "source_row": 3375,
+      "source_group": "674690dad65809f847d1",
+      "teks_chat": "kalau gw hitman, ngapain gw malah ngebantah pola yang mengarah ke dia?",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 6,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "agreement",
+    "participants": [
+      "Feri",
+      "Gina",
+      "Hadi",
+      "Ika"
+    ],
+    "focus_player": "Hadi",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Feri",
+        "teks_chat": "Hadi vote ke kiri terus tanpa alasan jelas",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Hadi",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Gina",
+        "teks_chat": "aku tidak setuju, Hadi punya pola yang bisa dijelaskan",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Hadi",
+            "relasi": "defend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Ika",
+        "teks_chat": "aku setuju dengan Gina, pola vote Hadi tidak mencurigakan",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Hadi",
+            "relasi": "defend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Feri",
+        "teks_chat": "kalian terlalu cepat membela tanpa bukti",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Hadi",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1,
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Gina",
+        "teks_chat": "buktinya ada, kamu yang tidak mau lihat",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Hadi",
+            "relasi": "defend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Hadi",
+        "teks_chat": "aku tidak perlu dibela, vote aku memang punya dasar yang jelas",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Hadi",
+            "relasi": "defend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "validation_status": "local_structure_only",
+  "human_review_status": "pending",
+  "generation_settings": {
+    "provider": "aws_bedrock",
+    "model": "global.anthropic.claude-sonnet-4-6",
+    "thinking": "not_requested"
+  }
+}

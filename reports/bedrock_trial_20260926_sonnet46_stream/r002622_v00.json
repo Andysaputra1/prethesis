@@ -1,0 +1,40 @@
+{
+  "job": {
+    "job_id": "r002622_v00",
+    "case_name": "original",
+    "case_description": "Satu pesan tanpa riwayat. Pertahankan teks dan intent sumber persis; jangan mengarang riwayat asli.",
+    "source": {
+      "source_row": 2622,
+      "source_group": "fc50b3703067c144e6e9",
+      "teks_chat": "sumpah kaget pas layar berubah ke fase pagi",
+      "label_intent": "neutral"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 1,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "original",
+    "participants": [
+      "Player1"
+    ],
+    "focus_player": "",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Player1",
+        "teks_chat": "sumpah kaget pas layar berubah ke fase pagi",
+        "label_intent": "neutral",
+        "target": []
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "validation_status": "local_structure_only",
+  "human_review_status": "pending",
+  "generation_settings": {
+    "provider": "aws_bedrock",
+    "model": "global.anthropic.claude-sonnet-4-6",
+    "thinking": "not_requested"
+  }
+}

@@ -1,0 +1,446 @@
+{"results": [
+  {
+    "job_id": "r000455_v01",
+    "session": {
+      "case_name": "short_history_3",
+      "participants": ["Andi", "Budi", "Citra", "Denis"],
+      "focus_player": "Citra",
+      "panggilan": [],
+      "messages": [
+        {
+          "pengirim": "Andi",
+          "teks_chat": "Citra kok daritadi ngetiknya cuma huruf doang dan terputus-putus?",
+          "label_intent": "neutral",
+          "target": []
+        },
+        {
+          "pengirim": "Budi",
+          "teks_chat": "Paling Citra cuma pura-pura kena Gag Order biar nggak dicurigai sebagai Hitman.",
+          "label_intent": "offend",
+          "target": [
+            {"pemain": "Citra", "relasi": "offend", "bukti_pesan": [1]}
+          ]
+        },
+        {
+          "pengirim": "Citra",
+          "teks_chat": "b-u-k-a-n... a-k-u...",
+          "label_intent": "defend",
+          "target": [
+            {"pemain": "Citra", "relasi": "defend", "bukti_pesan": [1]}
+          ]
+        },
+        {
+          "pengirim": "Denis",
+          "teks_chat": "Kalian jangan suudzon, Citra itu beneran kena efek Gag Order, dia pasti bukan pelakunya.",
+          "label_intent": "defend",
+          "target": [
+            {"pemain": "Citra", "relasi": "defend", "bukti_pesan": [1]}
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "job_id": "r000457_v01",
+    "session": {
+      "case_name": "short_history_1",
+      "participants": ["Eko", "Fajar"],
+      "focus_player": "Eko",
+      "panggilan": [],
+      "messages": [
+        {
+          "pengirim": "Eko",
+          "teks_chat": "Eh ralat, tadi aku sebenarnya bukan di ruang mesin, tapi di dapur sedang mencari petunjuk.",
+          "label_intent": "defend",
+          "target": [
+            {"pemain": "Eko", "relasi": "defend", "bukti_pesan": [1]}
+          ]
+        },
+        {
+          "pengirim": "Fajar",
+          "teks_chat": "Tadi pagi kamu bilangnya di ruang mesin, ucapanmu yang berubah-ubah begini pasti karena kamu Hitman!",
+          "label_intent": "offend",
+          "target": [
+            {"pemain": "Eko", "relasi": "offend", "bukti_pesan": [1]}
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "job_id": "r000460_v01",
+    "session": {
+      "case_name": "agreement",
+      "participants": ["Gani", "Hani", "Ira", "Joko", "Kiki"],
+      "focus_player": "Ira",
+      "panggilan": [],
+      "messages": [
+        {
+          "pengirim": "Gani",
+          "teks_chat": "Hani dari tadi diam saja, mencurigakan sekali.",
+          "label_intent": "offend",
+          "target": [
+            {"pemain": "Hani", "relasi": "offend", "bukti_pesan": [1]}
+          ]
+        },
+        {
+          "pengirim": "Ira",
+          "teks_chat": "Hani kan memang lagi menunggu tugasnya beres, wajar saja kalau dia diam di sana.",
+          "label_intent": "defend",
+          "target": [
+            {"pemain": "Hani", "relasi": "defend", "bukti_pesan": [1]}
+          ]
+        },
+        {
+          "pengirim": "Joko",
+          "teks_chat": "Kok Ira cepat banget maju buat ngebela Hani?",
+          "label_intent": "neutral",
+          "target": []
+        },
+        {
+          "pengirim": "Ira",
+          "teks_chat": "Ya kan aku cuma menyampaikan fakta yang kulihat sendiri.",
+          "label_intent": "defend",
+          "target": [
+            {"pemain": "Ira", "relasi": "defend", "bukti_pesan": [3]}
+          ]
+        },
+        {
+          "pengirim": "Joko",
+          "teks_chat": "Pembelaanmu yang terlalu cepat itu bukti kalau kamu adalah komplotan Hitman yang lagi panik!",
+          "label_intent": "offend",
+          "target": [
+            {"pemain": "Ira", "relasi": "offend", "bukti_pesan": [3]}
+          ]
+        },
+        {
+          "pengirim": "Ira",
+          "teks_chat": "Enak aja, aku ini civilian murni tau.",
+          "label_intent": "defend",
+          "target": [
+            {"pemain": "Ira", "relasi": "defend", "bukti_pesan": [3]}
+          ]
+        },
+        {
+          "pengirim": "Kiki",
+          "teks_chat": "Aku setuju banget dengan pendapat Joko, mending kita turunin dia sekarang juga.",
+          "label_intent": "offend",
+          "target": [
+            {"pemain": "Ira", "relasi": "offend", "bukti_pesan": [5]}
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "job_id": "r000468_v01",
+    "session": {
+      "case_name": "agreement",
+      "participants": ["Lani", "Miko", "Nina", "Oscar"],
+      "focus_player": "Miko",
+      "panggilan": [],
+      "messages": [
+        {
+          "pengirim": "Lani",
+          "teks_chat": "Aku mau claim Stalker nih, hasil Peek aku semalam nunjukin dengan jelas kalau Miko itu Hitman!",
+          "label_intent": "offend",
+          "target": [
+            {"pemain": "Miko", "relasi": "offend", "bukti_pesan": [1]}
+          ]
+        },
+        {
+          "pengirim": "Nina",
+          "teks_chat": "Jangan asal percaya, Miko dari semalam sdh bersamaku jadi dia tidak mungkin pelakunya.",
+          "label_intent": "defend",
+          "target": [
+            {"pemain": "Miko", "relasi": "defend", "bukti_pesan": [1]}
+          ]
+        },
+        {
+          "pengirim": "Oscar",
+          "teks_chat": "Nah aku sepemikiran dengan Nina, jangan sampai kita salah menyingkirkan orang.",
+          "label_intent": "defend",
+          "target": [
+            {"pemain": "Miko", "relasi": "defend", "bukti_pesan": [1]}
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "job_id": "r000470_v01",
+    "session": {
+      "case_name": "plural_reference",
+      "participants": ["Puput", "Siska", "Qori", "Rian", "Tino"],
+      "focus_player": "",
+      "panggilan": [],
+      "messages": [
+        {
+          "pengirim": "Puput",
+          "teks_chat": "Qori sama Rian kok balas chatnya lama banget ya dari tadi?",
+          "label_intent": "neutral",
+          "target": []
+        },
+        {
+          "pengirim": "Siska",
+          "teks_chat": "Pasti Qori dan Rian lagi sibuk diskusi milih korban di grup Hitman, mending vote mereka aja!",
+          "label_intent": "offend",
+          "target": [
+            {"pemain": "Qori", "relasi": "offend", "bukti_pesan": [1]},
+            {"pemain": "Rian", "relasi": "offend", "bukti_pesan": [1]}
+          ]
+        },
+        {
+          "pengirim": "Qori",
+          "teks_chat": "Maaf banget, sinyalku dari tadi putus-putus jadinya telat masuk.",
+          "label_intent": "defend",
+          "target": [
+            {"pemain": "Qori", "relasi": "defend", "bukti_pesan": [1]}
+          ]
+        },
+        {
+          "pengirim": "Rian",
+          "teks_chat": "Aku juga nge-lag parah ini aplikasinya, baru bisa buka.",
+          "label_intent": "defend",
+          "target": [
+            {"pemain": "Rian", "relasi": "defend", "bukti_pesan": [1]}
+          ]
+        },
+        {
+          "pengirim": "Tino",
+          "teks_chat": "Jangan langsung menuduh, kalian berdua wajar merespons lambat kalau masalahnya ada di koneksi internet.",
+          "label_intent": "defend",
+          "target": [
+            {"pemain": "Qori", "relasi": "defend", "bukti_pesan": [1]},
+            {"pemain": "Rian", "relasi": "defend", "bukti_pesan": [1]}
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "job_id": "r000474_v01",
+    "session": {
+      "case_name": "interruption",
+      "participants": ["Udin", "Vina", "Wawan", "Xena"],
+      "focus_player": "Udin",
+      "panggilan": [],
+      "messages": [
+        {
+          "pengirim": "Udin",
+          "teks_chat": "Aku sebagai Spy semalam patroli di area tengah, tapi tidak melihat ada pergerakan apa-apa.",
+          "label_intent": "neutral",
+          "target": []
+        },
+        {
+          "pengirim": "Vina",
+          "teks_chat": "Kok mencurigakan ya, masa Spy tidak dapat info sama sekali.",
+          "label_intent": "offend",
+          "target": [
+            {"pemain": "Udin", "relasi": "offend", "bukti_pesan": [1]}
+          ]
+        },
+        {
+          "pengirim": "Wawan",
+          "teks_chat": "Pasti Udin cuma ngarang klaimnya biar aman dari vote.",
+          "label_intent": "offend",
+          "target": [
+            {"pemain": "Udin", "relasi": "offend", "bukti_pesan": [1]}
+          ]
+        },
+        {
+          "pengirim": "Xena",
+          "teks_chat": "Eh ngomong-ngomong waktu diskusi kita sisa berapa menit lagi ya?",
+          "label_intent": "neutral",
+          "target": []
+        },
+        {
+          "pengirim": "Udin",
+          "teks_chat": "Sisa 2 menit kayaknya di timer layarku.",
+          "label_intent": "neutral",
+          "target": []
+        },
+        {
+          "pengirim": "Vina",
+          "teks_chat": "Wah harus buruan nentuin pilihan nih kalau begitu.",
+          "label_intent": "neutral",
+          "target": []
+        },
+        {
+          "pengirim": "Wawan",
+          "teks_chat": "Iya, putaran ini entah kenapa terasa cepat banget jalannya.",
+          "label_intent": "neutral",
+          "target": []
+        },
+        {
+          "pengirim": "Xena",
+          "teks_chat": "Balik ke bahasan kita yang tadi, rasanya janggal banget kalau Spy sampai nihil info.",
+          "label_intent": "neutral",
+          "target": []
+        },
+        {
+          "pengirim": "Vina",
+          "teks_chat": "Makanya, klaim Spy yg bodong itu membuktikan kalau dia adalah pelakunya!",
+          "label_intent": "offend",
+          "target": [
+            {"pemain": "Udin", "relasi": "offend", "bukti_pesan": [1]}
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "job_id": "r000479_v01",
+    "session": {
+      "case_name": "ambiguous",
+      "participants": ["Yanto", "Zaki"],
+      "focus_player": "",
+      "panggilan": [],
+      "messages": [
+        {
+          "pengirim": "Yanto",
+          "teks_chat": "Tadi kayaknya ada pemain yang omongannya beda banget sama yang dia bilang di awal ronde.",
+          "label_intent": "neutral",
+          "target": []
+        },
+        {
+          "pengirim": "Zaki",
+          "teks_chat": "Orang yang ucapannya bertentangan begitu pasti lagi panik karena menutupi kedoknya, mending kita turunkan dia saja!",
+          "label_intent": "offend",
+          "target": [
+            {"pemain": "tidak_diketahui", "relasi": "offend", "bukti_pesan": []}
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "job_id": "r000480_v01",
+    "session": {
+      "case_name": "self",
+      "participants": ["Andi", "Budi", "Caca"],
+      "focus_player": "Caca",
+      "panggilan": [],
+      "messages": [
+        {
+          "pengirim": "Andi",
+          "teks_chat": "Budi dari tadi pasif banget dan tidak membantu, jangan-jangan dia Hitman.",
+          "label_intent": "offend",
+          "target": [
+            {"pemain": "Budi", "relasi": "offend", "bukti_pesan": [1]}
+          ]
+        },
+        {
+          "pengirim": "Caca",
+          "teks_chat": "Budi tidak mungkin Hitman karena dia tadi bersamaku terus di ruang kendali.",
+          "label_intent": "defend",
+          "target": [
+            {"pemain": "Budi", "relasi": "defend", "bukti_pesan": [1]}
+          ]
+        },
+        {
+          "pengirim": "Caca",
+          "teks_chat": "Eh kok aku jadi ngerasa pembelaanku sendiri terlalu cepat dan malah mencurigakan, ya udah kalau kalian ragu mending vote aku saja!",
+          "label_intent": "offend",
+          "target": [
+            {"pemain": "Caca", "relasi": "offend", "bukti_pesan": [3]}
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "job_id": "r000481_v01",
+    "session": {
+      "case_name": "witness",
+      "participants": ["Dika", "Eka", "Fajar"],
+      "focus_player": "Fajar",
+      "panggilan": [],
+      "messages": [
+        {
+          "pengirim": "Dika",
+          "teks_chat": "Eka, tadi kamu bilang sempat melihat sesuatu pas jaga di taman kan?",
+          "label_intent": "neutral",
+          "target": []
+        },
+        {
+          "pengirim": "Eka",
+          "teks_chat": "Iya, aku melihat Fajar berdiri diam saja di pojokan taman sepanjang malam tanpa mengerjakan tugas.",
+          "label_intent": "neutral",
+          "target": []
+        },
+        {
+          "pengirim": "Fajar",
+          "teks_chat": "Aku diam karena lagi mikir keras nebak siapa pelakunya di pikiran.",
+          "label_intent": "defend",
+          "target": [
+            {"pemain": "Fajar", "relasi": "defend", "bukti_pesan": [2]}
+          ]
+        },
+        {
+          "pengirim": "Dika",
+          "teks_chat": "Alasanmu jelek sekali, pemain yang terlalu pasif seperti Fajar ini pasti Hitman, menurut kesaksian Eka tadi ayo kita vote dia!",
+          "label_intent": "offend",
+          "target": [
+            {"pemain": "Fajar", "relasi": "offend", "bukti_pesan": [2]}
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "job_id": "r000483_v01",
+    "session": {
+      "case_name": "explicit",
+      "participants": ["Gilang", "Hadi", "Irfan", "Joko"],
+      "focus_player": "Hadi",
+      "panggilan": [],
+      "messages": [
+        {
+          "pengirim": "Gilang",
+          "teks_chat": "Ayo semuanya langsung kumpulkan suara buat Hadi aja sekarang!",
+          "label_intent": "offend",
+          "target": [
+            {"pemain": "Hadi", "relasi": "offend", "bukti_pesan": [1]}
+          ]
+        },
+        {
+          "pengirim": "Hadi",
+          "teks_chat": "Loh, buktinya apa kamu tiba-tiba mengajak orang untuk vote aku?",
+          "label_intent": "defend",
+          "target": [
+            {"pemain": "Hadi", "relasi": "defend", "bukti_pesan": [1]}
+          ]
+        },
+        {
+          "pengirim": "Gilang",
+          "teks_chat": "Pokoknya feeling aku kuat banget kalau kamu itu Hitman yang lagi nyamar.",
+          "label_intent": "offend",
+          "target": [
+            {"pemain": "Hadi", "relasi": "offend", "bukti_pesan": [1]}
+          ]
+        },
+        {
+          "pengirim": "Irfan",
+          "teks_chat": "Kita main deduksi, tidak bisa mengandalkan feeling doang.",
+          "label_intent": "neutral",
+          "target": []
+        },
+        {
+          "pengirim": "Gilang",
+          "teks_chat": "Udah percaya aja sama arahanku, pasti tebakanku benar kok.",
+          "label_intent": "neutral",
+          "target": []
+        },
+        {
+          "pengirim": "Joko",
+          "teks_chat": "Aku sangat yakin bukan Hadi pelakunya karena ajakan vote tanpa bukti dari Gilang ini terlalu memaksa.",
+          "label_intent": "defend",
+          "target": [
+            {"pemain": "Hadi", "relasi": "defend", "bukti_pesan": [1]}
+          ]
+        }
+      ]
+    }
+  }
+]}

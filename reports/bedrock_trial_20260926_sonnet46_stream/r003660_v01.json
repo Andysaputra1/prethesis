@@ -1,0 +1,78 @@
+{
+  "job": {
+    "job_id": "r003660_v01",
+    "case_name": "short_history_2",
+    "case_description": "Awal diskusi dengan tepat 2 pesan sebelumnya. Gunakan hanya petunjuk yang tersedia.",
+    "source": {
+      "source_row": 3660,
+      "source_group": "40fdd0d487b462022352",
+      "teks_chat": "gw hitman? lucu, padahal gw spy yang semalam jagain korban kalian",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 3,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "short_history_2",
+    "participants": [
+      "Rina",
+      "Sandi",
+      "Tomi"
+    ],
+    "focus_player": "",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Rina",
+        "teks_chat": "Sandi dari tadi tidak bicara sama sekali",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Sandi",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Tomi",
+        "teks_chat": "iya, pemain pasif memang mencurigakan",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Sandi",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Sandi",
+        "teks_chat": "aku tidak pasif, aku hanya mengamati dulu sebelum bicara",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Sandi",
+            "relasi": "defend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "validation_status": "local_structure_only",
+  "human_review_status": "pending",
+  "generation_settings": {
+    "provider": "aws_bedrock",
+    "model": "global.anthropic.claude-sonnet-4-6",
+    "thinking": "not_requested"
+  }
+}

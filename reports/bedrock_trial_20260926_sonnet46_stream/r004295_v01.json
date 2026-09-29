@@ -1,0 +1,72 @@
+{
+  "job": {
+    "job_id": "r004295_v01",
+    "case_name": "mixed_relations",
+    "case_description": "Membela satu pemain dan menuduh pemain lain. Intent utama offend; simpan kedua relasi.",
+    "source": {
+      "source_row": 4295,
+      "source_group": "9e1a602297b2b3d12488",
+      "teks_chat": "kalau memang ada yang jeli, harusnya kalian sadar si Oki selalu muncul setelah arah vote berubah",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 2,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "mixed_relations",
+    "participants": [
+      "Toni",
+      "Resa",
+      "Gilang",
+      "Wati"
+    ],
+    "focus_player": "",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Resa",
+        "teks_chat": "Gilang langsung bela diri sebelum ada yang nuduh, itu mencurigakan",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Gilang",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Toni",
+        "teks_chat": "Gilang tidak mencurigakan, justru Wati yang terlalu cepat bela dia tanpa alasan",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Gilang",
+            "relasi": "defend",
+            "bukti_pesan": [
+              2
+            ]
+          },
+          {
+            "pemain": "Wati",
+            "relasi": "offend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "validation_status": "local_structure_only",
+  "human_review_status": "pending",
+  "generation_settings": {
+    "provider": "aws_bedrock",
+    "model": "global.anthropic.claude-sonnet-4-6",
+    "thinking": "not_requested"
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "job": {
+    "job_id": "r001724_v01",
+    "case_name": "ambiguous",
+    "case_description": "Beberapa acuan sama-sama mungkin; target tidak_diketahui, bukan nama terakhir.",
+    "source": {
+      "source_row": 1724,
+      "source_group": "4bfcdc376a0c022e7614",
+      "teks_chat": "K terlihat sengaja membangun konflik antara dua pemain lalu mundur dari diskusi, pola itu khas hitman, vote K",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 11,
+    "pesan_typo_ringan": [
+      7
+    ]
+  },
+  "session": {
+    "case_name": "ambiguous",
+    "participants": [
+      "Adit",
+      "Bima",
+      "Caca",
+      "Dimas",
+      "Erna",
+      "Fikri"
+    ],
+    "focus_player": "",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Adit",
+        "teks_chat": "Ada yang kena Gag Order tidak tadi malam?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Bima",
+        "teks_chat": "Aku tidak kena kok, bisa chat seperti biasa",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Caca",
+        "teks_chat": "Aku juga tidak kena, tapi ada yang bilang sempat tidak bisa chat",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Dimas",
+        "teks_chat": "Siapa yang bilang begitu?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Erna",
+        "teks_chat": "Aku dengar tapi tidak ingat siapa, pembicaraan tadi cepat banget",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Fikri",
+        "teks_chat": "Kalau ada yang kena Gag Order berarti Hitman aktif dong",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Adit",
+        "teks_chat": "Iya makanya aku mau tahu siapa yg kena, biar kita bisa lacak",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Bima",
+        "teks_chat": "Hmm yang diam dari tadi mungkin yang kena Gag Order",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Caca",
+        "teks_chat": "Tapi ada beberapa yang diam, susah tentukan siapa",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Dimas",
+        "teks_chat": "Betul, Erna dan Fikri sempat diam juga tadi",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Erna",
+        "teks_chat": "Dia pasti tahu sesuatu tapi tidak mau bilang, curiga aku",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "tidak_diketahui",
+            "relasi": "offend",
+            "bukti_pesan": []
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "validation_status": "local_structure_only",
+  "human_review_status": "pending",
+  "generation_settings": {
+    "provider": "aws_bedrock",
+    "model": "us.anthropic.claude-opus-4-6-v1",
+    "thinking": "not_requested"
+  }
+}

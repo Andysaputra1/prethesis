@@ -1,0 +1,136 @@
+{
+  "job": {
+    "job_id": "r004432_v01",
+    "case_name": "negation",
+    "case_description": "Negasi menentukan relasi: Andy Hitman berbeda dari Andy bukan Hitman.",
+    "source": {
+      "source_row": 4432,
+      "source_group": "3204895157f67418b647",
+      "teks_chat": "serius, kenapa cuma aku yang dibahas padahal si H tidak pernah ikut membantu analisis",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 7,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "negation",
+    "participants": [
+      "Hasan",
+      "Rini",
+      "Dodi",
+      "Fira"
+    ],
+    "focus_player": "Hasan",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Rini",
+        "teks_chat": "Hasan tadi nuduh Dodi, sekarang malah bilang Dodi tidak bersalah",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Dodi",
+        "teks_chat": "iya, tuduhannya berubah-ubah terus",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Hasan",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1,
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Fira",
+        "teks_chat": "Hasan memang tidak konsisten dari tadi",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Hasan",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1,
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Hasan",
+        "teks_chat": "aku berubah pikiran karena dapat informasi baru, bukan karena tidak konsisten",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Hasan",
+            "relasi": "defend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Rini",
+        "teks_chat": "informasi apa? kamu tidak jelaskan apa-apa",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Hasan",
+            "relasi": "offend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Dodi",
+        "teks_chat": "aku juga tidak terima dituduh tanpa dasar tadi",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Dodi",
+            "relasi": "defend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Hasan",
+        "teks_chat": "aku tidak bilang Dodi bersalah sekarang, aku sudah ralat tuduhan itu",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Hasan",
+            "relasi": "defend",
+            "bukti_pesan": [
+              7
+            ]
+          },
+          {
+            "pemain": "Dodi",
+            "relasi": "defend",
+            "bukti_pesan": [
+              7
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "validation_status": "local_structure_only",
+  "human_review_status": "pending",
+  "generation_settings": {
+    "provider": "aws_bedrock",
+    "model": "global.anthropic.claude-sonnet-4-6",
+    "thinking": "not_requested"
+  }
+}

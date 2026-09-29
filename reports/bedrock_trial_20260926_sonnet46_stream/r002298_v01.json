@@ -1,0 +1,158 @@
+{
+  "job": {
+    "job_id": "r002298_v01",
+    "case_name": "rhetorical_question",
+    "case_description": "Pesan sekarang berbentuk pertanyaan retoris yang sebenarnya menuduh atau membela, misalnya 'kenapa Andy diam terus?' (offend) atau 'masa sih Andy Hitman?' (defend). Bukan pertanyaan informasi.",
+    "source": {
+      "source_row": 2298,
+      "source_group": "d7b901679f6357083f8b",
+      "teks_chat": "gw klaim Spy, tapi kalau kalian mau vote gw silakan cek siapa yang paling diuntungkan",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 9,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "rhetorical_question",
+    "participants": [
+      "Niko",
+      "Rani",
+      "Budi",
+      "Sinta"
+    ],
+    "focus_player": "Niko",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Rani",
+        "teks_chat": "Niko klaim Stalker tapi hasilnya tidak masuk akal",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Niko",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Budi",
+        "teks_chat": "iya, Peek ke arah itu tidak mungkin dilakukan Stalker",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Niko",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Sinta",
+        "teks_chat": "aku ragu juga, klaimnya terlalu dipaksakan",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Niko",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Niko",
+        "teks_chat": "klaim aku valid, kalian yang salah baca situasinya",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Niko",
+            "relasi": "defend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Rani",
+        "teks_chat": "valid bagaimana? detail yang kamu kasih tidak konsisten",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Niko",
+            "relasi": "offend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Budi",
+        "teks_chat": "aku tetap curiga, penjelasannya tidak memuaskan",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Niko",
+            "relasi": "offend",
+            "bukti_pesan": [
+              4,
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Sinta",
+        "teks_chat": "kita tanya lebih detail dulu sebelum vote",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Rani",
+        "teks_chat": "baik, tapi aku masih ragu",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Niko",
+            "relasi": "offend",
+            "bukti_pesan": [
+              4,
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Budi",
+        "teks_chat": "masa sih Niko benar-benar Stalker? hasil Peek itu tidak masuk akal sama sekali",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Niko",
+            "relasi": "defend",
+            "bukti_pesan": [
+              4,
+              9
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "validation_status": "local_structure_only",
+  "human_review_status": "pending",
+  "generation_settings": {
+    "provider": "aws_bedrock",
+    "model": "global.anthropic.claude-sonnet-4-6",
+    "thinking": "not_requested"
+  }
+}

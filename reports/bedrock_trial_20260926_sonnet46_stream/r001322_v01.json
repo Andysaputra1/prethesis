@@ -1,0 +1,47 @@
+{
+  "job": {
+    "job_id": "r001322_v01",
+    "case_name": "short_history_1",
+    "case_description": "Awal diskusi dengan tepat 1 pesan sebelumnya. Jangan menambah riwayat fiktif atau mengisi sampai 12.",
+    "source": {
+      "source_row": 1322,
+      "source_group": "61f0769487e4876294af",
+      "teks_chat": "dari semua pemain, siapa yang paling layak kita lindungi di voting ini?",
+      "label_intent": "neutral"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 2,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "short_history_1",
+    "participants": [
+      "Iman",
+      "Sari"
+    ],
+    "focus_player": "",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Iman",
+        "teks_chat": "ada yang klaim Spy di sini?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Sari",
+        "teks_chat": "aku belum dengar ada yang klaim Spy secara resmi",
+        "label_intent": "neutral",
+        "target": []
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "validation_status": "local_structure_only",
+  "human_review_status": "pending",
+  "generation_settings": {
+    "provider": "aws_bedrock",
+    "model": "global.anthropic.claude-sonnet-4-6",
+    "thinking": "not_requested"
+  }
+}
