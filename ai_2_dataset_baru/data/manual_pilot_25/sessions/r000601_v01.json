@@ -1,0 +1,82 @@
+{
+  "job": {
+    "job_id": "r000601_v01",
+    "case_name": "negation",
+    "case_description": "Negasi menentukan relasi: Andy Hitman berbeda dari Andy bukan Hitman.",
+    "source": {
+      "source_row": 601,
+      "source_group": "8d745cd66f965bfd7384",
+      "teks_chat": "cek siapa yang pertama kali lempar namaku dan siapa yang langsung ikut, pola itu lebih penting",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 4,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "negation",
+    "participants": [
+      "Joko",
+      "Kiki",
+      "Lila"
+    ],
+    "focus_player": "Kiki",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Joko",
+        "teks_chat": "Eh, si Kiki kok chatnya lambat banget sih munculnya?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Lila",
+        "teks_chat": "Aku curiga dia Hitman yang sedang menunda jawaban untuk mengarang alasan.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Kiki",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Kiki",
+        "teks_chat": "HP aku ngelag banget dari tadi sumpah deh.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Kiki",
+            "relasi": "defend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Joko",
+        "teks_chat": "Kiki jelas bukan Hitman kok, dia emang sering masalah device kalau main game ini.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Kiki",
+            "relasi": "defend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 10.txt"
+  }
+}

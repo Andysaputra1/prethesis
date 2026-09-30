@@ -1,0 +1,144 @@
+{
+  "job": {
+    "job_id": "r002202_v01",
+    "case_name": "witness",
+    "case_description": "Nama saksi/korban disebut, tetapi bukan target serangan atau pembelaan.",
+    "source": {
+      "source_row": 2202,
+      "source_group": "54d5db6834004c37be63",
+      "teks_chat": "fix gw Hitman, eh bercanda, gw Civilian jangan langsung vote",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 9,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "witness",
+    "participants": [
+      "Aldo",
+      "Rani",
+      "Sandi"
+    ],
+    "focus_player": "Aldo",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Rani",
+        "teks_chat": "Aldo mengubah ajakan vote di chat. Aku curiga dia Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Aldo",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Aldo",
+        "teks_chat": "Aku bukan Hitman. Aku mengubah pendapat setelah membaca alasan lain.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Aldo",
+            "relasi": "defend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Sandi",
+        "teks_chat": "Rani, perubahan ajakan yang kamu maksud kapan?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Rani",
+        "teks_chat": "Menjelang akhir diskusi tadi. Aku tetap curiga Aldo pelakunya.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Aldo",
+            "relasi": "offend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Aldo",
+        "teks_chat": "Rani, jangan jadikan perubahan pendapat sebagai bukti aku Hitman.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Aldo",
+            "relasi": "defend",
+            "bukti_pesan": [
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Sandi",
+        "teks_chat": "Alasan perubahan pendapat itu sudah ditulis di chat?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Rani",
+        "teks_chat": "Sudah, tetapi aku tidak percaya. Aldo pasti Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Aldo",
+            "relasi": "offend",
+            "bukti_pesan": [
+              7
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Aldo",
+        "teks_chat": "Aku sudah menjelaskan alasanku, tuduhan itu tidak benar.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Aldo",
+            "relasi": "defend",
+            "bukti_pesan": [
+              8
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Sandi",
+        "teks_chat": "Rani memang membaca perubahan ajakannya, tetapi itu belum membuktikan Aldo Hitman. Jangan vote Aldo hanya karena itu.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Aldo",
+            "relasi": "defend",
+            "bukti_pesan": [
+              9
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 36.txt"
+  }
+}

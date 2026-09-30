@@ -1,0 +1,139 @@
+{
+  "job": {
+    "job_id": "r001421_v01",
+    "case_name": "topic_switch",
+    "case_description": "Pembahasan berganti pemain; pesan sekarang mengikuti topik baru, bukan otomatis target lama.",
+    "source": {
+      "source_row": 1421,
+      "source_group": "ec83bc5b327e330c2470",
+      "teks_chat": "yang harus dijelasin itu si G, bukan aku",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 8,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "topic_switch",
+    "participants": [
+      "Mimin",
+      "Nanda",
+      "Oki",
+      "Poni"
+    ],
+    "focus_player": "Nanda",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Mimin",
+        "teks_chat": "Aku curiga Oki Hitman karena belum menjelaskan alasan ajakan vote.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Oki",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Nanda",
+        "teks_chat": "Oki belum pantas dituduh, kita beri waktu untuk menjawab.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Oki",
+            "relasi": "defend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Oki",
+        "teks_chat": "Aku bukan Hitman. Aku menarik ajakan vote tadi karena alasannya belum kuat.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Oki",
+            "relasi": "defend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Poni",
+        "teks_chat": "Sekarang aku justru curiga Nanda karena belum menjawab pertanyaan sendiri.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Nanda",
+            "relasi": "offend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Mimin",
+        "teks_chat": "Iya sih, Nanda pasif banget.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Nanda",
+        "teks_chat": "Aku bukan Hitman, aku sedang membaca ulang chat sebelum menjawab.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Nanda",
+            "relasi": "defend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Oki",
+        "teks_chat": "Alasan klasik dari orang yang mau sembunyi.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Nanda",
+            "relasi": "offend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Poni",
+        "teks_chat": "Udah fiks Nanda itu Hitman yang lagi nyamar jadi patung, ayo kita vote dia sekarang!",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Nanda",
+            "relasi": "offend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 25.txt"
+  }
+}

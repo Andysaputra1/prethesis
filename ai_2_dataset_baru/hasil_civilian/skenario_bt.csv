@@ -1,0 +1,16 @@
+skenario,chat,vote,tersangka,kecurigaan,urgensi,lulus,catatan,metode
+01 Awal game hening,tanya_info → —,tidak_bisa → —,Andi,0.0,0.25,True,,bt
+02 Bot dituduh dua pemain,bela_diri → Nara,tidak_bisa → —,Andi,0.2,0.25,True,,bt
+03 Korban Gag menuduh Dodi,tuduh → Dodi,tidak_bisa → —,Dodi,0.4,0.25,True,,bt
+04 Vote setelah pola Gag,tuduh → Dodi,vote → Dodi,Dodi,0.6,0.25,True,,bt
+05 Korban Hostage menuduh Budi,info_sandera → Eka,tidak_bisa → —,Budi,0.4,0.48,True,,bt
+06 Vote setelah pola Hostage,tuduh → Budi,vote → Budi,Budi,0.6,0.48,True,,bt
+07 Membela dugaan korban Hostage,bela_orang → Eka,tidak_bisa → —,Andi,0.0,0.48,True,,bt
+08 Tidak ikut vote korban Hostage,bela_orang → Eka,abstain → —,Andi,0.0,0.48,True,,bt
+09 Pendorong eksekusi warga,tuduh → Dodi,tidak_bisa → —,Dodi,0.6,0.5,True,,bt
+10 Budi terus menyerang bot,bela_diri → Nara,tidak_bisa → —,Budi,0.2,0.25,True,,bt
+11 Bentrok klaim Stalker,tanya_info → —,tidak_bisa → —,Citra,0.6,0.25,True,,bt
+12 Akhir game kritis,tuduh → Andi,vote → Andi,Andi,0.6,0.96,True,,bt
+13 Tuduhan tanpa bukti dibela,bela_orang → Citra,tidak_bisa → —,Citra,0.0,0.25,True,,bt
+14 Pengalihan berulang,tuduh → Budi,tidak_bisa → —,Budi,0.4,0.25,True,,bt
+15 Bot di-Gag setelah menuduh,tuduh → Dodi,tidak_bisa → —,Dodi,0.6,0.25,True,,bt

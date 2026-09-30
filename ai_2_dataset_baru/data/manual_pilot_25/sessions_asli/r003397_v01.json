@@ -1,0 +1,75 @@
+{
+  "job": {
+    "job_id": "r003397_v01",
+    "case_name": "quotation",
+    "case_description": "Ada tuduhan yang dikutip; bedakan sikap pengirim dari ucapan orang yang dikutip.",
+    "source": {
+      "source_row": 3397,
+      "source_group": "41c02cebb3620031e93c",
+      "teks_chat": "gw bukan Hitman, lu nuduh cuma gara-gara feeling doang",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 4,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "quotation",
+    "participants": [
+      "Hana",
+      "Irfan",
+      "Caca",
+      "Bimo"
+    ],
+    "focus_player": "Caca",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Hana",
+        "teks_chat": "Kok Bimo kemaren nuduh si Caca, sekarang malah nuduh aku?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Irfan",
+        "teks_chat": "Lah, emang si Bimo bilang gitu?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Caca",
+        "teks_chat": "Aku curiga Bimo Hitman karena menuduh berganti-ganti tanpa alasan.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Bimo",
+            "relasi": "offend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Hana",
+        "teks_chat": "Iya, tapi pas dia bilang 'Caca itu pasti hitman', menurutku tuduhan ke dia itu gak masuk akal sama sekali.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Caca",
+            "relasi": "defend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 51.txt"
+  }
+}

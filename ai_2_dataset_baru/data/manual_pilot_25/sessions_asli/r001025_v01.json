@@ -1,0 +1,201 @@
+{
+  "job": {
+    "job_id": "r001025_v01",
+    "case_name": "reference_start",
+    "case_description": "Tepat 12 konteks. Penyebutan target eksplisit di pesan konteks pertama; pesan sekarang memakai kata ganti.",
+    "source": {
+      "source_row": 1025,
+      "source_group": "919ac409672be3f6da23",
+      "teks_chat": "fix gue Stalker, peek ronde lalu baca Kiki sebagai Hitman",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 13,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "reference_start",
+    "participants": [
+      "Lila",
+      "Maman",
+      "Nisa",
+      "Opi"
+    ],
+    "focus_player": "Maman",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Lila",
+        "teks_chat": "Maman tadi mengajak vote Opi, sekarang Nisa tanpa menjelaskan alasannya. Aku curiga Maman Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Maman",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Maman",
+        "teks_chat": "Aku bukan Hitman. Dugaanku berubah setelah membaca penjelasan baru di chat.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Maman",
+            "relasi": "defend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Nisa",
+        "teks_chat": "Aku tidak bersalah, kamu menuduhku tanpa alasan yang jelas.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Nisa",
+            "relasi": "defend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Opi",
+        "teks_chat": "Iya, dia gampang banget kegeser pendiriannya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Lila",
+        "teks_chat": "Aku curiga orang yang mengganti tuduhan tadi sengaja mengacaukan pembahasan.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Maman",
+            "relasi": "offend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Maman",
+        "teks_chat": "Ya gimana, aku cuma nyampein kemungkinan terburuk aja dari info yang ada.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Maman",
+            "relasi": "defend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Nisa",
+        "teks_chat": "Aku tetap tidak bersalah. Dugaanmu kepadaku belum punya dasar.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Nisa",
+            "relasi": "defend",
+            "bukti_pesan": [
+              7
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Opi",
+        "teks_chat": "Aku curiga orang yang berganti tuduhan tadi Hitman yang mau mengadu domba.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Maman",
+            "relasi": "offend",
+            "bukti_pesan": [
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Lila",
+        "teks_chat": "Aku setuju dengan tuduhan itu.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Maman",
+            "relasi": "offend",
+            "bukti_pesan": [
+              8
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Maman",
+        "teks_chat": "Kalian nih suudzon mulu, kalau civilian nggak proaktif malah disalahin.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Maman",
+            "relasi": "defend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Nisa",
+        "teks_chat": "Proaktif sama ngawur beda ya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Opi",
+        "teks_chat": "Aku ingin vote orang yang berganti tuduhan tadi.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Maman",
+            "relasi": "offend",
+            "bukti_pesan": [
+              9
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Lila",
+        "teks_chat": "Sangat setuju, dia pasti pelakunya yang dari tadi sengaja bikin rusuh diskusi, vote aja!",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Maman",
+            "relasi": "offend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 20.txt"
+  }
+}

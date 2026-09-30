@@ -1,0 +1,91 @@
+{
+  "job": {
+    "job_id": "r004896_v01",
+    "case_name": "mixed_relations",
+    "case_description": "Membela satu pemain dan menuduh pemain lain. Intent utama offend; simpan kedua relasi.",
+    "source": {
+      "source_row": 4896,
+      "source_group": "9a9e97b98b54c9f1a415",
+      "teks_chat": "semua sudah menyampaikan posisi kecuali Hendra, jadi suara aku masuk ke Hendra",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 3,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "mixed_relations",
+    "participants": [
+      "Lia",
+      "Miko",
+      "Nina",
+      "Oka"
+    ],
+    "focus_player": "",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Lia",
+        "teks_chat": "Miko dan Nina mengubah ajakan vote bersamaan, aku curiga mereka Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Miko",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          },
+          {
+            "pemain": "Nina",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Miko",
+        "teks_chat": "Aku bukan Hitman, aku berubah pikiran setelah membaca alasan baru.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Miko",
+            "relasi": "defend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Oka",
+        "teks_chat": "Miko belum terbukti Hitman, tetapi aku curiga Nina karena mengubah ajakan tanpa penjelasan.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Miko",
+            "relasi": "defend",
+            "bukti_pesan": [
+              3
+            ]
+          },
+          {
+            "pemain": "Nina",
+            "relasi": "offend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 72.txt"
+  }
+}

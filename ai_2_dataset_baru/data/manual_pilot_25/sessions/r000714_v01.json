@@ -1,0 +1,163 @@
+{
+  "job": {
+    "job_id": "r000714_v01",
+    "case_name": "rhetorical_question",
+    "case_description": "Pesan sekarang berbentuk pertanyaan retoris yang sebenarnya menuduh atau membela, misalnya 'kenapa Andy diam terus?' (offend) atau 'masa sih Andy Hitman?' (defend). Bukan pertanyaan informasi.",
+    "source": {
+      "source_row": 714,
+      "source_group": "cc94388e62ffe49bb654",
+      "teks_chat": "aku sudah menjelaskan urutan aksiku, malam pertama Guard dan malam berikutnya tidak melakukan aksi",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 9,
+    "pesan_typo_ringan": [
+      1
+    ]
+  },
+  "session": {
+    "case_name": "rhetorical_question",
+    "participants": [
+      "Hana",
+      "Imam",
+      "Joko",
+      "Rina"
+    ],
+    "focus_player": "Joko",
+    "panggilan": [
+      {
+        "pemain": "Imam",
+        "sebutan": [
+          "mam"
+        ]
+      }
+    ],
+    "messages": [
+      {
+        "pengirim": "Hana",
+        "teks_chat": "kalian sadar ngga tdi Imam ngajak vote Joko tanpa nyebutin alasannya sama sekali?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Imam",
+        "teks_chat": "Ya aku emang ngerasa dia pelakunya aja, instingku jarang meleset kok.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Joko",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Joko",
+        "teks_chat": "Masa cuma gara-gara insting doang lu mau ngorbanin gw mam?",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Joko",
+            "relasi": "defend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Rina",
+        "teks_chat": "Emang bahaya banget main tuduh tanpa bawa info atau bukti.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Hana",
+        "teks_chat": "Joko dari tadi mainnya kalem kok, ngga keliatan kayak orang yang nyembunyiin sesuatu.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Joko",
+            "relasi": "defend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Imam",
+        "teks_chat": "Justru orang yang kalem itu yang biasanya nusuk dari belakang.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Joko",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Joko",
+        "teks_chat": "Aku bukan Hitman, aku sedang membaca ulang chat sebelum menjawab.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Joko",
+            "relasi": "defend",
+            "bukti_pesan": [
+              7
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Rina",
+        "teks_chat": "Setuju sih, mending kita kumpulin info dulu daripada ntar nyesel.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Hana",
+        "teks_chat": "Masa Joko langsung dianggap Hitman tanpa alasan selain insting? Aku menolak tuduhan itu.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Joko",
+            "relasi": "defend",
+            "bukti_pesan": [
+              9
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 14.txt"
+  },
+  "revisi": [
+    {
+      "pesan": 1,
+      "kategori": "singkatan",
+      "alasan": "Slot typo harus tepat satu singkatan, di sini ada dua (tdi, skali)."
+    },
+    {
+      "pesan": 5,
+      "kategori": "singkatan",
+      "alasan": "Singkatan kyk/yg di luar slot typo."
+    },
+    {
+      "pesan": 8,
+      "kategori": "singkatan",
+      "alasan": "Singkatan 'dlu' di luar slot typo."
+    }
+  ]
+}

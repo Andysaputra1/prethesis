@@ -1,0 +1,153 @@
+{
+  "job": {
+    "job_id": "r001031_v01",
+    "case_name": "reference_middle",
+    "case_description": "Tepat 12 konteks. Penyebutan target eksplisit di pesan konteks ke-6 atau ke-7.",
+    "source": {
+      "source_row": 1031,
+      "source_group": "4e2d2baed3bbcd929c62",
+      "teks_chat": "kalau mau eksekusi gw silakan, tapi aku Spy dan Arga target guard-ku",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 13,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "reference_middle",
+    "participants": [
+      "Tito",
+      "Umar",
+      "Vina",
+      "Wawan"
+    ],
+    "focus_player": "Wawan",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Tito",
+        "teks_chat": "Ada yang mau membagikan klaim role?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Umar",
+        "teks_chat": "Belum ada klaim baru yang kubaca.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Vina",
+        "teks_chat": "Kita bisa memberi waktu pemain menyusun pesannya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Tito",
+        "teks_chat": "Bagaimana dengan klaim Stalker?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Umar",
+        "teks_chat": "Kalau ada yang ingin berbagi, sebutkan penggunaan Peek yang dimaksud.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Wawan",
+        "teks_chat": "Aku mengaku Stalker, tetapi belum ingin membagikan hasil Peek.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Vina",
+        "teks_chat": "Aku curiga Wawan Hitman yang memakai klaim tanpa hasil untuk cari aman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Wawan",
+            "relasi": "offend",
+            "bukti_pesan": [
+              7
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Tito",
+        "teks_chat": "Apa alasanmu belum membuka hasilnya?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Wawan",
+        "teks_chat": "Aku bukan Hitman. Aku masih mempertimbangkan risiko mengungkap informasi itu.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Wawan",
+            "relasi": "defend",
+            "bukti_pesan": [
+              9
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Umar",
+        "teks_chat": "Klaim itu belum bisa kami pastikan benar atau salah.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Vina",
+        "teks_chat": "Aku tetap curiga dia sedang mengarang.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Wawan",
+            "relasi": "offend",
+            "bukti_pesan": [
+              9
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Tito",
+        "teks_chat": "Aku juga curiga dia Hitman yang berlindung di balik klaim itu.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Wawan",
+            "relasi": "offend",
+            "bukti_pesan": [
+              11
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Umar",
+        "teks_chat": "Dia belum pantas dituduh hanya karena belum membuka hasil. Kita tidak memiliki bukti klaimnya palsu.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Wawan",
+            "relasi": "defend",
+            "bukti_pesan": [
+              12
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 20.txt"
+  }
+}

@@ -1,0 +1,118 @@
+{
+  "job": {
+    "job_id": "r002979_v01",
+    "case_name": "stance_change",
+    "case_description": "Pengirim pesan sekarang sebelumnya menuduh atau membela seorang pemain di konteks, lalu berubah sikap terhadap pemain yang sama. Anotasi mengikuti sikap terbaru.",
+    "source": {
+      "source_row": 2979,
+      "source_group": "a8f150ff071e48897d17",
+      "teks_chat": "fix Dito hitman, barusan chat gw kena Gag Order pas mulai nuduh dia",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 6,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "stance_change",
+    "participants": [
+      "Toni",
+      "Ujang",
+      "Vina"
+    ],
+    "focus_player": "Toni",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Toni",
+        "teks_chat": "Gue Spy, kalian percaya aja sama gue.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Toni",
+            "relasi": "defend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Ujang",
+        "teks_chat": "Aku percaya Toni bukan Hitman.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Toni",
+            "relasi": "defend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Vina",
+        "teks_chat": "Aku curiga Toni Hitman yang membuat klaim palsu.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Toni",
+            "relasi": "offend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Toni",
+        "teks_chat": "Aku bukan Hitman. Aku akan menjelaskan pilihan Guard-ku sebentar lagi.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Toni",
+            "relasi": "defend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Vina",
+        "teks_chat": "Tuh kan, pasti alesan doang itu mah.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Toni",
+            "relasi": "offend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Ujang",
+        "teks_chat": "Sekarang aku curiga Toni Hitman yang menyamar sebagai Spy karena terus menunda penjelasan.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Toni",
+            "relasi": "offend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 43.txt"
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "job": {
+    "job_id": "r001140_v01",
+    "case_name": "quotation",
+    "case_description": "Ada tuduhan yang dikutip; bedakan sikap pengirim dari ucapan orang yang dikutip.",
+    "source": {
+      "source_row": 1140,
+      "source_group": "198a6120942935e37424",
+      "teks_chat": "Gw mau dengar urutan aksi kalian, siapa yang pertama kali tahu ada serangan malam?",
+      "label_intent": "neutral"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 3,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "quotation",
+    "participants": [
+      "Lina",
+      "Miko",
+      "Nina"
+    ],
+    "focus_player": "",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Lina",
+        "teks_chat": "Eh ada yang tau nggak semalam siapa yang diculik?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Miko",
+        "teks_chat": "Ini pasti kerjanya Nina, dia doang yang diem aja dari tadi.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Nina",
+            "relasi": "offend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Lina",
+        "teks_chat": "Oke, aku catat dulu ya, Miko bilang 'Ini pasti kerjanya Nina'. Nina, kamu mau jawab apa?",
+        "label_intent": "neutral",
+        "target": []
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 22.txt"
+  },
+  "revisi": [
+    {
+      "pesan": 1,
+      "kategori": "meta",
+      "alasan": "'Namanya disembunyiin' menyinggung desain penyembunyian korban."
+    },
+    {
+      "pesan": 3,
+      "kategori": "tidak_natural",
+      "alasan": "'Ini hanya kutipan, aku belum menilai tuduhan itu' terdengar seperti anotator, bukan pemain."
+    }
+  ]
+}

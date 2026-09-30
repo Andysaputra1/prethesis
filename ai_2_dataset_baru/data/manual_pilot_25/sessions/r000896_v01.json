@@ -1,0 +1,195 @@
+{
+  "job": {
+    "job_id": "r000896_v01",
+    "case_name": "outside_window_unknown",
+    "case_description": "14-16 pesan total. Pembahasan lama telah putus/beralih. Teks dan anotasi 12 konteks terakhir tidak cukup menentukan acuan sekarang. Target harus tidak_diketahui; jangan menggunakan informasi lama yang tidak tersedia dalam input.",
+    "source": {
+      "source_row": 896,
+      "source_group": "50ffcdac8552b9d30925",
+      "teks_chat": "bukan gw Hitman, kalau iya ngapain gw terang-terangan nuduh W dari awal",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 14,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "outside_window_unknown",
+    "participants": [
+      "Andi",
+      "Bima",
+      "Caca",
+      "Doni"
+    ],
+    "focus_player": "Doni",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Andi",
+        "teks_chat": "Doni mengaku Spy. Aku curiga Doni menggunakan klaim itu untuk cari aman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Doni",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Bima",
+        "teks_chat": "Sebentar, sebelum bahas orangnya, ada yang kena Gag Order nggak hari ini?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Caca",
+        "teks_chat": "Aku aman, masih bisa ngetik.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Andi",
+        "teks_chat": "Aku juga aman.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Bima",
+        "teks_chat": "Oke, berarti yang di sini masih bisa ngomong semua.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Caca",
+        "teks_chat": "Bagus deh, diskusinya bisa lancar.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Andi",
+        "teks_chat": "Waktu siang tinggal berapa lama ya?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Bima",
+        "teks_chat": "Kayaknya sekitar semenit lagi.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Caca",
+        "teks_chat": "Oke, berarti kita harus cepat.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Andi",
+        "teks_chat": "Tapi jangan sampai vote asal karena buru-buru.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Bima",
+        "teks_chat": "Setuju, mending bahas satu-satu.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Caca",
+        "teks_chat": "Oke, siapa dulu yang mau dibahas?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Andi",
+        "teks_chat": "Balik lagi ke orang yang ngaku tadi sebelum kita ngobrolin Gag Order.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Bima",
+        "teks_chat": "Dia belum pantas dituduh sebagai Hitman hanya karena klaimnya belum bisa dipastikan.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "tidak_diketahui",
+            "relasi": "defend",
+            "bukti_pesan": []
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 18.txt"
+  },
+  "revisi": [
+    {
+      "pesan": 2,
+      "kategori": "meta",
+      "alasan": "Seluruh jendela berisi penjelasan fungsi Spy/Guard/Stalker/Peek dan pesan 13 menyebut 'membahas aturan'; diganti obrolan in-game netral tanpa menyebut target lama"
+    },
+    {
+      "pesan": 3,
+      "kategori": "meta",
+      "alasan": "Seluruh jendela berisi penjelasan fungsi Spy/Guard/Stalker/Peek dan pesan 13 menyebut 'membahas aturan'; diganti obrolan in-game netral tanpa menyebut target lama"
+    },
+    {
+      "pesan": 4,
+      "kategori": "meta",
+      "alasan": "Seluruh jendela berisi penjelasan fungsi Spy/Guard/Stalker/Peek dan pesan 13 menyebut 'membahas aturan'; diganti obrolan in-game netral tanpa menyebut target lama"
+    },
+    {
+      "pesan": 5,
+      "kategori": "meta",
+      "alasan": "Seluruh jendela berisi penjelasan fungsi Spy/Guard/Stalker/Peek dan pesan 13 menyebut 'membahas aturan'; diganti obrolan in-game netral tanpa menyebut target lama"
+    },
+    {
+      "pesan": 6,
+      "kategori": "meta",
+      "alasan": "Seluruh jendela berisi penjelasan fungsi Spy/Guard/Stalker/Peek dan pesan 13 menyebut 'membahas aturan'; diganti obrolan in-game netral tanpa menyebut target lama"
+    },
+    {
+      "pesan": 7,
+      "kategori": "meta",
+      "alasan": "Seluruh jendela berisi penjelasan fungsi Spy/Guard/Stalker/Peek dan pesan 13 menyebut 'membahas aturan'; diganti obrolan in-game netral tanpa menyebut target lama"
+    },
+    {
+      "pesan": 8,
+      "kategori": "meta",
+      "alasan": "Seluruh jendela berisi penjelasan fungsi Spy/Guard/Stalker/Peek dan pesan 13 menyebut 'membahas aturan'; diganti obrolan in-game netral tanpa menyebut target lama"
+    },
+    {
+      "pesan": 9,
+      "kategori": "meta",
+      "alasan": "Seluruh jendela berisi penjelasan fungsi Spy/Guard/Stalker/Peek dan pesan 13 menyebut 'membahas aturan'; diganti obrolan in-game netral tanpa menyebut target lama"
+    },
+    {
+      "pesan": 10,
+      "kategori": "meta",
+      "alasan": "Seluruh jendela berisi penjelasan fungsi Spy/Guard/Stalker/Peek dan pesan 13 menyebut 'membahas aturan'; diganti obrolan in-game netral tanpa menyebut target lama"
+    },
+    {
+      "pesan": 11,
+      "kategori": "meta",
+      "alasan": "Seluruh jendela berisi penjelasan fungsi Spy/Guard/Stalker/Peek dan pesan 13 menyebut 'membahas aturan'; diganti obrolan in-game netral tanpa menyebut target lama"
+    },
+    {
+      "pesan": 12,
+      "kategori": "meta",
+      "alasan": "Seluruh jendela berisi penjelasan fungsi Spy/Guard/Stalker/Peek dan pesan 13 menyebut 'membahas aturan'; diganti obrolan in-game netral tanpa menyebut target lama"
+    },
+    {
+      "pesan": 13,
+      "kategori": "meta",
+      "alasan": "Seluruh jendela berisi penjelasan fungsi Spy/Guard/Stalker/Peek dan pesan 13 menyebut 'membahas aturan'; diganti obrolan in-game netral tanpa menyebut target lama"
+    }
+  ]
+}

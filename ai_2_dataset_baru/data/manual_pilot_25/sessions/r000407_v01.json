@@ -1,0 +1,88 @@
+{
+  "job": {
+    "job_id": "r000407_v01",
+    "case_name": "multiple_targets",
+    "case_description": "Dua atau lebih pemain menjadi target relasi yang sama secara jelas.",
+    "source": {
+      "source_row": 407,
+      "source_group": "eb12b66d93096c2ab393",
+      "teks_chat": "kalau mau eksekusi gw, minimal kasih alasan yang jelas",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 2,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "multiple_targets",
+    "participants": [
+      "Andi",
+      "Budi",
+      "Coki"
+    ],
+    "focus_player": "",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Andi",
+        "teks_chat": "Aku yakin banget Budi dan Coki komplotan Hitman yang nyandera orang semalam.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Budi",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          },
+          {
+            "pemain": "Coki",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Coki",
+        "teks_chat": "Aku dan Budi bukan Hitman. Kamu nuduh kami tanpa alasan sama sekali, korbannya aja kita belum tahu siapa.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Coki",
+            "relasi": "defend",
+            "bukti_pesan": [
+              2
+            ]
+          },
+          {
+            "pemain": "Budi",
+            "relasi": "defend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 6.txt"
+  },
+  "revisi": [
+    {
+      "pesan": 1,
+      "kategori": "meta",
+      "alasan": "'identitasnya disembunyikan oleh sistem' = menjelaskan desain game"
+    },
+    {
+      "pesan": 2,
+      "kategori": "meta",
+      "alasan": "'identitas korban yang memang tidak diumumkan' = penjelasan aturan"
+    }
+  ]
+}

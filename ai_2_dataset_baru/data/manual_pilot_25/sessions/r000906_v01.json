@@ -1,0 +1,45 @@
+{
+  "job": {
+    "job_id": "r000906_v01",
+    "case_name": "short_history_1",
+    "case_description": "Awal diskusi dengan tepat 1 pesan sebelumnya. Jangan menambah riwayat fiktif atau mengisi sampai 12.",
+    "source": {
+      "source_row": 906,
+      "source_group": "4eeb6a5d8b8e1d361dcd",
+      "teks_chat": "fix gw Spy, target guard gw semalam masih hidup sampai pagi",
+      "label_intent": "neutral"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 2,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "short_history_1",
+    "participants": [
+      "Hana",
+      "Iqbal"
+    ],
+    "focus_player": "",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Hana",
+        "teks_chat": "Aku mengaku Stalker dan memakai Peek untuk satu pemain semalam.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Iqbal",
+        "teks_chat": "Apa kamu mau membagikan hasil Peek yang kamu klaim itu?",
+        "label_intent": "neutral",
+        "target": []
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 18.txt"
+  }
+}

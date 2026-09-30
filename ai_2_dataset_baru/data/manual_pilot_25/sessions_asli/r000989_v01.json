@@ -1,0 +1,159 @@
+{
+  "job": {
+    "job_id": "r000989_v01",
+    "case_name": "multiple_targets",
+    "case_description": "Dua atau lebih pemain menjadi target relasi yang sama secara jelas.",
+    "source": {
+      "source_row": 989,
+      "source_group": "7202160b7aa15118b9ce",
+      "teks_chat": "kalau aku hitman, kenapa dari tadi justru aku yang paling aktif nuduh orang",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 8,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "multiple_targets",
+    "participants": [
+      "Bima",
+      "Citra",
+      "Dodi",
+      "Erna"
+    ],
+    "focus_player": "",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Bima",
+        "teks_chat": "Ada yang perhatiin nggak sih, Dodi sama Erna tuh dari awal diam aja?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Citra",
+        "teks_chat": "Iya, kelihatan banget pasifnya, jangan-jangan mereka berdua komplotan Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Dodi",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          },
+          {
+            "pemain": "Erna",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Dodi",
+        "teks_chat": "Aku diam soalnya belum ada clue apa-apa yang bisa dibahas.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Dodi",
+            "relasi": "defend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Erna",
+        "teks_chat": "Aku juga cuma nyimak doang kok daritadi.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Erna",
+            "relasi": "defend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Bima",
+        "teks_chat": "Tapi tetep aja, kalau terlalu pasif gitu kan merugikan tim.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Citra",
+        "teks_chat": "Mending kita keluarin aja mereka, daripada jadi beban.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Dodi",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          },
+          {
+            "pemain": "Erna",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Dodi",
+        "teks_chat": "Aku dan Erna tidak bersalah. Kalian belum punya alasan selain kami telat menjawab.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Dodi",
+            "relasi": "defend",
+            "bukti_pesan": [
+              7
+            ]
+          },
+          {
+            "pemain": "Erna",
+            "relasi": "defend",
+            "bukti_pesan": [
+              7
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Erna",
+        "teks_chat": "Bener kata Dodi, kami cuma civilian yang emang lagi nggak ada info apa-apa, jangan asal vote dong.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Dodi",
+            "relasi": "defend",
+            "bukti_pesan": [
+              1
+            ]
+          },
+          {
+            "pemain": "Erna",
+            "relasi": "defend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 19.txt"
+  }
+}

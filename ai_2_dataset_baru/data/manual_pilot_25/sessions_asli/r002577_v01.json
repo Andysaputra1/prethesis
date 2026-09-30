@@ -1,0 +1,133 @@
+{
+  "job": {
+    "job_id": "r002577_v01",
+    "case_name": "neutral_names",
+    "case_description": "Neutral menyebut nama tanpa menuduh/membela; target kosong.",
+    "source": {
+      "source_row": 2577,
+      "source_group": "8c37f7e475df814cf16f",
+      "teks_chat": "gw kira semua role bisa ngomong saat malam",
+      "label_intent": "neutral"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 12,
+    "pesan_typo_ringan": [
+      4
+    ]
+  },
+  "session": {
+    "case_name": "neutral_names",
+    "participants": [
+      "Bagas",
+      "Cinta",
+      "Doni",
+      "Elsa"
+    ],
+    "focus_player": "",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Bagas",
+        "teks_chat": "Halo semua.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Cinta",
+        "teks_chat": "Ada yang udah dapet petunjuk?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Doni",
+        "teks_chat": "Aku klaim Spy. Aku mau menjelaskan pilihan Guard semalam.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Elsa",
+        "teks_chat": "Aku curiga Doni Hitman yang membuat klaim Spy palsu.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Doni",
+            "relasi": "offend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Bagas",
+        "teks_chat": "Kita tunggu aja dulu.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Doni",
+        "teks_chat": "Beneran aku nggak bohong.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Doni",
+            "relasi": "defend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Cinta",
+        "teks_chat": "Silakan jelaskan pilihan Guard-mu.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Elsa",
+        "teks_chat": "Aku tetap curiga Doni Hitman, penjelasannya ditunda terus.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Doni",
+            "relasi": "offend",
+            "bukti_pesan": [
+              8
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Doni",
+        "teks_chat": "Sebentar, aku sedang mengetik penjelasannya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Bagas",
+        "teks_chat": "Iya, kita sabar aja.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Cinta",
+        "teks_chat": "Waktu diskusi sudah mau habis.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Elsa",
+        "teks_chat": "Bagas, Doni, sama Cinta ada usul lain nggak selain nungguin?",
+        "label_intent": "neutral",
+        "target": []
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 39.txt"
+  }
+}

@@ -1,0 +1,144 @@
+{
+  "job": {
+    "job_id": "r001989_v01",
+    "case_name": "reference_end",
+    "case_description": "Tepat 12 konteks. Penyebutan target eksplisit di pesan konteks terakhir.",
+    "source": {
+      "source_row": 1989,
+      "source_group": "7bf92708f9e30d2c59a5",
+      "teks_chat": "gw bukan asal nuduh, respons si K barusan paling janggal dibanding yang lain",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 13,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "reference_end",
+    "participants": [
+      "Maman",
+      "Niko",
+      "Opan",
+      "Putra"
+    ],
+    "focus_player": "Putra",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Maman",
+        "teks_chat": "Ada yang mendapat peran spesial tidak ronde ini?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Niko",
+        "teks_chat": "Aku tidak dapat peran apa pun.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Opan",
+        "teks_chat": "Sama, aku juga warga biasa.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Putra",
+        "teks_chat": "Aku tadi mengaku Stalker, kan?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Maman",
+        "teks_chat": "Lalu apakah kamu mendapat hasil intaian?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Putra",
+        "teks_chat": "Tadi malam aku mengintip seseorang.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Niko",
+        "teks_chat": "Siapa yang kamu intip dan apa hasilnya?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Putra",
+        "teks_chat": "Aku belum ingin membagikan hasilnya sekarang.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Opan",
+        "teks_chat": "Sebutkan saja namanya agar kita tahu.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Putra",
+        "teks_chat": "Baik, aku mengaku hasil Peek menyebut Niko sebagai Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Niko",
+            "relasi": "offend",
+            "bukti_pesan": [
+              10
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Maman",
+        "teks_chat": "Jangan ditunda, waktu kita tidak banyak.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Opan",
+        "teks_chat": "Aku curiga Putra mengarang klaim Stalker untuk memfitnah Niko.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Putra",
+            "relasi": "offend",
+            "bukti_pesan": [
+              12
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Niko",
+        "teks_chat": "Aku bukan Hitman. Aku setuju, dia yang mengaku Stalker tadi pasti memakai klaim palsu untuk memfitnahku.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Niko",
+            "relasi": "defend",
+            "bukti_pesan": [
+              13
+            ]
+          },
+          {
+            "pemain": "Putra",
+            "relasi": "offend",
+            "bukti_pesan": [
+              12
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 32.txt"
+  }
+}

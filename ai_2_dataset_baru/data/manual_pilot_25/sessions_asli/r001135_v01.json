@@ -1,0 +1,167 @@
+{
+  "job": {
+    "job_id": "r001135_v01",
+    "case_name": "stance_change",
+    "case_description": "Pengirim pesan sekarang sebelumnya menuduh atau membela seorang pemain di konteks, lalu berubah sikap terhadap pemain yang sama. Anotasi mengikuti sikap terbaru.",
+    "source": {
+      "source_row": 1135,
+      "source_group": "40abebf5d68d15859640",
+      "teks_chat": "Gw curiga sama tuduhan ini, siapa yang pertama kali mengarahkan vote ke aku?",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 10,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "stance_change",
+    "participants": [
+      "Aldi",
+      "Bima",
+      "Citra",
+      "Dodi"
+    ],
+    "focus_player": "Bima",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Aldi",
+        "teks_chat": "Tadi Bima claim Stalker dan katanya hasil Peek-nya nunjukin Dodi Hitman.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Citra",
+        "teks_chat": "Iya, tapi aku curiga Bima cuma ngarang info biar Dodi di-vote.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Bima",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Bima",
+        "teks_chat": "Aku mengaku hasil Peek pada Dodi menunjukkan role Hitman. Menurutku Dodi pelakunya.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Dodi",
+            "relasi": "offend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Dodi",
+        "teks_chat": "Aku bukan Hitman. Klaim hasil Peek itu tidak benar menurutku.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Dodi",
+            "relasi": "defend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Citra",
+        "teks_chat": "Tuh kan, Bima pasti cuma mau nyari alibi buat nyingkirin Dodi, vote Bima aja!",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Bima",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Aldi",
+        "teks_chat": "Aku juga mikir gitu, claim Stalker gampang banget dipalsuin.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Bima",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Bima",
+        "teks_chat": "Aku bukan Hitman, aku tetap pada klaim Stalker yang kusampaikan.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Bima",
+            "relasi": "defend",
+            "bukti_pesan": [
+              7
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Dodi",
+        "teks_chat": "Makanya jangan asal nuduh orang tanpa bukti yang kuat Bima.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Dodi",
+            "relasi": "defend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Citra",
+        "teks_chat": "Aku tarik tuduhanku pada Bima. Aku belum punya bukti bahwa klaimnya palsu; penolakan dari orang yang dituduh juga belum membuktikannya.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Bima",
+            "relasi": "defend",
+            "bukti_pesan": [
+              9
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Aldi",
+        "teks_chat": "Aku juga menarik tuduhanku pada Bima. Klaimnya masih perlu diperiksa, tetapi belum pantas langsung dianggap bohong.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Bima",
+            "relasi": "defend",
+            "bukti_pesan": [
+              10
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 22.txt"
+  }
+}

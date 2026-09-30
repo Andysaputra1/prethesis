@@ -1,0 +1,173 @@
+{
+  "job": {
+    "job_id": "r002023_v01",
+    "case_name": "witness",
+    "case_description": "Nama saksi/korban disebut, tetapi bukan target serangan atau pembelaan.",
+    "source": {
+      "source_row": 2023,
+      "source_group": "e82309e5459188dea146",
+      "teks_chat": "lu lihat sendiri kan, Tio selalu ikut suara mayoritas tanpa analisis, fix dia hitman",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 10,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "witness",
+    "participants": [
+      "Hadi",
+      "Intan",
+      "Joko",
+      "Kiki",
+      "Lusi"
+    ],
+    "focus_player": "Lusi",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Hadi",
+        "teks_chat": "Gimana semalam, ada yang pakai skill?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Intan",
+        "teks_chat": "Aku Stalker, semalam aku memutuskan untuk intip Joko.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Joko",
+        "teks_chat": "Wah, hasilnya aman kan Intan?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Intan",
+        "teks_chat": "Aman kok, Joko seratus persen warga biasa.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Joko",
+            "relasi": "defend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Kiki",
+        "teks_chat": "Baguslah kalau Joko aman, berarti pelakunya adalah orang lain.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Joko",
+            "relasi": "defend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Lusi",
+        "teks_chat": "Iya, ayo cepat kita cari siapa pelakunya sebelum waktu habis.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Hadi",
+        "teks_chat": "Lusi, aku curiga kamu Hitman karena terus mendesak kita menentukan pelaku tanpa alasan.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Lusi",
+            "relasi": "offend",
+            "bukti_pesan": [
+              7
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Lusi",
+        "teks_chat": "Aku bukan Hitman, aku cuma pengen diskusinya cepat jalan.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Lusi",
+            "relasi": "defend",
+            "bukti_pesan": [
+              8
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Kiki",
+        "teks_chat": "Iya, Lusi dari tadi buru-buru banget nyuruh kita nentuin pelaku.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Lusi",
+            "relasi": "offend",
+            "bukti_pesan": [
+              7
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Hadi",
+        "teks_chat": "Intan menyampaikan klaim bahwa Joko bukan Hitman, dan aku membela Joko untuk sekarang. Justru aku curiga Lusi Hitman karena terus memaksakan keputusan.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Joko",
+            "relasi": "defend",
+            "bukti_pesan": [
+              10
+            ]
+          },
+          {
+            "pemain": "Lusi",
+            "relasi": "offend",
+            "bukti_pesan": [
+              10
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 33.txt"
+  },
+  "revisi": [
+    {
+      "pesan": 1,
+      "kategori": "tidak_natural",
+      "alasan": "Kaku ('apakah ada yang memakai peran spesial')."
+    },
+    {
+      "pesan": 6,
+      "kategori": "tidak_natural",
+      "alasan": "'cari pelakunya malam ini' padahal diskusi berlangsung siang."
+    },
+    {
+      "pesan": 8,
+      "kategori": "tidak_natural",
+      "alasan": "'Aku tidak panik' tidak nyambung; tidak ada yang menyebut panik."
+    },
+    {
+      "pesan": 9,
+      "kategori": "tidak_natural",
+      "alasan": "Kaku dan berlebihan ('terus menerus dari awal dengan tergesa-gesa')."
+    }
+  ]
+}

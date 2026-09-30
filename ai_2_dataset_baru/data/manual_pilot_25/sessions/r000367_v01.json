@@ -1,0 +1,185 @@
+{
+  "job": {
+    "job_id": "r000367_v01",
+    "case_name": "outside_window_unknown",
+    "case_description": "14-16 pesan total. Pembahasan lama telah putus/beralih. Teks dan anotasi 12 konteks terakhir tidak cukup menentukan acuan sekarang. Target harus tidak_diketahui; jangan menggunakan informasi lama yang tidak tersedia dalam input.",
+    "source": {
+      "source_row": 367,
+      "source_group": "42c20dc793dfd2604d1d",
+      "teks_chat": "jangan buru-buru eksekusi aku, alasanmu baru berdasarkan feeling dan belum nyambung sama kejadian malam",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 14,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "outside_window_unknown",
+    "participants": [
+      "Lina",
+      "Maya",
+      "Nita",
+      "Ovi"
+    ],
+    "focus_player": "Maya",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Lina",
+        "teks_chat": "Aku curiga Maya karena langsung membela orang lain tanpa menjelaskan alasannya.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Maya",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Nita",
+        "teks_chat": "Kita hentikan dulu pembahasan orang. Aku mau tahu semalam kalian gimana.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Ovi",
+        "teks_chat": "Semalam aku nggak ngapa-ngapain, cuma nunggu pagi.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Lina",
+        "teks_chat": "Aku juga, nggak ada kejadian aneh.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Nita",
+        "teks_chat": "Berarti belum ada petunjuk baru dari semalam.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Ovi",
+        "teks_chat": "Lalu kita pegang apa buat diskusi sekarang?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Lina",
+        "teks_chat": "Isi chat siang ini aja, siapa ngomong apa.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Nita",
+        "teks_chat": "Terus vote nanti gimana, langsung ikut ajakan yang ada?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Ovi",
+        "teks_chat": "Jangan, tiap orang kasih alasan dulu sebelum milih.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Lina",
+        "teks_chat": "Berarti ajakan vote saat diskusi belum sama dengan hasil voting.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Nita",
+        "teks_chat": "Betul, itu baru pendapat pemain di chat.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Ovi",
+        "teks_chat": "Oke, sepakat ya soal itu.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Lina",
+        "teks_chat": "Oke, cukup soal itu. Aku mau balik ke orang yang kita curigai sebelumnya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Nita",
+        "teks_chat": "Menurutku dia belum pantas dituduh hanya karena cepat membela.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "tidak_diketahui",
+            "relasi": "defend",
+            "bukti_pesan": []
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 4.txt"
+  },
+  "revisi": [
+    {
+      "pesan": 2,
+      "kategori": "meta",
+      "alasan": "Pemain ingin 'memastikan aturan fase' = diskusi aturan game."
+    },
+    {
+      "pesan": 3,
+      "kategori": "meta",
+      "alasan": "Bagian dari diskusi aturan fase."
+    },
+    {
+      "pesan": 4,
+      "kategori": "meta",
+      "alasan": "Menanyakan aturan chat malam, kaku ('Apakah')."
+    },
+    {
+      "pesan": 5,
+      "kategori": "meta",
+      "alasan": "Menjelaskan aturan chat terkunci saat malam."
+    },
+    {
+      "pesan": 6,
+      "kategori": "meta",
+      "alasan": "Menanyakan jadwal fase diskusi (aturan)."
+    },
+    {
+      "pesan": 7,
+      "kategori": "meta",
+      "alasan": "Menjelaskan fase siang/chat terbuka."
+    },
+    {
+      "pesan": 8,
+      "kategori": "meta",
+      "alasan": "Menanyakan fungsi Tribunal (aturan)."
+    },
+    {
+      "pesan": 9,
+      "kategori": "meta",
+      "alasan": "Menjelaskan mekanik voting/eksekusi."
+    },
+    {
+      "pesan": 12,
+      "kategori": "meta",
+      "alasan": "'urutan dan fungsi fasenya sudah jelas' = penutup diskusi aturan."
+    },
+    {
+      "pesan": 13,
+      "kategori": "meta",
+      "alasan": "'Pembahasan aturan selesai' merujuk diskusi aturan."
+    }
+  ]
+}

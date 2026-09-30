@@ -1,0 +1,207 @@
+{
+  "job": {
+    "job_id": "r004477_v01",
+    "case_name": "memory_outside_window",
+    "case_description": "14-16 pesan total. Nama target hanya disebut sebelum 12 konteks terakhir. Dalam jendela, ada pesan yang meneruskan acuan dengan jelas dan menyimpan anotasi target berdasarkan pesan lama. Pesan sekarang merujuk target sama. Nama target tidak muncul dalam teks 12 konteks terakhir atau pesan sekarang; target diketahui lewat memori.",
+    "source": {
+      "source_row": 4477,
+      "source_group": "c174fb41deaf15c2db85",
+      "teks_chat": "gw nggak ngerti kenapa pada fokus ke gw, yang dari awal ngilang itu si D",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 14,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "memory_outside_window",
+    "participants": [
+      "Beni",
+      "Wati",
+      "Fajar",
+      "Rio"
+    ],
+    "focus_player": "Wati",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Beni",
+        "teks_chat": "Aku klaim Stalker, hasil Peek-ku menunjukkan Wati Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Wati",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Fajar",
+        "teks_chat": "Lalu apa yang kamu temukan dari pengintaian itu?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Rio",
+        "teks_chat": "Iya, beritahu kami hasilnya agar jelas.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Beni",
+        "teks_chat": "Hasilnya menunjukkan dia adalah sosok yang sangat mematikan.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Wati",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Fajar",
+        "teks_chat": "Wow, itu bukti yang sangat valid.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Wati",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Rio",
+        "teks_chat": "Klaim hasil itu sudah dibagikan, adakah tanggapan?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Beni",
+        "teks_chat": "Aku yakin dia Hitman berdasarkan klaim hasilku itu.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Wati",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Fajar",
+        "teks_chat": "Kalau begitu tidak ada alasan untuk ragu lagi.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Wati",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Rio",
+        "teks_chat": "Anehnya dia tidak juga muncul untuk membela diri.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Wati",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Beni",
+        "teks_chat": "Dia pasti sedang ketakutan karena kedoknya terbongkar.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Wati",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Fajar",
+        "teks_chat": "Kita harus bertindak cepat sebelum dia mencari alibi lain.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Wati",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Rio",
+        "teks_chat": "Setuju, lebih baik kita amankan warga dari ancamannya.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Wati",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Beni",
+        "teks_chat": "Siapkan suara kalian semua.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Wati",
+            "relasi": "offend",
+            "bukti_pesan": [
+              12
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Fajar",
+        "teks_chat": "Sudah jelas dari hasil peek tersebut, ayo kita sepakat buang dia.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Wati",
+            "relasi": "offend",
+            "bukti_pesan": [
+              13
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 65.txt"
+  }
+}

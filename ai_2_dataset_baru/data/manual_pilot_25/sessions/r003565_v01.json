@@ -1,0 +1,99 @@
+{
+  "job": {
+    "job_id": "r003565_v01",
+    "case_name": "rhetorical_question",
+    "case_description": "Pesan sekarang berbentuk pertanyaan retoris yang sebenarnya menuduh atau membela, misalnya 'kenapa Andy diam terus?' (offend) atau 'masa sih Andy Hitman?' (defend). Bukan pertanyaan informasi.",
+    "source": {
+      "source_row": 3565,
+      "source_group": "ffa24f1be2272ee2ec7b",
+      "teks_chat": "lu mau vote gw cuma karena gw defensif? gw Spy, wajar dong gw berusaha bersihin nama",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 4,
+    "pesan_typo_ringan": [
+      1
+    ]
+  },
+  "session": {
+    "case_name": "rhetorical_question",
+    "participants": [
+      "Eka",
+      "Feri",
+      "Gilang"
+    ],
+    "focus_player": "Gilang",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Eka",
+        "teks_chat": "Tuduhan Gilang berubah tanpa alasan yg jelas, aku curiga dia Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Gilang",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Gilang",
+        "teks_chat": "Aku hanya mengumpulkan informasi, wajar kalau pendapat aku berubah.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Gilang",
+            "relasi": "defend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Feri",
+        "teks_chat": "Tetapi caramu mencari korban memang seperti Hitman yang sedang panik.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Gilang",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Eka",
+        "teks_chat": "Masa sih Gilang itu Hitman hanya karena dia sering mengganti target secara mendadak?",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Gilang",
+            "relasi": "defend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 55.txt"
+  },
+  "revisi": [
+    {
+      "pesan": 1,
+      "kategori": "singkatan",
+      "alasan": "Slot typo [1] tapi pesan tidak memuat singkatan ringan"
+    }
+  ]
+}

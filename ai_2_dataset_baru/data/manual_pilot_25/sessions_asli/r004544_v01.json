@@ -1,0 +1,172 @@
+{
+  "job": {
+    "job_id": "r004544_v01",
+    "case_name": "mixed_relations",
+    "case_description": "Membela satu pemain dan menuduh pemain lain. Intent utama offend; simpan kedua relasi.",
+    "source": {
+      "source_row": 4544,
+      "source_group": "ebe05961487fcbc7134d",
+      "teks_chat": "jangan terpancing pembelaan panjang si H, buktinya tetap tidak menjawab kenapa dia diam saat fase kritis, vote H",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 11,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "mixed_relations",
+    "participants": [
+      "Caca",
+      "Dede",
+      "Euis",
+      "Feri"
+    ],
+    "focus_player": "",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Caca",
+        "teks_chat": "Kenapa ajakan vote di chat berubah di akhir diskusi?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Dede",
+        "teks_chat": "Aku mengubah ajakan karena berubah pikiran.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Euis",
+        "teks_chat": "Aku curiga Dede Hitman karena mengubah ajakan tanpa alasan kuat.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Dede",
+            "relasi": "offend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Feri",
+        "teks_chat": "Iya Dede kelihatan panik tadi pas mau habis waktunya.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Dede",
+            "relasi": "offend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Caca",
+        "teks_chat": "Kita perlu membaca alasan setiap perubahan ajakan.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Dede",
+        "teks_chat": "Sumpah enggak ada, aku cuma ragu sama pilihan awalku aja.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Dede",
+            "relasi": "defend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Euis",
+        "teks_chat": "Aku tetap curiga kamu Hitman karena ajakan itu berubah tanpa penjelasan.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Dede",
+            "relasi": "offend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Feri",
+        "teks_chat": "Kita fokus aja sama Dede, dia yang paling gak jelas alasannya.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Dede",
+            "relasi": "offend",
+            "bukti_pesan": [
+              8
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Caca",
+        "teks_chat": "Bener juga, Dede patut kita curigai lebih dalam.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Dede",
+            "relasi": "offend",
+            "bukti_pesan": [
+              9
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Dede",
+        "teks_chat": "Jangan aku dong, aku beneran gak tahu apa-apa soal rencana itu.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Dede",
+            "relasi": "defend",
+            "bukti_pesan": [
+              10
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Euis",
+        "teks_chat": "Jangan vote Dede. Justru Feri yang aku curigai Hitman karena mengubah ajakan tanpa alasan.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Dede",
+            "relasi": "defend",
+            "bukti_pesan": [
+              11
+            ]
+          },
+          {
+            "pemain": "Feri",
+            "relasi": "offend",
+            "bukti_pesan": [
+              11
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 67.txt"
+  }
+}

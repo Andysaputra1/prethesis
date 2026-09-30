@@ -1,0 +1,101 @@
+{
+  "job": {
+    "job_id": "r002571_v01",
+    "case_name": "quotation",
+    "case_description": "Ada tuduhan yang dikutip; bedakan sikap pengirim dari ucapan orang yang dikutip.",
+    "source": {
+      "source_row": 2571,
+      "source_group": "56f040cb0f9b76026bb4",
+      "teks_chat": "oh jadi pagi itu waktunya voting, baru ngerti",
+      "label_intent": "neutral"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 6,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "quotation",
+    "participants": [
+      "Lina",
+      "Maman",
+      "Nia"
+    ],
+    "focus_player": "",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Lina",
+        "teks_chat": "Nia baru membalas setelah jeda lama.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Maman",
+        "teks_chat": "Nia Hitman yang pura-pura putus koneksi biar aman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Nia",
+            "relasi": "offend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Nia",
+        "teks_chat": "Koneksiku tadi putus.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Nia",
+            "relasi": "defend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Lina",
+        "teks_chat": "Pesanmu sekarang sudah masuk.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Maman",
+        "teks_chat": "Aku tetap curiga Nia pelakunya.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Nia",
+            "relasi": "offend",
+            "bukti_pesan": [
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Lina",
+        "teks_chat": "Maman bilang 'Nia Hitman yang pura-pura putus koneksi'. Aku hanya mengutip pendapat Maman, belum menilainya.",
+        "label_intent": "neutral",
+        "target": []
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 39.txt"
+  },
+  "revisi": [
+    {
+      "pesan": 3,
+      "kategori": "label",
+      "alasan": "Nia memberi alasan langsung setelah dituduh Maman di [2] = membela diri."
+    }
+  ]
+}

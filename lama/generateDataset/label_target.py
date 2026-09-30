@@ -175,6 +175,8 @@ identitas atau menyalin target lama ketika topik sudah berubah.
 
 Kasus original: satu pesan saja, salin teks_chat dan label_intent input persis.
 Beri pengirimnya nama pemain Indonesia yang wajar, bukan Player1, PengirimAsli, atau User.
+Jika teks sumber menyebut pemain dengan ID huruf (A, B, si D), masukkan ID itu persis ke
+participants dan pakai sebagai nama target; jangan menggantinya dengan nama lain.
 Kasus variasi tidak membawa teks sumber. Tulis percakapan dan pesan sekarang yang
 baru dengan label_intent sumber, sesuai kasus, dan berangkat dari topik job (boleh
 dikembangkan secara wajar). Original sudah menyimpan teks sumber, jadi variasi harus
@@ -491,6 +493,9 @@ def validate_session(session, job):
         raise ValueError("Intent pesan utama harus sesuai sumber.")
     if case == "original" and (len(messages) != 1 or main["teks_chat"] != job["source"]["teks_chat"]):
         raise ValueError("Original harus satu pesan dengan teks sumber persis.")
+    # ID huruf di teks sumber (A, B, si D) adalah nama pemain; tanpa itu targetnya hilang.
+    if case == "original" and set(re.findall(r"(?<![\w'])([A-Z])(?![\w'])", main["teks_chat"])) - set(players):
+        raise ValueError("ID pemain berhuruf di teks original harus ada di participants.")
     normalize = lambda value: re.sub(r"\W+", " ", value).strip().casefold()
     if case != "original" and normalize(main["teks_chat"]) == normalize(job["source"]["teks_chat"]):
         raise ValueError("Kasus variasi harus menulis pesan utama baru, bukan menyalin teks sumber.")
@@ -503,6 +508,9 @@ def validate_session(session, job):
                 or refers(main["teks_chat"], focus)
                 or not any(r["pemain"] == focus for r in main["target"])):
             raise ValueError("Posisi penyebutan dan target belum sesuai kasus.")
+        # Nama focus hanya boleh muncul di posisi kasus agar yang diuji benar-benar jarak acuannya.
+        if any(refers(messages[i]["teks_chat"], focus) for i in range(len(messages) - 1) if i not in positions):
+            raise ValueError("Nama focus muncul di luar posisi kasus.")
     if case == "memory_outside_window":
         prefix, window = messages[:-13], messages[-13:-1]
         if (not prefix or focus not in players

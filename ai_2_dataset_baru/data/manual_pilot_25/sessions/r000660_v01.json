@@ -1,0 +1,67 @@
+{
+  "job": {
+    "job_id": "r000660_v01",
+    "case_name": "self",
+    "case_description": "Defend diri sendiri atau offend/vote diri sendiri sesuai label. Target = pengirim.",
+    "source": {
+      "source_row": 660,
+      "source_group": "b7ede5f7ff59ec791891",
+      "teks_chat": "kalau mau eksekusi, pilih berdasarkan pola, bukan karena aku jadi target tuduhan pertama",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 3,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "self",
+    "participants": [
+      "Dian",
+      "Ega",
+      "Fahmi"
+    ],
+    "focus_player": "Fahmi",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Dian",
+        "teks_chat": "Semalam ada yang disandera nih, kalian aman kan semua?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Ega",
+        "teks_chat": "Aman kok, mungkin pelakunya ada di antara kita yang berusaha bersikap tenang.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Fahmi",
+        "teks_chat": "Hei, jangan mentang-mentang aku daritadi diam kalian curiga ke aku ya, sumpah aku bukan pelakunya yang menyandera korban semalam!",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Fahmi",
+            "relasi": "defend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 12.txt"
+  },
+  "revisi": [
+    {
+      "pesan": 1,
+      "kategori": "meta",
+      "alasan": "'Nama korbannya disembunyikan' merujuk desain sistem."
+    }
+  ]
+}

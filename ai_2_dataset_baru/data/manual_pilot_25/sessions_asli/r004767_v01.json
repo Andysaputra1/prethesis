@@ -1,0 +1,134 @@
+{
+  "job": {
+    "job_id": "r004767_v01",
+    "case_name": "outside_window_unknown",
+    "case_description": "14-16 pesan total. Pembahasan lama telah putus/beralih. Teks dan anotasi 12 konteks terakhir tidak cukup menentukan acuan sekarang. Target harus tidak_diketahui; jangan menggunakan informasi lama yang tidak tersedia dalam input.",
+    "source": {
+      "source_row": 4767,
+      "source_group": "f8156bdde81387ff695f",
+      "teks_chat": "Uli terlihat terlalu netral saat semua orang berdebat, mungkin sedang menunggu kubu mana yang unggul; menurut saya vote Uli",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 14,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "outside_window_unknown",
+    "participants": [
+      "Sari",
+      "Tono",
+      "Joko",
+      "Dina",
+      "Gilang"
+    ],
+    "focus_player": "Gilang",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Sari",
+        "teks_chat": "Aku curiga Gilang Hitman karena klaimnya berubah.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Gilang",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Tono",
+        "teks_chat": "Kita bahas aturan dulu sebentar.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Joko",
+        "teks_chat": "Aturan yang mana?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Dina",
+        "teks_chat": "Tentang urutan fase.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Sari",
+        "teks_chat": "Diskusi dilakukan siang hari.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Joko",
+        "teks_chat": "Lalu Tribunal untuk menentukan pilihan suara.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Tono",
+        "teks_chat": "Pemain dengan suara terbanyak dieksekusi.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Dina",
+        "teks_chat": "Kalau malam, chat dikunci.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Sari",
+        "teks_chat": "Skill Hostage dipakai Hitman saat malam.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Joko",
+        "teks_chat": "Guard juga dipakai malam oleh Spy.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Tono",
+        "teks_chat": "Peek milik Stalker untuk mengungkap identitas satu pemain.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Dina",
+        "teks_chat": "Cooldown Peek sekali setiap dua ronde.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Joko",
+        "teks_chat": "Oke, kembali ke pembahasan tuduhan tadi.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Sari",
+        "teks_chat": "Klaim dia tetap mencurigakan. Aku ingin vote dia.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "tidak_diketahui",
+            "relasi": "offend",
+            "bukti_pesan": []
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 70.txt"
+  }
+}

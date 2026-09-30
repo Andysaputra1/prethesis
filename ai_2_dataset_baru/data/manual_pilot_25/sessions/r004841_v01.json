@@ -1,0 +1,121 @@
+{
+  "job": {
+    "job_id": "r004841_v01",
+    "case_name": "nickname",
+    "case_description": "Pesan sekarang menyebut pemain dengan nama panggilan, singkatan, atau salah ketik ringan (Andy -> ndy, andi, si And) tanpa menulis nama aslinya. Catat sebutan itu di panggilan. Target tetap memakai nama asli; jika neutral, target kosong.",
+    "source": {
+      "source_row": 4841,
+      "source_group": "83d2fc5a53bd19fcc7da",
+      "teks_chat": "kalian boleh beda pendapat, tapi menurut gw Vino yang harus dieksekusi pagi ini",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 8,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "nickname",
+    "participants": [
+      "Samsul",
+      "Tari",
+      "Udin"
+    ],
+    "focus_player": "Samsul",
+    "panggilan": [
+      {
+        "pemain": "Samsul",
+        "sebutan": [
+          "Sam"
+        ]
+      }
+    ],
+    "messages": [
+      {
+        "pengirim": "Samsul",
+        "teks_chat": "Hari ini aku mau diam saja deh, malas ikut diskusi panjang.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Tari",
+        "teks_chat": "Yakin tidak mau membantu kami mencari pelakunya?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Samsul",
+        "teks_chat": "Iya, kalian urus saja berdua.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Udin",
+        "teks_chat": "Baguslah kalau begitu, setidaknya tidak membuat keadaan jadi ribet.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Samsul",
+        "teks_chat": "Tapi kok Udin malah tenang-tenang saja, pasti dia Hitman yang sembunyi!",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Udin",
+            "relasi": "offend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Tari",
+        "teks_chat": "Lho, tadi katanya mau diam saja, kok sekarang malah menuduh?",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Samsul",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Udin",
+        "teks_chat": "Iya, omongannya tidak konsisten sama sekali.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Samsul",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Tari",
+        "teks_chat": "Jangan-jangan si Sam yang sebenarnya Hitman dan lagi pusing mencari sasaran tebakan.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Samsul",
+            "relasi": "offend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 71.txt"
+  }
+}

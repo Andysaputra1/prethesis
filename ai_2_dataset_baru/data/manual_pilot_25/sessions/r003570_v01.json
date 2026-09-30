@@ -1,0 +1,225 @@
+{
+  "job": {
+    "job_id": "r003570_v01",
+    "case_name": "reference_start",
+    "case_description": "Tepat 12 konteks. Penyebutan target eksplisit di pesan konteks pertama; pesan sekarang memakai kata ganti.",
+    "source": {
+      "source_row": 3570,
+      "source_group": "1bd29171685ece875dbe",
+      "teks_chat": "gw dituduh cuma karena telat ngomong, padahal aku Civilian dan memang gak punya aksi malam",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 13,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "reference_start",
+    "participants": [
+      "Lela",
+      "Mamat",
+      "Nisa"
+    ],
+    "focus_player": "Mamat",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Lela",
+        "teks_chat": "Mamat sengaja diam, dia pasti Hitman yang pura-pura kena Gag Order.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Mamat",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Mamat",
+        "teks_chat": "Aku bukan Hitman, aku belum sempat membalas banyak pesan.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Mamat",
+            "relasi": "defend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Nisa",
+        "teks_chat": "Lela, jangan tuduh dia hanya karena sedikit membalas.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Mamat",
+            "relasi": "defend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Lela",
+        "teks_chat": "Tetapi diamnya sangat mencurigakan pada putaran diskusi ini.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Mamat",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Nisa",
+        "teks_chat": "Bisa saja dia memang seorang Civilian yang sedang diincar musuh.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Mamat",
+            "relasi": "defend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Mamat",
+        "teks_chat": "Tolong percaya sama aku kali ini.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Mamat",
+            "relasi": "defend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Lela",
+        "teks_chat": "Aku tetap merasa ada sesuatu yang sedang disembunyikan.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Mamat",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Nisa",
+        "teks_chat": "Tenang dulu dan baca alasan yang sudah disebut.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Lela",
+        "teks_chat": "Bagaimana kita bisa menang kalau ada pemain yang tidak aktif berdiskusi?",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Mamat",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Nisa",
+        "teks_chat": "Kadang pasif itu wajar kok, biar nggak jadi incaran.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Mamat",
+            "relasi": "defend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Lela",
+        "teks_chat": "Aku mau memberikan suara untuknya sekarang juga.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Mamat",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Nisa",
+        "teks_chat": "Lela, aku curiga kamu Hitman karena terus memaksa vote.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Lela",
+            "relasi": "offend",
+            "bukti_pesan": [
+              12
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Lela",
+        "teks_chat": "Aku tarik tuduhanku. Dia belum terbukti Hitman hanya karena sedikit membalas.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Mamat",
+            "relasi": "defend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 55.txt"
+  },
+  "revisi": [
+    {
+      "pesan": 1,
+      "kategori": "tidak_natural",
+      "alasan": "'terkena efek spesial' janggal; maksudnya Gag Order."
+    },
+    {
+      "pesan": 6,
+      "kategori": "tidak_natural",
+      "alasan": "Kaku ('percaya kepada aku')."
+    },
+    {
+      "pesan": 10,
+      "kategori": "tidak_natural",
+      "alasan": "Kaku ('pasif adalah strategi wajar untuk bertahan hidup')."
+    }
+  ]
+}

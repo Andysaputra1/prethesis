@@ -1,0 +1,183 @@
+{
+  "job": {
+    "job_id": "r005170_v01",
+    "case_name": "ambiguous",
+    "case_description": "Beberapa acuan sama-sama mungkin; target tidak_diketahui, bukan nama terakhir.",
+    "source": {
+      "source_row": 5170,
+      "source_group": "9712352f70e43f1f69fa",
+      "teks_chat": "bukan Hitman, aku warga biasa dan siap ikut analisis kalian",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 13,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "ambiguous",
+    "participants": [
+      "Opan",
+      "Putri",
+      "Reza",
+      "Qori",
+      "Siska"
+    ],
+    "focus_player": "",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Opan",
+        "teks_chat": "Qori dan Siska belum menjelaskan klaim role mereka.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Putri",
+        "teks_chat": "Klaim yang mana?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Opan",
+        "teks_chat": "Keduanya mengaku Civilian.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Reza",
+        "teks_chat": "Aku curiga Qori Hitman yang memakai klaim palsu.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Qori",
+            "relasi": "offend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Putri",
+        "teks_chat": "Aku juga curiga Qori pelakunya.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Qori",
+            "relasi": "offend",
+            "bukti_pesan": [
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Qori",
+        "teks_chat": "Aku bukan Hitman, klaimku benar.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Qori",
+            "relasi": "defend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Opan",
+        "teks_chat": "Aku juga curiga Siska Hitman yang memakai klaim palsu.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Siska",
+            "relasi": "offend",
+            "bukti_pesan": [
+              7
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Reza",
+        "teks_chat": "Siska, aku curiga kamu pelakunya.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Siska",
+            "relasi": "offend",
+            "bukti_pesan": [
+              8
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Siska",
+        "teks_chat": "Aku bukan Hitman.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Siska",
+            "relasi": "defend",
+            "bukti_pesan": [
+              9
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Putri",
+        "teks_chat": "Keduanya belum memberi penjelasan tambahan.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Opan",
+        "teks_chat": "Kita perlu alasan sebelum memilih.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Reza",
+        "teks_chat": "Aku curiga salah satu dari Qori atau Siska Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Qori",
+            "relasi": "offend",
+            "bukti_pesan": [
+              12
+            ]
+          },
+          {
+            "pemain": "Siska",
+            "relasi": "offend",
+            "bukti_pesan": [
+              12
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Putri",
+        "teks_chat": "Menurutku dia belum terbukti Hitman, jangan langsung vote.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "tidak_diketahui",
+            "relasi": "defend",
+            "bukti_pesan": []
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 75.txt"
+  }
+}

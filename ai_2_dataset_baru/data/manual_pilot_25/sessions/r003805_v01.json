@@ -1,0 +1,89 @@
+{
+  "job": {
+    "job_id": "r003805_v01",
+    "case_name": "explicit",
+    "case_description": "Target eksplisit di pesan sekarang. Contoh: Aku yakin bukan Andy = defend Andy.",
+    "source": {
+      "source_row": 3805,
+      "source_group": "e4111176f3681be3e09e",
+      "teks_chat": "Gw tetap kunci ke Mira, walau dia ngaku Civilian; aku Spy dan bacaannya gak pernah meleset",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 4,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "explicit",
+    "participants": [
+      "Qori",
+      "Reno",
+      "Soni"
+    ],
+    "focus_player": "Reno",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Qori",
+        "teks_chat": "Reno mengajak vote tanpa alasan, aku curiga dia Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Reno",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Reno",
+        "teks_chat": "Aku bukan Hitman, aku ingin kita membuat keputusan.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Reno",
+            "relasi": "defend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Soni",
+        "teks_chat": "Kalau vote asal, bisa-bisa yang keluar malah orang baik. Kita bahas buktinya dulu.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Qori",
+        "teks_chat": "Aku curiga banget sama Reno, dia pasti ada niat jahat maksa kita vote gini.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Reno",
+            "relasi": "offend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 59.txt"
+  },
+  "revisi": [
+    {
+      "pesan": 3,
+      "kategori": "meta",
+      "alasan": "Menjelaskan mekanisme vote mengeksekusi Civilian"
+    }
+  ]
+}

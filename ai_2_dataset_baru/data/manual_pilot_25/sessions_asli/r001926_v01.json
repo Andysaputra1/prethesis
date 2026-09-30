@@ -1,0 +1,127 @@
+{
+  "job": {
+    "job_id": "r001926_v01",
+    "case_name": "agreement",
+    "case_description": "Pesan sekarang menyetujui atau membantah pesan pemain lain di konteks tanpa menyebut ulang nama target. Setuju dengan tuduhan = offend pemain yang dituduh; membantah tuduhan atau setuju dengan pembelaan = defend. Identitas target diwarisi dari pesan yang ditanggapi.",
+    "source": {
+      "source_row": 1926,
+      "source_group": "35ae840298e7b1971252",
+      "teks_chat": "kalau Bima beneran civilian, kenapa dia buru-buru banget ngunci target? menurut gw eksekusi Bima",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 9,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "agreement",
+    "participants": [
+      "Kiki",
+      "Lala",
+      "Maman"
+    ],
+    "focus_player": "Lala",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Kiki",
+        "teks_chat": "Aku mengaku Spy dan memilih Guard untuk Maman semalam.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Lala",
+        "teks_chat": "Apakah kami bisa memastikan pilihan Guard itu dari chat?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Maman",
+        "teks_chat": "Tidak, yang tersedia hanya klaim pemain, bukan aksi rahasianya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Kiki",
+        "teks_chat": "Iya, kalian boleh mencatat lalu menanyakan konsistensi klaimku.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Lala",
+        "teks_chat": "Aku curiga Kiki Hitman yang memakai klaim Spy untuk mencari aman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Kiki",
+            "relasi": "offend",
+            "bukti_pesan": [
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Maman",
+        "teks_chat": "Apa alasan tuduhan itu selain klaimnya belum bisa dipastikan?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Kiki",
+        "teks_chat": "Aku bukan Hitman. Justru aku curiga Lala karena memaksa tuduhan tanpa alasan.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Kiki",
+            "relasi": "defend",
+            "bukti_pesan": [
+              7
+            ]
+          },
+          {
+            "pemain": "Lala",
+            "relasi": "offend",
+            "bukti_pesan": [
+              7
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Lala",
+        "teks_chat": "Aku tetap curiga Kiki berbohong soal role.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Kiki",
+            "relasi": "offend",
+            "bukti_pesan": [
+              8
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Maman",
+        "teks_chat": "Aku setuju dengan tuduhan balik Kiki. Aku curiga dia Hitman yang memaksakan tuduhan.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Lala",
+            "relasi": "offend",
+            "bukti_pesan": [
+              7
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 32.txt"
+  }
+}

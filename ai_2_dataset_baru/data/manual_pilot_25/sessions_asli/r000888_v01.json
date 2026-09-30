@@ -1,0 +1,130 @@
+{
+  "job": {
+    "job_id": "r000888_v01",
+    "case_name": "reference_end",
+    "case_description": "Tepat 12 konteks. Penyebutan target eksplisit di pesan konteks terakhir.",
+    "source": {
+      "source_row": 888,
+      "source_group": "3527df53ab79ec6893a9",
+      "teks_chat": "gw bukan Spy palsu, aku benar-benar jaga P semalam dan dia lolos",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 13,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "reference_end",
+    "participants": [
+      "Lina",
+      "Mika",
+      "Nanda",
+      "Ovi",
+      "Puput"
+    ],
+    "focus_player": "Puput",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Lina",
+        "teks_chat": "Ajakan vote di chat tadi berubah menjelang akhir diskusi.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Mika",
+        "teks_chat": "Iya, kelihatan banget ada yang mau nyelametin temen satu timnya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Nanda",
+        "teks_chat": "Ada yang ingat siapa yang menarik ajakan votenya?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Ovi",
+        "teks_chat": "Aku cuma liat sekilas aja sih, nggak terlalu merhatiin namanya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Lina",
+        "teks_chat": "Perubahan ajakan vote perlu ditanya alasannya, bukan langsung dianggap jahat.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Mika",
+        "teks_chat": "Iya, kita lihat urutan percakapannya dulu.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Nanda",
+        "teks_chat": "Ada yang sudah membaca ulang chatnya?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Ovi",
+        "teks_chat": "Aku sedang mengetik, jadi melewatkan sebagian pesan.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Lina",
+        "teks_chat": "Kalau nggak ada yang lihat, susah juga mau nuduhnya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Mika",
+        "teks_chat": "Iya, jangan asal nuduh kalau buktinya nggak kuat.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Nanda",
+        "teks_chat": "Aku sudah menemukan pesannya di riwayat chat.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Ovi",
+        "teks_chat": "Itu Puput yang menarik ajakan vote. Aku curiga Puput ingin mengacaukan arah tuduhan.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Puput",
+            "relasi": "offend",
+            "bukti_pesan": [
+              12
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Nanda",
+        "teks_chat": "Dia belum pantas dituduh; menarik dugaan yang kurang kuat bukan bukti dia pelakunya.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Puput",
+            "relasi": "defend",
+            "bukti_pesan": [
+              12
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 18.txt"
+  }
+}

@@ -1,0 +1,163 @@
+{
+  "job": {
+    "job_id": "r004501_v01",
+    "case_name": "reference_start",
+    "case_description": "Tepat 12 konteks. Penyebutan target eksplisit di pesan konteks pertama; pesan sekarang memakai kata ganti.",
+    "source": {
+      "source_row": 4501,
+      "source_group": "61bf1dac54b91b9595cb",
+      "teks_chat": "lu bilang gw mencurigakan, tapi si E malah lebih sering mengarahkan vote ke pemain lain",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 13,
+    "pesan_typo_ringan": [
+      2
+    ]
+  },
+  "session": {
+    "case_name": "reference_start",
+    "participants": [
+      "Jamil",
+      "Iwan",
+      "Kurnia",
+      "Laras"
+    ],
+    "focus_player": "Iwan",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Jamil",
+        "teks_chat": "Iwan diam terus, aku curiga dia Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Iwan",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Kurnia",
+        "teks_chat": "Mungkin dia yg jadi pelakunya.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Iwan",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Laras",
+        "teks_chat": "Bisa jadi, orang pasif biasanya nyembunyiin sesuatu.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Iwan",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Iwan",
+        "teks_chat": "Aku cuma nyimak diskusi kalian kok.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Iwan",
+            "relasi": "defend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Jamil",
+        "teks_chat": "Nyimak doang gak ngebantu nemuin pelakunya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Kurnia",
+        "teks_chat": "Kita butuh diskusi aktif biar bisa menang.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Laras",
+        "teks_chat": "Setuju, kalau pada pasif susah nyari info.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Iwan",
+        "teks_chat": "Nanti kalau ada info aku pasti ngomong.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Jamil",
+        "teks_chat": "Alesan aja terus dari tadi.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Iwan",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Kurnia",
+        "teks_chat": "Ya udah, kita lihat aja nanti perkembangannya gimana.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Laras",
+        "teks_chat": "Tapi aku tetep ngerasa ada yang aneh sama kelakuannya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Jamil",
+        "teks_chat": "Sama, firasatku juga agak kurang enak.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Laras",
+        "teks_chat": "Mending kita vote dia aja, gak ada kontribusinya sama sekali buat diskusi.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Iwan",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 67.txt"
+  }
+}

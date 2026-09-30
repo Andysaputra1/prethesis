@@ -1,0 +1,115 @@
+{
+  "job": {
+    "job_id": "r000474_v01",
+    "case_name": "interruption",
+    "case_description": "Pembahasan target disela obrolan waktu/ronde; kaitan kembali ke target masih jelas.",
+    "source": {
+      "source_row": 474,
+      "source_group": "3eee572aa3508fcc0fd8",
+      "teks_chat": "aku tidak sedang mengalihkan isu, aku menjawab tuduhan lalu menyimpulkan: si Y paling mungkin Hitman dari pola dorongannya",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 9,
+    "pesan_typo_ringan": [
+      9
+    ]
+  },
+  "session": {
+    "case_name": "interruption",
+    "participants": [
+      "Udin",
+      "Vina",
+      "Wawan",
+      "Xena"
+    ],
+    "focus_player": "Udin",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Udin",
+        "teks_chat": "Aku mengaku Spy dan memilih Guard untuk Vina semalam. Malam sebelumnya juga Vina.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Vina",
+        "teks_chat": "Spy tidak bisa Guard orang yang sama dua malam berturut-turut. Aku curiga klaimmu palsu.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Udin",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Wawan",
+        "teks_chat": "Pasti Udin cuma ngarang klaimnya biar aman dari vote.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Udin",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Xena",
+        "teks_chat": "Eh ngomong-ngomong waktu diskusi kita sisa berapa menit lagi ya?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Udin",
+        "teks_chat": "Sisa 2 menit kayaknya di timer layarku.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Vina",
+        "teks_chat": "Wah harus buruan nentuin pilihan nih kalau begitu.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Wawan",
+        "teks_chat": "Iya, putaran ini entah kenapa terasa cepat banget jalannya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Xena",
+        "teks_chat": "Kembali ke klaim Guard tadi, pilihannya tidak sesuai batasan skill Spy.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Vina",
+        "teks_chat": "Klaim Spy yg bertentangan dengan aturan itu membuatku curiga dia Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Udin",
+            "relasi": "offend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 7.txt"
+  }
+}

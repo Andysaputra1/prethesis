@@ -1,0 +1,150 @@
+{
+  "job": {
+    "job_id": "r002685_v01",
+    "case_name": "nickname",
+    "case_description": "Pesan sekarang menyebut pemain dengan nama panggilan, singkatan, atau salah ketik ringan (Andy -> ndy, andi, si And) tanpa menulis nama aslinya. Catat sebutan itu di panggilan. Target tetap memakai nama asli; jika neutral, target kosong.",
+    "source": {
+      "source_row": 2685,
+      "source_group": "ffd88e3648e0969b4f3a",
+      "teks_chat": "aku kira fase malamnya bakal lebih lama",
+      "label_intent": "neutral"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 12,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "nickname",
+    "participants": [
+      "Putri",
+      "Raka",
+      "Santi"
+    ],
+    "focus_player": "Raka",
+    "panggilan": [
+      {
+        "pemain": "Raka",
+        "sebutan": [
+          "Rak"
+        ]
+      }
+    ],
+    "messages": [
+      {
+        "pengirim": "Putri",
+        "teks_chat": "Fase malam tadi terasa singkat.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Raka",
+        "teks_chat": "Sekarang sudah masuk diskusi siang.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Santi",
+        "teks_chat": "Ada klaim skill yang ingin dibagikan?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Putri",
+        "teks_chat": "Aku belum ingin membuka klaim.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Raka",
+        "teks_chat": "Oke, santai aja, nanti kalau udah yakin baru share.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Santi",
+        "teks_chat": "Ada yang ngerasa ada kejadian aneh semalam?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Raka",
+        "teks_chat": "Aku nggak ngeh apa-apa sih.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Putri",
+        "teks_chat": "Aku juga, tahu-tahu udah siang aja.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Santi",
+        "teks_chat": "Berarti belum ada petunjuk sama sekali ya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Raka",
+        "teks_chat": "Iya, kita tunggu yang lain ngomong dulu.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Putri",
+        "teks_chat": "Oke, aku pantau chat dulu.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Santi",
+        "teks_chat": "Rak, kamu merasa fase malam tadi lebih singkat juga?",
+        "label_intent": "neutral",
+        "target": []
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 80.txt"
+  },
+  "revisi": [
+    {
+      "pesan": 5,
+      "kategori": "meta",
+      "alasan": "Blok pesan 5-11 membahas aturan (Peek, cooldown, 'Guard milik Spy')"
+    },
+    {
+      "pesan": 6,
+      "kategori": "meta",
+      "alasan": "Blok pesan 5-11 membahas aturan (Peek, cooldown, 'Guard milik Spy')"
+    },
+    {
+      "pesan": 7,
+      "kategori": "meta",
+      "alasan": "Blok pesan 5-11 membahas aturan (Peek, cooldown, 'Guard milik Spy')"
+    },
+    {
+      "pesan": 8,
+      "kategori": "meta",
+      "alasan": "Blok pesan 5-11 membahas aturan (Peek, cooldown, 'Guard milik Spy')"
+    },
+    {
+      "pesan": 9,
+      "kategori": "meta",
+      "alasan": "Blok pesan 5-11 membahas aturan (Peek, cooldown, 'Guard milik Spy')"
+    },
+    {
+      "pesan": 10,
+      "kategori": "meta",
+      "alasan": "Blok pesan 5-11 membahas aturan (Peek, cooldown, 'Guard milik Spy')"
+    },
+    {
+      "pesan": 11,
+      "kategori": "meta",
+      "alasan": "Blok pesan 5-11 membahas aturan (Peek, cooldown, 'Guard milik Spy')"
+    }
+  ]
+}

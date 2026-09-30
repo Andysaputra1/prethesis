@@ -1,0 +1,137 @@
+{
+  "job": {
+    "job_id": "r000654_v01",
+    "case_name": "reference_end",
+    "case_description": "Tepat 12 konteks. Penyebutan target eksplisit di pesan konteks terakhir.",
+    "source": {
+      "source_row": 654,
+      "source_group": "ab8d3ef3375c42782f6d",
+      "teks_chat": "kalau aku Hitman, mestinya aku diam dan biarkan kalian saling curiga",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 13,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "reference_end",
+    "participants": [
+      "Yogi",
+      "Zain",
+      "Aldi",
+      "Bima",
+      "Cita"
+    ],
+    "focus_player": "Cita",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Yogi",
+        "teks_chat": "Kok ada yang ngerespons chatnya lama banget ya daritadi.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Zain",
+        "teks_chat": "Iya, terus kalau pas bales malah balesannya kelihatan ngga nyambung.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Aldi",
+        "teks_chat": "Ciri-ciri pemain yang asik sendiri nih.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Bima",
+        "teks_chat": "Jangan asal nebak dulu, kita kan nggak tahu dia lagi ngapain.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Yogi",
+        "teks_chat": "Iya, keterlambatan pesan bisa punya beberapa penyebab.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Zain",
+        "teks_chat": "Kita lihat dulu siapa orangnya yang dimaksud.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Aldi",
+        "teks_chat": "Coba perhatiin riwayat chatnya di atas deh.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Bima",
+        "teks_chat": "Aku ngerasa aneh aja sih, masa di saat genting kayak gini masih aja lemot.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Yogi",
+        "teks_chat": "Mungkin koneksinya bermasalah, tetapi itu juga baru dugaan.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Zain",
+        "teks_chat": "Masuk akal juga sih teori itu.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Aldi",
+        "teks_chat": "Kita pancing aja orangnya biar dia keluar.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Bima",
+        "teks_chat": "Cita belum membalas pertanyaan. Aku curiga Cita Hitman yang sedang menghindar.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Cita",
+            "relasi": "offend",
+            "bukti_pesan": [
+              12
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Yogi",
+        "teks_chat": "Dia belum pantas dituduh dari jeda chat saja. Kita belum tahu penyebabnya.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Cita",
+            "relasi": "defend",
+            "bukti_pesan": [
+              12
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 12.txt"
+  },
+  "revisi": [
+    {
+      "pesan": 4,
+      "kategori": "tidak_natural",
+      "alasan": "Kalimat kaku dan janggal"
+    }
+  ]
+}

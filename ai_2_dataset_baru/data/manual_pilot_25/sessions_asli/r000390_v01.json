@@ -1,0 +1,116 @@
+{
+  "job": {
+    "job_id": "r000390_v01",
+    "case_name": "rhetorical_question",
+    "case_description": "Pesan sekarang berbentuk pertanyaan retoris yang sebenarnya menuduh atau membela, misalnya 'kenapa Andy diam terus?' (offend) atau 'masa sih Andy Hitman?' (defend). Bukan pertanyaan informasi.",
+    "source": {
+      "source_row": 390,
+      "source_group": "2a7f98d490daf4e51fc9",
+      "teks_chat": "aku mengakui analisisku bisa salah, tapi salah analisis tidak otomatis berarti aku role jahat",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 9,
+    "pesan_typo_ringan": [
+      7
+    ]
+  },
+  "session": {
+    "case_name": "rhetorical_question",
+    "participants": [
+      "Risa",
+      "Sandi",
+      "Tomi",
+      "Vina",
+      "Wira"
+    ],
+    "focus_player": "Tomi",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Risa",
+        "teks_chat": "Aku mau klaim Spy ronde ini ya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Sandi",
+        "teks_chat": "Siapa yang kamu pilih untuk Guard?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Risa",
+        "teks_chat": "Aku mengaku memilih Guard untuk Tomi semalam.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Vina",
+        "teks_chat": "Pilihan Guard itu baru klaim darimu, kami tidak melihat aksi malam.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Wira",
+        "teks_chat": "Aku tetap curiga Tomi Hitman karena dari tadi menghindari pertanyaan soal alasan vote.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Tomi",
+            "relasi": "offend",
+            "bukti_pesan": [
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Sandi",
+        "teks_chat": "Tapi klaim Spy dari Risa ini kan belum terbukti kebenarannya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Risa",
+        "teks_chat": "Kalian tdk percaya dengan laporanku?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Wira",
+        "teks_chat": "Bisa saja kamu sebenarnya Hitman yang mau bikin fitnah buat menyingkirkan orang.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Risa",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Sandi",
+        "teks_chat": "Masa sih Tomi pelakunya? Belum ada bukti selain dugaan bahwa dia menghindari pertanyaan.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Tomi",
+            "relasi": "defend",
+            "bukti_pesan": [
+              9
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 5.txt"
+  }
+}

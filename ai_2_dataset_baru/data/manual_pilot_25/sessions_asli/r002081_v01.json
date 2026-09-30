@@ -1,0 +1,106 @@
+{
+  "job": {
+    "job_id": "r002081_v01",
+    "case_name": "topic_switch",
+    "case_description": "Pembahasan berganti pemain; pesan sekarang mengikuti topik baru, bukan otomatis target lama.",
+    "source": {
+      "source_row": 2081,
+      "source_group": "e86bd183e09a09379077",
+      "teks_chat": "dia ngaku Civilian, sedangkan gw yang pegang role Civilian di sini",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 8,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "topic_switch",
+    "participants": [
+      "Maman",
+      "Nia",
+      "Opan"
+    ],
+    "focus_player": "Opan",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Maman",
+        "teks_chat": "Nia, kamu ngerasa ada yang aneh gak sama korban semalam?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Nia",
+        "teks_chat": "Gak tahu, kan identitasnya dirahasiakan.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Maman",
+        "teks_chat": "Nia, jawabanmu singkat banget. Aku curiga kamu Hitman yang menghindari diskusi.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Nia",
+            "relasi": "offend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Nia",
+        "teks_chat": "Aku cuma menjelaskan aturan korban, bukan menghindar. Aku Civilian, bukan Hitman.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Nia",
+            "relasi": "defend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Opan",
+        "teks_chat": "Teman-teman, menurutku kita harus fokus ke hal lain dulu.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Maman",
+        "teks_chat": "Maksudmu ke mana Opan?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Nia",
+        "teks_chat": "Iya, mending kita cari petunjuk yang lebih jelas.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Maman",
+        "teks_chat": "Ngomong-ngomong soal petunjuk, Opan ini dari tadi cuma nyimak doang, pasti dia hitmannya!",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Opan",
+            "relasi": "offend",
+            "bukti_pesan": [
+              8
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 34.txt"
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "job": {
+    "job_id": "r001422_v01",
+    "case_name": "ambiguous",
+    "case_description": "Beberapa acuan sama-sama mungkin; target tidak_diketahui, bukan nama terakhir.",
+    "source": {
+      "source_row": 1422,
+      "source_group": "2ae4cb9d0975114cbed1",
+      "teks_chat": "gw pasif doang, sus-nya justru pemain yang dari tadi ngoceh",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 9,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "ambiguous",
+    "participants": [
+      "Qori",
+      "Roni",
+      "Siska",
+      "Tari"
+    ],
+    "focus_player": "",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Qori",
+        "teks_chat": "Roni dan Siska sama-sama mengganti klaim role tadi.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Roni",
+        "teks_chat": "Kamu ingin membahas yang mana lebih dulu?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Siska",
+        "teks_chat": "Keduanya perlu menjelaskan perubahannya sebelum dinilai.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Tari",
+        "teks_chat": "Benar, jangan langsung menyamakan dua cerita yang berbeda.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Qori",
+        "teks_chat": "Aku masih memikirkan salah satu dari dua klaim tadi.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Roni",
+        "teks_chat": "Kalau nggak jelas jangan nuduh.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Siska",
+        "teks_chat": "Kita perlu membaca ulang pesan kedua orang yang disebut.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Tari",
+        "teks_chat": "Bisa jadi itu cuma salah paham.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Qori",
+        "teks_chat": "Aku curiga dia Hitman karena klaimnya berubah tanpa alasan.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "tidak_diketahui",
+            "relasi": "offend",
+            "bukti_pesan": []
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 25.txt"
+  }
+}

@@ -1,0 +1,177 @@
+{
+  "job": {
+    "job_id": "r000138_v01",
+    "case_name": "reference_start",
+    "case_description": "Tepat 12 konteks. Penyebutan target eksplisit di pesan konteks pertama; pesan sekarang memakai kata ganti.",
+    "source": {
+      "source_row": 138,
+      "source_group": "2ee18ff5a86add26c5a0",
+      "teks_chat": "Kalau konteksnya benar begitu, Tegar punya motif paling jelas, dia membungkam Rosi lalu mendorong vote ke orang lain, Tegar Hitman",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 13,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "reference_start",
+    "participants": [
+      "Hadi",
+      "Intan",
+      "Joko",
+      "Rina"
+    ],
+    "focus_player": "Joko",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Hadi",
+        "teks_chat": "Joko mengajak kita vote Intan tanpa alasan. Aku curiga Joko Hitman yang ingin mengarahkan vote.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Joko",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Joko",
+        "teks_chat": "Aku cuma mau melihat reaksi orang saja, siapa tahu ada yang panik.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Joko",
+            "relasi": "defend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Intan",
+        "teks_chat": "Melihat reaksi bagaimana, kamu tidak ada bukti sama sekali untuk menuduhku.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Intan",
+            "relasi": "defend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Rina",
+        "teks_chat": "Sangat bahaya kalau kita ikut vote tanpa dasar yang jelas.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Joko",
+        "teks_chat": "Aku tidak sedang memfitnah siapa pun; aku hanya mencoba melihat reaksi kalian.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Joko",
+            "relasi": "defend",
+            "bukti_pesan": [
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Hadi",
+        "teks_chat": "Tetapi caramu itu membuat keruh suasana diskusi sejak awal.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Intan",
+        "teks_chat": "Aku makin curiga dia Hitman, ajakan votenya tidak punya dasar.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Joko",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Rina",
+        "teks_chat": "Kita harus fokus mencari bukti nyata, bukan bermain tebak-tebakan.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Joko",
+        "teks_chat": "Aku bukan Hitman, kalian terlalu jauh menafsirkan caraku bertanya.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Joko",
+            "relasi": "defend",
+            "bukti_pesan": [
+              9
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Hadi",
+        "teks_chat": "Sikap masa bodohmu malah membuat semuanya semakin aneh.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Intan",
+        "teks_chat": "Aku juga curiga dia pelakunya karena terus menghindari pertanyaan soal alasan vote.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Joko",
+            "relasi": "offend",
+            "bukti_pesan": [
+              9
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Rina",
+        "teks_chat": "Jadi kita harus mengambil langkah apa sekarang? Waktu hampir habis.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Hadi",
+        "teks_chat": "Kita turunkan saja dia sekarang, bahaya membiarkan orang provokasi begitu terus ada di permainan.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Joko",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 2.txt"
+  }
+}

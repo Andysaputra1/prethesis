@@ -1,0 +1,143 @@
+{
+  "job": {
+    "job_id": "r001437_v01",
+    "case_name": "ambiguous",
+    "case_description": "Beberapa acuan sama-sama mungkin; target tidak_diketahui, bukan nama terakhir.",
+    "source": {
+      "source_row": 1437,
+      "source_group": "7a28754ad113e9a433da",
+      "teks_chat": "jangan keburu eksekusi aku, cek dulu siapa yang diuntungkan",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 12,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "ambiguous",
+    "participants": [
+      "Dani",
+      "Eka",
+      "Fajar"
+    ],
+    "focus_player": "",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Dani",
+        "teks_chat": "Fajar dan aku sama-sama sempat terlambat masuk chat.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Eka",
+        "teks_chat": "Apa penyebabnya?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Fajar",
+        "teks_chat": "Aku tadi ada urusan sebentar di luar permainan.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Dani",
+        "teks_chat": "Aku juga baru kembali memegang ponsel.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Eka",
+        "teks_chat": "Dani dan Fajar, aku curiga kalian sengaja menunda jawaban.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Dani",
+            "relasi": "offend",
+            "bukti_pesan": [
+              5
+            ]
+          },
+          {
+            "pemain": "Fajar",
+            "relasi": "offend",
+            "bukti_pesan": [
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Fajar",
+        "teks_chat": "Aku bukan Hitman, aku memang belum bisa membuka chat tadi.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Fajar",
+            "relasi": "defend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Dani",
+        "teks_chat": "Aku juga tidak bersalah. Jeda chatku bukan karena menyusun alasan.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Dani",
+            "relasi": "defend",
+            "bukti_pesan": [
+              7
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Eka",
+        "teks_chat": "Kita belum tahu penyebab sebenarnya dari jeda chat itu.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Fajar",
+        "teks_chat": "Kalau begitu, jangan tentukan role dari keterlambatan saja.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Dani",
+        "teks_chat": "Aku setuju, baca dulu jawaban yang sekarang sudah terkirim.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Eka",
+        "teks_chat": "Dua orang yang tadi terlambat sudah menyampaikan penjelasannya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Eka",
+        "teks_chat": "Menurutku dia belum pantas dituduh; urusan di luar permainan bisa membuat respons terlambat.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "tidak_diketahui",
+            "relasi": "defend",
+            "bukti_pesan": []
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 26.txt"
+  }
+}

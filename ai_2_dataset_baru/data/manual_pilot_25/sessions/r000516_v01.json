@@ -1,0 +1,76 @@
+{
+  "job": {
+    "job_id": "r000516_v01",
+    "case_name": "explicit",
+    "case_description": "Target eksplisit di pesan sekarang. Contoh: Aku yakin bukan Andy = defend Andy.",
+    "source": {
+      "source_row": 516,
+      "source_group": "972fdd8804bfdd79f414",
+      "teks_chat": "aku bukan Hitman, coba cek siapa yang paling diuntungkan dari eksekusi ini",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 3,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "explicit",
+    "participants": [
+      "Umar",
+      "Vina",
+      "Willy"
+    ],
+    "focus_player": "Umar",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Vina",
+        "teks_chat": "Umar, aku tidak bersalah. Kamu mengajak vote aku tanpa bukti.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Vina",
+            "relasi": "defend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Umar",
+        "teks_chat": "Aku tetap curiga kamu pelakunya, walaupun baru berdasarkan firasat.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Vina",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Willy",
+        "teks_chat": "Aku yakin Umar bukanlah Hitman, dia cuma asal berargumen karena dia civilian pemula yang kebingungan.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Umar",
+            "relasi": "defend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 8.txt"
+  }
+}

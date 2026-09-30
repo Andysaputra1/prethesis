@@ -1,0 +1,151 @@
+{
+  "job": {
+    "job_id": "r004498_v01",
+    "case_name": "nickname",
+    "case_description": "Pesan sekarang menyebut pemain dengan nama panggilan, singkatan, atau salah ketik ringan (Andy -> ndy, andi, si And) tanpa menulis nama aslinya. Catat sebutan itu di panggilan. Target tetap memakai nama asli; jika neutral, target kosong.",
+    "source": {
+      "source_row": 4498,
+      "source_group": "4d35b5a7db39c6aa3782",
+      "teks_chat": "gw tetap pada teori awal: si D hitman, dan tuduhan ke gw cuma noise",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 13,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "nickname",
+    "participants": [
+      "Kiki",
+      "Lia",
+      "Anton",
+      "Bagas"
+    ],
+    "focus_player": "Kiki",
+    "panggilan": [
+      {
+        "pemain": "Kiki",
+        "sebutan": [
+          "Kik"
+        ]
+      }
+    ],
+    "messages": [
+      {
+        "pengirim": "Kiki",
+        "teks_chat": "Aku ini Spy, kalian harus percaya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Lia",
+        "teks_chat": "Belum ada bukti kalau kamu beneran Spy.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Anton",
+        "teks_chat": "Iya, bisa aja dia bohong buat nutupin role aslinya.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Kiki",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Bagas",
+        "teks_chat": "Kita dengarkan dulu klaim pilihan Guard-nya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Kiki",
+        "teks_chat": "Terserah kalau gak percaya, aku cuma ngasih info.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Kiki",
+            "relasi": "defend",
+            "bukti_pesan": [
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Lia",
+        "teks_chat": "Kalau beneran Spy, harusnya bisa kasih info yang berguna dong.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Anton",
+        "teks_chat": "Betul, dari tadi informasinya kurang jelas.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Bagas",
+        "teks_chat": "Jangan buru-buru nuduh, kita kumpulin info dulu aja.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Kiki",
+        "teks_chat": "Nanti malam aku akan memilih satu pemain untuk Guard.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Lia",
+        "teks_chat": "Silakan, buktikan aja.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Anton",
+        "teks_chat": "Aku sih tetep waspada sama klaim ini.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Bagas",
+        "teks_chat": "Oke, soal Guard-nya kita bahas besok aja.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Lia",
+        "teks_chat": "Mending kita vote aja si Kik, klaimnya mencurigakan banget tanpa bukti.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Kiki",
+            "relasi": "offend",
+            "bukti_pesan": [
+              13
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 67.txt"
+  },
+  "revisi": [
+    {
+      "pesan": 12,
+      "kategori": "tidak_natural",
+      "alasan": "Kaku ('bisa dibahas pada diskusi berikutnya')"
+    }
+  ]
+}

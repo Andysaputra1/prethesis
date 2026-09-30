@@ -1,0 +1,179 @@
+{
+  "job": {
+    "job_id": "r001939_v01",
+    "case_name": "topic_switch",
+    "case_description": "Pembahasan berganti pemain; pesan sekarang mengikuti topik baru, bukan otomatis target lama.",
+    "source": {
+      "source_row": 1939,
+      "source_group": "e28a62ed93c44a2d0ce7",
+      "teks_chat": "semua orang fokus ke Maya, padahal dia cuma ikut voting; yang benar-benar mengarahkan kita itu Joni, pilih Joni",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 10,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "topic_switch",
+    "participants": [
+      "Sani",
+      "Toni",
+      "Udin",
+      "Vera"
+    ],
+    "focus_player": "Toni",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Sani",
+        "teks_chat": "Tadi ada yang langsung bela diri padahal belum ditanya lho.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Toni",
+        "teks_chat": "Aku curiga Udin Hitman karena tiba-tiba membela diri sebelum dituduh.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Udin",
+            "relasi": "offend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Udin",
+        "teks_chat": "Aku bukan Hitman, cuma ingin ikut diskusi.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Udin",
+            "relasi": "defend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Vera",
+        "teks_chat": "Sekarang aku justru curiga Toni Hitman, dia cepat sekali menuduh tanpa alasan kuat.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Toni",
+            "relasi": "offend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Toni",
+        "teks_chat": "Aku gelisah karena takut dituduh sama kalian.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Toni",
+            "relasi": "defend",
+            "bukti_pesan": [
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Sani",
+        "teks_chat": "Alasan klasik banget, Toni mulai mengalihkan isu nih.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Toni",
+            "relasi": "offend",
+            "bukti_pesan": [
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Udin",
+        "teks_chat": "Nah bener, dia nyalahin aku padahal dia sendiri yang sus.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Toni",
+            "relasi": "offend",
+            "bukti_pesan": [
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Vera",
+        "teks_chat": "Fix Toni hitmannya, dia panik duluan.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Toni",
+            "relasi": "offend",
+            "bukti_pesan": [
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Toni",
+        "teks_chat": "Bukan aku pelakunya, sumpah aku warga biasa!",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Toni",
+            "relasi": "defend",
+            "bukti_pesan": [
+              9
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Sani",
+        "teks_chat": "Udah ngaku aja deh Toni, pembelaan lu yang cepet itu malah makin bikin kita curiga!",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Toni",
+            "relasi": "offend",
+            "bukti_pesan": [
+              9
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 32.txt"
+  },
+  "revisi": [
+    {
+      "pesan": 7,
+      "kategori": "singkatan",
+      "alasan": "Singkatan 'yg' di luar slot typo."
+    },
+    {
+      "pesan": 10,
+      "kategori": "singkatan",
+      "alasan": "Singkatan 'yg' di pesan utama tanpa slot typo."
+    }
+  ]
+}

@@ -1,0 +1,124 @@
+{
+  "job": {
+    "job_id": "r000160_v01",
+    "case_name": "rhetorical_question",
+    "case_description": "Pesan sekarang berbentuk pertanyaan retoris yang sebenarnya menuduh atau membela, misalnya 'kenapa Andy diam terus?' (offend) atau 'masa sih Andy Hitman?' (defend). Bukan pertanyaan informasi.",
+    "source": {
+      "source_row": 160,
+      "source_group": "2dcb376b68f94b571d6c",
+      "teks_chat": "menurutku G paling mencurigakan karena jawabannya terlalu aman",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 7,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "rhetorical_question",
+    "participants": [
+      "Nando",
+      "Opi",
+      "Putra",
+      "Qila"
+    ],
+    "focus_player": "Opi",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Nando",
+        "teks_chat": "Opi tadi menuduh Putra, sekarang tiba-tiba menuduh Qila, maunya apa sebenarnya?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Opi",
+        "teks_chat": "Karena menurutku cara mereka berdua menjawab chat mencurigakan.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Putra",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          },
+          {
+            "pemain": "Qila",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Putra",
+        "teks_chat": "Aku tidak bersalah. Tuduhanmu kepadaku tidak disertai bukti.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Putra",
+            "relasi": "defend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Qila",
+        "teks_chat": "Opi, kamu menuduh kami berdua agar perhatian beralih darimu. Aku curiga kamu Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Opi",
+            "relasi": "offend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Nando",
+        "teks_chat": "Seharusnya kita fokus membahas satu per satu, jangan melompat-lompat target.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Opi",
+        "teks_chat": "Aku kan cuma menyampaikan hasil analisisku saja kepada kalian.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Opi",
+            "relasi": "defend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Putra",
+        "teks_chat": "Buat apa kita harus percaya sama orang yang target tuduhannya berganti terus setiap menit?",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Opi",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 2.txt"
+  }
+}

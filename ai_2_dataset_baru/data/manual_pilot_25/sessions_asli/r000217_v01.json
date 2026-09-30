@@ -1,0 +1,98 @@
+{
+  "job": {
+    "job_id": "r000217_v01",
+    "case_name": "mixed_relations",
+    "case_description": "Membela satu pemain dan menuduh pemain lain. Intent utama offend; simpan kedua relasi.",
+    "source": {
+      "source_row": 217,
+      "source_group": "c1b6ee06edc325eb3e95",
+      "teks_chat": "Kalau G benar Civilian, kenapa dia terus menghindari pertanyaan soal Hostage semalam",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 4,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "mixed_relations",
+    "participants": [
+      "Anton",
+      "Bagas",
+      "Cinta",
+      "Danang"
+    ],
+    "focus_player": "",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Anton",
+        "teks_chat": "Aku mengaku Spy. Menurutku Bagas mencurigakan karena tidak langsung percaya klaimku.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Bagas",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Bagas",
+        "teks_chat": "Aku bukan Hitman. Meragukan klaim role tidak berarti aku pelakunya.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Bagas",
+            "relasi": "defend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Cinta",
+        "teks_chat": "Aku membela Bagas; pertanyaannya soal Guard tadi masih wajar.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Bagas",
+            "relasi": "defend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Danang",
+        "teks_chat": "Bagas tdk pantas dituduh karena bertanya. Justru Anton yang aku curigai sebagai Hitman karena memaksa kita percaya klaimnya.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Bagas",
+            "relasi": "defend",
+            "bukti_pesan": [
+              4
+            ]
+          },
+          {
+            "pemain": "Anton",
+            "relasi": "offend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 3.txt"
+  }
+}

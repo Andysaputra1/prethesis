@@ -1,0 +1,165 @@
+{
+  "job": {
+    "job_id": "r002239_v01",
+    "case_name": "neutral_after_accusation",
+    "case_description": "Konteks berisi tuduhan, tetapi pesan sekarang neutral; jangan mewarisi relasi lama.",
+    "source": {
+      "source_row": 2239,
+      "source_group": "81695cd7ef068c914531",
+      "teks_chat": "gw Stalker, tapi cuma bisa peek tiap dua ronde, jadi jangan maksa hasil baru",
+      "label_intent": "neutral"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 10,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "neutral_after_accusation",
+    "participants": [
+      "Joko",
+      "Kiki",
+      "Lina"
+    ],
+    "focus_player": "Joko",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Joko",
+        "teks_chat": "Ada yang lihat apa yang terjadi semalam?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Kiki",
+        "teks_chat": "Aku ngerasa Joko mencurigakan, dia nanya-nanya mulu.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Joko",
+            "relasi": "offend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Lina",
+        "teks_chat": "Bener juga, jangan-jangan dia hitmannya.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Joko",
+            "relasi": "offend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Joko",
+        "teks_chat": "Kok aku sih, aku kan cuma nanya info.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Joko",
+            "relasi": "defend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Kiki",
+        "teks_chat": "Soalnya lu kayak lagi nyari alibi.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Joko",
+            "relasi": "offend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Lina",
+        "teks_chat": "Iya, mending kita fokus awasin Joko aja.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Joko",
+            "relasi": "offend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Joko",
+        "teks_chat": "Aku beneran warga biasa, sumpah.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Joko",
+            "relasi": "defend",
+            "bukti_pesan": [
+              7
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Kiki",
+        "teks_chat": "Nggak percaya gue.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Joko",
+            "relasi": "offend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Lina",
+        "teks_chat": "Joko, aku tetap curiga kamu Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Joko",
+            "relasi": "offend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Joko",
+        "teks_chat": "Ada Spy yang mau cerita semalam Guard siapa?",
+        "label_intent": "neutral",
+        "target": []
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 36.txt"
+  },
+  "revisi": [
+    {
+      "pesan": 10,
+      "kategori": "tidak_natural",
+      "alasan": "Kaku ('membagikan klaim pilihan Guard')."
+    }
+  ]
+}

@@ -1,0 +1,147 @@
+{
+  "job": {
+    "job_id": "r004329_v01",
+    "case_name": "interruption",
+    "case_description": "Pembahasan target disela obrolan waktu/ronde; kaitan kembali ke target masih jelas.",
+    "source": {
+      "source_row": 4329,
+      "source_group": "9e304606e95e37718a38",
+      "teks_chat": "kalau gw Hitman, ngapain gw bikin perhatian ke diri sendiri? cek aja si D yang diem terus",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 12,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "interruption",
+    "participants": [
+      "Fahri",
+      "Gita",
+      "Hasan",
+      "Hani"
+    ],
+    "focus_player": "Hani",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Fahri",
+        "teks_chat": "Coba perhatikan, Hani dari awal ronde tadi diam saja, apakah dia pelakunya?",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Hani",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Gita",
+        "teks_chat": "Iya juga, respons chat dari dia lambat sekali, kadang terpotong pesannya.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Hani",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Hasan",
+        "teks_chat": "Eh kawan-kawan, ingat ya waktu diskusi kita sisa satu menit lagi.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Fahri",
+        "teks_chat": "Wah iya, cepat sekali waktu berjalannya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Gita",
+        "teks_chat": "Berarti kita harus segera mengambil keputusan bulat.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Hasan",
+        "teks_chat": "Pastikan semuanya menekan tombol sebelum waktunya benar-benar habis.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Fahri",
+        "teks_chat": "Ayo fokus lagi ke obrolan utama kita tadi.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Gita",
+        "teks_chat": "Iya, jangan sampai buang-buang suara.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Hasan",
+        "teks_chat": "Jadi, kembali ke orang yang pasif tadi ya?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Fahri",
+        "teks_chat": "Betul, gelagatnya yang selalu telat membalas sangat aneh.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Hani",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Gita",
+        "teks_chat": "Kemungkinan besar dia kesulitan menyusun kebohongan.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Hani",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Hasan",
+        "teks_chat": "Mumpung timer masih berjalan, ayo kita sepakat naikkan dia sekarang.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Hani",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 64.txt"
+  }
+}

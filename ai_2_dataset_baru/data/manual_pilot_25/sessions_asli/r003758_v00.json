@@ -1,0 +1,47 @@
+{
+  "job": {
+    "job_id": "r003758_v00",
+    "case_name": "original",
+    "case_description": "Satu pesan tanpa riwayat. Pertahankan teks dan intent sumber persis; jangan mengarang riwayat asli.",
+    "source": {
+      "source_row": 3758,
+      "source_group": "f44f99d2a4390f565bc6",
+      "teks_chat": "aku Stalker, semalam sudah peek si B dan dia bukan Hitman, jangan ikut vote dia",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 1,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "original",
+    "participants": [
+      "Andi",
+      "B"
+    ],
+    "focus_player": "B",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Andi",
+        "teks_chat": "aku Stalker, semalam sudah peek si B dan dia bukan Hitman, jangan ikut vote dia",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "B",
+            "relasi": "defend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 58.txt"
+  }
+}

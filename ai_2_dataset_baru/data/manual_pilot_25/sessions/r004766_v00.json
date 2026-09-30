@@ -1,0 +1,47 @@
+{
+  "job": {
+    "job_id": "r004766_v00",
+    "case_name": "original",
+    "case_description": "Satu pesan tanpa riwayat. Pertahankan teks dan intent sumber persis; jangan mengarang riwayat asli.",
+    "source": {
+      "source_row": 4766,
+      "source_group": "09f10500087abf743ad4",
+      "teks_chat": "Tio minta kita percaya pada instingnya saja, padahal game ini butuh alasan; insting kosong bukan bukti, eksekusi Tio",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 1,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "original",
+    "participants": [
+      "Dodi",
+      "Tio"
+    ],
+    "focus_player": "Tio",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Dodi",
+        "teks_chat": "Tio minta kita percaya pada instingnya saja, padahal game ini butuh alasan; insting kosong bukan bukti, eksekusi Tio",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Tio",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 70.txt"
+  }
+}

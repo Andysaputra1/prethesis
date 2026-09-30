@@ -1,0 +1,83 @@
+{
+  "job": {
+    "job_id": "r000649_v01",
+    "case_name": "explicit",
+    "case_description": "Target eksplisit di pesan sekarang. Contoh: Aku yakin bukan Andy = defend Andy.",
+    "source": {
+      "source_row": 649,
+      "source_group": "897a81cdaf440b74e8cc",
+      "teks_chat": "aku tidak menyembunyikan apa pun; silakan cocokkan semua pernyataanku dengan log chat",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 4,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "explicit",
+    "participants": [
+      "Intan",
+      "Joko",
+      "Rina",
+      "Coki"
+    ],
+    "focus_player": "Coki",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Intan",
+        "teks_chat": "Eh, Coki dari tadi nggak ngerespon obrolan kita sama sekali ya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Joko",
+        "teks_chat": "Aku curiga Coki sengaja terlambat membalas untuk menghindari pertanyaan. Vote Coki!",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Coki",
+            "relasi": "offend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Coki",
+        "teks_chat": "Sorry, barusan ada paket datang jadi aku buka pintu dulu.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Coki",
+            "relasi": "defend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Rina",
+        "teks_chat": "Tuh kan bener, Coki cuma ada urusan sebentar doang di dunia nyata.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Coki",
+            "relasi": "defend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 12.txt"
+  }
+}

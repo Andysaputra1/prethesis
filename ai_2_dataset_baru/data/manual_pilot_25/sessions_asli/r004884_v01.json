@@ -1,0 +1,59 @@
+{
+  "job": {
+    "job_id": "r004884_v01",
+    "case_name": "second_person",
+    "case_description": "Kamu/lu: gunakan pergantian pembicara dan teks yang jelas. Tanpa acuan jelas, target tidak_diketahui.",
+    "source": {
+      "source_row": 4884,
+      "source_group": "cf651ca34921730af868",
+      "teks_chat": "malam pertama aku di-guard, malam kedua guard pindah dan korban jatuh ke Kiki, aku vote Kiki",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 3,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "second_person",
+    "participants": [
+      "Fandi",
+      "Gita"
+    ],
+    "focus_player": "Gita",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Fandi",
+        "teks_chat": "Gita, kenapa kamu diam terus dari tadi?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Gita",
+        "teks_chat": "Aku sedang membaca percakapan sebelumnya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Fandi",
+        "teks_chat": "Lu pasif banget dari awal, pasti ada yang ditutup-tutupin. Vote aja nih orang.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Gita",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 72.txt"
+  }
+}

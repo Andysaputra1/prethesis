@@ -1,0 +1,129 @@
+{
+  "job": {
+    "job_id": "r001881_v01",
+    "case_name": "reference_end",
+    "case_description": "Tepat 12 konteks. Penyebutan target eksplisit di pesan konteks terakhir.",
+    "source": {
+      "source_row": 1881,
+      "source_group": "a74a803147f6616924af",
+      "teks_chat": "jangan kasih si Wawan kesempatan muter cerita lagi, langsung masuk daftar eksekusi",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 13,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "reference_end",
+    "participants": [
+      "Fifi",
+      "Gogon",
+      "Hana",
+      "Eka"
+    ],
+    "focus_player": "Eka",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Fifi",
+        "teks_chat": "Kalian ada yang merasa aneh dengan cerita seseorang tidak?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Gogon",
+        "teks_chat": "Cerita yang mana maksudmu?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Hana",
+        "teks_chat": "Iya, aku merasa ada yang omongannya beda dari awal.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Eka",
+        "teks_chat": "Siapa yang kalian maksud?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Fifi",
+        "teks_chat": "Coba kalian ingat-ingat lagi pembicaraan kita di awal tadi.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Gogon",
+        "teks_chat": "Aku sedikit lupa sih.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Hana",
+        "teks_chat": "Ada yang mengaku Spy, lalu mengganti klaim menjadi Stalker.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Fifi",
+        "teks_chat": "Benar, aku juga sadar akan hal itu.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Eka",
+        "teks_chat": "Wah, siapa tuh orangnya?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Gogon",
+        "teks_chat": "Sepertinya aku mulai tahu arah pembicaraan ini ke mana.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Hana",
+        "teks_chat": "Ayo sebut saja namanya tidak usah ragu.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Fifi",
+        "teks_chat": "Eka tadi mengaku Spy lalu Stalker. Aku curiga Eka Hitman karena klaimnya berubah tanpa penjelasan.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Eka",
+            "relasi": "offend",
+            "bukti_pesan": [
+              12
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Gogon",
+        "teks_chat": "Aku juga curiga dia mengarang role agar tidak divote.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Eka",
+            "relasi": "offend",
+            "bukti_pesan": [
+              12
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 31.txt"
+  }
+}

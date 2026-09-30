@@ -1,0 +1,174 @@
+{
+  "job": {
+    "job_id": "r000584_v01",
+    "case_name": "reference_start",
+    "case_description": "Tepat 12 konteks. Penyebutan target eksplisit di pesan konteks pertama; pesan sekarang memakai kata ganti.",
+    "source": {
+      "source_row": 584,
+      "source_group": "b09a0c7a2900acd624f5",
+      "teks_chat": "fix bukan gw, dari tadi targetku konsisten dan alasannya kebuka",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 13,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "reference_start",
+    "participants": [
+      "Mamat",
+      "Nina",
+      "Oman",
+      "Putri",
+      "Rudi"
+    ],
+    "focus_player": "Mamat",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Nina",
+        "teks_chat": "Mamat mengajak vote Putri tanpa bukti. Aku curiga Mamat Hitman yang mau menggiring kita.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Mamat",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Oman",
+        "teks_chat": "Iya nih, padahal dari tadi kita belum nemu bukti apa-apa.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Mamat",
+        "teks_chat": "Aku cuma punya feeling kuat aja kalau dia pelakunya.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Putri",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Putri",
+        "teks_chat": "Kamu mau numbalin aku ya karena kamu sendiri Hitman-nya?",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Mamat",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Rudi",
+        "teks_chat": "Mencurigakan banget sih cara main kayak gitu.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Nina",
+        "teks_chat": "Seorang Hitman emang suka ngelempar tuduhan palsu buat mancing kepanikan.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Oman",
+        "teks_chat": "Bener, kita nggak boleh gampang kepancing sama ajakan yang nggak ada buktinya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Mamat",
+        "teks_chat": "Aku bukan Hitman, aku hanya menyampaikan dugaan yang belum matang.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Mamat",
+            "relasi": "defend",
+            "bukti_pesan": [
+              8
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Putri",
+        "teks_chat": "Sekarang malah bersikap masa bodoh.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Rudi",
+        "teks_chat": "Ini sih udah fiks nyari masalah aja dari tadi.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Nina",
+        "teks_chat": "Tapi dia ini masih pemula kan di game ini?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Oman",
+        "teks_chat": "Dia belum pantas dituduh sebagai Hitman hanya karena menebak asal.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Mamat",
+            "relasi": "defend",
+            "bukti_pesan": [
+              8
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Rudi",
+        "teks_chat": "Dia kayaknya cuma asal nebak karena bingung, jangan langsung nuduh balik begitu ke dia.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Mamat",
+            "relasi": "defend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 10.txt"
+  },
+  "revisi": [
+    {
+      "pesan": 6,
+      "kategori": "singkatan",
+      "alasan": "Salah ketik 'ngelepar' di luar slot typo."
+    },
+    {
+      "pesan": 13,
+      "kategori": "aturan_game",
+      "alasan": "Menyatakan role Mamat (civilian) sebagai fakta."
+    }
+  ]
+}

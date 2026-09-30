@@ -1,0 +1,60 @@
+{
+  "job": {
+    "job_id": "r004787_v01",
+    "case_name": "nickname",
+    "case_description": "Pesan sekarang menyebut pemain dengan nama panggilan, singkatan, atau salah ketik ringan (Andy -> ndy, andi, si And) tanpa menulis nama aslinya. Catat sebutan itu di panggilan. Target tetap memakai nama asli; jika neutral, target kosong.",
+    "source": {
+      "source_row": 4787,
+      "source_group": "4fafd5da9a50fe3dd22b",
+      "teks_chat": "semakin Galih membela diri, semakin kelihatan dia panik, gas vote Galih",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 2,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "nickname",
+    "participants": [
+      "Rendi",
+      "Huda"
+    ],
+    "focus_player": "Rendi",
+    "panggilan": [
+      {
+        "pemain": "Rendi",
+        "sebutan": [
+          "Ren"
+        ]
+      }
+    ],
+    "messages": [
+      {
+        "pengirim": "Rendi",
+        "teks_chat": "Kenapa identitas korban malam ini tidak dimunculkan di layar?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Huda",
+        "teks_chat": "Kamu ini aneh banget Ren, kepo urusan korban pasti karena kamu Hitman-nya.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Rendi",
+            "relasi": "offend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 70.txt"
+  }
+}

@@ -1,0 +1,166 @@
+{
+  "job": {
+    "job_id": "r002251_v01",
+    "case_name": "agreement",
+    "case_description": "Pesan sekarang menyetujui atau membantah pesan pemain lain di konteks tanpa menyebut ulang nama target. Setuju dengan tuduhan = offend pemain yang dituduh; membantah tuduhan atau setuju dengan pembelaan = defend. Identitas target diwarisi dari pesan yang ditanggapi.",
+    "source": {
+      "source_row": 2251,
+      "source_group": "2e00ad1e4a7411be993d",
+      "teks_chat": "gw ngaku Hitman buat mancing reaksi, tapi kok ada yang langsung defensif?",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 10,
+    "pesan_typo_ringan": [
+      7
+    ]
+  },
+  "session": {
+    "case_name": "agreement",
+    "participants": [
+      "Maman",
+      "Nia",
+      "Oka"
+    ],
+    "focus_player": "Nia",
+    "panggilan": [
+      {
+        "pemain": "Nia",
+        "sebutan": [
+          "Ni"
+        ]
+      }
+    ],
+    "messages": [
+      {
+        "pengirim": "Maman",
+        "teks_chat": "Ada yang belum membalas pertanyaan di chat?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Nia",
+        "teks_chat": "Maaf, tadi koneksiku putus.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Oka",
+        "teks_chat": "Oh, Nia baru sempat membalas.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Maman",
+        "teks_chat": "Aku curiga Nia Hitman yang memakai alasan koneksi.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Nia",
+            "relasi": "offend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Nia",
+        "teks_chat": "Aku bukan Hitman, koneksiku memang bermasalah.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Nia",
+            "relasi": "defend",
+            "bukti_pesan": [
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Oka",
+        "teks_chat": "Maman, telat membalas belum membuktikan dia Hitman.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Nia",
+            "relasi": "defend",
+            "bukti_pesan": [
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Maman",
+        "teks_chat": "Aku tetap curiga Nia sedang berbohong dgn alasan koneksi untuk menutupi role Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Nia",
+            "relasi": "offend",
+            "bukti_pesan": [
+              7
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Nia",
+        "teks_chat": "Aku menolak tuduhan itu.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Nia",
+            "relasi": "defend",
+            "bukti_pesan": [
+              8
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Oka",
+        "teks_chat": "Menurutku dia belum pantas divote dengan alasan itu.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Nia",
+            "relasi": "defend",
+            "bukti_pesan": [
+              8
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Maman",
+        "teks_chat": "Gue nggak setuju sama lo Oka, dia pasti Hitman yang pura-pura putus koneksi!",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Nia",
+            "relasi": "offend",
+            "bukti_pesan": [
+              9
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 36.txt"
+  },
+  "revisi": [
+    {
+      "pesan": 7,
+      "kategori": "singkatan",
+      "alasan": "Slot typo [7] tidak berisi singkatan."
+    }
+  ]
+}

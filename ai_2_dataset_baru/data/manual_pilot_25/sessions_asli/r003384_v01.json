@@ -1,0 +1,179 @@
+{
+  "job": {
+    "job_id": "r003384_v01",
+    "case_name": "reference_middle",
+    "case_description": "Tepat 12 konteks. Penyebutan target eksplisit di pesan konteks ke-6 atau ke-7.",
+    "source": {
+      "source_row": 3384,
+      "source_group": "b4380efe33c19d8adb69",
+      "teks_chat": "bukti chat gw ada semua, coba tunjuk bagian mana yang katanya fitnah",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 13,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "reference_middle",
+    "participants": [
+      "Bagas",
+      "Cinta",
+      "Didi",
+      "Eno",
+      "Fikri",
+      "Laila"
+    ],
+    "focus_player": "Laila",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Bagas",
+        "teks_chat": "Parah nih jaringan hari ini, lambat sekali.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Cinta",
+        "teks_chat": "Iya pesanku juga telat masuknya ke obrolan.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Didi",
+        "teks_chat": "Ada yang sampai diam lama tidak gara-gara masalah sinyal?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Eno",
+        "teks_chat": "Tidak tahu deh, tapi mengetik balasan jadi susah sekali.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Fikri",
+        "teks_chat": "Ada yang belum membalas pertanyaan diskusi tadi.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Bagas",
+        "teks_chat": "Laila lama membalas, aku curiga dia Hitman yang menghindar.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Laila",
+            "relasi": "offend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Cinta",
+        "teks_chat": "Benar, dia kelihatan sedang mengerjakan hal lain.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Laila",
+            "relasi": "offend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Didi",
+        "teks_chat": "Aku juga menduga dia Hitman yang enggan menjawab.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Laila",
+            "relasi": "offend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Eno",
+        "teks_chat": "Bahaya sih kalau dibiarkan begitu saja.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Laila",
+            "relasi": "offend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Fikri",
+        "teks_chat": "Ayo kumpulkan suara buat dia aja sekarang.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Laila",
+            "relasi": "offend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Laila",
+        "teks_chat": "Aku bukan Hitman, koneksiku sedang bermasalah.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Laila",
+            "relasi": "defend",
+            "bukti_pesan": [
+              11
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Bagas",
+        "teks_chat": "Tapi buktinya kamu telat sekali balasnya.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Laila",
+            "relasi": "offend",
+            "bukti_pesan": [
+              11
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Cinta",
+        "teks_chat": "Dia sudah menjelaskan gangguan sinyal. Telat membalas belum membuktikan dia Hitman.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Laila",
+            "relasi": "defend",
+            "bukti_pesan": [
+              11
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 50.txt"
+  }
+}

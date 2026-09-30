@@ -1,0 +1,115 @@
+{
+  "job": {
+    "job_id": "r003329_v01",
+    "case_name": "interruption",
+    "case_description": "Pembahasan target disela obrolan waktu/ronde; kaitan kembali ke target masih jelas.",
+    "source": {
+      "source_row": 3329,
+      "source_group": "03f5c88b002ea603d9f6",
+      "teks_chat": "lu bilang gw mencurigakan karena ngebela diri, ya jelas lah, gw lagi dituduh",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 8,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "interruption",
+    "participants": [
+      "Hadi",
+      "Indra",
+      "Jojo",
+      "Kiki"
+    ],
+    "focus_player": "Indra",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Hadi",
+        "teks_chat": "Aku curiga kepada Indra, lebih baik kita keluarkan saja.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Indra",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Indra",
+        "teks_chat": "Buktinya apa kamu tiba-tiba mengajak vote begitu?",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Indra",
+            "relasi": "defend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Hadi",
+        "teks_chat": "Kamu mengubah klaim tanpa alasan, aku curiga kamu Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Indra",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Jojo",
+        "teks_chat": "Waktu ronde tinggal sedikit nih.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Kiki",
+        "teks_chat": "Iya, ayo cepat putuskan pilihan.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Jojo",
+        "teks_chat": "Jangan sampai waktu diskusinya habis.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Kiki",
+        "teks_chat": "Tinggal lima belas detik lagi sebelum ditutup.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Jojo",
+        "teks_chat": "Jangan ikut memilih Indra dulu, kita belum punya bukti yang kuat sama sekali.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Indra",
+            "relasi": "defend",
+            "bukti_pesan": [
+              8
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 49.txt"
+  }
+}

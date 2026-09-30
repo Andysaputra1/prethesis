@@ -1,0 +1,170 @@
+{
+  "job": {
+    "job_id": "r003038_v01",
+    "case_name": "reference_middle",
+    "case_description": "Tepat 12 konteks. Penyebutan target eksplisit di pesan konteks ke-6 atau ke-7.",
+    "source": {
+      "source_row": 3038,
+      "source_group": "7a846ecfa20ad7238723",
+      "teks_chat": "kok yang paling vokal malah mendadak kena Gag Order, jangan-jangan pelakunya si Dito",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 13,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "reference_middle",
+    "participants": [
+      "Putri",
+      "Qori",
+      "Rian",
+      "Siska",
+      "Tomi"
+    ],
+    "focus_player": "Tomi",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Putri",
+        "teks_chat": "Mari bahas klaim pilihan skill semalam.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Qori",
+        "teks_chat": "Aku ingin mendengar klaim Stalker.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Rian",
+        "teks_chat": "Aku juga.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Siska",
+        "teks_chat": "Tomi, ada klaim yang ingin dibagikan?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Tomi",
+        "teks_chat": "Aku klaim Stalker. Aku Peek Putri dan Qori pada malam yang sama.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Putri",
+        "teks_chat": "Tomi, satu Peek hanya memilih satu pemain. Aku curiga kamu Hitman yang mengarang hasil.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Tomi",
+            "relasi": "offend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Qori",
+        "teks_chat": "Aku juga curiga dia Hitman karena klaimnya bertentangan dengan aturan.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Tomi",
+            "relasi": "offend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Rian",
+        "teks_chat": "Aku mendukung tuduhan itu.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Tomi",
+            "relasi": "offend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Siska",
+        "teks_chat": "Apa maksud klaim dua target itu?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Tomi",
+        "teks_chat": "Aku salah menulis, maksudku satu target. Aku bukan Hitman.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Tomi",
+            "relasi": "defend",
+            "bukti_pesan": [
+              10
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Putri",
+        "teks_chat": "Aku masih curiga dia pelakunya.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Tomi",
+            "relasi": "offend",
+            "bukti_pesan": [
+              10
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Qori",
+        "teks_chat": "Aku juga ingin vote dia.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Tomi",
+            "relasi": "offend",
+            "bukti_pesan": [
+              10
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Rian",
+        "teks_chat": "Klaimnya tidak konsisten, aku yakin dia Hitman. Vote dia!",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Tomi",
+            "relasi": "offend",
+            "bukti_pesan": [
+              10
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 44.txt"
+  }
+}

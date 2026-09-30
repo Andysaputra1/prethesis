@@ -1,0 +1,205 @@
+{
+  "job": {
+    "job_id": "r003233_v01",
+    "case_name": "reference_start",
+    "case_description": "Tepat 12 konteks. Penyebutan target eksplisit di pesan konteks pertama; pesan sekarang memakai kata ganti.",
+    "source": {
+      "source_row": 3233,
+      "source_group": "71cee3c24a3af91f9ca7",
+      "teks_chat": "gw paham kalian curiga, tapi sampai sekarang nggak ada bukti yang nyambung ke gw",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 13,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "reference_start",
+    "participants": [
+      "Fikri",
+      "Siska",
+      "Gilang",
+      "Deni",
+      "Rina"
+    ],
+    "focus_player": "Gilang",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Fikri",
+        "teks_chat": "Aku klaim Stalker, hasil Peek-ku menunjukkan Gilang Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Gilang",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Siska",
+        "teks_chat": "Serius? Kapan kamu Peek dia?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Fikri",
+        "teks_chat": "Dia itu pelakunya, aku lihat sendiri hasilnya!",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Gilang",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Gilang",
+        "teks_chat": "Wah kamu memfitnah aku ya.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Gilang",
+            "relasi": "defend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Deni",
+        "teks_chat": "Masa sih Fikri beneran Stalker?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Siska",
+        "teks_chat": "Bisa jadi dia ngarang supaya kita vote orang yang salah.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Fikri",
+            "relasi": "offend",
+            "bukti_pesan": [
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Fikri",
+        "teks_chat": "Aku tidak berbohong, kalian harus percaya informasiku.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Fikri",
+            "relasi": "defend",
+            "bukti_pesan": [
+              7
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Gilang",
+        "teks_chat": "Kamu yang aslinya Hitman mau menyudutkan orang lain kan?",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Fikri",
+            "relasi": "offend",
+            "bukti_pesan": [
+              7
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Deni",
+        "teks_chat": "Sabar, kita pikir dulu baik-baik.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Siska",
+        "teks_chat": "Yang dituduh tadi, ada tanggapan soal klaim Peek itu?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Gilang",
+        "teks_chat": "Aku bukan Hitman. Klaim hasil Peek itu tidak benar.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Gilang",
+            "relasi": "defend",
+            "bukti_pesan": [
+              11
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Deni",
+        "teks_chat": "Agak aneh sih klaim dari Fikri tadi.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Rina",
+        "teks_chat": "Aku sih percaya dia bukan pelakunya, omongannya dari awal sangat konsisten.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Gilang",
+            "relasi": "defend",
+            "bukti_pesan": [
+              11
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 47.txt"
+  },
+  "revisi": [
+    {
+      "pesan": 2,
+      "kategori": "tidak_natural",
+      "alasan": "Menanyakan hasil padahal hasil Peek sudah disebut di pesan 1"
+    },
+    {
+      "pesan": 3,
+      "kategori": "label",
+      "alasan": "Nama Gilang muncul lagi di pesan 3 sehingga ciri reference_start rusak; bukti disesuaikan"
+    },
+    {
+      "pesan": 6,
+      "kategori": "tidak_natural",
+      "alasan": "'memilih orang secara acak' tidak cocok, Fikri menunjuk orang tertentu"
+    },
+    {
+      "pesan": 10,
+      "kategori": "label",
+      "alasan": "Nama Gilang muncul di pesan 10 sehingga ciri reference_start rusak"
+    },
+    {
+      "pesan": 13,
+      "kategori": "label",
+      "alasan": "Bukti [10] tidak lagi menyebut Gilang setelah perbaikan pesan 10; pakai pesan 11 (ditulis Gilang, beranotasi Gilang)"
+    }
+  ]
+}

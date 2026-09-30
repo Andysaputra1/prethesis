@@ -1,0 +1,68 @@
+{
+  "job": {
+    "job_id": "r002208_v01",
+    "case_name": "quotation",
+    "case_description": "Ada tuduhan yang dikutip; bedakan sikap pengirim dari ucapan orang yang dikutip.",
+    "source": {
+      "source_row": 2208,
+      "source_group": "a94904f3b582c556d4b5",
+      "teks_chat": "aku bukan Hitman ya, cuma Civilian yang masih nyusun kronologi",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 3,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "quotation",
+    "participants": [
+      "Citra",
+      "Beni",
+      "Dina"
+    ],
+    "focus_player": "Dina",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Citra",
+        "teks_chat": "Kenapa chat kamu terpotong Dina?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Beni",
+        "teks_chat": "Dina pasti lagi nge-troll kita, dia hitmannya yang mainin chat!",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Dina",
+            "relasi": "offend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Citra",
+        "teks_chat": "Beni bilang 'Dina pasti lagi nge-troll kita', tetapi chat terpotong belum membuktikan Dina Hitman. Bisa saja salah ketik atau koneksi bermasalah.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Dina",
+            "relasi": "defend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 36.txt"
+  }
+}

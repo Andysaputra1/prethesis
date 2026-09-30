@@ -1,0 +1,112 @@
+{
+  "job": {
+    "job_id": "r000374_v01",
+    "case_name": "multiple_targets",
+    "case_description": "Dua atau lebih pemain menjadi target relasi yang sama secara jelas.",
+    "source": {
+      "source_row": 374,
+      "source_group": "207ce03dd684717d4908",
+      "teks_chat": "aku tetap pada argumen awal: pola vote-ku tidak berubah dan tidak mengikuti dorongan mayoritas",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 5,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "multiple_targets",
+    "participants": [
+      "Andi",
+      "Beni",
+      "Cika",
+      "Dita",
+      "Eko"
+    ],
+    "focus_player": "",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Andi",
+        "teks_chat": "Cika dan Dita tadi sempat tidak mengirim chat.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Beni",
+        "teks_chat": "Aku curiga Cika dan Dita sengaja pasif karena Hitman. Vote mereka berdua saja.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Cika",
+            "relasi": "offend",
+            "bukti_pesan": [
+              2
+            ]
+          },
+          {
+            "pemain": "Dita",
+            "relasi": "offend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Cika",
+        "teks_chat": "Aku bukan Hitman, aku tadi sedang membaca percakapan.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Cika",
+            "relasi": "defend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Dita",
+        "teks_chat": "Aku juga tidak bersalah, koneksiku sempat terputus.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Dita",
+            "relasi": "defend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Eko",
+        "teks_chat": "Cika dan Dita belum pantas dituduh; jeda chat saja tidak membuktikan mereka Hitman.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Cika",
+            "relasi": "defend",
+            "bukti_pesan": [
+              5
+            ]
+          },
+          {
+            "pemain": "Dita",
+            "relasi": "defend",
+            "bukti_pesan": [
+              5
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 5.txt"
+  }
+}

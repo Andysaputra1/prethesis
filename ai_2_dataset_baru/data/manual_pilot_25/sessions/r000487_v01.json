@@ -1,0 +1,183 @@
+{
+  "job": {
+    "job_id": "r000487_v01",
+    "case_name": "memory_outside_window",
+    "case_description": "14-16 pesan total. Nama target hanya disebut sebelum 12 konteks terakhir. Dalam jendela, ada pesan yang meneruskan acuan dengan jelas dan menyimpan anotasi target berdasarkan pesan lama. Pesan sekarang merujuk target sama. Nama target tidak muncul dalam teks 12 konteks terakhir atau pesan sekarang; target diketahui lewat memori.",
+    "source": {
+      "source_row": 487,
+      "source_group": "953c4dd1b249890cb332",
+      "teks_chat": "gw civilian biasa, jangan eksekusi cuma gara-gara gw lambat nyambung",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 14,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "memory_outside_window",
+    "participants": [
+      "Eka",
+      "Fani",
+      "Gita",
+      "Hari",
+      "Lusi"
+    ],
+    "focus_player": "Lusi",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Eka",
+        "teks_chat": "Lusi langsung membela pemain yang baru dituduh. Aku curiga Lusi Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Lusi",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Fani",
+        "teks_chat": "Pasti orang itu satu tim komplotan Hitman yang sama.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Lusi",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Gita",
+        "teks_chat": "Belum tentu dia Hitman, bisa saja tuduhan yang dibantahnya memang lemah.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Lusi",
+            "relasi": "defend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Hari",
+        "teks_chat": "Membela terlalu cepat itu strategi klasik buat nutupin kedok.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Lusi",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Eka",
+        "teks_chat": "Terus sebenarnya yang dibela itu siapa sih?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Fani",
+        "teks_chat": "Iya, kelihatan banget paniknya pas temannya disenggol dikit.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Lusi",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Gita",
+        "teks_chat": "Jangan asal ambil kesimpulan dulu sebelum tahu cerita lengkapnya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Hari",
+        "teks_chat": "Kita harus waspada sama pola permainan kayak gini.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Eka",
+        "teks_chat": "Terus langkah kita selanjutnya mau gimana nih?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Fani",
+        "teks_chat": "Vote aja langsung biar nggak pusing.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Lusi",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Gita",
+        "teks_chat": "Mending kita interogasi aja dulu baik-baik.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Hari",
+        "teks_chat": "Interogasi kelamaan, keburu dimakan waktu.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Eka",
+        "teks_chat": "Tapi emang agak ngeri sih melihat manuver kilatnya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Gita",
+        "teks_chat": "Menurutku dia belum pantas divote. Membalas tuduhan dengan cepat tidak membuktikan dia pelakunya.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Lusi",
+            "relasi": "defend",
+            "bukti_pesan": [
+              10
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 8.txt"
+  },
+  "revisi": [
+    {
+      "pesan": 5,
+      "kategori": "tidak_natural",
+      "alasan": "Tidak nyambung: penuduh berkata 'belum ada bukti tuduhan yang kuat' dengan 'Apalagi'"
+    }
+  ]
+}

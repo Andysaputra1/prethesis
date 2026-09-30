@@ -1,0 +1,157 @@
+{
+  "job": {
+    "job_id": "r004267_v01",
+    "case_name": "mixed_relations",
+    "case_description": "Membela satu pemain dan menuduh pemain lain. Intent utama offend; simpan kedua relasi.",
+    "source": {
+      "source_row": 4267,
+      "source_group": "101350789f1a8288cdd2",
+      "teks_chat": "gw dituduh terus, padahal yang paling ngotot nuduh justru si Raka; cek pola omongannya dulu",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 10,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "mixed_relations",
+    "participants": [
+      "Maya",
+      "Coki",
+      "Eka",
+      "Dika"
+    ],
+    "focus_player": "Coki",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Eka",
+        "teks_chat": "Kita harus hati-hati melihat pemain yang hanya diam.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Maya",
+        "teks_chat": "Aku setuju, itu biasanya cara mereka menghindari masalah.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Dika",
+        "teks_chat": "Aku juga ngerasa ada yang dari tadi jarang ngomong.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Eka",
+        "teks_chat": "Aku curiga Maya Hitman karena jarang merespons.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Maya",
+            "relasi": "offend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Maya",
+        "teks_chat": "Aku sedang membaca dan menyusun teori, jangan sembarangan menuduh.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Maya",
+            "relasi": "defend",
+            "bukti_pesan": [
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Coki",
+        "teks_chat": "Ya sudahlah, kita vote siapa jadinya?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Dika",
+        "teks_chat": "Maya masih memikirkan teori, itu masuk akal.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Maya",
+            "relasi": "defend",
+            "bukti_pesan": [
+              7
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Eka",
+        "teks_chat": "Aku tetap merasa dia berusaha menghindar.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Maya",
+            "relasi": "offend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Maya",
+        "teks_chat": "Tolong perhatikan Coki, dia muncul hanya saat membicarakan vote.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Coki",
+            "relasi": "offend",
+            "bukti_pesan": [
+              9
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Dika",
+        "teks_chat": "Aku yakin Maya warga biasa, kita fokus saja ke Coki yang bermain sangat pasif.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Maya",
+            "relasi": "defend",
+            "bukti_pesan": [
+              10
+            ]
+          },
+          {
+            "pemain": "Coki",
+            "relasi": "offend",
+            "bukti_pesan": [
+              10
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 62.txt"
+  },
+  "revisi": [
+    {
+      "pesan": 3,
+      "kategori": "tidak_natural",
+      "alasan": "Tidak nyambung dengan pesan sebelumnya"
+    }
+  ]
+}

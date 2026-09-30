@@ -1,0 +1,246 @@
+{
+  "job": {
+    "job_id": "r003514_v01",
+    "case_name": "nickname",
+    "case_description": "Pesan sekarang menyebut pemain dengan nama panggilan, singkatan, atau salah ketik ringan (Andy -> ndy, andi, si And) tanpa menulis nama aslinya. Catat sebutan itu di panggilan. Target tetap memakai nama asli; jika neutral, target kosong.",
+    "source": {
+      "source_row": 3514,
+      "source_group": "f56ac39afb70c3c8540c",
+      "teks_chat": "gw Spy dan semalam guard si H, jadi kalau dia selamat itu bukan kebetulan biasa",
+      "label_intent": "neutral"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 13,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "nickname",
+    "participants": [
+      "Joko",
+      "Lani",
+      "Kiki",
+      "Maman",
+      "Rina",
+      "Nando"
+    ],
+    "focus_player": "Kiki",
+    "panggilan": [
+      {
+        "pemain": "Kiki",
+        "sebutan": [
+          "Kik"
+        ]
+      }
+    ],
+    "messages": [
+      {
+        "pengirim": "Joko",
+        "teks_chat": "Kiki cepat membela Rina, aku curiga keduanya Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Kiki",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          },
+          {
+            "pemain": "Rina",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Lani",
+        "teks_chat": "Iya, cepet banget ngetiknya pas Rina dituduh.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Kiki",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Kiki",
+        "teks_chat": "Aku bukan Hitman dan Rina belum terbukti Hitman hanya karena diam.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Kiki",
+            "relasi": "defend",
+            "bukti_pesan": [
+              3
+            ]
+          },
+          {
+            "pemain": "Rina",
+            "relasi": "defend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Joko",
+        "teks_chat": "Jangan-jangan kalian berdua hitman yang sekongkol dari awal.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Kiki",
+            "relasi": "offend",
+            "bukti_pesan": [
+              3
+            ]
+          },
+          {
+            "pemain": "Rina",
+            "relasi": "offend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Maman",
+        "teks_chat": "Bisa jadi, pembelaan secepat itu pasti udah disiapin teksnya.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Kiki",
+            "relasi": "offend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Rina",
+        "teks_chat": "Terserah kalian, tapi aku beneran civilian murni.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Rina",
+            "relasi": "defend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Lani",
+        "teks_chat": "Kita fokus ke Kiki dulu, dia yang paling mencurigakan.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Kiki",
+            "relasi": "offend",
+            "bukti_pesan": [
+              7
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Maman",
+        "teks_chat": "Setuju, kumpulin vote buat Kiki aja.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Kiki",
+            "relasi": "offend",
+            "bukti_pesan": [
+              8
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Joko",
+        "teks_chat": "Kalau Kiki hitman, Rina juga pasti ikut terlibat.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Kiki",
+            "relasi": "offend",
+            "bukti_pesan": [
+              9
+            ]
+          },
+          {
+            "pemain": "Rina",
+            "relasi": "offend",
+            "bukti_pesan": [
+              9
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Kiki",
+        "teks_chat": "Aku bukan Hitman, tuduhan kalian belum punya bukti.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Kiki",
+            "relasi": "defend",
+            "bukti_pesan": [
+              10
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Lani",
+        "teks_chat": "Buktinya lu langsung panik pas kita mulai bahas soal Rina.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Kiki",
+            "relasi": "offend",
+            "bukti_pesan": [
+              10
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Maman",
+        "teks_chat": "Udah, buang aja dia ronde ini biar aman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Kiki",
+            "relasi": "offend",
+            "bukti_pesan": [
+              11
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Nando",
+        "teks_chat": "Eh, si Kik dari tadi ngaku role apa sih sebenarnya?",
+        "label_intent": "neutral",
+        "target": []
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 54.txt"
+  }
+}

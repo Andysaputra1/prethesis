@@ -1,0 +1,215 @@
+{
+  "job": {
+    "job_id": "r004534_v01",
+    "case_name": "reference_start",
+    "case_description": "Tepat 12 konteks. Penyebutan target eksplisit di pesan konteks pertama; pesan sekarang memakai kata ganti.",
+    "source": {
+      "source_row": 4534,
+      "source_group": "71d2e1392aa0e06c73ef",
+      "teks_chat": "gw sudah bilang tidak melihat apa-apa, coba tanyakan ke pemain yang mengawal semalam",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 13,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "reference_start",
+    "participants": [
+      "Zain",
+      "Ayu",
+      "Bima",
+      "Yudi"
+    ],
+    "focus_player": "Yudi",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Zain",
+        "teks_chat": "Yudi menuduh tanpa alasan, aku curiga dia Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Yudi",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Ayu",
+        "teks_chat": "Nuduh tanpa alasan gimana maksudnya?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Zain",
+        "teks_chat": "Kemarin dia bilang mau fokus cari bukti, sekarang malah nuduh tanpa dasar.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Yudi",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Bima",
+        "teks_chat": "Iya juga sih, aneh banget perubahannya.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Yudi",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Yudi",
+        "teks_chat": "Aku cuma nyoba strategi baru aja buat mancing reaksi.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Yudi",
+            "relasi": "defend",
+            "bukti_pesan": [
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Zain",
+        "teks_chat": "Strategi apa yang bikin omongan jadi muter-muter gitu?",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Yudi",
+            "relasi": "offend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Ayu",
+        "teks_chat": "Kita dengerin dulu aja penjelasan dia perlahan.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Bima",
+        "teks_chat": "Harus hati-hati, bisa aja itu trik dari pelaku.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Yudi",
+        "teks_chat": "Percaya deh, aku ada alasan sendiri kenapa milih langkah begini.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Yudi",
+            "relasi": "defend",
+            "bukti_pesan": [
+              9
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Zain",
+        "teks_chat": "Alasan yang dibikin-bikin paling buat nutupi kebohongan.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Yudi",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Ayu",
+        "teks_chat": "Jangan vote dia sebelum alasannya cukup.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Yudi",
+            "relasi": "defend",
+            "bukti_pesan": [
+              10
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Bima",
+        "teks_chat": "Susah buat gak curiga kalau begini caranya main.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Yudi",
+            "relasi": "offend",
+            "bukti_pesan": [
+              10
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Ayu",
+        "teks_chat": "Mungkin dia cuma bingung nyusun kata-kata, bukan berarti dia yang jadi hitman.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Yudi",
+            "relasi": "defend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 67.txt"
+  },
+  "revisi": [
+    {
+      "pesan": 2,
+      "kategori": "tidak_natural",
+      "alasan": "'Beda gimana' tidak nyambung dengan [1]."
+    },
+    {
+      "pesan": 4,
+      "kategori": "label",
+      "alasan": "Menyetujui tuduhan Zain terhadap Yudi."
+    },
+    {
+      "pesan": 6,
+      "kategori": "label",
+      "alasan": "Pertanyaan retoris yang menyudutkan Yudi."
+    },
+    {
+      "pesan": 12,
+      "kategori": "label",
+      "alasan": "Menyatakan curiga pada cara main Yudi."
+    }
+  ]
+}

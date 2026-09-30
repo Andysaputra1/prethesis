@@ -1,0 +1,142 @@
+{
+  "job": {
+    "job_id": "r000704_v01",
+    "case_name": "neutral_status",
+    "case_description": "Klaim status/role atau pertanyaan informasi saja tanpa pembelaan/serangan; target kosong.",
+    "source": {
+      "source_row": 704,
+      "source_group": "0fdc4d2bd520602d4152",
+      "teks_chat": "peranku Spy, tadi malam aku mengawal satu pemain",
+      "label_intent": "neutral"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 11,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "neutral_status",
+    "participants": [
+      "Risa",
+      "Sandi",
+      "Toni",
+      "Vina",
+      "Budi"
+    ],
+    "focus_player": "",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Risa",
+        "teks_chat": "Kalian pada nge-vote Sandi gara-gara apa sih? Nggak ada buktinya kan?",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Sandi",
+            "relasi": "defend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Sandi",
+        "teks_chat": "Iya nih, pada ngawur semua, aku aja nggak ngapa-ngapain dari tadi.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Sandi",
+            "relasi": "defend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Toni",
+        "teks_chat": "Vina tadi yang mengajak kita vote Sandi.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Vina",
+        "teks_chat": "Aku cuma menyampaikan dugaan yang belum pasti.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Budi",
+        "teks_chat": "Feeling doang nggak bisa jadi patokan, bahaya buat tim kita.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Risa",
+        "teks_chat": "Setuju, kalau nggak ada saksi mending kita cari petunjuk lain aja.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Sandi",
+        "teks_chat": "Terima kasih sudah membela, aku memang bukan Hitman.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Sandi",
+            "relasi": "defend",
+            "bukti_pesan": [
+              7
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Toni",
+        "teks_chat": "Pasti Vina ini aslinya Hitman yang lagi nyari kambing hitam.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Vina",
+            "relasi": "offend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Vina",
+        "teks_chat": "Kalian kok jadi mojokin aku sih? Aku kan cuma kasih saran.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Vina",
+            "relasi": "defend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Budi",
+        "teks_chat": "Saran yang menyesatkan mending nggak usah dikeluarin sekalian.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Risa",
+        "teks_chat": "Btw, ada yang tau nggak sisa waktu vote kita tinggal berapa?",
+        "label_intent": "neutral",
+        "target": []
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 14.txt"
+  }
+}

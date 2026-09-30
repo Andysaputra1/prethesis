@@ -1,0 +1,178 @@
+{
+  "job": {
+    "job_id": "r004330_v01",
+    "case_name": "topic_switch",
+    "case_description": "Pembahasan berganti pemain; pesan sekarang mengikuti topik baru, bukan otomatis target lama.",
+    "source": {
+      "source_row": 4330,
+      "source_group": "3f52dd6ab983c9192a2c",
+      "teks_chat": "jangan kejebak omongan gw, justru si A yang dari tadi mancing keributan",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 13,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "topic_switch",
+    "participants": [
+      "Bima",
+      "Ayu",
+      "Cinta",
+      "Joko",
+      "Risa"
+    ],
+    "focus_player": "Risa",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Bima",
+        "teks_chat": "Apakah ada yang tahu identitas korban semalam? Benar-benar gelap.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Ayu",
+        "teks_chat": "Sistemnya tidak menampilkan nama, bikin kita sulit melacak jejaknya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Cinta",
+        "teks_chat": "Kalau begini caranya, aku merasa Joko yang mendalangi semua ini.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Joko",
+            "relasi": "offend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Bima",
+        "teks_chat": "Kok tiba-tiba ke Joko? Apa alasannya?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Ayu",
+        "teks_chat": "Aku juga curiga Joko Hitman karena klaimnya berubah tanpa penjelasan.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Joko",
+            "relasi": "offend",
+            "bukti_pesan": [
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Cinta",
+        "teks_chat": "Tuh kan, pasti Joko Hitman-nya!",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Joko",
+            "relasi": "offend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Joko",
+        "teks_chat": "Aku bukan Hitman, tadi salah mengetik klaim.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Joko",
+            "relasi": "defend",
+            "bukti_pesan": [
+              7
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Bima",
+        "teks_chat": "Alasanmu masih sangat lemah, kawan.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Joko",
+            "relasi": "offend",
+            "bukti_pesan": [
+              7
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Ayu",
+        "teks_chat": "Tunggu sebentar, coba kita pikirkan ulang dan jangan fokus pada Joko terus.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Cinta",
+        "teks_chat": "Memangnya kamu punya kandidat lain yang lebih aneh?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Ayu",
+        "teks_chat": "Kalian sadar tidak kalau Risa sejak tadi sama sekali tidak bicara saat identitas korban dibahas?",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Risa",
+            "relasi": "offend",
+            "bukti_pesan": [
+              11
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Bima",
+        "teks_chat": "Iya juga, seolah dia sudah tahu sejak awal.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Risa",
+            "relasi": "offend",
+            "bukti_pesan": [
+              11
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Cinta",
+        "teks_chat": "Aku yakin dia Hitman, vote dia pada Tribunal nanti!",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Risa",
+            "relasi": "offend",
+            "bukti_pesan": [
+              11
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 64.txt"
+  }
+}

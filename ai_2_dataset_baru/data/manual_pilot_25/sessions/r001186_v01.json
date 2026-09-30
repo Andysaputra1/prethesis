@@ -1,0 +1,59 @@
+{
+  "job": {
+    "job_id": "r001186_v01",
+    "case_name": "short_history_2",
+    "case_description": "Awal diskusi dengan tepat 2 pesan sebelumnya. Gunakan hanya petunjuk yang tersedia.",
+    "source": {
+      "source_row": 1186,
+      "source_group": "173068b81d3dfe471ee7",
+      "teks_chat": "kalau bukan lu yang dijaga, siapa yang menurutmu dilindungi Spy?",
+      "label_intent": "neutral"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 3,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "short_history_2",
+    "participants": [
+      "Eka",
+      "Fani",
+      "Gita"
+    ],
+    "focus_player": "",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Eka",
+        "teks_chat": "Ada yang mau share klaim skill semalam?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Fani",
+        "teks_chat": "Aku mengaku Spy dan memilih Guard untuk Gita.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Gita",
+        "teks_chat": "Oke, aku mencatat itu sebagai klaim dari Fani.",
+        "label_intent": "neutral",
+        "target": []
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 23.txt"
+  },
+  "revisi": [
+    {
+      "pesan": 1,
+      "kategori": "tidak_natural",
+      "alasan": "Kaku ('membagikan klaim penggunaan skill')"
+    }
+  ]
+}

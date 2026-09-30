@@ -1,0 +1,94 @@
+{
+  "job": {
+    "job_id": "r000687_v01",
+    "case_name": "ambiguous",
+    "case_description": "Beberapa acuan sama-sama mungkin; target tidak_diketahui, bukan nama terakhir.",
+    "source": {
+      "source_row": 687,
+      "source_group": "e68c43baea922fd0d7d8",
+      "teks_chat": "kalian boleh vote aku, tapi tuduhannya tetap tidak masuk akal dan aku bukan Hitman",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 6,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "ambiguous",
+    "participants": [
+      "Ega",
+      "Fira",
+      "Gilang"
+    ],
+    "focus_player": "",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Ega",
+        "teks_chat": "Kok permainan berasa lambat banget ya ronde ini.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Fira",
+        "teks_chat": "Itu gara-gara banyak yang main pasif dan nggak mau nimbrung obrolan.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Gilang",
+        "teks_chat": "Aku sama Ega emang belum banyak ngomong sih dari tadi.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Ega",
+        "teks_chat": "Ya kan kita lagi mengobservasi situasi biar nggak blunder ngasih info.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Fira",
+        "teks_chat": "Salah satu dari dua orang itu pasti Hitman menurutku, tetapi aku belum mau menyebut siapa.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "tidak_diketahui",
+            "relasi": "offend",
+            "bukti_pesan": []
+          }
+        ]
+      },
+      {
+        "pengirim": "Gilang",
+        "teks_chat": "Terserah kamu curiga yang mana, tapi diam aja belum membuktikan dia pelakunya.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "tidak_diketahui",
+            "relasi": "defend",
+            "bukti_pesan": []
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 13.txt"
+  },
+  "revisi": [
+    {
+      "pesan": 3,
+      "kategori": "tidak_natural",
+      "alasan": "Gilang menyebut dirinya sendiri sebagai orang ketiga."
+    },
+    {
+      "pesan": 6,
+      "kategori": "tidak_natural",
+      "alasan": "Gilang sendiri termasuk 'dua orang itu', jadi 'membela salah satu tanpa menyebut nama' janggal."
+    }
+  ]
+}

@@ -1,0 +1,93 @@
+{
+  "job": {
+    "job_id": "r000494_v01",
+    "case_name": "self",
+    "case_description": "Defend diri sendiri atau offend/vote diri sendiri sesuai label. Target = pengirim.",
+    "source": {
+      "source_row": 494,
+      "source_group": "92c50aa163bd84896696",
+      "teks_chat": "gw gak pernah ngaku punya info role, kenapa sekarang malah gw dicurigai?",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 5,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "self",
+    "participants": [
+      "Ega",
+      "Hani",
+      "Ivan",
+      "Joko"
+    ],
+    "focus_player": "Ivan",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Ega",
+        "teks_chat": "Semalam ada yang disandera lagi, tapi kita nggak tahu siapa.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Hani",
+        "teks_chat": "Skill Hitman ini sungguh bikin kita kebingungan siapa yang aman dan yang nggak.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Ivan",
+        "teks_chat": "Joko belum mengirim pesan sejak chat dibuka lagi, ya?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Joko",
+        "teks_chat": "Pasti Ivan ini pelakunya, dia sengaja nanyain aku biar seolah-olah dia nggak tahu apa-apa!",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Ivan",
+            "relasi": "offend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Ivan",
+        "teks_chat": "Aku cuma bertanya karena belum melihat chatnya, bukan karena tahu siapa korban. Aku bukan Hitman.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Ivan",
+            "relasi": "defend",
+            "bukti_pesan": [
+              5
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 8.txt"
+  },
+  "revisi": [
+    {
+      "pesan": 1,
+      "kategori": "meta",
+      "alasan": "'Identitas korban ... tidak diberitahukan kepada kita' = penjelasan aturan, kaku."
+    },
+    {
+      "pesan": 4,
+      "kategori": "tidak_natural",
+      "alasan": "Joko menyebut dirinya dengan nama sendiri ('nanya nama Joko')."
+    }
+  ]
+}

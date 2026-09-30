@@ -1,0 +1,62 @@
+{
+  "job": {
+    "job_id": "r000571_v01",
+    "case_name": "short_history_1",
+    "case_description": "Awal diskusi dengan tepat 1 pesan sebelumnya. Jangan menambah riwayat fiktif atau mengisi sampai 12.",
+    "source": {
+      "source_row": 571,
+      "source_group": "2aa5d8d090a249e07b42",
+      "teks_chat": "tolong bedakan antara main aman dan bermain sebagai Hitman",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 2,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "short_history_1",
+    "participants": [
+      "Gani",
+      "Hadi",
+      "Iwan"
+    ],
+    "focus_player": "Gani",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Hadi",
+        "teks_chat": "Gani menarik ajakan vote di chat tadi. Aku curiga Gani Hitman yang ingin mengacaukan keputusan.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Gani",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Iwan",
+        "teks_chat": "Gani belum pantas dituduh sebagai Hitman hanya karena menarik ajakan yang belum punya bukti kuat.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Gani",
+            "relasi": "defend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 10.txt"
+  }
+}

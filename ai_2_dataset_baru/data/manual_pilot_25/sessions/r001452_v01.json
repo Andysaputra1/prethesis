@@ -1,0 +1,65 @@
+{
+  "job": {
+    "job_id": "r001452_v01",
+    "case_name": "ambiguous",
+    "case_description": "Beberapa acuan sama-sama mungkin; target tidak_diketahui, bukan nama terakhir.",
+    "source": {
+      "source_row": 1452,
+      "source_group": "c40cdac9ac2362ea4ac5",
+      "teks_chat": "kalau gw Hitman, ngapain gw malah dorong diskusi terbuka? lihat si B yang terus bikin orang bingung",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 3,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "ambiguous",
+    "participants": [
+      "Gilang",
+      "Hana",
+      "Ivan"
+    ],
+    "focus_player": "",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Gilang",
+        "teks_chat": "Aku sama Hana memang sempat ganti klaim role, nanti kami jelasin alasannya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Hana",
+        "teks_chat": "Kita perlu membaca dua klaim itu satu per satu.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Ivan",
+        "teks_chat": "Aku curiga dia Hitman yang sedang mengarang role.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "tidak_diketahui",
+            "relasi": "offend",
+            "bukti_pesan": []
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 26.txt"
+  },
+  "revisi": [
+    {
+      "pesan": 1,
+      "kategori": "label",
+      "alasan": "Kandidat ambigu (Hana, Ivan) mencakup pengirim pesan utama Ivan, sehingga 'dia' jelas Hana; ambiguitas rusak. Kandidat diganti Gilang dan Hana."
+    }
+  ]
+}

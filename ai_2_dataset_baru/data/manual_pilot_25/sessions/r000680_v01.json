@@ -1,0 +1,162 @@
+{
+  "job": {
+    "job_id": "r000680_v01",
+    "case_name": "reference_middle",
+    "case_description": "Tepat 12 konteks. Penyebutan target eksplisit di pesan konteks ke-6 atau ke-7.",
+    "source": {
+      "source_row": 680,
+      "source_group": "45b691c009aa76d91266",
+      "teks_chat": "gw sudah bilang target analisisku dari awal, dan aku tidak akan pura-pura ganti teori demi selamat",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 13,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "reference_middle",
+    "participants": [
+      "Joko",
+      "Kiki",
+      "Lila",
+      "Maman",
+      "Nisa"
+    ],
+    "focus_player": "Maman",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Joko",
+        "teks_chat": "Ada perubahan dugaan dalam diskusi tadi yang ingin kalian bahas?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Kiki",
+        "teks_chat": "Aku membaca orang yang menarik tuduhan setelah mendapat jawaban.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Lila",
+        "teks_chat": "Apakah dia menjelaskan alasannya?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Nisa",
+        "teks_chat": "Katanya dia melewatkan satu pesan penting.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Joko",
+        "teks_chat": "Siapa yang menarik tuduhan itu?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Nisa",
+        "teks_chat": "Maman. Aku curiga Maman Hitman karena cepat sekali berganti dugaan.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Maman",
+            "relasi": "offend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Kiki",
+        "teks_chat": "Maman belum pantas dituduh; mengoreksi dugaan setelah membaca jawaban itu wajar.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Maman",
+            "relasi": "defend",
+            "bukti_pesan": [
+              7
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Lila",
+        "teks_chat": "Kiki, kenapa kamu langsung membela?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Joko",
+        "teks_chat": "Aku curiga Kiki sengaja membela untuk mencari kepercayaan.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Kiki",
+            "relasi": "offend",
+            "bukti_pesan": [
+              9
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Nisa",
+        "teks_chat": "Aku juga curiga Kiki Hitman karena terlalu yakin dengan pembelaan itu.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Kiki",
+            "relasi": "offend",
+            "bukti_pesan": [
+              10
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Kiki",
+        "teks_chat": "Aku bukan Hitman. Aku hanya membaca urutan chatnya.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Kiki",
+            "relasi": "defend",
+            "bukti_pesan": [
+              11
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Lila",
+        "teks_chat": "Kembali ke orang yang menarik tuduhan tadi, apakah kita punya alasan lain selain perubahan dugaan?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Joko",
+        "teks_chat": "Untuk orang yang menarik tuduhan itu, aku membela dia. Mengoreksi dugaan bukan bukti dia Hitman.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Maman",
+            "relasi": "defend",
+            "bukti_pesan": [
+              7
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 13.txt"
+  }
+}

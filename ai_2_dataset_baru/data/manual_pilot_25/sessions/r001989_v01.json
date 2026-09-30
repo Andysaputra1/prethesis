@@ -1,0 +1,171 @@
+{
+  "job": {
+    "job_id": "r001989_v01",
+    "case_name": "reference_end",
+    "case_description": "Tepat 12 konteks. Penyebutan target eksplisit di pesan konteks terakhir.",
+    "source": {
+      "source_row": 1989,
+      "source_group": "7bf92708f9e30d2c59a5",
+      "teks_chat": "gw bukan asal nuduh, respons si K barusan paling janggal dibanding yang lain",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 13,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "reference_end",
+    "participants": [
+      "Maman",
+      "Niko",
+      "Opan",
+      "Putra"
+    ],
+    "focus_player": "Putra",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Maman",
+        "teks_chat": "Ada yang dapat role khusus nggak ronde ini?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Niko",
+        "teks_chat": "Aku tidak dapat peran apa pun.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Opan",
+        "teks_chat": "Sama, aku juga warga biasa.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Putra",
+        "teks_chat": "Aku Stalker.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Maman",
+        "teks_chat": "Terus, semalam kamu dapat hasil apa?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Putra",
+        "teks_chat": "Tadi malam aku mengintip seseorang.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Niko",
+        "teks_chat": "Siapa yang kamu intip dan apa hasilnya?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Putra",
+        "teks_chat": "Aku belum ingin membagikan hasilnya sekarang.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Opan",
+        "teks_chat": "Sebutkan saja namanya agar kita tahu.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Putra",
+        "teks_chat": "Oke, hasil Peek-ku bilang Niko itu Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Niko",
+            "relasi": "offend",
+            "bukti_pesan": [
+              10
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Maman",
+        "teks_chat": "Niko, ada tanggapan? Waktu kita nggak banyak.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Opan",
+        "teks_chat": "Aku curiga Putra mengarang klaim Stalker untuk memfitnah Niko.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Putra",
+            "relasi": "offend",
+            "bukti_pesan": [
+              12
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Niko",
+        "teks_chat": "Aku bukan Hitman. Aku setuju, dia yang mengaku Stalker tadi pasti memakai klaim palsu untuk memfitnahku.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Niko",
+            "relasi": "defend",
+            "bukti_pesan": [
+              13
+            ]
+          },
+          {
+            "pemain": "Putra",
+            "relasi": "offend",
+            "bukti_pesan": [
+              12
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 32.txt"
+  },
+  "revisi": [
+    {
+      "pesan": 1,
+      "kategori": "tidak_natural",
+      "alasan": "Susunan janggal 'mendapat peran spesial tidak ronde ini'."
+    },
+    {
+      "pesan": 4,
+      "kategori": "tidak_natural",
+      "alasan": "Putra bertanya apakah dirinya sendiri mengaku Stalker; janggal."
+    },
+    {
+      "pesan": 5,
+      "kategori": "tidak_natural",
+      "alasan": "Kaku ('Lalu apakah kamu mendapat hasil intaian')."
+    },
+    {
+      "pesan": 10,
+      "kategori": "tidak_natural",
+      "alasan": "'aku mengaku hasil Peek menyebut' janggal."
+    },
+    {
+      "pesan": 11,
+      "kategori": "tidak_natural",
+      "alasan": "'Jangan ditunda' tidak nyambung karena hasil sudah dibagikan."
+    }
+  ]
+}

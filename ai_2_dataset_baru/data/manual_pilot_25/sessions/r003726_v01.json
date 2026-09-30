@@ -1,0 +1,168 @@
+{
+  "job": {
+    "job_id": "r003726_v01",
+    "case_name": "mixed_relations",
+    "case_description": "Membela satu pemain dan menuduh pemain lain. Intent utama offend; simpan kedua relasi.",
+    "source": {
+      "source_row": 3726,
+      "source_group": "f518717323bd663ddeeb",
+      "teks_chat": "aku Civilian, dan menurutku klaim role mereka lebih mencurigakan daripada diamnya aku",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 9,
+    "pesan_typo_ringan": [
+      9
+    ]
+  },
+  "session": {
+    "case_name": "mixed_relations",
+    "participants": [
+      "Nisa",
+      "Ojan",
+      "Popo",
+      "Qori",
+      "Miko"
+    ],
+    "focus_player": "",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Nisa",
+        "teks_chat": "Ada yang ingin membagikan hasil Peek?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Miko",
+        "teks_chat": "Aku klaim Stalker, hasil Peek-ku menunjukkan Ojan Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Ojan",
+            "relasi": "offend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Popo",
+        "teks_chat": "Ojan sebelumnya mengaku Civilian.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Ojan",
+        "teks_chat": "Aku Civilian, bukan Hitman.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Ojan",
+            "relasi": "defend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Nisa",
+        "teks_chat": "Aku curiga Miko dan Ojan, klaim mereka bertentangan.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Miko",
+            "relasi": "offend",
+            "bukti_pesan": [
+              5
+            ]
+          },
+          {
+            "pemain": "Ojan",
+            "relasi": "offend",
+            "bukti_pesan": [
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Miko",
+        "teks_chat": "Aku bukan Hitman, Ojan yang Hitman sesuai klaim hasil Peek-ku.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Miko",
+            "relasi": "defend",
+            "bukti_pesan": [
+              6
+            ]
+          },
+          {
+            "pemain": "Ojan",
+            "relasi": "offend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Popo",
+        "teks_chat": "Klaim keduanya sudah terdengar.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Nisa",
+        "teks_chat": "Aku lebih curiga Ojan Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Ojan",
+            "relasi": "offend",
+            "bukti_pesan": [
+              8
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Qori",
+        "teks_chat": "Aku percaya Miko itu Stalker beneran, jadi menurutku Ojan yg Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Miko",
+            "relasi": "defend",
+            "bukti_pesan": [
+              9
+            ]
+          },
+          {
+            "pemain": "Ojan",
+            "relasi": "offend",
+            "bukti_pesan": [
+              9
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 58.txt"
+  },
+  "revisi": [
+    {
+      "pesan": 9,
+      "kategori": "tidak_natural",
+      "alasan": "Kaku seperti deskripsi label ('Aku membela ... dan menuduh ...'); slot typo [9] juga tidak berisi singkatan."
+    }
+  ]
+}

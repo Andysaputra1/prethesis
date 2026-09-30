@@ -1,0 +1,83 @@
+{
+  "job": {
+    "job_id": "r000510_v01",
+    "case_name": "short_history_3",
+    "case_description": "Awal diskusi dengan tepat 3 pesan sebelumnya. Acuan tidak harus berada di pesan terakhir.",
+    "source": {
+      "source_row": 510,
+      "source_group": "f8bed7f3819d70015c81",
+      "teks_chat": "gw gak punya alasan buat gag orang atau nyebar fitnah, tuduhan ini ngaco",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 4,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "short_history_3",
+    "participants": [
+      "Qila",
+      "Raka",
+      "Sandi",
+      "Toni"
+    ],
+    "focus_player": "Sandi",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Qila",
+        "teks_chat": "Kenapa Sandi menarik ajakan votenya di chat tadi?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Raka",
+        "teks_chat": "Sandi ini pasti pelakunya yang berniat mengacaukan arah suara kita, mari kita singkirkan dia!",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Sandi",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Sandi",
+        "teks_chat": "Aku menarik ajakan itu karena ragu, alasannya masih kurang kuat.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Sandi",
+            "relasi": "defend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Toni",
+        "teks_chat": "Sandi belum pantas dituduh sebagai Hitman hanya karena menarik ajakan vote yang belum berdasar.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Sandi",
+            "relasi": "defend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 8.txt"
+  }
+}

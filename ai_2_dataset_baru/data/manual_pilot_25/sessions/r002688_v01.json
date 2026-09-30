@@ -1,0 +1,59 @@
+{
+  "job": {
+    "job_id": "r002688_v01",
+    "case_name": "neutral_status",
+    "case_description": "Klaim status/role atau pertanyaan informasi saja tanpa pembelaan/serangan; target kosong.",
+    "source": {
+      "source_row": 2688,
+      "source_group": "54ff39b97c7ebad560f0",
+      "teks_chat": "eh tadi siapa yang kena mute?",
+      "label_intent": "neutral"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 3,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "neutral_status",
+    "participants": [
+      "Toni",
+      "Udin",
+      "Vina"
+    ],
+    "focus_player": "",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Toni",
+        "teks_chat": "Ada yang tidak bisa membalas saat diskusi sebelumnya?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Udin",
+        "teks_chat": "Aku belum tahu siapa yang mengalami kendala.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Vina",
+        "teks_chat": "Aku klaim Civilian ya, biar kalian tahu.",
+        "label_intent": "neutral",
+        "target": []
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 80.txt"
+  },
+  "revisi": [
+    {
+      "pesan": 3,
+      "kategori": "tidak_natural",
+      "alasan": "'itu informasi role dariku' janggal"
+    }
+  ]
+}

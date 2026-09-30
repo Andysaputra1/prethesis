@@ -1,0 +1,131 @@
+{
+  "job": {
+    "job_id": "r000629_v01",
+    "case_name": "witness",
+    "case_description": "Nama saksi/korban disebut, tetapi bukan target serangan atau pembelaan.",
+    "source": {
+      "source_row": 629,
+      "source_group": "3e48f3a651256934a3e3",
+      "teks_chat": "lu boleh curiga, tapi jangan pakai spekulasi itu sebagai alasan eksekusi",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 8,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "witness",
+    "participants": [
+      "Fikri",
+      "Gani",
+      "Hani",
+      "Iwan"
+    ],
+    "focus_player": "Gani",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Fikri",
+        "teks_chat": "Ada klaim yang ingin dibahas?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Gani",
+        "teks_chat": "Aku mengaku Spy dan memilih Guard untuk Hani semalam.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Iwan",
+        "teks_chat": "Aku curiga Gani Hitman yang memakai klaim Spy untuk cari aman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Gani",
+            "relasi": "offend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Gani",
+        "teks_chat": "Aku bukan Hitman, itulah pilihanku sebagai Spy.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Gani",
+            "relasi": "defend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Fikri",
+        "teks_chat": "Aku juga curiga Gani karena klaimnya muncul setelah orang lain ditanya.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Gani",
+            "relasi": "offend",
+            "bukti_pesan": [
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Iwan",
+        "teks_chat": "Aku tetap ingin vote dia.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Gani",
+            "relasi": "offend",
+            "bukti_pesan": [
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Gani",
+        "teks_chat": "Aku tidak bersalah. Kalian boleh bertanya tentang klaimku.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Gani",
+            "relasi": "defend",
+            "bukti_pesan": [
+              7
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Hani",
+        "teks_chat": "Iwan hanya menyampaikan dugaan, bukan bukti klaim itu palsu. Gani belum pantas divote dari alasan itu.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Gani",
+            "relasi": "defend",
+            "bukti_pesan": [
+              8
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 11.txt"
+  }
+}

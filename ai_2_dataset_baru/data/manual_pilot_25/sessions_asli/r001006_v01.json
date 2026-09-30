@@ -1,0 +1,85 @@
+{
+  "job": {
+    "job_id": "r001006_v01",
+    "case_name": "short_history_3",
+    "case_description": "Awal diskusi dengan tepat 3 pesan sebelumnya. Acuan tidak harus berada di pesan terakhir.",
+    "source": {
+      "source_row": 1006,
+      "source_group": "4369e804e4d61a2bcb87",
+      "teks_chat": "kalau aku Hitman, ngapain terang-terangan claim Spy begini? Percaya dulu, kita amankan pemain yang mencurigakan",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 4,
+    "pesan_typo_ringan": [
+      2
+    ]
+  },
+  "session": {
+    "case_name": "short_history_3",
+    "participants": [
+      "Sari",
+      "Tono",
+      "Umar",
+      "Vera"
+    ],
+    "focus_player": "Sari",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Tono",
+        "teks_chat": "Tadi ada yang menarik ajakan vote menjelang diskusi selesai.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Umar",
+        "teks_chat": "Sari kan? Pasti dia sengaja biar temen Hitmannya selamat dr vote kita.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Sari",
+            "relasi": "offend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Sari",
+        "teks_chat": "Aku menarik ajakan vote karena ragu dengan alasannya, bukan sedang menyelamatkan siapa pun.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Sari",
+            "relasi": "defend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Vera",
+        "teks_chat": "Wajar aja sih kalau dia ganti, namanya juga masih awal dan belum ada bukti yang konklusif.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Sari",
+            "relasi": "defend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 20.txt"
+  }
+}

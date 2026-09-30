@@ -1,0 +1,54 @@
+{
+  "job": {
+    "job_id": "r003069_v00",
+    "case_name": "original",
+    "case_description": "Satu pesan tanpa riwayat. Pertahankan teks dan intent sumber persis; jangan mengarang riwayat asli.",
+    "source": {
+      "source_row": 3069,
+      "source_group": "44d1795eb815e6135c3a",
+      "teks_chat": "gw curiga sama si D, tiap diskusi jawabannya muter dan selalu ikut suara mayoritas",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 1,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "original",
+    "participants": [
+      "Bambang",
+      "D"
+    ],
+    "focus_player": "",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Bambang",
+        "teks_chat": "gw curiga sama si D, tiap diskusi jawabannya muter dan selalu ikut suara mayoritas",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "D",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 44.txt"
+  },
+  "revisi": [
+    {
+      "pesan": 1,
+      "kategori": "label",
+      "alasan": "ID pemain 'D' dari teks sumber dimasukkan ke roster dan dijadikan target"
+    }
+  ]
+}

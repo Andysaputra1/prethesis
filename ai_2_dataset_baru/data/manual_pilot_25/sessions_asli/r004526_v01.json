@@ -1,0 +1,88 @@
+{
+  "job": {
+    "job_id": "r004526_v01",
+    "case_name": "stance_change",
+    "case_description": "Pengirim pesan sekarang sebelumnya menuduh atau membela seorang pemain di konteks, lalu berubah sikap terhadap pemain yang sama. Anotasi mengikuti sikap terbaru.",
+    "source": {
+      "source_row": 4526,
+      "source_group": "f82b24929e1d53984153",
+      "teks_chat": "aku sudah menjawab bagian itu, pertanyaan berikutnya bisa diarahkan ke si N",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 5,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "stance_change",
+    "participants": [
+      "Surya",
+      "Rani",
+      "Tari"
+    ],
+    "focus_player": "Rani",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Surya",
+        "teks_chat": "Rani mengubah klaim role, aku curiga dia Hitman!",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Rani",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Tari",
+        "teks_chat": "Emang alibinya kenapa?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Rani",
+        "teks_chat": "Aku bukan Hitman, aku langsung mengoreksi salah ketikku.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Rani",
+            "relasi": "defend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Tari",
+        "teks_chat": "Koreksi itu memang ada pada pesan berikutnya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Surya",
+        "teks_chat": "Aku tarik tuduhan ke Rani. Koreksi salah ketik belum membuktikan Rani Hitman.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Rani",
+            "relasi": "defend",
+            "bukti_pesan": [
+              5
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 67.txt"
+  }
+}

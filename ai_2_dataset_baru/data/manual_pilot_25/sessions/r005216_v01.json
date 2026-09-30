@@ -1,0 +1,168 @@
+{
+  "job": {
+    "job_id": "r005216_v01",
+    "case_name": "neutral_status",
+    "case_description": "Klaim status/role atau pertanyaan informasi saja tanpa pembelaan/serangan; target kosong.",
+    "source": {
+      "source_row": 5216,
+      "source_group": "08d7c62ca490bcf2a69c",
+      "teks_chat": "si Bimo itu Spy menurut gw, claim-nya paling masuk akal",
+      "label_intent": "neutral"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 11,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "neutral_status",
+    "participants": [
+      "Hana",
+      "Imam",
+      "Jaja",
+      "Keke",
+      "Lulu",
+      "Maman",
+      "Nana"
+    ],
+    "focus_player": "",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Hana",
+        "teks_chat": "Belum ada kabar dari Spy ya hari ini?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Imam",
+        "teks_chat": "Aku klaim Spy, tetapi belum ingin membagikan pilihan Guard semalam.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Jaja",
+        "teks_chat": "Bohong banget, pasti kamu Hitman yang pura-pura.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Imam",
+            "relasi": "offend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Keke",
+        "teks_chat": "Aku curiga Imam Hitman karena belum menjelaskan pilihan Guard.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Imam",
+            "relasi": "offend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Imam",
+        "teks_chat": "Aku bukan Hitman, aku belum ingin membuka pilihanku.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Imam",
+            "relasi": "defend",
+            "bukti_pesan": [
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Lulu",
+        "teks_chat": "Tolong vote Imam saja, alibinya tidak masuk akal.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Imam",
+            "relasi": "offend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Maman",
+        "teks_chat": "Belum membuka pilihan Guard tidak membuktikan dia Hitman.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Imam",
+            "relasi": "defend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Keke",
+        "teks_chat": "Maman jangan-jangan komplotannya, ngapain dibela?",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Maman",
+            "relasi": "offend",
+            "bukti_pesan": [
+              8
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Maman",
+        "teks_chat": "Aku kan cuma berpendapat, bukan berarti kita satu tim.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Maman",
+            "relasi": "defend",
+            "bukti_pesan": [
+              9
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Jaja",
+        "teks_chat": "Tetap saja Imam paling mencurigakan saat ini.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Imam",
+            "relasi": "offend",
+            "bukti_pesan": [
+              10
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Nana",
+        "teks_chat": "Ada yang punya ide lain selain membahas status Spy ini?",
+        "label_intent": "neutral",
+        "target": []
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 75.txt"
+  }
+}

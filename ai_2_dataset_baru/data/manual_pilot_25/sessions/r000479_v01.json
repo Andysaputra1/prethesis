@@ -1,0 +1,58 @@
+{
+  "job": {
+    "job_id": "r000479_v01",
+    "case_name": "ambiguous",
+    "case_description": "Beberapa acuan sama-sama mungkin; target tidak_diketahui, bukan nama terakhir.",
+    "source": {
+      "source_row": 479,
+      "source_group": "6d44a931f9be40d3bbd1",
+      "teks_chat": "bukti terhadapku cuma karena aku aktif, itu lemah banget; pemain jahat justru bisa bersembunyi di balik sikap pasif si U",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 2,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "ambiguous",
+    "participants": [
+      "Yanto",
+      "Zaki"
+    ],
+    "focus_player": "",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Yanto",
+        "teks_chat": "Tadi ada dua orang yang sama-sama ganti klaim role, tapi aku belum mau bahas siapa duluan.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Zaki",
+        "teks_chat": "Salah satu dari dua orang itu pasti mengarang untuk menutupi role Hitman. Aku belum mau menyebut siapa.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "tidak_diketahui",
+            "relasi": "offend",
+            "bukti_pesan": []
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 7.txt"
+  },
+  "revisi": [
+    {
+      "pesan": 1,
+      "kategori": "tidak_natural",
+      "alasan": "Yanto menyebut namanya sendiri sebagai orang ketiga"
+    }
+  ]
+}

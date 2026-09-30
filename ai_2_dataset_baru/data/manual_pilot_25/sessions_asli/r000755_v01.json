@@ -1,0 +1,77 @@
+{
+  "job": {
+    "job_id": "r000755_v01",
+    "case_name": "multiple_targets",
+    "case_description": "Dua atau lebih pemain menjadi target relasi yang sama secara jelas.",
+    "source": {
+      "source_row": 755,
+      "source_group": "e4f2aa52d432fc381f24",
+      "teks_chat": "bukan Hitman, dari awal aku cuma ngikutin diskusi",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 2,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "multiple_targets",
+    "participants": [
+      "Andi",
+      "Beni",
+      "Citra",
+      "Dodi"
+    ],
+    "focus_player": "",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Andi",
+        "teks_chat": "Aku curiga Citra dan Dodi Hitman karena sama-sama terlambat menjawab pertanyaan.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Citra",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          },
+          {
+            "pemain": "Dodi",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Beni",
+        "teks_chat": "Citra dan Dodi belum pantas dituduh. Jeda chat saja tidak membuktikan siapa Hitman atau siapa korban skill.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Citra",
+            "relasi": "defend",
+            "bukti_pesan": [
+              2
+            ]
+          },
+          {
+            "pemain": "Dodi",
+            "relasi": "defend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 15.txt"
+  }
+}

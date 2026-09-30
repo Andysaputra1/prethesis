@@ -1,0 +1,223 @@
+{
+  "job": {
+    "job_id": "r000800_v01",
+    "case_name": "memory_outside_window",
+    "case_description": "14-16 pesan total. Nama target hanya disebut sebelum 12 konteks terakhir. Dalam jendela, ada pesan yang meneruskan acuan dengan jelas dan menyimpan anotasi target berdasarkan pesan lama. Pesan sekarang merujuk target sama. Nama target tidak muncul dalam teks 12 konteks terakhir atau pesan sekarang; target diketahui lewat memori.",
+    "source": {
+      "source_row": 800,
+      "source_group": "e93a4bd4b59f7931c14c",
+      "teks_chat": "bukan gw yang gag order dia, gw civilian dan nggak punya skill apa pun",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 14,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "memory_outside_window",
+    "participants": [
+      "Qila",
+      "Rafi",
+      "Sinta",
+      "Tito"
+    ],
+    "focus_player": "Qila",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Rafi",
+        "teks_chat": "Qila menarik ajakan votenya setelah ada jawaban baru. Aku curiga Qila Hitman yang mengubah cerita.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Qila",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Sinta",
+        "teks_chat": "Aku juga curiga dia sedang mengarang alasan.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Qila",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Tito",
+        "teks_chat": "Menurutku dia memang pelakunya.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Qila",
+            "relasi": "offend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Qila",
+        "teks_chat": "Aku bukan Hitman. Aku menarik dugaan setelah membaca pesan yang terlewat.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Qila",
+            "relasi": "defend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Sinta",
+        "teks_chat": "Aku tetap curiga dia sengaja menunggu reaksi kita.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Qila",
+            "relasi": "offend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Tito",
+        "teks_chat": "Aku juga ingin vote dia kalau tidak ada penjelasan lebih jelas.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Qila",
+            "relasi": "offend",
+            "bukti_pesan": [
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Qila",
+        "teks_chat": "Aku tidak bersalah. Pesan yang kulewatkan menjawab alasan tuduhan awalku.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Qila",
+            "relasi": "defend",
+            "bukti_pesan": [
+              7
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Rafi",
+        "teks_chat": "Aku akan membaca ulang urutan chat yang dimaksud.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Sinta",
+        "teks_chat": "Aku tetap ingin vote dia.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Qila",
+            "relasi": "offend",
+            "bukti_pesan": [
+              7
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Tito",
+        "teks_chat": "Aku setuju dengan ajakan vote itu.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Qila",
+            "relasi": "offend",
+            "bukti_pesan": [
+              9
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Qila",
+        "teks_chat": "Aku bukan pelakunya; aku justru berhenti menuduh setelah ada jawaban.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Qila",
+            "relasi": "defend",
+            "bukti_pesan": [
+              11
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Sinta",
+        "teks_chat": "Aku masih curiga dia hanya mencari alasan.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Qila",
+            "relasi": "offend",
+            "bukti_pesan": [
+              11
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Tito",
+        "teks_chat": "Aku tetap ingin vote dia saat Tribunal.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Qila",
+            "relasi": "offend",
+            "bukti_pesan": [
+              12
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Rafi",
+        "teks_chat": "Urutan chat mendukung bahwa ada jawaban baru sebelum perubahan dugaan. Aku tarik tuduhan kepadanya.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Qila",
+            "relasi": "defend",
+            "bukti_pesan": [
+              13
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 16.txt"
+  }
+}

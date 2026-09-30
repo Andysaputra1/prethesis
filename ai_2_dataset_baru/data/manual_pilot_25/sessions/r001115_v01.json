@@ -1,0 +1,68 @@
+{
+  "job": {
+    "job_id": "r001115_v01",
+    "case_name": "witness",
+    "case_description": "Nama saksi/korban disebut, tetapi bukan target serangan atau pembelaan.",
+    "source": {
+      "source_row": 1115,
+      "source_group": "5440badc830b08b5e0cd",
+      "teks_chat": "Kalau tuduhan ke aku sekuat itu, Stalker sebenarnya ngepeek siapa semalam?",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 2,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "witness",
+    "participants": [
+      "Iqbal",
+      "Jaka"
+    ],
+    "focus_player": "Jaka",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Iqbal",
+        "teks_chat": "Semalam ada korban diculik tapi namanya disembunyiin nih, Jaka pasti pelakunya yang nyulik dia!",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Jaka",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Jaka",
+        "teks_chat": "Iqbal cuma nebak, bukan bukti. Aku bukan Hitman, aku juga nggak tahu siapa yang disandera semalam.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Jaka",
+            "relasi": "defend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 22.txt"
+  },
+  "revisi": [
+    {
+      "pesan": 2,
+      "kategori": "tidak_natural",
+      "alasan": "Frasa 'tidak tahu siapa korban dari chat ini' janggal/meta"
+    }
+  ]
+}

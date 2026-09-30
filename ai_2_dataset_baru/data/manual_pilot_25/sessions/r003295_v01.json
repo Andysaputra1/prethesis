@@ -1,0 +1,137 @@
+{
+  "job": {
+    "job_id": "r003295_v01",
+    "case_name": "witness",
+    "case_description": "Nama saksi/korban disebut, tetapi bukan target serangan atau pembelaan.",
+    "source": {
+      "source_row": 3295,
+      "source_group": "46872c614cce12dbecbc",
+      "teks_chat": "gw bukan hitman, dan gag order tadi juga bukan dari gw",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 10,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "witness",
+    "participants": [
+      "Ika",
+      "Kiki",
+      "Lani",
+      "Mirza",
+      "Nando",
+      "Jojo"
+    ],
+    "focus_player": "Mirza",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Ika",
+        "teks_chat": "Jojo belum membalas chat, ya?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Kiki",
+        "teks_chat": "Iya, tetapi alasannya belum diketahui.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Lani",
+        "teks_chat": "Ada klaim yang ingin dibahas dulu?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Mirza",
+        "teks_chat": "Aku klaim Civilian.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Nando",
+        "teks_chat": "Mirza tadi mengaku Spy, aku curiga dia Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Mirza",
+            "relasi": "offend",
+            "bukti_pesan": [
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Lani",
+        "teks_chat": "Aku juga curiga Mirza Hitman karena klaimnya berubah.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Mirza",
+            "relasi": "offend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Kiki",
+        "teks_chat": "Vote Mirza saja!",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Mirza",
+            "relasi": "offend",
+            "bukti_pesan": [
+              7
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Mirza",
+        "teks_chat": "Aku bukan Hitman, tadi salah ketik dan langsung kukoreksi.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Mirza",
+            "relasi": "defend",
+            "bukti_pesan": [
+              8
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Ika",
+        "teks_chat": "Koreksinya bisa kita baca lagi di chat.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Nando",
+        "teks_chat": "Ika mengingatkan ada koreksi di chat. Aku tarik tuduhan ke Mirza; salah ketik itu belum membuktikan dia Hitman.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Mirza",
+            "relasi": "defend",
+            "bukti_pesan": [
+              10
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 48.txt"
+  }
+}

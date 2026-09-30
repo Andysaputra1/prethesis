@@ -1,0 +1,53 @@
+{
+  "job": {
+    "job_id": "r001811_v01",
+    "case_name": "second_person",
+    "case_description": "Kamu/lu: gunakan pergantian pembicara dan teks yang jelas. Tanpa acuan jelas, target tidak_diketahui.",
+    "source": {
+      "source_row": 1811,
+      "source_group": "e16c3b7ce1c87ec6faa5",
+      "teks_chat": "jangan terpancing gag order atau fitnah, fokus ke respons Vina yang paling mencurigakan, eksekusi Vina",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 2,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "second_person",
+    "participants": [
+      "Maya",
+      "Nando"
+    ],
+    "focus_player": "Maya",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Maya",
+        "teks_chat": "Maaf teman-teman, pesan aku terkirim sangat lambat sejak awal.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Nando",
+        "teks_chat": "Jangan mencari-cari alasan, kamu pasti sengaja menunda pesan karena sibuk menyamar!",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Maya",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 30.txt"
+  }
+}

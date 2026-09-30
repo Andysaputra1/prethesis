@@ -1,0 +1,216 @@
+{
+  "job": {
+    "job_id": "r002305_v01",
+    "case_name": "reference_start",
+    "case_description": "Tepat 12 konteks. Penyebutan target eksplisit di pesan konteks pertama; pesan sekarang memakai kata ganti.",
+    "source": {
+      "source_row": 2305,
+      "source_group": "b223be79c5656a4902cb",
+      "teks_chat": "kalau klaimku bohong, kenapa harus percaya klaim dia yang lebih cepat?",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 13,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "reference_start",
+    "participants": [
+      "Zaki",
+      "Adit",
+      "Bella"
+    ],
+    "focus_player": "Adit",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Zaki",
+        "teks_chat": "Tadi saat diskusi Adit mengaku Stalker. Aku curiga dia Hitman yang membuat klaim palsu.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Adit",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Adit",
+        "teks_chat": "Gue emang stalker kok, kalian jangan suuzon.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Adit",
+            "relasi": "defend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Bella",
+        "teks_chat": "Aku curiga kamu Hitman karena klaim itu belum didukung penjelasan.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Adit",
+            "relasi": "offend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Adit",
+        "teks_chat": "Aku belum ingin membuka hasil Peek, tetapi klaimku bukan bohong.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Adit",
+            "relasi": "defend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Zaki",
+        "teks_chat": "Alah, alasan doang itu mah.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Adit",
+            "relasi": "offend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Bella",
+        "teks_chat": "Iya, fix bohong.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Adit",
+            "relasi": "offend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Adit",
+        "teks_chat": "Aku tidak bohong soal roleku.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Adit",
+            "relasi": "defend",
+            "bukti_pesan": [
+              7
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Zaki",
+        "teks_chat": "Ya buat nutupin identitas asli lu lah.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Adit",
+            "relasi": "offend",
+            "bukti_pesan": [
+              7
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Bella",
+        "teks_chat": "Udah, kita awasin aja dia.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Adit",
+            "relasi": "offend",
+            "bukti_pesan": [
+              7
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Adit",
+        "teks_chat": "Terserah kalian deh, yang penting gue udah jujur.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Adit",
+            "relasi": "defend",
+            "bukti_pesan": [
+              10
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Zaki",
+        "teks_chat": "Makin kelihatan sus-nya.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Adit",
+            "relasi": "offend",
+            "bukti_pesan": [
+              10
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Bella",
+        "teks_chat": "Aku setuju sama Zaki.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Adit",
+            "relasi": "offend",
+            "bukti_pesan": [
+              10
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Zaki",
+        "teks_chat": "Tunggu, belum membuka hasil tidak berarti dia Hitman. Aku tarik tuduhanku.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Adit",
+            "relasi": "defend",
+            "bukti_pesan": [
+              10
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 37.txt"
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "job": {
+    "job_id": "r002135_v01",
+    "case_name": "ambiguous",
+    "case_description": "Beberapa acuan sama-sama mungkin; target tidak_diketahui, bukan nama terakhir.",
+    "source": {
+      "source_row": 2135,
+      "source_group": "7435fb5eea143c942eb4",
+      "teks_chat": "jangan asal vote gw, aku Spy dan dari awal cuma fokus guard",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 2,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "ambiguous",
+    "participants": [
+      "Yoga",
+      "Zaki"
+    ],
+    "focus_player": "",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Yoga",
+        "teks_chat": "Ada yang nuduh aku sama Zaki tadi, tapi alasannya belum dijelasin.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Zaki",
+        "teks_chat": "Kurasa sih bukan dia yang lakuin, soalnya dari tadi diam aja.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "tidak_diketahui",
+            "relasi": "defend",
+            "bukti_pesan": []
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 34.txt"
+  },
+  "revisi": [
+    {
+      "pesan": 1,
+      "kategori": "tidak_natural",
+      "alasan": "Yoga menyebut dirinya sendiri dengan orang ketiga; 'di sini' kaku"
+    }
+  ]
+}

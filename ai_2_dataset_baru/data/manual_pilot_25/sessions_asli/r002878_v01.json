@@ -1,0 +1,135 @@
+{
+  "job": {
+    "job_id": "r002878_v01",
+    "case_name": "outside_window_unknown",
+    "case_description": "14-16 pesan total. Pembahasan lama telah putus/beralih. Teks dan anotasi 12 konteks terakhir tidak cukup menentukan acuan sekarang. Target harus tidak_diketahui; jangan menggunakan informasi lama yang tidak tersedia dalam input.",
+    "source": {
+      "source_row": 2878,
+      "source_group": "295c7825c57458b0c1c1",
+      "teks_chat": "siapa pun yang pakai Gag Order ke Arman pasti ingin menutup kesaksiannya, cek siapa yang diuntungkan",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 14,
+    "pesan_typo_ringan": [
+      9
+    ]
+  },
+  "session": {
+    "case_name": "outside_window_unknown",
+    "participants": [
+      "Rani",
+      "Sandi",
+      "Toni",
+      "Udin"
+    ],
+    "focus_player": "Udin",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Rani",
+        "teks_chat": "Udin berubah ajakan vote di chat tanpa alasan, aku curiga dia Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Udin",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Sandi",
+        "teks_chat": "Aku ingin tanya aturan Peek dulu.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Toni",
+        "teks_chat": "Silakan, bagian mana?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Udin",
+        "teks_chat": "Peek itu kemampuan role apa?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Rani",
+        "teks_chat": "Stalker yang punya Peek.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Sandi",
+        "teks_chat": "Apa yang diketahui dari hasilnya?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Toni",
+        "teks_chat": "Identitas satu pemain yang dipilih.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Udin",
+        "teks_chat": "Berarti bukan memeriksa lokasi?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Rani",
+        "teks_chat": "Iya, targetnya satu pemain.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Sandi",
+        "teks_chat": "Bisa dipakai setiap ronde?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Toni",
+        "teks_chat": "Tidak, sekali setiap dua ronde.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Udin",
+        "teks_chat": "Oke, aku paham sekarang.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Rani",
+        "teks_chat": "Kalau ada klaim hasil, tetap perlu menilai apakah pengirim jujur.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Sandi",
+        "teks_chat": "Yang mengganti ajakan vote tadi pasti pelakunya!",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "tidak_diketahui",
+            "relasi": "offend",
+            "bukti_pesan": []
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 42.txt"
+  }
+}

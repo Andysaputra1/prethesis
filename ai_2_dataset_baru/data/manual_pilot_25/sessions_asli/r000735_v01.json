@@ -1,0 +1,133 @@
+{
+  "job": {
+    "job_id": "r000735_v01",
+    "case_name": "outside_window_unknown",
+    "case_description": "14-16 pesan total. Pembahasan lama telah putus/beralih. Teks dan anotasi 12 konteks terakhir tidak cukup menentukan acuan sekarang. Target harus tidak_diketahui; jangan menggunakan informasi lama yang tidak tersedia dalam input.",
+    "source": {
+      "source_row": 735,
+      "source_group": "7b39c9198b3574b8ef51",
+      "teks_chat": "aku sudah Peek I, hasilnya dia bukan Hitman, jadi jangan buru-buru vote",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 14,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "outside_window_unknown",
+    "participants": [
+      "Dodi",
+      "Erna",
+      "Fikri",
+      "Gani"
+    ],
+    "focus_player": "Erna",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Dodi",
+        "teks_chat": "Aku curiga Erna Hitman karena mengubah dugaan tanpa penjelasan.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Erna",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Fikri",
+        "teks_chat": "Boleh jeda soal nama? Aku ingin memastikan perbedaan Hostage dan Gag Order.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Gani",
+        "teks_chat": "Hostage dipakai Hitman pada fase malam untuk menyandera pemain.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Dodi",
+        "teks_chat": "Sedangkan Gag Order dipakai saat siang?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Fikri",
+        "teks_chat": "Iya, untuk membungkam chat seorang pemain.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Gani",
+        "teks_chat": "Apakah pemain lain langsung diberi tahu siapa korbannya?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Dodi",
+        "teks_chat": "Identitas korban tidak diumumkan kepada semua pemain.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Fikri",
+        "teks_chat": "Jadi saat seseorang diam, kita belum tahu penyebabnya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Gani",
+        "teks_chat": "Bisa pasif, koneksi, atau efek skill.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Dodi",
+        "teks_chat": "Berarti tidak boleh memastikan role dari diamnya saja.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Fikri",
+        "teks_chat": "Iya, kita masih perlu membaca ucapan dan alasannya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Gani",
+        "teks_chat": "Oke, perbedaan skillnya sudah jelas.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Dodi",
+        "teks_chat": "Sekarang kembali ke orang yang dibahas sebelum kita membandingkan skill.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Fikri",
+        "teks_chat": "Aku membela dia. Mengubah dugaan saja belum membuatnya Hitman.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "tidak_diketahui",
+            "relasi": "defend",
+            "bukti_pesan": []
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 14.txt"
+  }
+}

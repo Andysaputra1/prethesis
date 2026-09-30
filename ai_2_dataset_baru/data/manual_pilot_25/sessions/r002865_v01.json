@@ -1,0 +1,67 @@
+{
+  "job": {
+    "job_id": "r002865_v01",
+    "case_name": "short_history_2",
+    "case_description": "Awal diskusi dengan tepat 2 pesan sebelumnya. Gunakan hanya petunjuk yang tersedia.",
+    "source": {
+      "source_row": 2865,
+      "source_group": "c37069ae8883439774d7",
+      "teks_chat": "si Tia mendadak diam setelah Gag Order aktif, menurut gw Hitman sengaja membungkam dia",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 3,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "short_history_2",
+    "participants": [
+      "Opan",
+      "Putri",
+      "Qori"
+    ],
+    "focus_player": "Qori",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Opan",
+        "teks_chat": "Ada yang mau membagikan klaim skill semalam?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Putri",
+        "teks_chat": "Aku belum ada info apa-apa soal semalam.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Opan",
+        "teks_chat": "Aku curiga Qori Hitman karena belum ikut memberi pendapat.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Qori",
+            "relasi": "offend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 42.txt"
+  },
+  "revisi": [
+    {
+      "pesan": 2,
+      "kategori": "meta",
+      "alasan": "Menjelaskan korban dirahasiakan; tidak menjawab pertanyaan [1]."
+    }
+  ]
+}

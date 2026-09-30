@@ -1,0 +1,234 @@
+{
+  "job": {
+    "job_id": "r005114_v01",
+    "case_name": "memory_outside_window",
+    "case_description": "14-16 pesan total. Nama target hanya disebut sebelum 12 konteks terakhir. Dalam jendela, ada pesan yang meneruskan acuan dengan jelas dan menyimpan anotasi target berdasarkan pesan lama. Pesan sekarang merujuk target sama. Nama target tidak muncul dalam teks 12 konteks terakhir atau pesan sekarang; target diketahui lewat memori.",
+    "source": {
+      "source_row": 5114,
+      "source_group": "db21656d0ed7dead24c9",
+      "teks_chat": "aku Stalker, target intipku ternyata Spy, jadi jangan buru-buru eksekusi dia",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 14,
+    "pesan_typo_ringan": [
+      8
+    ]
+  },
+  "session": {
+    "case_name": "memory_outside_window",
+    "participants": [
+      "Sari",
+      "Umar",
+      "Vina",
+      "Wira",
+      "Tio"
+    ],
+    "focus_player": "Tio",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Sari",
+        "teks_chat": "Tio lambat membalas, aku curiga dia Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Tio",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Umar",
+        "teks_chat": "Curiga lagi mikir alibi tuh makanya lama.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Tio",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Vina",
+        "teks_chat": "Nah bener, biasanya gitu kalau mulai panik takut ketahuan.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Tio",
+            "relasi": "offend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Wira",
+        "teks_chat": "Jangan langsung nuduh tanpa bukti kuat dong.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Tio",
+            "relasi": "defend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Sari",
+        "teks_chat": "Aku curiga dia Hitman karena belum menjawab pertanyaan.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Tio",
+            "relasi": "offend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Umar",
+        "teks_chat": "Setuju, gelagatnya udah kelihatan mencurigakan.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Tio",
+            "relasi": "offend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Vina",
+        "teks_chat": "Aku yakin dia pelaku Hostage semalam.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Tio",
+            "relasi": "offend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Wira",
+        "teks_chat": "Kita tdk boleh asal tunjuk orang gitu aja.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Tio",
+            "relasi": "defend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Sari",
+        "teks_chat": "Terus nunggu nambah korban lagi baru bertindak?",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Tio",
+            "relasi": "offend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Umar",
+        "teks_chat": "Aku tetap ingin vote dia sebelum waktu diskusi habis.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Tio",
+            "relasi": "offend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Vina",
+        "teks_chat": "Iya mending langsung eksekusi aja sekarang biar aman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Tio",
+            "relasi": "offend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Wira",
+        "teks_chat": "Tapi belum tentu kecurigaan kalian itu benar lho.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Tio",
+            "relasi": "defend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Sari",
+        "teks_chat": "Resiko terlalu besar kalau dibiarkan lolos.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Tio",
+            "relasi": "offend",
+            "bukti_pesan": [
+              12
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Wira",
+        "teks_chat": "Aku yakin banget bukan dia Hitman-nya.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Tio",
+            "relasi": "defend",
+            "bukti_pesan": [
+              13
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 74.txt"
+  }
+}

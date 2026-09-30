@@ -1,0 +1,69 @@
+{
+  "job": {
+    "job_id": "r004332_v01",
+    "case_name": "self",
+    "case_description": "Defend diri sendiri atau offend/vote diri sendiri sesuai label. Target = pengirim.",
+    "source": {
+      "source_row": 4332,
+      "source_group": "65e6e848e093fc47ee29",
+      "teks_chat": "yang panik itu bukan gw, tapi si F tiap ditanya selalu lempar nama orang lain",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 3,
+    "pesan_typo_ringan": [
+      1
+    ]
+  },
+  "session": {
+    "case_name": "self",
+    "participants": [
+      "Danang",
+      "Bagas"
+    ],
+    "focus_player": "Danang",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Danang",
+        "teks_chat": "Maafkan aku kawan-kawan, aku tdk bisa merespons cepat karena masalah jaringan.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Bagas",
+        "teks_chat": "Apakah benar jaringan, atau kamu pura-pura agar punya alasan?",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Danang",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Danang",
+        "teks_chat": "Terserah, jika kalian berpikir aku pelakunya, vote aku saja sekarang.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Danang",
+            "relasi": "offend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 64.txt"
+  }
+}

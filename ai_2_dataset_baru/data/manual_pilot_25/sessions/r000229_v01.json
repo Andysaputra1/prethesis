@@ -1,0 +1,97 @@
+{
+  "job": {
+    "job_id": "r000229_v01",
+    "case_name": "multiple_targets",
+    "case_description": "Dua atau lebih pemain menjadi target relasi yang sama secara jelas.",
+    "source": {
+      "source_row": 229,
+      "source_group": "d5dfb71e0771474217ab",
+      "teks_chat": "S langsung menuduh T hanya karena T diam, itu terasa seperti fitnah dari Hitman",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 4,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "multiple_targets",
+    "participants": [
+      "Erna",
+      "Fahri",
+      "Gilang",
+      "Hasan"
+    ],
+    "focus_player": "",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Erna",
+        "teks_chat": "Fahri dan Gilang, alasan kalian mengajak vote Hasan apa?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Fahri",
+        "teks_chat": "Karena Hasan belum menjawab pertanyaanku. Aku curiga dia Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Hasan",
+            "relasi": "offend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Gilang",
+        "teks_chat": "Aku setuju, vote dia saja.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Hasan",
+            "relasi": "offend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Hasan",
+        "teks_chat": "Aku sudah menjawab. Fahri dan Gilang mengabaikan jawabanku untuk memaksakan tuduhan; aku curiga mereka berdua Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Hasan",
+            "relasi": "defend",
+            "bukti_pesan": [
+              4
+            ]
+          },
+          {
+            "pemain": "Fahri",
+            "relasi": "offend",
+            "bukti_pesan": [
+              4
+            ]
+          },
+          {
+            "pemain": "Gilang",
+            "relasi": "offend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 3.txt"
+  }
+}

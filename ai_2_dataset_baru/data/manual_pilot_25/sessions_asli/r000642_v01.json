@@ -1,0 +1,83 @@
+{
+  "job": {
+    "job_id": "r000642_v01",
+    "case_name": "short_history_3",
+    "case_description": "Awal diskusi dengan tepat 3 pesan sebelumnya. Acuan tidak harus berada di pesan terakhir.",
+    "source": {
+      "source_row": 642,
+      "source_group": "67bbe2794958e7c376bf",
+      "teks_chat": "sumpah bukan aku yang pakai Gag Order, tadi chatku normal terus",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 4,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "short_history_3",
+    "participants": [
+      "Rama",
+      "Sinta",
+      "Tito",
+      "Umar"
+    ],
+    "focus_player": "Tito",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Rama",
+        "teks_chat": "Tadi pas diskusi baru aja mulai, Tito langsung nge-cover Sinta biar nggak di-vote.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Sinta",
+        "teks_chat": "Tito belum pantas dituduh; dia hanya menunjukkan bahwa alasan tuduhan kepadaku lemah.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Tito",
+            "relasi": "defend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Umar",
+        "teks_chat": "Kecepatan cover-nya itu loh yang mencurigakan, kayak udah dikasih tau sebelumnya.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Tito",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Sinta",
+        "teks_chat": "Dia belum pantas dituduh sebagai Hitman hanya karena cepat membantah tuduhan yang lemah.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Tito",
+            "relasi": "defend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 12.txt"
+  }
+}

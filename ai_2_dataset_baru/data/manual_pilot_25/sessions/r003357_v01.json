@@ -1,0 +1,186 @@
+{
+  "job": {
+    "job_id": "r003357_v01",
+    "case_name": "outside_window_unknown",
+    "case_description": "14-16 pesan total. Pembahasan lama telah putus/beralih. Teks dan anotasi 12 konteks terakhir tidak cukup menentukan acuan sekarang. Target harus tidak_diketahui; jangan menggunakan informasi lama yang tidak tersedia dalam input.",
+    "source": {
+      "source_row": 3357,
+      "source_group": "a87b79e681a07449be43",
+      "teks_chat": "sumpah bukan dia yang benar, gw punya alasan kenapa pilih target itu",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 14,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "outside_window_unknown",
+    "participants": [
+      "Eka",
+      "Fani",
+      "Gilang",
+      "Hari",
+      "Budi"
+    ],
+    "focus_player": "Budi",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Eka",
+        "teks_chat": "Budi mencurigakan, ayo vote dia!",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Budi",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Fani",
+        "teks_chat": "Sebentar, semalam ada yang dapat info apa-apa?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Gilang",
+        "teks_chat": "Aku nggak dapat apa-apa.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Hari",
+        "teks_chat": "Aku juga, malamku biasa aja.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Budi",
+        "teks_chat": "Sama, nggak ada yang aneh.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Eka",
+        "teks_chat": "Terus semalam ada yang disandera nggak, ya?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Fani",
+        "teks_chat": "Belum ada yang tahu, belum ada yang ngeluh juga.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Gilang",
+        "teks_chat": "Tadi ada yang pesannya kepotong-potong, ya?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Hari",
+        "teks_chat": "Iya, aku juga lihat.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Budi",
+        "teks_chat": "Pesanku juga sempat telat masuk tadi.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Eka",
+        "teks_chat": "Belum tentu karena Gag Order sih.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Fani",
+        "teks_chat": "Oke, berarti pesan terpotong belum menunjukkan efek itu.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Gilang",
+        "teks_chat": "Benar, bisa ada masalah pengetikan atau koneksi.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Hari",
+        "teks_chat": "Jangan ikut menuduh dia kalau belum ada bukti.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "tidak_diketahui",
+            "relasi": "defend",
+            "bukti_pesan": []
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 49.txt"
+  },
+  "revisi": [
+    {
+      "pesan": 2,
+      "kategori": "meta",
+      "alasan": "Ingin memastikan istilah role (aturan)."
+    },
+    {
+      "pesan": 3,
+      "kategori": "meta",
+      "alasan": "Menyebut daftar role game."
+    },
+    {
+      "pesan": 4,
+      "kategori": "meta",
+      "alasan": "Menanyakan skill Civilian."
+    },
+    {
+      "pesan": 5,
+      "kategori": "meta",
+      "alasan": "Menjelaskan Civilian tidak punya skill."
+    },
+    {
+      "pesan": 6,
+      "kategori": "meta",
+      "alasan": "Menanyakan pemilik Hostage."
+    },
+    {
+      "pesan": 7,
+      "kategori": "meta",
+      "alasan": "Menjelaskan Hostage."
+    },
+    {
+      "pesan": 8,
+      "kategori": "meta",
+      "alasan": "Membandingkan Gag Order dan Hostage."
+    },
+    {
+      "pesan": 9,
+      "kategori": "meta",
+      "alasan": "Menjelaskan Gag Order."
+    },
+    {
+      "pesan": 10,
+      "kategori": "meta",
+      "alasan": "Menanyakan efek Gag Order."
+    },
+    {
+      "pesan": 11,
+      "kategori": "meta",
+      "alasan": "Menjelaskan efek Gag Order."
+    }
+  ]
+}

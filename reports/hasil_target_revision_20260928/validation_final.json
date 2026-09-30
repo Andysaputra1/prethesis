@@ -1,0 +1,44 @@
+{
+  "date": "2026-09-29",
+  "status": "complete",
+  "scheduled_jobs": 775,
+  "reviewed_sessions": 775,
+  "unique_job_ids": 775,
+  "missing_jobs": [],
+  "unknown_jobs": [],
+  "validation": {
+    "schema_and_session": {
+      "count": 775,
+      "errors": []
+    },
+    "written_files": 78,
+    "disk_errors": [],
+    "source_original_preserved": 25,
+    "duplicate_full_text_sessions": []
+  },
+  "main_intent_counts": {
+    "offend": 321,
+    "defend": 323,
+    "neutral": 131
+  },
+  "generated_missing_jobs": [
+    "r002605_v01",
+    "r002622_v00",
+    "r002653_v01",
+    "r002657_v01",
+    "r002669_v01",
+    "r002685_v01",
+    "r002688_v01",
+    "r002715_v01",
+    "r002716_v01",
+    "r002717_v00"
+  ],
+  "generated_file": "hasil copy 80.txt",
+  "prompt_file_preserved": "hasil copy 40.txt",
+  "notes": [
+    "Semua pesan pada 775 sesi ditinjau, bukan hanya pesan utama.",
+    "25 kasus original mempertahankan teks dan intent sumber.",
+    "File 80 dibuat untuk 10 job yang sebelumnya hanya mempunyai prompt; salinan original/file80 adalah baseline hasil baru, bukan hasil lama pengguna.",
+    "Lolos validator struktur bukan jaminan kesepakatan anotator manusia; ini hasil review konteks dan anotasi."
+  ]
+}

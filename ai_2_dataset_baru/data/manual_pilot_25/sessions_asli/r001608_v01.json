@@ -1,0 +1,75 @@
+{
+  "job": {
+    "job_id": "r001608_v01",
+    "case_name": "stance_change",
+    "case_description": "Pengirim pesan sekarang sebelumnya menuduh atau membela seorang pemain di konteks, lalu berubah sikap terhadap pemain yang sama. Anotasi mengikuti sikap terbaru.",
+    "source": {
+      "source_row": 1608,
+      "source_group": "7a0fae9f2513ae4d66d8",
+      "teks_chat": "kalau gw benar Hitman, mestinya gw nggak akan sejelas ini nunjuk si Ardi",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 3,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "stance_change",
+    "participants": [
+      "Gilang",
+      "Hadi"
+    ],
+    "focus_player": "Hadi",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Gilang",
+        "teks_chat": "Kalian jangan terlalu menekan Hadi, mungkin dia memang sedang sibuk di dunia nyata.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Hadi",
+            "relasi": "defend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Hadi",
+        "teks_chat": "Iya, aku sedang makan tadi jadi tidak terlalu memperhatikan layar permainan.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Hadi",
+            "relasi": "defend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Gilang",
+        "teks_chat": "Tetapi kamu sudah diam selama sepuluh menit, aku jadi curiga kamu sebenarnya pelakunya.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Hadi",
+            "relasi": "offend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 28.txt"
+  }
+}

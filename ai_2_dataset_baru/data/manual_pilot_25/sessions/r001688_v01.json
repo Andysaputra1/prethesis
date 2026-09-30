@@ -1,0 +1,68 @@
+{
+  "job": {
+    "job_id": "r001688_v01",
+    "case_name": "short_history_1",
+    "case_description": "Awal diskusi dengan tepat 1 pesan sebelumnya. Jangan menambah riwayat fiktif atau mengisi sampai 12.",
+    "source": {
+      "source_row": 1688,
+      "source_group": "2f350bdc5d1b7f334e65",
+      "teks_chat": "bagian itu sudah aku jawab, sekarang giliran si F menjelaskan aksinya",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 2,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "short_history_1",
+    "participants": [
+      "Lina",
+      "Mamat"
+    ],
+    "focus_player": "Lina",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Mamat",
+        "teks_chat": "Aku Stalker, semalam aku Peek Lina dan hasilnya dia Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Lina",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Lina",
+        "teks_chat": "Aku bukan Hitman. Klaim hasil Peek itu tidak benar menurutku.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Lina",
+            "relasi": "defend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 29.txt"
+  },
+  "revisi": [
+    {
+      "pesan": 1,
+      "kategori": "tidak_natural",
+      "alasan": "'Menurut klaim hasil Peek-ku' janggal (mengklaim klaim sendiri)"
+    }
+  ]
+}

@@ -1,0 +1,188 @@
+{
+  "job": {
+    "job_id": "r004664_v01",
+    "case_name": "multiple_targets",
+    "case_description": "Dua atau lebih pemain menjadi target relasi yang sama secara jelas.",
+    "source": {
+      "source_row": 4664,
+      "source_group": "a40221207e55027cb2b9",
+      "teks_chat": "bisa ulang siapa yang kena Gag Order? Oh, si T? kalau begitu T patut kita vote",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 11,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "multiple_targets",
+    "participants": [
+      "Bima",
+      "Caca",
+      "Doni",
+      "Eka"
+    ],
+    "focus_player": "",
+    "panggilan": [
+      {
+        "pemain": "Bima",
+        "sebutan": [
+          "Bim"
+        ]
+      },
+      {
+        "pemain": "Doni",
+        "sebutan": [
+          "Don"
+        ]
+      }
+    ],
+    "messages": [
+      {
+        "pengirim": "Bima",
+        "teks_chat": "Ada yang mau membagikan klaim skill semalam?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Caca",
+        "teks_chat": "Kayaknya semalam ada yang disandera, tapi nggak tahu siapa.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Doni",
+        "teks_chat": "Aku klaim Stalker, semalam aku Peek Bima.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Bima",
+        "teks_chat": "Hah? Lu ngawasin gua? Gua Civilian biasa woy.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Bima",
+            "relasi": "defend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Eka",
+        "teks_chat": "Terus hasil intaian lu apa Don?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Doni",
+        "teks_chat": "Hasil Peek-ku menunjukkan Bima Civilian, bukan Hitman.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Bima",
+            "relasi": "defend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Caca",
+        "teks_chat": "Lah masa sih? Gue rada curiga sama Bima dari awal permainan lho.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Bima",
+            "relasi": "offend",
+            "bukti_pesan": [
+              7
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Bima",
+        "teks_chat": "Lu berdua malah yang mencurigakan, Caca nuduh gua terus, Doni ngintip gua tanpa alasan.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Caca",
+            "relasi": "offend",
+            "bukti_pesan": [
+              7
+            ]
+          },
+          {
+            "pemain": "Doni",
+            "relasi": "offend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Eka",
+        "teks_chat": "Kita kumpulkan klaim lain dulu.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Doni",
+        "teks_chat": "Gua beneran stalker, ngapain gua bohong coba.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Doni",
+            "relasi": "defend",
+            "bukti_pesan": [
+              10
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Bima",
+        "teks_chat": "Fix Caca sama Doni ini berkomplot, dua-duanya harus kita vote keluar sekarang!",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Caca",
+            "relasi": "offend",
+            "bukti_pesan": [
+              11
+            ]
+          },
+          {
+            "pemain": "Doni",
+            "relasi": "offend",
+            "bukti_pesan": [
+              11
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 69.txt"
+  },
+  "revisi": [
+    {
+      "pesan": 2,
+      "kategori": "meta",
+      "alasan": "'belum diumumin' menyiratkan identitas korban akan diumumkan"
+    },
+    {
+      "pesan": 8,
+      "kategori": "tidak_natural",
+      "alasan": "Menuduh Doni tanpa alasan padahal Doni baru membersihkan namanya; tambahkan alasan"
+    }
+  ]
+}

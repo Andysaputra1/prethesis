@@ -1,0 +1,235 @@
+{
+  "job": {
+    "job_id": "r003423_v01",
+    "case_name": "memory_outside_window",
+    "case_description": "14-16 pesan total. Nama target hanya disebut sebelum 12 konteks terakhir. Dalam jendela, ada pesan yang meneruskan acuan dengan jelas dan menyimpan anotasi target berdasarkan pesan lama. Pesan sekarang merujuk target sama. Nama target tidak muncul dalam teks 12 konteks terakhir atau pesan sekarang; target diketahui lewat memori.",
+    "source": {
+      "source_row": 3423,
+      "source_group": "d4566903f23680b89add",
+      "teks_chat": "aku cuma spekulatif, bukan berarti semua teoriku berasal dari role jahat",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 14,
+    "pesan_typo_ringan": [
+      4
+    ]
+  },
+  "session": {
+    "case_name": "memory_outside_window",
+    "participants": [
+      "Agus",
+      "Dono",
+      "Eko",
+      "Budi",
+      "Cici",
+      "Fina"
+    ],
+    "focus_player": "Fina",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Agus",
+        "teks_chat": "Fina berganti tuduhan dari Budi ke Cici tanpa alasan. Aku curiga Fina Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Fina",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Dono",
+        "teks_chat": "Iya tuh, kelihatan banget pengen cari kambing hitam.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Fina",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Eko",
+        "teks_chat": "Nuduh sana sini emang ciri khas hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Fina",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Budi",
+        "teks_chat": "Dia itu yg paling aneh dari ronde pertama menurutku.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Fina",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Cici",
+        "teks_chat": "Setuju, tuduhannya selalu berubah-ubah tanpa bukti yang jelas.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Fina",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Eko",
+        "teks_chat": "Mungkin dia lagi panik makanya asal sebut nama orang.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Fina",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Dono",
+        "teks_chat": "Atau dia emang sengaja pengen bikin ricuh diskusi kita.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Fina",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Agus",
+        "teks_chat": "Udahlah, kita vote aja dia biar gak bikin pusing.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Fina",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Eko",
+        "teks_chat": "Tapi tunggu dulu, kalau dia hitman masa dia senekat itu ganti target terang-terangan?",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Fina",
+            "relasi": "defend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Budi",
+        "teks_chat": "Bisa aja pura-pura bego biar kita gak terlalu curiga sama dia.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Fina",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Cici",
+        "teks_chat": "Nah iya, taktiknya pasti gitu tuh buat ngelabuhi.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Fina",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Dono",
+        "teks_chat": "Mending kita amankan aja sebelum kita yang diincar malam nanti.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Fina",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Agus",
+        "teks_chat": "Ayo cepet kumpulin vote buat dia sekarang juga.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Fina",
+            "relasi": "offend",
+            "bukti_pesan": [
+              12
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Eko",
+        "teks_chat": "Jangan buru-buru, menurutku dia cuma asal nebak karena emang kita belum punya petunjuk pasti.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Fina",
+            "relasi": "defend",
+            "bukti_pesan": [
+              13
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 52.txt"
+  }
+}

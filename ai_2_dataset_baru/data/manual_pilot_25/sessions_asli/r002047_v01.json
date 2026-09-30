@@ -1,0 +1,151 @@
+{
+  "job": {
+    "job_id": "r002047_v01",
+    "case_name": "topic_switch",
+    "case_description": "Pembahasan berganti pemain; pesan sekarang mengikuti topik baru, bukan otomatis target lama.",
+    "source": {
+      "source_row": 2047,
+      "source_group": "c86db4bfb6442b3b4414",
+      "teks_chat": "dari hasil Peek, aku dapat identitas E tadi malam; warga bisa ikut arah vote ke E",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 10,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "topic_switch",
+    "participants": [
+      "Aldo",
+      "Budi",
+      "Caca",
+      "Dika"
+    ],
+    "focus_player": "Dika",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Aldo",
+        "teks_chat": "Budi tadi mengganti ajakan vote di chat tanpa alasan. Aku curiga Budi Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Budi",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Budi",
+        "teks_chat": "Aku bukan Hitman, aku mengubah dugaan setelah membaca jawaban Caca.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Budi",
+            "relasi": "defend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Caca",
+        "teks_chat": "Budi belum pantas dituduh hanya karena memperbarui dugaan dari jawabanku.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Budi",
+            "relasi": "defend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Dika",
+        "teks_chat": "Ya sudah kalau memang begitu ceritanya, kita lupakan saja.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Aldo",
+        "teks_chat": "Tetapi tetap saja agak mengerikan melihat pergeserannya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Budi",
+        "teks_chat": "Sudahlah, mari kita membahas hal yang lain saja.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Caca",
+        "teks_chat": "Sekarang aku curiga Dika, dia baru ikut mengajak vote setelah orang lain sepakat tanpa memberi alasan.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Dika",
+            "relasi": "offend",
+            "bukti_pesan": [
+              7
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Aldo",
+        "teks_chat": "Aku juga curiga Dika sengaja mengikuti ajakan agar terlihat aman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Dika",
+            "relasi": "offend",
+            "bukti_pesan": [
+              8
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Budi",
+        "teks_chat": "Aku curiga dia hanya menunggu arah dugaan orang lain.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Dika",
+            "relasi": "offend",
+            "bukti_pesan": [
+              8
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Caca",
+        "teks_chat": "Jelas banget itu taktik licik, Dika sengaja menahan suara biar posisinya aman, dia pelakunya!",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Dika",
+            "relasi": "offend",
+            "bukti_pesan": [
+              10
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 33.txt"
+  }
+}

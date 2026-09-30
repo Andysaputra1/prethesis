@@ -1,0 +1,123 @@
+{
+  "job": {
+    "job_id": "r001888_v01",
+    "case_name": "witness",
+    "case_description": "Nama saksi/korban disebut, tetapi bukan target serangan atau pembelaan.",
+    "source": {
+      "source_row": 1888,
+      "source_group": "da03f94c30e0118c4246",
+      "teks_chat": "jangan terjebak omongan si Rian, dia cuma lempar tuduhan biar lupa sama dirinya",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 7,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "witness",
+    "participants": [
+      "Nina",
+      "Oka",
+      "Putri",
+      "Reno"
+    ],
+    "focus_player": "Oka",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Nina",
+        "teks_chat": "Reno belum mengirim chat sejak diskusi dibuka. Penyebabnya belum kita ketahui.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Oka",
+        "teks_chat": "Iya, jangan langsung nyimpulin apa-apa cuma karena dia diam.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Putri",
+        "teks_chat": "Kalian mau mengeluarkan siapa nih dari permainan?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Oka",
+        "teks_chat": "Aku mau mengajak kita semua untuk vote Nina saja.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Nina",
+            "relasi": "offend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Nina",
+        "teks_chat": "Lho, kok kamu malah menuduh aku? Mana buktinya?",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Nina",
+            "relasi": "defend",
+            "bukti_pesan": [
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Putri",
+        "teks_chat": "Oka, aku curiga kamu Hitman karena mengajak vote tanpa memberi alasan.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Oka",
+            "relasi": "offend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Nina",
+        "teks_chat": "Aku tidak bersalah. Oka, kamu mengalihkan pembahasan Reno ke ajakan vote tanpa alasan; aku curiga kamu Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Nina",
+            "relasi": "defend",
+            "bukti_pesan": [
+              7
+            ]
+          },
+          {
+            "pemain": "Oka",
+            "relasi": "offend",
+            "bukti_pesan": [
+              7
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 31.txt"
+  },
+  "revisi": [
+    {
+      "pesan": 2,
+      "kategori": "tidak_natural",
+      "alasan": "Kaku/janggal ('memastikan statusnya')"
+    }
+  ]
+}

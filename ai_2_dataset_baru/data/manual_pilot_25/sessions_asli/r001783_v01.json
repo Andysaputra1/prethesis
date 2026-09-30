@@ -1,0 +1,119 @@
+{
+  "job": {
+    "job_id": "r001783_v01",
+    "case_name": "negation",
+    "case_description": "Negasi menentukan relasi: Andy Hitman berbeda dari Andy bukan Hitman.",
+    "source": {
+      "source_row": 1783,
+      "source_group": "e23e886e9bd4d218c181",
+      "teks_chat": "Kalian lihat sendiri, Fajar baru aktif setelah ada korban sandera; gw minta vote dia, bukan gw",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 10,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "negation",
+    "participants": [
+      "Umar",
+      "Vina",
+      "Wawan",
+      "Xena"
+    ],
+    "focus_player": "Xena",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Umar",
+        "teks_chat": "Apakah ada yang bisa memberikan petunjuk hasil semalam?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Vina",
+        "teks_chat": "Aku Stalker, aku sudah mengintip seseorang.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Wawan",
+        "teks_chat": "Bagus sekali Vina, siapa yang kamu intip semalam?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Vina",
+        "teks_chat": "Aku memutuskan untuk mengintip Xena.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Xena",
+        "teks_chat": "Wah, silakan sebutkan hasilnya Vina, aku pasti aman.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Xena",
+            "relasi": "defend",
+            "bukti_pesan": [
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Umar",
+        "teks_chat": "Jangan ditahan Vina, beritahu kami sekarang.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Wawan",
+        "teks_chat": "Cepat katakan agar kita bisa mengambil tindakan yang tepat.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Vina",
+        "teks_chat": "Aku sedang memastikan ulang catatannya di layar.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Xena",
+        "teks_chat": "Tidak usah ragu, aku seratus persen warga biasa.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Xena",
+            "relasi": "defend",
+            "bukti_pesan": [
+              9
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Vina",
+        "teks_chat": "Ternyata Xena bukan orang baik, dia penjahatnya!",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Xena",
+            "relasi": "offend",
+            "bukti_pesan": [
+              10
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 30.txt"
+  }
+}

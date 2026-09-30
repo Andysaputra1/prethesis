@@ -1,0 +1,134 @@
+{
+  "job": {
+    "job_id": "r004980_v01",
+    "case_name": "outside_window_unknown",
+    "case_description": "14-16 pesan total. Pembahasan lama telah putus/beralih. Teks dan anotasi 12 konteks terakhir tidak cukup menentukan acuan sekarang. Target harus tidak_diketahui; jangan menggunakan informasi lama yang tidak tersedia dalam input.",
+    "source": {
+      "source_row": 4980,
+      "source_group": "90ee4ea40e0d2e5c716c",
+      "teks_chat": "role gw jelas civilian, jadi jangan jadikan gw kambing hitam",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 14,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "outside_window_unknown",
+    "participants": [
+      "Galih",
+      "Hana",
+      "Irwan",
+      "Jihan",
+      "Joko"
+    ],
+    "focus_player": "Joko",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Galih",
+        "teks_chat": "Aku klaim Stalker, hasil Peek-ku menunjukkan Joko Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Joko",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Hana",
+        "teks_chat": "Waktu sisa berapa menit lagi nih?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Irwan",
+        "teks_chat": "Masih agak lama, sekitar 3 menit.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Jihan",
+        "teks_chat": "Santai aja dulu jangan buru-buru vote.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Galih",
+        "teks_chat": "Siapa yang udah siap-siap nge-vote?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Hana",
+        "teks_chat": "Aku belum pencet apa-apa.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Irwan",
+        "teks_chat": "Sama, masih baca-baca riwayat chat.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Jihan",
+        "teks_chat": "Jangan sampai salah buang orang penting.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Galih",
+        "teks_chat": "Kalian percaya sama feeling masing-masing aja.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Hana",
+        "teks_chat": "Susah kalau cuma ngandelin feeling.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Irwan",
+        "teks_chat": "Harus ada dasar logikanya juga.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Jihan",
+        "teks_chat": "Diskusi kita agak buntu kayaknya ronde ini.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Galih",
+        "teks_chat": "Yang penting jangan golput.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Hana",
+        "teks_chat": "Balik ke tuduhan awal, aku belum percaya klaim itu. Dia belum terbukti Hitman.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "tidak_diketahui",
+            "relasi": "defend",
+            "bukti_pesan": []
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 72.txt"
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "job": {
+    "job_id": "r001586_v00",
+    "case_name": "original",
+    "case_description": "Satu pesan tanpa riwayat. Pertahankan teks dan intent sumber persis; jangan mengarang riwayat asli.",
+    "source": {
+      "source_row": 1586,
+      "source_group": "1808f5e9049f621d08b1",
+      "teks_chat": "jangan jadikan gw kambing hitam, lihat si D yang selalu muncul saat voting mulai panas",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 1,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "original",
+    "participants": [
+      "Faisal",
+      "D"
+    ],
+    "focus_player": "",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Faisal",
+        "teks_chat": "jangan jadikan gw kambing hitam, lihat si D yang selalu muncul saat voting mulai panas",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Faisal",
+            "relasi": "defend",
+            "bukti_pesan": [
+              1
+            ]
+          },
+          {
+            "pemain": "D",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 28.txt"
+  },
+  "revisi": [
+    {
+      "pesan": 1,
+      "kategori": "label",
+      "alasan": "ID pemain 'D' dari teks sumber dimasukkan ke roster dan dijadikan target"
+    }
+  ]
+}

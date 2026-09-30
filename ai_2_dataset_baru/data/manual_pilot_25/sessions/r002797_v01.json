@@ -1,0 +1,172 @@
+{
+  "job": {
+    "job_id": "r002797_v01",
+    "case_name": "outside_window_unknown",
+    "case_description": "14-16 pesan total. Pembahasan lama telah putus/beralih. Teks dan anotasi 12 konteks terakhir tidak cukup menentukan acuan sekarang. Target harus tidak_diketahui; jangan menggunakan informasi lama yang tidak tersedia dalam input.",
+    "source": {
+      "source_row": 2797,
+      "source_group": "fad3a514545c9ee6ee82",
+      "teks_chat": "gw curiga ke si R karena dia langsung nuduh orang yang dibungkam tanpa ngasih bukti",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 14,
+    "pesan_typo_ringan": [
+      3
+    ]
+  },
+  "session": {
+    "case_name": "outside_window_unknown",
+    "participants": [
+      "Lia",
+      "Maman",
+      "Nia",
+      "Opan"
+    ],
+    "focus_player": "Maman",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Lia",
+        "teks_chat": "Maman mengganti klaim role, aku curiga dia Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Maman",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Maman",
+        "teks_chat": "Boleh jeda sebentar? Aku mau bahas rencana vote dulu.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Nia",
+        "teks_chat": "Boleh, rencananya gimana? Aku jg mau dengar.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Opan",
+        "teks_chat": "Menurutku jangan buru-buru vote di awal.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Lia",
+        "teks_chat": "Iya, kalau buru-buru malah gampang salah pilih.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Maman",
+        "teks_chat": "Jadi kita perlu membahas alasan sebelum memilih.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Nia",
+        "teks_chat": "Benar, biar nggak ada yang keluar tanpa alasan jelas.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Opan",
+        "teks_chat": "Terus kapan kita mulai vote?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Lia",
+        "teks_chat": "Pas waktu diskusi tinggal sedikit aja.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Maman",
+        "teks_chat": "Berarti kita harus hati-hati memilih.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Nia",
+        "teks_chat": "Iya, klaim dalam chat belum tentu jujur.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Opan",
+        "teks_chat": "Oke, aku akan membaca alasan yang sudah dibagikan.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Lia",
+        "teks_chat": "Setelah itu kita bisa kembali ke tuduhan awal.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Maman",
+        "teks_chat": "Aku curiga orang yang plin-plan tadi Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "tidak_diketahui",
+            "relasi": "offend",
+            "bukti_pesan": []
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 41.txt"
+  },
+  "revisi": [
+    {
+      "pesan": 2,
+      "kategori": "meta",
+      "alasan": "Menanyakan cara kerja Tribunal."
+    },
+    {
+      "pesan": 3,
+      "kategori": "singkatan",
+      "alasan": "Slot typo [3] tidak berisi singkatan; disesuaikan dengan pesan 2 baru."
+    },
+    {
+      "pesan": 4,
+      "kategori": "meta",
+      "alasan": "Menanyakan aturan penghitungan suara."
+    },
+    {
+      "pesan": 5,
+      "kategori": "meta",
+      "alasan": "Menjelaskan mekanik Tribunal."
+    },
+    {
+      "pesan": 7,
+      "kategori": "meta",
+      "alasan": "Menjelaskan akibat pilihan (eksekusi) sebagai aturan."
+    },
+    {
+      "pesan": 8,
+      "kategori": "meta",
+      "alasan": "Menanyakan aturan eksekusi."
+    },
+    {
+      "pesan": 9,
+      "kategori": "meta",
+      "alasan": "Menjelaskan aturan suara terbanyak."
+    }
+  ]
+}

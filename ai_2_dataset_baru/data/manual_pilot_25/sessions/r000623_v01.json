@@ -1,0 +1,195 @@
+{
+  "job": {
+    "job_id": "r000623_v01",
+    "case_name": "outside_window_unknown",
+    "case_description": "14-16 pesan total. Pembahasan lama telah putus/beralih. Teks dan anotasi 12 konteks terakhir tidak cukup menentukan acuan sekarang. Target harus tidak_diketahui; jangan menggunakan informasi lama yang tidak tersedia dalam input.",
+    "source": {
+      "source_row": 623,
+      "source_group": "e28963554d467c61e84c",
+      "teks_chat": "tuduhan ini terasa seperti gertakan murahan supaya gw panik dan salah ngomong",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 14,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "outside_window_unknown",
+    "participants": [
+      "Wawan",
+      "Xena",
+      "Yoga",
+      "Zain"
+    ],
+    "focus_player": "Xena",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Wawan",
+        "teks_chat": "Aku membela Xena, tuduhan kepadanya belum berdasar.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Xena",
+            "relasi": "defend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Yoga",
+        "teks_chat": "Sebelum lanjut, semalam ada yang punya info baru?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Zain",
+        "teks_chat": "Belum ada, pagi ini chat juga masih sepi.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Wawan",
+        "teks_chat": "Mungkin yang lain masih mikir mau ngomong apa.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Yoga",
+        "teks_chat": "Kita atur giliran ngomong aja biar nggak saling potong.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Zain",
+        "teks_chat": "Setuju, satu orang satu giliran kasih pendapat.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Wawan",
+        "teks_chat": "Oke, habis itu baru kita tentukan mau vote atau nggak.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Yoga",
+        "teks_chat": "Jangan sampai waktunya habis sebelum kita sempat vote.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Zain",
+        "teks_chat": "Iya, ronde kemarin kita kehabisan waktu gara-gara ngobrol muter-muter.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Wawan",
+        "teks_chat": "Makanya sekarang langsung ke intinya aja.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Yoga",
+        "teks_chat": "Kalau ada yang mau klaim role, mending sekarang.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Zain",
+        "teks_chat": "Kayaknya belum ada yang mau klaim, lanjut aja.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Wawan",
+        "teks_chat": "Aku mau balik ke orang yang kubela di awal tadi.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Yoga",
+        "teks_chat": "Aku juga membela dia, belum ada alasan kuat untuk menyebutnya Hitman.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "tidak_diketahui",
+            "relasi": "defend",
+            "bukti_pesan": []
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 11.txt"
+  },
+  "revisi": [
+    {
+      "pesan": 2,
+      "kategori": "meta",
+      "alasan": "Menanyakan aturan skill Civilian."
+    },
+    {
+      "pesan": 3,
+      "kategori": "meta",
+      "alasan": "Menjelaskan desain role Civilian."
+    },
+    {
+      "pesan": 4,
+      "kategori": "meta",
+      "alasan": "Menanyakan mekanik chat malam."
+    },
+    {
+      "pesan": 5,
+      "kategori": "meta",
+      "alasan": "Menjelaskan chat terkunci saat fase malam."
+    },
+    {
+      "pesan": 6,
+      "kategori": "meta",
+      "alasan": "Lanjutan penjelasan aturan chat malam."
+    },
+    {
+      "pesan": 7,
+      "kategori": "meta",
+      "alasan": "Lanjutan penjelasan aturan chat malam."
+    },
+    {
+      "pesan": 8,
+      "kategori": "meta",
+      "alasan": "Menanyakan apakah korban Hostage diumumkan (aturan)."
+    },
+    {
+      "pesan": 9,
+      "kategori": "meta",
+      "alasan": "Kebocoran aturan: identitas korban tidak diumumkan."
+    },
+    {
+      "pesan": 10,
+      "kategori": "meta",
+      "alasan": "Membahas roster/aturan penebakan korban."
+    },
+    {
+      "pesan": 11,
+      "kategori": "meta",
+      "alasan": "Membahas status tersembunyi sebagai aturan sistem."
+    },
+    {
+      "pesan": 12,
+      "kategori": "meta",
+      "alasan": "Menyimpulkan 'batas informasi publik' (bahasa desain game)."
+    },
+    {
+      "pesan": 13,
+      "kategori": "meta",
+      "alasan": "Menyebut 'membahas aturan'; disesuaikan dengan obrolan baru."
+    }
+  ]
+}

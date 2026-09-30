@@ -1,0 +1,131 @@
+{
+  "job": {
+    "job_id": "r004941_v01",
+    "case_name": "witness",
+    "case_description": "Nama saksi/korban disebut, tetapi bukan target serangan atau pembelaan.",
+    "source": {
+      "source_row": 4941,
+      "source_group": "205a176117c7b3fa14c3",
+      "teks_chat": "aku spy, jadi jangan langsung vote aku cuma karena diem",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 12,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "witness",
+    "participants": [
+      "Yogi",
+      "Zidan",
+      "Anton",
+      "Bila"
+    ],
+    "focus_player": "Bila",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Yogi",
+        "teks_chat": "Zidan mengatakan ada perubahan ajakan vote di chat.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Anton",
+        "teks_chat": "Tadi bilang ada dua pesan, sekarang satu. Yang mana?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Zidan",
+        "teks_chat": "Yang satu ternyata kutipan, jadi hanya satu ajakan baru.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Bila",
+        "teks_chat": "Kalian fokus banget sama cerita saksi.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Yogi",
+        "teks_chat": "Ya karena ucapannya bisa jadi petunjuk penting.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Anton",
+        "teks_chat": "Mari baca pesannya supaya jelas.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Zidan",
+        "teks_chat": "Aku cuma kasih info aja, gak ada niat nipu.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Bila",
+        "teks_chat": "Terus jadinya siapa yang kalian curigain?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Yogi",
+        "teks_chat": "Bila dari tadi nanya doang, mencurigakan.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Bila",
+            "relasi": "offend",
+            "bukti_pesan": [
+              9
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Anton",
+        "teks_chat": "Iya, jangan-jangan dia pelakunya yang pura-pura polos.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Bila",
+            "relasi": "offend",
+            "bukti_pesan": [
+              9
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Zidan",
+        "teks_chat": "Kita harus hati-hati narik kesimpulan.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Bila",
+        "teks_chat": "Ucapan Zidan emang suka beda sama yang awal, tapi yang jelas aku bukan pelakunya, aku cuma Civilian biasa.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Bila",
+            "relasi": "defend",
+            "bukti_pesan": [
+              12
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 72.txt"
+  }
+}

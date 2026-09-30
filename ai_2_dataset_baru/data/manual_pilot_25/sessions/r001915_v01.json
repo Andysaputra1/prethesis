@@ -1,0 +1,143 @@
+{
+  "job": {
+    "job_id": "r001915_v01",
+    "case_name": "witness",
+    "case_description": "Nama saksi/korban disebut, tetapi bukan target serangan atau pembelaan.",
+    "source": {
+      "source_row": 1915,
+      "source_group": "4eb5888dcf22172dfcbd",
+      "teks_chat": "semua orang sibuk bahas Arman, tapi Lilis diam-diam mengubah arah voting dua kali, menurutku Lilis target sebenarnya",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 10,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "witness",
+    "participants": [
+      "Aldo",
+      "Bima",
+      "Cinta",
+      "Reni"
+    ],
+    "focus_player": "Aldo",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Bima",
+        "teks_chat": "Aldo, kamu tadi bilang Reni yang menyarankan ajakan vote itu?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Aldo",
+        "teks_chat": "Iya, aku mengikuti saran Reni.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Reni",
+        "teks_chat": "Aku tidak pernah menyarankan ajakan vote itu.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Cinta",
+        "teks_chat": "Kedua pernyataan itu berbeda, kita perlu membaca urutan chatnya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Bima",
+        "teks_chat": "Aldo, aku curiga kamu Hitman yang mengarang alasan.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Aldo",
+            "relasi": "offend",
+            "bukti_pesan": [
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Aldo",
+        "teks_chat": "Aku bukan Hitman, mungkin aku salah membaca pesan yang dimaksud.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Aldo",
+            "relasi": "defend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Reni",
+        "teks_chat": "Aku curiga kamu menggunakan namaku untuk menghindari pertanyaan.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Aldo",
+            "relasi": "offend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Cinta",
+        "teks_chat": "Aku juga curiga dia sedang mengarang alasan.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Aldo",
+            "relasi": "offend",
+            "bukti_pesan": [
+              7
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Aldo",
+        "teks_chat": "Aku tidak bersalah. Aku mau membaca ulang chat sebelum memberi penjelasan lagi.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Aldo",
+            "relasi": "defend",
+            "bukti_pesan": [
+              9
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Bima",
+        "teks_chat": "Dari keterangan Reni tentang chatnya, aku curiga Aldo Hitman yang mengarang sumber ajakan vote.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Aldo",
+            "relasi": "offend",
+            "bukti_pesan": [
+              10
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 31.txt"
+  }
+}

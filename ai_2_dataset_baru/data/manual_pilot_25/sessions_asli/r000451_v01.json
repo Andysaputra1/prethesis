@@ -1,0 +1,69 @@
+{
+  "job": {
+    "job_id": "r000451_v01",
+    "case_name": "short_history_2",
+    "case_description": "Awal diskusi dengan tepat 2 pesan sebelumnya. Gunakan hanya petunjuk yang tersedia.",
+    "source": {
+      "source_row": 451,
+      "source_group": "fbe0cdf0866fb2c1028e",
+      "teks_chat": "kalau ada bukti konkret soal aku, keluarkan sekarang, jangan cuma spekulasi",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 3,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "short_history_2",
+    "participants": [
+      "Hadi",
+      "Irfan",
+      "Joko",
+      "Kiki"
+    ],
+    "focus_player": "Irfan",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Hadi",
+        "teks_chat": "Dari tadi permainan dimulai Irfan sama sekali tidak mengeluarkan sepatah kata pun di diskusi kita.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Joko",
+        "teks_chat": "Pemain yang memilih untuk diam saja seperti Irfan ini sangat pantas untuk dicurigai sebagai Hitman, mari kita keluarkan dia.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Irfan",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Kiki",
+        "teks_chat": "Irfan belum tentu bersalah, bisa saja dia sedang membaca ulang chat sebelum menyimpulkan sesuatu.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Irfan",
+            "relasi": "defend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 6.txt"
+  }
+}

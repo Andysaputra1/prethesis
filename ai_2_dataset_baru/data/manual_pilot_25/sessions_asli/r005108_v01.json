@@ -1,0 +1,130 @@
+{
+  "job": {
+    "job_id": "r005108_v01",
+    "case_name": "reference_end",
+    "case_description": "Tepat 12 konteks. Penyebutan target eksplisit di pesan konteks terakhir.",
+    "source": {
+      "source_row": 5108,
+      "source_group": "bec1ef998d6ccf596f45",
+      "teks_chat": "aku Spy, semalam aku guard dia, jadi klaim hitman kalian masih belum tentu benar",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 13,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "reference_end",
+    "participants": [
+      "Jaka",
+      "Kiki",
+      "Laras",
+      "Miko",
+      "Nana"
+    ],
+    "focus_player": "Miko",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Jaka",
+        "teks_chat": "Ada yang sadar gak korban semalam siapa ya?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Kiki",
+        "teks_chat": "Gak diumumin aturannya di sini.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Laras",
+        "teks_chat": "Susah dong kita tebaknya kalau gitu.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Miko",
+        "teks_chat": "Kita bahas alasan dan klaim yang ada di chat saja.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Nana",
+        "teks_chat": "Tapi pasti ada petunjuk lah walau disembunyiin.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Jaka",
+        "teks_chat": "Hitman ngincer role penting kayaknya semalam.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Kiki",
+        "teks_chat": "Terus hubungannya sama diskusi kita sekarang apaan?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Laras",
+        "teks_chat": "Kita harus lebih hati-hati aja biar gak salah tuduh.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Miko",
+        "teks_chat": "Setuju, jangan sampai civilian saling vote.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Nana",
+        "teks_chat": "Siapa yang mau di-vote duluan nih kira-kira?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Jaka",
+        "teks_chat": "Belum ada bayangan sama sekali jujur aja.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Kiki",
+        "teks_chat": "Miko mengalihkan pembahasan, aku curiga dia Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Miko",
+            "relasi": "offend",
+            "bukti_pesan": [
+              12
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Laras",
+        "teks_chat": "Usulnya membahas chat belum membuktikan dia Hitman, jangan langsung vote.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Miko",
+            "relasi": "defend",
+            "bukti_pesan": [
+              12
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 74.txt"
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "job": {
+    "job_id": "r003357_v01",
+    "case_name": "outside_window_unknown",
+    "case_description": "14-16 pesan total. Pembahasan lama telah putus/beralih. Teks dan anotasi 12 konteks terakhir tidak cukup menentukan acuan sekarang. Target harus tidak_diketahui; jangan menggunakan informasi lama yang tidak tersedia dalam input.",
+    "source": {
+      "source_row": 3357,
+      "source_group": "a87b79e681a07449be43",
+      "teks_chat": "sumpah bukan dia yang benar, gw punya alasan kenapa pilih target itu",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 14,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "outside_window_unknown",
+    "participants": [
+      "Eka",
+      "Fani",
+      "Gilang",
+      "Hari",
+      "Budi"
+    ],
+    "focus_player": "Budi",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Eka",
+        "teks_chat": "Budi mencurigakan, ayo vote dia!",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Budi",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Fani",
+        "teks_chat": "Sebentar, aku mau memastikan istilah role.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Gilang",
+        "teks_chat": "Ada Hitman, Spy, Stalker, dan Civilian.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Hari",
+        "teks_chat": "Civilian punya skill malam juga?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Budi",
+        "teks_chat": "Tidak punya skill malam.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Eka",
+        "teks_chat": "Kalau skill Hostage milik siapa?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Fani",
+        "teks_chat": "Hitman, dipakai saat malam untuk mengambil satu sandera.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Gilang",
+        "teks_chat": "Gag Order berbeda dari Hostage, ya?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Hari",
+        "teks_chat": "Iya, Gag Order membisukan chat satu pemain saat siang.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Budi",
+        "teks_chat": "Apakah pesan yang terkirim jadi huruf acak?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Eka",
+        "teks_chat": "Tidak, efeknya membungkam chat.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Fani",
+        "teks_chat": "Oke, berarti pesan terpotong belum menunjukkan efek itu.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Gilang",
+        "teks_chat": "Benar, bisa ada masalah pengetikan atau koneksi.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Hari",
+        "teks_chat": "Jangan ikut menuduh dia kalau belum ada bukti.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "tidak_diketahui",
+            "relasi": "defend",
+            "bukti_pesan": []
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 49.txt"
+  }
+}

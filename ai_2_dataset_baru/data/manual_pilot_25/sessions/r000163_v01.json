@@ -1,0 +1,194 @@
+{
+  "job": {
+    "job_id": "r000163_v01",
+    "case_name": "mixed_relations",
+    "case_description": "Membela satu pemain dan menuduh pemain lain. Intent utama offend; simpan kedua relasi.",
+    "source": {
+      "source_row": 163,
+      "source_group": "d9b22193609b0c4ec977",
+      "teks_chat": "si J kelihatan seperti mengatur alur diskusi, kemungkinan besar hitman",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 10,
+    "pesan_typo_ringan": [
+      9
+    ]
+  },
+  "session": {
+    "case_name": "mixed_relations",
+    "participants": [
+      "Rafi",
+      "Sinta",
+      "Tomi",
+      "Umar"
+    ],
+    "focus_player": "",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Sinta",
+        "teks_chat": "Tomi tadi menuduh Rafi, sekarang berganti menuduh Umar.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Tomi",
+        "teks_chat": "Kan informasi yang kita dapat selalu berkembang, Sinta.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Tomi",
+            "relasi": "defend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Rafi",
+        "teks_chat": "Aku bukan pelakunya; tuduhanmu kepadaku tadi tidak memiliki dasar.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Rafi",
+            "relasi": "defend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Umar",
+        "teks_chat": "Sekarang kamu mau menjadikan aku korban fitnahmu selanjutnya?",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Umar",
+            "relasi": "defend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Tomi",
+        "teks_chat": "Rafi dan Umar sama-sama menghindari pertanyaanku soal alasan vote. Aku curiga kalian berdua.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Rafi",
+            "relasi": "offend",
+            "bukti_pesan": [
+              5
+            ]
+          },
+          {
+            "pemain": "Umar",
+            "relasi": "offend",
+            "bukti_pesan": [
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Sinta",
+        "teks_chat": "Jangan asal nuduh gitu dong, caramu main kotor banget.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Rafi",
+            "relasi": "defend",
+            "bukti_pesan": [
+              5
+            ]
+          },
+          {
+            "pemain": "Umar",
+            "relasi": "defend",
+            "bukti_pesan": [
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Tomi",
+        "teks_chat": "Aku ini Civilian, bukan Hitman yang sedang memfitnah kalian!",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Tomi",
+            "relasi": "defend",
+            "bukti_pesan": [
+              7
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Rafi",
+        "teks_chat": "Kalau memang Civilian, harusnya kasih alasan tuduhan yang jelas dong.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Umar",
+        "teks_chat": "Aku tidak bersalah, tuduhanmu tdk berdasar sama sekali.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Umar",
+            "relasi": "defend",
+            "bukti_pesan": [
+              9
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Sinta",
+        "teks_chat": "Umar belum pantas dituduh sebagai Hitman hanya karena telat menjawab. Justru Tomi yang terus memaksakan tuduhan; aku curiga Tomi dan ingin vote dia.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Umar",
+            "relasi": "defend",
+            "bukti_pesan": [
+              10
+            ]
+          },
+          {
+            "pemain": "Tomi",
+            "relasi": "offend",
+            "bukti_pesan": [
+              10
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 2.txt"
+  },
+  "revisi": [
+    {
+      "pesan": 6,
+      "kategori": "label",
+      "alasan": "Menolak tuduhan Tomi terhadap Rafi dan Umar = defend keduanya, bukan neutral; teks juga kaku"
+    },
+    {
+      "pesan": 8,
+      "kategori": "tidak_natural",
+      "alasan": "Kalimat kaku seperti nasihat buku"
+    }
+  ]
+}

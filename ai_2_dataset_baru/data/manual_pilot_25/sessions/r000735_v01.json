@@ -1,0 +1,190 @@
+{
+  "job": {
+    "job_id": "r000735_v01",
+    "case_name": "outside_window_unknown",
+    "case_description": "14-16 pesan total. Pembahasan lama telah putus/beralih. Teks dan anotasi 12 konteks terakhir tidak cukup menentukan acuan sekarang. Target harus tidak_diketahui; jangan menggunakan informasi lama yang tidak tersedia dalam input.",
+    "source": {
+      "source_row": 735,
+      "source_group": "7b39c9198b3574b8ef51",
+      "teks_chat": "aku sudah Peek I, hasilnya dia bukan Hitman, jadi jangan buru-buru vote",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 14,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "outside_window_unknown",
+    "participants": [
+      "Dodi",
+      "Erna",
+      "Fikri",
+      "Gani"
+    ],
+    "focus_player": "Erna",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Dodi",
+        "teks_chat": "Aku curiga Erna Hitman karena mengubah dugaan tanpa penjelasan.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Erna",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Fikri",
+        "teks_chat": "Boleh jeda soal nama? Aku mau bahas kejadian semalam dulu.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Gani",
+        "teks_chat": "Boleh, semalam ada yang ngerasa aneh?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Dodi",
+        "teks_chat": "Aku sih nggak ngerasa apa-apa.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Fikri",
+        "teks_chat": "Aku juga, pagi ini semuanya kelihatan biasa aja.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Gani",
+        "teks_chat": "Ada yang ngaku disandera semalam?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Dodi",
+        "teks_chat": "Belum ada yang ngaku sampai sekarang.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Fikri",
+        "teks_chat": "Jadi kita belum punya petunjuk apa-apa dari semalam.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Gani",
+        "teks_chat": "Iya, kita cuma bisa ngandelin obrolan siang ini.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Dodi",
+        "teks_chat": "Kalau gitu jangan asal nebak dari siapa yang diam.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Fikri",
+        "teks_chat": "Iya, kita masih perlu membaca ucapan dan alasannya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Gani",
+        "teks_chat": "Oke, soal semalam cukup segitu dulu.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Dodi",
+        "teks_chat": "Sekarang kembali ke orang yang dibahas sebelum kita ngomongin soal semalam.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Fikri",
+        "teks_chat": "Aku membela dia. Mengubah dugaan saja belum membuatnya Hitman.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "tidak_diketahui",
+            "relasi": "defend",
+            "bukti_pesan": []
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 14.txt"
+  },
+  "revisi": [
+    {
+      "pesan": 2,
+      "kategori": "meta",
+      "alasan": "Meminta penjelasan perbedaan skill Hostage dan Gag Order."
+    },
+    {
+      "pesan": 3,
+      "kategori": "meta",
+      "alasan": "Menjelaskan skill Hostage."
+    },
+    {
+      "pesan": 4,
+      "kategori": "meta",
+      "alasan": "Menanyakan waktu pemakaian Gag Order."
+    },
+    {
+      "pesan": 5,
+      "kategori": "meta",
+      "alasan": "Menjelaskan fungsi Gag Order."
+    },
+    {
+      "pesan": 6,
+      "kategori": "meta",
+      "alasan": "Menanyakan aturan pengumuman korban."
+    },
+    {
+      "pesan": 7,
+      "kategori": "meta",
+      "alasan": "Kebocoran aturan: identitas korban tidak diumumkan."
+    },
+    {
+      "pesan": 8,
+      "kategori": "meta",
+      "alasan": "Lanjutan penjelasan aturan korban."
+    },
+    {
+      "pesan": 9,
+      "kategori": "meta",
+      "alasan": "Menjelaskan kemungkinan 'efek skill' sebagai aturan."
+    },
+    {
+      "pesan": 10,
+      "kategori": "meta",
+      "alasan": "Menyimpulkan aturan penentuan role."
+    },
+    {
+      "pesan": 12,
+      "kategori": "meta",
+      "alasan": "Menyebut 'perbedaan skillnya sudah jelas' (sesi penjelasan aturan)."
+    },
+    {
+      "pesan": 13,
+      "kategori": "meta",
+      "alasan": "Merujuk 'membandingkan skill'; disesuaikan dengan obrolan baru."
+    }
+  ]
+}

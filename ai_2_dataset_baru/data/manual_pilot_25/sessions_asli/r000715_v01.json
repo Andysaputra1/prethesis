@@ -1,0 +1,159 @@
+{
+  "job": {
+    "job_id": "r000715_v01",
+    "case_name": "stance_change",
+    "case_description": "Pengirim pesan sekarang sebelumnya menuduh atau membela seorang pemain di konteks, lalu berubah sikap terhadap pemain yang sama. Anotasi mengikuti sikap terbaru.",
+    "source": {
+      "source_row": 715,
+      "source_group": "d3b342517a1defcb193d",
+      "teks_chat": "gw belum memberikan vote sebelum tribunal dibuka, jadi bagian itu bukan dari gw",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 10,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "stance_change",
+    "participants": [
+      "Gilang",
+      "Lila",
+      "Maman",
+      "Nisa"
+    ],
+    "focus_player": "Maman",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Gilang",
+        "teks_chat": "Korban diculik tapi namanya disembunyiin nih, siapa ya kira-kira?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Lila",
+        "teks_chat": "Maman kok dari tadi anteng-anteng aja? Pasti dia yang narik korbannya kan!",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Maman",
+            "relasi": "offend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Maman",
+        "teks_chat": "Apaan sih? Aku dari tadi lagi pusing nyari petunjuk, jangan asal nuduh.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Maman",
+            "relasi": "defend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Nisa",
+        "teks_chat": "Jangan-jangan Maman ini beneran Hitman Hostage-nya, ayo vote Maman!",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Maman",
+            "relasi": "offend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Gilang",
+        "teks_chat": "Iya tuh, alibinya kurang kuat, mencurigakan banget.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Maman",
+            "relasi": "offend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Maman",
+        "teks_chat": "Aku bukan Hitman. Ketenanganku tidak membuktikan aku pelakunya.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Maman",
+            "relasi": "defend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Lila",
+        "teks_chat": "Aku tetap curiga kamu sedang berpura-pura tenang untuk menghindari tuduhan.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Maman",
+            "relasi": "offend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Nisa",
+        "teks_chat": "Aku setuju sama Lila, udh fix kita keluarin Maman aja ronde ini.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Maman",
+            "relasi": "offend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Gilang",
+        "teks_chat": "Kita tidak tahu siapa korban, dan sikap tenang bukan bukti bahwa seseorang pelakunya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Nisa",
+        "teks_chat": "Benar, aku tarik tuduhanku kepada Maman. Aku terlalu cepat menganggap sikap tenangnya sebagai bukti.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Maman",
+            "relasi": "defend",
+            "bukti_pesan": [
+              10
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 14.txt"
+  }
+}

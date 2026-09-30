@@ -1,0 +1,84 @@
+{
+  "job": {
+    "job_id": "r004344_v01",
+    "case_name": "agreement",
+    "case_description": "Pesan sekarang menyetujui atau membantah pesan pemain lain di konteks tanpa menyebut ulang nama target. Setuju dengan tuduhan = offend pemain yang dituduh; membantah tuduhan atau setuju dengan pembelaan = defend. Identitas target diwarisi dari pesan yang ditanggapi.",
+    "source": {
+      "source_row": 4344,
+      "source_group": "974f8fe62facfae0b169",
+      "teks_chat": "si E kelihatan santai banget setelah korban jatuh, kok nggak ada yang bahas itu?",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 3,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "agreement",
+    "participants": [
+      "Lani",
+      "Reno",
+      "Hadi",
+      "Siti"
+    ],
+    "focus_player": "Siti",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Lani",
+        "teks_chat": "Klaim Siti berubah dari Civilian ke Spy. Aku curiga dia Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Siti",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Reno",
+        "teks_chat": "Iya, klaimnya memang patut dipertanyakan.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Siti",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Hadi",
+        "teks_chat": "Aku sepenuhnya setuju, dia tidak bisa dipercaya dan pantas kita naikkan.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Siti",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 64.txt"
+  },
+  "revisi": [
+    {
+      "pesan": 2,
+      "kategori": "tidak_natural",
+      "alasan": "Kalimat kaku ('layak untuk kita pertanyakan kebenarannya')"
+    }
+  ]
+}

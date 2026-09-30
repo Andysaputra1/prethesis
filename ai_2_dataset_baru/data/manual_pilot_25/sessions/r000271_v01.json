@@ -1,0 +1,189 @@
+{
+  "job": {
+    "job_id": "r000271_v01",
+    "case_name": "mixed_relations",
+    "case_description": "Membela satu pemain dan menuduh pemain lain. Intent utama offend; simpan kedua relasi.",
+    "source": {
+      "source_row": 271,
+      "source_group": "b487bb51822d8bb8ccfb",
+      "teks_chat": "si Luthfi dari tadi cuma ikut suara mayoritas, menurut gw dia Hitman yang main aman",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 10,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "mixed_relations",
+    "participants": [
+      "Aldo",
+      "Bela",
+      "Ciko",
+      "Dika",
+      "Elin"
+    ],
+    "focus_player": "",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Aldo",
+        "teks_chat": "Gimana nih, semalam ada yang disandera tapi kita nggak tahu siapa.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Bela",
+        "teks_chat": "Iya, bikin pusing, kita cuma bisa nebak dari obrolan.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Ciko",
+        "teks_chat": "Aku menaruh curiga pada Dika, dari awal dia tidak menjawab pertanyaan soal pilihan vote.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Dika",
+            "relasi": "offend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Dika",
+        "teks_chat": "Aku bukan Hitman. Aku sedang membaca ulang percakapan sebelum menjawab.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Dika",
+            "relasi": "defend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Aldo",
+        "teks_chat": "Jawabanmu di chat tetap membuatku curiga kamu Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Dika",
+            "relasi": "offend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Elin",
+        "teks_chat": "Dika belum pantas dituduh hanya karena butuh waktu membaca chat.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Dika",
+            "relasi": "defend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Bela",
+        "teks_chat": "Tumben sekali Elin bergerak sangat cepat membela orang lain.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Elin",
+            "relasi": "offend",
+            "bukti_pesan": [
+              7
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Ciko",
+        "teks_chat": "Benar sekali, baru juga diberi tekanan sedikit langsung ada yang pasang badan.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Elin",
+            "relasi": "offend",
+            "bukti_pesan": [
+              7
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Dika",
+        "teks_chat": "Aku tidak bersalah; aku tadi hanya membaca ulang chat.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Dika",
+            "relasi": "defend",
+            "bukti_pesan": [
+              9
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Aldo",
+        "teks_chat": "Dika belum pantas dituduh hanya karena lambat menjawab. Justru Elin yang aku curigai sebagai Hitman karena terlalu cepat memastikan orang lain aman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Dika",
+            "relasi": "defend",
+            "bukti_pesan": [
+              10
+            ]
+          },
+          {
+            "pemain": "Elin",
+            "relasi": "offend",
+            "bukti_pesan": [
+              10
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 3.txt"
+  },
+  "revisi": [
+    {
+      "pesan": 1,
+      "kategori": "meta",
+      "alasan": "Menjelaskan aturan identitas korban tidak diumumkan"
+    },
+    {
+      "pesan": 2,
+      "kategori": "meta",
+      "alasan": "Menjelaskan skill Hostage milik Hitman seperti deskripsi game"
+    },
+    {
+      "pesan": 7,
+      "kategori": "label",
+      "alasan": "Sindiran jelas yang mencurigai Elin (terlalu cepat membela) = offend Elin"
+    },
+    {
+      "pesan": 8,
+      "kategori": "label",
+      "alasan": "Menyetujui kecurigaan terhadap Elin di pesan 7 = offend Elin"
+    }
+  ]
+}

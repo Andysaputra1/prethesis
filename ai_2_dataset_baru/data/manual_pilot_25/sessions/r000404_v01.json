@@ -1,0 +1,133 @@
+{
+  "job": {
+    "job_id": "r000404_v01",
+    "case_name": "self",
+    "case_description": "Defend diri sendiri atau offend/vote diri sendiri sesuai label. Target = pengirim.",
+    "source": {
+      "source_row": 404,
+      "source_group": "e60253fc0092188715ea",
+      "teks_chat": "dari awal gw konsisten, coba cek lagi sebelum vote",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 11,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "self",
+    "participants": [
+      "Wawan",
+      "Xena",
+      "Yogi",
+      "Zain"
+    ],
+    "focus_player": "Wawan",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Xena",
+        "teks_chat": "Bagian mana dari diskusi tadi yang perlu kita periksa lagi?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Yogi",
+        "teks_chat": "Aku ingin membahas orang yang tidak menjawab soal alasan vote.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Zain",
+        "teks_chat": "Kita bisa mulai dari pertanyaan yang belum terjawab.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Xena",
+        "teks_chat": "Wawan, tadi alasanmu mengajak vote apa?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Yogi",
+        "teks_chat": "Aku juga belum membaca jawaban Wawan.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Zain",
+        "teks_chat": "Aku curiga Wawan Hitman yang sengaja tidak mau menjelaskan alasannya.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Wawan",
+            "relasi": "offend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Xena",
+        "teks_chat": "Aku setuju, aku juga curiga dia.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Wawan",
+            "relasi": "offend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Yogi",
+        "teks_chat": "Wawan, kamu masih bisa ikut menjawab?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Zain",
+        "teks_chat": "Kalau tidak ada penjelasan, aku ingin vote Wawan.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Wawan",
+            "relasi": "offend",
+            "bukti_pesan": [
+              9
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Xena",
+        "teks_chat": "Kita beri waktu sebentar untuk menjawab.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Wawan",
+        "teks_chat": "Aku bukan Hitman. Aku menarik ajakan vote tadi karena sadar alasannya belum kuat, bukan sedang menyusun fitnah.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Wawan",
+            "relasi": "defend",
+            "bukti_pesan": [
+              11
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 5.txt"
+  }
+}

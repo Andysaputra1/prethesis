@@ -1,0 +1,125 @@
+{
+  "job": {
+    "job_id": "r003256_v01",
+    "case_name": "mixed_relations",
+    "case_description": "Membela satu pemain dan menuduh pemain lain. Intent utama offend; simpan kedua relasi.",
+    "source": {
+      "source_row": 3256,
+      "source_group": "9d4712ba52e73ed37325",
+      "teks_chat": "jangan kejebak tuduhan kosong, aku warga biasa dan target voting kita harus pemain yang kontradiktif",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 7,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "mixed_relations",
+    "participants": [
+      "Lia",
+      "Kevin",
+      "Rian",
+      "Sari",
+      "Wawan"
+    ],
+    "focus_player": "",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Lia",
+        "teks_chat": "Aku membaca perubahan ajakan vote yang aneh dalam chat.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Kevin",
+        "teks_chat": "Siapa yang kamu maksud aneh?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Lia",
+        "teks_chat": "Rian mengubah ajakan vote tanpa menjelaskan alasan. Aku curiga dia Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Rian",
+            "relasi": "offend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Rian",
+        "teks_chat": "Aku cuma menyesuaikan dengan diskusi kita tadi.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Rian",
+            "relasi": "defend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Sari",
+        "teks_chat": "Tapi memang kelihatan sekali kamu mau mencari posisi aman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Rian",
+            "relasi": "offend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Wawan",
+        "teks_chat": "Jangan pada menyudutkan Rian dulu.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Rian",
+            "relasi": "defend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Kevin",
+        "teks_chat": "Rian itu jelas bukan Hitman, justru si Lia yang paling mencurigakan karena sengaja melempar isu.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Rian",
+            "relasi": "defend",
+            "bukti_pesan": [
+              7
+            ]
+          },
+          {
+            "pemain": "Lia",
+            "relasi": "offend",
+            "bukti_pesan": [
+              7
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 47.txt"
+  }
+}

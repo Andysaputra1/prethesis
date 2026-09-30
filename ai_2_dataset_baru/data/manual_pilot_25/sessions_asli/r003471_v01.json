@@ -1,0 +1,110 @@
+{
+  "job": {
+    "job_id": "r003471_v01",
+    "case_name": "neutral_after_accusation",
+    "case_description": "Konteks berisi tuduhan, tetapi pesan sekarang neutral; jangan mewarisi relasi lama.",
+    "source": {
+      "source_row": 3471,
+      "source_group": "c8f824440ee7f9f48f0f",
+      "teks_chat": "Semalam aku hanya menerima hasil fase pagi dan tidak melakukan tindakan lain",
+      "label_intent": "neutral"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 6,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "neutral_after_accusation",
+    "participants": [
+      "Doni",
+      "Hasan",
+      "Eka"
+    ],
+    "focus_player": "",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Doni",
+        "teks_chat": "Si Eka dari kemaren nuduhnya ganti-ganti terus, fix dia hitman!",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Eka",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Hasan",
+        "teks_chat": "Iya, Eka ga konsisten sama sekali argumennya.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Eka",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Eka",
+        "teks_chat": "Aku bukan Hitman, aku mengikuti info baru dalam chat.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Eka",
+            "relasi": "defend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Doni",
+        "teks_chat": "Alasan terus, mending kita kumpul vote buat Eka aja sekarang.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Eka",
+            "relasi": "offend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Hasan",
+        "teks_chat": "Setuju, vote Eka aja biar cepat kelar.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Eka",
+            "relasi": "offend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Eka",
+        "teks_chat": "Sisa waktu diskusinya tinggal berapa detik lagi sih ini?",
+        "label_intent": "neutral",
+        "target": []
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 53.txt"
+  }
+}

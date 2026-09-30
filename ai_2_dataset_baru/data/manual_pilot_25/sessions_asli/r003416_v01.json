@@ -1,0 +1,167 @@
+{
+  "job": {
+    "job_id": "r003416_v01",
+    "case_name": "witness",
+    "case_description": "Nama saksi/korban disebut, tetapi bukan target serangan atau pembelaan.",
+    "source": {
+      "source_row": 3416,
+      "source_group": "526d04983a33470466a0",
+      "teks_chat": "susnya bukan aku, coba lihat siapa yang langsung ikut menekan vote",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 11,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "witness",
+    "participants": [
+      "Rudi",
+      "Toni",
+      "Umar",
+      "Vina",
+      "Wawan",
+      "Siska"
+    ],
+    "focus_player": "Wawan",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Rudi",
+        "teks_chat": "Siska dieksekusi pada Tribunal sebelumnya, ya?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Toni",
+        "teks_chat": "Iya, pilihan suara terbanyak mengarah kepadanya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Umar",
+        "teks_chat": "Kita perlu lebih hati-hati menilai alasan vote berikutnya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Vina",
+        "teks_chat": "Wawan paling sering mengajak vote tanpa alasan. Aku curiga dia Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Wawan",
+            "relasi": "offend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Wawan",
+        "teks_chat": "Aku bukan Hitman, aku mengikuti pendapat diskusi.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Wawan",
+            "relasi": "defend",
+            "bukti_pesan": [
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Rudi",
+        "teks_chat": "Aku tetap curiga Wawan Hitman karena dia yang memulai ajakan.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Wawan",
+            "relasi": "offend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Toni",
+        "teks_chat": "Aku membaca ajakan Wawan di chat, aku juga curiga dia pelakunya.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Wawan",
+            "relasi": "offend",
+            "bukti_pesan": [
+              7
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Wawan",
+        "teks_chat": "Aku bukan Hitman, ajakanku punya alasan.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Wawan",
+            "relasi": "defend",
+            "bukti_pesan": [
+              8
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Umar",
+        "teks_chat": "Aku masih curiga Wawan Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Wawan",
+            "relasi": "offend",
+            "bukti_pesan": [
+              9
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Vina",
+        "teks_chat": "Aku mendukung vote Wawan karena alasannya belum jelas.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Wawan",
+            "relasi": "offend",
+            "bukti_pesan": [
+              10
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Rudi",
+        "teks_chat": "Toni juga membaca ajakannya. Ayo vote Wawan, aku yakin dia Hitman!",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Wawan",
+            "relasi": "offend",
+            "bukti_pesan": [
+              11
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 51.txt"
+  }
+}

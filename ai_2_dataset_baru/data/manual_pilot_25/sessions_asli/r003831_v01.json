@@ -1,0 +1,123 @@
+{
+  "job": {
+    "job_id": "r003831_v01",
+    "case_name": "nickname",
+    "case_description": "Pesan sekarang menyebut pemain dengan nama panggilan, singkatan, atau salah ketik ringan (Andy -> ndy, andi, si And) tanpa menulis nama aslinya. Catat sebutan itu di panggilan. Target tetap memakai nama asli; jika neutral, target kosong.",
+    "source": {
+      "source_row": 3831,
+      "source_group": "b2fa96f0eb9faf309a27",
+      "teks_chat": "saya Civilian biasa, tidak ada kemampuan yang bisa saya gunakan",
+      "label_intent": "neutral"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 6,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "nickname",
+    "participants": [
+      "Bima",
+      "Yuda",
+      "Rina"
+    ],
+    "focus_player": "Yuda",
+    "panggilan": [
+      {
+        "pemain": "Yuda",
+        "sebutan": [
+          "Yud"
+        ]
+      },
+      {
+        "pemain": "Bima",
+        "sebutan": [
+          "Bim"
+        ]
+      }
+    ],
+    "messages": [
+      {
+        "pengirim": "Bima",
+        "teks_chat": "Yuda menuduh aku lalu Rina tanpa alasan. Aku curiga Yuda Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Yuda",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Yuda",
+        "teks_chat": "Kan infonya berkembang terus, Bim.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Yuda",
+            "relasi": "defend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Rina",
+        "teks_chat": "Tuduhan yang berubah-ubah gitu biasanya ciri khas Hitman yang lagi panik.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Yuda",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Yuda",
+        "teks_chat": "Enak aja, aku ini Civilian tulen kok!",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Yuda",
+            "relasi": "defend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Bima",
+        "teks_chat": "Pokoknya kelakuan Yuda sus banget hari ini.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Yuda",
+            "relasi": "offend",
+            "bukti_pesan": [
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Rina",
+        "teks_chat": "Yud, ngomong-ngomong sekarang status peran kamu apa?",
+        "label_intent": "neutral",
+        "target": []
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 60.txt"
+  }
+}

@@ -1,0 +1,133 @@
+{
+  "job": {
+    "job_id": "r000623_v01",
+    "case_name": "outside_window_unknown",
+    "case_description": "14-16 pesan total. Pembahasan lama telah putus/beralih. Teks dan anotasi 12 konteks terakhir tidak cukup menentukan acuan sekarang. Target harus tidak_diketahui; jangan menggunakan informasi lama yang tidak tersedia dalam input.",
+    "source": {
+      "source_row": 623,
+      "source_group": "e28963554d467c61e84c",
+      "teks_chat": "tuduhan ini terasa seperti gertakan murahan supaya gw panik dan salah ngomong",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 14,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "outside_window_unknown",
+    "participants": [
+      "Wawan",
+      "Xena",
+      "Yoga",
+      "Zain"
+    ],
+    "focus_player": "Xena",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Wawan",
+        "teks_chat": "Aku membela Xena, tuduhan kepadanya belum berdasar.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Xena",
+            "relasi": "defend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Yoga",
+        "teks_chat": "Sebelum lanjut, apakah Civilian punya skill malam?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Zain",
+        "teks_chat": "Civilian berpartisipasi lewat diskusi dan voting, tanpa skill khusus itu.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Wawan",
+        "teks_chat": "Kalau begitu, diam saat malam berlaku untuk semua role?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Yoga",
+        "teks_chat": "Iya, chat terkunci untuk semua saat fase malam.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Zain",
+        "teks_chat": "Jadi tidak adanya chat malam bukan perilaku mencurigakan.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Wawan",
+        "teks_chat": "Betul, memang tidak ada yang bisa berdiskusi saat itu.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Yoga",
+        "teks_chat": "Lalu apakah kita tahu siapa yang menjadi korban Hostage?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Zain",
+        "teks_chat": "Identitas korban tidak diumumkan ke publik.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Wawan",
+        "teks_chat": "Berarti roster tidak boleh dipakai menebak siapa korban.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Yoga",
+        "teks_chat": "Iya, status tersembunyi itu bukan informasi dari chat.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Zain",
+        "teks_chat": "Sekarang batas informasi publiknya sudah lebih jelas.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Wawan",
+        "teks_chat": "Aku ingin kembali ke orang yang kubela sebelum kita membahas aturan.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Yoga",
+        "teks_chat": "Aku juga membela dia, belum ada alasan kuat untuk menyebutnya Hitman.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "tidak_diketahui",
+            "relasi": "defend",
+            "bukti_pesan": []
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 11.txt"
+  }
+}

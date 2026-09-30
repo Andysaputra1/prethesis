@@ -1,0 +1,167 @@
+{
+  "job": {
+    "job_id": "r002886_v01",
+    "case_name": "quotation",
+    "case_description": "Ada tuduhan yang dikutip; bedakan sikap pengirim dari ucapan orang yang dikutip.",
+    "source": {
+      "source_row": 2886,
+      "source_group": "50d48188667b1daa177d",
+      "teks_chat": "gw sudah membersihkan nama gw, sekarang vote si Jovan yang alibinya paling bolong",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 9,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "quotation",
+    "participants": [
+      "Yoga",
+      "Zahra",
+      "Andi"
+    ],
+    "focus_player": "Zahra",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Yoga",
+        "teks_chat": "Zahra menuduh berganti-ganti tanpa alasan, aku curiga dia Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Zahra",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Zahra",
+        "teks_chat": "Aku kan cuma ngasih analisa aja.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Zahra",
+            "relasi": "defend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Andi",
+        "teks_chat": "Aku juga curiga Zahra Hitman yang menebar tuduhan.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Zahra",
+            "relasi": "offend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Zahra",
+        "teks_chat": "Maksudnya aku lagi nimbang-nimbang kemungkinan.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Zahra",
+            "relasi": "defend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Yoga",
+        "teks_chat": "Kelihatan banget lu lagi panik.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Zahra",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Andi",
+        "teks_chat": "Setuju, biasanya yang plin-plan itu yang hitmannya.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Zahra",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Zahra",
+        "teks_chat": "Aku nggak panik kok, beneran deh.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Zahra",
+            "relasi": "defend",
+            "bukti_pesan": [
+              7
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Yoga",
+        "teks_chat": "Ah, ngeles aja lu.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Zahra",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Andi",
+        "teks_chat": "Seperti yang Yoga bilang 'Zahra menuduh berganti-ganti tanpa alasan', itu bukti kalau Zahra memang berniat ngadu domba kita, vote Zahra aja!",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Zahra",
+            "relasi": "offend",
+            "bukti_pesan": [
+              9
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 42.txt"
+  },
+  "revisi": [
+    {
+      "pesan": 9,
+      "kategori": "tidak_natural",
+      "alasan": "Kutipan tidak sesuai dengan ucapan Yoga di pesan 1"
+    }
+  ]
+}

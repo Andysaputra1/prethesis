@@ -1,0 +1,61 @@
+{
+  "job": {
+    "job_id": "r003539_v01",
+    "case_name": "neutral_after_accusation",
+    "case_description": "Konteks berisi tuduhan, tetapi pesan sekarang neutral; jangan mewarisi relasi lama.",
+    "source": {
+      "source_row": 3539,
+      "source_group": "1190eb17b53d67a52be7",
+      "teks_chat": "aku civilian, makanya dari tadi cuma baca chat",
+      "label_intent": "neutral"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 2,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "neutral_after_accusation",
+    "participants": [
+      "Yadi",
+      "Zara",
+      "Wira"
+    ],
+    "focus_player": "",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Yadi",
+        "teks_chat": "Si Zara cepet banget ngebelain Wira tadi, pasti mereka sekongkol tuh.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Zara",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          },
+          {
+            "pemain": "Wira",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Zara",
+        "teks_chat": "Ngomong-ngomong, siapa yang mau membagikan klaim pilihan Guard semalam?",
+        "label_intent": "neutral",
+        "target": []
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 54.txt"
+  }
+}

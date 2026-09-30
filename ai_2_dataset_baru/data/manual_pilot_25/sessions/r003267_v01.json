@@ -1,0 +1,120 @@
+{
+  "job": {
+    "job_id": "r003267_v01",
+    "case_name": "topic_switch",
+    "case_description": "Pembahasan berganti pemain; pesan sekarang mengikuti topik baru, bukan otomatis target lama.",
+    "source": {
+      "source_row": 3267,
+      "source_group": "8d8c5d46dc39b32213c0",
+      "teks_chat": "aku siap diverifikasi lewat diskusi, tapi sebelum itu kita bahas kenapa si E menolak jawab",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 6,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "topic_switch",
+    "participants": [
+      "Yusuf",
+      "Farah",
+      "Lukman",
+      "Tari",
+      "Tio"
+    ],
+    "focus_player": "Tio",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Yusuf",
+        "teks_chat": "Lukman telat membalas pertanyaan, aku curiga dia Hitman yang menghindari diskusi.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Lukman",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Farah",
+        "teks_chat": "Wah iya, Lukman sangat mencurigakan.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Lukman",
+            "relasi": "offend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Lukman",
+        "teks_chat": "Bukan aku pelakunya! Aku tadi ke kamar kecil sebentar.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Lukman",
+            "relasi": "defend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Tari",
+        "teks_chat": "Itu cuma alasan kamu untuk menutupi jejak.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Lukman",
+            "relasi": "offend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Yusuf",
+        "teks_chat": "Tapi sekarang aku curiga Tio Hitman, dia juga tidak membalas pertanyaan.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Tio",
+            "relasi": "offend",
+            "bukti_pesan": [
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Farah",
+        "teks_chat": "Benar juga, pasti dia yang melakukan itu, ayo kita keluarkan dia!",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Tio",
+            "relasi": "offend",
+            "bukti_pesan": [
+              5
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 47.txt"
+  }
+}

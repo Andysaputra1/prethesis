@@ -1,0 +1,111 @@
+{
+  "job": {
+    "job_id": "r000423_v01",
+    "case_name": "rhetorical_question",
+    "case_description": "Pesan sekarang berbentuk pertanyaan retoris yang sebenarnya menuduh atau membela, misalnya 'kenapa Andy diam terus?' (offend) atau 'masa sih Andy Hitman?' (defend). Bukan pertanyaan informasi.",
+    "source": {
+      "source_row": 423,
+      "source_group": "0e077759aed0524d30dc",
+      "teks_chat": "tuduhan ke aku masih asumsi doang, belum ada bukti yang jelas",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 6,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "rhetorical_question",
+    "participants": [
+      "Jaka",
+      "Kiki",
+      "Lina",
+      "Mamat"
+    ],
+    "focus_player": "Kiki",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Jaka",
+        "teks_chat": "Kiki tadi mengajak vote Lina, lalu bilang belum menentukan pilihan. Aku curiga Kiki.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Kiki",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Kiki",
+        "teks_chat": "Aku tidak bermaksud menipu. Aku menarik ajakan itu karena alasannya belum kuat.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Kiki",
+            "relasi": "defend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Lina",
+        "teks_chat": "Jadi sekarang kamu belum ingin mengajak vote siapa pun?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Jaka",
+        "teks_chat": "Kiki pasti berbohong, aku ingin vote Kiki.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Kiki",
+            "relasi": "offend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Kiki",
+        "teks_chat": "Aku bukan Hitman. Mengubah pendapat setelah berpikir lagi bukan berarti aku berbohong.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Kiki",
+            "relasi": "defend",
+            "bukti_pesan": [
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Mamat",
+        "teks_chat": "Masa Kiki langsung dianggap Hitman hanya karena menarik dugaan yang belum kuat? Jangan tuduh dia begitu.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Kiki",
+            "relasi": "defend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 6.txt"
+  }
+}

@@ -1,0 +1,120 @@
+{
+  "job": {
+    "job_id": "r004518_v01",
+    "case_name": "agreement",
+    "case_description": "Pesan sekarang menyetujui atau membantah pesan pemain lain di konteks tanpa menyebut ulang nama target. Setuju dengan tuduhan = offend pemain yang dituduh; membantah tuduhan atau setuju dengan pembelaan = defend. Identitas target diwarisi dari pesan yang ditanggapi.",
+    "source": {
+      "source_row": 4518,
+      "source_group": "69d113fadb48a6111209",
+      "teks_chat": "tadi aku kena gag order dan tidak sempat menjawab, coba lihat siapa yang paling diuntungkan dari itu",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 9,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "agreement",
+    "participants": [
+      "Omar",
+      "Putri",
+      "Qori"
+    ],
+    "focus_player": "Omar",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Omar",
+        "teks_chat": "Aku klaim Spy, pilihan Guard-ku Putri semalam.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Qori",
+        "teks_chat": "Apa alasan memilih Putri?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Omar",
+        "teks_chat": "Aku memilihnya karena dia aktif berdiskusi.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Qori",
+        "teks_chat": "Oke, itu alasan pilihanmu.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Omar",
+        "teks_chat": "Aku tidak berbohong soal klaimku.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Omar",
+            "relasi": "defend",
+            "bukti_pesan": [
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Qori",
+        "teks_chat": "Aku curiga Omar Hitman yang memakai klaim palsu.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Omar",
+            "relasi": "offend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Putri",
+        "teks_chat": "Klaim Omar belum terbukti palsu. Aku menolak vote dia.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Omar",
+            "relasi": "defend",
+            "bukti_pesan": [
+              7
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Qori",
+        "teks_chat": "Jadi alasan tuduhanku memang belum cukup.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Qori",
+        "teks_chat": "Aku setuju dengan Putri, jangan vote dia hanya berdasarkan dugaan itu.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Omar",
+            "relasi": "defend",
+            "bukti_pesan": [
+              7
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 67.txt"
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "job": {
+    "job_id": "r003185_v01",
+    "case_name": "first_message_self",
+    "case_description": "Pesan pertama tanpa konteks membela atau menuduh diri sendiri. Target = pengirim; tidak perlu riwayat untuk memahami aku.",
+    "source": {
+      "source_row": 3185,
+      "source_group": "f91edf839a6718c03986",
+      "teks_chat": "Sus, jangan jadikan satu kalimat sebagai bukti tunggal. Lihat keseluruhan pola chat dan perubahan sikap tiap ronde",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 1,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "first_message_self",
+    "participants": [
+      "Mario"
+    ],
+    "focus_player": "Mario",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Mario",
+        "teks_chat": "Vote aku saja sekarang, biar cepat ada pilihan.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Mario",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 46.txt"
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "job": {
+    "job_id": "r005268_v01",
+    "case_name": "neutral_status",
+    "case_description": "Klaim status/role atau pertanyaan informasi saja tanpa pembelaan/serangan; target kosong.",
+    "source": {
+      "source_row": 5268,
+      "source_group": "6a896601f8d3c1937d41",
+      "teks_chat": "oh jadi malamnya semua orang bertindak diam-diam",
+      "label_intent": "neutral"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 3,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "neutral_status",
+    "participants": [
+      "Maman",
+      "Nanda"
+    ],
+    "focus_player": "",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Maman",
+        "teks_chat": "Korban yang semalam siapa ya, ada yang tahu?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Nanda",
+        "teks_chat": "Belum ada yang tahu, kita cuma bisa ngira-ngira aja sekarang.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Maman",
+        "teks_chat": "Aku klaim Stalker. Belum ada hasil Peek yang ingin kubagikan sekarang.",
+        "label_intent": "neutral",
+        "target": []
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 76.txt"
+  },
+  "revisi": [
+    {
+      "pesan": 1,
+      "kategori": "meta",
+      "alasan": "Menanyakan aturan apakah identitas korban diumumkan."
+    },
+    {
+      "pesan": 2,
+      "kategori": "meta",
+      "alasan": "Menyetujui aturan korban tidak diumumkan; disesuaikan dengan pesan 1 baru."
+    }
+  ]
+}

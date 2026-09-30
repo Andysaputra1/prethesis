@@ -1,0 +1,215 @@
+{
+  "job": {
+    "job_id": "r001410_v01",
+    "case_name": "memory_outside_window",
+    "case_description": "14-16 pesan total. Nama target hanya disebut sebelum 12 konteks terakhir. Dalam jendela, ada pesan yang meneruskan acuan dengan jelas dan menyimpan anotasi target berdasarkan pesan lama. Pesan sekarang merujuk target sama. Nama target tidak muncul dalam teks 12 konteks terakhir atau pesan sekarang; target diketahui lewat memori.",
+    "source": {
+      "source_row": 1410,
+      "source_group": "d4a6908ddc6898bde76a",
+      "teks_chat": "aku tidak menolak pemeriksaan, tetapi alasan si C menuduhku sama sekali tidak jelas",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 14,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "memory_outside_window",
+    "participants": [
+      "Iwan",
+      "Joni",
+      "Kiki",
+      "Luki"
+    ],
+    "focus_player": "Luki",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Iwan",
+        "teks_chat": "Luki tadi menuduh seseorang lalu menariknya tanpa penjelasan.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Joni",
+        "teks_chat": "Iya, plin-plan banget bikin pusing.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Kiki",
+        "teks_chat": "Pasti dia Hitman yang nutupin kedok.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Luki",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Luki",
+        "teks_chat": "Aku bukan Hitman. Aku menarik dugaan setelah membaca jawaban yang terlewat.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Luki",
+            "relasi": "defend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Iwan",
+        "teks_chat": "Aku tetap curiga dia sengaja mengubah cerita.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Luki",
+            "relasi": "offend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Joni",
+        "teks_chat": "Udah jelas dia bohong.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Luki",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Kiki",
+        "teks_chat": "Vote aja langsung.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Luki",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Luki",
+        "teks_chat": "Sumpah aku civilian.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Luki",
+            "relasi": "defend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Iwan",
+        "teks_chat": "Nggak ada yang percaya.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Luki",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Joni",
+        "teks_chat": "Kumpul suara yuk.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Luki",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Kiki",
+        "teks_chat": "Ayo cepetan.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Luki",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Luki",
+        "teks_chat": "Aku tidak bersalah, tolong baca jawaban yang membuatku menarik dugaan.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Luki",
+            "relasi": "defend",
+            "bukti_pesan": [
+              12
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Iwan",
+        "teks_chat": "Nggak usah banyak ngeles.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Luki",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Joni",
+        "teks_chat": "Aku tarik tuduhan kepadanya. Urutan chat menunjukkan ada jawaban baru sebelum dia mengoreksi dugaan.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Luki",
+            "relasi": "defend",
+            "bukti_pesan": [
+              13
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 25.txt"
+  }
+}

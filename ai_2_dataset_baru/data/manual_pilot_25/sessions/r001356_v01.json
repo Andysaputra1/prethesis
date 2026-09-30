@@ -1,0 +1,71 @@
+{
+  "job": {
+    "job_id": "r001356_v01",
+    "case_name": "short_history_3",
+    "case_description": "Awal diskusi dengan tepat 3 pesan sebelumnya. Acuan tidak harus berada di pesan terakhir.",
+    "source": {
+      "source_row": 1356,
+      "source_group": "92646ca5f3638fd3ef93",
+      "teks_chat": "aku mau catat, malam tadi ada yang kamu lindungi nggak?",
+      "label_intent": "neutral"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 4,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "short_history_3",
+    "participants": [
+      "Rama",
+      "Sinta",
+      "Tito",
+      "Udin"
+    ],
+    "focus_player": "",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Rama",
+        "teks_chat": "Aku mengaku Stalker dan memakai Peek untuk satu pemain semalam.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Sinta",
+        "teks_chat": "Kamu mau sebutin siapa yang kamu Peek dan hasilnya?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Tito",
+        "teks_chat": "Dia belum mengatakan ingin membagikan hasilnya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Udin",
+        "teks_chat": "Oke, untuk sekarang kita catat dulu klaim Stalker-nya aja.",
+        "label_intent": "neutral",
+        "target": []
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 24.txt"
+  },
+  "revisi": [
+    {
+      "pesan": 2,
+      "kategori": "tidak_natural",
+      "alasan": "Kaku ('Apakah kamu ingin menyebut...')."
+    },
+    {
+      "pesan": 4,
+      "kategori": "tidak_natural",
+      "alasan": "Kaku seperti rangkuman ('klaim role dan penggunaan skill')."
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "job": {
+    "job_id": "r000868_v01",
+    "case_name": "short_history_2",
+    "case_description": "Awal diskusi dengan tepat 2 pesan sebelumnya. Gunakan hanya petunjuk yang tersedia.",
+    "source": {
+      "source_row": 868,
+      "source_group": "4c2081b6f5833f1c0a33",
+      "teks_chat": "bentar, korban malam tadi siapa? gw Civilian dan gak ngerti kenapa dituduh",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 3,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "short_history_2",
+    "participants": [
+      "Dian",
+      "Erwin",
+      "Fikri"
+    ],
+    "focus_player": "Erwin",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Dian",
+        "teks_chat": "Tadi Erwin claim jadi Stalker, tapi kok belum ngasih hasil Peek-nya sih?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Fikri",
+        "teks_chat": "Udah fix Erwin itu cuma ngarang aja claimnya, dia Hitman yang cari aman!",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Erwin",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Dian",
+        "teks_chat": "Tunggu dulu, mungkin Erwin emang belum nemuin momen yang pas buat share hasilnya, dia bukan Hitman kok.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Erwin",
+            "relasi": "defend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 17.txt"
+  }
+}

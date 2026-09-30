@@ -1,0 +1,53 @@
+{
+  "job": {
+    "job_id": "r001950_v01",
+    "case_name": "short_history_1",
+    "case_description": "Awal diskusi dengan tepat 1 pesan sebelumnya. Jangan menambah riwayat fiktif atau mengisi sampai 12.",
+    "source": {
+      "source_row": 1950,
+      "source_group": "bf40d774d1b42e91e425",
+      "teks_chat": "aku tidak percaya klaim aman dari Bagas tanpa penjelasan, apalagi dia langsung menuduh balik, sebaiknya Bagas dieksekusi",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 2,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "short_history_1",
+    "participants": [
+      "Yana",
+      "Zaki"
+    ],
+    "focus_player": "Zaki",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Zaki",
+        "teks_chat": "Yana, kamu belum menjawab pertanyaan soal alasan vote, ya?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Yana",
+        "teks_chat": "Zaki, aku curiga kamu Hitman yang memakai pertanyaan itu untuk menyudutkanku tanpa alasan.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Zaki",
+            "relasi": "offend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 32.txt"
+  }
+}

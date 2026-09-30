@@ -1,0 +1,105 @@
+{
+  "job": {
+    "job_id": "r001997_v01",
+    "case_name": "multiple_targets",
+    "case_description": "Dua atau lebih pemain menjadi target relasi yang sama secara jelas.",
+    "source": {
+      "source_row": 1997,
+      "source_group": "1a6e6cbac7ae96d355cb",
+      "teks_chat": "percaya gw kali ini, si J kemungkinan besar hitman yang lagi cari kambing hitam",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 8,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "multiple_targets",
+    "participants": [
+      "Jaka",
+      "Rina",
+      "Bima",
+      "Doni"
+    ],
+    "focus_player": "",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Jaka",
+        "teks_chat": "Halo semuanya, ada yang punya informasi?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Rina",
+        "teks_chat": "Sepi banget dari awal diskusi ini.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Bima",
+        "teks_chat": "ak...",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Doni",
+        "teks_chat": "b...",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Jaka",
+        "teks_chat": "Kok Bima sama Doni pesannya cuma sepotong gitu ya?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Rina",
+        "teks_chat": "Iya nih, dari tadi mereka berdua balasnya selalu telat dan terpotong.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Jaka",
+        "teks_chat": "Pesan kepotong gitu bisa aja gara-gara kena Gag Order.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Rina",
+        "teks_chat": "Atau jangan-jangan Bima dan Doni sengaja menunda chat buat berpura-pura, mereka berdua pasti hitmannya!",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Bima",
+            "relasi": "offend",
+            "bukti_pesan": [
+              8
+            ]
+          },
+          {
+            "pemain": "Doni",
+            "relasi": "offend",
+            "bukti_pesan": [
+              8
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 33.txt"
+  },
+  "revisi": [
+    {
+      "pesan": 7,
+      "kategori": "meta",
+      "alasan": "Menjelaskan fungsi Gag Order seperti aturan"
+    }
+  ]
+}

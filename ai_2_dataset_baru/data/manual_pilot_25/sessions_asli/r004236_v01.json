@@ -1,0 +1,131 @@
+{
+  "job": {
+    "job_id": "r004236_v01",
+    "case_name": "reference_end",
+    "case_description": "Tepat 12 konteks. Penyebutan target eksplisit di pesan konteks terakhir.",
+    "source": {
+      "source_row": 4236,
+      "source_group": "01d65b5506764cc3d2d5",
+      "teks_chat": "aku bisa saja salah, tetapi menuduhku tanpa dasar hanya membantu pemain yang sebenarnya bersembunyi",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 13,
+    "pesan_typo_ringan": [
+      5
+    ]
+  },
+  "session": {
+    "case_name": "reference_end",
+    "participants": [
+      "Rina",
+      "Bima",
+      "Joko",
+      "Siska"
+    ],
+    "focus_player": "Bima",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Siska",
+        "teks_chat": "Kita harus menemukan pelaku secepatnya sebelum terlambat.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Joko",
+        "teks_chat": "Ada ide siapa yang harus kita periksa hari ini?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Rina",
+        "teks_chat": "Bagaimana kalau kita perhatikan pemain yang pasif?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Siska",
+        "teks_chat": "Ide bagus, biasanya pelaku lebih suka bersembunyi.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Joko",
+        "teks_chat": "Mending kita cari yg jarang berbicara dari awal.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Rina",
+        "teks_chat": "Coba kita lihat siapa saja yang belum memberikan informasi.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Siska",
+        "teks_chat": "Aku sudah mengaku Civilian.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Joko",
+        "teks_chat": "Aku sudah membagikan pendapatku di chat.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Rina",
+        "teks_chat": "Sepertinya hanya satu orang yang sama sekali tidak merespons.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Siska",
+        "teks_chat": "Iya, sangat mencurigakan kalau diam terus.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Joko",
+        "teks_chat": "Kira-kira apa alasannya tidak ikut diskusi?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Rina",
+        "teks_chat": "Bima pasif sekali, aku yakin dia adalah Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Bima",
+            "relasi": "offend",
+            "bukti_pesan": [
+              12
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Joko",
+        "teks_chat": "Jangan terburu-buru, dia mungkin sedang membaca riwayat obrolan kita.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Bima",
+            "relasi": "defend",
+            "bukti_pesan": [
+              12
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 62.txt"
+  }
+}

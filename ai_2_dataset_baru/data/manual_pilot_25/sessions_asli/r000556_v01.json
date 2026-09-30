@@ -1,0 +1,101 @@
+{
+  "job": {
+    "job_id": "r000556_v01",
+    "case_name": "interruption",
+    "case_description": "Pembahasan target disela obrolan waktu/ronde; kaitan kembali ke target masih jelas.",
+    "source": {
+      "source_row": 556,
+      "source_group": "0cad148e57023f6e81a0",
+      "teks_chat": "lu boleh curiga, tapi tolong kasih dasar yang lebih kuat",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 7,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "interruption",
+    "participants": [
+      "Sani",
+      "Tari",
+      "Udin",
+      "Vera"
+    ],
+    "focus_player": "Tari",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Sani",
+        "teks_chat": "Siapa tadi yang menarik ajakan vote di chat?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Udin",
+        "teks_chat": "Tari yang menarik ajakannya. Aku curiga Tari Hitman yang sedang main aman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Tari",
+            "relasi": "offend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Tari",
+        "teks_chat": "Aku bukan Hitman; aku menarik ajakan itu karena ragu dengan alasannya.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Tari",
+            "relasi": "defend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Vera",
+        "teks_chat": "Eh btw waktu siang ini sisa berapa detik lagi nih di layar kalian?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Sani",
+        "teks_chat": "Masih ada sekitar 40 detik lagi kok, santai aja.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Vera",
+        "teks_chat": "Oke sip, masih lumayan lama buat mikir strategi.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Udin",
+        "teks_chat": "Setelah kupikir, Tari belum pantas dituduh. Menarik dugaan yang lemah itu wajar.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Tari",
+            "relasi": "defend",
+            "bukti_pesan": [
+              7
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 9.txt"
+  }
+}

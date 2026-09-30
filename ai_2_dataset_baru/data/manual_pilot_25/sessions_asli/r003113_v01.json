@@ -1,0 +1,114 @@
+{
+  "job": {
+    "job_id": "r003113_v01",
+    "case_name": "rhetorical_question",
+    "case_description": "Pesan sekarang berbentuk pertanyaan retoris yang sebenarnya menuduh atau membela, misalnya 'kenapa Andy diam terus?' (offend) atau 'masa sih Andy Hitman?' (defend). Bukan pertanyaan informasi.",
+    "source": {
+      "source_row": 3113,
+      "source_group": "f04460bca78136ade2f7",
+      "teks_chat": "gw sudah bilang dari ronde pertama, S sus banget dan sekarang makin terbukti",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 8,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "rhetorical_question",
+    "participants": [
+      "Nisa",
+      "Bayu",
+      "Ciko"
+    ],
+    "focus_player": "Bayu",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Nisa",
+        "teks_chat": "Coba baca perubahan ajakan vote di chat tadi.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Bayu",
+        "teks_chat": "Aku mengubah ajakan setelah membaca pendapat lain.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Ciko",
+        "teks_chat": "Iya, ajakanmu berubah menjelang akhir diskusi.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Nisa",
+        "teks_chat": "Aku curiga Bayu Hitman karena mengganti ajakan tanpa menjelaskan alasan.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Bayu",
+            "relasi": "offend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Bayu",
+        "teks_chat": "Aku bukan Hitman, aku memang berubah pikiran.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Bayu",
+            "relasi": "defend",
+            "bukti_pesan": [
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Ciko",
+        "teks_chat": "Masa sih cuma panik?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Nisa",
+        "teks_chat": "Kayaknya dia sengaja buat nyelametin partnernya.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Bayu",
+            "relasi": "offend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Ciko",
+        "teks_chat": "Bukankah orang yang mengubah ajakan untuk menyelamatkan rekan itu Hitman?",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Bayu",
+            "relasi": "offend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 45.txt"
+  }
+}

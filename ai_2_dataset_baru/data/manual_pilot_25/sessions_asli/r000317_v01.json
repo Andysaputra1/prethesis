@@ -1,0 +1,54 @@
+{
+  "job": {
+    "job_id": "r000317_v01",
+    "case_name": "short_history_1",
+    "case_description": "Awal diskusi dengan tepat 1 pesan sebelumnya. Jangan menambah riwayat fiktif atau mengisi sampai 12.",
+    "source": {
+      "source_row": 317,
+      "source_group": "eeac458c5e83bfbfb26d",
+      "teks_chat": "si Yuda kelihatan panik tiap nama Hitman dibahas, fix dia tidak bersih",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 2,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "short_history_1",
+    "participants": [
+      "Nisa",
+      "Oki",
+      "Oman"
+    ],
+    "focus_player": "Oki",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Nisa",
+        "teks_chat": "Oki tadi mengajak kita vote pemain yang belum sempat menjawab. Bagaimana menurut kalian?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Oman",
+        "teks_chat": "Aku curiga Oki Hitman karena memaksakan vote sebelum ada penjelasan. Aku pilih Oki.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Oki",
+            "relasi": "offend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 3.txt"
+  }
+}

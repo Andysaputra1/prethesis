@@ -1,0 +1,162 @@
+{
+  "job": {
+    "job_id": "r000646_v01",
+    "case_name": "stance_change",
+    "case_description": "Pengirim pesan sekarang sebelumnya menuduh atau membela seorang pemain di konteks, lalu berubah sikap terhadap pemain yang sama. Anotasi mengikuti sikap terbaru.",
+    "source": {
+      "source_row": 646,
+      "source_group": "72b2364bf248a2b692a0",
+      "teks_chat": "bukan dia yang perlu dibela, aku sendiri bisa jelasin semua keputusan tadi",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 13,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "stance_change",
+    "participants": [
+      "Dian",
+      "Edi",
+      "Fina",
+      "Gilang",
+      "Hani"
+    ],
+    "focus_player": "Fina",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Dian",
+        "teks_chat": "Ada yang mau menjelaskan aturan Peek sebelum kita membahas klaim?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Edi",
+        "teks_chat": "Fina tadi mengaku Stalker, mungkin bisa ditanya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Gilang",
+        "teks_chat": "Apa yang membuat klaim itu dipertanyakan?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Hani",
+        "teks_chat": "Aku curiga Fina Hitman karena bilang tidak bisa Peek setiap ronde.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Fina",
+            "relasi": "offend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Fina",
+        "teks_chat": "Aku bukan Hitman. Peek memang punya cooldown satu kali tiap dua ronde.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Fina",
+            "relasi": "defend",
+            "bukti_pesan": [
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Gilang",
+        "teks_chat": "Fina belum pantas dituduh; klaim cooldown itu bisa kita cocokkan dengan aturan.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Fina",
+            "relasi": "defend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Dian",
+        "teks_chat": "Aku sendiri belum hafal batasan skill itu.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Edi",
+        "teks_chat": "Mari baca aturannya sebelum menilai klaim.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Gilang",
+        "teks_chat": "Aku sempat mengira Peek bisa setiap ronde. Kalau begitu, aku curiga Fina sedang berbohong.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Fina",
+            "relasi": "offend",
+            "bukti_pesan": [
+              9
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Fina",
+        "teks_chat": "Aku tidak berbohong soal cooldown, silakan periksa aturannya.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Fina",
+            "relasi": "defend",
+            "bukti_pesan": [
+              10
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Dian",
+        "teks_chat": "Di aturan tertulis Peek satu kali tiap dua ronde.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Edi",
+        "teks_chat": "Berarti informasi cooldown yang disampaikan tadi sesuai.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Gilang",
+        "teks_chat": "Aku tarik tuduhanku kepada Fina. Dia benar soal cooldown; itu bukan alasan untuk menyebutnya Hitman.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Fina",
+            "relasi": "defend",
+            "bukti_pesan": [
+              13
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 12.txt"
+  }
+}

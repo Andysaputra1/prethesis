@@ -1,0 +1,72 @@
+{
+  "job": {
+    "job_id": "r000326_v01",
+    "case_name": "explicit",
+    "case_description": "Target eksplisit di pesan sekarang. Contoh: Aku yakin bukan Andy = defend Andy.",
+    "source": {
+      "source_row": 326,
+      "source_group": "ab47ea333fcda83ad5e3",
+      "teks_chat": "jangan terdistraksi sama pengakuan Stalker itu, target gw tetap Riko",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 5,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "explicit",
+    "participants": [
+      "Erna",
+      "Fikri",
+      "Gilang"
+    ],
+    "focus_player": "Erna",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Fikri",
+        "teks_chat": "Diskusi kita sudah mau habis nih, tapi informasinya belum jelas.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Gilang",
+        "teks_chat": "Iya, kok ada pemain yang dari tadi diam terus ya?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Erna",
+        "teks_chat": "Aku lagi menyimak chat kalian dulu dari awal.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Fikri",
+        "teks_chat": "Hati-hati, kalau pasif terus nanti malah dicurigai sama yang lain.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Gilang",
+        "teks_chat": "Erna ini terlalu pasif dari awal ronde, dia pasti Hitman yang lagi sembunyi, ayo kita vote Erna sekarang!",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Erna",
+            "relasi": "offend",
+            "bukti_pesan": [
+              5
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 4.txt"
+  }
+}

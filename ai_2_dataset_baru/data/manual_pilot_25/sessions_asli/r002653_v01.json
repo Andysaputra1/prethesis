@@ -1,0 +1,74 @@
+{
+  "job": {
+    "job_id": "r002653_v01",
+    "case_name": "quotation",
+    "case_description": "Ada tuduhan yang dikutip; bedakan sikap pengirim dari ucapan orang yang dikutip.",
+    "source": {
+      "source_row": 2653,
+      "source_group": "4a0ee913bda1190d8e05",
+      "teks_chat": "Hostage di sini maksudnya korban sandera, bukan misi penyelamatan?",
+      "label_intent": "neutral"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 4,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "quotation",
+    "participants": [
+      "Gita",
+      "Hasan",
+      "Intan"
+    ],
+    "focus_player": "",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Gita",
+        "teks_chat": "Hasan, aku curiga kamu Hitman karena terlalu cepat mengajak vote.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Hasan",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Hasan",
+        "teks_chat": "Aku bukan Hitman, aku ingin membahas pilihannya dulu.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Hasan",
+            "relasi": "defend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Intan",
+        "teks_chat": "Ada yang mau mencatat urutan percakapannya?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Intan",
+        "teks_chat": "Gita bilang 'aku curiga kamu Hitman' kepada Hasan. Itu kutipan tuduhan Gita, belum pendapatku.",
+        "label_intent": "neutral",
+        "target": []
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 80.txt"
+  }
+}

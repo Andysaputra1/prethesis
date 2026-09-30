@@ -1,0 +1,190 @@
+{
+  "job": {
+    "job_id": "r000489_v01",
+    "case_name": "outside_window_unknown",
+    "case_description": "14-16 pesan total. Pembahasan lama telah putus/beralih. Teks dan anotasi 12 konteks terakhir tidak cukup menentukan acuan sekarang. Target harus tidak_diketahui; jangan menggunakan informasi lama yang tidak tersedia dalam input.",
+    "source": {
+      "source_row": 489,
+      "source_group": "f4d71421bb24180bc903",
+      "teks_chat": "gw memang lebih banyak diem, tapi itu karena lagi nyusun kronologi",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 14,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "outside_window_unknown",
+    "participants": [
+      "Andi",
+      "Bima",
+      "Citra",
+      "Doni"
+    ],
+    "focus_player": "Bima",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Andi",
+        "teks_chat": "Aku curiga Bima Hitman karena tidak menjawab soal alasan vote.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Bima",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Citra",
+        "teks_chat": "Sebentar, ganti topik dulu. Ada yang mau ngaku Spy?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Doni",
+        "teks_chat": "Aku Spy. Semalam aku pakai Guard ke Andi.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Andi",
+        "teks_chat": "Oh gitu, makasih kalau memang benar.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Citra",
+        "teks_chat": "Doni, kenapa milih Andi?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Doni",
+        "teks_chat": "Soalnya Andi paling aktif nanya, takutnya dia yang diincar.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Andi",
+        "teks_chat": "Masuk akal sih, aku memang banyak nanya dari awal.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Citra",
+        "teks_chat": "Ada yang mau ngaku Stalker juga?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Doni",
+        "teks_chat": "Kayaknya belum ada yang berani ngaku.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Andi",
+        "teks_chat": "Wajar sih, yang ngaku Stalker bisa jadi incaran.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Citra",
+        "teks_chat": "Oke, klaim Guard Doni kita catat dulu.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Doni",
+        "teks_chat": "Silakan, nanti bisa dicek dari konsistensi ceritaku.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Andi",
+        "teks_chat": "Kembali ke orang yang kita bahas sebelum soal Guard tadi.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Citra",
+        "teks_chat": "Aku membela dia. Lambat menjawab bukan bukti bahwa dia Hitman.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "tidak_diketahui",
+            "relasi": "defend",
+            "bukti_pesan": []
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 8.txt"
+  },
+  "revisi": [
+    {
+      "pesan": 2,
+      "kategori": "meta",
+      "alasan": "Seluruh jendela berisi tanya-jawab aturan skill Guard (juga 'serangan Hitman' yang salah); diganti obrolan klaim in-game netral tanpa menyebut target lama"
+    },
+    {
+      "pesan": 3,
+      "kategori": "meta",
+      "alasan": "Seluruh jendela berisi tanya-jawab aturan skill Guard (juga 'serangan Hitman' yang salah); diganti obrolan klaim in-game netral tanpa menyebut target lama"
+    },
+    {
+      "pesan": 4,
+      "kategori": "meta",
+      "alasan": "Seluruh jendela berisi tanya-jawab aturan skill Guard (juga 'serangan Hitman' yang salah); diganti obrolan klaim in-game netral tanpa menyebut target lama"
+    },
+    {
+      "pesan": 5,
+      "kategori": "meta",
+      "alasan": "Seluruh jendela berisi tanya-jawab aturan skill Guard (juga 'serangan Hitman' yang salah); diganti obrolan klaim in-game netral tanpa menyebut target lama"
+    },
+    {
+      "pesan": 6,
+      "kategori": "meta",
+      "alasan": "Seluruh jendela berisi tanya-jawab aturan skill Guard (juga 'serangan Hitman' yang salah); diganti obrolan klaim in-game netral tanpa menyebut target lama"
+    },
+    {
+      "pesan": 7,
+      "kategori": "meta",
+      "alasan": "Seluruh jendela berisi tanya-jawab aturan skill Guard (juga 'serangan Hitman' yang salah); diganti obrolan klaim in-game netral tanpa menyebut target lama"
+    },
+    {
+      "pesan": 8,
+      "kategori": "meta",
+      "alasan": "Seluruh jendela berisi tanya-jawab aturan skill Guard (juga 'serangan Hitman' yang salah); diganti obrolan klaim in-game netral tanpa menyebut target lama"
+    },
+    {
+      "pesan": 9,
+      "kategori": "meta",
+      "alasan": "Seluruh jendela berisi tanya-jawab aturan skill Guard (juga 'serangan Hitman' yang salah); diganti obrolan klaim in-game netral tanpa menyebut target lama"
+    },
+    {
+      "pesan": 10,
+      "kategori": "meta",
+      "alasan": "Seluruh jendela berisi tanya-jawab aturan skill Guard (juga 'serangan Hitman' yang salah); diganti obrolan klaim in-game netral tanpa menyebut target lama"
+    },
+    {
+      "pesan": 11,
+      "kategori": "meta",
+      "alasan": "Seluruh jendela berisi tanya-jawab aturan skill Guard (juga 'serangan Hitman' yang salah); diganti obrolan klaim in-game netral tanpa menyebut target lama"
+    },
+    {
+      "pesan": 12,
+      "kategori": "meta",
+      "alasan": "Seluruh jendela berisi tanya-jawab aturan skill Guard (juga 'serangan Hitman' yang salah); diganti obrolan klaim in-game netral tanpa menyebut target lama"
+    }
+  ]
+}

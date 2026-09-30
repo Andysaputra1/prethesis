@@ -1,0 +1,140 @@
+{
+  "job": {
+    "job_id": "r000368_v01",
+    "case_name": "neutral_names",
+    "case_description": "Neutral menyebut nama tanpa menuduh/membela; target kosong.",
+    "source": {
+      "source_row": 368,
+      "source_group": "e35bdee8452eed01a0ea",
+      "teks_chat": "gw Stalker, semalam sudah Peek si B dan hasilnya dia bukan Hitman",
+      "label_intent": "neutral"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 11,
+    "pesan_typo_ringan": [
+      4
+    ]
+  },
+  "session": {
+    "case_name": "neutral_names",
+    "participants": [
+      "Rama",
+      "Siska",
+      "Tari",
+      "Udin"
+    ],
+    "focus_player": "",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Rama",
+        "teks_chat": "Siapa yang ingin membagikan klaim role hari ini?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Siska",
+        "teks_chat": "Aku mengaku Spy dan memilih Guard untuk Udin semalam.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Tari",
+        "teks_chat": "Oke, ada klaim lain lagi?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Udin",
+        "teks_chat": "Aku blm mau klaim dulu, masih mau dengerin.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Siska",
+        "teks_chat": "Kalau aku tadi udah klaim, tinggal kalian aja.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Rama",
+        "teks_chat": "Semalam kamu ngerasa ada yang aneh nggak, Siska?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Siska",
+        "teks_chat": "Nggak ada, semalam lewat biasa aja.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Tari",
+        "teks_chat": "Oke, berarti belum ada info lain dari semalam.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Udin",
+        "teks_chat": "Iya, sejauh ini baru klaim dari Siska.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Rama",
+        "teks_chat": "Baik, kita catat siapa mengklaim apa tanpa langsung memastikan role.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Tari",
+        "teks_chat": "Siska, tadi kamu menyebut Udin sebagai pilihan Guard, ya?",
+        "label_intent": "neutral",
+        "target": []
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 4.txt"
+  },
+  "revisi": [
+    {
+      "pesan": 3,
+      "kategori": "meta",
+      "alasan": "Meminta penjelasan batasan Guard (aturan)."
+    },
+    {
+      "pesan": 4,
+      "kategori": "meta",
+      "alasan": "Menanyakan aturan target Guard; slot typo 'blm' dipertahankan."
+    },
+    {
+      "pesan": 5,
+      "kategori": "meta",
+      "alasan": "Menjelaskan aturan Guard dua malam berturut-turut."
+    },
+    {
+      "pesan": 6,
+      "kategori": "meta",
+      "alasan": "Menanyakan fungsi Guard."
+    },
+    {
+      "pesan": 7,
+      "kategori": "meta",
+      "alasan": "Menjelaskan fungsi Guard."
+    },
+    {
+      "pesan": 8,
+      "kategori": "tidak_natural",
+      "alasan": "Kaku ('Apakah chat ini membuktikan...') dan menyambung penjelasan aturan."
+    },
+    {
+      "pesan": 9,
+      "kategori": "meta",
+      "alasan": "Menjelaskan bahwa yang ada baru klaim (nada aturan); disesuaikan dengan konteks baru."
+    }
+  ]
+}

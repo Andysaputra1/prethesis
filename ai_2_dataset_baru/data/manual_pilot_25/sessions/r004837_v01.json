@@ -1,0 +1,90 @@
+{
+  "job": {
+    "job_id": "r004837_v01",
+    "case_name": "agreement",
+    "case_description": "Pesan sekarang menyetujui atau membantah pesan pemain lain di konteks tanpa menyebut ulang nama target. Setuju dengan tuduhan = offend pemain yang dituduh; membantah tuduhan atau setuju dengan pembelaan = defend. Identitas target diwarisi dari pesan yang ditanggapi.",
+    "source": {
+      "source_row": 4837,
+      "source_group": "db4563e0368a99ba93f1",
+      "teks_chat": "dari awal gw kunci Raka, geraknya paling mencurigakan, vote dia aja",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 4,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "agreement",
+    "participants": [
+      "Kevin",
+      "Laras",
+      "Mila"
+    ],
+    "focus_player": "Kevin",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Laras",
+        "teks_chat": "Kevin dari tadi sibuk mengajak vote tanpa memberikan bukti sama sekali.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Kevin",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Kevin",
+        "teks_chat": "Buktinya ada dari polanya kemarin, kalian saja yang tidak sadar.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Kevin",
+            "relasi": "defend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Mila",
+        "teks_chat": "Pola apa? Kamu cuma ingin mencari kambing hitam saja.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Kevin",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Laras",
+        "teks_chat": "Betul kata Mila, kita jangan mau dipengaruhi sama orang ini.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Kevin",
+            "relasi": "offend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 71.txt"
+  }
+}

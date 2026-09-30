@@ -1,0 +1,106 @@
+{
+  "job": {
+    "job_id": "r001611_v01",
+    "case_name": "explicit",
+    "case_description": "Target eksplisit di pesan sekarang. Contoh: Aku yakin bukan Andy = defend Andy.",
+    "source": {
+      "source_row": 1611,
+      "source_group": "bbc721c97143b8f7106d",
+      "teks_chat": "gw nggak takut ditanya, tapi jawaban si Kevin soal malam pertama jauh lebih janggal",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 6,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "explicit",
+    "participants": [
+      "Intan",
+      "Kevin",
+      "Jojo"
+    ],
+    "focus_player": "Jojo",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Intan",
+        "teks_chat": "Mengapa pesan Jojo dari tadi selalu terpotong di tengah kalimat?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Kevin",
+        "teks_chat": "Pesan terpotong belum tentu ada apa-apa, bisa aja koneksinya lagi jelek.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Jojo",
+        "teks_chat": "Pesanku belum selesai tadi, koneksiku sempat terputus.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Intan",
+        "teks_chat": "Jojo belum pantas dituduh, koneksi bisa membuat pesan terlambat masuk.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Jojo",
+            "relasi": "defend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Kevin",
+        "teks_chat": "Aku justru curiga Jojo Hitman yang memakai alasan koneksi untuk menghindar.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Jojo",
+            "relasi": "offend",
+            "bukti_pesan": [
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Intan",
+        "teks_chat": "Kalau dipikir-pikir lagi, alasan koneksinya memang janggal. Ayo keluarkan Jojo aja!",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Jojo",
+            "relasi": "offend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 28.txt"
+  },
+  "revisi": [
+    {
+      "pesan": 2,
+      "kategori": "meta",
+      "alasan": "Menjelaskan mekanik Gag Order."
+    },
+    {
+      "pesan": 6,
+      "kategori": "tidak_natural",
+      "alasan": "Intan berbalik dari membela tanpa alasan dan memakai 'mari kita' yang kaku."
+    }
+  ]
+}

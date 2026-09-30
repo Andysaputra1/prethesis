@@ -1,0 +1,146 @@
+{
+  "job": {
+    "job_id": "r005566_v01",
+    "case_name": "neutral_names",
+    "case_description": "Neutral menyebut nama tanpa menuduh/membela; target kosong.",
+    "source": {
+      "source_row": 5566,
+      "source_group": "6dc325d47e5fc0ac1356",
+      "teks_chat": "sumpah tombol aksinya kecil banget di layar gw",
+      "label_intent": "neutral"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 13,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "neutral_names",
+    "participants": [
+      "Eko",
+      "Farah",
+      "Gani",
+      "Hesti"
+    ],
+    "focus_player": "",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Eko",
+        "teks_chat": "Ada yang sadar nggak, dari pagi ada satu orang yang belum ngomong sama sekali?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Farah",
+        "teks_chat": "Iya, semalam juga ada yang disandera, tapi kita nggak tahu siapa.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Gani",
+        "teks_chat": "Jangan-jangan yang disandera itu Hesti?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Hesti",
+        "teks_chat": "Aku baru sempat bergabung dalam diskusi.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Eko",
+        "teks_chat": "Pesan Hesti sekarang sudah masuk.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Farah",
+        "teks_chat": "Mari lanjut membahas klaim yang sudah dibagikan.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Gani",
+        "teks_chat": "Eko, bagian diskusi mana yang ingin dibahas lagi?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Hesti",
+        "teks_chat": "Eko tadi bertanya tentang pemain yang belum membalas.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Eko",
+        "teks_chat": "Iya, itu pertanyaanku tadi.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Farah",
+        "teks_chat": "Gani banyak bertanya tentang korban, aku curiga dia Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Gani",
+            "relasi": "offend",
+            "bukti_pesan": [
+              10
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Gani",
+        "teks_chat": "Aku hanya ingin memperjelas situasi permainan ini.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Gani",
+            "relasi": "defend",
+            "bukti_pesan": [
+              11
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Hesti",
+        "teks_chat": "Pertanyaan Gani dan Farah sama-sama masuk akal.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Eko",
+        "teks_chat": "Mari kita dengar penjelasan lanjutan dari Farah dan Gani.",
+        "label_intent": "neutral",
+        "target": []
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 79.txt"
+  },
+  "revisi": [
+    {
+      "pesan": 1,
+      "kategori": "tidak_natural",
+      "alasan": "Kalimat kaku ('Siapa di sini yang menyadari bahwa')"
+    },
+    {
+      "pesan": 2,
+      "kategori": "meta",
+      "alasan": "Menjelaskan aturan identitas korban tidak diumumkan; juga 'serangan malam' tidak sesuai skill Hostage"
+    },
+    {
+      "pesan": 3,
+      "kategori": "tidak_natural",
+      "alasan": "'Apakah korban tersebut adalah' kaku"
+    }
+  ]
+}

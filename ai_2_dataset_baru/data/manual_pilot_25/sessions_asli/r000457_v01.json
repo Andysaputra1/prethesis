@@ -1,0 +1,53 @@
+{
+  "job": {
+    "job_id": "r000457_v01",
+    "case_name": "short_history_1",
+    "case_description": "Awal diskusi dengan tepat 1 pesan sebelumnya. Jangan menambah riwayat fiktif atau mengisi sampai 12.",
+    "source": {
+      "source_row": 457,
+      "source_group": "df4053bd44c887152dec",
+      "teks_chat": "aku Stalker, semalam sudah Peek si M dan dia aman; jadi jangan paksa vote ke aku, kita pindahkan target ke sus yang lain",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 2,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "short_history_1",
+    "participants": [
+      "Eko",
+      "Fajar"
+    ],
+    "focus_player": "Eko",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Eko",
+        "teks_chat": "Tadi aku mengaku Spy, tetapi sekarang aku mengaku Stalker.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Fajar",
+        "teks_chat": "Klaim role kamu berubah tanpa penjelasan. Aku curiga kamu Hitman yang sedang mengarang.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Eko",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 7.txt"
+  }
+}

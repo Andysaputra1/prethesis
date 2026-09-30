@@ -1,0 +1,47 @@
+{
+  "job": {
+    "job_id": "r001026_v00",
+    "case_name": "original",
+    "case_description": "Satu pesan tanpa riwayat. Pertahankan teks dan intent sumber persis; jangan mengarang riwayat asli.",
+    "source": {
+      "source_row": 1026,
+      "source_group": "c4f603a7f518dc279772",
+      "teks_chat": "kalian salah fokus, aku Spy dan tadi guard Rian, dia bukan musuh",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 1,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "original",
+    "participants": [
+      "Tegar",
+      "Rian"
+    ],
+    "focus_player": "",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Tegar",
+        "teks_chat": "kalian salah fokus, aku Spy dan tadi guard Rian, dia bukan musuh",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Rian",
+            "relasi": "defend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 20.txt"
+  }
+}

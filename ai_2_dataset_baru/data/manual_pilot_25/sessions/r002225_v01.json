@@ -1,0 +1,137 @@
+{
+  "job": {
+    "job_id": "r002225_v01",
+    "case_name": "negation",
+    "case_description": "Negasi menentukan relasi: Andy Hitman berbeda dari Andy bukan Hitman.",
+    "source": {
+      "source_row": 2225,
+      "source_group": "4d413ef086e13ea8c1e0",
+      "teks_chat": "gw Civilian, tapi yang paling cepat nuduh biasanya lagi nutupin role",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 8,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "negation",
+    "participants": [
+      "Fajar",
+      "Eka",
+      "Gilang"
+    ],
+    "focus_player": "Eka",
+    "panggilan": [
+      {
+        "pemain": "Eka",
+        "sebutan": [
+          "Ek"
+        ]
+      }
+    ],
+    "messages": [
+      {
+        "pengirim": "Fajar",
+        "teks_chat": "Eka, tadi kamu mengaku Spy, ya?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Eka",
+        "teks_chat": "Iya, aku klaim Spy.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Gilang",
+        "teks_chat": "Eka, sebelumnya kamu bilang Civilian. Aku curiga kamu Hitman yang ganti klaim.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Eka",
+            "relasi": "offend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Eka",
+        "teks_chat": "Aku salah menulis tadi, bukan berarti aku Hitman.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Eka",
+            "relasi": "defend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Fajar",
+        "teks_chat": "Klaim yang berubah itu bikin aku curiga kamu pelakunya.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Eka",
+            "relasi": "offend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Eka",
+        "teks_chat": "Aku bukan pelakunya, klaim yang benar adalah Spy.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Eka",
+            "relasi": "defend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Gilang",
+        "teks_chat": "Aku tetap menduga Eka Hitman karena klaimnya berubah.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Eka",
+            "relasi": "offend",
+            "bukti_pesan": [
+              7
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Fajar",
+        "teks_chat": "Eka ini bukan orang baik-baik, vote dia karena klaimnya berubah terus!",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Eka",
+            "relasi": "offend",
+            "bukti_pesan": [
+              8
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 36.txt"
+  }
+}

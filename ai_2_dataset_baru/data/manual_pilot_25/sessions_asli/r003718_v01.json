@@ -1,0 +1,105 @@
+{
+  "job": {
+    "job_id": "r003718_v01",
+    "case_name": "short_history_3",
+    "case_description": "Awal diskusi dengan tepat 3 pesan sebelumnya. Acuan tidak harus berada di pesan terakhir.",
+    "source": {
+      "source_row": 3718,
+      "source_group": "87ed1cb4c2aacc453ccf",
+      "teks_chat": "gw Stalker, hasil peek ke Tio tidak mengarah ke Hitman, jadi jangan ikut arus",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 4,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "short_history_3",
+    "participants": [
+      "Dina",
+      "Eko",
+      "Fani",
+      "Gita"
+    ],
+    "focus_player": "Fani",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Dina",
+        "teks_chat": "Fani cepat membela Gita tanpa alasan, aku curiga keduanya Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Fani",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          },
+          {
+            "pemain": "Gita",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Eko",
+        "teks_chat": "Iya, aneh banget gak sih kelakuannya.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Fani",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Fani",
+        "teks_chat": "Aku bukan Hitman, aku membela karena tuduhannya belum berdasar.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Fani",
+            "relasi": "defend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Gita",
+        "teks_chat": "Aku dan Fani bukan Hitman. Dia menunjukkan lemahnya alasan tuduhan itu.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Fani",
+            "relasi": "defend",
+            "bukti_pesan": [
+              4
+            ]
+          },
+          {
+            "pemain": "Gita",
+            "relasi": "defend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 58.txt"
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "job": {
+    "job_id": "r004529_v01",
+    "case_name": "nickname",
+    "case_description": "Pesan sekarang menyebut pemain dengan nama panggilan, singkatan, atau salah ketik ringan (Andy -> ndy, andi, si And) tanpa menulis nama aslinya. Catat sebutan itu di panggilan. Target tetap memakai nama asli; jika neutral, target kosong.",
+    "source": {
+      "source_row": 4529,
+      "source_group": "b9e2297af86c4994d20f",
+      "teks_chat": "aku tidak memakai gag order, tadi chat si P yang mendadak tidak bisa masuk",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 8,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "nickname",
+    "participants": [
+      "Wawan",
+      "Vina",
+      "Umar"
+    ],
+    "focus_player": "Umar",
+    "panggilan": [
+      {
+        "pemain": "Umar",
+        "sebutan": [
+          "Um"
+        ]
+      }
+    ],
+    "messages": [
+      {
+        "pengirim": "Wawan",
+        "teks_chat": "Ada yang tahu kenapa Umar diam terus dari tadi?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Vina",
+        "teks_chat": "Mungkin dia lagi mikir strategi.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Wawan",
+        "teks_chat": "Atau dia sengaja diam biar gak dicurigai sama kita?",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Umar",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Vina",
+        "teks_chat": "Bisa jadi, banyak yang pakai taktik gitu kalau lagi jadi pelaku.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Umar",
+        "teks_chat": "...",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Wawan",
+        "teks_chat": "Tuh kan, ditanya juga gak ngejawab sama sekali.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Vina",
+        "teks_chat": "Jangan-jangan emang bener dia pelakunya yang sembunyi.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Umar",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Wawan",
+        "teks_chat": "Aku tarik tuduhan ke si Um. Sedikit membalas belum membuktikan dia Hitman.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Umar",
+            "relasi": "defend",
+            "bukti_pesan": [
+              8
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 67.txt"
+  }
+}

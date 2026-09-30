@@ -1,0 +1,170 @@
+{
+  "job": {
+    "job_id": "r001137_v01",
+    "case_name": "nickname",
+    "case_description": "Pesan sekarang menyebut pemain dengan nama panggilan, singkatan, atau salah ketik ringan (Andy -> ndy, andi, si And) tanpa menulis nama aslinya. Catat sebutan itu di panggilan. Target tetap memakai nama asli; jika neutral, target kosong.",
+    "source": {
+      "source_row": 1137,
+      "source_group": "d2e24ca26db3b68dc8e4",
+      "teks_chat": "Aku tidak punya alasan buat nyandera siapa pun, tapi kalian tahu tidak siapa korban malam ini?",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 12,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "nickname",
+    "participants": [
+      "Erna",
+      "Fikri",
+      "Gani",
+      "Hani"
+    ],
+    "focus_player": "Fikri",
+    "panggilan": [
+      {
+        "pemain": "Fikri",
+        "sebutan": [
+          "Fik"
+        ]
+      }
+    ],
+    "messages": [
+      {
+        "pengirim": "Erna",
+        "teks_chat": "Ada yang ingin menjelaskan alasan ajakan vote sebelumnya?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Gani",
+        "teks_chat": "Aku tadi memilih menunggu penjelasan dari pemain lain.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Hani",
+        "teks_chat": "Aku juga masih membaca urutan chat.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Erna",
+        "teks_chat": "Fikri, kenapa tadi menarik ajakan vote?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Fikri",
+        "teks_chat": "Aku menyadari alasan awalku belum kuat.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Gani",
+        "teks_chat": "Aku curiga kamu Hitman yang sengaja mengubah cerita.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Fikri",
+            "relasi": "offend",
+            "bukti_pesan": [
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Fikri",
+        "teks_chat": "Aku bukan Hitman. Aku mengoreksi dugaan yang terburu-buru.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Fikri",
+            "relasi": "defend",
+            "bukti_pesan": [
+              7
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Hani",
+        "teks_chat": "Aku masih curiga dia menggunakan alasan itu untuk lolos.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Fikri",
+            "relasi": "offend",
+            "bukti_pesan": [
+              7
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Erna",
+        "teks_chat": "Aku ingin vote Fikri kalau alasannya tidak jelas.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Fikri",
+            "relasi": "offend",
+            "bukti_pesan": [
+              9
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Fikri",
+        "teks_chat": "Aku tidak bersalah. Aku berhenti mengajak vote justru karena tidak mau memaksakan dugaan.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Fikri",
+            "relasi": "defend",
+            "bukti_pesan": [
+              10
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Gani",
+        "teks_chat": "Aku tetap curiga dia Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Fikri",
+            "relasi": "offend",
+            "bukti_pesan": [
+              10
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Hani",
+        "teks_chat": "Setelah kupikir lagi, Fik belum pantas dituduh. Mengoreksi dugaan itu wajar.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Fikri",
+            "relasi": "defend",
+            "bukti_pesan": [
+              12
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 22.txt"
+  }
+}

@@ -1,0 +1,130 @@
+{
+  "job": {
+    "job_id": "r001800_v01",
+    "case_name": "reference_end",
+    "case_description": "Tepat 12 konteks. Penyebutan target eksplisit di pesan konteks terakhir.",
+    "source": {
+      "source_row": 1800,
+      "source_group": "bb79c150b0aa7c3d9fa7",
+      "teks_chat": "Kita jangan buang voting ke pemain yang defensif; keluarkan Eko yang terus mencari kambing hitam sejak pagi",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 13,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "reference_end",
+    "participants": [
+      "Deni",
+      "Eka",
+      "Feri",
+      "Gita",
+      "Hari"
+    ],
+    "focus_player": "Hari",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Deni",
+        "teks_chat": "Siapa yang menarik ajakan vote di diskusi tadi?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Eka",
+        "teks_chat": "Ada beberapa pesan perubahan dugaan yang belum kubaca.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Feri",
+        "teks_chat": "Kita perlu mencatat alasannya juga.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Gita",
+        "teks_chat": "Iya, jangan hanya melihat nama yang berubah.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Deni",
+        "teks_chat": "Ada yang sudah membaca urutan chatnya?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Eka",
+        "teks_chat": "Belum selesai, pesannya cukup banyak.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Feri",
+        "teks_chat": "Kalau ada penjelasan baru, perubahan dugaan bisa masuk akal.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Gita",
+        "teks_chat": "Benar, tetapi perubahan tanpa alasan tetap bisa ditanyakan.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Deni",
+        "teks_chat": "Kita bahas satu orang dulu agar jelas.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Eka",
+        "teks_chat": "Siapa yang paling sering mengganti ajakan vote?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Feri",
+        "teks_chat": "Aku sedang membaca riwayat chat sejak awal.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Gita",
+        "teks_chat": "Hari berganti ajakan vote berulang kali tanpa alasan. Aku curiga Hari Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Hari",
+            "relasi": "offend",
+            "bukti_pesan": [
+              12
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Deni",
+        "teks_chat": "Aku juga curiga dia ingin membingungkan kita. Aku akan vote dia.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Hari",
+            "relasi": "offend",
+            "bukti_pesan": [
+              12
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 30.txt"
+  }
+}

@@ -1,0 +1,177 @@
+{
+  "job": {
+    "job_id": "r004269_v01",
+    "case_name": "reference_start",
+    "case_description": "Tepat 12 konteks. Penyebutan target eksplisit di pesan konteks pertama; pesan sekarang memakai kata ganti.",
+    "source": {
+      "source_row": 4269,
+      "source_group": "019f4ebe06308cdda2c0",
+      "teks_chat": "sumpah tuduhan itu ngaco, mending perhatiin si B yang tiba-tiba ikut nimbrung",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 13,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "reference_start",
+    "participants": [
+      "Andi",
+      "Bara",
+      "Gilang",
+      "Rina"
+    ],
+    "focus_player": "Gilang",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Andi",
+        "teks_chat": "Gilang sangat aneh, dia langsung mengajak vote tanpa bukti yang kuat.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Gilang",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Bara",
+        "teks_chat": "Benar sekali, alasan yang diberikan sama sekali tidak bisa diterima.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Gilang",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Rina",
+        "teks_chat": "Kita tidak boleh terburu-buru mengikuti ajakannya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Andi",
+        "teks_chat": "Dia pasti mencoba mengarahkan kita kepada warga biasa.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Gilang",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Bara",
+        "teks_chat": "Biasanya Hitman memakai taktik agresif seperti itu.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Gilang",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Rina",
+        "teks_chat": "Ada yang mau menjelaskan alasan ajakan vote tadi?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Andi",
+        "teks_chat": "Belum ada penjelasan tambahan dari pemain itu.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Bara",
+        "teks_chat": "Aku makin curiga dia Hitman yang menuduh tanpa alasan.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Gilang",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Rina",
+        "teks_chat": "Kita harus mempertimbangkan semua bukti sebelum bertindak.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Andi",
+        "teks_chat": "Bukti dari percakapan awal sudah cukup untuk menentukan sikap.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Gilang",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Bara",
+        "teks_chat": "Setuju, membiarkan dia lebih lama akan membahayakan tim.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Gilang",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Rina",
+        "teks_chat": "Lalu apa langkah kita selanjutnya?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Bara",
+        "teks_chat": "Langsung saja kita naikkan dia sekarang juga.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Gilang",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 62.txt"
+  }
+}

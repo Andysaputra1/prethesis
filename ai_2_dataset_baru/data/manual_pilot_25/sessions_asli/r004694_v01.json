@@ -1,0 +1,87 @@
+{
+  "job": {
+    "job_id": "r004694_v01",
+    "case_name": "second_person",
+    "case_description": "Kamu/lu: gunakan pergantian pembicara dan teks yang jelas. Tanpa acuan jelas, target tidak_diketahui.",
+    "source": {
+      "source_row": 4694,
+      "source_group": "4c97c14a24a89a2664be",
+      "teks_chat": "Ayo fokus ke Rizky, dia sengaja bikin kita debat soal hal kecil biar pelaku sebenarnya lolos",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 5,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "second_person",
+    "participants": [
+      "Mira",
+      "Nino"
+    ],
+    "focus_player": "Nino",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Mira",
+        "teks_chat": "Ternyata ada korban nih semalam, tapi panitia gatau kenapa nggak ngumumin siapa.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Nino",
+        "teks_chat": "Identitas korban memang tidak diumumkan secara publik.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Mira",
+        "teks_chat": "Tapi kok lu kelihatan panik gitu sih pas bahas korbannya?",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Nino",
+            "relasi": "offend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Nino",
+        "teks_chat": "Gua panik darimana coba, orang gua nanggapin biasa aja.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Nino",
+            "relasi": "defend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Mira",
+        "teks_chat": "Aku curiga kamu Hitman yang sedang panik, vote kamu saja.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Nino",
+            "relasi": "offend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 69.txt"
+  }
+}

@@ -1,0 +1,111 @@
+{
+  "job": {
+    "job_id": "r000771_v01",
+    "case_name": "second_person",
+    "case_description": "Kamu/lu: gunakan pergantian pembicara dan teks yang jelas. Tanpa acuan jelas, target tidak_diketahui.",
+    "source": {
+      "source_row": 771,
+      "source_group": "b7880546f49d278151f9",
+      "teks_chat": "fix bukan aku, role-ku cuma civilian",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 6,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "second_person",
+    "participants": [
+      "Hadi",
+      "Iwan",
+      "Jihan",
+      "Koko"
+    ],
+    "focus_player": "Jihan",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Hadi",
+        "teks_chat": "Jihan, lu dari tadi nuduhnya ganti-ganti mulu, pertama ke Koko terus sekarang ke aku.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Iwan",
+        "teks_chat": "Orang yang plin-plan gitu pasti lagi nyari alibi bohong, dia pelakunya tuh!",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Jihan",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Jihan",
+        "teks_chat": "Gue cuma ngikutin update info yang masuk, makanya pendapat gue berubah.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Jihan",
+            "relasi": "defend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Koko",
+        "teks_chat": "Bener kata Iwan, Jihan emang lagi mancing keributan biar dia aman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Jihan",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Jihan",
+        "teks_chat": "Gue ini civilian, lu pada jangan gampang kepancing sama asumsi yang nggak ada dasarnya.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Jihan",
+            "relasi": "defend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Hadi",
+        "teks_chat": "Ya udah sih, gue percaya lu bukan pelakunya, wajar aja kok kalau lu ganti target gara-gara ada temuan baru di diskusi.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Jihan",
+            "relasi": "defend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 15.txt"
+  }
+}

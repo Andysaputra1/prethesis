@@ -1,0 +1,175 @@
+{
+  "job": {
+    "job_id": "r003438_v01",
+    "case_name": "negation",
+    "case_description": "Negasi menentukan relasi: Andy Hitman berbeda dari Andy bukan Hitman.",
+    "source": {
+      "source_row": 3438,
+      "source_group": "c9b968caf2c94c111ed2",
+      "teks_chat": "gw tetap yakin si Dimas Hitman, tapi itu bukan berarti gw partnernya",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 9,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "negation",
+    "participants": [
+      "Heru",
+      "Indah",
+      "Fikri",
+      "Gama"
+    ],
+    "focus_player": "Fikri",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Heru",
+        "teks_chat": "Fikri cepat sekali membela Gama, aku curiga Fikri Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Fikri",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Indah",
+        "teks_chat": "Iya, baru juga dituduh dikit langsung dibantah mentah-mentah sama Fikri.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Fikri",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Fikri",
+        "teks_chat": "Aku bukan Hitman, dan Gama juga belum terbukti Hitman hanya karena diam.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Fikri",
+            "relasi": "defend",
+            "bukti_pesan": [
+              3
+            ]
+          },
+          {
+            "pemain": "Gama",
+            "relasi": "defend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Heru",
+        "teks_chat": "Tetep aja menurutku tingkah lu mencurigakan banget.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Fikri",
+            "relasi": "offend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Gama",
+        "teks_chat": "Ya bagus dong ada yang nyampein info jujur ke kita.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Fikri",
+            "relasi": "defend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Indah",
+        "teks_chat": "Jangan-jangan kalian berdua malah sekongkol dari belakang.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Fikri",
+            "relasi": "offend",
+            "bukti_pesan": [
+              3
+            ]
+          },
+          {
+            "pemain": "Gama",
+            "relasi": "offend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Fikri",
+        "teks_chat": "Sumpah aku bukan Hitman, jangan asal main tuduh tanpa bukti!",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Fikri",
+            "relasi": "defend",
+            "bukti_pesan": [
+              7
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Gama",
+        "teks_chat": "Menurutku Fikri jujur, pembelaannya belum membuktikan dia Hitman.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Fikri",
+            "relasi": "defend",
+            "bukti_pesan": [
+              7
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Heru",
+        "teks_chat": "Justru karena lu terus-terusan nyebut bukan itu, aku makin yakin kalau Fikri itu beneran pelakunya.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Fikri",
+            "relasi": "offend",
+            "bukti_pesan": [
+              7
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 52.txt"
+  }
+}

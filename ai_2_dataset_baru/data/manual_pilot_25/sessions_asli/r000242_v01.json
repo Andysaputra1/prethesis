@@ -1,0 +1,81 @@
+{
+  "job": {
+    "job_id": "r000242_v01",
+    "case_name": "stance_change",
+    "case_description": "Pengirim pesan sekarang sebelumnya menuduh atau membela seorang pemain di konteks, lalu berubah sikap terhadap pemain yang sama. Anotasi mengikuti sikap terbaru.",
+    "source": {
+      "source_row": 242,
+      "source_group": "e7b6a3f4af28765849cb",
+      "teks_chat": "dari tadi si Raka paling sering mancing keributan, feeling gw dia Hitman",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 5,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "stance_change",
+    "participants": [
+      "Indra",
+      "Jihan",
+      "Lulu",
+      "Kiki"
+    ],
+    "focus_player": "Jihan",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Indra",
+        "teks_chat": "Sepertinya Jihan sedang terkena Gag Order deh, kasihan dia tidak bisa membela diri.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Jihan",
+            "relasi": "defend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Jihan",
+        "teks_chat": "Aku tidak kena efek apa-apa kok, cuma lagi malas mengetik saja.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Lulu",
+        "teks_chat": "Tuh kan, ternyata dia bisa berbicara normal.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Kiki",
+        "teks_chat": "Sangat mencurigakan kalau civilian malah malas berdiskusi.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Indra",
+        "teks_chat": "Wah kalau kamu memang bisa mengetik bebas sedari tadi, aku tarik kata-kataku, Jihan pasti Hitman yang sengaja pura-pura pasif!",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Jihan",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 3.txt"
+  }
+}

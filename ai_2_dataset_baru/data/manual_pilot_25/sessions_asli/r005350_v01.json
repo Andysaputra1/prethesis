@@ -1,0 +1,177 @@
+{
+  "job": {
+    "job_id": "r005350_v01",
+    "case_name": "neutral_names",
+    "case_description": "Neutral menyebut nama tanpa menuduh/membela; target kosong.",
+    "source": {
+      "source_row": 5350,
+      "source_group": "204ba8fc9c52314cc405",
+      "teks_chat": "gue kira tadi masih fase diskusi",
+      "label_intent": "neutral"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 13,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "neutral_names",
+    "participants": [
+      "Doni",
+      "Eka",
+      "Fajar",
+      "Gilang"
+    ],
+    "focus_player": "",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Doni",
+        "teks_chat": "Aku curiga kepada Eka, dia diam saja dari tadi pagi.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Eka",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Eka",
+        "teks_chat": "Aku tidak diam, aku sedang membaca riwayat percakapan kalian.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Eka",
+            "relasi": "defend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Fajar",
+        "teks_chat": "Eka belum memberi pendapat, aku curiga Eka Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Eka",
+            "relasi": "offend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Gilang",
+        "teks_chat": "Kita fokus saja, apakah ada yang mau mengakui peran Stalker?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Eka",
+        "teks_chat": "Aku bukan Hitman, aku cuma sedang menyimak diskusi.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Eka",
+            "relasi": "defend",
+            "bukti_pesan": [
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Doni",
+        "teks_chat": "Fajar, kamu merasa Eka itu Hitman atau tidak?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Fajar",
+        "teks_chat": "Aku merasa Eka memang sangat mencurigakan.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Eka",
+            "relasi": "offend",
+            "bukti_pesan": [
+              7
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Eka",
+        "teks_chat": "Mengapa kalian semua jadi menuduh aku?",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Eka",
+            "relasi": "defend",
+            "bukti_pesan": [
+              8
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Gilang",
+        "teks_chat": "Sebentar, Doni tadi menuduh Eka, sekarang Fajar ikut menuduh.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Fajar",
+        "teks_chat": "Anehnya Doni malah terlihat mencurigakan sekarang, dia melempar tuduhan kepada Eka lalu diam.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Doni",
+            "relasi": "offend",
+            "bukti_pesan": [
+              10
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Doni",
+        "teks_chat": "Mengapa jadi menuduh aku? Aku kan cuma bertanya tadi kepada kalian.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Doni",
+            "relasi": "defend",
+            "bukti_pesan": [
+              11
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Gilang",
+        "teks_chat": "Tadi Fajar menuduh Eka, lalu sekarang menuduh Doni, tuduhan kalian berubah terus.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Eka",
+        "teks_chat": "Jadi sekarang posisi tuduhan Fajar itu ke Doni atau ke aku?",
+        "label_intent": "neutral",
+        "target": []
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 77.txt"
+  }
+}

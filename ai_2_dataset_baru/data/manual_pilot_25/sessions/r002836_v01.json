@@ -1,0 +1,46 @@
+{
+  "job": {
+    "job_id": "r002836_v01",
+    "case_name": "first_message_self",
+    "case_description": "Pesan pertama tanpa konteks membela atau menuduh diri sendiri. Target = pengirim; tidak perlu riwayat untuk memahami aku.",
+    "source": {
+      "source_row": 2836,
+      "source_group": "abf00f76e4ed24ecc464",
+      "teks_chat": "E jawabnya aman terus, malah jadi makin mencurigakan",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 1,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "first_message_self",
+    "participants": [
+      "Irfan"
+    ],
+    "focus_player": "Irfan",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Irfan",
+        "teks_chat": "Langsung vote aku saja kalau kalian mau mulai memilih.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Irfan",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 42.txt"
+  }
+}

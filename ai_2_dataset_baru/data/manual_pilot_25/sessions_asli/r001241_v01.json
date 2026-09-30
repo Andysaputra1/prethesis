@@ -1,0 +1,47 @@
+{
+  "job": {
+    "job_id": "r001241_v01",
+    "case_name": "first_message",
+    "case_description": "Pesan pertama permainan, tanpa konteks. Neutral boleh menyapa/membuka diskusi; offend/defend menyebut target jelas. Jangan mengarang kejadian malam, voting, atau percakapan yang belum terjadi.",
+    "source": {
+      "source_row": 1241,
+      "source_group": "3b865b974cf6a6c2372b",
+      "teks_chat": "dia terlalu dominan nuduh orang, coba jelasin semalam kamu ngapain dan targetmu siapa",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 1,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "first_message",
+    "participants": [
+      "Kiki",
+      "Lala"
+    ],
+    "focus_player": "Lala",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Kiki",
+        "teks_chat": "Tebakanku Lala yang jadi Hitman. Aku ingin vote Lala saat Tribunal.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Lala",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 23.txt"
+  }
+}

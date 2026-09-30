@@ -1,0 +1,74 @@
+{
+  "job": {
+    "job_id": "r002077_v01",
+    "case_name": "neutral_after_accusation",
+    "case_description": "Konteks berisi tuduhan, tetapi pesan sekarang neutral; jangan mewarisi relasi lama.",
+    "source": {
+      "source_row": 2077,
+      "source_group": "8aecf4ae92c4ec31ba22",
+      "teks_chat": "saya warga biasa, tidak punya skill malam dan tidak menyandera siapa pun",
+      "label_intent": "neutral"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 4,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "neutral_after_accusation",
+    "participants": [
+      "Joko",
+      "Kiki",
+      "Lia"
+    ],
+    "focus_player": "",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Joko",
+        "teks_chat": "Lia dari tadi nggak balas, pasti kamu pelakunya yang lagi main aman kan?",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Lia",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Kiki",
+        "teks_chat": "Iya tuh, mencurigakan banget diam terus.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Lia",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Lia",
+        "teks_chat": "a...",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Joko",
+        "teks_chat": "Pesannya cuma satu huruf. Itu salah ketik atau koneksinya bermasalah?",
+        "label_intent": "neutral",
+        "target": []
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 34.txt"
+  }
+}

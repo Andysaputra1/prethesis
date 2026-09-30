@@ -1,0 +1,182 @@
+{
+  "job": {
+    "job_id": "r000967_v01",
+    "case_name": "self",
+    "case_description": "Defend diri sendiri atau offend/vote diri sendiri sesuai label. Target = pengirim.",
+    "source": {
+      "source_row": 967,
+      "source_group": "d74a99832e91f4ac93a9",
+      "teks_chat": "fix si Bimo hitman, aku dapat info langsung dari kemampuan stalker",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 10,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "self",
+    "participants": [
+      "Qila",
+      "Rafi",
+      "Sinta",
+      "Tito"
+    ],
+    "focus_player": "Qila",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Qila",
+        "teks_chat": "Ayo semuanya, langsung kumpulin suara buat Rafi sekarang!",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Rafi",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Rafi",
+        "teks_chat": "Loh, buktinya apa kamu tiba-tiba ngajak vote aku?",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Rafi",
+            "relasi": "defend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Sinta",
+        "teks_chat": "Rafi belum pantas diajak vote tanpa alasan yang jelas.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Rafi",
+            "relasi": "defend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Tito",
+        "teks_chat": "Mencurigakan banget, Qila pasti mau cari kambing hitam nih.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Qila",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Qila",
+        "teks_chat": "Aku cuma nebak dari feeling aja sih, lagian kita juga belum ada petunjuk lain kan.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Qila",
+            "relasi": "defend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Rafi",
+        "teks_chat": "Qila, aku tidak bersalah. Firasatmu tidak cukup untuk menuduhku.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Rafi",
+            "relasi": "defend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Sinta",
+        "teks_chat": "Aku setuju sama Rafi, ngajak vote ngasal gitu ciri-ciri Hitman banget.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Qila",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Tito",
+        "teks_chat": "Mending kita keluarin Qila aja, biar aman diskusinya.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Qila",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Qila",
+        "teks_chat": "Aku ngajak vote Rafi karena dia paling sedikit ngomong, bukan buat cari kambing hitam.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Qila",
+            "relasi": "defend",
+            "bukti_pesan": [
+              9
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Qila",
+        "teks_chat": "Kalau kalian tetap tidak percaya penjelasanku, vote aku saja saat Tribunal.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Qila",
+            "relasi": "offend",
+            "bukti_pesan": [
+              10
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 19.txt"
+  },
+  "revisi": [
+    {
+      "pesan": 9,
+      "kategori": "tidak_natural",
+      "alasan": "Pesan 9 dan 10 berturut-turut dari Qila isinya sama (minta di-vote); pesan 10 merujuk 'penjelasanku' yang belum ada."
+    }
+  ]
+}

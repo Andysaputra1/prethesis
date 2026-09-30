@@ -1,0 +1,137 @@
+{
+  "job": {
+    "job_id": "r000870_v01",
+    "case_name": "agreement",
+    "case_description": "Pesan sekarang menyetujui atau membantah pesan pemain lain di konteks tanpa menyebut ulang nama target. Setuju dengan tuduhan = offend pemain yang dituduh; membantah tuduhan atau setuju dengan pembelaan = defend. Identitas target diwarisi dari pesan yang ditanggapi.",
+    "source": {
+      "source_row": 870,
+      "source_group": "139323994fd26045a426",
+      "teks_chat": "aku bukan Hitman, aku Stalker, cuma tadi kelupaan ngomong hasil intip",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 9,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "agreement",
+    "participants": [
+      "Gani",
+      "Hana",
+      "Indra",
+      "Joko"
+    ],
+    "focus_player": "Hana",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Gani",
+        "teks_chat": "Siapa tadi yang tiba-tiba nuduh tanpa bukti di awal ronde?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Indra",
+        "teks_chat": "Oh, si Hana tadi yang ngotot banget nyuruh vote Joko.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Hana",
+        "teks_chat": "Aku menarik dugaan awal setelah membaca jawaban baru di chat.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Gani",
+        "teks_chat": "Tuh kan, orang yang sering ganti-ganti tuduhan gini pasti pelakunya yang lagi kebingungan.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Hana",
+            "relasi": "offend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Joko",
+        "teks_chat": "Bener banget, cara main Hana kotor abis, dia pasti Hitman-nya.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Hana",
+            "relasi": "offend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Indra",
+        "teks_chat": "Eh tapi wajar nggak sih kalau civilian ganti tuduhan gara-gara dapet info baru?",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Hana",
+            "relasi": "defend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Gani",
+        "teks_chat": "Nggak lah, civilian yang pinter nggak bakal segampang itu terpengaruh.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Hana",
+            "relasi": "offend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Joko",
+        "teks_chat": "Aku setuju sama Gani, mending kita keluarin aja Hana biar aman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Hana",
+            "relasi": "offend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Indra",
+        "teks_chat": "Aku sih kurang setuju dengan usulan kalian tadi, bisa jadi dia memang tulus mau bantu tapi caranya yang salah.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Hana",
+            "relasi": "defend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 17.txt"
+  }
+}

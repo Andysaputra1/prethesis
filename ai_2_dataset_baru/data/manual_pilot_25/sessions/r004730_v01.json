@@ -1,0 +1,132 @@
+{
+  "job": {
+    "job_id": "r004730_v01",
+    "case_name": "plural_reference",
+    "case_description": "Pesan sekarang memakai mereka/kalian/keduanya/berdua untuk dua pemain atau lebih yang jelas dari konteks, tanpa menyebut ulang nama mereka. Simpan semua pemain itu sebagai target.",
+    "source": {
+      "source_row": 4730,
+      "source_group": "6bb6b7567c332d486ee3",
+      "teks_chat": "gw rasa target kita jelas si N, dia nggak pernah kasih alasan saat ikut voting",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 5,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "plural_reference",
+    "participants": [
+      "Wawan",
+      "Xena",
+      "Yogi"
+    ],
+    "focus_player": "",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Wawan",
+        "teks_chat": "Aku curiga Xena dan Yogi Hitman karena saling membela tanpa alasan.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Xena",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          },
+          {
+            "pemain": "Yogi",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Xena",
+        "teks_chat": "Aku bukan Hitman, pembelaan bukan bukti role.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Xena",
+            "relasi": "defend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Wawan",
+        "teks_chat": "Aku tetap curiga kalian berdua pelakunya.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Xena",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          },
+          {
+            "pemain": "Yogi",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Yogi",
+        "teks_chat": "Aku dan Xena bukan Hitman, tuduhan itu belum terbukti.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Yogi",
+            "relasi": "defend",
+            "bukti_pesan": [
+              4
+            ]
+          },
+          {
+            "pemain": "Xena",
+            "relasi": "defend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Wawan",
+        "teks_chat": "Keduanya pasti Hitman yang bersekongkol. Vote mereka!",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Xena",
+            "relasi": "offend",
+            "bukti_pesan": [
+              4
+            ]
+          },
+          {
+            "pemain": "Yogi",
+            "relasi": "offend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 69.txt"
+  }
+}

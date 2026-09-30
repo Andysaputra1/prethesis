@@ -1,0 +1,53 @@
+{
+  "job": {
+    "job_id": "r002973_v01",
+    "case_name": "short_history_1",
+    "case_description": "Awal diskusi dengan tepat 1 pesan sebelumnya. Jangan menambah riwayat fiktif atau mengisi sampai 12.",
+    "source": {
+      "source_row": 2973,
+      "source_group": "f92bacd97e207cc4b9c7",
+      "teks_chat": "kalau bukan Hitman, kenapa lu paling keras menolak semua pemeriksaan",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 2,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "short_history_1",
+    "participants": [
+      "Nino",
+      "Oki"
+    ],
+    "focus_player": "Nino",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Nino",
+        "teks_chat": "Aku mau mengubah klaimku dari Civilian menjadi Spy.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Oki",
+        "teks_chat": "Nino, klaim berubah begitu bikin aku curiga kamu Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Nino",
+            "relasi": "offend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 43.txt"
+  }
+}

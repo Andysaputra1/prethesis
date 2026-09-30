@@ -1,0 +1,197 @@
+{
+  "job": {
+    "job_id": "r003265_v01",
+    "case_name": "outside_window_unknown",
+    "case_description": "14-16 pesan total. Pembahasan lama telah putus/beralih. Teks dan anotasi 12 konteks terakhir tidak cukup menentukan acuan sekarang. Target harus tidak_diketahui; jangan menggunakan informasi lama yang tidak tersedia dalam input.",
+    "source": {
+      "source_row": 3265,
+      "source_group": "5d85aba2232af33b8aba",
+      "teks_chat": "gw paham kenapa kalian curiga, tapi pola sebenarnya ada di dia yang selalu membela tersangka lain",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 14,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "outside_window_unknown",
+    "participants": [
+      "Putri",
+      "Dinda",
+      "Aris",
+      "Bagus",
+      "Cita",
+      "Bayu"
+    ],
+    "focus_player": "Bayu",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Putri",
+        "teks_chat": "Bayu tidak mau menjelaskan klaimnya, aku curiga dia Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Bayu",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Dinda",
+        "teks_chat": "Kita jeda dulu bahas itu. Semalam ada yang dapat info?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Aris",
+        "teks_chat": "Aku nggak dapat apa-apa.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Bagus",
+        "teks_chat": "Aku juga, semalam aman-aman aja.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Cita",
+        "teks_chat": "Ada yang punya petunjuk lain?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Bayu",
+        "teks_chat": "Belum ada kayaknya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Putri",
+        "teks_chat": "Terus semalam ada yang disandera nggak, ya?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Dinda",
+        "teks_chat": "Nggak tahu, belum ada yang bilang apa-apa.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Aris",
+        "teks_chat": "Kita lihat aja nanti siapa yang tiba-tiba nggak muncul.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Bagus",
+        "teks_chat": "Iya, sambil perhatiin siapa yang jawabannya berubah-ubah.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Cita",
+        "teks_chat": "Setuju, jangan cuma nebak dari satu hal.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Bayu",
+        "teks_chat": "Oke, lanjut aja diskusinya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Putri",
+        "teks_chat": "Waktu diskusi tinggal sedikit sebelum Tribunal.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Dinda",
+        "teks_chat": "Dia malah diam setelah ditanya, vote orang yang dibahas tadi!",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "tidak_diketahui",
+            "relasi": "offend",
+            "bukti_pesan": []
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 47.txt"
+  },
+  "revisi": [
+    {
+      "pesan": 2,
+      "kategori": "meta",
+      "alasan": "Menjeda diskusi untuk 'memastikan aturan'."
+    },
+    {
+      "pesan": 3,
+      "kategori": "meta",
+      "alasan": "Menanyakan skill yang akan dibahas."
+    },
+    {
+      "pesan": 4,
+      "kategori": "meta",
+      "alasan": "Menjelaskan Guard milik Spy."
+    },
+    {
+      "pesan": 5,
+      "kategori": "meta",
+      "alasan": "Menanyakan jumlah target Guard."
+    },
+    {
+      "pesan": 6,
+      "kategori": "meta",
+      "alasan": "Menjelaskan jumlah target Guard."
+    },
+    {
+      "pesan": 7,
+      "kategori": "meta",
+      "alasan": "Menanyakan aturan target berulang."
+    },
+    {
+      "pesan": 8,
+      "kategori": "meta",
+      "alasan": "Menjelaskan larangan dua malam berturut-turut."
+    },
+    {
+      "pesan": 9,
+      "kategori": "meta",
+      "alasan": "Menanyakan pemilik Peek."
+    },
+    {
+      "pesan": 10,
+      "kategori": "meta",
+      "alasan": "Menjelaskan efek Peek."
+    },
+    {
+      "pesan": 11,
+      "kategori": "meta",
+      "alasan": "Menjelaskan cooldown Peek."
+    },
+    {
+      "pesan": 12,
+      "kategori": "meta",
+      "alasan": "Menjelaskan chat dikunci saat malam."
+    },
+    {
+      "pesan": 13,
+      "kategori": "meta",
+      "alasan": "Menjelaskan urutan fase."
+    }
+  ]
+}

@@ -1,0 +1,154 @@
+{
+  "job": {
+    "job_id": "r003141_v01",
+    "case_name": "stance_change",
+    "case_description": "Pengirim pesan sekarang sebelumnya menuduh atau membela seorang pemain di konteks, lalu berubah sikap terhadap pemain yang sama. Anotasi mengikuti sikap terbaru.",
+    "source": {
+      "source_row": 3141,
+      "source_group": "842cbe2892beec02afbe",
+      "teks_chat": "si C terus mengarahkan voting tanpa menjelaskan aksinya, aku menuduh C sebagai Hitman",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 12,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "stance_change",
+    "participants": [
+      "Tika",
+      "Umar",
+      "Vina",
+      "Wira"
+    ],
+    "focus_player": "Umar",
+    "panggilan": [
+      {
+        "pemain": "Umar",
+        "sebutan": [
+          "Mar"
+        ]
+      }
+    ],
+    "messages": [
+      {
+        "pengirim": "Tika",
+        "teks_chat": "Ada yang mau berbagi pilihan Guard?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Umar",
+        "teks_chat": "Aku klaim Spy, semalam aku Guard Vina.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Vina",
+        "teks_chat": "Kamu yakin targetnya aku?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Umar",
+        "teks_chat": "Iya, itu klaim pilihanku.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Wira",
+        "teks_chat": "Aku curiga Umar Hitman yang membuat klaim palsu.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Umar",
+            "relasi": "offend",
+            "bukti_pesan": [
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Tika",
+        "teks_chat": "Aku membela Umar, klaim Guard itu belum terbukti palsu.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Umar",
+            "relasi": "defend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Umar",
+        "teks_chat": "Aku memang bukan Hitman.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Umar",
+            "relasi": "defend",
+            "bukti_pesan": [
+              7
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Vina",
+        "teks_chat": "Bagaimana dengan malam sebelumnya?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Wira",
+        "teks_chat": "Iya, siapa pilihanmu saat itu?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Umar",
+        "teks_chat": "Vina juga, aku Guard dia dua malam berturut-turut.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Vina",
+        "teks_chat": "Umar, Spy tidak boleh Guard target sama dua malam berturut-turut. Aku curiga kamu Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Umar",
+            "relasi": "offend",
+            "bukti_pesan": [
+              11
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Tika",
+        "teks_chat": "Aku tarik pembelaanku. Umar pasti Hitman karena klaim Guard-nya bertentangan dengan aturan.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Umar",
+            "relasi": "offend",
+            "bukti_pesan": [
+              12
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 45.txt"
+  }
+}

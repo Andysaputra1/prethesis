@@ -1,0 +1,191 @@
+{
+  "job": {
+    "job_id": "r001032_v01",
+    "case_name": "memory_outside_window",
+    "case_description": "14-16 pesan total. Nama target hanya disebut sebelum 12 konteks terakhir. Dalam jendela, ada pesan yang meneruskan acuan dengan jelas dan menyimpan anotasi target berdasarkan pesan lama. Pesan sekarang merujuk target sama. Nama target tidak muncul dalam teks 12 konteks terakhir atau pesan sekarang; target diketahui lewat memori.",
+    "source": {
+      "source_row": 1032,
+      "source_group": "35671b8b996c1637122b",
+      "teks_chat": "gw udah bilang dari awal aku Stalker, peek ke Fajar hasilnya merah",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 14,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "memory_outside_window",
+    "participants": [
+      "Galih",
+      "Hana",
+      "Iqbal",
+      "Joko"
+    ],
+    "focus_player": "Joko",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Galih",
+        "teks_chat": "Joko langsung membela pemain yang baru dituduh. Aku curiga Joko Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Joko",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Hana",
+        "teks_chat": "Aku juga curiga orang yang langsung membela tadi.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Joko",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Iqbal",
+        "teks_chat": "Aku curiga dia sengaja membela untuk mencari kepercayaan.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Joko",
+            "relasi": "offend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Galih",
+        "teks_chat": "Aku setuju dengan tuduhan itu.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Joko",
+            "relasi": "offend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Hana",
+        "teks_chat": "Tapi tuduhan yang dia bantah tadi memang hanya berdasarkan firasat.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Iqbal",
+        "teks_chat": "Meski begitu, aku tetap curiga dia Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Joko",
+            "relasi": "offend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Galih",
+        "teks_chat": "Kita perlu membaca lagi alasan pembelaannya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Hana",
+        "teks_chat": "Aku membela dia; cepat membantah tuduhan yang lemah itu wajar.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Joko",
+            "relasi": "defend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Iqbal",
+        "teks_chat": "Aku tidak setuju. Aku tetap curiga dia sedang mencari kepercayaan.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Joko",
+            "relasi": "offend",
+            "bukti_pesan": [
+              8
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Galih",
+        "teks_chat": "Terus kita harus gimana nih sekarang? Voting salah satu?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Hana",
+        "teks_chat": "Jangan buru-buru, tunggu info lain dulu aja biar nggak salah.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Iqbal",
+        "teks_chat": "Waktu terus berjalan loh, keburu kelar nih rondenya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Galih",
+        "teks_chat": "Aku ingin vote orang yang cepat membela tadi.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Joko",
+            "relasi": "offend",
+            "bukti_pesan": [
+              9
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Iqbal",
+        "teks_chat": "Aku setuju. Aku curiga dia Hitman dan ingin vote dia.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Joko",
+            "relasi": "offend",
+            "bukti_pesan": [
+              13
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 21.txt"
+  }
+}

@@ -1,0 +1,104 @@
+{
+  "job": {
+    "job_id": "r001622_v01",
+    "case_name": "negation",
+    "case_description": "Negasi menentukan relasi: Andy Hitman berbeda dari Andy bukan Hitman.",
+    "source": {
+      "source_row": 1622,
+      "source_group": "1a1ba8f801869fdb23d6",
+      "teks_chat": "lu bilang pembelaanku lemah, sementara tuduhanmu ke gw bahkan nggak punya satu bukti pun",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 5,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "negation",
+    "participants": [
+      "Wira",
+      "Zaki",
+      "Zara"
+    ],
+    "focus_player": "Zaki",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Wira",
+        "teks_chat": "Zaki, aku curiga kamu Hitman karena langsung panik sebelum ada yang menuduh.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Zaki",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Zaki",
+        "teks_chat": "Aku hanya takut dijadikan target sasaran kalian secara sembarangan.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Zaki",
+            "relasi": "defend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Wira",
+        "teks_chat": "Biasanya penjahat yang bereaksi terlalu cepat untuk membela diri.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Zaki",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Zara",
+        "teks_chat": "Aku setuju, sikapnya itu sangat tidak wajar untuk orang baik.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Zaki",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Zaki",
+        "teks_chat": "Kalian sungguh salah paham, aku bukan orang jahat yang sedang kalian cari!",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Zaki",
+            "relasi": "defend",
+            "bukti_pesan": [
+              5
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 28.txt"
+  }
+}

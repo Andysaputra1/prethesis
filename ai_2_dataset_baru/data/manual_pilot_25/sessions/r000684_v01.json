@@ -1,0 +1,190 @@
+{
+  "job": {
+    "job_id": "r000684_v01",
+    "case_name": "outside_window_unknown",
+    "case_description": "14-16 pesan total. Pembahasan lama telah putus/beralih. Teks dan anotasi 12 konteks terakhir tidak cukup menentukan acuan sekarang. Target harus tidak_diketahui; jangan menggunakan informasi lama yang tidak tersedia dalam input.",
+    "source": {
+      "source_row": 684,
+      "source_group": "ea43584b956035d4b356",
+      "teks_chat": "jangan jadikan aku tersangka hanya karena aku menolak teori yang menurutku lemah",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 14,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "outside_window_unknown",
+    "participants": [
+      "Andi",
+      "Bima",
+      "Citra",
+      "Doni"
+    ],
+    "focus_player": "Doni",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Andi",
+        "teks_chat": "Aku curiga Doni Hitman karena cepat membela orang lain.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Doni",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Bima",
+        "teks_chat": "Aku mau berhenti membahas nama dulu. Semalam ada yang ngerasa aneh nggak?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Citra",
+        "teks_chat": "Aku nggak ngerasa apa-apa, malamku biasa aja.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Andi",
+        "teks_chat": "Aku juga, nggak ada kejadian aneh.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Bima",
+        "teks_chat": "Berarti kita cuma bisa pegang isi chat siang ini.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Citra",
+        "teks_chat": "Iya, makanya tiap orang kasih alasan yang jelas.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Andi",
+        "teks_chat": "Terus yang dari tadi belum ngomong gimana?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Bima",
+        "teks_chat": "Kita tanya baik-baik aja, jangan langsung dituduh.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Citra",
+        "teks_chat": "Setuju, biar diskusinya nggak ribut.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Andi",
+        "teks_chat": "Oke, jadi keputusan vote nanti kita ambil dari obrolan di sini.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Bima",
+        "teks_chat": "Iya, sambil ingat bahwa klaim role bisa saja bohong.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Citra",
+        "teks_chat": "Oke, cukup soal itu.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Andi",
+        "teks_chat": "Balik lagi ke orang yang kita bahas sebelum ini.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Bima",
+        "teks_chat": "Aku membela dia. Cepat membantah tuduhan yang lemah tidak membuatnya Hitman.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "tidak_diketahui",
+            "relasi": "defend",
+            "bukti_pesan": []
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 13.txt"
+  },
+  "revisi": [
+    {
+      "pesan": 2,
+      "kategori": "meta",
+      "alasan": "'Apa arti Zero Economy?' = kebocoran prompt."
+    },
+    {
+      "pesan": 3,
+      "kategori": "meta",
+      "alasan": "'Game ini tidak memakai uang...' = kebocoran prompt."
+    },
+    {
+      "pesan": 4,
+      "kategori": "aturan_game",
+      "alasan": "Membahas tebusan uang untuk sandera."
+    },
+    {
+      "pesan": 5,
+      "kategori": "meta",
+      "alasan": "'tidak ada mekanik tebusan' = penjelasan desain."
+    },
+    {
+      "pesan": 6,
+      "kategori": "meta",
+      "alasan": "Menjelaskan Hostage adalah skill Hitman, bukan pembayaran."
+    },
+    {
+      "pesan": 7,
+      "kategori": "meta",
+      "alasan": "Menanyakan fungsi role Civilian (aturan)."
+    },
+    {
+      "pesan": 8,
+      "kategori": "meta",
+      "alasan": "Menjelaskan tugas Civilian."
+    },
+    {
+      "pesan": 9,
+      "kategori": "meta",
+      "alasan": "'Civilian tidak membeli skill tambahan' = penjelasan Zero Economy."
+    },
+    {
+      "pesan": 10,
+      "kategori": "tidak_natural",
+      "alasan": "Kaku ('bertumpu pada percakapan dan informasi yang tersedia')."
+    },
+    {
+      "pesan": 12,
+      "kategori": "meta",
+      "alasan": "'Penjelasan aturan ekonomi sudah cukup'."
+    },
+    {
+      "pesan": 13,
+      "kategori": "meta",
+      "alasan": "Merujuk 'pertanyaan Zero Economy'."
+    }
+  ]
+}

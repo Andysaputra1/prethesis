@@ -1,0 +1,62 @@
+{
+  "job": {
+    "job_id": "r003227_v01",
+    "case_name": "short_history_1",
+    "case_description": "Awal diskusi dengan tepat 1 pesan sebelumnya. Jangan menambah riwayat fiktif atau mengisi sampai 12.",
+    "source": {
+      "source_row": 3227,
+      "source_group": "c82a599c67205569344a",
+      "teks_chat": "si A nuduh gw tanpa bukti, menurut gw itu lebih mencurigakan daripada respons gw",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 2,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "short_history_1",
+    "participants": [
+      "Gito",
+      "Heri",
+      "Iwan"
+    ],
+    "focus_player": "Gito",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Gito",
+        "teks_chat": "Heri, kamu menuduh Iwan lalu aku tanpa alasan. Aku curiga kamu Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Heri",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Heri",
+        "teks_chat": "Soalnya alibi kamu yang sekarang paling mencurigakan buat dipelajari, Gito!",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Gito",
+            "relasi": "offend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 46.txt"
+  }
+}

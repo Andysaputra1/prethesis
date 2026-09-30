@@ -1,0 +1,75 @@
+{
+  "job": {
+    "job_id": "r000792_v01",
+    "case_name": "nickname",
+    "case_description": "Pesan sekarang menyebut pemain dengan nama panggilan, singkatan, atau salah ketik ringan (Andy -> ndy, andi, si And) tanpa menulis nama aslinya. Catat sebutan itu di panggilan. Target tetap memakai nama asli; jika neutral, target kosong.",
+    "source": {
+      "source_row": 792,
+      "source_group": "770eba7aaf0ce0b008ac",
+      "teks_chat": "jangan dipelintir, gw stalker dan info gw valid, si Bimo bukan hitman",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 3,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "nickname",
+    "participants": [
+      "Kiki",
+      "Lila",
+      "Maman"
+    ],
+    "focus_player": "Maman",
+    "panggilan": [
+      {
+        "pemain": "Maman",
+        "sebutan": [
+          "Mam"
+        ]
+      }
+    ],
+    "messages": [
+      {
+        "pengirim": "Kiki",
+        "teks_chat": "Maman belum ikut mengetik sejak diskusi dibuka, ya?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Lila",
+        "teks_chat": "Maman pasti lagi asik nyari mangsa buat diculik, vote aja dia!",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Maman",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Kiki",
+        "teks_chat": "Mam belum pantas dituduh hanya karena belum mengetik. Kita belum tahu penyebab diamnya.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Maman",
+            "relasi": "defend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 16.txt"
+  }
+}

@@ -1,0 +1,124 @@
+{
+  "job": {
+    "job_id": "r004279_v01",
+    "case_name": "multiple_targets",
+    "case_description": "Dua atau lebih pemain menjadi target relasi yang sama secara jelas.",
+    "source": {
+      "source_row": 4279,
+      "source_group": "498a3066f65f4b94443a",
+      "teks_chat": "gw civilian dan sudah ngomong dari awal, yang perlu dijelaskan itu kenapa si Jaka terus menekan gw",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 10,
+    "pesan_typo_ringan": [
+      10
+    ]
+  },
+  "session": {
+    "case_name": "multiple_targets",
+    "participants": [
+      "Santi",
+      "Eka",
+      "Tino",
+      "Rudi"
+    ],
+    "focus_player": "",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Santi",
+        "teks_chat": "Kalian sadar nggak, ada beberapa orang yang sama sekali nggak bantu nyari pelaku?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Rudi",
+        "teks_chat": "Iya, diskusi kita seperti hanya diikuti oleh beberapa pemain saja.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Santi",
+        "teks_chat": "Mereka pasti sengaja menghindar biar nggak salah ngomong.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Eka",
+        "teks_chat": "Aku sedang menyimak.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Tino",
+        "teks_chat": "Aku juga sedang membaca diskusi.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Rudi",
+        "teks_chat": "Hanya muncul sebentar lalu hilang lagi, itu tidak membantu.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Santi",
+        "teks_chat": "Kita harus lebih tegas kepada orang-orang pasif ini.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Eka",
+        "teks_chat": "Aku mau menyampaikan pendapat setelah selesai membaca.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Tino",
+        "teks_chat": "Beri waktu untuk membaca semua pesan.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Rudi",
+        "teks_chat": "Sebaiknya kita segera vote Eka dan Tino, mereka tdk berkontribusi sejak awal.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Eka",
+            "relasi": "offend",
+            "bukti_pesan": [
+              10
+            ]
+          },
+          {
+            "pemain": "Tino",
+            "relasi": "offend",
+            "bukti_pesan": [
+              10
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 62.txt"
+  },
+  "revisi": [
+    {
+      "pesan": 1,
+      "kategori": "tidak_natural",
+      "alasan": "Kaku ('Apakah kalian sadar...')."
+    },
+    {
+      "pesan": 3,
+      "kategori": "tidak_natural",
+      "alasan": "Kaku ('mencoba menghindari agar tidak membuat kesalahan bicara')."
+    }
+  ]
+}

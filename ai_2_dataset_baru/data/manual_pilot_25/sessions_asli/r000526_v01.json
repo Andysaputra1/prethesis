@@ -1,0 +1,179 @@
+{
+  "job": {
+    "job_id": "r000526_v01",
+    "case_name": "self",
+    "case_description": "Defend diri sendiri atau offend/vote diri sendiri sesuai label. Target = pengirim.",
+    "source": {
+      "source_row": 526,
+      "source_group": "28e8a66f80121b76646a",
+      "teks_chat": "gw bukan Stalker, jadi jangan tuntut gw punya hasil Peek yang nggak mungkin",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 13,
+    "pesan_typo_ringan": [
+      2
+    ]
+  },
+  "session": {
+    "case_name": "self",
+    "participants": [
+      "Chika",
+      "Dita",
+      "Eka",
+      "Fahmi"
+    ],
+    "focus_player": "Fahmi",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Chika",
+        "teks_chat": "Ajakan vote di chat ronde ini berubah-ubah terus.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Dita",
+        "teks_chat": "Iya, banyak yang tiba-tiba menarik ajakannya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Eka",
+        "teks_chat": "Fahmi tadi mengajak vote lalu bilang ingin menunda.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Fahmi",
+        "teks_chat": "Lah, aku ngga mindahin pilihan sama sekali daritadi.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Fahmi",
+            "relasi": "defend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Chika",
+        "teks_chat": "Di pesan sebelumnya kamu sempat mengajak kita vote, lalu bilang ingin menunda.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Dita",
+        "teks_chat": "Pasti kamu sengaja mengacaukan pemungutan suara ini.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Fahmi",
+            "relasi": "offend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Eka",
+        "teks_chat": "Iya, niat banget mau nyelametin temannya yang Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Fahmi",
+            "relasi": "offend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Fahmi",
+        "teks_chat": "Aku salah mengetik waktu mengajak vote. Aku tidak berniat menggiring kalian.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Fahmi",
+            "relasi": "defend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Chika",
+        "teks_chat": "Alasan salah mengetik itu perlu dijelaskan lebih rinci.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Dita",
+        "teks_chat": "Udah fix kita kumpul suara aja buat menendang Fahmi.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Fahmi",
+            "relasi": "offend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Eka",
+        "teks_chat": "Ayo cepetan mumpung belum di-close sistemnya.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Fahmi",
+            "relasi": "offend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Fahmi",
+        "teks_chat": "Aku mau mengoreksi pesanku yang salah, bukan menutupi role Hitman.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Fahmi",
+            "relasi": "defend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Fahmi",
+        "teks_chat": "Aku bukan pelakunya. Salah mengetik ajakan vote tadi tidak berarti aku sedang mengatur suara.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Fahmi",
+            "relasi": "defend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 8.txt"
+  }
+}

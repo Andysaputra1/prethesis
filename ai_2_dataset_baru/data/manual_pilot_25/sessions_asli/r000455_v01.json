@@ -1,0 +1,83 @@
+{
+  "job": {
+    "job_id": "r000455_v01",
+    "case_name": "short_history_3",
+    "case_description": "Awal diskusi dengan tepat 3 pesan sebelumnya. Acuan tidak harus berada di pesan terakhir.",
+    "source": {
+      "source_row": 455,
+      "source_group": "9589366e4ead409d938c",
+      "teks_chat": "bukan aku yang nyandera malam tadi, ya; kalau mau cari hitman, fokus ke pemain yang paling diuntungkan dari kekacauan ini",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 4,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "short_history_3",
+    "participants": [
+      "Andi",
+      "Budi",
+      "Citra",
+      "Denis"
+    ],
+    "focus_player": "Citra",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Andi",
+        "teks_chat": "Citra belum membalas pertanyaan soal alasan vote.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Budi",
+        "teks_chat": "Aku curiga Citra Hitman yang sengaja menghindari pertanyaan.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Citra",
+            "relasi": "offend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Citra",
+        "teks_chat": "Aku bukan Hitman. Pesanku tadi gagal terkirim karena koneksi.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Citra",
+            "relasi": "defend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Denis",
+        "teks_chat": "Citra belum pantas dituduh hanya dari jeda chat. Penyebabnya bisa masalah koneksi.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Citra",
+            "relasi": "defend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 7.txt"
+  }
+}

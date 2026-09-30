@@ -1,0 +1,127 @@
+{
+  "job": {
+    "job_id": "r001423_v01",
+    "case_name": "interruption",
+    "case_description": "Pembahasan target disela obrolan waktu/ronde; kaitan kembali ke target masih jelas.",
+    "source": {
+      "source_row": 1423,
+      "source_group": "b94e47e46cf0c136b584",
+      "teks_chat": "jangan asal lempar ke aku, lihat dulu siapa yang belok-belok",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 10,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "interruption",
+    "participants": [
+      "Ujang",
+      "Vina",
+      "Wati",
+      "Yanto"
+    ],
+    "focus_player": "Wati",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Ujang",
+        "teks_chat": "Wati kok daritadi chatnya telat banget masuk ya?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Vina",
+        "teks_chat": "Aku curiga dia Hitman yang sengaja menunda jawaban.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Wati",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Wati",
+        "teks_chat": "Sinyalku jelek banget.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Wati",
+            "relasi": "defend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Yanto",
+        "teks_chat": "Eh ini waktu diskusi sisa berapa menit lagi?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Ujang",
+        "teks_chat": "Sisa semenitan lagi kayaknya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Vina",
+        "teks_chat": "Harus cepet ambil keputusan nih.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Wati",
+        "teks_chat": "Aku bukan pelakunya. Tolong beri waktu untuk mengirim penjelasan.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Wati",
+            "relasi": "defend",
+            "bukti_pesan": [
+              7
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Yanto",
+        "teks_chat": "Jangan lama-lama ya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Ujang",
+        "teks_chat": "Iya cepetan.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Vina",
+        "teks_chat": "Kembali ke pembahasan Wati, aku tarik tuduhanku. Jeda chat belum membuktikan dia Hitman.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Wati",
+            "relasi": "defend",
+            "bukti_pesan": [
+              10
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 25.txt"
+  }
+}

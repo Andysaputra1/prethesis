@@ -1,0 +1,54 @@
+{
+  "job": {
+    "job_id": "r000850_v01",
+    "case_name": "first_message",
+    "case_description": "Pesan pertama permainan, tanpa konteks. Neutral boleh menyapa/membuka diskusi; offend/defend menyebut target jelas. Jangan mengarang kejadian malam, voting, atau percakapan yang belum terjadi.",
+    "source": {
+      "source_row": 850,
+      "source_group": "11e6a1c7daa6cc979472",
+      "teks_chat": "maaf baru nyambung, aku bukan Hitman, aku cuma Civilian yang ngikut vote mayoritas",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 1,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "first_message",
+    "participants": [
+      "Anton",
+      "Budi"
+    ],
+    "focus_player": "Budi",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Anton",
+        "teks_chat": "Aku belum punya alasan buat nuduh Budi, jadi jangan asal vote Budi ya.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Budi",
+            "relasi": "defend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 17.txt"
+  },
+  "revisi": [
+    {
+      "pesan": 1,
+      "kategori": "tidak_natural",
+      "alasan": "'memilih Budi untuk vote' janggal"
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "job": {
+    "job_id": "r002942_v01",
+    "case_name": "second_person",
+    "case_description": "Kamu/lu: gunakan pergantian pembicara dan teks yang jelas. Tanpa acuan jelas, target tidak_diketahui.",
+    "source": {
+      "source_row": 2942,
+      "source_group": "290f9c057e05005beaaf",
+      "teks_chat": "baru sadar, pas aku minta alibi, chat Luki langsung berubah jadi nyerang balik, itu tanda hitman menurutku",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 5,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "second_person",
+    "participants": [
+      "Fajar",
+      "Gita",
+      "Hadi"
+    ],
+    "focus_player": "Hadi",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Fajar",
+        "teks_chat": "Hadi lama membalas pertanyaan tadi.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Gita",
+        "teks_chat": "Iya, pesannya baru masuk.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Hadi",
+        "teks_chat": "Koneksiku tadi terputus.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Fajar",
+        "teks_chat": "Sekarang sudah terbaca.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Gita",
+        "teks_chat": "Hadi, lu pasti Hitman yang pura-pura putus koneksi untuk menghindar!",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Hadi",
+            "relasi": "offend",
+            "bukti_pesan": [
+              5
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 43.txt"
+  }
+}

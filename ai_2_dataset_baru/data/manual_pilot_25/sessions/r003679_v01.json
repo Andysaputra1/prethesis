@@ -1,0 +1,182 @@
+{
+  "job": {
+    "job_id": "r003679_v01",
+    "case_name": "agreement",
+    "case_description": "Pesan sekarang menyetujui atau membantah pesan pemain lain di konteks tanpa menyebut ulang nama target. Setuju dengan tuduhan = offend pemain yang dituduh; membantah tuduhan atau setuju dengan pembelaan = defend. Identitas target diwarisi dari pesan yang ditanggapi.",
+    "source": {
+      "source_row": 3679,
+      "source_group": "b98834d8c24f47a0fb7c",
+      "teks_chat": "Dia lagi nyamar jadi Spy, padahal role asliku Civilian",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 10,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "agreement",
+    "participants": [
+      "Edo",
+      "Fani",
+      "Gilang",
+      "Hana"
+    ],
+    "focus_player": "Edo",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Edo",
+        "teks_chat": "Aku curiga Fani Hitman karena banyak bertanya tanpa memberi pendapat.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Fani",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Fani",
+        "teks_chat": "Aku bukan Hitman, aku cuma ingin memahami informasi.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Fani",
+            "relasi": "defend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Gilang",
+        "teks_chat": "Edo, tadi kamu bilang Fani aman, kenapa sekarang malah menuduh?",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Edo",
+            "relasi": "offend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Edo",
+        "teks_chat": "Aku sama sekali tidak pernah bilang Fani aman.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Edo",
+            "relasi": "defend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Hana",
+        "teks_chat": "Edo berbohong, aku juga membaca saat kamu bilang Fani aman sebelumnya.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Edo",
+            "relasi": "offend",
+            "bukti_pesan": [
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Fani",
+        "teks_chat": "Ucapan Edo bertentangan dengan dirinya sendiri, dia pasti Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Edo",
+            "relasi": "offend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Edo",
+        "teks_chat": "Kalian salah paham dengan maksud ucapan aku sebelumnya.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Edo",
+            "relasi": "defend",
+            "bukti_pesan": [
+              7
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Gilang",
+        "teks_chat": "Tidak ada yang salah paham, perkataan kamu jelas berubah.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Edo",
+            "relasi": "offend",
+            "bukti_pesan": [
+              7
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Hana",
+        "teks_chat": "Ayo kumpulin suara buat Edo aja.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Edo",
+            "relasi": "offend",
+            "bukti_pesan": [
+              9
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Fani",
+        "teks_chat": "Aku setuju, perkataannya memang mencla-mencle sejak awal permainan.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Edo",
+            "relasi": "offend",
+            "bukti_pesan": [
+              9
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 57.txt"
+  },
+  "revisi": [
+    {
+      "pesan": 9,
+      "kategori": "tidak_natural",
+      "alasan": "Kaku ('Mari kita kumpulkan suara untuk memilih')."
+    }
+  ]
+}

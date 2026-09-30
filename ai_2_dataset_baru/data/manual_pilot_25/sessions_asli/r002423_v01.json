@@ -1,0 +1,47 @@
+{
+  "job": {
+    "job_id": "r002423_v01",
+    "case_name": "neutral_names",
+    "case_description": "Neutral menyebut nama tanpa menuduh/membela; target kosong.",
+    "source": {
+      "source_row": 2423,
+      "source_group": "5e1a75278ff1b47ca337",
+      "teks_chat": "aku Hitman, semalam ada satu pemain yang aku jadikan sandera",
+      "label_intent": "neutral"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 2,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "neutral_names",
+    "participants": [
+      "Yoga",
+      "Zaki",
+      "Dika",
+      "Fajar"
+    ],
+    "focus_player": "",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Yoga",
+        "teks_chat": "Ini kok banyak banget yang diam ya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Zaki",
+        "teks_chat": "Iya, si Dika sama Fajar juga belum ngomong apa-apa.",
+        "label_intent": "neutral",
+        "target": []
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 39.txt"
+  }
+}

@@ -1,0 +1,189 @@
+{
+  "job": {
+    "job_id": "r004208_v01",
+    "case_name": "rhetorical_question",
+    "case_description": "Pesan sekarang berbentuk pertanyaan retoris yang sebenarnya menuduh atau membela, misalnya 'kenapa Andy diam terus?' (offend) atau 'masa sih Andy Hitman?' (defend). Bukan pertanyaan informasi.",
+    "source": {
+      "source_row": 4208,
+      "source_group": "0bfed26b0b9482d8f9cb",
+      "teks_chat": "jangan fokus ke aku terus, coba cek siapa yang paling diuntungkan dari korban malam ini",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 11,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "rhetorical_question",
+    "participants": [
+      "Aldo",
+      "Bimo",
+      "Caca",
+      "Doni"
+    ],
+    "focus_player": "Bimo",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Aldo",
+        "teks_chat": "Bimo, klaim Guard-mu berubah dari Caca ke Doni. Aku curiga kamu Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Bimo",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Bimo",
+        "teks_chat": "Aku bukan Hitman, aku salah menyebut nama. Yang benar Caca.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Bimo",
+            "relasi": "defend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Caca",
+        "teks_chat": "Aku tetap curiga Bimo Hitman karena klaim target berubah.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Bimo",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Doni",
+        "teks_chat": "Wah parah, alibinya ketahuan bohong tuh.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Bimo",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Bimo",
+        "teks_chat": "Aku bukan Hitman, tadi panik jadi salah mengetik.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Bimo",
+            "relasi": "defend",
+            "bukti_pesan": [
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Aldo",
+        "teks_chat": "Orang jujur itu tidak bakal ganti-ganti cerita.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Bimo",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Caca",
+        "teks_chat": "Benar, ini sudah bukti kuat kalau dia pelakunya.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Bimo",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Doni",
+        "teks_chat": "Langsung aja kumpul vote buat Bimo, sudah jelas bohongnya.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Bimo",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Bimo",
+        "teks_chat": "Kalian ini nuduh tanpa bukti yang kuat, cuma gara-gara aku salah bicara sedikit aja.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Bimo",
+            "relasi": "defend",
+            "bukti_pesan": [
+              9
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Aldo",
+        "teks_chat": "Nama targetnya berubah, aku tetap curiga kamu Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Bimo",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Caca",
+        "teks_chat": "Masa sih orang yang jujur ceritanya bisa berubah-ubah terus kayak gitu?",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Bimo",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 63.txt"
+  }
+}

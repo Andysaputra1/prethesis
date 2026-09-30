@@ -1,0 +1,121 @@
+{
+  "job": {
+    "job_id": "r001722_v01",
+    "case_name": "interruption",
+    "case_description": "Pembahasan target disela obrolan waktu/ronde; kaitan kembali ke target masih jelas.",
+    "source": {
+      "source_row": 1722,
+      "source_group": "bd217973cd8a23776266",
+      "teks_chat": "J terus memotong argumen orang lain dan tidak menjawab pertanyaan inti, perilakunya mencurigakan, eksekusi J",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 9,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "interruption",
+    "participants": [
+      "Nisa",
+      "Omar",
+      "Putri",
+      "Qori"
+    ],
+    "focus_player": "Omar",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Nisa",
+        "teks_chat": "Omar, aku curiga kamu Hitman karena belum menjawab pertanyaan soal ajakan vote.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Omar",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Omar",
+        "teks_chat": "Aku bukan Hitman. Aku menarik ajakan itu karena alasannya belum kuat.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Omar",
+            "relasi": "defend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Putri",
+        "teks_chat": "Waktu ronde ini sisa 30 detik lagi guys!",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Qori",
+        "teks_chat": "Waduh cepet banget ya waktunya habis.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Nisa",
+        "teks_chat": "Ayo buruan kita kumpulin kesimpulan sebelum terlambat.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Putri",
+        "teks_chat": "Iya, waktu diskusi hampir selesai.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Qori",
+        "teks_chat": "Siap-siap aja deh jaga diri masing-masing.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Nisa",
+        "teks_chat": "Tapi tetep aja, jawaban dia tadi nggak meyakinkan sama sekali.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Omar",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Putri",
+        "teks_chat": "Kembali ke ajakan vote tadi, aku curiga dia sedang mengubah cerita untuk menutupi role Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Omar",
+            "relasi": "offend",
+            "bukti_pesan": [
+              8
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 29.txt"
+  }
+}

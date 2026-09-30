@@ -1,0 +1,79 @@
+{
+  "job": {
+    "job_id": "r000468_v01",
+    "case_name": "agreement",
+    "case_description": "Pesan sekarang menyetujui atau membantah pesan pemain lain di konteks tanpa menyebut ulang nama target. Setuju dengan tuduhan = offend pemain yang dituduh; membantah tuduhan atau setuju dengan pembelaan = defend. Identitas target diwarisi dari pesan yang ditanggapi.",
+    "source": {
+      "source_row": 468,
+      "source_group": "16ba3f20ff620da1efc0",
+      "teks_chat": "aku tetap pada klaimku sebagai Spy, semalam aku Guard si H; kalau dia selamat dari serangan, berarti aku bukan target yang tepat untuk dieksekusi",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 3,
+    "pesan_typo_ringan": [
+      2
+    ]
+  },
+  "session": {
+    "case_name": "agreement",
+    "participants": [
+      "Lani",
+      "Miko",
+      "Nina",
+      "Oscar"
+    ],
+    "focus_player": "Miko",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Lani",
+        "teks_chat": "Aku mau claim Stalker nih, hasil Peek aku semalam nunjukin dengan jelas kalau Miko itu Hitman!",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Miko",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Nina",
+        "teks_chat": "Jangan asal percaya, kita sdh tahu itu baru klaim pemain. Miko belum pantas langsung divote.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Miko",
+            "relasi": "defend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Oscar",
+        "teks_chat": "Nah aku sepemikiran dengan Nina, jangan sampai kita salah menyingkirkan orang.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Miko",
+            "relasi": "defend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 7.txt"
+  }
+}

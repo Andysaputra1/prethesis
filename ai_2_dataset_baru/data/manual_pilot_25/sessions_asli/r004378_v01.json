@@ -1,0 +1,185 @@
+{
+  "job": {
+    "job_id": "r004378_v01",
+    "case_name": "reference_start",
+    "case_description": "Tepat 12 konteks. Penyebutan target eksplisit di pesan konteks pertama; pesan sekarang memakai kata ganti.",
+    "source": {
+      "source_row": 4378,
+      "source_group": "f6b3af737efe09fb046d",
+      "teks_chat": "jangan asal eksekusi aku, bandingkan dulu cerita Kevin dengan kronologi korban malam tadi",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 13,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "reference_start",
+    "participants": [
+      "Budi",
+      "Citra",
+      "Doni",
+      "Eko"
+    ],
+    "focus_player": "Eko",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Budi",
+        "teks_chat": "Klaim Guard Eko tidak masuk akal, aku curiga dia Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Eko",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Citra",
+        "teks_chat": "Apa klaim pilihan Guard-nya?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Doni",
+        "teks_chat": "Katanya memilih satu pemain yang sama dua malam berturut-turut.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Budi",
+        "teks_chat": "Spy tidak boleh Guard target sama dua malam berturut-turut. Aku curiga dia berbohong.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Eko",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Citra",
+        "teks_chat": "Mungkin dia salah menyebut urutan malamnya?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Doni",
+        "teks_chat": "Aku tetap curiga dia Hitman karena klaim itu bertentangan dengan aturan.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Eko",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Budi",
+        "teks_chat": "Itulah alasannya aku yakin ceritanya dibuat-buat.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Eko",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Citra",
+        "teks_chat": "Coba kita tunggu penjelasan lebih detail darinya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Doni",
+        "teks_chat": "Dari tadi dia juga belum merespons kecurigaan ini.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Eko",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Budi",
+        "teks_chat": "Orang yang berbohong biasanya butuh waktu merangkai kata.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Eko",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Citra",
+        "teks_chat": "Aku juga curiga dia Hitman yang mengarang penggunaan skill.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Eko",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Doni",
+        "teks_chat": "Sepertinya kita sudah menemukan kandidat utama kita.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Eko",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Budi",
+        "teks_chat": "Iya, dia pasti pelakunya, ayo sepakat kita singkirkan dia sekarang.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Eko",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 66.txt"
+  }
+}

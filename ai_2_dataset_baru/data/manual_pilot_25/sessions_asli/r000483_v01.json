@@ -1,0 +1,111 @@
+{
+  "job": {
+    "job_id": "r000483_v01",
+    "case_name": "explicit",
+    "case_description": "Target eksplisit di pesan sekarang. Contoh: Aku yakin bukan Andy = defend Andy.",
+    "source": {
+      "source_row": 483,
+      "source_group": "9ba0bfe319e5bcd01012",
+      "teks_chat": "konteksnya ulang dong, kok tiba-tiba nama gw naik? gw cuma civilian",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 6,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "explicit",
+    "participants": [
+      "Gilang",
+      "Hadi",
+      "Irfan",
+      "Joko"
+    ],
+    "focus_player": "Hadi",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Gilang",
+        "teks_chat": "Ayo semuanya langsung kumpulkan suara buat Hadi aja sekarang!",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Hadi",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Hadi",
+        "teks_chat": "Loh, buktinya apa kamu tiba-tiba mengajak orang untuk vote aku?",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Hadi",
+            "relasi": "defend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Gilang",
+        "teks_chat": "Pokoknya feeling aku kuat banget kalau kamu itu Hitman yang lagi nyamar.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Hadi",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Irfan",
+        "teks_chat": "Kita main deduksi, tidak bisa mengandalkan feeling doang.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Gilang",
+        "teks_chat": "Aku tetap curiga Hadi Hitman dan ingin kalian ikut vote Hadi.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Hadi",
+            "relasi": "offend",
+            "bukti_pesan": [
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Joko",
+        "teks_chat": "Aku sangat yakin bukan Hadi pelakunya karena ajakan vote tanpa bukti dari Gilang ini terlalu memaksa.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Hadi",
+            "relasi": "defend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 7.txt"
+  }
+}

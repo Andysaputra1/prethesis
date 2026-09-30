@@ -1,0 +1,147 @@
+{
+  "job": {
+    "job_id": "r004221_v01",
+    "case_name": "self",
+    "case_description": "Defend diri sendiri atau offend/vote diri sendiri sesuai label. Target = pengirim.",
+    "source": {
+      "source_row": 4221,
+      "source_group": "fda4e291ffdbccad6719",
+      "teks_chat": "kalau mau objektif, jangan cuma lihat aku; peran Dito yang mendadak agresif lebih patut diuji",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 12,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "self",
+    "participants": [
+      "Reno",
+      "Aldo",
+      "Bima",
+      "Dika"
+    ],
+    "focus_player": "Dika",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Reno",
+        "teks_chat": "Kita sedang diskusi siang, belum ada klaim yang jelas.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Aldo",
+        "teks_chat": "Ada yang mau membagikan pilihan skill semalam?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Bima",
+        "teks_chat": "Aku belum mau membuka klaim.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Dika",
+        "teks_chat": "Aku klaim Spy.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Reno",
+        "teks_chat": "Dika, siapa pilihan Guard-mu?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Dika",
+        "teks_chat": "Aku belum ingin menyebutkannya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Aldo",
+        "teks_chat": "Aku curiga Dika Hitman yang memakai klaim palsu.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Dika",
+            "relasi": "offend",
+            "bukti_pesan": [
+              7
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Bima",
+        "teks_chat": "Aku juga curiga Dika pelakunya.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Dika",
+            "relasi": "offend",
+            "bukti_pesan": [
+              8
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Dika",
+        "teks_chat": "Aku bukan Hitman, belum membuka pilihan skill bukan bukti.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Dika",
+            "relasi": "defend",
+            "bukti_pesan": [
+              9
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Reno",
+        "teks_chat": "Aku tetap ingin vote Dika.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Dika",
+            "relasi": "offend",
+            "bukti_pesan": [
+              10
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Aldo",
+        "teks_chat": "Sebentar lagi Tribunal, bahas alasannya dulu.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Dika",
+        "teks_chat": "Kalau kalian tidak percaya, vote aku saja pada Tribunal nanti.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Dika",
+            "relasi": "offend",
+            "bukti_pesan": [
+              12
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 62.txt"
+  }
+}

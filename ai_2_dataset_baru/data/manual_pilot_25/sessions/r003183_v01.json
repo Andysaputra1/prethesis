@@ -1,0 +1,140 @@
+{
+  "job": {
+    "job_id": "r003183_v01",
+    "case_name": "multiple_targets",
+    "case_description": "Dua atau lebih pemain menjadi target relasi yang sama secara jelas.",
+    "source": {
+      "source_row": 3183,
+      "source_group": "f507276124934c98eba1",
+      "teks_chat": "Aku Spy dan tidak mengawal orang yang sama dua malam berturut-turut; tindakan itu sesuai batasan role, bukan alasan untuk mencurigai aku",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 6,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "multiple_targets",
+    "participants": [
+      "Eka",
+      "Fani",
+      "Gilang",
+      "Hani"
+    ],
+    "focus_player": "",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Eka",
+        "teks_chat": "Fani dan Gilang mengubah ajakan vote ke Hani di akhir diskusi. Aku curiga mereka pelakunya.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Fani",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          },
+          {
+            "pemain": "Gilang",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Fani",
+        "teks_chat": "Itu karena Hani gelagatnya aneh pas diskusi.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Hani",
+            "relasi": "offend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Hani",
+        "teks_chat": "Aku biasa aja kok, kalian yang panik sendiri.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Hani",
+            "relasi": "defend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Gilang",
+        "teks_chat": "Aku bukan Hitman, aku mengubah ajakan karena mengikuti alasan Fani.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Gilang",
+            "relasi": "defend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Eka",
+        "teks_chat": "Tetap aja kalian berdua tuh sus banget, fix kerja sama nih.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Fani",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          },
+          {
+            "pemain": "Gilang",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Hani",
+        "teks_chat": "Kayaknya bukan Fani dan Gilang deh, mereka murni cuma kebingungan nge-vote.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Fani",
+            "relasi": "defend",
+            "bukti_pesan": [
+              6
+            ]
+          },
+          {
+            "pemain": "Gilang",
+            "relasi": "defend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 46.txt"
+  }
+}

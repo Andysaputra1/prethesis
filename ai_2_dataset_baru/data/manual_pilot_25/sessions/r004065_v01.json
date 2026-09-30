@@ -1,0 +1,59 @@
+{
+  "job": {
+    "job_id": "r004065_v01",
+    "case_name": "short_history_2",
+    "case_description": "Awal diskusi dengan tepat 2 pesan sebelumnya. Gunakan hanya petunjuk yang tersedia.",
+    "source": {
+      "source_row": 4065,
+      "source_group": "ebe6b78de7242a51d2f9",
+      "teks_chat": "kalau target Spy selamat, siapa yang kira-kira diserang semalam?",
+      "label_intent": "neutral"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 3,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "short_history_2",
+    "participants": [
+      "Budi",
+      "Andi",
+      "Citra"
+    ],
+    "focus_player": "",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Budi",
+        "teks_chat": "Ada yang mau membagikan klaim skill semalam?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Andi",
+        "teks_chat": "Aku klaim Spy, pilihan Guard-ku Citra.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Citra",
+        "teks_chat": "Oke, klaimmu aku catat dulu ya.",
+        "label_intent": "neutral",
+        "target": []
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 63.txt"
+  },
+  "revisi": [
+    {
+      "pesan": 3,
+      "kategori": "tidak_natural",
+      "alasan": "'klaim pilihanmu sudah terbaca' janggal"
+    }
+  ]
+}

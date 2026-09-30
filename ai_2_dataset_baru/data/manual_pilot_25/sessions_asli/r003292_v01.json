@@ -1,0 +1,99 @@
+{
+  "job": {
+    "job_id": "r003292_v01",
+    "case_name": "ambiguous",
+    "case_description": "Beberapa acuan sama-sama mungkin; target tidak_diketahui, bukan nama terakhir.",
+    "source": {
+      "source_row": 3292,
+      "source_group": "6530d7528319303452e5",
+      "teks_chat": "kalau tuduhannya karena gw salah sebut role, itu cuma karena gw belum fokus",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 7,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "ambiguous",
+    "participants": [
+      "Edi",
+      "Fani",
+      "Galih",
+      "Hari"
+    ],
+    "focus_player": "",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Edi",
+        "teks_chat": "Aku klaim Stalker dan punya hasil Peek.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Fani",
+        "teks_chat": "Wah, masa sih? Buktinya apa kamu berkata seperti itu?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Galih",
+        "teks_chat": "Aku juga klaim Stalker dan punya hasil Peek.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Hari",
+        "teks_chat": "Hati-hati, klaim peran begini sering menjadi jebakan musuh.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Edi",
+        "teks_chat": "Galih bohong itu, cuma mau menutupi jejak aksinya.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Galih",
+            "relasi": "offend",
+            "bukti_pesan": [
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Galih",
+        "teks_chat": "Justru Edi yang mencari aman dengan mengaku-ngaku tanpa bukti.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Edi",
+            "relasi": "offend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Fani",
+        "teks_chat": "Sudah jangan saling menyerang dulu, dia mungkin berkata jujur soal informasinya.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "tidak_diketahui",
+            "relasi": "defend",
+            "bukti_pesan": []
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 48.txt"
+  }
+}

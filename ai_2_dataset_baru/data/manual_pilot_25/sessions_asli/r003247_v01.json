@@ -1,0 +1,146 @@
+{
+  "job": {
+    "job_id": "r003247_v01",
+    "case_name": "negation",
+    "case_description": "Negasi menentukan relasi: Andy Hitman berbeda dari Andy bukan Hitman.",
+    "source": {
+      "source_row": 3247,
+      "source_group": "2582644e05aa524f769f",
+      "teks_chat": "gw bukan Hitman, dari ronde pertama malah gw yang buka pembahasan; cek aja pemain yang terus ngikut arus",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 10,
+    "pesan_typo_ringan": [
+      8
+    ]
+  },
+  "session": {
+    "case_name": "negation",
+    "participants": [
+      "Vina",
+      "Doni",
+      "Hadi",
+      "Reza",
+      "Rio"
+    ],
+    "focus_player": "Reza",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Vina",
+        "teks_chat": "Korban malam pertama siapa ya? Tidak ada informasinya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Doni",
+        "teks_chat": "Identitas korban memang tidak diumumkan secara publik.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Vina",
+        "teks_chat": "Jangan-jangan ada yang menyamar menjadi korban.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Hadi",
+        "teks_chat": "Reza memberi klaim yang berubah-ubah, aku curiga dia Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Reza",
+            "relasi": "offend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Reza",
+        "teks_chat": "Aku bukan Hitman, aku cuma membetulkan salah ketik.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Reza",
+            "relasi": "defend",
+            "bukti_pesan": [
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Doni",
+        "teks_chat": "Tapi gelagat kamu aneh sekali.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Reza",
+            "relasi": "offend",
+            "bukti_pesan": [
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Vina",
+        "teks_chat": "Benar, lebih baik kita amankan saja Reza sekarang.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Reza",
+            "relasi": "offend",
+            "bukti_pesan": [
+              7
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Rio",
+        "teks_chat": "Kalian sdh memikirkan ini panjang lebar belum sih?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Reza",
+        "teks_chat": "Aku bukan Hitman, perubahan tadi hanya koreksi salah ketik.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Reza",
+            "relasi": "defend",
+            "bukti_pesan": [
+              9
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Rio",
+        "teks_chat": "Reza itu bukan Hitman, kita akan salah langkah kalau memilih dia.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Reza",
+            "relasi": "defend",
+            "bukti_pesan": [
+              10
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 47.txt"
+  }
+}

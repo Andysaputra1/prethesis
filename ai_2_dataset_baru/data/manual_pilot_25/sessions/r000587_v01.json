@@ -1,0 +1,221 @@
+{
+  "job": {
+    "job_id": "r000587_v01",
+    "case_name": "memory_outside_window",
+    "case_description": "14-16 pesan total. Nama target hanya disebut sebelum 12 konteks terakhir. Dalam jendela, ada pesan yang meneruskan acuan dengan jelas dan menyimpan anotasi target berdasarkan pesan lama. Pesan sekarang merujuk target sama. Nama target tidak muncul dalam teks 12 konteks terakhir atau pesan sekarang; target diketahui lewat memori.",
+    "source": {
+      "source_row": 587,
+      "source_group": "de253e3743ec180aee81",
+      "teks_chat": "aku cuma civilian, salah baca situasi iya, tapi bukan berarti hitman",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 14,
+    "pesan_typo_ringan": [
+      4
+    ]
+  },
+  "session": {
+    "case_name": "memory_outside_window",
+    "participants": [
+      "Sani",
+      "Tono",
+      "Umar",
+      "Vina"
+    ],
+    "focus_player": "Sani",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Tono",
+        "teks_chat": "Sani langsung membela orang yang baru dituduh. Aku curiga Sani Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Sani",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Umar",
+        "teks_chat": "Gerakannya memang cepat banget, tapi aku belum mau menyimpulkan apa-apa.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Vina",
+        "teks_chat": "Itu pasti kelakuan Hitman yang lagi panik temen satu timnya dituduh.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Sani",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Tono",
+        "teks_chat": "Bener, strategi kyk gitu udah kebaca banget sama kita.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Sani",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Umar",
+        "teks_chat": "Belum tentu dia pelakunya, bisa saja dia melihat kelemahan alasan tuduhan itu.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Sani",
+            "relasi": "defend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Vina",
+        "teks_chat": "Nggak mungkin secepat itu kalau nggak ada rencana dari awal.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Sani",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Tono",
+        "teks_chat": "Lebih aman kita singkirkan aja yang tingkahnya begitu.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Sani",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Umar",
+        "teks_chat": "Gimana kalau ternyata dia civilian murni yang terlalu antusias?",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Sani",
+            "relasi": "defend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Vina",
+        "teks_chat": "Risikonya terlalu besar buat kita membiarkan dia lolos.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Sani",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Tono",
+        "teks_chat": "Kita harus cepet ambil tindakan sebelum waktunya habis.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Umar",
+        "teks_chat": "Ya udah sih, silakan aja kalau kalian mau tetep ngeyel.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Vina",
+        "teks_chat": "Aku udah siap ngevote dia dari tadi nih.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Sani",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Tono",
+        "teks_chat": "Sama, aku juga nunggu aba-aba dari yang lain.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Sani",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Umar",
+        "teks_chat": "Cepat membalas bukan bukti bahwa dia Hitman. Aku menolak ajakan vote kepadanya.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Sani",
+            "relasi": "defend",
+            "bukti_pesan": [
+              12
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 10.txt"
+  },
+  "revisi": [
+    {
+      "pesan": 2,
+      "kategori": "label",
+      "alasan": "Teks menyetujui tuduhan (seharusnya offend) padahal Umar lalu membela Sani; teks dibuat netral agar konsisten."
+    },
+    {
+      "pesan": 4,
+      "kategori": "singkatan",
+      "alasan": "Slot typo harus tepat satu singkatan, di sini ada dua (Bnr, kyk)."
+    }
+  ]
+}

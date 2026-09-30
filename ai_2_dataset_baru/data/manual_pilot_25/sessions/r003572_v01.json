@@ -1,0 +1,205 @@
+{
+  "job": {
+    "job_id": "r003572_v01",
+    "case_name": "reference_middle",
+    "case_description": "Tepat 12 konteks. Penyebutan target eksplisit di pesan konteks ke-6 atau ke-7.",
+    "source": {
+      "source_row": 3572,
+      "source_group": "3678bb3ed720c9901f36",
+      "teks_chat": "gw bukan Hitman, semalam sebagai Stalker aku peek satu orang dan hasilnya bukan aku pelakunya",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 13,
+    "pesan_typo_ringan": [
+      12
+    ]
+  },
+  "session": {
+    "case_name": "reference_middle",
+    "participants": [
+      "Oji",
+      "Panji",
+      "Ratna",
+      "Sigit"
+    ],
+    "focus_player": "Sigit",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Oji",
+        "teks_chat": "Malam udah lewat, ada yang mau share info?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Panji",
+        "teks_chat": "Sejauh ini keadaan masih aman, tidak ada tanda serangan yang terlihat.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Ratna",
+        "teks_chat": "Aku rasa kita perlu mencari tahu siapa yang menyelinap semalam.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Sigit",
+        "teks_chat": "Ada yang mau ngaku Stalker nggak?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Oji",
+        "teks_chat": "Aku belum berani membuka identitas sekarang karena situasinya rawan.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Ratna",
+        "teks_chat": "Aku klaim Stalker, hasil Peek-ku menunjukkan Sigit Civilian.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Sigit",
+            "relasi": "defend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Panji",
+        "teks_chat": "Aku masih curiga dia Hitman, aku belum percaya hasil Peek itu.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Sigit",
+            "relasi": "offend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Oji",
+        "teks_chat": "Hati-hati, bisa aja dia nipu kita semua biar lolos vote.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Sigit",
+            "relasi": "offend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Sigit",
+        "teks_chat": "Aku Civilian, bukan Hitman.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Sigit",
+            "relasi": "defend",
+            "bukti_pesan": [
+              9
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Panji",
+        "teks_chat": "Ratna, kamu yakin hasil Peek-mu nggak salah?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Ratna",
+        "teks_chat": "Yakin, hasilnya jelas dia Civilian.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Sigit",
+            "relasi": "defend",
+            "bukti_pesan": [
+              8
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Oji",
+        "teks_chat": "Kita sdh bisa percaya info itu belum?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Panji",
+        "teks_chat": "Oke, aku percaya klaim itu, kayaknya dia memang bukan Hitman.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Sigit",
+            "relasi": "defend",
+            "bukti_pesan": [
+              8
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 55.txt"
+  },
+  "revisi": [
+    {
+      "pesan": 1,
+      "kategori": "tidak_natural",
+      "alasan": "Kaku ('adakah yang mau membagikan informasi rahasia')"
+    },
+    {
+      "pesan": 4,
+      "kategori": "tidak_natural",
+      "alasan": "Kaku ('Apakah ada yang ingin mengklaim diri')"
+    },
+    {
+      "pesan": 7,
+      "kategori": "tidak_natural",
+      "alasan": "reference_middle: nama Sigit juga muncul di pesan 7 dan 8 (seharusnya hanya di posisi 6/7)"
+    },
+    {
+      "pesan": 8,
+      "kategori": "tidak_natural",
+      "alasan": "reference_middle: nama Sigit disebut lagi; 'Berhati-hatilah' kaku"
+    },
+    {
+      "pesan": 10,
+      "kategori": "tidak_natural",
+      "alasan": "Tidak nyambung: Ratna sudah menyebut hasil Peek di pesan 6"
+    },
+    {
+      "pesan": 11,
+      "kategori": "tidak_natural",
+      "alasan": "Kaku ('Hasilnya menunjukkan bahwa perannya...')"
+    },
+    {
+      "pesan": 12,
+      "kategori": "tidak_natural",
+      "alasan": "Kaku ('Apakah... tersebut'); singkatan slot 'sdh' dipertahankan"
+    },
+    {
+      "pesan": 13,
+      "kategori": "tidak_natural",
+      "alasan": "Kaku ('klaim tersebut')"
+    }
+  ]
+}

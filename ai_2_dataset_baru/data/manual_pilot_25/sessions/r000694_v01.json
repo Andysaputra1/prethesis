@@ -1,0 +1,194 @@
+{
+  "job": {
+    "job_id": "r000694_v01",
+    "case_name": "negation",
+    "case_description": "Negasi menentukan relasi: Andy Hitman berbeda dari Andy bukan Hitman.",
+    "source": {
+      "source_row": 694,
+      "source_group": "10a6f12c188f34d110f1",
+      "teks_chat": "tadi siang aku kena Gag Order, jadi memang tidak sempat menjelaskan",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 13,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "negation",
+    "participants": [
+      "Eka",
+      "Gani",
+      "Sari",
+      "Bimo",
+      "Maya"
+    ],
+    "focus_player": "Gani",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Sari",
+        "teks_chat": "Ayo semuanya, langsung kumpulin vote buat Gani sekarang juga!",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Gani",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Gani",
+        "teks_chat": "Eh, ada apa ini? Kok main asal vote aja?",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Gani",
+            "relasi": "defend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Eka",
+        "teks_chat": "Iya nih, Sari nggak ngasih bukti apa-apa kok main ngajak vote.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Gani",
+            "relasi": "defend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Bimo",
+        "teks_chat": "Pasti Sari pelakunya yang lagi nyoba nipu kita semua.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Sari",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Maya",
+        "teks_chat": "Jangan gampang terpengaruh sama ajakan yang nggak jelas dasarnya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Sari",
+        "teks_chat": "Pokoknya aku yakin banget dia Hitman, firasatku nggak pernah salah.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Gani",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Gani",
+        "teks_chat": "Aku tidak bersalah. Firasat saja tidak cukup untuk menyebutku Hitman.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Gani",
+            "relasi": "defend",
+            "bukti_pesan": [
+              7
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Eka",
+        "teks_chat": "Bahaya banget kalau kita turutin omongan Sari yang nggak berdasar ini.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Bimo",
+        "teks_chat": "Sari itu provokator, mending kita keluarin Sari aja biar aman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Sari",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Maya",
+        "teks_chat": "Kita harus objektif, jangan sampai civilian saling bunuh.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Sari",
+        "teks_chat": "Aku tetap ingin vote Gani.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Gani",
+            "relasi": "offend",
+            "bukti_pesan": [
+              11
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Gani",
+        "teks_chat": "Aku bukan Hitman, tolong jangan vote aku dari firasat saja.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Gani",
+            "relasi": "defend",
+            "bukti_pesan": [
+              12
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Eka",
+        "teks_chat": "Gani belum pantas dituduh sebagai Hitman. Sejauh ini alasannya hanya firasat, jadi aku membela Gani.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Gani",
+            "relasi": "defend",
+            "bukti_pesan": [
+              13
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 14.txt"
+  }
+}

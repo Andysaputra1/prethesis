@@ -1,0 +1,163 @@
+{
+  "job": {
+    "job_id": "r003572_v01",
+    "case_name": "reference_middle",
+    "case_description": "Tepat 12 konteks. Penyebutan target eksplisit di pesan konteks ke-6 atau ke-7.",
+    "source": {
+      "source_row": 3572,
+      "source_group": "3678bb3ed720c9901f36",
+      "teks_chat": "gw bukan Hitman, semalam sebagai Stalker aku peek satu orang dan hasilnya bukan aku pelakunya",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 13,
+    "pesan_typo_ringan": [
+      12
+    ]
+  },
+  "session": {
+    "case_name": "reference_middle",
+    "participants": [
+      "Oji",
+      "Panji",
+      "Ratna",
+      "Sigit"
+    ],
+    "focus_player": "Sigit",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Oji",
+        "teks_chat": "Malam sudah berlalu, adakah yang mau membagikan informasi rahasia?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Panji",
+        "teks_chat": "Sejauh ini keadaan masih aman, tidak ada tanda serangan yang terlihat.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Ratna",
+        "teks_chat": "Aku rasa kita perlu mencari tahu siapa yang menyelinap semalam.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Sigit",
+        "teks_chat": "Apakah ada yang ingin mengklaim diri sebagai Stalker di sini?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Oji",
+        "teks_chat": "Aku belum berani membuka identitas sekarang karena situasinya rawan.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Ratna",
+        "teks_chat": "Aku klaim Stalker, hasil Peek-ku menunjukkan Sigit Civilian.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Sigit",
+            "relasi": "defend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Panji",
+        "teks_chat": "Aku masih curiga Sigit Hitman, aku belum percaya klaim hasil itu.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Sigit",
+            "relasi": "offend",
+            "bukti_pesan": [
+              7
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Oji",
+        "teks_chat": "Berhati-hatilah, Sigit bisa saja menipu kita semua.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Sigit",
+            "relasi": "offend",
+            "bukti_pesan": [
+              8
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Sigit",
+        "teks_chat": "Aku Civilian, bukan Hitman.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Sigit",
+            "relasi": "defend",
+            "bukti_pesan": [
+              9
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Panji",
+        "teks_chat": "Jangan mengalihkan pembicaraan, ayo Ratna beri tahu hasil dari pengintaianmu.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Ratna",
+        "teks_chat": "Hasilnya menunjukkan bahwa perannya sama sekali tidak berbahaya.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Sigit",
+            "relasi": "defend",
+            "bukti_pesan": [
+              8
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Oji",
+        "teks_chat": "Apakah kita sdh bisa mempercayai informasi tersebut?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Panji",
+        "teks_chat": "Aku yakin dengan klaim tersebut, sepertinya dia memang aman dari tuduhan kita.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Sigit",
+            "relasi": "defend",
+            "bukti_pesan": [
+              8
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 55.txt"
+  }
+}

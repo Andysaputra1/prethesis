@@ -259,3 +259,13 @@ Tanpa API: label_target_manual.py membuat prompt, lalu jawaban dari chat web div
 ~~~
 
 Nama file hasil menentukan kolom model di laporan (bagian setelah garis bawah pertama). Beberapa file untuk batch yang sama boleh ada; sesi valid pertama per job yang dipakai. import menulis laporan.md dan prompt_ulang/ untuk job yang gagal beserta alasannya. Pilot 25 per kasus: 775 job dalam 78 prompt.
+
+## Hasil pilot manual 25 per kasus, 29 September 2026
+
+775 job dari 78 prompt dikerjakan lewat chat web (file hasil/hasil copy N.txt; model belum dicatat per file). Impor: 775/775 lolos validasi struktur; satu file ikut menyalin contoh format prompt (job r000123_v01) dan diabaikan.
+
+Review isi oleh lima reviewer paralel menemukan 824 masalah di 349 sesi: 405 meta (pemain menjelaskan aturan/desain game, terutama blok outside_window_unknown yang penuh tanya-jawab aturan), 270 kalimat kaku atau tidak nyambung, 92 label salah makna, 50 singkatan/slot typo, 7 pelanggaran aturan game. Semua perbaikan divalidasi ulang lalu diterapkan; sesi asli di sessions_asli/, perubahan di revisi_log.jsonl dan ringkasan_revisi.md. Audit otomatis: meta 48→13 (sisa berupa obrolan wajar tentang game), formal 76→12, singkatan di luar slot 16→0.
+
+Validator diperketat: nama focus pada reference_start/middle/end hanya boleh muncul di posisi kasus; ID huruf di teks original (A, B, si D) wajib ada di participants (1.102 dari 5.615 kalimat sumber memakai ID huruf). Prompt generator diberi aturan yang sama.
+
+Keluaran: ai_2_dataset_baru/data/dataset_final3_context_target_pilot25.csv (775 baris; offend 321, defend 323, neutral 131) dan manual_pilot_25/hasil_mudah_dibaca.md. Belum dipastikan: apakah cooldown Peek dan larangan Guard dua malam berturut-turut termasuk aturan game.

@@ -1,0 +1,216 @@
+{
+  "job": {
+    "job_id": "r000621_v01",
+    "case_name": "memory_outside_window",
+    "case_description": "14-16 pesan total. Nama target hanya disebut sebelum 12 konteks terakhir. Dalam jendela, ada pesan yang meneruskan acuan dengan jelas dan menyimpan anotasi target berdasarkan pesan lama. Pesan sekarang merujuk target sama. Nama target tidak muncul dalam teks 12 konteks terakhir atau pesan sekarang; target diketahui lewat memori.",
+    "source": {
+      "source_row": 621,
+      "source_group": "913de167ed17716df647",
+      "teks_chat": "sumpah bukan aku pelakunya, semalam aku bahkan tidak punya alasan menyerang siapa pun",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 14,
+    "pesan_typo_ringan": [
+      5
+    ]
+  },
+  "session": {
+    "case_name": "memory_outside_window",
+    "participants": [
+      "Sandi",
+      "Toni",
+      "Udin",
+      "Vera"
+    ],
+    "focus_player": "Toni",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Sandi",
+        "teks_chat": "Toni menarik ajakan votenya setelah ditanya alasan. Aku curiga Toni Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Toni",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Udin",
+        "teks_chat": "Aku juga curiga dia sedang mengarang alasan.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Toni",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Vera",
+        "teks_chat": "Belum tentu dia pelakunya, mungkin dugaan awalnya memang lemah.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Toni",
+            "relasi": "defend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Sandi",
+        "teks_chat": "Aku tetap curiga dia sengaja membuat kita bingung.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Toni",
+            "relasi": "offend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Udin",
+        "teks_chat": "Aku juga curiga dia Hitman krn belum menjelaskan perubahan itu.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Toni",
+            "relasi": "offend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Vera",
+        "teks_chat": "Jangan langsung vote dia sebelum membaca penjelasannya.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Toni",
+            "relasi": "defend",
+            "bukti_pesan": [
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Sandi",
+        "teks_chat": "Apa bagian yang menurutmu perlu dibaca lagi?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Vera",
+        "teks_chat": "Dia bilang alasan awalnya belum cukup kuat untuk mengajak orang lain.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Udin",
+        "teks_chat": "Aku paham kalimatnya, tetapi tetap curiga dia hanya mencari alasan.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Toni",
+            "relasi": "offend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Vera",
+        "teks_chat": "Menurutku dia justru mengoreksi dugaan, jadi aku menolak tuduhan itu.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Toni",
+            "relasi": "defend",
+            "bukti_pesan": [
+              9
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Sandi",
+        "teks_chat": "Aku belum berubah pikiran, aku ingin vote dia.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Toni",
+            "relasi": "offend",
+            "bukti_pesan": [
+              10
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Udin",
+        "teks_chat": "Aku juga tetap ingin vote dia.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Toni",
+            "relasi": "offend",
+            "bukti_pesan": [
+              11
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Sandi",
+        "teks_chat": "Kita sudah mendengar dua pendapat yang berbeda.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Vera",
+        "teks_chat": "Aku tetap membela dia. Mengoreksi dugaan yang lemah bukan bukti bahwa dia Hitman.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Toni",
+            "relasi": "defend",
+            "bukti_pesan": [
+              12
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 11.txt"
+  },
+  "revisi": [
+    {
+      "pesan": 5,
+      "kategori": "singkatan",
+      "alasan": "Slot typo [5] tidak berisi singkatan."
+    }
+  ]
+}

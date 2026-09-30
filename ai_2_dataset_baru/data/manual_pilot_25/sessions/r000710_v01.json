@@ -1,0 +1,97 @@
+{
+  "job": {
+    "job_id": "r000710_v01",
+    "case_name": "agreement",
+    "case_description": "Pesan sekarang menyetujui atau membantah pesan pemain lain di konteks tanpa menyebut ulang nama target. Setuju dengan tuduhan = offend pemain yang dituduh; membantah tuduhan atau setuju dengan pembelaan = defend. Identitas target diwarisi dari pesan yang ditanggapi.",
+    "source": {
+      "source_row": 710,
+      "source_group": "d625d3273a7e09d39a5d",
+      "teks_chat": "tuduhan itu muncul saat chat-ku sedang dibungkam, jadi aku belum bisa merespons",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 5,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "agreement",
+    "participants": [
+      "Andi",
+      "Bima",
+      "Caca",
+      "Doni"
+    ],
+    "focus_player": "Caca",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Andi",
+        "teks_chat": "Caca tadi belum menjawab, apa koneksinya bermasalah?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Bima",
+        "teks_chat": "Aku curiga Caca Hitman yang sengaja diam supaya tidak ditanya.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Caca",
+            "relasi": "offend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Caca",
+        "teks_chat": "Aku bukan Hitman. Koneksiku terputus, sekarang aku sudah bisa membaca chat.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Caca",
+            "relasi": "defend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Doni",
+        "teks_chat": "Caca belum pantas dituduh dari jeda chat saja. Penyebabnya bisa macam-macam.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Caca",
+            "relasi": "defend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Andi",
+        "teks_chat": "Aku setuju dengan pembelaan Doni. Jangan vote dia hanya dari jeda chat.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Caca",
+            "relasi": "defend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 14.txt"
+  }
+}

@@ -19,16 +19,8 @@
           {
             "pengirim": "Caca",
             "teks_chat": "Pesan aku dari tadi selalu telat masuk.",
-            "label_intent": "defend",
-            "target": [
-              {
-                "pemain": "Caca",
-                "relasi": "defend",
-                "bukti_pesan": [
-                  1
-                ]
-              }
-            ]
+            "label_intent": "neutral",
+            "target": []
           },
           {
             "pengirim": "Dika",
@@ -61,13 +53,13 @@
         "messages": [
           {
             "pengirim": "Hani",
-            "teks_chat": "Siapa yang mainin vote bolak-balik dari awal?",
+            "teks_chat": "Siapa yang mengganti ajakan vote di chat tadi?",
             "label_intent": "neutral",
             "target": []
           },
           {
             "pengirim": "Ivan",
-            "teks_chat": "Bukan aku kok, aku belum vote sama sekali.",
+            "teks_chat": "Aku tidak sedang memanipulasi dugaan, aku memang belum mengajak vote siapa pun.",
             "label_intent": "defend",
             "target": [
               {
@@ -81,7 +73,7 @@
           },
           {
             "pengirim": "Jojo",
-            "teks_chat": "Alasan banget lu Van, jelas-jelas lu yang nggeser-nggeser vote buat mancing keributan!",
+            "teks_chat": "Ivan, tadi kamu mengajak vote lalu mengganti namanya. Aku curiga kamu Hitman yang mengacaukan diskusi.",
             "label_intent": "offend",
             "target": [
               {
@@ -110,85 +102,60 @@
         "messages": [
           {
             "pengirim": "Kiki",
-            "teks_chat": "Semalam aku nggak dapat info apa pun nih sebagai Spy.",
-            "label_intent": "defend",
-            "target": [
-              {
-                "pemain": "Kiki",
-                "relasi": "defend",
-                "bukti_pesan": [
-                  1
-                ]
-              }
-            ]
+            "teks_chat": "Aku mengaku Spy dan memilih Guard untuk Maman semalam.",
+            "label_intent": "neutral",
+            "target": []
           },
           {
             "pengirim": "Lala",
-            "teks_chat": "Mana ada Spy yang nggak dapat info di malam pertama.",
-            "label_intent": "offend",
-            "target": [
-              {
-                "pemain": "Kiki",
-                "relasi": "offend",
-                "bukti_pesan": [
-                  1
-                ]
-              }
-            ]
+            "teks_chat": "Apakah kami bisa memastikan pilihan Guard itu dari chat?",
+            "label_intent": "neutral",
+            "target": []
           },
           {
             "pengirim": "Maman",
-            "teks_chat": "Iya, kadang emang random aja dapatnya.",
-            "label_intent": "defend",
-            "target": [
-              {
-                "pemain": "Kiki",
-                "relasi": "defend",
-                "bukti_pesan": [
-                  1
-                ]
-              }
-            ]
-          },
-          {
-            "pengirim": "Kiki",
-            "teks_chat": "Tuh kan Maman aja tahu, emang sistemnya gitu.",
-            "label_intent": "defend",
-            "target": [
-              {
-                "pemain": "Kiki",
-                "relasi": "defend",
-                "bukti_pesan": [
-                  1
-                ]
-              }
-            ]
-          },
-          {
-            "pengirim": "Lala",
-            "teks_chat": "Jangan-jangan kamu malah mengarang cerita sebagai Spy ya?",
-            "label_intent": "offend",
-            "target": [
-              {
-                "pemain": "Kiki",
-                "relasi": "offend",
-                "bukti_pesan": [
-                  1
-                ]
-              }
-            ]
-          },
-          {
-            "pengirim": "Maman",
-            "teks_chat": "Lala curiga terus sama Kiki dari awal.",
+            "teks_chat": "Tidak, yang tersedia hanya klaim pemain, bukan aksi rahasianya.",
             "label_intent": "neutral",
             "target": []
           },
           {
             "pengirim": "Kiki",
-            "teks_chat": "Iya, dia kayaknya sengaja mau ngejatuhin aku.",
+            "teks_chat": "Iya, kalian boleh mencatat lalu menanyakan konsistensi klaimku.",
+            "label_intent": "neutral",
+            "target": []
+          },
+          {
+            "pengirim": "Lala",
+            "teks_chat": "Aku curiga Kiki Hitman yang memakai klaim Spy untuk mencari aman.",
             "label_intent": "offend",
             "target": [
+              {
+                "pemain": "Kiki",
+                "relasi": "offend",
+                "bukti_pesan": [
+                  5
+                ]
+              }
+            ]
+          },
+          {
+            "pengirim": "Maman",
+            "teks_chat": "Apa alasan tuduhan itu selain klaimnya belum bisa dipastikan?",
+            "label_intent": "neutral",
+            "target": []
+          },
+          {
+            "pengirim": "Kiki",
+            "teks_chat": "Aku bukan Hitman. Justru aku curiga Lala karena memaksa tuduhan tanpa alasan.",
+            "label_intent": "offend",
+            "target": [
+              {
+                "pemain": "Kiki",
+                "relasi": "defend",
+                "bukti_pesan": [
+                  7
+                ]
+              },
               {
                 "pemain": "Lala",
                 "relasi": "offend",
@@ -200,21 +167,21 @@
           },
           {
             "pengirim": "Lala",
-            "teks_chat": "Karena aku yakin kamu berbohong soal Spy itu.",
+            "teks_chat": "Aku tetap curiga Kiki berbohong soal role.",
             "label_intent": "offend",
             "target": [
               {
                 "pemain": "Kiki",
                 "relasi": "offend",
                 "bukti_pesan": [
-                  1
+                  8
                 ]
               }
             ]
           },
           {
             "pengirim": "Maman",
-            "teks_chat": "Aku setuju sih sama Kiki, kamu terlalu maksa buat cari kesalahan dia.",
+            "teks_chat": "Aku setuju dengan tuduhan balik Kiki. Aku curiga dia Hitman yang memaksakan tuduhan.",
             "label_intent": "offend",
             "target": [
               {
@@ -239,12 +206,12 @@
           "Putri",
           "Rian"
         ],
-        "focus_player": "",
+        "focus_player": "Nina",
         "panggilan": [],
         "messages": [
           {
             "pengirim": "Oka",
-            "teks_chat": "Tadi si Nina ngomongnya A sekarang malah B, nggak konsisten banget.",
+            "teks_chat": "Nina mengganti klaim role tanpa penjelasan. Aku curiga Nina Hitman.",
             "label_intent": "offend",
             "target": [
               {
@@ -258,99 +225,79 @@
           },
           {
             "pengirim": "Putri",
-            "teks_chat": "Iya, kelihatan banget dia lagi gugup.",
-            "label_intent": "offend",
-            "target": [
-              {
-                "pemain": "Nina",
-                "relasi": "offend",
-                "bukti_pesan": [
-                  1
-                ]
-              }
-            ]
-          },
-          {
-            "pengirim": "Rian",
-            "teks_chat": "Bentar guys, aku merasa ada hal lain yang perlu dibahas.",
-            "label_intent": "neutral",
-            "target": []
-          },
-          {
-            "pengirim": "Oka",
-            "teks_chat": "Hal apa emangnya?",
-            "label_intent": "neutral",
-            "target": []
-          },
-          {
-            "pengirim": "Putri",
-            "teks_chat": "Apakah ada yang lihat aktivitas ganjil semalam?",
+            "teks_chat": "Kita berhenti membahas nama sebentar. Apakah semua pemain bisa menggunakan Peek?",
             "label_intent": "neutral",
             "target": []
           },
           {
             "pengirim": "Rian",
-            "teks_chat": "Menurut kalian, apakah hitmannya lebih dari satu?",
+            "teks_chat": "Tidak, Peek adalah skill Stalker.",
             "label_intent": "neutral",
             "target": []
           },
           {
             "pengirim": "Oka",
-            "teks_chat": "Bisa jadi sih, biar lebih susah ditebak.",
+            "teks_chat": "Bagaimana pemain memilih sasarannya?",
             "label_intent": "neutral",
             "target": []
           },
           {
             "pengirim": "Putri",
-            "teks_chat": "Kita harus lebih hati-hati sama semua orang.",
+            "teks_chat": "Satu pemain dipilih sebagai target Peek saat fase malam.",
             "label_intent": "neutral",
             "target": []
           },
           {
             "pengirim": "Rian",
-            "teks_chat": "Aku setuju, jangan langsung percaya gitu aja.",
+            "teks_chat": "Bukan satu lokasi atau seluruh ruangan.",
             "label_intent": "neutral",
             "target": []
           },
           {
             "pengirim": "Oka",
-            "teks_chat": "Tapi tetep aja, kalau omongannya berlawanan sama sebelumnya, itu aneh.",
-            "label_intent": "offend",
-            "target": [
-              {
-                "pemain": "tidak_diketahui",
-                "relasi": "offend",
-                "bukti_pesan": []
-              }
-            ]
+            "teks_chat": "Dan hasilnya tentang identitas pemain tersebut.",
+            "label_intent": "neutral",
+            "target": []
           },
           {
             "pengirim": "Putri",
-            "teks_chat": "Betul, biasanya hitman yang suka mengubah ceritanya.",
-            "label_intent": "offend",
-            "target": [
-              {
-                "pemain": "tidak_diketahui",
-                "relasi": "offend",
-                "bukti_pesan": []
-              }
-            ]
+            "teks_chat": "Iya, bukan laporan siapa berjalan ke suatu tempat.",
+            "label_intent": "neutral",
+            "target": []
           },
           {
             "pengirim": "Rian",
-            "teks_chat": "Lalu kita harus mencurigai siapa dulu nih?",
+            "teks_chat": "Berapa sering skillnya bisa dipakai?",
             "label_intent": "neutral",
             "target": []
           },
           {
             "pengirim": "Oka",
-            "teks_chat": "Aku juga bingung mau milih siapa sekarang.",
+            "teks_chat": "Satu kali tiap dua ronde.",
             "label_intent": "neutral",
             "target": []
           },
           {
             "pengirim": "Putri",
-            "teks_chat": "Ya pilih aja orang yg daritadi ceritanya beda-beda terus, itu pasti pelakunya!",
+            "teks_chat": "Berarti klaim melihat beberapa pemain dalam satu penggunaan perlu dipertanyakan.",
+            "label_intent": "neutral",
+            "target": []
+          },
+          {
+            "pengirim": "Rian",
+            "teks_chat": "Benar, kita cocokkan dengan batasan skill.",
+            "label_intent": "neutral",
+            "target": []
+          },
+          {
+            "pengirim": "Oka",
+            "teks_chat": "Sekarang kembali ke orang yang disebut sebelum pertanyaan Peek tadi.",
+            "label_intent": "neutral",
+            "target": []
+          },
+          {
+            "pengirim": "Putri",
+            "teks_chat": "Aku curiga dia Hitman karena mengganti klaim tanpa memberi alasan. Aku ingin vote dia.",
             "label_intent": "offend",
             "target": [
               {
@@ -384,7 +331,7 @@
           },
           {
             "pengirim": "Toni",
-            "teks_chat": "Iya si Udin tadi tiba-tiba bilang bukan pelaku.",
+            "teks_chat": "Aku curiga Udin Hitman karena tiba-tiba membela diri sebelum dituduh.",
             "label_intent": "offend",
             "target": [
               {
@@ -398,7 +345,7 @@
           },
           {
             "pengirim": "Udin",
-            "teks_chat": "Cuma inisiatif ngomong aja biar cepat selesai.",
+            "teks_chat": "Aku bukan Hitman, cuma ingin ikut diskusi.",
             "label_intent": "defend",
             "target": [
               {
@@ -412,7 +359,7 @@
           },
           {
             "pengirim": "Vera",
-            "teks_chat": "Toni tapi kamu juga dari awal gelisah terus kan?",
+            "teks_chat": "Sekarang aku justru curiga Toni Hitman, dia cepat sekali menuduh tanpa alasan kuat.",
             "label_intent": "offend",
             "target": [
               {
@@ -524,13 +471,13 @@
         "messages": [
           {
             "pengirim": "Zaki",
-            "teks_chat": "Gue perhatiin chat lu daritadi selalu kepotong di tengah, kenapa Yana?",
+            "teks_chat": "Yana, kamu belum menjawab pertanyaan soal alasan vote, ya?",
             "label_intent": "neutral",
             "target": []
           },
           {
             "pengirim": "Yana",
-            "teks_chat": "Itu pasti karena lu yang pake Gag Order ke gue Zaki, fix lu pelakunya!",
+            "teks_chat": "Zaki, aku curiga kamu Hitman yang memakai pertanyaan itu untuk menyudutkanku tanpa alasan.",
             "label_intent": "offend",
             "target": [
               {
@@ -560,13 +507,13 @@
         "messages": [
           {
             "pengirim": "Bima",
-            "teks_chat": "Ada yang melihat sesuatu yang janggal semalam?",
+            "teks_chat": "Klaim role siapa yang perlu kita tanyakan lagi?",
             "label_intent": "neutral",
             "target": []
           },
           {
             "pengirim": "Cinta",
-            "teks_chat": "Doni semalam mondar-mandir terus, dia mencurigakan.",
+            "teks_chat": "Aku curiga Doni Hitman karena mengaku Spy tanpa penjelasan.",
             "label_intent": "offend",
             "target": [
               {
@@ -580,7 +527,7 @@
           },
           {
             "pengirim": "Doni",
-            "teks_chat": "Aku cuma ke toilet kok semalam, nggak ngapa-ngapain.",
+            "teks_chat": "Aku bukan Hitman. Aku mengaku memilih Guard untuk Cinta semalam.",
             "label_intent": "defend",
             "target": [
               {
@@ -594,54 +541,36 @@
           },
           {
             "pengirim": "Eka",
-            "teks_chat": "Aku sih tidur lelap semalaman di kasur.",
-            "label_intent": "defend",
-            "target": [
-              {
-                "pemain": "Eka",
-                "relasi": "defend",
-                "bukti_pesan": [
-                  4
-                ]
-              }
-            ]
+            "teks_chat": "Aku juga ingin membagikan klaim, aku mengaku Spy.",
+            "label_intent": "neutral",
+            "target": []
           },
           {
             "pengirim": "Bima",
-            "teks_chat": "Kalau Doni beneran ke toilet harusnya dia dengar sesuatu.",
-            "label_intent": "offend",
-            "target": [
-              {
-                "pemain": "Doni",
-                "relasi": "offend",
-                "bukti_pesan": [
-                  2
-                ]
-              }
-            ]
+            "teks_chat": "Doni, apakah pilihan Guard yang tadi disebut sudah benar?",
+            "label_intent": "neutral",
+            "target": []
           },
           {
             "pengirim": "Cinta",
-            "teks_chat": "Iya, masak nggak dengar suara apa-apa sih.",
+            "teks_chat": "Iya, kita catat dulu klaimnya.",
+            "label_intent": "neutral",
+            "target": []
+          },
+          {
+            "pengirim": "Doni",
+            "teks_chat": "Benar, itulah pilihanku yang kuklaim.",
+            "label_intent": "neutral",
+            "target": []
+          },
+          {
+            "pengirim": "Eka",
+            "teks_chat": "Aku masih curiga Doni menggunakan klaim itu untuk mencari aman.",
             "label_intent": "offend",
             "target": [
               {
                 "pemain": "Doni",
                 "relasi": "offend",
-                "bukti_pesan": [
-                  2
-                ]
-              }
-            ]
-          },
-          {
-            "pengirim": "Doni",
-            "teks_chat": "Aku serius nggak dengar apa-apa, mungkin karena jauh.",
-            "label_intent": "defend",
-            "target": [
-              {
-                "pemain": "Doni",
-                "relasi": "defend",
                 "bukti_pesan": [
                   7
                 ]
@@ -649,61 +578,39 @@
             ]
           },
           {
-            "pengirim": "Eka",
-            "teks_chat": "Masa sih nggak dengar, agak aneh ya Doni ini.",
-            "label_intent": "offend",
-            "target": [
-              {
-                "pemain": "Doni",
-                "relasi": "offend",
-                "bukti_pesan": [
-                  2
-                ]
-              }
-            ]
-          },
-          {
             "pengirim": "Bima",
-            "teks_chat": "Bentar, aku malah salfok sama Eka yang bilang tidur lelap.",
+            "teks_chat": "Sekarang aku ingin menanyakan klaim Eka tadi.",
             "label_intent": "neutral",
             "target": []
           },
           {
             "pengirim": "Cinta",
-            "teks_chat": "Kenapa dengan Eka?",
+            "teks_chat": "Eka, siapa pilihan Guard yang kamu klaim?",
             "label_intent": "neutral",
             "target": []
           },
           {
             "pengirim": "Bima",
-            "teks_chat": "Emangnya Eka nggak dengar keributan apa-apa semalam?",
+            "teks_chat": "Iya, kamu baru saja mengaku Spy.",
             "label_intent": "neutral",
             "target": []
           },
           {
             "pengirim": "Eka",
-            "teks_chat": "Kan aku udah bilang, aku tidur lelap jadi nggak sadar apa-apa.",
-            "label_intent": "defend",
-            "target": [
-              {
-                "pemain": "Eka",
-                "relasi": "defend",
-                "bukti_pesan": [
-                  12
-                ]
-              }
-            ]
+            "teks_chat": "Aku tidak punya Guard, aku mengaku Stalker.",
+            "label_intent": "neutral",
+            "target": []
           },
           {
             "pengirim": "Cinta",
-            "teks_chat": "Bohong banget lu Eka, alibi lu yang sok tidur lelap itu malah ngebuktiin lu hitmannya!",
+            "teks_chat": "Eka, klaimmu berubah tanpa penjelasan. Aku curiga kamu Hitman yang mengarang role.",
             "label_intent": "offend",
             "target": [
               {
                 "pemain": "Eka",
                 "relasi": "offend",
                 "bukti_pesan": [
-                  12
+                  13
                 ]
               }
             ]
@@ -732,31 +639,31 @@
         "messages": [
           {
             "pengirim": "Fajar",
-            "teks_chat": "Tadi malam aku melihat ada orang mencurigakan di luar.",
+            "teks_chat": "Aku mengaku Spy dan menggunakan Guard semalam.",
             "label_intent": "neutral",
             "target": []
           },
           {
             "pengirim": "Gilang",
-            "teks_chat": "Oh ya? Ciri-cirinya seperti apa?",
+            "teks_chat": "Untuk siapa Guard yang kamu klaim itu?",
             "label_intent": "neutral",
             "target": []
           },
           {
             "pengirim": "Hari",
-            "teks_chat": "Kamu yakin melihat orang Fajar?",
+            "teks_chat": "Fajar, apa kamu yakin ingin membagikan klaim pilihanmu?",
             "label_intent": "neutral",
             "target": []
           },
           {
             "pengirim": "Fajar",
-            "teks_chat": "Sebenarnya aku agak lupa sih, mungkin aku salah lihat.",
+            "teks_chat": "Aku tidak punya Guard, sebenarnya aku mengaku Civilian.",
             "label_intent": "neutral",
             "target": []
           },
           {
             "pengirim": "Gilang",
-            "teks_chat": "Kok tiba-tiba bilang salah lihat?",
+            "teks_chat": "Aku curiga kamu Hitman karena klaim rolemu berubah tanpa penjelasan.",
             "label_intent": "offend",
             "target": [
               {
@@ -784,7 +691,7 @@
           },
           {
             "pengirim": "Gilang",
-            "teks_chat": "Jelas banget lu berbohong Faj, ucapan lu mencla-mencle dari tadi!",
+            "teks_chat": "Faj, klaimmu berubah dalam beberapa pesan. Aku curiga kamu Hitman yang sedang berbohong.",
             "label_intent": "offend",
             "target": [
               {
@@ -813,13 +720,21 @@
         "messages": [
           {
             "pengirim": "Indra",
-            "teks_chat": "Aku yakin tadi Kaka yang bilang dia berada di dekat korban.",
-            "label_intent": "neutral",
-            "target": []
+            "teks_chat": "Kaka tadi mengajak vote lalu menariknya. Aku curiga Kaka Hitman.",
+            "label_intent": "offend",
+            "target": [
+              {
+                "pemain": "Kaka",
+                "relasi": "offend",
+                "bukti_pesan": [
+                  1
+                ]
+              }
+            ]
           },
           {
             "pengirim": "Kaka",
-            "teks_chat": "Bukan aku, aku bilang aku ada di ujung ruangan.",
+            "teks_chat": "Aku bukan Hitman. Aku menarik dugaan setelah membaca jawaban baru.",
             "label_intent": "defend",
             "target": [
               {
@@ -833,13 +748,13 @@
           },
           {
             "pengirim": "Leo",
-            "teks_chat": "Masa sih Kaka bilang di ujung?",
+            "teks_chat": "Jawaban mana yang membuatmu berubah pikiran?",
             "label_intent": "neutral",
             "target": []
           },
           {
             "pengirim": "Indra",
-            "teks_chat": "Tapi sekarang dia bilangnya di ujung ruangan, aneh kan?",
+            "teks_chat": "Aku tetap curiga dia sedang mengubah cerita untuk lolos.",
             "label_intent": "offend",
             "target": [
               {
@@ -853,21 +768,21 @@
           },
           {
             "pengirim": "Leo",
-            "teks_chat": "Iya, ucapannya plin plan sekali.",
+            "teks_chat": "Aku juga sempat curiga dia berbohong.",
             "label_intent": "offend",
             "target": [
               {
                 "pemain": "Kaka",
                 "relasi": "offend",
                 "bukti_pesan": [
-                  2
+                  4
                 ]
               }
             ]
           },
           {
             "pengirim": "Kaka",
-            "teks_chat": "Kalian mungkin salah dengar aja.",
+            "teks_chat": "Aku tidak bersalah. Baca jawaban yang terkirim sebelum aku menarik dugaan.",
             "label_intent": "defend",
             "target": [
               {
@@ -881,21 +796,21 @@
           },
           {
             "pengirim": "Indra",
-            "teks_chat": "Enggak mungkin kita salah dengar.",
+            "teks_chat": "Aku tetap ingin vote dia.",
             "label_intent": "offend",
             "target": [
               {
                 "pemain": "Kaka",
                 "relasi": "offend",
                 "bukti_pesan": [
-                  2
+                  6
                 ]
               }
             ]
           },
           {
             "pengirim": "Leo",
-            "teks_chat": "Menurutku Indra yang salah tangkap ceritanya, Kaka emang jujur tapi Indra yang sengaja muter balik fakta!",
+            "teks_chat": "Kaka belum pantas dituduh setelah jawaban baru itu dibaca. Justru aku curiga Indra Hitman karena terus memaksakan tuduhan.",
             "label_intent": "offend",
             "target": [
               {
@@ -974,7 +889,7 @@
           },
           {
             "pengirim": "Putra",
-            "teks_chat": "Hasilnya dia adalah orang jahat.",
+            "teks_chat": "Aku belum ingin membagikan hasilnya sekarang.",
             "label_intent": "neutral",
             "target": []
           },
@@ -986,9 +901,17 @@
           },
           {
             "pengirim": "Putra",
-            "teks_chat": "Aku agak ragu menyebutkannya sekarang.",
-            "label_intent": "neutral",
-            "target": []
+            "teks_chat": "Baik, aku mengaku hasil Peek menyebut Niko sebagai Hitman.",
+            "label_intent": "offend",
+            "target": [
+              {
+                "pemain": "Niko",
+                "relasi": "offend",
+                "bukti_pesan": [
+                  10
+                ]
+              }
+            ]
           },
           {
             "pengirim": "Maman",
@@ -997,12 +920,12 @@
             "target": []
           },
           {
-            "pengirim": "Putra",
-            "teks_chat": "Yang aku intip dan ternyata jahat itu adalah Niko.",
+            "pengirim": "Opan",
+            "teks_chat": "Aku curiga Putra mengarang klaim Stalker untuk memfitnah Niko.",
             "label_intent": "offend",
             "target": [
               {
-                "pemain": "Niko",
+                "pemain": "Putra",
                 "relasi": "offend",
                 "bukti_pesan": [
                   12
@@ -1012,14 +935,21 @@
           },
           {
             "pengirim": "Niko",
-            "teks_chat": "Jangan mengada-ada Putra, aku yakin klaim Stalker kamu itu palsu untuk memfitnahku!",
+            "teks_chat": "Aku bukan Hitman. Aku setuju, dia yang mengaku Stalker tadi pasti memakai klaim palsu untuk memfitnahku.",
             "label_intent": "offend",
             "target": [
+              {
+                "pemain": "Niko",
+                "relasi": "defend",
+                "bukti_pesan": [
+                  13
+                ]
+              },
               {
                 "pemain": "Putra",
                 "relasi": "offend",
                 "bukti_pesan": [
-                  13
+                  12
                 ]
               }
             ]

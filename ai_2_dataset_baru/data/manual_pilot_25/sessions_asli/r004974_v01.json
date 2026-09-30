@@ -1,0 +1,129 @@
+{
+  "job": {
+    "job_id": "r004974_v01",
+    "case_name": "reference_start",
+    "case_description": "Tepat 12 konteks. Penyebutan target eksplisit di pesan konteks pertama; pesan sekarang memakai kata ganti.",
+    "source": {
+      "source_row": 4974,
+      "source_group": "c312b1fd624d3abf6c1b",
+      "teks_chat": "gue buka kartu sekarang, aku stalker dan bukan pihak jahat",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 13,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "reference_start",
+    "participants": [
+      "Caca",
+      "Deni",
+      "Edi",
+      "Feri"
+    ],
+    "focus_player": "Deni",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Caca",
+        "teks_chat": "Deni diam, mungkin ada kendala. Jangan vote Deni hanya karena itu.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Deni",
+            "relasi": "defend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Edi",
+        "teks_chat": "Iya, alasan diamnya belum bisa dipastikan.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Feri",
+        "teks_chat": "Gag Order dipilih targetnya atau acak?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Caca",
+        "teks_chat": "Hitman memilih satu pemain untuk dibisukan saat siang.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Edi",
+        "teks_chat": "Jadi itu salah satu kemungkinan penyebab diam.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Feri",
+        "teks_chat": "Iya, bukan kepastian hanya dari chat.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Caca",
+        "teks_chat": "Apa efeknya pada percakapan?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Edi",
+        "teks_chat": "Pemain yang terkena tidak bisa mengirim chat saat efeknya aktif.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Feri",
+        "teks_chat": "Lumayan merugikan buat yang punya info penting.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Caca",
+        "teks_chat": "Makanya kita harus pinter-pinter nebak.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Edi",
+        "teks_chat": "Jangan gampang terpengaruh provokasi aja intinya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Feri",
+        "teks_chat": "Aman, fokus cari petunjuk lain aja.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Caca",
+        "teks_chat": "Aku menolak tuduhan ke dia. Diam saja belum membuktikan dia Hitman.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Deni",
+            "relasi": "defend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 72.txt"
+  }
+}

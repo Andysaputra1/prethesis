@@ -1,0 +1,119 @@
+{
+  "job": {
+    "job_id": "r003447_v01",
+    "case_name": "rhetorical_question",
+    "case_description": "Pesan sekarang berbentuk pertanyaan retoris yang sebenarnya menuduh atau membela, misalnya 'kenapa Andy diam terus?' (offend) atau 'masa sih Andy Hitman?' (defend). Bukan pertanyaan informasi.",
+    "source": {
+      "source_row": 3447,
+      "source_group": "ad6b2afe5111425e49f7",
+      "teks_chat": "aku bukan Stalker, jadi jangan paksa aku punya info Peek tentang siapa pun",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 6,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "rhetorical_question",
+    "participants": [
+      "Aldi",
+      "Bimo",
+      "Rio",
+      "Cindy"
+    ],
+    "focus_player": "Rio",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Aldi",
+        "teks_chat": "Rio balesnya lama banget sih, lagi ngerencanain apaan tuh di belakang?",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Rio",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Bimo",
+        "teks_chat": "Biasalah, hitman lagi briefing sama temennya biar sejalan wkwk.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Rio",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Rio",
+        "teks_chat": "Gak, aku tadi ngetik panjang tapi kehapus mulu, lagian koneksiku jelek banget ini.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Rio",
+            "relasi": "defend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Aldi",
+        "teks_chat": "Alasan lag mulu, udah basi alasan kayak gitu.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Rio",
+            "relasi": "offend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Bimo",
+        "teks_chat": "Mending kumpul vote ke Rio aja deh sekarang biar aman posisi kita.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Rio",
+            "relasi": "offend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Cindy",
+        "teks_chat": "Lagian masa sih Rio mau repot-repot pura-pura lag kalau dia beneran jahat?",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Rio",
+            "relasi": "defend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 52.txt"
+  }
+}

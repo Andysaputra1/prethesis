@@ -1,0 +1,98 @@
+{
+  "job": {
+    "job_id": "r003336_v01",
+    "case_name": "multiple_targets",
+    "case_description": "Dua atau lebih pemain menjadi target relasi yang sama secara jelas.",
+    "source": {
+      "source_row": 3336,
+      "source_group": "5618967685c469cf8f31",
+      "teks_chat": "gw tetap di pihak warga, vote gw dari ronde sebelumnya juga konsisten",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 3,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "multiple_targets",
+    "participants": [
+      "Lani",
+      "Nando",
+      "Maya",
+      "Oki"
+    ],
+    "focus_player": "",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Lani",
+        "teks_chat": "Aku yakin sekali Maya dan Oki itu komplotan pelakunya.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Maya",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          },
+          {
+            "pemain": "Oki",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Nando",
+        "teks_chat": "Kalian berdua lebih baik cepat mengaku saja sekarang.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Maya",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          },
+          {
+            "pemain": "Oki",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Maya",
+        "teks_chat": "Aku dan Oki bukan Hitman. Tuduhan kalian belum ada buktinya.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Maya",
+            "relasi": "defend",
+            "bukti_pesan": [
+              3
+            ]
+          },
+          {
+            "pemain": "Oki",
+            "relasi": "defend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 49.txt"
+  }
+}

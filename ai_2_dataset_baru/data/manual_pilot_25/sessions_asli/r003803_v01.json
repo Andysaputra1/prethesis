@@ -1,0 +1,53 @@
+{
+  "job": {
+    "job_id": "r003803_v01",
+    "case_name": "neutral_after_accusation",
+    "case_description": "Konteks berisi tuduhan, tetapi pesan sekarang neutral; jangan mewarisi relasi lama.",
+    "source": {
+      "source_row": 3803,
+      "source_group": "a2abff0dd2b5f7b05b08",
+      "teks_chat": "Semalam gw Guard Wawan, jadi dia selamat bukan karena hoki; gw Spy, percaya deh",
+      "label_intent": "neutral"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 2,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "neutral_after_accusation",
+    "participants": [
+      "Oki",
+      "Puji"
+    ],
+    "focus_player": "",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Oki",
+        "teks_chat": "Puji kok diam aja dari tadi, lu pasti hitmannya ya?",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Puji",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Puji",
+        "teks_chat": "Efek Gag Order itu hilangnya pas pagi hari atau akhir diskusi sih?",
+        "label_intent": "neutral",
+        "target": []
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 59.txt"
+  }
+}

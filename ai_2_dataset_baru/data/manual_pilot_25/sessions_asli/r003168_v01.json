@@ -1,0 +1,75 @@
+{
+  "job": {
+    "job_id": "r003168_v01",
+    "case_name": "stance_change",
+    "case_description": "Pengirim pesan sekarang sebelumnya menuduh atau membela seorang pemain di konteks, lalu berubah sikap terhadap pemain yang sama. Anotasi mengikuti sikap terbaru.",
+    "source": {
+      "source_row": 3168,
+      "source_group": "7ce64413fcf9fa56976b",
+      "teks_chat": "Lu bilang aku mencurigakan karena diam, tapi tadi aku sudah menjelaskan urutan kejadian dengan jelas",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 3,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "stance_change",
+    "participants": [
+      "Maya",
+      "Nando"
+    ],
+    "focus_player": "Nando",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Maya",
+        "teks_chat": "Si Nando dari tadi pasif banget, fix Hitman nih.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Nando",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Nando",
+        "teks_chat": "Aku lagi sibuk baca riwayat chat ke atas, bukan sengaja pasif.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Nando",
+            "relasi": "defend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Maya",
+        "teks_chat": "Oh gitu, masuk akal sih alasanmu, maaf ya tadi nuduh.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Nando",
+            "relasi": "defend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 45.txt"
+  }
+}

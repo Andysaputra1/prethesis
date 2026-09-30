@@ -1,0 +1,209 @@
+{
+  "job": {
+    "job_id": "r000652_v01",
+    "case_name": "reference_start",
+    "case_description": "Tepat 12 konteks. Penyebutan target eksplisit di pesan konteks pertama; pesan sekarang memakai kata ganti.",
+    "source": {
+      "source_row": 652,
+      "source_group": "0b70890f28e6a077ef9c",
+      "teks_chat": "aku paham kenapa kalian curiga, tapi tuduhan ini tidak didukung kejadian apa pun",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 13,
+    "pesan_typo_ringan": [
+      8
+    ]
+  },
+  "session": {
+    "case_name": "reference_start",
+    "participants": [
+      "Nando",
+      "Ovi",
+      "Puput",
+      "Qori",
+      "Rafa"
+    ],
+    "focus_player": "Puput",
+    "panggilan": [
+      {
+        "pemain": "Puput",
+        "sebutan": [
+          "put"
+        ]
+      }
+    ],
+    "messages": [
+      {
+        "pengirim": "Nando",
+        "teks_chat": "Puput belum menjawab pertanyaan soal ajakan vote. Aku curiga Puput Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Puput",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Ovi",
+        "teks_chat": "Kita belum tahu penyebab jeda chatnya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Puput",
+        "teks_chat": "Tadi koneksiku terputus, sekarang aku bisa membaca lagi.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Puput",
+            "relasi": "defend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Qori",
+        "teks_chat": "Jeda chat memang bisa karena koneksi, bukan selalu Gag Order.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Rafa",
+        "teks_chat": "Aku curiga dia sengaja memakai alasan koneksi untuk menghindar.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Puput",
+            "relasi": "offend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Nando",
+        "teks_chat": "Aku juga masih curiga dia Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Puput",
+            "relasi": "offend",
+            "bukti_pesan": [
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Ovi",
+        "teks_chat": "Kalau begitu, beri kesempatan menjawab pertanyaan tadi.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Qori",
+        "teks_chat": "Iya, biarin dia jwb dulu sebelum kita nilai.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Rafa",
+        "teks_chat": "Boleh, tapi aku tetap curiga dia sedang mengarang.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Puput",
+            "relasi": "offend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Nando",
+        "teks_chat": "Apa alasan ajakan vote tadi?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Puput",
+        "teks_chat": "Aku bukan Hitman. Aku sudah menarik ajakan itu karena belum punya alasan kuat.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Puput",
+            "relasi": "defend",
+            "bukti_pesan": [
+              11
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Rafa",
+        "teks_chat": "Aku tetap curiga dia berbohong.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Puput",
+            "relasi": "offend",
+            "bukti_pesan": [
+              11
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Ovi",
+        "teks_chat": "Dia belum pantas divote. Jeda chat dan menarik dugaan yang lemah belum membuktikan dia Hitman.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Puput",
+            "relasi": "defend",
+            "bukti_pesan": [
+              12
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 12.txt"
+  },
+  "revisi": [
+    {
+      "pesan": 3,
+      "kategori": "label",
+      "alasan": "Puput menjawab tuduhan di pesan 1 dengan alasan koneksi; ini pembelaan diri."
+    },
+    {
+      "pesan": 5,
+      "kategori": "label",
+      "alasan": "Ciri reference_start: focus hanya disebut di pesan 1; sebutan 'put' di pesan 5 memperpendek acuan."
+    },
+    {
+      "pesan": 8,
+      "kategori": "meta",
+      "alasan": "Menjelaskan mekanik Gag Order; slot typo [8] juga belum berisi singkatan."
+    },
+    {
+      "pesan": 9,
+      "kategori": "tidak_natural",
+      "alasan": "Merujuk 'aturan itu' dari pesan 8 lama; disesuaikan dengan pesan 8 baru."
+    }
+  ]
+}

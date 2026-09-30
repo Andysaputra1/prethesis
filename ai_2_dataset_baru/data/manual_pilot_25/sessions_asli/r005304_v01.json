@@ -1,0 +1,51 @@
+{
+  "job": {
+    "job_id": "r005304_v01",
+    "case_name": "neutral_status",
+    "case_description": "Klaim status/role atau pertanyaan informasi saja tanpa pembelaan/serangan; target kosong.",
+    "source": {
+      "source_row": 5304,
+      "source_group": "384f0a46ad9aa54d471f",
+      "teks_chat": "aku tadi tidak lihat apa-apa",
+      "label_intent": "neutral"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 3,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "neutral_status",
+    "participants": [
+      "Ujang",
+      "Vina"
+    ],
+    "focus_player": "",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Ujang",
+        "teks_chat": "Sepi amat chatnya, pada kemana ini woy?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Vina",
+        "teks_chat": "Mungkin masih pada ngantuk atau lagi mikir.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Ujang",
+        "teks_chat": "Aku sih mau infoin kalau roleku cuma civilian biasa.",
+        "label_intent": "neutral",
+        "target": []
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 76.txt"
+  }
+}

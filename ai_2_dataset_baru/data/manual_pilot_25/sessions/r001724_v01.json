@@ -1,0 +1,141 @@
+{
+  "job": {
+    "job_id": "r001724_v01",
+    "case_name": "ambiguous",
+    "case_description": "Beberapa acuan sama-sama mungkin; target tidak_diketahui, bukan nama terakhir.",
+    "source": {
+      "source_row": 1724,
+      "source_group": "4bfcdc376a0c022e7614",
+      "teks_chat": "K terlihat sengaja membangun konflik antara dua pemain lalu mundur dari diskusi, pola itu khas hitman, vote K",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 11,
+    "pesan_typo_ringan": [
+      7
+    ]
+  },
+  "session": {
+    "case_name": "ambiguous",
+    "participants": [
+      "Sari",
+      "Tomi",
+      "Umar"
+    ],
+    "focus_player": "",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Sari",
+        "teks_chat": "Tomi dan Umar sama-sama bertanya soal penyebab pemain diam.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Tomi",
+        "teks_chat": "Aku belum tahu apakah karena koneksi atau efek skill.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Umar",
+        "teks_chat": "Tadi ada dua orang yang pesannya kepotong terus tiba-tiba hilang, kan?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Sari",
+        "teks_chat": "Iya, aku juga lihat, tapi belum tentu disengaja.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Tomi",
+        "teks_chat": "Kita hanya melihat chat yang berhasil terkirim.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Umar",
+        "teks_chat": "Dan kita belum tahu pasti siapa korban Hostage.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Sari",
+        "teks_chat": "Obrolan ini ngebantu kita nentuin dugaan nggak sih? Aku blm nangkep arahnya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Tomi",
+        "teks_chat": "Setidaknya kita tidak langsung menyamakan diam dengan role tertentu.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Umar",
+        "teks_chat": "Iya, itu juga alasanku bertanya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Sari",
+        "teks_chat": "Aku justru curiga salah satu dari dua orang yang tadi sempat hilang itu Hitman, tetapi belum mau menyebut siapa.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "tidak_diketahui",
+            "relasi": "offend",
+            "bukti_pesan": []
+          }
+        ]
+      },
+      {
+        "pengirim": "Tomi",
+        "teks_chat": "Aku juga curiga dia sengaja menghilang biar nggak ditanya-tanya.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "tidak_diketahui",
+            "relasi": "offend",
+            "bukti_pesan": []
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 29.txt"
+  },
+  "revisi": [
+    {
+      "pesan": 3,
+      "kategori": "meta",
+      "alasan": "Menjelaskan efek Gag Order."
+    },
+    {
+      "pesan": 4,
+      "kategori": "meta",
+      "alasan": "Menyimpulkan dari aturan Gag Order."
+    },
+    {
+      "pesan": 7,
+      "kategori": "singkatan",
+      "alasan": "Slot typo [7] tidak berisi singkatan; kalimat juga kaku ('Apakah')."
+    },
+    {
+      "pesan": 10,
+      "kategori": "tidak_natural",
+      "alasan": "Mengacu 'dua orang yang menjelaskan' aturan; disesuaikan setelah perbaikan meta."
+    },
+    {
+      "pesan": 11,
+      "kategori": "meta",
+      "alasan": "Pesan utama bertumpu pada 'penjelasan aturan'; Tomi sendiri ikut menjelaskan sehingga 'dia' tidak lagi ambigu."
+    }
+  ]
+}

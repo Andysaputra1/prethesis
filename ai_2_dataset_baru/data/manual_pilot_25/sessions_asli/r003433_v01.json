@@ -1,0 +1,92 @@
+{
+  "job": {
+    "job_id": "r003433_v01",
+    "case_name": "quotation",
+    "case_description": "Ada tuduhan yang dikutip; bedakan sikap pengirim dari ucapan orang yang dikutip.",
+    "source": {
+      "source_row": 3433,
+      "source_group": "15df218fb87affcb2913",
+      "teks_chat": "jangan lempar kesalahan ke gw cuma karena gw diem, gw Civilian biasa",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 4,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "quotation",
+    "participants": [
+      "Dika",
+      "Soni",
+      "Tara",
+      "Vina",
+      "Rina"
+    ],
+    "focus_player": "Rina",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Dika",
+        "teks_chat": "Rina mengubah ajakan vote tanpa alasan, aku curiga dia Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Rina",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Soni",
+        "teks_chat": "Iya, aku curiga Rina Hitman karena mengganti ajakan vote.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Rina",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Tara",
+        "teks_chat": "Soni bilang 'Rina Hitman karena mengganti ajakan vote'. Aku tidak setuju, perubahan ajakan belum cukup jadi bukti.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Rina",
+            "relasi": "defend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Vina",
+        "teks_chat": "Aku setuju pembelaan Tara terhadap ucapan Soni 'Rina Hitman karena mengganti ajakan vote'. Perubahan ajakan belum membuktikan dia Hitman.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Rina",
+            "relasi": "defend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 52.txt"
+  }
+}

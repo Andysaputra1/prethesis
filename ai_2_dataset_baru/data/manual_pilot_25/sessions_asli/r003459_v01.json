@@ -1,0 +1,90 @@
+{
+  "job": {
+    "job_id": "r003459_v01",
+    "case_name": "ambiguous",
+    "case_description": "Beberapa acuan sama-sama mungkin; target tidak_diketahui, bukan nama terakhir.",
+    "source": {
+      "source_row": 3459,
+      "source_group": "498b8fb0be987665ac2c",
+      "teks_chat": "Nama gw tadi disebut, tapi semalam aku tidak melakukan aksi apa pun",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 6,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "ambiguous",
+    "participants": [
+      "Fani",
+      "Aldo",
+      "Gina",
+      "Budi",
+      "Coki"
+    ],
+    "focus_player": "",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Fani",
+        "teks_chat": "Kok Budi sama Coki ga ngomong dari tadi?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Aldo",
+        "teks_chat": "Keduanya diam, tetapi belum jelas alasannya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Gina",
+        "teks_chat": "Masa dua-duanya? Salah satu pasti ada hitman yang sengaja pura-pura bisu.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "tidak_diketahui",
+            "relasi": "offend",
+            "bukti_pesan": []
+          }
+        ]
+      },
+      {
+        "pengirim": "Aldo",
+        "teks_chat": "Bisa jadi sih, yang satu emang cari aman biar ga disorot.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "tidak_diketahui",
+            "relasi": "offend",
+            "bukti_pesan": []
+          }
+        ]
+      },
+      {
+        "pengirim": "Fani",
+        "teks_chat": "Terus jadinya kita mau vote yang mana nih dari mereka?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Gina",
+        "teks_chat": "Menurutku dia belum terbukti Hitman, jangan asal vote.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "tidak_diketahui",
+            "relasi": "defend",
+            "bukti_pesan": []
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 53.txt"
+  }
+}

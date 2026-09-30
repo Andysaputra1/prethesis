@@ -1,0 +1,124 @@
+{
+  "job": {
+    "job_id": "r001024_v01",
+    "case_name": "explicit",
+    "case_description": "Target eksplisit di pesan sekarang. Contoh: Aku yakin bukan Andy = defend Andy.",
+    "source": {
+      "source_row": 1024,
+      "source_group": "eebcdcef9d3e1e43be4d",
+      "teks_chat": "gw Civilian murni, role gw gak punya skill, yang mencurigakan itu Bimo",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 7,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "explicit",
+    "participants": [
+      "Hasan",
+      "Indra",
+      "Joko",
+      "Kiki"
+    ],
+    "focus_player": "Indra",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Hasan",
+        "teks_chat": "Kok tadi pagi Indra nuduh aku, sekarang malah nuduh Kiki?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Indra",
+        "teks_chat": "Dugaanku berubah setelah membaca pesan baru di chat.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Joko",
+        "teks_chat": "Aku curiga dia Hitman yang sedang mencari sasaran tuduhan.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Indra",
+            "relasi": "offend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Indra",
+        "teks_chat": "Aku bukan Hitman; aku berusaha menyesuaikan dugaan dengan isi chat yang baru kubaca.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Indra",
+            "relasi": "defend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Kiki",
+        "teks_chat": "Alah, itu cuma alibi doang biar kamu kelihatan kerja.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Indra",
+            "relasi": "offend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Hasan",
+        "teks_chat": "Aku juga curiga dia sengaja membuat kita bingung.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Indra",
+            "relasi": "offend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Joko",
+        "teks_chat": "Pola permainan Indra emang bener-bener kayak pelakunya, vote dia aja!",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Indra",
+            "relasi": "offend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 20.txt"
+  },
+  "revisi": [
+    {
+      "pesan": 5,
+      "kategori": "label",
+      "alasan": "Menepis pembelaan Indra sebagai 'alibi doang' = menyudutkan Indra"
+    }
+  ]
+}

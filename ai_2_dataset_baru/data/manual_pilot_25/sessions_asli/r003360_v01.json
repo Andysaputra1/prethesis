@@ -1,0 +1,58 @@
+{
+  "job": {
+    "job_id": "r003360_v01",
+    "case_name": "ambiguous",
+    "case_description": "Beberapa acuan sama-sama mungkin; target tidak_diketahui, bukan nama terakhir.",
+    "source": {
+      "source_row": 3360,
+      "source_group": "8962b359e56daa84868a",
+      "teks_chat": "gw bukan hitman, dan keputusan malam yang dituduhkan ke aku tidak masuk akal",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 3,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "ambiguous",
+    "participants": [
+      "Budi",
+      "Coki",
+      "Doni"
+    ],
+    "focus_player": "",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Budi",
+        "teks_chat": "Coki dan Doni sama-sama mengaku Stalker, keduanya belum membuka hasil.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Coki",
+        "teks_chat": "Kita belum membahas alasan klaim masing-masing.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Budi",
+        "teks_chat": "Menurutku dia mungkin jujur soal role, jangan langsung vote dia.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "tidak_diketahui",
+            "relasi": "defend",
+            "bukti_pesan": []
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 50.txt"
+  }
+}

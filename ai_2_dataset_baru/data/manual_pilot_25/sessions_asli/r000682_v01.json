@@ -1,0 +1,130 @@
+{
+  "job": {
+    "job_id": "r000682_v01",
+    "case_name": "reference_end",
+    "case_description": "Tepat 12 konteks. Penyebutan target eksplisit di pesan konteks terakhir.",
+    "source": {
+      "source_row": 682,
+      "source_group": "959aaacdfc0f5585a93c",
+      "teks_chat": "aku bukan Stalker atau Spy, cuma Civilian yang kebetulan terlalu fokus ke satu tersangka",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 13,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "reference_end",
+    "participants": [
+      "Omar",
+      "Puput",
+      "Qori",
+      "Rama",
+      "Sinta"
+    ],
+    "focus_player": "Sinta",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Omar",
+        "teks_chat": "Apa ada yang udah ngelakuin Peek semalam? Kita butuh info secepatnya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Puput",
+        "teks_chat": "Tadi ada yang klaim Stalker, tapi kok belum share hasilnya sih?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Qori",
+        "teks_chat": "Iya, daritadi cuma ngasih tau kalau dia udah meriksa orang, tapi namanya ditahan.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Rama",
+        "teks_chat": "Mungkin dia takut kalau langsung buka kartu bakal diincer Hitman.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Omar",
+        "teks_chat": "Tapi kan ini udah mau waktunya voting, kalau nggak sekarang kapan lagi.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Puput",
+        "teks_chat": "Setuju, lebih baik ambil risiko sekarang daripada kita salah eksekusi civilian.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Qori",
+        "teks_chat": "Lagian kalau beneran Stalker, harusnya berani bertanggung jawab sama klaimnya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Rama",
+        "teks_chat": "Coba kita tanya lagi orangnya dengan baik-baik, jangan ditekan.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Omar",
+        "teks_chat": "Iya, siapa tahu dia punya alasan logis kenapa nahan infonya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Puput",
+        "teks_chat": "Ayo dong, masa kita mau main tebak-tebakan terus sampai akhir ronde.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Qori",
+        "teks_chat": "Waktu terus berjalan loh, jangan buang-buang kesempatan yang ada.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Rama",
+        "teks_chat": "Ada klaim Peek tentang Sinta yang menyebut dia bukan Hitman. Menurutku Sinta belum pantas divote.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Sinta",
+            "relasi": "defend",
+            "bukti_pesan": [
+              12
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Omar",
+        "teks_chat": "Aku setuju membela dia untuk sekarang, meskipun hasil Peek itu masih berupa klaim pemain.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Sinta",
+            "relasi": "defend",
+            "bukti_pesan": [
+              12
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 13.txt"
+  }
+}

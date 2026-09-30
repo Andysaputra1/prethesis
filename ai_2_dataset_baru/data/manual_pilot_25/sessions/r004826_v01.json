@@ -1,0 +1,88 @@
+{
+  "job": {
+    "job_id": "r004826_v01",
+    "case_name": "witness",
+    "case_description": "Nama saksi/korban disebut, tetapi bukan target serangan atau pembelaan.",
+    "source": {
+      "source_row": 4826,
+      "source_group": "f1bb36360b098990b4b8",
+      "teks_chat": "gw percaya lu sebagai partner, tapi kita harus kompak keluarkan si T sekarang",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 5,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "witness",
+    "participants": [
+      "Hadi",
+      "Ika",
+      "Jojo"
+    ],
+    "focus_player": "Hadi",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Ika",
+        "teks_chat": "Jojo belum membalas sejak diskusi dibuka. Ada yang tahu alasannya?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Hadi",
+        "teks_chat": "Aku bukan Hitman, jangan langsung menuduhku.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Hadi",
+            "relasi": "defend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Ika",
+        "teks_chat": "Santai saja, belum ada yang menuduh kamu kok.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Hadi",
+        "teks_chat": "Aku cuma berjaga-jaga sebelum kalian menuduh yang aneh-aneh.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Hadi",
+            "relasi": "defend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Ika",
+        "teks_chat": "Hadi, baru nama Jojo disebut kamu langsung membela diri. Aku curiga kamu Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Hadi",
+            "relasi": "offend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 71.txt"
+  }
+}

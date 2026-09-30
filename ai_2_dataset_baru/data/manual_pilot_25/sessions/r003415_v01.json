@@ -1,0 +1,175 @@
+{
+  "job": {
+    "job_id": "r003415_v01",
+    "case_name": "stance_change",
+    "case_description": "Pengirim pesan sekarang sebelumnya menuduh atau membela seorang pemain di konteks, lalu berubah sikap terhadap pemain yang sama. Anotasi mengikuti sikap terbaru.",
+    "source": {
+      "source_row": 3415,
+      "source_group": "36c8d8ddb2c676d220e5",
+      "teks_chat": "aku tidak bersalah, argumen kalian cuma muter di asumsi yang sama",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 10,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "stance_change",
+    "participants": [
+      "Lia",
+      "Nina",
+      "Mira",
+      "Oki"
+    ],
+    "focus_player": "Mira",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Lia",
+        "teks_chat": "Mira mengubah klaim tanpa penjelasan, aku curiga dia Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Mira",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Nina",
+        "teks_chat": "Wah iya, makin curiga dia pelakunya nih.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Mira",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Mira",
+        "teks_chat": "Ya ampun, aku kan cuma nambahin info yang baru aja ku inget.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Mira",
+            "relasi": "defend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Lia",
+        "teks_chat": "Ah, palingan alasan aja lu buat nutupin.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Mira",
+            "relasi": "offend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Oki",
+        "teks_chat": "Tapi bisa jadi dia emang baru inget kan?",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Mira",
+            "relasi": "defend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Nina",
+        "teks_chat": "Ga mungkin lah, pasti bohong dia dari awal.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Mira",
+            "relasi": "offend",
+            "bukti_pesan": [
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Mira",
+        "teks_chat": "Sumpah, kalian nekan aku terus dari tadi ga kasih ampun.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Mira",
+            "relasi": "defend",
+            "bukti_pesan": [
+              7
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Lia",
+        "teks_chat": "Penjelasanmu belum meyakinkanku, aku masih curiga kamu Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Mira",
+            "relasi": "offend",
+            "bukti_pesan": [
+              7
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Oki",
+        "teks_chat": "Sabar dulu, jangan asal nuduh kalau belum pasti 100%.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Mira",
+            "relasi": "defend",
+            "bukti_pesan": [
+              8
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Nina",
+        "teks_chat": "Eh setelah dipikir-pikir masuk akal juga sih penjelasannya tadi, aku narik tuduhanku deh ke dia.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Mira",
+            "relasi": "defend",
+            "bukti_pesan": [
+              9
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 51.txt"
+  }
+}

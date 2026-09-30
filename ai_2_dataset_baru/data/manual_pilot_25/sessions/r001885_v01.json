@@ -1,0 +1,99 @@
+{
+  "job": {
+    "job_id": "r001885_v01",
+    "case_name": "topic_switch",
+    "case_description": "Pembahasan berganti pemain; pesan sekarang mengikuti topik baru, bukan otomatis target lama.",
+    "source": {
+      "source_row": 1885,
+      "source_group": "25e3f918245d5511f480",
+      "teks_chat": "kalau si Galih berani, jawab kenapa target Guard kemarin malah selamat",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 4,
+    "pesan_typo_ringan": [
+      4
+    ]
+  },
+  "session": {
+    "case_name": "topic_switch",
+    "participants": [
+      "Jali",
+      "Kiki",
+      "Laras"
+    ],
+    "focus_player": "Jali",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Jali",
+        "teks_chat": "Aku curiga Kiki Hitman karena belum menanggapi pertanyaan soal alasan vote.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Kiki",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Kiki",
+        "teks_chat": "Aku bukan pelakunya. Aku sedang membaca ulang chat sebelum menjawab.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Kiki",
+            "relasi": "defend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Laras",
+        "teks_chat": "Sekarang aku justru curiga Jali, dia menuduh tanpa memberi kesempatan menjawab.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Jali",
+            "relasi": "offend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Kiki",
+        "teks_chat": "Aku juga curiga Jali Hitman yg sengaja memaksakan tuduhan.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Jali",
+            "relasi": "offend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 31.txt"
+  },
+  "revisi": [
+    {
+      "pesan": 4,
+      "kategori": "singkatan",
+      "alasan": "Slot typo [4] tidak berisi satu singkatan pun."
+    }
+  ]
+}

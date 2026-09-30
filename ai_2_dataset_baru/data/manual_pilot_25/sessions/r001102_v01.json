@@ -1,0 +1,200 @@
+{
+  "job": {
+    "job_id": "r001102_v01",
+    "case_name": "neutral_status",
+    "case_description": "Klaim status/role atau pertanyaan informasi saja tanpa pembelaan/serangan; target kosong.",
+    "source": {
+      "source_row": 1102,
+      "source_group": "2f0ad7bcdb0c39f60035",
+      "teks_chat": "kalau memang ada serangan, siapa yang paling mungkin jadi target Hitman?",
+      "label_intent": "neutral"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 13,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "neutral_status",
+    "participants": [
+      "Oman",
+      "Putri",
+      "Qori",
+      "Rama"
+    ],
+    "focus_player": "",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Oman",
+        "teks_chat": "Tadi ada yang tiba-tiba pasang badan nggak sih pas Putri dituduh?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Putri",
+        "teks_chat": "Aku juga heran kenapa ada yang mau belain aku padahal kita nggak saling kenal.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Qori",
+        "teks_chat": "Aku curiga Putri Hitman karena terlalu cepat mendapat pembelaan tanpa alasan.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Putri",
+            "relasi": "offend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Rama",
+        "teks_chat": "Iya, kelihatan banget dari kecepatan reaksinya yang instan.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Putri",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Putri",
+        "teks_chat": "Loh, kan aku nggak minta dibelain, kok aku yang disalahin?",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Putri",
+            "relasi": "defend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Oman",
+        "teks_chat": "Hitman kan emang jago bikin skenario seolah-olah mereka nggak tahu apa-apa.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Putri",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Qori",
+        "teks_chat": "Setuju, mending kita targetin Putri aja deh biar nggak ribet.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Putri",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Putri",
+        "teks_chat": "Kalian ini asal nuduh aja, bukti kongkretnya mana?",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Putri",
+            "relasi": "defend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Rama",
+        "teks_chat": "Buktinya ya reaksi temen lu yang kecepetan itu.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Putri",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Oman",
+        "teks_chat": "Udah fiks sih, kita harus kumpulin suara sekarang.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Putri",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Putri",
+        "teks_chat": "Sumpah aku civilian, aku aja bingung kenapa dibelain tadi.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Putri",
+            "relasi": "defend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Qori",
+        "teks_chat": "Alesan mulu, Hitman mana ada yang ngaku.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Putri",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Rama",
+        "teks_chat": "Ada yang mau share klaim role atau hasil skill semalam? Siapa tahu ada info baru.",
+        "label_intent": "neutral",
+        "target": []
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 21.txt"
+  },
+  "revisi": [
+    {
+      "pesan": 13,
+      "kategori": "meta",
+      "alasan": "Kebocoran aturan: 'Identitas korban sendiri memang tidak diumumkan'."
+    }
+  ]
+}

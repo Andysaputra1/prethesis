@@ -1,0 +1,75 @@
+{
+  "job": {
+    "job_id": "r005377_v01",
+    "case_name": "neutral_names",
+    "case_description": "Neutral menyebut nama tanpa menuduh/membela; target kosong.",
+    "source": {
+      "source_row": 5377,
+      "source_group": "22e0e8280d33bb8b4ac2",
+      "teks_chat": "waduh chatnya kekunci ya, gue ketinggalan",
+      "label_intent": "neutral"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 4,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "neutral_names",
+    "participants": [
+      "Oki",
+      "Putri",
+      "Qori"
+    ],
+    "focus_player": "",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Oki",
+        "teks_chat": "Ada yang tahu semalam siapa yang disandera Hitman?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Putri",
+        "teks_chat": "Belum ada yang tahu, dari tadi belum ada yang ngaku kena.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Qori",
+        "teks_chat": "Chat juga sepi banget, jadi susah nebak.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Oki",
+        "teks_chat": "Putri dan Qori ingin membagikan klaim skill semalam?",
+        "label_intent": "neutral",
+        "target": []
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 77.txt"
+  },
+  "revisi": [
+    {
+      "pesan": 1,
+      "kategori": "tidak_natural",
+      "alasan": "Kaku ('Apakah ...') dan 'malam ini' padahal sedang siang."
+    },
+    {
+      "pesan": 2,
+      "kategori": "meta",
+      "alasan": "Menjelaskan identitas korban tidak diumumkan sistem."
+    },
+    {
+      "pesan": 3,
+      "kategori": "meta",
+      "alasan": "Menjelaskan identitas korban tidak bisa dipastikan."
+    }
+  ]
+}

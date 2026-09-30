@@ -1,0 +1,61 @@
+{
+  "job": {
+    "job_id": "r002270_v01",
+    "case_name": "short_history_1",
+    "case_description": "Awal diskusi dengan tepat 1 pesan sebelumnya. Jangan menambah riwayat fiktif atau mengisi sampai 12.",
+    "source": {
+      "source_row": 2270,
+      "source_group": "e433b1e54b6a605bcdd2",
+      "teks_chat": "gw bukan hitman, kalau chat gw kelihatan panik itu karena takut salah vote",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 2,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "short_history_1",
+    "participants": [
+      "Asep",
+      "Coki"
+    ],
+    "focus_player": "Coki",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Asep",
+        "teks_chat": "Udah, kita vote Coki aja, dia dari tadi pasif banget.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Coki",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Coki",
+        "teks_chat": "Eh, jangan asal nuduh dong, aku baru aja gabung dari toilet.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Coki",
+            "relasi": "defend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 37.txt"
+  }
+}

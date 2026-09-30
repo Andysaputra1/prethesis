@@ -1,0 +1,129 @@
+{
+  "job": {
+    "job_id": "r002669_v01",
+    "case_name": "neutral_after_accusation",
+    "case_description": "Konteks berisi tuduhan, tetapi pesan sekarang neutral; jangan mewarisi relasi lama.",
+    "source": {
+      "source_row": 2669,
+      "source_group": "02ad7ed4bb41a72290fe",
+      "teks_chat": "Aku kira semua role punya aksi malam, ternyata tidak juga.",
+      "label_intent": "neutral"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 8,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "neutral_after_accusation",
+    "participants": [
+      "Maman",
+      "Nia",
+      "Opan"
+    ],
+    "focus_player": "",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Maman",
+        "teks_chat": "Nia lama membalas, aku curiga dia Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Nia",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Nia",
+        "teks_chat": "Aku bukan Hitman, tadi sedang membaca chat.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Nia",
+            "relasi": "defend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Opan",
+        "teks_chat": "Aku juga belum selesai membaca.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Maman",
+        "teks_chat": "Aku tetap curiga Nia pelakunya.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Nia",
+            "relasi": "offend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Nia",
+        "teks_chat": "Tuduhan ke aku belum ada buktinya.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Nia",
+            "relasi": "defend",
+            "bukti_pesan": [
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Opan",
+        "teks_chat": "Jangan vote Nia hanya karena jeda balasan.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Nia",
+            "relasi": "defend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Maman",
+        "teks_chat": "Kita masih punya waktu membahas alasan lain.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Nia",
+        "teks_chat": "Ngomong-ngomong, semalam ada yang pakai skill dan mau share hasilnya?",
+        "label_intent": "neutral",
+        "target": []
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 80.txt"
+  },
+  "revisi": [
+    {
+      "pesan": 8,
+      "kategori": "meta",
+      "alasan": "Menanyakan aturan skill Civilian."
+    }
+  ]
+}

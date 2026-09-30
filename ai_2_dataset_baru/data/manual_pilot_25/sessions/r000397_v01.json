@@ -1,0 +1,143 @@
+{
+  "job": {
+    "job_id": "r000397_v01",
+    "case_name": "reference_end",
+    "case_description": "Tepat 12 konteks. Penyebutan target eksplisit di pesan konteks terakhir.",
+    "source": {
+      "source_row": 397,
+      "source_group": "4cf166782ec1f8392e0a",
+      "teks_chat": "kalau cuma karena gw telat jawab, jangan langsung nuduh",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 13,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "reference_end",
+    "participants": [
+      "Lina",
+      "Miko",
+      "Nia",
+      "Oman",
+      "Putu",
+      "Rudi"
+    ],
+    "focus_player": "Rudi",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Lina",
+        "teks_chat": "Kayaknya ada yang janggal deh sama obrolan di ronde ini.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Miko",
+        "teks_chat": "Janggal di bagian mananya Lina?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Nia",
+        "teks_chat": "Tadi ada pemain yang membela orang lain dengan kecepatan nggak masuk akal.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Oman",
+        "teks_chat": "Oh iya, aku juga menyadari ada hal yang seperti itu.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Putu",
+        "teks_chat": "Padahal buktinya belum ada sama sekali, tapi udah berani menjamin 100 persen aman.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Lina",
+        "teks_chat": "Mungkin itu cara Hitman mencari kepercayaan, tetapi kita perlu melihat isi pembelaannya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Miko",
+        "teks_chat": "Iya, kecepatan membalas saja belum menjelaskan sikap orangnya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Nia",
+        "teks_chat": "Terus kita harus menindaklanjutinya bagaimana nih sekarang?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Oman",
+        "teks_chat": "Sebaiknya kita baca alasan pembelaannya lagi sebelum memilih vote.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Putu",
+        "teks_chat": "Jangan sampai kita melewatkan bagian penting dari pesannya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Lina",
+        "teks_chat": "Aku udah siapin jari buat memencet panel vote sih.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Miko",
+        "teks_chat": "Kalau nggak salah itu Rudi. Aku curiga Rudi Hitman karena menjamin orang lain aman tanpa alasan.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Rudi",
+            "relasi": "offend",
+            "bukti_pesan": [
+              12
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Nia",
+        "teks_chat": "Jangan langsung menuduh dia. Bisa saja pembelaannya masuk akal, mari baca lagi alasannya.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Rudi",
+            "relasi": "defend",
+            "bukti_pesan": [
+              12
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 5.txt"
+  },
+  "revisi": [
+    {
+      "pesan": 7,
+      "kategori": "tidak_natural",
+      "alasan": "'orang tersebut' kaku."
+    },
+    {
+      "pesan": 12,
+      "kategori": "tidak_natural",
+      "alasan": "'Yang aku maksud Rudi' padahal Miko sebelumnya tidak memaksudkan siapa pun."
+    }
+  ]
+}

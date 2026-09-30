@@ -1,0 +1,102 @@
+{
+  "job": {
+    "job_id": "r003350_v01",
+    "case_name": "nickname",
+    "case_description": "Pesan sekarang menyebut pemain dengan nama panggilan, singkatan, atau salah ketik ringan (Andy -> ndy, andi, si And) tanpa menulis nama aslinya. Catat sebutan itu di panggilan. Target tetap memakai nama asli; jika neutral, target kosong.",
+    "source": {
+      "source_row": 3350,
+      "source_group": "882efcbe8b756189e495",
+      "teks_chat": "lu salah sasaran, gw belum pernah melakukan hal yang mencurigakan malam ini",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 5,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "nickname",
+    "participants": [
+      "Wawan",
+      "Yudi",
+      "Zidan"
+    ],
+    "focus_player": "Wawan",
+    "panggilan": [
+      {
+        "pemain": "Wawan",
+        "sebutan": [
+          "Wan"
+        ]
+      }
+    ],
+    "messages": [
+      {
+        "pengirim": "Wawan",
+        "teks_chat": "Aku klaim Spy, aku ingin membagikan pilihan Guard semalam.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Yudi",
+        "teks_chat": "Wawan pasti berbohong supaya posisinya aman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Wawan",
+            "relasi": "offend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Wawan",
+        "teks_chat": "Aku benar-benar Spy, nanti aku berikan buktinya.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Wawan",
+            "relasi": "defend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Zidan",
+        "teks_chat": "Kalau memang Spy, nanti kasih tahu ya siapa yang kamu Guard.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Zidan",
+        "teks_chat": "Percaya saja sama Wan, dia mungkin masih menunggu waktu yang pas untuk berbicara.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Wawan",
+            "relasi": "defend",
+            "bukti_pesan": [
+              5
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 49.txt"
+  },
+  "revisi": [
+    {
+      "pesan": 4,
+      "kategori": "tidak_natural",
+      "alasan": "Zidan menantang Wawan lalu langsung membela di pesan berikutnya; tidak konsisten"
+    }
+  ]
+}

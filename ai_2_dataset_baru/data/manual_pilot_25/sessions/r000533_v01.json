@@ -1,0 +1,131 @@
+{
+  "job": {
+    "job_id": "r000533_v01",
+    "case_name": "second_person",
+    "case_description": "Kamu/lu: gunakan pergantian pembicara dan teks yang jelas. Tanpa acuan jelas, target tidak_diketahui.",
+    "source": {
+      "source_row": 533,
+      "source_group": "b4c54b1a8f487e1f6f12",
+      "teks_chat": "kalau memang gw pelakunya, tunjukkan pola aksi malam yang nyambung, bukan asumsi",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 8,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "second_person",
+    "participants": [
+      "Gita",
+      "Hana",
+      "Irfan",
+      "Joko"
+    ],
+    "focus_player": "Hana",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Gita",
+        "teks_chat": "Kenapa dari tadi arah tuduhannya ganti-ganti terus ya?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Irfan",
+        "teks_chat": "Iya nih, bingung jadinya ngikutin alur diskusi kita hari ini.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Joko",
+        "teks_chat": "Hana tadi menuduh Irfan, sekarang menuduh aku tanpa menjelaskan perubahan itu. Aku curiga Hana.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Hana",
+            "relasi": "offend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Hana",
+        "teks_chat": "Aku bukan Hitman; dugaanku berubah setelah membaca penjelasan baru di chat.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Hana",
+            "relasi": "defend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Irfan",
+        "teks_chat": "Pasti Hana pelakunya yang lagi panik dan mau adu domba kita!",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Hana",
+            "relasi": "offend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Hana",
+        "teks_chat": "Kok gitu? Aku cuma ngikutin info dari laporan yang beredar aja kok.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Hana",
+            "relasi": "defend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Joko",
+        "teks_chat": "Alasan aja kamu, kelihatan banget bohongnya, ayo vote dia sekarang!",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Hana",
+            "relasi": "offend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Gita",
+        "teks_chat": "Hana, jangan panik. Aku membela kamu karena mengubah dugaan setelah ada penjelasan baru tidak membuktikan kamu Hitman.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Hana",
+            "relasi": "defend",
+            "bukti_pesan": [
+              8
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 9.txt"
+  }
+}

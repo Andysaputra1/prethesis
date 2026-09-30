@@ -1,0 +1,185 @@
+{
+  "job": {
+    "job_id": "r004818_v01",
+    "case_name": "reference_middle",
+    "case_description": "Tepat 12 konteks. Penyebutan target eksplisit di pesan konteks ke-6 atau ke-7.",
+    "source": {
+      "source_row": 4818,
+      "source_group": "27d8caf80d22d3cf9891",
+      "teks_chat": "lu dan gw bisa satu suara ke si L, dia jelas sedang menggiring tuduhan",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 13,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "reference_middle",
+    "participants": [
+      "Anton",
+      "Budi",
+      "Citra",
+      "Dika"
+    ],
+    "focus_player": "Budi",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Anton",
+        "teks_chat": "Siapa yang mau kita incar sekarang?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Budi",
+        "teks_chat": "Langsung arahkan ke Citra saja, dia diam terus dari tadi.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Citra",
+            "relasi": "offend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Citra",
+        "teks_chat": "Kok aku? Aku sedang membaca obrolan kalian sebelumnya.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Citra",
+            "relasi": "defend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Dika",
+        "teks_chat": "Jangan asal memutuskan dulu, waktu kita masih banyak.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Anton",
+        "teks_chat": "Iya, kita harus mengumpulkan informasi yang lebih jelas.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Dika",
+        "teks_chat": "Budi mengajak vote tanpa bukti, aku curiga dia Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Budi",
+            "relasi": "offend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Anton",
+        "teks_chat": "Nah iya, kenapa dia terlihat terburu-buru sekali?",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Budi",
+            "relasi": "offend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Budi",
+        "teks_chat": "Aku hanya memberikan usul, kalian jangan langsung panik.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Budi",
+            "relasi": "defend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Citra",
+        "teks_chat": "Aku curiga kamu Hitman karena mengajak vote tanpa alasan kuat.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Budi",
+            "relasi": "offend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Dika",
+        "teks_chat": "Apalagi kalau sampai mengajak pemain lain untuk ikut-ikutan.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Budi",
+            "relasi": "offend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Anton",
+        "teks_chat": "Sangat berbahaya kalau kita mengikuti arahan yang salah.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Citra",
+        "teks_chat": "Aku tetap curiga dia Hitman yang mengarahkan vote sembarangan.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Budi",
+            "relasi": "offend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Dika",
+        "teks_chat": "Lebih baik kita menyingkirkan dia saja hari ini daripada salah langkah.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Budi",
+            "relasi": "offend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 71.txt"
+  }
+}

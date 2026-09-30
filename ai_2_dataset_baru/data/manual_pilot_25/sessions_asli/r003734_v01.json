@@ -1,0 +1,178 @@
+{
+  "job": {
+    "job_id": "r003734_v01",
+    "case_name": "reference_middle",
+    "case_description": "Tepat 12 konteks. Penyebutan target eksplisit di pesan konteks ke-6 atau ke-7.",
+    "source": {
+      "source_row": 3734,
+      "source_group": "c82cdc6153eb142229d3",
+      "teks_chat": "aku sudah cek identitas seseorang semalam, dan feeling-ku kuat dia jahat",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 13,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "reference_middle",
+    "participants": [
+      "Riko",
+      "Sari",
+      "Tono",
+      "Umar",
+      "Vera"
+    ],
+    "focus_player": "Riko",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Sari",
+        "teks_chat": "Ada klaim skill yang mau dibahas?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Tono",
+        "teks_chat": "Aku belum membagikan klaim.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Umar",
+        "teks_chat": "Aku mau mendengarkan dulu.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Vera",
+        "teks_chat": "Kayaknya hitman main aman banget ronde ini.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Sari",
+        "teks_chat": "Mungkin ada yang belum mau membuka role.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Tono",
+        "teks_chat": "Riko mengaku Spy tetapi juga mengaku memakai Peek. Aku curiga Riko Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Riko",
+            "relasi": "offend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Umar",
+        "teks_chat": "Iya, tapi info yang dia kasih tidak masuk akal sama sekali.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Riko",
+            "relasi": "offend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Vera",
+        "teks_chat": "Peek milik Stalker, bukan Spy. Aku curiga dia membuat klaim palsu.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Riko",
+            "relasi": "offend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Sari",
+        "teks_chat": "Pasti ngarang tuh buat cari perhatian dan alibi.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Riko",
+            "relasi": "offend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Tono",
+        "teks_chat": "Sus parah sih kelakuannya dari awal.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Riko",
+            "relasi": "offend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Umar",
+        "teks_chat": "Mending kita awasi dia terus.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Riko",
+            "relasi": "offend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Vera",
+        "teks_chat": "Vote aja gak sih biar cepat kelar?",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Riko",
+            "relasi": "offend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Sari",
+        "teks_chat": "Udahlah, kita vote aja dia karena klaim Spy-nya terbukti palsu.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Riko",
+            "relasi": "offend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 58.txt"
+  }
+}

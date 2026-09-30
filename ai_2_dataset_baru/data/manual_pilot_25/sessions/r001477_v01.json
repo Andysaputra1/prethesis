@@ -1,0 +1,197 @@
+{
+  "job": {
+    "job_id": "r001477_v01",
+    "case_name": "outside_window_unknown",
+    "case_description": "14-16 pesan total. Pembahasan lama telah putus/beralih. Teks dan anotasi 12 konteks terakhir tidak cukup menentukan acuan sekarang. Target harus tidak_diketahui; jangan menggunakan informasi lama yang tidak tersedia dalam input.",
+    "source": {
+      "source_row": 1477,
+      "source_group": "d9b99fc5c47e6e0f0189",
+      "teks_chat": "tuduhan ke gw belum ada buktinya, sementara si Naya malah hilang tiap diskusi penting",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 14,
+    "pesan_typo_ringan": [
+      7
+    ]
+  },
+  "session": {
+    "case_name": "outside_window_unknown",
+    "participants": [
+      "Siska",
+      "Tono",
+      "Udin",
+      "Vina"
+    ],
+    "focus_player": "Tono",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Siska",
+        "teks_chat": "Tono mengaku Spy tetapi belum menyebut pilihan Guard. Aku curiga Tono sedang mencari aman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Tono",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Udin",
+        "teks_chat": "Sebentar, sebelum bahas klaim, ada yang kena Gag Order nggak hari ini?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Vina",
+        "teks_chat": "Aku aman, masih bisa ngetik.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Siska",
+        "teks_chat": "Aku juga aman.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Udin",
+        "teks_chat": "Oke, berarti diskusi bisa jalan.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Vina",
+        "teks_chat": "Waktu siang tinggal berapa lama ya?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Siska",
+        "teks_chat": "Kayaknya tinggal dua menit, jd harus cepat.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Udin",
+        "teks_chat": "Oke, jangan sampai kita vote asal-asalan.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Vina",
+        "teks_chat": "Setuju, mending bahas satu-satu biar jelas.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Siska",
+        "teks_chat": "Aku catat dulu klaim yang sudah masuk.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Udin",
+        "teks_chat": "Oke, biar nggak ada yang kelewat.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Vina",
+        "teks_chat": "Sip, lanjut.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Siska",
+        "teks_chat": "Balik lagi ke orang yang ngaku tadi sebelum kita ngobrolin Gag Order.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Vina",
+        "teks_chat": "Aku curiga dia Hitman yang memakai klaim untuk lolos dari pertanyaan.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "tidak_diketahui",
+            "relasi": "offend",
+            "bukti_pesan": []
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 26.txt"
+  },
+  "revisi": [
+    {
+      "pesan": 2,
+      "kategori": "meta",
+      "alasan": "Seluruh jendela berisi penjelasan skill (termasuk 'Guard milik Spy, Peek milik Stalker') dan pesan 13 menyebut 'pembahasan aturan'; slot typo [7] juga tidak punya singkatan. Diganti obrolan in-game netral, singkatan 'jd' di pesan 7"
+    },
+    {
+      "pesan": 3,
+      "kategori": "meta",
+      "alasan": "Seluruh jendela berisi penjelasan skill (termasuk 'Guard milik Spy, Peek milik Stalker') dan pesan 13 menyebut 'pembahasan aturan'; slot typo [7] juga tidak punya singkatan. Diganti obrolan in-game netral, singkatan 'jd' di pesan 7"
+    },
+    {
+      "pesan": 4,
+      "kategori": "meta",
+      "alasan": "Seluruh jendela berisi penjelasan skill (termasuk 'Guard milik Spy, Peek milik Stalker') dan pesan 13 menyebut 'pembahasan aturan'; slot typo [7] juga tidak punya singkatan. Diganti obrolan in-game netral, singkatan 'jd' di pesan 7"
+    },
+    {
+      "pesan": 5,
+      "kategori": "meta",
+      "alasan": "Seluruh jendela berisi penjelasan skill (termasuk 'Guard milik Spy, Peek milik Stalker') dan pesan 13 menyebut 'pembahasan aturan'; slot typo [7] juga tidak punya singkatan. Diganti obrolan in-game netral, singkatan 'jd' di pesan 7"
+    },
+    {
+      "pesan": 6,
+      "kategori": "meta",
+      "alasan": "Seluruh jendela berisi penjelasan skill (termasuk 'Guard milik Spy, Peek milik Stalker') dan pesan 13 menyebut 'pembahasan aturan'; slot typo [7] juga tidak punya singkatan. Diganti obrolan in-game netral, singkatan 'jd' di pesan 7"
+    },
+    {
+      "pesan": 7,
+      "kategori": "meta",
+      "alasan": "Seluruh jendela berisi penjelasan skill (termasuk 'Guard milik Spy, Peek milik Stalker') dan pesan 13 menyebut 'pembahasan aturan'; slot typo [7] juga tidak punya singkatan. Diganti obrolan in-game netral, singkatan 'jd' di pesan 7"
+    },
+    {
+      "pesan": 8,
+      "kategori": "meta",
+      "alasan": "Seluruh jendela berisi penjelasan skill (termasuk 'Guard milik Spy, Peek milik Stalker') dan pesan 13 menyebut 'pembahasan aturan'; slot typo [7] juga tidak punya singkatan. Diganti obrolan in-game netral, singkatan 'jd' di pesan 7"
+    },
+    {
+      "pesan": 9,
+      "kategori": "meta",
+      "alasan": "Seluruh jendela berisi penjelasan skill (termasuk 'Guard milik Spy, Peek milik Stalker') dan pesan 13 menyebut 'pembahasan aturan'; slot typo [7] juga tidak punya singkatan. Diganti obrolan in-game netral, singkatan 'jd' di pesan 7"
+    },
+    {
+      "pesan": 10,
+      "kategori": "meta",
+      "alasan": "Seluruh jendela berisi penjelasan skill (termasuk 'Guard milik Spy, Peek milik Stalker') dan pesan 13 menyebut 'pembahasan aturan'; slot typo [7] juga tidak punya singkatan. Diganti obrolan in-game netral, singkatan 'jd' di pesan 7"
+    },
+    {
+      "pesan": 11,
+      "kategori": "meta",
+      "alasan": "Seluruh jendela berisi penjelasan skill (termasuk 'Guard milik Spy, Peek milik Stalker') dan pesan 13 menyebut 'pembahasan aturan'; slot typo [7] juga tidak punya singkatan. Diganti obrolan in-game netral, singkatan 'jd' di pesan 7"
+    },
+    {
+      "pesan": 12,
+      "kategori": "meta",
+      "alasan": "Seluruh jendela berisi penjelasan skill (termasuk 'Guard milik Spy, Peek milik Stalker') dan pesan 13 menyebut 'pembahasan aturan'; slot typo [7] juga tidak punya singkatan. Diganti obrolan in-game netral, singkatan 'jd' di pesan 7"
+    },
+    {
+      "pesan": 13,
+      "kategori": "meta",
+      "alasan": "Seluruh jendela berisi penjelasan skill (termasuk 'Guard milik Spy, Peek milik Stalker') dan pesan 13 menyebut 'pembahasan aturan'; slot typo [7] juga tidak punya singkatan. Diganti obrolan in-game netral, singkatan 'jd' di pesan 7"
+    }
+  ]
+}

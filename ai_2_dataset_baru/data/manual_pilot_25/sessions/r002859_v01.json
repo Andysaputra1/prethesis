@@ -1,0 +1,102 @@
+{
+  "job": {
+    "job_id": "r002859_v01",
+    "case_name": "negation",
+    "case_description": "Negasi menentukan relasi: Andy Hitman berbeda dari Andy bukan Hitman.",
+    "source": {
+      "source_row": 2859,
+      "source_group": "d4daa4a56cbb67740d0d",
+      "teks_chat": "siapa yang kena Gag Order tadi? Timing-nya pas banget setelah Seno mulai bongkar alibi, fix pelakunya ada di sini",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 6,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "negation",
+    "participants": [
+      "Lina",
+      "Maman",
+      "Nino"
+    ],
+    "focus_player": "Maman",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Lina",
+        "teks_chat": "Maman terlambat membalas pertanyaan tadi.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Maman",
+        "teks_chat": "Maaf, tadi koneksiku putus.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Nino",
+        "teks_chat": "Jeda balasan bukan bukti Maman Hitman.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Maman",
+            "relasi": "defend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Maman",
+        "teks_chat": "Aku bukan Hitman.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Maman",
+            "relasi": "defend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Lina",
+        "teks_chat": "Aku juga menolak tuduhan ke dia hanya karena terlambat membalas.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Maman",
+            "relasi": "defend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Nino",
+        "teks_chat": "Tapi aku berubah pikiran: Maman bukan pemain yang jujur, dia Hitman yang memakai alasan koneksi.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Maman",
+            "relasi": "offend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 42.txt"
+  }
+}

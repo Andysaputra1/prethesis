@@ -1,0 +1,176 @@
+{
+  "job": {
+    "job_id": "r005337_v01",
+    "case_name": "reference_middle",
+    "case_description": "Tepat 12 konteks. Penyebutan target eksplisit di pesan konteks ke-6 atau ke-7.",
+    "source": {
+      "source_row": 5337,
+      "source_group": "7fdf8c6b9dc4d0284b56",
+      "teks_chat": "maaf, tadi koneksi gw ngadat, bukan sengaja diam",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 13,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "reference_middle",
+    "participants": [
+      "Zain",
+      "Ahmad",
+      "Bilal"
+    ],
+    "focus_player": "Ahmad",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Zain",
+        "teks_chat": "Hari ini belum ada info yang mencurigakan ya?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Ahmad",
+        "teks_chat": "Belum nemu apa-apa nih aku.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Bilal",
+        "teks_chat": "Eh, tapi aku ngerasa ada yang janggal deh.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Zain",
+        "teks_chat": "Apanya yang janggal bil?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Bilal",
+        "teks_chat": "Ada yang tuduhannya gonta-ganti terus.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Zain",
+        "teks_chat": "Ahmad menuduh berganti-ganti tanpa alasan. Aku curiga Ahmad Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Ahmad",
+            "relasi": "offend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Ahmad",
+        "teks_chat": "Itu kan cuma berteori, wajar aja kita diskusi.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Ahmad",
+            "relasi": "defend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Bilal",
+        "teks_chat": "Tapi teorimu berubahnya terlalu cepat, kayak nutupin jejak.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Ahmad",
+            "relasi": "offend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Zain",
+        "teks_chat": "Jangan-jangan dia itu hitmannya yang lagi panik.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Ahmad",
+            "relasi": "offend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Ahmad",
+        "teks_chat": "Aku cuma berusaha cari peluang dari reaksi kalian kok.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Ahmad",
+            "relasi": "defend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Bilal",
+        "teks_chat": "Makin aneh aja alasan kamu buat menghindar.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Ahmad",
+            "relasi": "offend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Zain",
+        "teks_chat": "Udah fix sih ini, mending ntar kita bareng-bareng vote dia aja.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Ahmad",
+            "relasi": "offend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Bilal",
+        "teks_chat": "Tunggu dulu, mungkin dia beneran cuma civilian yang lagi pusing.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Ahmad",
+            "relasi": "defend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 76.txt"
+  }
+}

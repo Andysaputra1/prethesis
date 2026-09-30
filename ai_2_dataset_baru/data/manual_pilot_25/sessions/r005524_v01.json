@@ -1,0 +1,115 @@
+{
+  "job": {
+    "job_id": "r005524_v01",
+    "case_name": "quotation",
+    "case_description": "Ada tuduhan yang dikutip; bedakan sikap pengirim dari ucapan orang yang dikutip.",
+    "source": {
+      "source_row": 5524,
+      "source_group": "52af4a22ac6a801bd6e1",
+      "teks_chat": "aku masih bingung bedain fase siang dan malam",
+      "label_intent": "neutral"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 7,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "quotation",
+    "participants": [
+      "Bagas",
+      "Candra",
+      "Dimas"
+    ],
+    "focus_player": "",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Bagas",
+        "teks_chat": "Menurutku Dimas adalah Hitman yang menyamar di antara kita.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Dimas",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Dimas",
+        "teks_chat": "Aku bukan Hitman, klaimku Spy.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Dimas",
+            "relasi": "defend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Candra",
+        "teks_chat": "Aku curiga Bagas Hitman karena menuduh tanpa alasan kuat.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Bagas",
+            "relasi": "offend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Dimas",
+        "teks_chat": "Mengenai ucapan Bagas yang bilang 'Dimas adalah Hitman', apakah ada yang percaya klaim itu?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Bagas",
+        "teks_chat": "Aku mendasarkannya pada jawaban chatmu yang menghindar, aku tetap curiga kamu Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Dimas",
+            "relasi": "offend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Candra",
+        "teks_chat": "Klaim Spy milik Dimas juga belum tentu benar sepenuhnya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Dimas",
+        "teks_chat": "Bagas bilang 'Dimas adalah Hitman'. Selain Bagas, ada yang punya pendapat soal itu?",
+        "label_intent": "neutral",
+        "target": []
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 79.txt"
+  },
+  "revisi": [
+    {
+      "pesan": 7,
+      "kategori": "tidak_natural",
+      "alasan": "Janggal: ingin tahu 'siapa yang sudah membaca tuduhan'"
+    }
+  ]
+}

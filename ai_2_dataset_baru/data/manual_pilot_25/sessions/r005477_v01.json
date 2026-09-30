@@ -1,0 +1,146 @@
+{
+  "job": {
+    "job_id": "r005477_v01",
+    "case_name": "neutral_after_accusation",
+    "case_description": "Konteks berisi tuduhan, tetapi pesan sekarang neutral; jangan mewarisi relasi lama.",
+    "source": {
+      "source_row": 5477,
+      "source_group": "8fcae18c3e68bdbeb8e1",
+      "teks_chat": "gag order itu munculnya mendadak banget",
+      "label_intent": "neutral"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 8,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "neutral_after_accusation",
+    "participants": [
+      "Aldo",
+      "Bayu",
+      "Citra",
+      "Dita"
+    ],
+    "focus_player": "",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Aldo",
+        "teks_chat": "Kenapa Bayu diam saja dari awal permainan? Pasti dia adalah Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Bayu",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Citra",
+        "teks_chat": "Mungkin Bayu sedang sibuk dan tidak melihat layar permainan.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Bayu",
+            "relasi": "defend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Bayu",
+        "teks_chat": "Aku merasa kesulitan untuk mengetik panjang dari tadi.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Bayu",
+            "relasi": "defend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Dita",
+        "teks_chat": "Jangan vote Bayu hanya karena diam, alasannya belum cukup.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Bayu",
+            "relasi": "defend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Aldo",
+        "teks_chat": "Siapa tahu dia sengaja berpura-pura diam agar tidak dicurigai.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Bayu",
+            "relasi": "offend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Citra",
+        "teks_chat": "Jangan langsung vote Bayu, kita belum punya bukti.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Bayu",
+            "relasi": "defend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Bayu",
+        "teks_chat": "Aku bukan Hitman, koneksiku sedang bermasalah.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Bayu",
+            "relasi": "defend",
+            "bukti_pesan": [
+              7
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Dita",
+        "teks_chat": "Ngomong-ngomong, ada yang kena Gag Order nggak sih hari ini?",
+        "label_intent": "neutral",
+        "target": []
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 77.txt"
+  },
+  "revisi": [
+    {
+      "pesan": 8,
+      "kategori": "meta",
+      "alasan": "Pesan utama menanyakan aturan efek Gag Order (kaku, 'Apakah')."
+    }
+  ]
+}

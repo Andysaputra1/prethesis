@@ -1,0 +1,130 @@
+{
+  "job": {
+    "job_id": "r002904_v01",
+    "case_name": "reference_end",
+    "case_description": "Tepat 12 konteks. Penyebutan target eksplisit di pesan konteks terakhir.",
+    "source": {
+      "source_row": 2904,
+      "source_group": "e4f6f4e997b20fb83868",
+      "teks_chat": "U nuduh V tanpa dasar lalu mengajak semua orang ikut, itu gaya provokasi Hitman",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 13,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "reference_end",
+    "participants": [
+      "Bima",
+      "Cinta",
+      "Doni",
+      "Eka",
+      "Fina"
+    ],
+    "focus_player": "Fina",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Bima",
+        "teks_chat": "Guys, ada yang ingat omongan seseorang di awal permainan nggak?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Cinta",
+        "teks_chat": "Omongan yang mana Bim?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Doni",
+        "teks_chat": "Kayaknya aku tahu deh arahnya ke mana.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Eka",
+        "teks_chat": "Ada yang awalnya mengaku Civilian, kan?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Bima",
+        "teks_chat": "Iya, lalu mengaku Spy di pesan berikutnya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Cinta",
+        "teks_chat": "Seriusan? Siapa tuh?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Doni",
+        "teks_chat": "Coba cek history chat aja.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Eka",
+        "teks_chat": "Aku lupa namanya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Bima",
+        "teks_chat": "Tadi sih jelas banget dia bilang gitu.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Cinta",
+        "teks_chat": "Ini yang bikin bingung, harusnya konsisten dong.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Doni",
+        "teks_chat": "Mungkin dia lagi grogi kali.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Eka",
+        "teks_chat": "Ketemu, Fina yang berganti klaim. Aku curiga dia Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Fina",
+            "relasi": "offend",
+            "bukti_pesan": [
+              12
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Bima",
+        "teks_chat": "Tuh kan, klaimnya saling bertentangan. Dia pasti Hitman!",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Fina",
+            "relasi": "offend",
+            "bukti_pesan": [
+              12
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 42.txt"
+  }
+}

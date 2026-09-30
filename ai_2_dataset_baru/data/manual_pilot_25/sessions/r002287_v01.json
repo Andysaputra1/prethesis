@@ -1,0 +1,82 @@
+{
+  "job": {
+    "job_id": "r002287_v01",
+    "case_name": "short_history_3",
+    "case_description": "Awal diskusi dengan tepat 3 pesan sebelumnya. Acuan tidak harus berada di pesan terakhir.",
+    "source": {
+      "source_row": 2287,
+      "source_group": "3bcd36b1ba2cdc3c5c35",
+      "teks_chat": "sumpah aku Spy, jangan asal vote cuma karena aku beda pendapat",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 4,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "short_history_3",
+    "participants": [
+      "Gilang",
+      "Hani",
+      "Iwan"
+    ],
+    "focus_player": "Gilang",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Gilang",
+        "teks_chat": "Gue klaim Spy. Kalau perlu, nanti gue jelaskan pilihan Guard semalam.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Hani",
+        "teks_chat": "Gilang, aku curiga kamu Hitman yang membuat klaim Spy palsu.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Gilang",
+            "relasi": "offend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Iwan",
+        "teks_chat": "Aku juga curiga Gilang Hitman yang membuat klaim palsu.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Gilang",
+            "relasi": "offend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Gilang",
+        "teks_chat": "Gue bukan Hitman. Klaim Spy gue benar, nanti gue jelaskan pilihan Guard-ku.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Gilang",
+            "relasi": "defend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 37.txt"
+  }
+}

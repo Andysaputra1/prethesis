@@ -1,0 +1,201 @@
+{
+  "job": {
+    "job_id": "r003705_v01",
+    "case_name": "second_person",
+    "case_description": "Kamu/lu: gunakan pergantian pembicara dan teks yang jelas. Tanpa acuan jelas, target tidak_diketahui.",
+    "source": {
+      "source_row": 3705,
+      "source_group": "9a5d7e3b14a4335df303",
+      "teks_chat": "jangan telan mentah-mentah tuduhan itu, aku Civilian yang cuma lihat pola chat",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 12,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "second_person",
+    "participants": [
+      "Wira",
+      "Yani",
+      "Zaki"
+    ],
+    "focus_player": "Zaki",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Wira",
+        "teks_chat": "Zaki diam terus, aku curiga dia Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Zaki",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Yani",
+        "teks_chat": "Mungkin dia sengaja menghindari diskusi.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Zaki",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Zaki",
+        "teks_chat": "Aku bukan Hitman, aku belum sempat membalas banyak pesan.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Zaki",
+            "relasi": "defend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Wira",
+        "teks_chat": "Itu alasan saja dari kamu, Zaki.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Zaki",
+            "relasi": "offend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Yani",
+        "teks_chat": "Aku curiga dia Hitman yang memakai alasan sibuk untuk menghindar.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Zaki",
+            "relasi": "offend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Zaki",
+        "teks_chat": "Tolong percaya sama aku.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Zaki",
+            "relasi": "defend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Wira",
+        "teks_chat": "Sulit mempercayai orang yang tidak memberikan informasi apa pun.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Zaki",
+            "relasi": "offend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Yani",
+        "teks_chat": "Kita kumpulkan suara untuk Zaki saja.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Zaki",
+            "relasi": "offend",
+            "bukti_pesan": [
+              8
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Zaki",
+        "teks_chat": "Jangan, aku sungguh bukan pelakunya.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Zaki",
+            "relasi": "defend",
+            "bukti_pesan": [
+              9
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Wira",
+        "teks_chat": "Buktikan kalau kamu benar-benar tidak bersalah.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Zaki",
+            "relasi": "offend",
+            "bukti_pesan": [
+              9
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Yani",
+        "teks_chat": "Waktu kita hampir habis, ayo cepat kita putuskan.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Wira",
+        "teks_chat": "Zaki, kamu belum terbukti Hitman hanya karena sedikit membalas. Aku tarik tuduhanku.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Zaki",
+            "relasi": "defend",
+            "bukti_pesan": [
+              9
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 57.txt"
+  },
+  "revisi": [
+    {
+      "pesan": 6,
+      "kategori": "tidak_natural",
+      "alasan": "Kaku ('percaya kepada aku')."
+    }
+  ]
+}

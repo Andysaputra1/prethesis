@@ -1,0 +1,103 @@
+{
+  "job": {
+    "job_id": "r000368_v01",
+    "case_name": "neutral_names",
+    "case_description": "Neutral menyebut nama tanpa menuduh/membela; target kosong.",
+    "source": {
+      "source_row": 368,
+      "source_group": "e35bdee8452eed01a0ea",
+      "teks_chat": "gw Stalker, semalam sudah Peek si B dan hasilnya dia bukan Hitman",
+      "label_intent": "neutral"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 11,
+    "pesan_typo_ringan": [
+      4
+    ]
+  },
+  "session": {
+    "case_name": "neutral_names",
+    "participants": [
+      "Rama",
+      "Siska",
+      "Tari",
+      "Udin"
+    ],
+    "focus_player": "",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Rama",
+        "teks_chat": "Siapa yang ingin membagikan klaim role hari ini?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Siska",
+        "teks_chat": "Aku mengaku Spy dan memilih Guard untuk Udin semalam.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Tari",
+        "teks_chat": "Siska, apa kamu mau menjelaskan batasan Guard?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Udin",
+        "teks_chat": "Aku blm paham apakah targetnya boleh sama terus.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Siska",
+        "teks_chat": "Tidak boleh memilih pemain yang sama dua malam berturut-turut.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Rama",
+        "teks_chat": "Kalau target diserang Hitman, apa fungsi Guard?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Siska",
+        "teks_chat": "Melindungi target dari serangan itu.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Tari",
+        "teks_chat": "Apakah chat ini membuktikan Siska benar-benar Spy?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Udin",
+        "teks_chat": "Tidak, yang ada sekarang baru klaim dari pemain.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Rama",
+        "teks_chat": "Baik, kita catat siapa mengklaim apa tanpa langsung memastikan role.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Tari",
+        "teks_chat": "Siska, tadi kamu menyebut Udin sebagai pilihan Guard, ya?",
+        "label_intent": "neutral",
+        "target": []
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 4.txt"
+  }
+}

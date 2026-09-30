@@ -1,0 +1,237 @@
+{
+  "job": {
+    "job_id": "r004449_v01",
+    "case_name": "memory_outside_window",
+    "case_description": "14-16 pesan total. Nama target hanya disebut sebelum 12 konteks terakhir. Dalam jendela, ada pesan yang meneruskan acuan dengan jelas dan menyimpan anotasi target berdasarkan pesan lama. Pesan sekarang merujuk target sama. Nama target tidak muncul dalam teks 12 konteks terakhir atau pesan sekarang; target diketahui lewat memori.",
+    "source": {
+      "source_row": 4449,
+      "source_group": "065e877548dcf718f68f",
+      "teks_chat": "kenapa bahas aku terus, padahal Dimas yang paling cepat nuduh tanpa bukti",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 14,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "memory_outside_window",
+    "participants": [
+      "Bagas",
+      "Willy",
+      "Dodi",
+      "Eka"
+    ],
+    "focus_player": "Willy",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Bagas",
+        "teks_chat": "Willy sangat agresif dari awal, langsung ajak vote tanpa alasan.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Willy",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Dodi",
+        "teks_chat": "Iya, kelihatan sekali dia hanya ingin menciptakan kekacauan.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Willy",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Eka",
+        "teks_chat": "Perilaku agresif seperti itu sering dipakai untuk menutupi perannya.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Willy",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Bagas",
+        "teks_chat": "Apalagi nggak ada alasan jelas di balik ajakannya.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Willy",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Dodi",
+        "teks_chat": "Dia pasti berharap ada warga yang ikut-ikutan buta.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Willy",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Eka",
+        "teks_chat": "Kita jangan sampai terpancing provokasi murahan itu.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Bagas",
+        "teks_chat": "Udah, mending kita keluarin aja si perusuh ini.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Willy",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Dodi",
+        "teks_chat": "Aku setuju, keberadaannya sangat membahayakan posisi kita.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Willy",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Eka",
+        "teks_chat": "Tunggu sebentar, apakah ada yang mau memberinya kesempatan bicara?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Bagas",
+        "teks_chat": "Buat apa? Tidak ada yang bisa dibela dari ajakan sepihak.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Willy",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Dodi",
+        "teks_chat": "Iya, percuma saja memberinya waktu, dia pasti hanya menambah alibi.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Willy",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Eka",
+        "teks_chat": "Memang benar sih, dia diam saja karena sadar sudah salah langkah.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Willy",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Bagas",
+        "teks_chat": "Ayo kita kompak vote dia biar cepat keluar.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Willy",
+            "relasi": "offend",
+            "bukti_pesan": [
+              12
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Dodi",
+        "teks_chat": "Udah, semua langsung vote dia aja sekarang.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Willy",
+            "relasi": "offend",
+            "bukti_pesan": [
+              13
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 65.txt"
+  },
+  "revisi": [
+    {
+      "pesan": 4,
+      "kategori": "tidak_natural",
+      "alasan": "Kaku ('ajakannya tersebut')"
+    },
+    {
+      "pesan": 7,
+      "kategori": "tidak_natural",
+      "alasan": "Terlalu dramatis/kaku ('kita lenyapkan saja perusuh ini')"
+    },
+    {
+      "pesan": 13,
+      "kategori": "tidak_natural",
+      "alasan": "Kaku ('Mari kita fokuskan kekuatan kita agar dia segera terbuang')"
+    },
+    {
+      "pesan": 14,
+      "kategori": "tidak_natural",
+      "alasan": "Kaku/dramatis ('ke arah dia tanpa ampun')"
+    }
+  ]
+}

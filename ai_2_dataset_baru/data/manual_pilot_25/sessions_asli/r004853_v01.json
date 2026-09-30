@@ -1,0 +1,107 @@
+{
+  "job": {
+    "job_id": "r004853_v01",
+    "case_name": "witness",
+    "case_description": "Nama saksi/korban disebut, tetapi bukan target serangan atau pembelaan.",
+    "source": {
+      "source_row": 4853,
+      "source_group": "eb9c4ccf53ece6cb8870",
+      "teks_chat": "target kita jangan pindah ke Rani, Seno jauh lebih aneh sejak fase siang",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 8,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "witness",
+    "participants": [
+      "Zaki",
+      "Ayu",
+      "Bayu",
+      "Citra"
+    ],
+    "focus_player": "Ayu",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Zaki",
+        "teks_chat": "Saat Tribunal sebelumnya Citra dieksekusi. Sebelumnya ajakan vote di chat sempat berubah.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Ayu",
+        "teks_chat": "Aneh bagaimana maksudnya?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Zaki",
+        "teks_chat": "Ada ajakan yang berubah di akhir diskusi.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Bayu",
+        "teks_chat": "Aku juga membaca perubahan ajakan itu.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Ayu",
+        "teks_chat": "Itu wajar kan kalau ada informasi baru di detik terakhir.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Zaki",
+        "teks_chat": "Ayu mengubah ajakan tanpa menjelaskan alasan. Aku curiga Ayu Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Ayu",
+            "relasi": "offend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Ayu",
+        "teks_chat": "Aku bukan Hitman, aku berubah pikiran karena firasat.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Ayu",
+            "relasi": "defend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Bayu",
+        "teks_chat": "Zaki juga membaca perubahan ajakannya. Aku curiga Ayu Hitman yang sengaja mengarahkan diskusi.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Ayu",
+            "relasi": "offend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 71.txt"
+  }
+}

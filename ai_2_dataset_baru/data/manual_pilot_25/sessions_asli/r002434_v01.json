@@ -1,0 +1,163 @@
+{
+  "job": {
+    "job_id": "r002434_v01",
+    "case_name": "neutral_status",
+    "case_description": "Klaim status/role atau pertanyaan informasi saja tanpa pembelaan/serangan; target kosong.",
+    "source": {
+      "source_row": 2434,
+      "source_group": "87dae7682bfdd271514f",
+      "teks_chat": "aku role Spy, semalam aku mengawal pemain yang berbeda dari malam sebelumnya",
+      "label_intent": "neutral"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 13,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "neutral_status",
+    "participants": [
+      "Budi",
+      "Cici",
+      "Dika",
+      "Evan",
+      "Fajar",
+      "Gita"
+    ],
+    "focus_player": "",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Budi",
+        "teks_chat": "Ada yang mau berbagi informasi dari skill?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Cici",
+        "teks_chat": "Aku belum punya info untuk dibagikan.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Dika",
+        "teks_chat": "Aku klaim Stalker, hasil Peek-ku menunjukkan Evan Civilian.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Evan",
+        "teks_chat": "Kamu pakai Peek ke aku?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Fajar",
+        "teks_chat": "Dika, siapa target Peek yang kamu maksud?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Dika",
+        "teks_chat": "Eh, maksudku Cici. Hasilnya Civilian.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Gita",
+        "teks_chat": "Dika, perubahan target itu membuatku curiga kamu Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Dika",
+            "relasi": "offend",
+            "bukti_pesan": [
+              7
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Budi",
+        "teks_chat": "Aku juga curiga Dika mengarang hasil sebagai Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Dika",
+            "relasi": "offend",
+            "bukti_pesan": [
+              8
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Dika",
+        "teks_chat": "Aku bukan Hitman, aku salah menyebut nama tadi.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Dika",
+            "relasi": "defend",
+            "bukti_pesan": [
+              9
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Evan",
+        "teks_chat": "Aku tetap curiga Dika Hitman yang berbohong.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Dika",
+            "relasi": "offend",
+            "bukti_pesan": [
+              10
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Fajar",
+        "teks_chat": "Fix Dika Hitman ini.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Dika",
+            "relasi": "offend",
+            "bukti_pesan": [
+              11
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Dika",
+        "teks_chat": "Bukan aku pelakunya, yang benar aku Peek Cici.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Dika",
+            "relasi": "defend",
+            "bukti_pesan": [
+              12
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Gita",
+        "teks_chat": "Ada klaim role lain yang ingin disampaikan?",
+        "label_intent": "neutral",
+        "target": []
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 39.txt"
+  }
+}

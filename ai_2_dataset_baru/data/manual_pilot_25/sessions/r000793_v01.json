@@ -1,0 +1,96 @@
+{
+  "job": {
+    "job_id": "r000793_v01",
+    "case_name": "explicit",
+    "case_description": "Target eksplisit di pesan sekarang. Contoh: Aku yakin bukan Andy = defend Andy.",
+    "source": {
+      "source_row": 793,
+      "source_group": "14dfc74e92f70d7b6815",
+      "teks_chat": "fitnah banget, gw civilian biasa, malah dari awal gw yang konsisten nanya bukti",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 4,
+    "pesan_typo_ringan": [
+      2
+    ]
+  },
+  "session": {
+    "case_name": "explicit",
+    "participants": [
+      "Nisa",
+      "Oman",
+      "Puput"
+    ],
+    "focus_player": "Oman",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Nisa",
+        "teks_chat": "Oman kok dari tadi diem mulu ya, kayak ngga peduli sama game.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Puput",
+        "teks_chat": "Yg diem biasanya lagi ngawasin korban potensial, Oman pelakunya!",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Oman",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Oman",
+        "teks_chat": "Aduh, aku tuh lagi baca riwayat chat kalian biar paham alur.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Oman",
+            "relasi": "defend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Nisa",
+        "teks_chat": "Oman belum pantas dituduh, membaca ulang chat itu alasan yang masuk akal.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Oman",
+            "relasi": "defend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 16.txt"
+  },
+  "revisi": [
+    {
+      "pesan": 1,
+      "kategori": "singkatan",
+      "alasan": "Singkatan 'td' di luar slot typo [2]."
+    },
+    {
+      "pesan": 2,
+      "kategori": "singkatan",
+      "alasan": "Slot typo berisi dua singkatan ('Yg' dan 'lgi'), harus tepat satu."
+    }
+  ]
+}

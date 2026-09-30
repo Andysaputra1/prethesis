@@ -1,0 +1,143 @@
+{
+  "job": {
+    "job_id": "r004159_v01",
+    "case_name": "neutral_names",
+    "case_description": "Neutral menyebut nama tanpa menuduh/membela; target kosong.",
+    "source": {
+      "source_row": 4159,
+      "source_group": "d6dd1fe58194c1d95cb2",
+      "teks_chat": "lu bilang Spy, tapi siapa pemain yang lu kawal semalam?",
+      "label_intent": "neutral"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 10,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "neutral_names",
+    "participants": [
+      "Nia",
+      "Oka",
+      "Peni",
+      "Qori",
+      "Reza"
+    ],
+    "focus_player": "",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Nia",
+        "teks_chat": "Ada yang pakai skill Stalker tidak semalam?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Oka",
+        "teks_chat": "Aku klaim Civilian, jadi tidak memakai Peek.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Peni",
+        "teks_chat": "Aku Stalker, dan aku semalam nge-peek si Qori.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Qori",
+        "teks_chat": "Terus hasilnya apa Peni? Aku aman kan?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Peni",
+        "teks_chat": "Iya, hasilnya aman, Qori bukan hitman.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Qori",
+            "relasi": "defend",
+            "bukti_pesan": [
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Reza",
+        "teks_chat": "Wah, berarti Qori sudah pasti aman ya.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Qori",
+            "relasi": "defend",
+            "bukti_pesan": [
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Nia",
+        "teks_chat": "Bagus deh kalau begitu, seenggaknya kita punya satu orang yang bisa dipercaya.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Qori",
+            "relasi": "defend",
+            "bukti_pesan": [
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Oka",
+        "teks_chat": "Jangan langsung percaya, bisa aja Peni hitmannya dan dia cuma bohong nutupin Qori.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Peni",
+            "relasi": "offend",
+            "bukti_pesan": [
+              8
+            ]
+          },
+          {
+            "pemain": "Qori",
+            "relasi": "offend",
+            "bukti_pesan": [
+              8
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Qori",
+        "teks_chat": "Kok jadi nuduh Peni, dia kan cuma nyampein hasil skillnya.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Peni",
+            "relasi": "defend",
+            "bukti_pesan": [
+              9
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Reza",
+        "teks_chat": "Oka dan Peni mau menjelaskan klaim role masing-masing?",
+        "label_intent": "neutral",
+        "target": []
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 63.txt"
+  }
+}

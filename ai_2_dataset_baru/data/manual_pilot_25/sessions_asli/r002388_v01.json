@@ -1,0 +1,53 @@
+{
+  "job": {
+    "job_id": "r002388_v01",
+    "case_name": "short_history_1",
+    "case_description": "Awal diskusi dengan tepat 1 pesan sebelumnya. Jangan menambah riwayat fiktif atau mengisi sampai 12.",
+    "source": {
+      "source_row": 2388,
+      "source_group": "db6fa60ef8227af59d39",
+      "teks_chat": "fix gw bukan Hitman, gw warga dan nggak akan cabut vote dari Sari",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 2,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "short_history_1",
+    "participants": [
+      "Gilang",
+      "Hani"
+    ],
+    "focus_player": "Hani",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Gilang",
+        "teks_chat": "Hani membalas pesannya lama sekali, ya?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Gilang",
+        "teks_chat": "Dia pasti Hitman yang sengaja menghindari pertanyaan!",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Hani",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 38.txt"
+  }
+}

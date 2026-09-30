@@ -1,0 +1,185 @@
+{
+  "job": {
+    "job_id": "r002300_v01",
+    "case_name": "nickname",
+    "case_description": "Pesan sekarang menyebut pemain dengan nama panggilan, singkatan, atau salah ketik ringan (Andy -> ndy, andi, si And) tanpa menulis nama aslinya. Catat sebutan itu di panggilan. Target tetap memakai nama asli; jika neutral, target kosong.",
+    "source": {
+      "source_row": 2300,
+      "source_group": "d63ba82466c9106a786d",
+      "teks_chat": "gw Hitman? enggak, itu cuma asumsi karena gw nentang argumen kalian",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 11,
+    "pesan_typo_ringan": [
+      11
+    ]
+  },
+  "session": {
+    "case_name": "nickname",
+    "participants": [
+      "Vina",
+      "Wira",
+      "Yana"
+    ],
+    "focus_player": "Wira",
+    "panggilan": [
+      {
+        "pemain": "Wira",
+        "sebutan": [
+          "Wir"
+        ]
+      }
+    ],
+    "messages": [
+      {
+        "pengirim": "Vina",
+        "teks_chat": "Ada yang lihat kejadian aneh nggak semalam?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Wira",
+        "teks_chat": "Aku klaim Spy; semalam pilihan Guard-ku Vina.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Yana",
+        "teks_chat": "Aku curiga Wira Hitman yang memakai klaim Spy palsu.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Wira",
+            "relasi": "offend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Vina",
+        "teks_chat": "Iya, jangan-jangan kamu bohong Wir.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Wira",
+            "relasi": "offend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Wira",
+        "teks_chat": "Beneran kok, aku spy asli.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Wira",
+            "relasi": "defend",
+            "bukti_pesan": [
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Yana",
+        "teks_chat": "Kenapa kamu pilih Vina buat di-Guard?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Vina",
+        "teks_chat": "Palingan dia hitmannya.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Wira",
+            "relasi": "offend",
+            "bukti_pesan": [
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Wira",
+        "teks_chat": "Kalian kok nggak percaya sih, aku warga baik-baik.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Wira",
+            "relasi": "defend",
+            "bukti_pesan": [
+              8
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Yana",
+        "teks_chat": "Alasan lu kurang kuat.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Wira",
+            "relasi": "offend",
+            "bukti_pesan": [
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Vina",
+        "teks_chat": "Udah, kita vote dia aja.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Wira",
+            "relasi": "offend",
+            "bukti_pesan": [
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Yana",
+        "teks_chat": "Tunggu dulu, blm tentu si Wir bohong, mungkin aja dia emang ngomong jujur, kita kasih dia kesempatan.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Wira",
+            "relasi": "defend",
+            "bukti_pesan": [
+              5
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 37.txt"
+  },
+  "revisi": [
+    {
+      "pesan": 6,
+      "kategori": "tidak_natural",
+      "alasan": "Wira sudah menyebut pilihan Guard (Vina) di [2]."
+    },
+    {
+      "pesan": 11,
+      "kategori": "singkatan",
+      "alasan": "Slot typo [11] tidak berisi singkatan."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "job": {
+    "job_id": "r000961_v01",
+    "case_name": "interruption",
+    "case_description": "Pembahasan target disela obrolan waktu/ronde; kaitan kembali ke target masih jelas.",
+    "source": {
+      "source_row": 961,
+      "source_group": "fe77c635405e6d7c7e20",
+      "teks_chat": "mereka bilang gw mencurigakan karena diam, padahal aku Civilian; yang terlalu dominan malah belum tentu aman",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 4,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "interruption",
+    "participants": [
+      "Kiki",
+      "Lila",
+      "Maman"
+    ],
+    "focus_player": "Kiki",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Lila",
+        "teks_chat": "Kiki tadi menarik ajakan votenya di chat, ya?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Maman",
+        "teks_chat": "Eh iya, ronde ini kapan selesainya ya?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Lila",
+        "teks_chat": "Sisa waktu diskusinya tinggal 2 menitan lagi nih.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Maman",
+        "teks_chat": "Kembali ke pembahasan tadi, aku curiga Kiki karena menarik ajakan vote tanpa alasan. Aku ingin vote Kiki.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Kiki",
+            "relasi": "offend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 19.txt"
+  }
+}

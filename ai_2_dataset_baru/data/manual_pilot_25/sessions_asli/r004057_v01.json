@@ -1,0 +1,81 @@
+{
+  "job": {
+    "job_id": "r004057_v01",
+    "case_name": "nickname",
+    "case_description": "Pesan sekarang menyebut pemain dengan nama panggilan, singkatan, atau salah ketik ringan (Andy -> ndy, andi, si And) tanpa menulis nama aslinya. Catat sebutan itu di panggilan. Target tetap memakai nama asli; jika neutral, target kosong.",
+    "source": {
+      "source_row": 4057,
+      "source_group": "1d74d61b0e4fcb76feec",
+      "teks_chat": "lu yang ngaku Spy, semalam nge-Guard siapa?",
+      "label_intent": "neutral"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 4,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "nickname",
+    "participants": [
+      "Tono",
+      "Rudi",
+      "Siti"
+    ],
+    "focus_player": "Tono",
+    "panggilan": [
+      {
+        "pemain": "Tono",
+        "sebutan": [
+          "Ton"
+        ]
+      }
+    ],
+    "messages": [
+      {
+        "pengirim": "Tono",
+        "teks_chat": "Aku klaim Stalker, semalam aku memakai Peek ke Rudi.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Rudi",
+        "teks_chat": "Aku curiga Tono Hitman yang memakai klaim palsu.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Tono",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Siti",
+        "teks_chat": "Jangan langsung tuduh Tono, klaimnya belum terbukti palsu.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Tono",
+            "relasi": "defend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Rudi",
+        "teks_chat": "Eh Ton, tadi malam kamu nge-peek pas di awal atau di akhir malam?",
+        "label_intent": "neutral",
+        "target": []
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 63.txt"
+  }
+}

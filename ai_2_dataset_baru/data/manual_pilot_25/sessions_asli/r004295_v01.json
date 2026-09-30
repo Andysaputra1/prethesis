@@ -1,0 +1,70 @@
+{
+  "job": {
+    "job_id": "r004295_v01",
+    "case_name": "mixed_relations",
+    "case_description": "Membela satu pemain dan menuduh pemain lain. Intent utama offend; simpan kedua relasi.",
+    "source": {
+      "source_row": 4295,
+      "source_group": "9e1a602297b2b3d12488",
+      "teks_chat": "kalau memang ada yang jeli, harusnya kalian sadar si Oki selalu muncul setelah arah vote berubah",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 2,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "mixed_relations",
+    "participants": [
+      "Hani",
+      "Sandi",
+      "Budi",
+      "Dina"
+    ],
+    "focus_player": "Budi",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Hani",
+        "teks_chat": "Budi cepat menolak tuduhan ke Dina, aku curiga Budi Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Budi",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Sandi",
+        "teks_chat": "Dina itu sangat aman, justru Budi yang berbahaya karena mencari simpati terlalu cepat.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Dina",
+            "relasi": "defend",
+            "bukti_pesan": [
+              2
+            ]
+          },
+          {
+            "pemain": "Budi",
+            "relasi": "offend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 62.txt"
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "job": {
+    "job_id": "r001454_v01",
+    "case_name": "witness",
+    "case_description": "Nama saksi/korban disebut, tetapi bukan target serangan atau pembelaan.",
+    "source": {
+      "source_row": 1454,
+      "source_group": "492161ecfd683431bd86",
+      "teks_chat": "gw belum ngomong banyak bukan berarti jahat, si D justru terlalu aktif mengatur arah vote",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 5,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "witness",
+    "participants": [
+      "Jojo",
+      "Kiki",
+      "Laras"
+    ],
+    "focus_player": "Kiki",
+    "panggilan": [
+      {
+        "pemain": "Jojo",
+        "sebutan": [
+          "Jo"
+        ]
+      }
+    ],
+    "messages": [
+      {
+        "pengirim": "Jojo",
+        "teks_chat": "Laras belum mengirim pesan sejak diskusi dibuka, ya?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Kiki",
+        "teks_chat": "Mungkin ada efek skill atau kendala koneksi, tetapi penyebab diam Laras belum pasti.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Jojo",
+        "teks_chat": "Iya, kita jangan langsung memastikan penyebabnya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Kiki",
+        "teks_chat": "Nah gw curiga sama lu Jo, dari tadi lu ngarahin obrolan ke Laras terus.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Jojo",
+            "relasi": "offend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Jojo",
+        "teks_chat": "Dari pembahasan Laras tadi, justru Kiki yang aku curigai sebagai Hitman karena cepat mengalihkan tuduhan tanpa alasan.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Kiki",
+            "relasi": "offend",
+            "bukti_pesan": [
+              5
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 26.txt"
+  },
+  "revisi": [
+    {
+      "pesan": 4,
+      "kategori": "tidak_natural",
+      "alasan": "Jojo justru yang membuka pembahasan Laras di [1], jadi 'telat nimbrung' tidak nyambung."
+    }
+  ]
+}

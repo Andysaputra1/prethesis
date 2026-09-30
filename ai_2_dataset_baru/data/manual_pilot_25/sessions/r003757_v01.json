@@ -1,0 +1,60 @@
+{
+  "job": {
+    "job_id": "r003757_v01",
+    "case_name": "neutral_names",
+    "case_description": "Neutral menyebut nama tanpa menuduh/membela; target kosong.",
+    "source": {
+      "source_row": 3757,
+      "source_group": "86e8304db3db66162ca0",
+      "teks_chat": "gw Spy, malam ini gue jagain lu, besok kita kompak vote yang paling mencurigakan",
+      "label_intent": "neutral"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 4,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "neutral_names",
+    "participants": [
+      "Sari",
+      "Tono",
+      "Vera",
+      "Wawan",
+      "Yudi"
+    ],
+    "focus_player": "",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Sari",
+        "teks_chat": "Ini kenapa pada lama banget balasnya sih?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Tono",
+        "teks_chat": "Iya dari tadi pesanku tidak dibalas sama sekali.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Sari",
+        "teks_chat": "Koneksiku juga agak bermasalah nih kayaknya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Vera",
+        "teks_chat": "Wawan dan Yudi juga bilang pesan mereka lambat terkirim.",
+        "label_intent": "neutral",
+        "target": []
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 58.txt"
+  }
+}

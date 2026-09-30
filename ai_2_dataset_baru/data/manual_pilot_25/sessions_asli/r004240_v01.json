@@ -1,0 +1,124 @@
+{
+  "job": {
+    "job_id": "r004240_v01",
+    "case_name": "mixed_relations",
+    "case_description": "Membela satu pemain dan menuduh pemain lain. Intent utama offend; simpan kedua relasi.",
+    "source": {
+      "source_row": 4240,
+      "source_group": "e86a75d7a97c2ba1a025",
+      "teks_chat": "aku nggak pegang info, tapi gerak-gerik D lebih aneh",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 7,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "mixed_relations",
+    "participants": [
+      "Siska",
+      "Dodi",
+      "Hasan",
+      "Rina"
+    ],
+    "focus_player": "Dodi",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Dodi",
+        "teks_chat": "Ayo kita vote Siska sekarang juga.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Siska",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Hasan",
+        "teks_chat": "Apa alasanmu mengajak vote Siska?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Dodi",
+        "teks_chat": "Instingku mengatakan dia adalah pelakunya.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Siska",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Siska",
+        "teks_chat": "Itu bukan alasan yang masuk akal, aku warga biasa.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Siska",
+            "relasi": "defend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Dodi",
+        "teks_chat": "Pelaku pasti selalu mengaku sebagai warga biasa.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Siska",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Hasan",
+        "teks_chat": "Kita butuh bukti, bukan sekadar insting.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Rina",
+        "teks_chat": "Siska bukan pelakunya, yang sering mengajak vote sembarangan itu justru Dodi.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Siska",
+            "relasi": "defend",
+            "bukti_pesan": [
+              7
+            ]
+          },
+          {
+            "pemain": "Dodi",
+            "relasi": "offend",
+            "bukti_pesan": [
+              7
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 62.txt"
+  }
+}

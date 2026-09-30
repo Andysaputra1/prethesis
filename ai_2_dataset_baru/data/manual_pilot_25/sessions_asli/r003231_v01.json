@@ -1,0 +1,127 @@
+{
+  "job": {
+    "job_id": "r003231_v01",
+    "case_name": "nickname",
+    "case_description": "Pesan sekarang menyebut pemain dengan nama panggilan, singkatan, atau salah ketik ringan (Andy -> ndy, andi, si And) tanpa menulis nama aslinya. Catat sebutan itu di panggilan. Target tetap memakai nama asli; jika neutral, target kosong.",
+    "source": {
+      "source_row": 3231,
+      "source_group": "d96b5689fd61ee96b4c6",
+      "teks_chat": "lu salah baca situasi, reaksi gw keras karena tuduhan itu memang nggak berdasar",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 6,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "nickname",
+    "participants": [
+      "Raka",
+      "Bima",
+      "Sari",
+      "Dimas",
+      "Toni"
+    ],
+    "focus_player": "Dimas",
+    "panggilan": [
+      {
+        "pemain": "Dimas",
+        "sebutan": [
+          "Dim"
+        ]
+      }
+    ],
+    "messages": [
+      {
+        "pengirim": "Raka",
+        "teks_chat": "Dimas berganti klaim role, aku curiga dia Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Dimas",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Bima",
+        "teks_chat": "Iya, tadi mengaku Civilian lalu Spy. Aku juga curiga dia Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Dimas",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Sari",
+        "teks_chat": "Benar itu, Dimas mencurigakan sekali.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Dimas",
+            "relasi": "offend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Dimas",
+        "teks_chat": "Aku bukan Hitman, tadi belum mau mengungkap role.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Dimas",
+            "relasi": "defend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Raka",
+        "teks_chat": "Itu cuma alasan kamu saja supaya aman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Dimas",
+            "relasi": "offend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Toni",
+        "teks_chat": "Jangan vote Dim hanya karena berubah klaim, dia belum terbukti Hitman.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Dimas",
+            "relasi": "defend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 47.txt"
+  }
+}

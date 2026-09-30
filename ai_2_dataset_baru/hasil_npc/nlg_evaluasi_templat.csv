@@ -1,0 +1,320 @@
+metode,sumber_rencana,peran,aksi,intent,target,persona,teks,sumber,lolos_aturan,lolos_nlu,lolos_varian_pertama,varian_dicoba,intent_terbaca,target_terbaca,detik
+bawaan,B01 ungkap,stalker,ungkap,offend,Budi,santai,"Aku buka role: aku Stalker. Budi sudah aku peek dan dia Hitman, jadi vote Budi.",templat,True,True,True,1,offend,"[('Budi', 'offend')]",0.049
+bawaan,B02 bela diri,civilian,bela_diri,defend,Nara,gaul,"Kok gw sih? Gw warga, bukan Hitman.",templat,True,True,True,1,defend,"[('Nara', 'defend')]",0.041
+bawaan,B03 jawab menuduh,spy,jawab,offend,Citra,kalem,"Menurut saya Citra yang paling mencurigakan. Citra ikut mendorong eksekusi Dodi (ronde 1), padahal game berlanjut jadi Dodi bukan Hitman.",templat,True,True,True,1,offend,"[('Citra', 'offend'), ('Dodi', 'defend')]",0.046
+bawaan,B04 jawab netral,civilian,jawab,neutral,,santai,Aku belum punya tersangka kuat. Menurut kalian gimana?,templat,True,True,True,1,neutral,[],0.017
+bawaan,B05 bela orang,civilian,bela_orang,defend,Andi,gaul,"Gw rasa Andi bukan Hitman, tuduhannya belum ada bukti.",templat,True,True,True,1,defend,"[('Andi', 'defend')]",0.042
+bawaan,B06 bela orang + klaim,stalker,bela_orang,defend,Eka,kalem,"Saya Stalker, saya sudah peek Eka: dia bukan Hitman. Jangan vote Eka.",templat,True,True,False,2,defend,"[('Eka', 'defend')]",0.068
+bawaan,B07 tuduh,civilian,tuduh,offend,Citra,santai,"Coba perhatikan Citra. Eka sempat menuduh Citra, lalu Eka kemungkinan disandera (ronde 2).",templat,True,True,True,1,offend,"[('Citra', 'offend'), ('Eka', 'offend')]",0.042
+bawaan,B08 klaim palsu Hitman,hitman,klaim_palsu,offend,Andi,gaul,"Oke gw buka role, gw Stalker. Hasil peek semalam Andi Hitman, vote Andi.",templat,True,True,True,1,offend,"[('Andi', 'offend')]",0.048
+bawaan,B09 info sandera,civilian,info_sandera,defend,Dodi,kalem,"Jangan salah vote, Dodi bukan Hitman. Dia korban sandera.",templat,True,True,False,2,defend,"[('Dodi', 'defend')]",0.088
+bawaan,B10 ajak bicara,spy,ajak_bicara,neutral,Eka,santai,"Eka, pendapatmu gimana? Dari tadi belum kedengaran.",templat,True,True,True,1,neutral,[],0.023
+bawaan,B11 tanya info,civilian,tanya_info,neutral,,gaul,Ada yang punya info atau curiga sama seseorang? Ceritain alasannya ya.,templat,True,True,True,1,neutral,[],0.019
+bawaan,B12 tanya info + konflik klaim,stalker,tanya_info,neutral,,kalem,Andi dan Citra mengaku role yang sama. Ada yang punya info lain?,templat,True,True,True,1,neutral,[],0.014
+bawaan,B13 Hitman menuduh kambing hitam,hitman,tuduh,offend,Budi,santai,Menurutku Budi patut dicurigai.,templat,True,True,True,1,offend,"[('Budi', 'offend')]",0.038
+bawaan,B14 Hitman bela diri,hitman,bela_diri,defend,Nara,gaul,"Kok gw? Gw bukan Hitman, tuduhan itu nggak ada buktinya.",templat,True,True,True,1,defend,"[('Nara', 'defend')]",0.04
+bawaan,B15 pancingan saat hening,civilian,tanya_info,neutral,,kalem,"Kok sepi ya, belum ada yang cerita. Ada yang punya info lain?",templat,True,True,True,1,neutral,[],0.011
+bt,01 Awal game hening,civilian,tanya_info,neutral,,santai,"Kok sepi ya, belum ada yang cerita. Ada yang punya info lain?",templat,True,True,True,1,neutral,[],0.014
+bt,02 Bot dituduh dua pemain,civilian,bela_diri,defend,Nara,gaul,"Kok gw? Gw bukan Hitman, tuduhan itu nggak ada buktinya.",templat,True,True,True,1,defend,"[('Nara', 'defend')]",0.035
+bt,03 Korban Gag menuduh Dodi,civilian,tuduh,offend,Dodi,kalem,"Saya makin curiga sama Dodi. Citra sempat menuduh Dodi, lalu Citra kemungkinan kena Gag (ronde 1).",templat,True,True,False,2,offend,"[('Citra', 'offend'), ('Dodi', 'offend')]",0.102
+bt,05 Korban Hostage menuduh Budi,civilian,info_sandera,defend,Eka,santai,"Aku rasa Eka bukan Hitman, tuduhannya belum ada bukti. Kayaknya dia korban sandera.",templat,True,True,True,1,defend,"[('Eka', 'defend')]",0.054
+bt,06 Vote setelah pola Hostage,civilian,tuduh,offend,Budi,gaul,"Coba perhatikan Budi. Eka sempat menuduh Budi, lalu Eka kemungkinan disandera (ronde 1).",templat,True,True,True,1,offend,"[('Budi', 'offend'), ('Eka', 'offend')]",0.055
+bt,07 Membela dugaan korban Hostage,civilian,bela_orang,defend,Eka,kalem,"Eka bukan Hitman menurut saya, jangan vote dia.",templat,True,True,True,1,defend,"[('Eka', 'defend')]",0.045
+bt,09 Pendorong eksekusi warga,civilian,tuduh,offend,Dodi,santai,"Aku makin curiga sama Dodi. Dodi ikut mendorong eksekusi Andi (ronde 1), padahal game berlanjut jadi Andi bukan Hitman.",templat,True,True,True,1,offend,"[('Andi', 'defend'), ('Dodi', 'offend')]",0.054
+bt,11 Bentrok klaim Stalker,civilian,tanya_info,neutral,,gaul,Andi dan Citra mengaku role yang sama. Ada yang punya info lain?,templat,True,True,True,1,neutral,[],0.013
+bt,12 Akhir game kritis,civilian,tuduh,offend,Andi,kalem,"Saya makin curiga sama Andi. Andi ikut mendorong eksekusi Eka (ronde 1), padahal game berlanjut jadi Eka bukan Hitman.",templat,True,True,False,2,offend,"[('Andi', 'offend'), ('Eka', 'defend')]",0.103
+bt,13 Tuduhan tanpa bukti dibela,civilian,ajak_bicara,neutral,Citra,santai,"Citra, ayo ikut diskusi. Kamu curiga siapa?",templat,True,True,True,1,neutral,[],0.012
+bt,14 Pengalihan berulang,civilian,tuduh,offend,Budi,gaul,3 pemain menuduh atau vote Budi. Makanya gw curiga Budi.,templat,True,True,True,1,offend,"[('Budi', 'offend')]",0.046
+bt,15 Bot di-Gag setelah menuduh,civilian,tuduh,offend,Dodi,kalem,Saya makin curiga sama Dodi. Saya kena Gag di ronde 1 setelah menuduh Dodi.,templat,True,True,True,1,offend,"[('Dodi', 'offend')]",0.053
+bt,16 Stalker menemukan Hitman,stalker,ungkap,offend,Dodi,santai,"Aku Stalker. Semalam aku peek Dodi, hasilnya Hitman. Ayo vote Dodi!",templat,True,True,True,1,offend,"[('Dodi', 'offend')]",0.042
+bt,17 Stalker membela pemain bersih,stalker,bela_orang,defend,Citra,gaul,"Gw Stalker dan sudah peek Citra, dia bukan Hitman. Jangan vote Citra.",templat,True,True,True,1,defend,"[('Citra', 'defend')]",0.04
+bt,20 Stalker tahu klaim palsu,stalker,tuduh,offend,Andi,kalem,Saya makin curiga sama Andi. Klaim Stalker dari Andi tidak bisa dipercaya.,templat,True,True,True,1,offend,"[('Andi', 'offend')]",0.047
+bt,29 Hitman vote kambing hitam,hitman,tuduh,offend,Budi,santai,2 pemain menuduh atau vote Budi. Makanya aku curiga Budi.,templat,True,True,True,1,offend,"[('Budi', 'offend')]",0.042
+bt,33 Warga ditanya langsung,civilian,jawab,neutral,,gaul,Gw belum punya tersangka kuat. Menurut kalian gimana?,templat,True,True,True,1,neutral,[],0.015
+bt,41 Syndicate hampir unggul,civilian,info_sandera,defend,Citra,kalem,"Saya rasa Citra bukan Hitman, tuduhannya belum ada bukti. Kayaknya dia korban sandera.",templat,True,True,True,1,defend,"[('Citra', 'defend')]",0.046
+bt,42 Eksekusi warga menurut pengumuman,civilian,tuduh,offend,Dodi,santai,"Coba perhatikan Dodi. Dodi ikut mendorong eksekusi Andi (ronde 1), padahal jumlah Hitman tidak berkurang jadi Andi bukan Hitman.",templat,True,True,False,2,offend,"[('Andi', 'defend'), ('Dodi', 'offend')]",0.104
+bt,simulasi,hitman,tanya_info,neutral,,gaul,"Kok sepi ya, belum ada yang cerita. Coba jelasin dulu sebelum vote.",templat,True,True,True,1,neutral,[],0.012
+bt,simulasi,stalker,ajak_bicara,neutral,Citra,kalem,"Citra, menurutmu gimana? Ayo ikut cerita.",templat,True,True,True,1,neutral,[],0.018
+bt,simulasi,spy,jawab,neutral,,santai,Jujur aku masih bingung. Ada yang punya petunjuk?,templat,True,True,False,2,neutral,[],0.045
+bt,simulasi,hitman,bela_diri,defend,Andi,gaul,"Kok gw? Gw bukan Hitman, tuduhan itu nggak ada buktinya.",templat,True,True,True,1,defend,"[('Citra', 'defend')]",0.031
+bt,simulasi,spy,bela_diri,defend,Citra,kalem,"Kok saya? Saya bukan Hitman, tuduhan itu nggak ada buktinya.",templat,True,True,True,1,defend,"[('Andi', 'defend')]",0.032
+bt,simulasi,civilian,ajak_bicara,neutral,Dodi,santai,"Dodi, menurutmu gimana? Ayo ikut cerita.",templat,True,True,True,1,neutral,[],0.02
+bt,simulasi,civilian,jawab,neutral,,gaul,Jujur gw masih bingung. Ada yang punya petunjuk?,templat,True,True,True,1,neutral,[],0.02
+bt,simulasi,spy,ajak_bicara,neutral,Fajar,kalem,"Fajar, pendapatmu gimana? Dari tadi belum kedengaran.",templat,True,True,True,1,neutral,[],0.014
+bt,simulasi,hitman,jawab,neutral,,santai,Jujur aku masih bingung. Ada yang punya petunjuk?,templat,True,True,True,1,neutral,[],0.016
+bt,simulasi,civilian,ajak_bicara,neutral,Nara,gaul,"Nara, pendapat lu gimana? Dari tadi belum kedengaran.",templat,True,True,True,1,neutral,[],0.014
+bt,simulasi,spy,bela_diri,defend,Budi,kalem,"Kok saya sih? Saya warga, bukan Hitman.",templat,True,True,True,1,defend,[],0.077
+bt,simulasi,hitman,tuduh,offend,Andi,santai,4 pemain menuduh atau vote Andi. Makanya aku curiga Andi.,templat,True,True,True,1,offend,"[('Andi', 'offend')]",0.082
+bt,simulasi,stalker,bela_orang,defend,Andi,gaul,"Gw Stalker, gw sudah peek Andi: dia bukan Hitman. Jangan vote Andi.",templat,True,True,False,2,defend,"[('Andi', 'defend')]",0.102
+bt,simulasi,spy,info_sandera,defend,Citra,kalem,"Saya rasa Citra bukan Hitman, tuduhannya belum ada bukti. Kayaknya dia korban sandera.",templat,True,True,True,1,defend,"[('Citra', 'defend')]",0.086
+bt,simulasi,civilian,tuduh,offend,Fajar,santai,"Aku makin curiga sama Fajar. Fajar ikut mendorong eksekusi Andi (ronde 1), padahal jumlah Hitman tidak berkurang jadi Andi bukan Hitman.",templat,True,True,True,1,offend,"[('Fajar', 'offend')]",0.097
+bt,simulasi,civilian,ajak_bicara,neutral,Citra,gaul,"Citra, ayo ikut diskusi. Lu curiga siapa?",templat,True,True,True,1,neutral,[],0.045
+bt,simulasi,hitman,bela_diri,defend,Fajar,kalem,"Kok saya? Saya bukan Hitman, tuduhan itu nggak ada buktinya.",templat,True,True,True,1,defend,"[('Fajar', 'defend')]",0.097
+bt,simulasi,civilian,ajak_bicara,neutral,Eka,santai,"Eka, menurutmu gimana? Ayo ikut cerita.",templat,True,True,True,1,neutral,[],0.02
+bt,simulasi,hitman,bela_orang,defend,Fajar,gaul,"Fajar bukan pelakunya menurut gw, jangan buru-buru vote dia.",templat,True,True,True,1,defend,"[('Fajar', 'defend')]",0.099
+bt,simulasi,hitman,tanya_info,neutral,,kalem,Ada yang punya info atau curiga sama seseorang? Ceritain alasannya ya.,templat,True,True,True,1,neutral,[],0.011
+bt,simulasi,civilian,info_sandera,defend,Eka,santai,"Jangan salah vote, Eka bukan Hitman. Dia korban sandera.",templat,True,True,False,2,defend,"[('Eka', 'defend')]",0.186
+bt,simulasi,spy,info_sandera,defend,Eka,gaul,"Jangan salah vote, Eka bukan Hitman. Dia korban sandera.",templat,True,True,True,1,defend,"[('Eka', 'defend')]",0.088
+bt,simulasi,spy,ajak_bicara,neutral,Gita,kalem,"Gita, pendapatmu gimana? Dari tadi belum kedengaran.",templat,True,True,True,1,neutral,[],0.018
+bt,simulasi,civilian,jawab,neutral,,santai,Jujur aku masih bingung. Ada yang punya petunjuk?,templat,True,True,True,1,neutral,[],0.016
+bt,simulasi,spy,ajak_bicara,neutral,Nara,gaul,"Nara, ayo ikut diskusi. Lu curiga siapa?",templat,True,True,True,1,neutral,[],0.016
+bt,simulasi,hitman,bela_diri,defend,Citra,kalem,"Kok saya sih? Saya warga, bukan Hitman.",templat,True,True,True,1,defend,[],0.087
+bt,simulasi,civilian,info_sandera,defend,Nara,santai,"Jangan salah vote, Nara bukan Hitman. Dia korban sandera.",templat,True,True,True,1,defend,"[('Nara', 'defend')]",0.079
+bt,simulasi,spy,info_sandera,defend,Nara,gaul,"Gw rasa Nara bukan Hitman, dia cuma korban sandera.",templat,True,True,True,1,defend,"[('Nara', 'defend')]",0.08
+bt,simulasi,spy,ajak_bicara,neutral,Dodi,kalem,"Dodi, menurutmu gimana? Ayo ikut cerita.",templat,True,True,True,1,neutral,[],0.013
+bt,simulasi,spy,bela_diri,defend,Eka,santai,"Kok aku sih? Aku warga, bukan Hitman.",templat,True,True,True,1,defend,"[('Nara', 'defend')]",0.079
+bt,simulasi,stalker,bela_diri,defend,Andi,gaul,"Kok gw? Gw bukan Hitman, tuduhan itu nggak ada buktinya.",templat,True,True,False,2,defend,"[('Citra', 'defend')]",0.073
+bt,simulasi,civilian,ajak_bicara,neutral,Eka,kalem,"Eka, ayo ikut diskusi. Kamu curiga siapa?",templat,True,True,True,1,neutral,[],0.015
+bt,simulasi,hitman,jawab,neutral,,santai,Jujur aku masih bingung. Ada yang punya petunjuk?,templat,True,True,False,2,neutral,[],0.088
+bt,simulasi,stalker,info_sandera,defend,Budi,gaul,"Gw rasa Budi bukan Hitman, tuduhannya belum ada bukti. Kayaknya dia korban sandera.",templat,True,True,True,1,defend,"[('Budi', 'defend')]",0.078
+bt,simulasi,hitman,tanya_info,neutral,,kalem,"Ayo cerita, kalian curiga siapa dan kenapa?",templat,True,True,True,1,neutral,[],0.013
+bt,simulasi,spy,ajak_bicara,neutral,Dodi,santai,"Dodi, menurutmu gimana? Ayo ikut cerita.",templat,True,True,True,1,neutral,[],0.015
+bt,simulasi,civilian,ajak_bicara,neutral,Gita,gaul,"Gita, ayo ikut diskusi. Lu curiga siapa?",templat,True,True,True,1,neutral,[],0.013
+bt,simulasi,spy,tanya_info,neutral,,kalem,"Kok sepi ya, belum ada yang cerita. Coba jelasin dulu sebelum vote.",templat,True,True,True,1,neutral,[],0.014
+bt,simulasi,civilian,info_sandera,defend,Gita,santai,"Jangan salah vote, Gita bukan Hitman. Dia korban sandera.",templat,True,True,True,1,defend,"[('Gita', 'defend')]",0.077
+bt,simulasi,civilian,tanya_info,neutral,,gaul,Ada yang punya info atau curiga sama seseorang? Ceritain alasannya ya.,templat,True,True,True,1,neutral,[],0.016
+bt,simulasi,civilian,ajak_bicara,neutral,Eka,kalem,"Eka, menurutmu gimana? Ayo ikut cerita.",templat,True,True,True,1,neutral,[],0.022
+bt,simulasi,civilian,info_sandera,defend,Fajar,santai,"Jangan salah vote, Fajar bukan Hitman. Dia korban sandera.",templat,True,True,True,1,defend,"[('Fajar', 'defend')]",0.08
+bt,simulasi,hitman,info_sandera,defend,Fajar,gaul,"Gw rasa Fajar bukan Hitman, tuduhannya belum ada bukti. Kayaknya dia korban sandera.",templat,True,True,True,1,defend,"[('Fajar', 'defend')]",0.082
+bt,simulasi,civilian,tanya_info,neutral,,kalem,Ada yang punya info atau curiga sama seseorang? Ceritain alasannya ya.,templat,True,True,True,1,neutral,[],0.019
+bt,simulasi,civilian,bela_diri,defend,Fajar,santai,"Kok aku? Aku bukan Hitman, tuduhan itu nggak ada buktinya.",templat,True,True,True,1,defend,"[('Fajar', 'defend')]",0.075
+bt,simulasi,civilian,jawab,offend,Eka,gaul,Kalau gw sih paling curiga sama Eka. 2 pemain menuduh atau vote Eka.,templat,True,True,True,1,offend,"[('Eka', 'offend')]",0.09
+bt,simulasi,stalker,ajak_bicara,neutral,Nara,kalem,"Nara, ayo ikut diskusi. Kamu curiga siapa?",templat,True,True,True,1,neutral,[],0.015
+bt,simulasi,hitman,tuduh,offend,Citra,santai,Coba perhatikan Citra. 4 pemain menuduh atau vote Citra.,templat,True,True,True,1,offend,"[('Citra', 'offend')]",0.068
+bt,simulasi,civilian,tuduh,offend,Fajar,gaul,"Gw makin curiga sama Fajar. Fajar ikut mendorong eksekusi Citra (ronde 1), padahal game berlanjut jadi Citra bukan Hitman.",templat,True,True,True,1,offend,"[('Citra', 'defend'), ('Fajar', 'offend')]",0.084
+bt,simulasi,stalker,ajak_bicara,neutral,Eka,kalem,"Eka, ayo ikut diskusi. Kamu curiga siapa?",templat,True,True,True,1,neutral,[],0.021
+bt,simulasi,civilian,ajak_bicara,neutral,Dodi,santai,"Dodi, ayo ikut diskusi. Kamu curiga siapa?",templat,True,True,True,1,neutral,[],0.016
+bt,simulasi,stalker,ungkap,offend,Andi,gaul,"Gw buka role: gw Stalker. Andi sudah gw peek dan dia Hitman, jadi vote Andi.",templat,True,True,True,1,offend,"[('Andi', 'offend')]",0.067
+bt,simulasi,civilian,tuduh,offend,Andi,kalem,Menurut saya Andi patut dicurigai.,templat,True,True,True,1,offend,"[('Andi', 'offend')]",0.091
+bt,simulasi,spy,tuduh,offend,Andi,santai,Eka mengaku peek Andi sebagai Hitman. Makanya aku curiga Andi.,templat,True,True,True,1,offend,"[('Andi', 'offend')]",0.113
+bt,simulasi,civilian,bela_diri,defend,Citra,gaul,"Kok gw sih? Gw warga, bukan Hitman.",templat,True,True,True,1,defend,"[('Andi', 'defend')]",0.13
+bt,simulasi,civilian,tuduh,offend,Andi,kalem,Coba perhatikan Andi. Eka mengaku peek Andi sebagai Hitman.,templat,True,True,True,1,offend,"[('Andi', 'offend')]",0.137
+bt,simulasi,stalker,tuduh,offend,Andi,santai,Aku curiga sama Andi.,templat,True,True,True,1,offend,"[('Andi', 'offend')]",0.111
+bt,simulasi,civilian,ajak_bicara,neutral,Fajar,gaul,"Fajar, menurut lu gimana? Ayo ikut cerita.",templat,True,True,True,1,neutral,[],0.013
+bt,simulasi,civilian,info_sandera,defend,Budi,kalem,"Jangan salah vote, Budi bukan Hitman. Dia korban sandera.",templat,True,True,True,1,defend,"[('Budi', 'defend')]",0.098
+bt,simulasi,civilian,info_sandera,defend,Budi,santai,"Aku rasa Budi bukan Hitman, tuduhannya belum ada bukti. Kayaknya dia korban sandera.",templat,True,True,True,1,defend,"[('Budi', 'defend')]",0.096
+bt,simulasi,civilian,ajak_bicara,neutral,Nara,gaul,"Nara, menurut lu gimana? Ayo ikut cerita.",templat,True,True,True,1,neutral,[],0.016
+bt,simulasi,stalker,info_sandera,defend,Budi,kalem,"Jangan salah vote, Budi bukan Hitman. Dia korban sandera.",templat,True,True,True,1,defend,"[('Budi', 'defend')]",0.088
+bt,simulasi,hitman,info_sandera,defend,Budi,santai,"Jangan salah vote, Budi bukan Hitman. Dia korban sandera.",templat,True,True,False,2,defend,"[('Budi', 'defend')]",0.173
+bt,simulasi,hitman,bela_diri,defend,Fajar,gaul,"Kok gw sih? Gw warga, bukan Hitman.",templat,True,True,True,1,defend,"[('Budi', 'defend')]",0.08
+bt,simulasi,civilian,info_sandera,defend,Budi,kalem,"Jangan salah vote, Budi bukan Hitman. Dia korban sandera.",templat,True,True,False,2,defend,"[('Budi', 'defend')]",0.173
+bt,simulasi,spy,info_sandera,defend,Budi,santai,"Jangan salah vote, Budi bukan Hitman. Dia korban sandera.",templat,True,True,True,1,defend,"[('Budi', 'defend')]",0.091
+bt,simulasi,stalker,ajak_bicara,neutral,Hana,gaul,"Hana, menurut lu gimana? Ayo ikut cerita.",templat,True,True,True,1,neutral,[],0.017
+bt,simulasi,civilian,jawab,neutral,,kalem,Jujur saya masih bingung. Ada yang punya petunjuk?,templat,True,True,False,2,neutral,[],0.098
+bt,simulasi,spy,ajak_bicara,neutral,Nara,santai,"Nara, ayo ikut diskusi. Kamu curiga siapa?",templat,True,True,True,1,neutral,[],0.016
+bt,simulasi,stalker,bela_orang,defend,Andi,gaul,"Gw Stalker, gw sudah peek Andi: dia bukan Hitman. Jangan vote Andi.",templat,True,True,True,1,defend,"[('Andi', 'defend')]",0.132
+bt,simulasi,civilian,bela_orang,defend,Andi,kalem,"Andi bukan Hitman menurut saya, jangan vote dia.",templat,True,True,True,1,defend,"[('Andi', 'defend')]",0.144
+bt,simulasi,civilian,tanya_info,neutral,,santai,"Ayo cerita, kalian curiga siapa dan kenapa?",templat,True,True,True,1,neutral,[],0.011
+bt,simulasi,spy,ajak_bicara,neutral,Citra,gaul,"Citra, ayo ikut diskusi. Lu curiga siapa?",templat,True,True,True,1,neutral,[],0.014
+bt,simulasi,civilian,ajak_bicara,neutral,Dodi,kalem,"Dodi, ayo ikut diskusi. Kamu curiga siapa?",templat,True,True,True,1,neutral,[],0.011
+bt,simulasi,spy,ajak_bicara,neutral,Gita,santai,"Gita, menurutmu gimana? Ayo ikut cerita.",templat,True,True,True,1,neutral,[],0.014
+bt,simulasi,hitman,bela_diri,defend,Dodi,gaul,"Tunggu dulu, gw bukan Hitman. Coba cek lagi siapa yang dari tadi mengalihkan tuduhan.",templat,True,True,True,1,defend,"[('Nara', 'defend')]",0.125
+bt,simulasi,civilian,info_sandera,defend,Indra,kalem,"Jangan salah vote, Indra bukan Hitman. Dia korban sandera.",templat,True,True,False,2,defend,"[('Indra', 'defend')]",0.248
+bt,simulasi,stalker,info_sandera,defend,Indra,santai,"Aku rasa Indra bukan Hitman, tuduhannya belum ada bukti. Kayaknya dia korban sandera.",templat,True,True,True,1,defend,"[('Indra', 'defend')]",0.096
+bt,simulasi,civilian,info_sandera,defend,Indra,gaul,"Gw rasa Indra bukan Hitman, tuduhannya belum ada bukti. Kayaknya dia korban sandera.",templat,True,True,True,1,defend,"[('Indra', 'defend')]",0.098
+fuzzy,01 Awal game hening,civilian,tanya_info,neutral,,kalem,"Kok sepi ya, belum ada yang cerita. Ada yang punya info lain?",templat,True,True,True,1,neutral,[],0.021
+fuzzy,02 Bot dituduh dua pemain,civilian,bela_diri,defend,Nara,santai,"Kok aku? Aku bukan Hitman, tuduhan itu nggak ada buktinya.",templat,True,True,False,3,defend,"[('Nara', 'defend')]",0.128
+fuzzy,03 Korban Gag menuduh Dodi,civilian,tuduh,offend,Dodi,gaul,"Gw makin curiga sama Dodi. Citra sempat menuduh Dodi, lalu Citra kemungkinan kena Gag (ronde 1).",templat,True,True,False,2,offend,"[('Citra', 'offend'), ('Dodi', 'offend')]",0.108
+fuzzy,05 Korban Hostage menuduh Budi,civilian,tuduh,offend,Budi,kalem,"Coba perhatikan Budi. Eka sempat menuduh Budi, lalu Eka kemungkinan disandera (ronde 1).",templat,True,True,True,1,offend,"[('Budi', 'offend'), ('Eka', 'offend')]",0.06
+fuzzy,07 Membela dugaan korban Hostage,civilian,bela_orang,defend,Eka,santai,"Eka bukan Hitman menurutku, jangan vote dia.",templat,True,True,True,1,defend,"[('Eka', 'defend')]",0.051
+fuzzy,09 Pendorong eksekusi warga,civilian,tuduh,offend,Dodi,gaul,"Gw makin curiga sama Dodi. Dodi ikut mendorong eksekusi Andi (ronde 1), padahal game berlanjut jadi Andi bukan Hitman.",templat,True,True,True,1,offend,"[('Andi', 'defend'), ('Dodi', 'offend')]",0.073
+fuzzy,10 Budi terus menyerang bot,civilian,bela_diri,defend,Nara,kalem,"Kok saya? Saya bukan Hitman, tuduhan itu nggak ada buktinya.",templat,True,True,True,1,defend,"[('Nara', 'defend')]",0.063
+fuzzy,11 Bentrok klaim Stalker,civilian,tanya_info,neutral,,santai,Andi dan Citra mengaku role yang sama. Ada yang punya info lain?,templat,True,True,True,1,neutral,[],0.016
+fuzzy,12 Akhir game kritis,civilian,tuduh,offend,Andi,gaul,"Gw makin curiga sama Andi. Andi ikut mendorong eksekusi Eka (ronde 1), padahal game berlanjut jadi Eka bukan Hitman.",templat,True,True,False,2,offend,"[('Andi', 'offend'), ('Eka', 'defend')]",0.155
+fuzzy,15 Bot di-Gag setelah menuduh,civilian,tuduh,offend,Dodi,kalem,Saya makin curiga sama Dodi. Saya kena Gag di ronde 1 setelah menuduh Dodi.,templat,True,True,True,1,offend,"[('Dodi', 'offend')]",0.07
+fuzzy,16 Stalker menemukan Hitman,stalker,ungkap,offend,Dodi,santai,"Aku Stalker. Semalam aku peek Dodi, hasilnya Hitman. Ayo vote Dodi!",templat,True,True,True,1,offend,"[('Dodi', 'offend')]",0.05
+fuzzy,17 Stalker membela pemain bersih,stalker,bela_orang,defend,Citra,gaul,"Gw Stalker dan sudah peek Citra, dia bukan Hitman. Jangan vote Citra.",templat,True,True,True,1,defend,"[('Citra', 'defend')]",0.058
+fuzzy,20 Stalker tahu klaim palsu,stalker,tuduh,offend,Andi,kalem,Saya makin curiga sama Andi. Klaim Stalker dari Andi tidak bisa dipercaya.,templat,True,True,True,1,offend,"[('Andi', 'offend')]",0.071
+fuzzy,24 Hitman dituduh,hitman,bela_diri,defend,Nara,santai,"Kok aku? Aku bukan Hitman, tuduhan itu nggak ada buktinya.",templat,True,True,True,1,defend,"[('Nara', 'defend')]",0.046
+fuzzy,33 Warga ditanya langsung,civilian,jawab,neutral,,gaul,Gw belum punya tersangka kuat. Menurut kalian gimana?,templat,True,True,True,1,neutral,[],0.013
+fuzzy,35 Hitman tidak menuduh rekan,hitman,bela_orang,defend,Dodi,kalem,"Saya rasa Dodi bukan Hitman, tuduhannya belum ada bukti.",templat,True,True,True,1,defend,"[('Dodi', 'defend')]",0.043
+fuzzy,40 Perburuan berlanjut setelah satu Hitman dieksekusi,stalker,tuduh,offend,Budi,santai,Menurutku Budi patut dicurigai.,templat,True,True,False,2,offend,"[('Budi', 'offend')]",0.102
+fuzzy,41 Syndicate hampir unggul,civilian,info_sandera,defend,Citra,gaul,"Gw rasa Citra bukan Hitman, tuduhannya belum ada bukti. Kayaknya dia korban sandera.",templat,True,True,True,1,defend,"[('Citra', 'defend')]",0.057
+fuzzy,42 Eksekusi warga menurut pengumuman,civilian,tuduh,offend,Dodi,kalem,"Coba perhatikan Dodi. Dodi ikut mendorong eksekusi Andi (ronde 1), padahal jumlah Hitman tidak berkurang jadi Andi bukan Hitman.",templat,True,True,False,2,offend,"[('Andi', 'defend'), ('Dodi', 'offend')]",0.113
+fuzzy,43 Eksekusi Hitman menurut pengumuman,civilian,bela_orang,defend,Citra,santai,"Aku rasa Citra bukan Hitman, tuduhannya belum ada bukti.",templat,True,True,True,1,defend,"[('Citra', 'defend')]",0.053
+fuzzy,simulasi,hitman,tanya_info,neutral,,gaul,"Kok sepi ya, belum ada yang cerita. Coba jelasin dulu sebelum vote.",templat,True,True,True,1,neutral,[],0.019
+fuzzy,simulasi,stalker,tanya_info,neutral,,kalem,"Kok sepi ya, belum ada yang cerita. Coba jelasin dulu sebelum vote.",templat,True,True,True,1,neutral,[],0.016
+fuzzy,simulasi,hitman,tanya_info,neutral,,santai,Siapa yang punya petunjuk? Jangan asal vote.,templat,True,True,True,1,neutral,[],0.017
+fuzzy,simulasi,spy,bela_diri,defend,Citra,gaul,"Kok gw? Gw bukan Hitman, tuduhan itu nggak ada buktinya.",templat,True,True,True,1,defend,"[('Andi', 'defend')]",0.039
+fuzzy,simulasi,civilian,bela_orang,defend,Andi,kalem,"Saya rasa Andi bukan Hitman, tuduhannya belum ada bukti.",templat,True,True,True,1,defend,"[('Andi', 'defend')]",0.05
+fuzzy,simulasi,hitman,info_sandera,defend,Budi,santai,"Aku rasa Budi bukan Hitman, tuduhannya belum ada bukti. Kayaknya dia korban sandera.",templat,True,True,True,1,defend,"[('Budi', 'defend')]",0.061
+fuzzy,simulasi,spy,tuduh,offend,Andi,gaul,"Gw makin curiga sama Andi. Andi menuduh atau vote gw, padahal gw tahu gw bukan Hitman.",templat,True,True,False,2,offend,"[('Andi', 'offend')]",0.115
+fuzzy,simulasi,civilian,info_sandera,defend,Budi,kalem,"Jangan salah vote, Budi bukan Hitman. Dia korban sandera.",templat,True,True,True,1,defend,"[('Budi', 'defend')]",0.055
+fuzzy,simulasi,hitman,bela_diri,defend,Andi,santai,"Kok aku? Aku bukan Hitman, tuduhan itu nggak ada buktinya.",templat,True,True,True,1,defend,"[('Budi', 'defend')]",0.066
+fuzzy,simulasi,civilian,bela_orang,defend,Andi,gaul,"Gw rasa Andi bukan Hitman, tuduhannya belum ada bukti.",templat,True,True,True,1,defend,"[('Andi', 'defend')]",0.043
+fuzzy,simulasi,stalker,ajak_bicara,neutral,Citra,kalem,"Citra, ayo ikut diskusi. Kamu curiga siapa?",templat,True,True,True,1,neutral,[],0.017
+fuzzy,simulasi,hitman,jawab,neutral,,santai,Jujur aku masih bingung. Ada yang punya petunjuk?,templat,True,True,False,2,neutral,[],0.069
+fuzzy,simulasi,stalker,ajak_bicara,neutral,Fajar,gaul,"Fajar, pendapat lu gimana? Dari tadi belum kedengaran.",templat,True,True,True,1,neutral,[],0.015
+fuzzy,simulasi,civilian,bela_diri,defend,Dodi,kalem,"Kok saya? Saya bukan Hitman, tuduhan itu nggak ada buktinya.",templat,True,True,False,2,defend,[],0.153
+fuzzy,simulasi,hitman,bela_orang,defend,Citra,santai,"Citra bukan pelakunya menurutku, jangan buru-buru vote dia.",templat,True,True,True,1,defend,"[('Citra', 'defend')]",0.081
+fuzzy,simulasi,civilian,info_sandera,defend,Budi,gaul,"Gw rasa Budi bukan Hitman, dia cuma korban sandera.",templat,True,True,True,1,defend,"[('Budi', 'defend')]",0.109
+fuzzy,simulasi,civilian,bela_orang,defend,Dodi,kalem,"Saya rasa Dodi bukan Hitman, tuduhannya belum ada bukti.",templat,True,True,False,2,defend,"[('Dodi', 'defend')]",0.273
+fuzzy,simulasi,stalker,bela_orang,defend,Dodi,santai,"Dodi bukan pelakunya menurutku, jangan buru-buru vote dia.",templat,True,True,True,1,defend,"[('Dodi', 'defend')]",0.14
+fuzzy,simulasi,stalker,tanya_info,neutral,,gaul,Ada yang punya info atau curiga sama seseorang? Ceritain alasannya ya.,templat,True,True,True,1,neutral,[],0.011
+fuzzy,simulasi,spy,info_sandera,defend,Budi,kalem,"Jangan salah vote, Budi bukan Hitman. Dia korban sandera.",templat,True,True,True,1,defend,"[('Budi', 'defend')]",0.129
+fuzzy,simulasi,hitman,info_sandera,defend,Budi,santai,"Jangan salah vote, Budi bukan Hitman. Dia korban sandera.",templat,True,True,False,2,defend,"[('Budi', 'defend')]",0.272
+fuzzy,simulasi,civilian,bela_orang,defend,Dodi,gaul,"Jangan salah vote, Dodi bukan Hitman menurut gw.",templat,True,True,True,1,defend,"[('Dodi', 'defend')]",0.13
+fuzzy,simulasi,stalker,tuduh,offend,Fajar,kalem,"Saya makin curiga sama Fajar. Fajar menuduh atau vote Andi, Eka, padahal saya yakin dia bukan Hitman.",templat,True,True,False,5,offend,"[('Eka', 'offend'), ('Fajar', 'offend')]",0.551
+fuzzy,simulasi,spy,tanya_info,neutral,,santai,Ada yang punya info atau curiga sama seseorang? Ceritain alasannya ya.,templat,True,True,True,1,neutral,[],0.017
+fuzzy,simulasi,spy,info_sandera,defend,Dodi,gaul,"Gw rasa Dodi bukan Hitman, tuduhannya belum ada bukti. Kayaknya dia korban sandera.",templat,True,True,True,1,defend,"[('Dodi', 'defend')]",0.097
+fuzzy,simulasi,hitman,bela_diri,defend,Fajar,kalem,"Kok saya? Saya bukan Hitman, tuduhan itu nggak ada buktinya.",templat,True,True,True,1,defend,"[('Dodi', 'defend')]",0.099
+fuzzy,simulasi,spy,info_sandera,defend,Dodi,santai,"Aku rasa Dodi bukan Hitman, tuduhannya belum ada bukti. Kayaknya dia korban sandera.",templat,True,True,True,1,defend,"[('Dodi', 'defend')]",0.106
+fuzzy,simulasi,hitman,info_sandera,defend,Dodi,gaul,"Jangan salah vote, Dodi bukan Hitman. Dia korban sandera.",templat,True,True,True,1,defend,"[('Dodi', 'defend')]",0.111
+fuzzy,simulasi,spy,info_sandera,defend,Gita,kalem,"Jangan salah vote, Gita bukan Hitman. Dia korban sandera.",templat,True,True,True,1,defend,"[('Gita', 'defend')]",0.106
+fuzzy,simulasi,hitman,info_sandera,defend,Gita,santai,"Jangan salah vote, Gita bukan Hitman. Dia korban sandera.",templat,True,True,True,1,defend,"[('Gita', 'defend')]",0.103
+fuzzy,simulasi,stalker,tuduh,offend,Fajar,gaul,Gw makin curiga sama Fajar. Gw kena Gag di ronde 4 setelah menuduh Fajar.,templat,True,True,False,3,offend,"[('Fajar', 'offend'), ('Gita', 'offend')]",0.304
+fuzzy,simulasi,spy,tuduh,offend,Fajar,kalem,"Coba perhatikan Fajar. Nara sempat menuduh Fajar, lalu Nara kemungkinan kena Gag (ronde 4).",templat,True,True,True,1,offend,"[('Fajar', 'offend'), ('Nara', 'offend')]",0.109
+fuzzy,simulasi,civilian,bela_orang,defend,Fajar,santai,"Jangan salah vote, Fajar bukan Hitman menurutku.",templat,True,True,True,1,defend,"[('Fajar', 'defend')]",0.132
+fuzzy,simulasi,spy,bela_orang,defend,Fajar,gaul,"Jangan salah vote, Fajar bukan Hitman menurut gw.",templat,True,True,True,1,defend,"[('Fajar', 'defend')]",0.139
+fuzzy,simulasi,civilian,info_sandera,defend,Gita,kalem,"Saya rasa Gita bukan Hitman, tuduhannya belum ada bukti. Kayaknya dia korban sandera.",templat,True,True,True,1,defend,"[('Gita', 'defend')]",0.148
+fuzzy,simulasi,civilian,bela_orang,defend,Fajar,santai,"Fajar bukan Hitman menurutku, jangan vote dia.",templat,True,True,True,1,defend,"[('Fajar', 'defend')]",0.146
+fuzzy,simulasi,stalker,ungkap,offend,Fajar,gaul,"Jujur gw Stalker, dan hasil peek semalam: Fajar itu Hitman. Vote Fajar sekarang!",templat,True,True,True,1,offend,"[('Fajar', 'offend')]",0.145
+fuzzy,simulasi,civilian,bela_diri,defend,Nara,kalem,"Kok saya? Saya bukan Hitman, tuduhan itu nggak ada buktinya.",templat,True,True,False,3,defend,"[('Andi', 'defend')]",0.194
+fuzzy,simulasi,civilian,bela_orang,defend,Andi,santai,"Jangan salah vote, Andi bukan Hitman menurutku.",templat,True,True,True,1,defend,"[('Andi', 'defend')]",0.065
+fuzzy,simulasi,spy,bela_orang,defend,Andi,gaul,"Jangan salah vote, Andi bukan Hitman menurut gw.",templat,True,True,True,1,defend,"[('Andi', 'defend')]",0.075
+fuzzy,simulasi,civilian,tanya_info,neutral,,kalem,Ada yang punya info atau curiga sama seseorang? Ceritain alasannya ya.,templat,True,True,True,1,neutral,[],0.012
+fuzzy,simulasi,spy,tanya_info,neutral,,santai,"Kok sepi ya, belum ada yang cerita. Menurut kalian gimana?",templat,True,True,True,1,neutral,[],0.015
+fuzzy,simulasi,civilian,bela_orang,defend,Dodi,gaul,"Dodi bukan pelakunya menurut gw, jangan buru-buru vote dia.",templat,True,True,False,2,defend,"[('Dodi', 'defend')]",0.235
+fuzzy,simulasi,civilian,bela_diri,defend,Fajar,kalem,"Kok saya? Saya bukan Hitman, tuduhan itu nggak ada buktinya.",templat,True,True,False,3,defend,"[('Budi', 'defend')]",0.389
+fuzzy,simulasi,spy,bela_orang,defend,Budi,santai,"Jangan salah vote, Budi bukan Hitman menurutku.",templat,True,True,True,1,defend,"[('Budi', 'defend')]",0.116
+fuzzy,simulasi,civilian,bela_orang,defend,Budi,gaul,"Gw rasa Budi bukan Hitman, tuduhannya belum ada bukti.",templat,True,True,True,1,defend,"[('Budi', 'defend')]",0.111
+fuzzy,simulasi,spy,tanya_info,neutral,,kalem,Siapa yang punya petunjuk? Jangan asal vote.,templat,True,True,True,1,neutral,[],0.013
+fuzzy,simulasi,civilian,tanya_info,neutral,,santai,"Kok sepi ya, belum ada yang cerita. Ada yang punya info lain?",templat,True,True,True,1,neutral,[],0.012
+fuzzy,simulasi,civilian,tanya_info,neutral,,gaul,"Kok sepi ya, belum ada yang cerita. Menurut kalian gimana?",templat,True,True,True,1,neutral,[],0.018
+fuzzy,simulasi,civilian,info_sandera,defend,Dodi,kalem,"Saya rasa Dodi bukan Hitman, tuduhannya belum ada bukti. Kayaknya dia korban sandera.",templat,True,True,True,1,defend,"[('Dodi', 'defend')]",0.075
+fuzzy,simulasi,civilian,info_sandera,defend,Dodi,santai,"Jangan salah vote, Dodi bukan Hitman. Dia korban sandera.",templat,True,True,False,2,defend,"[('Dodi', 'defend')]",0.209
+fuzzy,simulasi,civilian,bela_orang,defend,Eka,gaul,"Gw rasa Eka bukan Hitman, tuduhannya belum ada bukti.",templat,True,True,True,1,defend,"[('Eka', 'defend')]",0.119
+fuzzy,simulasi,civilian,tanya_info,neutral,,kalem,Ada yang punya info atau curiga sama seseorang? Ceritain alasannya ya.,templat,True,True,True,1,neutral,[],0.019
+fuzzy,simulasi,spy,info_sandera,defend,Citra,santai,"Aku rasa Citra bukan Hitman, tuduhannya belum ada bukti. Kayaknya dia korban sandera.",templat,True,True,True,1,defend,"[('Citra', 'defend')]",0.119
+fuzzy,simulasi,hitman,info_sandera,defend,Citra,gaul,"Gw rasa Citra bukan Hitman, tuduhannya belum ada bukti. Kayaknya dia korban sandera.",templat,True,True,True,1,defend,"[('Citra', 'defend')]",0.125
+fuzzy,simulasi,civilian,info_sandera,defend,Citra,kalem,"Jangan salah vote, Citra bukan Hitman. Dia korban sandera.",templat,True,True,False,2,defend,"[('Citra', 'defend')]",0.241
+fuzzy,simulasi,spy,info_sandera,defend,Fajar,santai,"Aku rasa Fajar bukan Hitman, tuduhannya belum ada bukti. Kayaknya dia korban sandera.",templat,True,True,True,1,defend,"[('Fajar', 'defend')]",0.121
+fuzzy,simulasi,civilian,info_sandera,defend,Fajar,gaul,"Jangan salah vote, Fajar bukan Hitman. Dia korban sandera.",templat,True,True,True,1,defend,"[('Fajar', 'defend')]",0.116
+fuzzy,simulasi,spy,tanya_info,neutral,,kalem,"Ayo cerita, kalian curiga siapa dan kenapa?",templat,True,True,True,1,neutral,[],0.016
+fuzzy,simulasi,civilian,bela_orang,defend,Dodi,santai,"Aku rasa Dodi bukan Hitman, tuduhannya belum ada bukti.",templat,True,True,True,1,defend,"[('Dodi', 'defend')]",0.103
+fuzzy,simulasi,stalker,ungkap,offend,Andi,gaul,"Gw buka role: gw Stalker. Andi sudah gw peek dan dia Hitman, jadi vote Andi.",templat,True,True,True,1,offend,"[('Andi', 'offend')]",0.06
+fuzzy,simulasi,civilian,tuduh,offend,Andi,kalem,Menurut saya Andi patut dicurigai.,templat,True,True,True,1,offend,"[('Andi', 'offend')]",0.065
+fuzzy,simulasi,civilian,bela_diri,defend,Citra,santai,"Kok aku sih? Aku warga, bukan Hitman.",templat,True,True,True,1,defend,"[('Andi', 'defend')]",0.084
+fuzzy,simulasi,civilian,bela_orang,defend,Citra,gaul,"Gw rasa Citra bukan Hitman, tuduhannya belum ada bukti.",templat,True,True,True,1,defend,"[('Citra', 'defend')]",0.101
+fuzzy,simulasi,stalker,bela_orang,defend,Citra,kalem,"Jangan salah vote, Citra bukan Hitman menurut saya.",templat,True,True,True,1,defend,"[('Citra', 'defend')]",0.105
+fuzzy,simulasi,civilian,tuduh,offend,Fajar,santai,"Aku makin curiga sama Fajar. Fajar menuduh atau vote aku, padahal aku tahu aku bukan Hitman.",templat,True,True,False,3,offend,"[('Fajar', 'offend')]",0.325
+fuzzy,simulasi,civilian,info_sandera,defend,Budi,gaul,"Gw rasa Budi bukan Hitman, tuduhannya belum ada bukti. Kayaknya dia korban sandera.",templat,True,True,True,1,defend,"[('Budi', 'defend')]",0.116
+fuzzy,simulasi,stalker,tanya_info,neutral,,kalem,"Kok sepi ya, belum ada yang cerita. Menurut kalian gimana?",templat,True,True,True,1,neutral,[],0.013
+fuzzy,simulasi,civilian,tuduh,offend,Fajar,santai,"Aku makin curiga sama Fajar. Fajar ikut mendorong eksekusi Dodi (ronde 2), padahal jumlah Hitman tidak berkurang jadi Dodi bukan Hitman.",templat,True,True,True,1,offend,"[('Fajar', 'offend')]",0.104
+fuzzy,simulasi,spy,tuduh,offend,Fajar,gaul,Menurut gw Fajar patut dicurigai.,templat,True,True,True,1,offend,"[('Fajar', 'offend')]",0.105
+fuzzy,simulasi,civilian,info_sandera,defend,Citra,kalem,"Jangan salah vote, Citra bukan Hitman. Dia korban sandera.",templat,True,True,False,2,defend,"[('Citra', 'defend')]",0.289
+fuzzy,simulasi,civilian,tuduh,offend,Fajar,santai,"Aku makin curiga sama Fajar. Citra sempat menuduh Fajar, lalu Citra kemungkinan disandera (ronde 2).",templat,True,True,False,2,offend,"[('Citra', 'offend'), ('Fajar', 'offend')]",0.315
+fuzzy,simulasi,civilian,bela_diri,defend,Gita,gaul,"Kok gw? Gw bukan Hitman, tuduhan itu nggak ada buktinya.",templat,True,True,False,3,defend,"[('Fajar', 'defend')]",0.488
+fuzzy,simulasi,stalker,ajak_bicara,neutral,Citra,kalem,"Citra, menurutmu gimana? Ayo ikut cerita.",templat,True,True,True,1,neutral,[],0.043
+fuzzy,simulasi,hitman,tanya_info,neutral,,santai,Ada yang punya info atau curiga sama seseorang? Ceritain alasannya ya.,templat,True,True,True,1,neutral,[],0.019
+fuzzy,simulasi,spy,bela_diri,defend,Eka,gaul,"Kok gw? Gw bukan Hitman, tuduhan itu nggak ada buktinya.",templat,True,True,True,1,defend,"[('Citra', 'defend')]",0.087
+fuzzy,simulasi,stalker,ajak_bicara,neutral,Dodi,kalem,"Dodi, ayo ikut diskusi. Kamu curiga siapa?",templat,True,True,True,1,neutral,[],0.017
+fuzzy,simulasi,hitman,jawab,neutral,,santai,Jujur aku masih bingung. Ada yang punya petunjuk?,templat,True,True,True,1,neutral,[],0.014
+utility,01 Awal game hening,civilian,tanya_info,neutral,,gaul,"Kok sepi ya, belum ada yang cerita. Ada yang punya info lain?",templat,True,True,True,1,neutral,[],0.018
+utility,02 Bot dituduh dua pemain,civilian,bela_diri,defend,Nara,kalem,"Kok saya? Saya bukan Hitman, tuduhan itu nggak ada buktinya.",templat,True,True,True,1,defend,"[('Nara', 'defend')]",0.039
+utility,03 Korban Gag menuduh Dodi,civilian,tuduh,offend,Dodi,santai,Menurutku Dodi patut dicurigai.,templat,True,True,True,1,offend,"[('Dodi', 'offend')]",0.056
+utility,05 Korban Hostage menuduh Budi,civilian,tuduh,offend,Budi,gaul,"Coba perhatikan Budi. Eka sempat menuduh Budi, lalu Eka kemungkinan disandera (ronde 1).",templat,True,True,True,1,offend,"[('Budi', 'offend'), ('Eka', 'offend')]",0.07
+utility,07 Membela dugaan korban Hostage,civilian,bela_orang,defend,Eka,kalem,"Eka bukan Hitman menurut saya, jangan vote dia.",templat,True,True,True,1,defend,"[('Eka', 'defend')]",0.064
+utility,09 Pendorong eksekusi warga,civilian,tuduh,offend,Dodi,santai,"Aku makin curiga sama Dodi. Dodi ikut mendorong eksekusi Andi (ronde 1), padahal game berlanjut jadi Andi bukan Hitman.",templat,True,True,True,1,offend,"[('Andi', 'defend'), ('Dodi', 'offend')]",0.066
+utility,10 Budi terus menyerang bot,civilian,bela_diri,defend,Nara,gaul,"Kok gw? Gw bukan Hitman, tuduhan itu nggak ada buktinya.",templat,True,True,True,1,defend,"[('Nara', 'defend')]",0.058
+utility,11 Bentrok klaim Stalker,civilian,tanya_info,neutral,,kalem,Andi dan Citra mengaku role yang sama. Ada yang punya info lain?,templat,True,True,True,1,neutral,[],0.016
+utility,12 Akhir game kritis,civilian,tuduh,offend,Andi,santai,"Aku makin curiga sama Andi. Andi ikut mendorong eksekusi Eka (ronde 1), padahal game berlanjut jadi Eka bukan Hitman.",templat,True,True,False,2,offend,"[('Andi', 'offend'), ('Eka', 'defend')]",0.12
+utility,13 Tuduhan tanpa bukti dibela,civilian,ajak_bicara,neutral,Citra,gaul,"Citra, ayo ikut diskusi. Lu curiga siapa?",templat,True,True,True,1,neutral,[],0.016
+utility,14 Pengalihan berulang,civilian,ajak_bicara,neutral,Eka,kalem,"Eka, pendapatmu gimana? Dari tadi belum kedengaran.",templat,True,True,True,1,neutral,[],0.014
+utility,15 Bot di-Gag setelah menuduh,civilian,tuduh,offend,Dodi,santai,Aku makin curiga sama Dodi. Aku kena Gag di ronde 1 setelah menuduh Dodi.,templat,True,True,True,1,offend,"[('Dodi', 'offend')]",0.056
+utility,16 Stalker menemukan Hitman,stalker,ungkap,offend,Dodi,gaul,"Gw Stalker. Semalam gw peek Dodi, hasilnya Hitman. Ayo vote Dodi!",templat,True,True,True,1,offend,"[('Dodi', 'offend')]",0.043
+utility,17 Stalker membela pemain bersih,stalker,bela_orang,defend,Citra,kalem,"Saya Stalker, saya sudah peek Citra: dia bukan Hitman. Jangan vote Citra.",templat,True,True,False,3,defend,"[('Citra', 'defend')]",0.111
+utility,20 Stalker tahu klaim palsu,stalker,tuduh,offend,Andi,santai,Aku makin curiga sama Andi. Klaim Stalker dari Andi tidak bisa dipercaya.,templat,True,True,True,1,offend,"[('Andi', 'offend')]",0.051
+utility,33 Warga ditanya langsung,civilian,jawab,neutral,,gaul,Gw belum punya tersangka kuat. Menurut kalian gimana?,templat,True,True,True,1,neutral,[],0.026
+utility,35 Hitman tidak menuduh rekan,hitman,bela_orang,defend,Dodi,kalem,"Saya rasa Dodi bukan Hitman, tuduhannya belum ada bukti.",templat,True,True,True,1,defend,"[('Dodi', 'defend')]",0.047
+utility,40 Perburuan berlanjut setelah satu Hitman dieksekusi,stalker,tuduh,offend,Budi,santai,Menurutku Budi patut dicurigai.,templat,True,True,False,2,offend,"[('Budi', 'offend')]",0.131
+utility,41 Syndicate hampir unggul,civilian,info_sandera,defend,Dodi,gaul,"Gw rasa Dodi bukan Hitman, dia cuma korban sandera.",templat,True,True,True,1,defend,"[('Dodi', 'defend')]",0.061
+utility,42 Eksekusi warga menurut pengumuman,civilian,tuduh,offend,Dodi,kalem,"Coba perhatikan Dodi. Dodi ikut mendorong eksekusi Andi (ronde 1), padahal jumlah Hitman tidak berkurang jadi Andi bukan Hitman.",templat,True,True,False,2,offend,"[('Andi', 'defend'), ('Dodi', 'offend')]",0.126
+utility,simulasi,hitman,tanya_info,neutral,,santai,"Kok sepi ya, belum ada yang cerita. Coba jelasin dulu sebelum vote.",templat,True,True,True,1,neutral,[],0.021
+utility,simulasi,stalker,tanya_info,neutral,,gaul,"Kok sepi ya, belum ada yang cerita. Coba jelasin dulu sebelum vote.",templat,True,True,True,1,neutral,[],0.015
+utility,simulasi,hitman,tanya_info,neutral,,kalem,Siapa yang punya petunjuk? Jangan asal vote.,templat,True,True,True,1,neutral,[],0.018
+utility,simulasi,spy,bela_diri,defend,Citra,santai,"Kok aku? Aku bukan Hitman, tuduhan itu nggak ada buktinya.",templat,True,True,True,1,defend,[],0.036
+utility,simulasi,civilian,info_sandera,defend,Budi,gaul,"Jangan salah vote, Budi bukan Hitman. Dia korban sandera.",templat,True,True,True,1,defend,"[('Budi', 'defend')]",0.052
+utility,simulasi,hitman,info_sandera,defend,Budi,kalem,"Saya rasa Budi bukan Hitman, tuduhannya belum ada bukti. Kayaknya dia korban sandera.",templat,True,True,True,1,defend,"[('Budi', 'defend')]",0.051
+utility,simulasi,spy,info_sandera,defend,Budi,santai,"Jangan salah vote, Budi bukan Hitman. Dia korban sandera.",templat,True,True,True,1,defend,"[('Budi', 'defend')]",0.069
+utility,simulasi,spy,tuduh,offend,Andi,gaul,Menurut gw Andi patut dicurigai.,templat,True,True,True,1,offend,"[('Andi', 'offend')]",0.087
+utility,simulasi,hitman,bela_diri,defend,Andi,kalem,"Kok saya? Saya bukan Hitman, tuduhan itu nggak ada buktinya.",templat,True,True,True,1,defend,"[('Andi', 'defend')]",0.089
+utility,simulasi,stalker,bela_orang,defend,Andi,santai,"Aku Stalker, aku sudah peek Andi: dia bukan Hitman. Jangan vote Andi.",templat,True,True,False,2,defend,"[('Andi', 'defend')]",0.089
+utility,simulasi,spy,tanya_info,neutral,,gaul,Ada yang punya info atau curiga sama seseorang? Ceritain alasannya ya.,templat,True,True,True,1,neutral,[],0.016
+utility,simulasi,civilian,ajak_bicara,neutral,Citra,kalem,"Citra, ayo ikut diskusi. Kamu curiga siapa?",templat,True,True,True,1,neutral,[],0.021
+utility,simulasi,civilian,ajak_bicara,neutral,Fajar,santai,"Fajar, menurutmu gimana? Ayo ikut cerita.",templat,True,True,True,1,neutral,[],0.018
+utility,simulasi,hitman,jawab,neutral,,gaul,Jujur gw masih bingung. Ada yang punya petunjuk?,templat,True,True,True,1,neutral,[],0.018
+utility,simulasi,civilian,info_sandera,defend,Nara,kalem,"Saya rasa Nara bukan Hitman, tuduhannya belum ada bukti. Kayaknya dia korban sandera.",templat,True,True,True,1,defend,"[('Nara', 'defend')]",0.093
+utility,simulasi,spy,info_sandera,defend,Nara,santai,"Jangan salah vote, Nara bukan Hitman. Dia korban sandera.",templat,True,True,False,2,defend,"[('Nara', 'defend')]",0.179
+utility,simulasi,civilian,ajak_bicara,neutral,Citra,gaul,"Citra, menurut lu gimana? Ayo ikut cerita.",templat,True,True,True,1,neutral,[],0.015
+utility,simulasi,hitman,info_sandera,defend,Nara,kalem,"Jangan salah vote, Nara bukan Hitman. Dia korban sandera.",templat,True,True,True,1,defend,"[('Nara', 'defend')]",0.08
+utility,simulasi,hitman,info_sandera,defend,Nara,santai,"Jangan salah vote, Nara bukan Hitman. Dia korban sandera.",templat,True,True,True,1,defend,"[('Nara', 'defend')]",0.085
+utility,simulasi,stalker,ungkap,offend,Citra,gaul,"Gw buka role: gw Stalker. Citra sudah gw peek dan dia Hitman, jadi vote Citra.",templat,True,True,True,1,offend,"[('Citra', 'offend'), ('Nara', 'defend')]",0.098
+utility,simulasi,hitman,bela_diri,defend,Citra,kalem,"Kok saya sih? Saya warga, bukan Hitman.",templat,True,True,True,1,defend,"[('Citra', 'defend')]",0.093
+utility,simulasi,civilian,tuduh,offend,Citra,santai,Menurutku Citra patut dicurigai.,templat,True,True,True,1,offend,"[('Citra', 'offend')]",0.12
+utility,simulasi,spy,bela_diri,defend,Eka,gaul,"Kok gw sih? Gw warga, bukan Hitman.",templat,True,True,True,1,defend,"[('Citra', 'defend')]",0.125
+utility,simulasi,civilian,info_sandera,defend,Gita,kalem,"Saya rasa Gita bukan Hitman, tuduhannya belum ada bukti. Kayaknya dia korban sandera.",templat,True,True,True,1,defend,"[('Gita', 'defend')]",0.146
+utility,simulasi,spy,info_sandera,defend,Gita,santai,"Jangan salah vote, Gita bukan Hitman. Dia korban sandera.",templat,True,True,True,1,defend,"[('Gita', 'defend')]",0.144
+utility,simulasi,spy,tanya_info,neutral,,gaul,"Ayo cerita, kalian curiga siapa dan kenapa?",templat,True,True,True,1,neutral,[],0.014
+utility,simulasi,spy,tanya_info,neutral,,kalem,"Kok sepi ya, belum ada yang cerita. Menurut kalian gimana?",templat,True,True,True,1,neutral,[],0.016
+utility,simulasi,hitman,info_sandera,defend,Gita,santai,"Jangan salah vote, Gita bukan Hitman. Dia korban sandera.",templat,True,True,True,1,defend,"[('Gita', 'defend')]",0.14
+utility,simulasi,civilian,tanya_info,neutral,,gaul,"Kok sepi ya, belum ada yang cerita. Menurut kalian gimana?",templat,True,True,True,1,neutral,[],0.037
+utility,simulasi,civilian,info_sandera,defend,Nara,kalem,"Jangan salah vote, Nara bukan Hitman. Dia korban sandera.",templat,True,True,True,1,defend,"[('Nara', 'defend')]",0.15
+utility,simulasi,civilian,tanya_info,neutral,,santai,Siapa yang punya petunjuk? Jangan asal vote.,templat,True,True,True,1,neutral,[],0.018
+utility,simulasi,civilian,tanya_info,neutral,,gaul,"Kok sepi ya, belum ada yang cerita. Menurut kalian gimana?",templat,True,True,True,1,neutral,[],0.029
+utility,simulasi,stalker,ungkap,offend,Fajar,kalem,"Jujur saya Stalker, dan hasil peek semalam: Fajar itu Hitman. Vote Fajar sekarang!",templat,True,True,True,1,offend,"[('Fajar', 'offend')]",0.119
+utility,simulasi,hitman,bela_diri,defend,Fajar,santai,"Kok aku? Aku bukan Hitman, tuduhan itu nggak ada buktinya.",templat,True,True,True,1,defend,"[('Fajar', 'defend')]",0.125
+utility,simulasi,civilian,bela_diri,defend,Gita,gaul,"Kok gw? Gw bukan Hitman, tuduhan itu nggak ada buktinya.",templat,True,True,False,3,defend,"[('Fajar', 'defend')]",0.4
+utility,simulasi,stalker,bela_orang,defend,Gita,kalem,"Gita bukan pelakunya menurut saya, jangan buru-buru vote dia.",templat,True,True,True,1,defend,"[('Fajar', 'defend'), ('Gita', 'defend')]",0.132
+utility,simulasi,hitman,tanya_info,neutral,,santai,"Kok sepi ya, belum ada yang cerita. Ada yang punya info lain?",templat,True,True,True,1,neutral,[],0.019
+utility,simulasi,civilian,ajak_bicara,neutral,Eka,gaul,"Eka, ayo ikut diskusi. Lu curiga siapa?",templat,True,True,True,1,neutral,[],0.019
+utility,simulasi,hitman,jawab,neutral,,kalem,Jujur saya masih bingung. Ada yang punya petunjuk?,templat,True,True,False,2,neutral,[],0.101
+utility,simulasi,hitman,jawab,neutral,,santai,Jujur aku masih bingung. Ada yang punya petunjuk?,templat,True,True,False,2,neutral,[],0.117
+utility,simulasi,civilian,bela_diri,defend,Dodi,gaul,"Kok gw? Gw bukan Hitman, tuduhan itu nggak ada buktinya.",templat,True,True,False,2,defend,"[('Citra', 'defend')]",0.21
+utility,simulasi,hitman,tanya_info,neutral,,kalem,Ada yang punya info atau curiga sama seseorang? Ceritain alasannya ya.,templat,True,True,True,1,neutral,[],0.014
+utility,simulasi,spy,info_sandera,defend,Fajar,santai,"Jangan salah vote, Fajar bukan Hitman. Dia korban sandera.",templat,True,True,True,1,defend,"[('Fajar', 'defend')]",0.113
+utility,simulasi,civilian,info_sandera,defend,Fajar,gaul,"Gw rasa Fajar bukan Hitman, tuduhannya belum ada bukti. Kayaknya dia korban sandera.",templat,True,True,True,1,defend,"[('Fajar', 'defend')]",0.119
+utility,simulasi,civilian,ajak_bicara,neutral,Fajar,kalem,"Fajar, pendapatmu gimana? Dari tadi belum kedengaran.",templat,True,True,True,1,neutral,[],0.017
+utility,simulasi,civilian,info_sandera,defend,Citra,santai,"Jangan salah vote, Citra bukan Hitman. Dia korban sandera.",templat,True,True,False,2,defend,"[('Citra', 'defend')]",0.167
+utility,simulasi,spy,info_sandera,defend,Citra,gaul,"Gw rasa Citra bukan Hitman, tuduhannya belum ada bukti. Kayaknya dia korban sandera.",templat,True,True,True,1,defend,"[('Citra', 'defend')]",0.094
+utility,simulasi,hitman,info_sandera,defend,Citra,kalem,"Saya rasa Citra bukan Hitman, tuduhannya belum ada bukti. Kayaknya dia korban sandera.",templat,True,True,True,1,defend,"[('Citra', 'defend')]",0.088
+utility,simulasi,civilian,info_sandera,defend,Citra,santai,"Aku rasa Citra bukan Hitman, tuduhannya belum ada bukti. Kayaknya dia korban sandera.",templat,True,True,True,1,defend,"[('Citra', 'defend')]",0.096
+utility,simulasi,hitman,info_sandera,defend,Dodi,gaul,"Jangan salah vote, Dodi bukan Hitman. Dia korban sandera.",templat,True,True,True,1,defend,"[('Dodi', 'defend')]",0.094
+utility,simulasi,civilian,bela_diri,defend,Nara,kalem,"Kok saya? Saya bukan Hitman, tuduhan itu nggak ada buktinya.",templat,True,True,True,1,defend,"[('Dodi', 'defend')]",0.102
+utility,simulasi,civilian,tanya_info,neutral,,santai,Ada yang punya info atau curiga sama seseorang? Ceritain alasannya ya.,templat,True,True,True,1,neutral,[],0.014
+utility,simulasi,civilian,tuduh,offend,Fajar,gaul,"Coba perhatikan Fajar. Fajar menuduh atau vote gw, padahal gw tahu gw bukan Hitman.",templat,True,True,True,1,offend,"[('Fajar', 'offend')]",0.101
+utility,simulasi,stalker,ungkap,offend,Andi,kalem,"Saya buka role: saya Stalker. Andi sudah saya peek dan dia Hitman, jadi vote Andi.",templat,True,True,True,1,offend,"[('Andi', 'offend')]",0.129
+utility,simulasi,civilian,tuduh,offend,Andi,santai,Menurutku Andi patut dicurigai.,templat,True,True,True,1,offend,"[('Andi', 'offend')]",0.084
+utility,simulasi,civilian,bela_diri,defend,Citra,gaul,"Kok gw sih? Gw warga, bukan Hitman.",templat,True,True,True,1,defend,"[('Andi', 'defend')]",0.112
+utility,simulasi,civilian,info_sandera,defend,Budi,kalem,"Saya rasa Budi bukan Hitman, tuduhannya belum ada bukti. Kayaknya dia korban sandera.",templat,True,True,True,1,defend,"[('Budi', 'defend')]",0.134
+utility,simulasi,stalker,info_sandera,defend,Budi,santai,"Jangan salah vote, Budi bukan Hitman. Dia korban sandera.",templat,True,True,True,1,defend,"[('Budi', 'defend')]",0.173
+utility,simulasi,hitman,info_sandera,defend,Budi,gaul,"Gw rasa Budi bukan Hitman, dia cuma korban sandera.",templat,True,True,True,1,defend,"[('Budi', 'defend')]",0.153
+utility,simulasi,civilian,info_sandera,defend,Budi,kalem,"Jangan salah vote, Budi bukan Hitman. Dia korban sandera.",templat,True,True,False,2,defend,"[('Budi', 'defend')]",0.283
+utility,simulasi,hitman,tanya_info,neutral,,santai,"Kok sepi ya, belum ada yang cerita. Ada yang punya info lain?",templat,True,True,True,1,neutral,[],0.017
+utility,simulasi,civilian,info_sandera,defend,Eka,gaul,"Jangan salah vote, Eka bukan Hitman. Dia korban sandera.",templat,True,True,True,1,defend,"[('Eka', 'defend')]",0.156
+utility,simulasi,spy,info_sandera,defend,Eka,kalem,"Saya rasa Eka bukan Hitman, tuduhannya belum ada bukti. Kayaknya dia korban sandera.",templat,True,True,True,1,defend,"[('Eka', 'defend')]",0.154
+utility,simulasi,spy,ajak_bicara,neutral,Dodi,santai,"Dodi, menurutmu gimana? Ayo ikut cerita.",templat,True,True,True,1,neutral,[],0.021
+utility,simulasi,hitman,jawab,neutral,,gaul,Jujur gw masih bingung. Ada yang punya petunjuk?,templat,True,True,True,1,neutral,[],0.017
+utility,simulasi,spy,bela_diri,defend,Eka,kalem,"Kok saya? Saya bukan Hitman, tuduhan itu nggak ada buktinya.",templat,True,True,True,1,defend,[],0.146
+utility,simulasi,civilian,info_sandera,defend,Gita,santai,"Jangan salah vote, Gita bukan Hitman. Dia korban sandera.",templat,True,True,False,2,defend,"[('Gita', 'defend')]",0.418
+utility,simulasi,hitman,info_sandera,defend,Gita,gaul,"Gw rasa Gita bukan Hitman, dia cuma korban sandera.",templat,True,True,True,1,defend,"[('Gita', 'defend')]",0.148
+utility,simulasi,civilian,ajak_bicara,neutral,Dodi,kalem,"Dodi, ayo ikut diskusi. Kamu curiga siapa?",templat,True,True,True,1,neutral,[],0.017
+utility,simulasi,stalker,ungkap,offend,Dodi,santai,"Aku Stalker. Semalam aku peek Dodi, hasilnya Hitman. Ayo vote Dodi!",templat,True,True,True,1,offend,"[('Dodi', 'offend'), ('Gita', 'defend')]",0.16
+utility,simulasi,civilian,tuduh,offend,Dodi,gaul,Coba perhatikan Dodi. Gita mengaku peek Dodi sebagai Hitman.,templat,True,True,True,1,offend,"[('Dodi', 'offend'), ('Gita', 'defend')]",0.171
+utility,simulasi,hitman,bela_diri,defend,Dodi,kalem,"Tunggu dulu, saya bukan Hitman. Coba cek lagi siapa yang dari tadi mengalihkan tuduhan.",templat,True,True,True,1,defend,"[('Dodi', 'defend')]",0.167
+utility,simulasi,civilian,bela_diri,defend,Fajar,santai,"Kok aku? Aku bukan Hitman, tuduhan itu nggak ada buktinya.",templat,True,True,True,1,defend,"[('Dodi', 'defend')]",0.16
+utility,simulasi,civilian,tanya_info,neutral,,gaul,Ada yang punya info atau curiga sama seseorang? Ceritain alasannya ya.,templat,True,True,True,1,neutral,[],0.017
+utility,simulasi,civilian,info_sandera,defend,Budi,kalem,"Jangan salah vote, Budi bukan Hitman. Dia korban sandera.",templat,True,True,True,1,defend,"[('Budi', 'defend')]",0.165
+utility,simulasi,spy,ajak_bicara,neutral,Citra,santai,"Citra, ayo ikut diskusi. Kamu curiga siapa?",templat,True,True,True,1,neutral,[],0.013
+utility,simulasi,spy,info_sandera,defend,Budi,gaul,"Gw rasa Budi bukan Hitman, dia cuma korban sandera.",templat,True,True,True,1,defend,"[('Budi', 'defend')]",0.153
+utility,simulasi,civilian,bela_diri,defend,Fajar,kalem,"Kok saya sih? Saya warga, bukan Hitman.",templat,True,True,True,1,defend,"[('Budi', 'defend')]",0.153
+utility,simulasi,civilian,tuduh,offend,Citra,santai,Aku curiga sama Citra.,templat,True,True,True,1,offend,"[('Citra', 'offend')]",0.148
+utility,simulasi,stalker,info_sandera,defend,Hana,gaul,"Gw rasa Hana bukan Hitman, dia cuma korban sandera.",templat,True,True,True,1,defend,"[('Hana', 'defend')]",0.162
+utility,simulasi,spy,info_sandera,defend,Hana,kalem,"Jangan salah vote, Hana bukan Hitman. Dia korban sandera.",templat,True,True,True,1,defend,"[('Hana', 'defend')]",0.172
+utility,simulasi,civilian,info_sandera,defend,Hana,santai,"Aku rasa Hana bukan Hitman, tuduhannya belum ada bukti. Kayaknya dia korban sandera.",templat,True,True,True,1,defend,"[('Hana', 'defend')]",0.166
+utility,simulasi,hitman,info_sandera,defend,Hana,gaul,"Gw rasa Hana bukan Hitman, dia cuma korban sandera.",templat,True,True,True,1,defend,"[('Hana', 'defend')]",0.174
+utility,simulasi,spy,info_sandera,defend,Gita,kalem,"Jangan salah vote, Gita bukan Hitman. Dia korban sandera.",templat,True,True,True,1,defend,"[('Gita', 'defend')]",0.172
+utility,simulasi,civilian,info_sandera,defend,Gita,santai,"Jangan salah vote, Gita bukan Hitman. Dia korban sandera.",templat,True,True,False,2,defend,"[('Gita', 'defend')]",0.352
+utility,simulasi,civilian,info_sandera,defend,Gita,gaul,"Gw rasa Gita bukan Hitman, dia cuma korban sandera.",templat,True,True,True,1,defend,"[('Gita', 'defend')]",0.172
+utility,simulasi,civilian,tuduh,offend,Citra,kalem,"Citra menuduh atau vote saya, padahal saya tahu saya bukan Hitman. Makanya saya curiga Citra.",templat,True,True,True,1,offend,"[('Citra', 'offend')]",0.172
+utility,simulasi,civilian,tuduh,offend,Citra,santai,Menurutku Citra patut dicurigai.,templat,True,True,True,1,offend,"[('Citra', 'offend')]",0.172

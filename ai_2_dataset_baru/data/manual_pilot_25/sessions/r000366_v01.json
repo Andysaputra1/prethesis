@@ -1,0 +1,212 @@
+{
+  "job": {
+    "job_id": "r000366_v01",
+    "case_name": "memory_outside_window",
+    "case_description": "14-16 pesan total. Nama target hanya disebut sebelum 12 konteks terakhir. Dalam jendela, ada pesan yang meneruskan acuan dengan jelas dan menyimpan anotasi target berdasarkan pesan lama. Pesan sekarang merujuk target sama. Nama target tidak muncul dalam teks 12 konteks terakhir atau pesan sekarang; target diketahui lewat memori.",
+    "source": {
+      "source_row": 366,
+      "source_group": "1182fd9a07195420b523",
+      "teks_chat": "kalau gw Hitman, ngapain gw buka urutan aksi yang justru bikin diri gw gampang dicurigai",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 14,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "memory_outside_window",
+    "participants": [
+      "Eko",
+      "Fina",
+      "Gilang",
+      "Hana",
+      "Wawan"
+    ],
+    "focus_player": "Wawan",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Eko",
+        "teks_chat": "Aku curiga Wawan Hitman karena sangat pasif hari ini.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Wawan",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Fina",
+        "teks_chat": "Belum tentu dia Hitman, mungkin koneksinya sedang bermasalah.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Wawan",
+            "relasi": "defend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Gilang",
+        "teks_chat": "Tapi permainan kan sudah berjalan dari tadi, masa masih diam.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Wawan",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Hana",
+        "teks_chat": "Aku juga curiga dia Hitman, dari tadi tidak menjawab.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Wawan",
+            "relasi": "offend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Eko",
+        "teks_chat": "Kita kan butuh semua orang ikut ngomong biar ada info.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Fina",
+        "teks_chat": "Aku tetap membela dia; belum ada alasan selain jeda chat.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Wawan",
+            "relasi": "defend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Gilang",
+        "teks_chat": "Waktu diskusi kita terbatas loh, diam merugikan kita semua.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Hana",
+        "teks_chat": "Iya, aku juga ingin vote dia kalau alasannya tidak jelas.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Wawan",
+            "relasi": "offend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Eko",
+        "teks_chat": "Bagaimana kalau kita jadikan dia target vote saja biar aman?",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Wawan",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Fina",
+        "teks_chat": "Jangan gegabah, belum tentu dia pelakunya.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Wawan",
+            "relasi": "defend",
+            "bukti_pesan": [
+              9
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Gilang",
+        "teks_chat": "Bahaya juga kalau ternyata kita membuang civilian.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Hana",
+        "teks_chat": "Iya, tapi kalau dibiarkan malah tambah berisiko.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Eko",
+        "teks_chat": "Pokoknya aku setuju, langsung turunin dia sekarang juga.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Wawan",
+            "relasi": "offend",
+            "bukti_pesan": [
+              9
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Fina",
+        "teks_chat": "Aku sangat yakin dia itu cuma civilian biasa, jangan main asal singkirkan saja.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Wawan",
+            "relasi": "defend",
+            "bukti_pesan": [
+              13
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 4.txt"
+  },
+  "revisi": [
+    {
+      "pesan": 3,
+      "kategori": "label",
+      "alasan": "Pertanyaan retoris 'masa masih diam' membantah pembelaan dan menyudutkan Wawan"
+    },
+    {
+      "pesan": 5,
+      "kategori": "meta",
+      "alasan": "Menjelaskan kebutuhan kubu civilian seperti deskripsi game; kaku"
+    }
+  ]
+}

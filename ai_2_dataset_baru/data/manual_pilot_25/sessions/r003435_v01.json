@@ -1,0 +1,119 @@
+{
+  "job": {
+    "job_id": "r003435_v01",
+    "case_name": "second_person",
+    "case_description": "Kamu/lu: gunakan pergantian pembicara dan teks yang jelas. Tanpa acuan jelas, target tidak_diketahui.",
+    "source": {
+      "source_row": 3435,
+      "source_group": "e33cc6503d3ece4b99a8",
+      "teks_chat": "bukan aku yang pakai Gag Order, jangan asal cocoklogi",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 6,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "second_person",
+    "participants": [
+      "Gilang",
+      "Jojo",
+      "Hani",
+      "Kiki"
+    ],
+    "focus_player": "Jojo",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Gilang",
+        "teks_chat": "Jojo lambat membalas, aku curiga dia Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Jojo",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Jojo",
+        "teks_chat": "Aduh sori, pesannya baru masuk nih di layarku.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Jojo",
+            "relasi": "defend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Hani",
+        "teks_chat": "Kok bisa telat gitu? Aneh lu Jo dari tadi.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Jojo",
+            "relasi": "offend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Gilang",
+        "teks_chat": "Makanya, mencurigakan banget lu lagian.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Jojo",
+            "relasi": "offend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Jojo",
+        "teks_chat": "Logikanya kalau aku hitman masa iya aku sengaja balesnya telat pas lagi dicecar gini.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Jojo",
+            "relasi": "defend",
+            "bukti_pesan": [
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Kiki",
+        "teks_chat": "Bener kata Jojo, kalau lu jadi pelakunya pasti lu bakal lebih aktif cari alibi daripada diem.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Jojo",
+            "relasi": "defend",
+            "bukti_pesan": [
+              5
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 52.txt"
+  }
+}

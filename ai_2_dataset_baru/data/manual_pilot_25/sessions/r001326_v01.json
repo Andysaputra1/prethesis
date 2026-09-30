@@ -1,0 +1,104 @@
+{
+  "job": {
+    "job_id": "r001326_v01",
+    "case_name": "interruption",
+    "case_description": "Pembahasan target disela obrolan waktu/ronde; kaitan kembali ke target masih jelas.",
+    "source": {
+      "source_row": 1326,
+      "source_group": "942c6d5adab631f4899a",
+      "teks_chat": "kalau memang Spy, siapa yang lu kawal semalam?",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 9,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "interruption",
+    "participants": [
+      "Galih",
+      "Hani",
+      "Imam",
+      "Joko"
+    ],
+    "focus_player": "Hani",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Galih",
+        "teks_chat": "Hani tadi menyebut dua pilihan Guard berbeda untuk malam yang sama.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Imam",
+        "teks_chat": "Kita perlu meminta penjelasan soal perbedaan itu.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Hani",
+        "teks_chat": "Aku salah menyebut nama pertama, lalu mengoreksinya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Joko",
+        "teks_chat": "Berapa sisa waktu diskusi sekarang?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Galih",
+        "teks_chat": "Sekitar empat puluh detik.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Imam",
+        "teks_chat": "Masih ada waktu untuk satu penjelasan.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Joko",
+        "teks_chat": "Oke, lanjut bahas klaim tadi.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Imam",
+        "teks_chat": "Hani, bagian mana yang salah ketik dan kapan kamu mengoreksinya?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Galih",
+        "teks_chat": "Aku curiga dia Hitman yang sedang mengganti cerita setelah ditanya. Aku ingin vote dia.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Hani",
+            "relasi": "offend",
+            "bukti_pesan": [
+              8
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 24.txt"
+  },
+  "revisi": [
+    {
+      "pesan": 7,
+      "kategori": "tidak_natural",
+      "alasan": "Kaku ('Baik, lanjutkan pembahasan')"
+    }
+  ]
+}

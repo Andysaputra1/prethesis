@@ -1,0 +1,104 @@
+{
+  "job": {
+    "job_id": "r003674_v01",
+    "case_name": "explicit",
+    "case_description": "Target eksplisit di pesan sekarang. Contoh: Aku yakin bukan Andy = defend Andy.",
+    "source": {
+      "source_row": 3674,
+      "source_group": "207246ce6d059b05be75",
+      "teks_chat": "Fix bukan gw Hitman, role gw Stalker, tapi cooldown peek-ku belum selesai",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 5,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "explicit",
+    "participants": [
+      "Joko",
+      "Tari",
+      "Kiki"
+    ],
+    "focus_player": "Tari",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Joko",
+        "teks_chat": "Sepertinya Tari pelakunya pada putaran ini.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Tari",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Tari",
+        "teks_chat": "Enak saja, aku bukan Hitman!",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Tari",
+            "relasi": "defend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Kiki",
+        "teks_chat": "Tari, pembelaan kamu cepat sekali, sangat mencurigakan.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Tari",
+            "relasi": "offend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Tari",
+        "teks_chat": "Tentu saja aku membela diri karena aku memang tidak bersalah.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Tari",
+            "relasi": "defend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Joko",
+        "teks_chat": "Aku yakin bukan Tari, respons cepat itu wajar untuk seorang Civilian.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Tari",
+            "relasi": "defend",
+            "bukti_pesan": [
+              5
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 57.txt"
+  }
+}

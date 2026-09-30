@@ -1,0 +1,133 @@
+{
+  "job": {
+    "job_id": "r002933_v01",
+    "case_name": "outside_window_unknown",
+    "case_description": "14-16 pesan total. Pembahasan lama telah putus/beralih. Teks dan anotasi 12 konteks terakhir tidak cukup menentukan acuan sekarang. Target harus tidak_diketahui; jangan menggunakan informasi lama yang tidak tersedia dalam input.",
+    "source": {
+      "source_row": 2933,
+      "source_group": "6e1a799a4dcd6379d327",
+      "teks_chat": "kok cuma Yuni yang langsung tahu siapa yang harus dicurigai setelah fase malam? Informasinya dari mana kalau bukan hitman?",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 14,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "outside_window_unknown",
+    "participants": [
+      "Gani",
+      "Hani",
+      "Irfan",
+      "Jojo"
+    ],
+    "focus_player": "Hani",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Gani",
+        "teks_chat": "Hani membela diri sebelum ditanya, aku curiga dia Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Hani",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Hani",
+        "teks_chat": "Beralih sebentar, aku belum paham Guard.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Irfan",
+        "teks_chat": "Itu skill milik Spy.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Jojo",
+        "teks_chat": "Kapan memilih pemain yang dilindungi?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Gani",
+        "teks_chat": "Saat fase malam.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Hani",
+        "teks_chat": "Berapa pemain yang dipilih?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Irfan",
+        "teks_chat": "Satu pemain untuk dilindungi.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Jojo",
+        "teks_chat": "Kalau malam berikutnya ingin pilih orang yang sama?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Gani",
+        "teks_chat": "Tidak boleh memilih target sama dua malam berturut-turut.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Hani",
+        "teks_chat": "Baik, berarti perlu mengganti pilihan pada malam berikutnya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Irfan",
+        "teks_chat": "Iya, batasan itu bagian dari aturan Guard.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Jojo",
+        "teks_chat": "Terima kasih, sudah lebih jelas.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Gani",
+        "teks_chat": "Sekarang kita bisa melanjutkan pembahasan sebelumnya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Hani",
+        "teks_chat": "Pembelaannya terlalu cepat, aku yakin dia pelakunya. Vote dia saja!",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "tidak_diketahui",
+            "relasi": "offend",
+            "bukti_pesan": []
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 42.txt"
+  }
+}

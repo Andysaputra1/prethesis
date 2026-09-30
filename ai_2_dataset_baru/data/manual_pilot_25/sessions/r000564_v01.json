@@ -1,0 +1,68 @@
+{
+  "job": {
+    "job_id": "r000564_v01",
+    "case_name": "negation",
+    "case_description": "Negasi menentukan relasi: Andy Hitman berbeda dari Andy bukan Hitman.",
+    "source": {
+      "source_row": 564,
+      "source_group": "0edbc0d998c16c24cc65",
+      "teks_chat": "dia salah baca gerakanku, aku bukan Hitman",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 3,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "negation",
+    "participants": [
+      "Aldi",
+      "Bima",
+      "Citra"
+    ],
+    "focus_player": "Bima",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Aldi",
+        "teks_chat": "Bima belum membalas lagi sejak diskusi dimulai.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Citra",
+        "teks_chat": "Aku curiga Bima Hitman yang sengaja diam agar tidak ditanya.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Bima",
+            "relasi": "offend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Aldi",
+        "teks_chat": "Bima tidak pantas dituduh hanya karena diam. Kita belum tahu apakah dia pasif, bermasalah koneksi, atau terkena efek skill.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Bima",
+            "relasi": "defend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 9.txt"
+  }
+}

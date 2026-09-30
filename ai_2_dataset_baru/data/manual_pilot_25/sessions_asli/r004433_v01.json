@@ -1,0 +1,66 @@
+{
+  "job": {
+    "job_id": "r004433_v01",
+    "case_name": "short_history_3",
+    "case_description": "Awal diskusi dengan tepat 3 pesan sebelumnya. Acuan tidak harus berada di pesan terakhir.",
+    "source": {
+      "source_row": 4433,
+      "source_group": "0cc33cf52f72b480eef5",
+      "teks_chat": "aku tidak bilang kamu Hitman, tapi cara kamu membela si I itu mencurigakan banget",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 4,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "short_history_3",
+    "participants": [
+      "Bima",
+      "Gisel",
+      "Toni"
+    ],
+    "focus_player": "Toni",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Bima",
+        "teks_chat": "Pagi semuanya, ada yang tahu siapa yang tumbang malam tadi?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Toni",
+        "teks_chat": "Identitasnya memang disembunyikan oleh sistem game ini.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Gisel",
+        "teks_chat": "Berarti kita perlu membahas isi klaim dan alasan dalam chat.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Bima",
+        "teks_chat": "Aku curiga Toni Hitman karena belum menjelaskan klaim rolenya.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Toni",
+            "relasi": "offend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 65.txt"
+  }
+}

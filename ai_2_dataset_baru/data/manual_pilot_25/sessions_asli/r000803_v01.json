@@ -1,0 +1,130 @@
+{
+  "job": {
+    "job_id": "r000803_v01",
+    "case_name": "reference_end",
+    "case_description": "Tepat 12 konteks. Penyebutan target eksplisit di pesan konteks terakhir.",
+    "source": {
+      "source_row": 803,
+      "source_group": "abcd5ad634f431c9ce8d",
+      "teks_chat": "gw stalker asli, info peek gw soal si Jovan bisa jadi dasar voting",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 13,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "reference_end",
+    "participants": [
+      "Umar",
+      "Vina",
+      "Wawan",
+      "Xena",
+      "Yogi"
+    ],
+    "focus_player": "Yogi",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Umar",
+        "teks_chat": "Bagaimana cara membedakan diam karena koneksi dan karena skill?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Vina",
+        "teks_chat": "Dari chat saja belum tentu bisa.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Wawan",
+        "teks_chat": "Kita hanya melihat pesan yang terkirim.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Xena",
+        "teks_chat": "Ada pemain yang baru menjawab setelah lama diam.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Umar",
+        "teks_chat": "Kita bisa menanyakan alasannya saat dia bisa membalas.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Xena",
+        "teks_chat": "Alasannya koneksi sempat terputus.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Vina",
+        "teks_chat": "Itu mungkin, tetapi kita belum memastikan penyebabnya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Wawan",
+        "teks_chat": "Benar, jangan langsung menyebutnya korban Gag Order.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Umar",
+        "teks_chat": "Kalau ada dugaan sengaja menghindar, perlu alasan dari isi chat juga.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Vina",
+        "teks_chat": "Apa pertanyaan yang belum dijawab?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Xena",
+        "teks_chat": "Pertanyaan tentang alasan mengajak vote tadi.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Umar",
+        "teks_chat": "Yogi belum menjawab alasan votenya. Aku curiga Yogi Hitman yang sengaja menghindar.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Yogi",
+            "relasi": "offend",
+            "bukti_pesan": [
+              12
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Wawan",
+        "teks_chat": "Aku juga curiga dia, penjelasan soal koneksi belum menjawab pertanyaan alasan vote. Aku ingin vote dia.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Yogi",
+            "relasi": "offend",
+            "bukti_pesan": [
+              12
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 16.txt"
+  }
+}

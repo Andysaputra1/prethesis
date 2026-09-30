@@ -1,0 +1,159 @@
+{
+  "job": {
+    "job_id": "r000559_v01",
+    "case_name": "self",
+    "case_description": "Defend diri sendiri atau offend/vote diri sendiri sesuai label. Target = pengirim.",
+    "source": {
+      "source_row": 559,
+      "source_group": "1f3e283be1c996fcc011",
+      "teks_chat": "kalau mau vote aku, minimal jelaskan bukti konkretnya",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 10,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "self",
+    "participants": [
+      "Wawan",
+      "Xena",
+      "Yoga",
+      "Zaki"
+    ],
+    "focus_player": "Xena",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Wawan",
+        "teks_chat": "Ada ajakan vote yang berubah setelah muncul penjelasan baru di chat, ya?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Yoga",
+        "teks_chat": "Xena tadi mengajak vote, lalu bilang ingin menunda. Aku curiga Xena.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Xena",
+            "relasi": "offend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Xena",
+        "teks_chat": "Aku bukan Hitman. Aku membaca penjelasan baru, jadi menarik dugaan awal.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Xena",
+            "relasi": "defend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Zaki",
+        "teks_chat": "Pasti lu Hitman yang bingung ngarang alibi biar kelihatan sibuk.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Xena",
+            "relasi": "offend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Wawan",
+        "teks_chat": "Coba dengerin dulu penjelasannya dia sebelum langsung ngejudge.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Xena",
+            "relasi": "defend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Yoga",
+        "teks_chat": "Halah, nggak usah didengerin, pasti isinya bohong semua.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Xena",
+            "relasi": "offend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Xena",
+        "teks_chat": "Sumpah demi apapun aku nggak bohong sama sekali!",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Xena",
+            "relasi": "defend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Zaki",
+        "teks_chat": "Udah fix vote Xena aja guys, bukti kebohongannya udah jelas.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Xena",
+            "relasi": "offend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Wawan",
+        "teks_chat": "Waktunya sisa dikit nih, yakin mau langsung ambil tindakan?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Xena",
+        "teks_chat": "Aku bukan pelakunya. Mengoreksi dugaan setelah membaca chat baru bukan berarti aku menyusun kebohongan.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Xena",
+            "relasi": "defend",
+            "bukti_pesan": [
+              10
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 9.txt"
+  }
+}

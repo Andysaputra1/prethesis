@@ -1,0 +1,60 @@
+{
+  "job": {
+    "job_id": "r000990_v01",
+    "case_name": "short_history_2",
+    "case_description": "Awal diskusi dengan tepat 2 pesan sebelumnya. Gunakan hanya petunjuk yang tersedia.",
+    "source": {
+      "source_row": 990,
+      "source_group": "877253ddf72bfa12c7ac",
+      "teks_chat": "aku stalker, jadi klaim role si Reno itu kelihatan palsu banget",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 3,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "short_history_2",
+    "participants": [
+      "Fikri",
+      "Gani",
+      "Hani"
+    ],
+    "focus_player": "Hani",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Fikri",
+        "teks_chat": "Kayaknya Hani belum bersuara sama sekali ya dari tadi?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Gani",
+        "teks_chat": "Iya tuh, ngga nyumbang pendapat apa-apa.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Fikri",
+        "teks_chat": "Pasti Hani ini Hitman yang sengaja pasif biar ngga dicurigai sama kita, ayo vote dia!",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Hani",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 19.txt"
+  }
+}

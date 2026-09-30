@@ -1,0 +1,53 @@
+{
+  "job": {
+    "job_id": "r000191_v01",
+    "case_name": "explicit",
+    "case_description": "Target eksplisit di pesan sekarang. Contoh: Aku yakin bukan Andy = defend Andy.",
+    "source": {
+      "source_row": 191,
+      "source_group": "9825381d0c11238e1824",
+      "teks_chat": "jangan asal vote, tapi sejauh ini Fikri paling mencurigakan dari isi chatnya",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 2,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "explicit",
+    "participants": [
+      "Riki",
+      "Santi"
+    ],
+    "focus_player": "Riki",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Riki",
+        "teks_chat": "Dalam diskusi tadi, beberapa pemain mengubah nama yang mereka ajak vote.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Santi",
+        "teks_chat": "Yang paling jelas kelihatan memanipulasi arah vote itu adalah Riki, vote Riki sekarang!",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Riki",
+            "relasi": "offend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 2.txt"
+  }
+}

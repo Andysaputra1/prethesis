@@ -1,0 +1,133 @@
+{
+  "job": {
+    "job_id": "r001616_v01",
+    "case_name": "outside_window_unknown",
+    "case_description": "14-16 pesan total. Pembahasan lama telah putus/beralih. Teks dan anotasi 12 konteks terakhir tidak cukup menentukan acuan sekarang. Target harus tidak_diketahui; jangan menggunakan informasi lama yang tidak tersedia dalam input.",
+    "source": {
+      "source_row": 1616,
+      "source_group": "2be1f7cad9a421963549",
+      "teks_chat": "gw dituduh karena aktif, sedangkan pemain yang pasif total malah dibiarkan, aneh nggak?",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 14,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "outside_window_unknown",
+    "participants": [
+      "Lina",
+      "Nanda",
+      "Opan",
+      "Putri"
+    ],
+    "focus_player": "Opan",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Nanda",
+        "teks_chat": "Opan asal mengajak vote tanpa alasan. Aku curiga Opan Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Opan",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Lina",
+        "teks_chat": "Kita jeda soal nama. Apa yang sebenarnya diketahui pemain tentang aksi malam?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Putri",
+        "teks_chat": "Setiap role mengetahui informasi pribadinya sendiri, bukan seluruh aksi pemain lain.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Nanda",
+        "teks_chat": "Apakah Civilian bisa melihat hasil Guard?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Lina",
+        "teks_chat": "Tidak, Civilian tidak memiliki akses ke aksi rahasia Spy.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Putri",
+        "teks_chat": "Begitu juga hasil Peek milik Stalker.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Nanda",
+        "teks_chat": "Kalau seseorang menuliskan hasil itu di chat?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Lina",
+        "teks_chat": "Itu klaim pemain yang bisa dipercaya atau diragukan, bukan bukti dari sistem.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Putri",
+        "teks_chat": "Kita bisa membandingkan konsistensi klaimnya dengan pesan sebelumnya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Nanda",
+        "teks_chat": "Dan memeriksa apakah sesuai batasan skill, ya?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Lina",
+        "teks_chat": "Iya, tanpa mengaku melihat role asli orang lain.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Putri",
+        "teks_chat": "Oke, batas informasi publiknya sudah jelas.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Nanda",
+        "teks_chat": "Sekarang kembali ke orang yang dibahas sebelum pertanyaan aksi malam tadi.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Lina",
+        "teks_chat": "Aku ingin vote dia karena terus mengajak orang tanpa alasan. Aku curiga dia Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "tidak_diketahui",
+            "relasi": "offend",
+            "bukti_pesan": []
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 28.txt"
+  }
+}

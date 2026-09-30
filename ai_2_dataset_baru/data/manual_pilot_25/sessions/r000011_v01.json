@@ -1,0 +1,60 @@
+{
+  "job": {
+    "job_id": "r000011_v01",
+    "case_name": "self",
+    "case_description": "Defend diri sendiri atau offend/vote diri sendiri sesuai label. Target = pengirim.",
+    "source": {
+      "source_row": 11,
+      "source_group": "9c7602507958d1b1a0b0",
+      "teks_chat": "bukan sekadar feeling, A konsisten menghindari pembahasan soal siapa yang kena hostage",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 2,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "self",
+    "participants": [
+      "Tono",
+      "Budi"
+    ],
+    "focus_player": "Tono",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Budi",
+        "teks_chat": "Tono belum mengetik sejak diskusi dibuka. Apa ada kendala?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Tono",
+        "teks_chat": "Nggak ada, aku cuma malas ngetik. Kalau kalian curiga vote aku saja sekarang.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Tono",
+            "relasi": "offend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 78.txt"
+  },
+  "revisi": [
+    {
+      "pesan": 2,
+      "kategori": "tidak_natural",
+      "alasan": "Jawaban 'Bukan' tidak nyambung dengan pertanyaan 'Apa ada kendala?'"
+    }
+  ]
+}

@@ -1,0 +1,176 @@
+{
+  "job": {
+    "job_id": "r001774_v01",
+    "case_name": "memory_outside_window",
+    "case_description": "14-16 pesan total. Nama target hanya disebut sebelum 12 konteks terakhir. Dalam jendela, ada pesan yang meneruskan acuan dengan jelas dan menyimpan anotasi target berdasarkan pesan lama. Pesan sekarang merujuk target sama. Nama target tidak muncul dalam teks 12 konteks terakhir atau pesan sekarang; target diketahui lewat memori.",
+    "source": {
+      "source_row": 1774,
+      "source_group": "a4a1d9280ff48b818e16",
+      "teks_chat": "Jangan vote gw, alibi gw jelas dari awal; mending eksekusi Rian yang jawabannya muter terus",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 14,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "memory_outside_window",
+    "participants": [
+      "Putra",
+      "Qori",
+      "Rina",
+      "Sani",
+      "Tomi"
+    ],
+    "focus_player": "Qori",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Putra",
+        "teks_chat": "Qori belum menjawab pertanyaan soal alasan vote. Aku curiga Qori Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Qori",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Rina",
+        "teks_chat": "Mungkin dia sedang ada masalah dengan jaringan internetnya.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Qori",
+            "relasi": "defend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Sani",
+        "teks_chat": "Atau jangan-jangan dia sedang sibuk menyusun rencana jahat.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Qori",
+            "relasi": "offend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Tomi",
+        "teks_chat": "Bisa jadi, hal seperti itu sering terjadi di permainan ini.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Putra",
+        "teks_chat": "Kita tidak boleh langsung menuduh tanpa bukti yang kuat.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Qori",
+            "relasi": "defend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Rina",
+        "teks_chat": "Iya, aku rasa dia hanya warga biasa.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Qori",
+            "relasi": "defend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Sani",
+        "teks_chat": "Jawabannya membuatku tetap curiga dia Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Qori",
+            "relasi": "offend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Tomi",
+        "teks_chat": "Bagaimana kalau kita biarkan saja dahulu untuk sekarang?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Putra",
+        "teks_chat": "Aku setuju, kita pantau saja perkembangannya nanti.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Rina",
+        "teks_chat": "Semoga dia segera merespons dengan jelas.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Sani",
+        "teks_chat": "Waktu ronde pertama ini sudah mau selesai.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Tomi",
+        "teks_chat": "Belum ada keputusan yang bulat di antara kita semua.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Putra",
+        "teks_chat": "Ayo tentukan dugaan sebelum waktu diskusi selesai.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Sani",
+        "teks_chat": "Aku tetap tidak percaya, orang yang pesannya selalu telat itu pasti hitman, kita pilih dia!",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Qori",
+            "relasi": "offend",
+            "bukti_pesan": [
+              7
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 30.txt"
+  }
+}

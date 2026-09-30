@@ -1,0 +1,73 @@
+{
+  "job": {
+    "job_id": "r004585_v01",
+    "case_name": "negation",
+    "case_description": "Negasi menentukan relasi: Andy Hitman berbeda dari Andy bukan Hitman.",
+    "source": {
+      "source_row": 4585,
+      "source_group": "c6f4fdb26e7563ee401e",
+      "teks_chat": "si N jawabannya berubah-ubah, fix mencurigakan",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 4,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "negation",
+    "participants": [
+      "Fira",
+      "Hana",
+      "Irul"
+    ],
+    "focus_player": "Irul",
+    "panggilan": [
+      {
+        "pemain": "Irul",
+        "sebutan": [
+          "Rul"
+        ]
+      }
+    ],
+    "messages": [
+      {
+        "pengirim": "Fira",
+        "teks_chat": "Irul kenapa pasif sekali dari awal permainan tadi?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Hana",
+        "teks_chat": "Iya Rul, jangan diam saja, nanti orang-orang mengira yang tidak-tidak.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Irul",
+        "teks_chat": "Aku sedang menyimak alur diskusi.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Fira",
+        "teks_chat": "Irul bukan sekadar Civilian pasif, dia ini jelas Hitman yang sedang mencari aman, mari kita singkirkan dia.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Irul",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 68.txt"
+  }
+}

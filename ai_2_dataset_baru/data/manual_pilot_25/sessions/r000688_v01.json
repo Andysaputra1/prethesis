@@ -1,0 +1,132 @@
+{
+  "job": {
+    "job_id": "r000688_v01",
+    "case_name": "self",
+    "case_description": "Defend diri sendiri atau offend/vote diri sendiri sesuai label. Target = pengirim.",
+    "source": {
+      "source_row": 688,
+      "source_group": "43886da7b58763fb7899",
+      "teks_chat": "aku tidak sedang mengalihkan isu, aku cuma membantah tuduhan yang memang salah sasaran",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 7,
+    "pesan_typo_ringan": [
+      5
+    ]
+  },
+  "session": {
+    "case_name": "self",
+    "participants": [
+      "Hasan",
+      "Irfan",
+      "Joko"
+    ],
+    "focus_player": "Hasan",
+    "panggilan": [
+      {
+        "pemain": "Hasan",
+        "sebutan": [
+          "san"
+        ]
+      }
+    ],
+    "messages": [
+      {
+        "pengirim": "Irfan",
+        "teks_chat": "Ada yang menarik ajakan vote tanpa menjelaskan alasannya?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Joko",
+        "teks_chat": "San tadi menarik ajakannya setelah membaca beberapa pesan baru.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Irfan",
+        "teks_chat": "Hasan, aku curiga kamu Hitman yang sengaja mengubah arah tuduhan.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Hasan",
+            "relasi": "offend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Joko",
+        "teks_chat": "Aku juga curiga dia karena belum menjelaskan perubahannya.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Hasan",
+            "relasi": "offend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Hasan",
+        "teks_chat": "Aku bukan Hitman. Aku sadar dugaan awalku blm punya alasan kuat.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Hasan",
+            "relasi": "defend",
+            "bukti_pesan": [
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Irfan",
+        "teks_chat": "Aku tetap curiga dia menggunakan alasan itu untuk lolos.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Hasan",
+            "relasi": "offend",
+            "bukti_pesan": [
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Hasan",
+        "teks_chat": "Aku tidak sedang memfitnah siapa pun. Aku menarik ajakan vote supaya kita tidak memutuskan dari dugaan yang lemah.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Hasan",
+            "relasi": "defend",
+            "bukti_pesan": [
+              7
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 13.txt"
+  },
+  "revisi": [
+    {
+      "pesan": 5,
+      "kategori": "singkatan",
+      "alasan": "Slot typo [5] tidak berisi satu singkatan pun."
+    }
+  ]
+}

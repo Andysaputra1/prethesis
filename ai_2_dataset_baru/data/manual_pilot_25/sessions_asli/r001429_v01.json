@@ -1,0 +1,74 @@
+{
+  "job": {
+    "job_id": "r001429_v01",
+    "case_name": "negation",
+    "case_description": "Negasi menentukan relasi: Andy Hitman berbeda dari Andy bukan Hitman.",
+    "source": {
+      "source_row": 1429,
+      "source_group": "6aafda8a34864a27a7ce",
+      "teks_chat": "gw nggak tahu apa-apa, yang sok punya info malah si L",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 4,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "negation",
+    "participants": [
+      "Heri",
+      "Iis",
+      "Joko"
+    ],
+    "focus_player": "Iis",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Heri",
+        "teks_chat": "Iis, kenapa tadi menarik ajakan vote?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Iis",
+        "teks_chat": "Aku sadar dugaan awalku belum punya dasar.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Joko",
+        "teks_chat": "Iis belum pantas dituduh hanya karena mengoreksi dugaan.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Iis",
+            "relasi": "defend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Heri",
+        "teks_chat": "Menurutku Iis bukan sekadar ragu, dia sengaja mengubah cerita karena Hitman. Aku curiga Iis.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Iis",
+            "relasi": "offend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 25.txt"
+  }
+}

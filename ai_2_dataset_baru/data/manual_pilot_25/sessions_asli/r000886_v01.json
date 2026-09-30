@@ -1,0 +1,178 @@
+{
+  "job": {
+    "job_id": "r000886_v01",
+    "case_name": "reference_middle",
+    "case_description": "Tepat 12 konteks. Penyebutan target eksplisit di pesan konteks ke-6 atau ke-7.",
+    "source": {
+      "source_row": 886,
+      "source_group": "ff653d992461f81d1da0",
+      "teks_chat": "semalam aku peek O, dia aman, jadi tuduhan ke dia cuma pengalihan",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 13,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "reference_middle",
+    "participants": [
+      "Citra",
+      "Dodi",
+      "Erna",
+      "Fikri",
+      "Gani"
+    ],
+    "focus_player": "Fikri",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Citra",
+        "teks_chat": "Ada yang nyadar nggak sih tadi ada yang aneh pas diskusi awal?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Dodi",
+        "teks_chat": "Aneh gimana maksudnya?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Erna",
+        "teks_chat": "Kayaknya ada yang sering banget ganti target tuduhannya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Fikri",
+        "teks_chat": "Namanya juga baru awal, info kan masih abu-abu semua.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Gani",
+        "teks_chat": "Tpi kalau sering ganti target gitu, biasanya lagi nyari kambing hitam.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Citra",
+        "teks_chat": "Fikri tadi menuduh Dodi, lalu Erna tanpa menjelaskan perubahan itu. Aku curiga Fikri.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Fikri",
+            "relasi": "offend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Dodi",
+        "teks_chat": "Nah kan, bener, Fikri ini mencurigakan banget sih polanya.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Fikri",
+            "relasi": "offend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Erna",
+        "teks_chat": "Bisa jadi dia Hitman yang sengaja mau bikin kita bingung.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Fikri",
+            "relasi": "offend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Fikri",
+        "teks_chat": "Aku bukan Hitman. Aku menarik dugaan awal setelah membaca jawaban Dodi.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Fikri",
+            "relasi": "defend",
+            "bukti_pesan": [
+              9
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Gani",
+        "teks_chat": "Alasan klasik, orang panik mah pasti banyak ngelesnya.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Fikri",
+            "relasi": "offend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Citra",
+        "teks_chat": "Udah kumpulin suara buat Fikri aja biar markas aman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Fikri",
+            "relasi": "offend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Dodi",
+        "teks_chat": "Setuju, lebih baik keluarin dia sebelum dia bertingkah lagi.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Fikri",
+            "relasi": "offend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Erna",
+        "teks_chat": "Wajar kok kalau dia meralat tuduhannya setelah ada konfirmasi baru, mending kita nggak usah terburu-buru menyalahkan dia.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Fikri",
+            "relasi": "defend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 17.txt"
+  }
+}

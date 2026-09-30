@@ -1,0 +1,197 @@
+{
+  "job": {
+    "job_id": "r003421_v01",
+    "case_name": "reference_middle",
+    "case_description": "Tepat 12 konteks. Penyebutan target eksplisit di pesan konteks ke-6 atau ke-7.",
+    "source": {
+      "source_row": 3421,
+      "source_group": "0ad587a2dcee5afaa6d4",
+      "teks_chat": "jangan eksekusi berdasarkan vibes, nanti Hitman dapat kemenangan gratis",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 13,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "reference_middle",
+    "participants": [
+      "Budi",
+      "Caca",
+      "Doni",
+      "Edi",
+      "Fina",
+      "Gina"
+    ],
+    "focus_player": "Edi",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Budi",
+        "teks_chat": "Kok dari tadi ada yang diam aja ya?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Caca",
+        "teks_chat": "Aku curiga pemain yang diam itu Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "tidak_diketahui",
+            "relasi": "offend",
+            "bukti_pesan": []
+          }
+        ]
+      },
+      {
+        "pengirim": "Doni",
+        "teks_chat": "Biasanya sih hitman emang nyari aman dan gak mau menonjol.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Fina",
+        "teks_chat": "Jangan tuduh dia hanya karena diam, mungkin sedang membaca chat.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "tidak_diketahui",
+            "relasi": "defend",
+            "bukti_pesan": []
+          }
+        ]
+      },
+      {
+        "pengirim": "Gina",
+        "teks_chat": "Aku tetap curiga pemain itu Hitman karena tidak memberi pendapat.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "tidak_diketahui",
+            "relasi": "offend",
+            "bukti_pesan": []
+          }
+        ]
+      },
+      {
+        "pengirim": "Budi",
+        "teks_chat": "Edi yang kumaksud. Aku curiga Edi Hitman karena pasif.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Edi",
+            "relasi": "offend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Doni",
+        "teks_chat": "Oh iya bener juga, pantesan kerasa sepi banget.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Edi",
+            "relasi": "offend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Caca",
+        "teks_chat": "Mending kita vote aja dia sekalian biar kelar urusannya.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Edi",
+            "relasi": "offend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Fina",
+        "teks_chat": "Jangan langsung vote dia, mungkin sedang membaca ulang percakapan.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Edi",
+            "relasi": "defend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Gina",
+        "teks_chat": "Aku tetap curiga dia Hitman karena belum menjawab.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Edi",
+            "relasi": "offend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Budi",
+        "teks_chat": "Fix sih, kelakuan yang terlalu pasif kayak gitu tuh sus banget.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Edi",
+            "relasi": "offend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Doni",
+        "teks_chat": "Iya, mending singkirkan sebelum dia berulah malam nanti.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Edi",
+            "relasi": "offend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Fina",
+        "teks_chat": "Jangan deh, kasian mungkin aja dia emang civilian biasa yang lagi bingung mau ngapain.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Edi",
+            "relasi": "defend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 52.txt"
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "job": {
+    "job_id": "r000590_v01",
+    "case_name": "topic_switch",
+    "case_description": "Pembahasan berganti pemain; pesan sekarang mengikuti topik baru, bukan otomatis target lama.",
+    "source": {
+      "source_row": 590,
+      "source_group": "3180b75e62bc3b8b8448",
+      "teks_chat": "semalam aku nggak punya aksi, jadi jangan kaitkan aku dengan hostage",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 5,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "topic_switch",
+    "participants": [
+      "Aldo",
+      "Beni",
+      "Citra",
+      "Dodi",
+      "Erna"
+    ],
+    "focus_player": "Beni",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Aldo",
+        "teks_chat": "Dodi tadi menjawab pertanyaan sebelum selesai membaca isi pesannya, ya?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Beni",
+        "teks_chat": "Aku curiga Dodi Hitman yang asal menjawab supaya terlihat ikut diskusi.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Dodi",
+            "relasi": "offend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Citra",
+        "teks_chat": "Sekarang aku justru curiga Beni, dia menuduh orang lain tanpa menjelaskan alasannya.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Beni",
+            "relasi": "offend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Erna",
+        "teks_chat": "Beni belum pantas dituduh karena dugaan itu saja.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Beni",
+            "relasi": "defend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Aldo",
+        "teks_chat": "Beni belum tentu Hitman. Kita beri kesempatan dia menjelaskan alasan tuduhannya.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Beni",
+            "relasi": "defend",
+            "bukti_pesan": [
+              5
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 10.txt"
+  }
+}

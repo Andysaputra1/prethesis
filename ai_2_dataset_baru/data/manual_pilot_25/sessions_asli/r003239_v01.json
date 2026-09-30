@@ -1,0 +1,62 @@
+{
+  "job": {
+    "job_id": "r003239_v01",
+    "case_name": "interruption",
+    "case_description": "Pembahasan target disela obrolan waktu/ronde; kaitan kembali ke target masih jelas.",
+    "source": {
+      "source_row": 3239,
+      "source_group": "3bf14afcb04f6ce29c7c",
+      "teks_chat": "aku nggak punya alasan untuk melindungi Hitman, jadi jangan samakan pembelaanku dengan cover",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 2,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "interruption",
+    "participants": [
+      "Risa",
+      "Dika",
+      "Coki"
+    ],
+    "focus_player": "Coki",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Risa",
+        "teks_chat": "Waktu diskusi tinggal sepuluh detik. Coki belum terbukti Hitman, jangan vote tanpa alasan.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Coki",
+            "relasi": "defend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Dika",
+        "teks_chat": "Setuju, tuduhan ke dia belum punya dasar yang cukup.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Coki",
+            "relasi": "defend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 47.txt"
+  }
+}

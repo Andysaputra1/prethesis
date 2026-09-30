@@ -1,0 +1,144 @@
+{
+  "job": {
+    "job_id": "r004648_v01",
+    "case_name": "plural_reference",
+    "case_description": "Pesan sekarang memakai mereka/kalian/keduanya/berdua untuk dua pemain atau lebih yang jelas dari konteks, tanpa menyebut ulang nama mereka. Simpan semua pemain itu sebagai target.",
+    "source": {
+      "source_row": 4648,
+      "source_group": "a70455d4dff9df9bc747",
+      "teks_chat": "kalau tidak ada bantahan yang kuat, kita sepakati eksekusi Damar karena logikanya bolong",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 7,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "plural_reference",
+    "participants": [
+      "Wira",
+      "Yuda",
+      "Ziva"
+    ],
+    "focus_player": "",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Wira",
+        "teks_chat": "Yuda dan Ziva kok membalas pesan sangat lambat sejak kita berdiskusi tadi pagi?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Yuda",
+        "teks_chat": "Sinyalku sedang jelek, harap maklum.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Wira",
+        "teks_chat": "Aku curiga kalian berdua Hitman yang memakai alasan koneksi.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Yuda",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          },
+          {
+            "pemain": "Ziva",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Ziva",
+        "teks_chat": "Aku bukan Hitman, pesanku memang susah terkirim.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Ziva",
+            "relasi": "defend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Wira",
+        "teks_chat": "Aku curiga kalian berdua Hitman yang menghindari pertanyaan.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Yuda",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          },
+          {
+            "pemain": "Ziva",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Yuda",
+        "teks_chat": "Aku dan Ziva bukan Hitman, kami tidak berbohong soal koneksi.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Yuda",
+            "relasi": "defend",
+            "bukti_pesan": [
+              6
+            ]
+          },
+          {
+            "pemain": "Ziva",
+            "relasi": "defend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Wira",
+        "teks_chat": "Mereka berdua pasti bersekongkol dan berbohong setelah menjalankan aksinya, jangan ragu lagi untuk vote keduanya!",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Yuda",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          },
+          {
+            "pemain": "Ziva",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 68.txt"
+  }
+}

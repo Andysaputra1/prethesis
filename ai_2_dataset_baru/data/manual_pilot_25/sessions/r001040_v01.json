@@ -1,0 +1,222 @@
+{
+  "job": {
+    "job_id": "r001040_v01",
+    "case_name": "memory_outside_window",
+    "case_description": "14-16 pesan total. Nama target hanya disebut sebelum 12 konteks terakhir. Dalam jendela, ada pesan yang meneruskan acuan dengan jelas dan menyimpan anotasi target berdasarkan pesan lama. Pesan sekarang merujuk target sama. Nama target tidak muncul dalam teks 12 konteks terakhir atau pesan sekarang; target diketahui lewat memori.",
+    "source": {
+      "source_row": 1040,
+      "source_group": "81e8b2e341f0bd902023",
+      "teks_chat": "fix aku Spy, kalau kalian vote gue berarti kasih win gratis ke Hitman",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 14,
+    "pesan_typo_ringan": [
+      12
+    ]
+  },
+  "session": {
+    "case_name": "memory_outside_window",
+    "participants": [
+      "Kiki",
+      "Lala",
+      "Maman",
+      "Nando",
+      "Opi"
+    ],
+    "focus_player": "Maman",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Kiki",
+        "teks_chat": "Maman belum mengirim pesan sejak diskusi dibuka.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Lala",
+        "teks_chat": "Mungkin dia lagi nyiapin rencana jahat buat malam nanti.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Maman",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Nando",
+        "teks_chat": "Bisa jadi, Hitman kan suka ngumpet sambil nyimak diskusi.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Maman",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Opi",
+        "teks_chat": "Tapi belum tentu Hitman, bisa aja dia emang civilian yang bingung.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Maman",
+            "relasi": "defend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Kiki",
+        "teks_chat": "Iya sih, tapi tetep aja pasifnya keterlaluan banget.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Maman",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Lala",
+        "teks_chat": "Mending kita targetin dia aja daripada nyesel belakangan.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Maman",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Nando",
+        "teks_chat": "Aku setuju, orang pasif gitu biasanya pelakunya.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Maman",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Opi",
+        "teks_chat": "Jangan buru-buru, tunggu dia ngomong dulu.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Maman",
+            "relasi": "defend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Kiki",
+        "teks_chat": "Kalau dia nggak ngomong-ngomong gimana?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Lala",
+        "teks_chat": "Ya berarti fix dia Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Maman",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Nando",
+        "teks_chat": "Udahlah, vote aja langsung sekarang.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Maman",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Opi",
+        "teks_chat": "Aku membela dia; diam aja blm cukup buat ngajak vote.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Maman",
+            "relasi": "defend",
+            "bukti_pesan": [
+              11
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Kiki",
+        "teks_chat": "Kamu yakin mau biarin dia gitu aja?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Opi",
+        "teks_chat": "Aku tetap membela dia. Kita belum tahu penyebab diamnya, jadi jangan langsung menyebutnya Hitman.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Maman",
+            "relasi": "defend",
+            "bukti_pesan": [
+              12
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 21.txt"
+  },
+  "revisi": [
+    {
+      "pesan": 8,
+      "kategori": "label",
+      "alasan": "Menahan ajakan vote ('jangan buru-buru, tunggu dia ngomong') = membela Maman"
+    },
+    {
+      "pesan": 12,
+      "kategori": "singkatan",
+      "alasan": "Slot typo [12] tapi pesan tidak memuat singkatan ringan apa pun"
+    }
+  ]
+}

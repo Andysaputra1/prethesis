@@ -1,0 +1,110 @@
+{
+  "job": {
+    "job_id": "r004431_v01",
+    "case_name": "quotation",
+    "case_description": "Ada tuduhan yang dikutip; bedakan sikap pengirim dari ucapan orang yang dikutip.",
+    "source": {
+      "source_row": 4431,
+      "source_group": "15920d30f3c7c0bb6d39",
+      "teks_chat": "kalau vote ke aku sekarang, kita malah memberi ruang Hitman yang sebenarnya",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 6,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "quotation",
+    "participants": [
+      "Rama",
+      "Budi",
+      "Citra"
+    ],
+    "focus_player": "Rama",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Rama",
+        "teks_chat": "Kenapa ya tadi Budi menuduhku terus?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Budi",
+        "teks_chat": "Aku curiga Rama Hitman karena ajakan votenya berubah tanpa alasan.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Rama",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Citra",
+        "teks_chat": "Budi berganti alasan tuduhan, aku curiga dia Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Budi",
+            "relasi": "offend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Rama",
+        "teks_chat": "Aku juga curiga Budi Hitman karena alasannya berubah.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Budi",
+            "relasi": "offend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Budi",
+        "teks_chat": "Aku hanya mengamati situasi, wajar kalau analisisku berkembang.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Budi",
+            "relasi": "defend",
+            "bukti_pesan": [
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Citra",
+        "teks_chat": "Budi bilang 'Rama Hitman karena ajakan votenya berubah'. Aku tidak setuju, perubahan ajakan belum membuktikan Rama Hitman.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Rama",
+            "relasi": "defend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 65.txt"
+  }
+}

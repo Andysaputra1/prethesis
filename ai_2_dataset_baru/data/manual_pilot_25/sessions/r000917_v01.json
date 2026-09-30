@@ -1,0 +1,45 @@
+{
+  "job": {
+    "job_id": "r000917_v01",
+    "case_name": "first_message_unknown",
+    "case_description": "Pesan pertama tanpa konteks memakai dia/kamu/lu tanpa acuan jelas. Intent offend/defend tetap diketahui tetapi target tidak_diketahui; roster bukan bukti lawan bicara.",
+    "source": {
+      "source_row": 917,
+      "source_group": "f5c3964e329086bcaad9",
+      "teks_chat": "bukan aku pelakunya, semalam aku cuma guard satu orang sebagai Spy",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 1,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "first_message_unknown",
+    "participants": [
+      "Oki",
+      "Puji"
+    ],
+    "focus_player": "",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Oki",
+        "teks_chat": "Menurutku dia belum pantas divote; tuduhan Hitman itu belum berdasar.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "tidak_diketahui",
+            "relasi": "defend",
+            "bukti_pesan": []
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 18.txt"
+  }
+}

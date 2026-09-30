@@ -1,0 +1,61 @@
+{
+  "job": {
+    "job_id": "r003215_v01",
+    "case_name": "negation",
+    "case_description": "Negasi menentukan relasi: Andy Hitman berbeda dari Andy bukan Hitman.",
+    "source": {
+      "source_row": 3215,
+      "source_group": "a8287f6c570ed9f50036",
+      "teks_chat": "role-ku bukan hitman, dan aku tidak punya alasan buat mengarang cerita",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 2,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "negation",
+    "participants": [
+      "Bowo",
+      "Coki"
+    ],
+    "focus_player": "Coki",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Bowo",
+        "teks_chat": "Coki pasti Hitman, tadi mengaku Civilian sekarang mengaku Spy.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Coki",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Coki",
+        "teks_chat": "Aku bukan Hitman astaga, aku cuma salah ketik aja tadi pas panik.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Coki",
+            "relasi": "defend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 46.txt"
+  }
+}

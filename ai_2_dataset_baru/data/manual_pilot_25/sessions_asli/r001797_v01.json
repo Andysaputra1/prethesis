@@ -1,0 +1,116 @@
+{
+  "job": {
+    "job_id": "r001797_v01",
+    "case_name": "explicit",
+    "case_description": "Target eksplisit di pesan sekarang. Contoh: Aku yakin bukan Andy = defend Andy.",
+    "source": {
+      "source_row": 1797,
+      "source_group": "f5021d02ff40acc1332e",
+      "teks_chat": "Gw bisa menerima kalau dicurigai, tapi tuduhan Iqbal terlalu dipaksakan. Dia lebih layak masuk tribunal",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 12,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "explicit",
+    "participants": [
+      "Yusuf",
+      "Zara",
+      "Aldo",
+      "Bayu",
+      "Cita"
+    ],
+    "focus_player": "Cita",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Yusuf",
+        "teks_chat": "Diskusinya sepi sekali ya di awal ronde ini.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Zara",
+        "teks_chat": "Iya, pada ke mana semua orang ini?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Aldo",
+        "teks_chat": "Aku sedang membaca ulang riwayat pesan di atas.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Bayu",
+        "teks_chat": "Ada hal yang menarik yang kamu temukan?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Yusuf",
+        "teks_chat": "Sepertinya ada yang jarang sekali membalas chat kita.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Zara",
+        "teks_chat": "Benar, beberapa orang hanya mengirim satu kalimat pendek.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Aldo",
+        "teks_chat": "Itu hal yang wajar kalau mereka sedang bingung.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Bayu",
+        "teks_chat": "Tetapi tidak membalas sama sekali itu sangat aneh.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Yusuf",
+        "teks_chat": "Siapa yang paling kalian curigai saat ini?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Zara",
+        "teks_chat": "Aku belum yakin seratus persen menuduh siapa.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Aldo",
+        "teks_chat": "Coba kita panggil orangnya agar menampakkan diri.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Bayu",
+        "teks_chat": "Cita pesannya selalu terpotong dan telat sedari awal, Cita pasti pelakunya!",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Cita",
+            "relasi": "offend",
+            "bukti_pesan": [
+              12
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 30.txt"
+  }
+}

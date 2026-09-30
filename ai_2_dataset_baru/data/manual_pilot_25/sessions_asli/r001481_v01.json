@@ -1,0 +1,153 @@
+{
+  "job": {
+    "job_id": "r001481_v01",
+    "case_name": "self",
+    "case_description": "Defend diri sendiri atau offend/vote diri sendiri sesuai label. Target = pengirim.",
+    "source": {
+      "source_row": 1481,
+      "source_group": "8750e1e3f8abf80605ea",
+      "teks_chat": "santai, posisi gw masih masuk akal; sekarang cek si Vina yang dari tadi ikut vote tanpa alasan",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 8,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "self",
+    "participants": [
+      "Wira",
+      "Xena",
+      "Yola"
+    ],
+    "focus_player": "Xena",
+    "panggilan": [
+      {
+        "pemain": "Xena",
+        "sebutan": [
+          "Xen"
+        ]
+      }
+    ],
+    "messages": [
+      {
+        "pengirim": "Wira",
+        "teks_chat": "Ini kok pada nuduh Xena terus?",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Xena",
+            "relasi": "defend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Yola",
+        "teks_chat": "Aku curiga Xena Hitman karena mengajak vote Wira tanpa alasan.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Xena",
+            "relasi": "offend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Xena",
+        "teks_chat": "Aku bukan Hitman, aku cuma menyampaikan dugaan yang belum kuat.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Xena",
+            "relasi": "defend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Wira",
+        "teks_chat": "Xen, aku tetap curiga kamu Hitman karena ajakan vote itu.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Xena",
+            "relasi": "offend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Yola",
+        "teks_chat": "Mending kita vote Xena aja ga sih?",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Xena",
+            "relasi": "offend",
+            "bukti_pesan": [
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Xena",
+        "teks_chat": "Gw bukan pelakunya woy.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Xena",
+            "relasi": "defend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Wira",
+        "teks_chat": "Biar cepet kelar emang vote lu aja.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Xena",
+            "relasi": "offend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Xena",
+        "teks_chat": "Yaudah vote gw aja lah sekalian kalau kalian emang ga percaya!",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Xena",
+            "relasi": "offend",
+            "bukti_pesan": [
+              8
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 26.txt"
+  }
+}

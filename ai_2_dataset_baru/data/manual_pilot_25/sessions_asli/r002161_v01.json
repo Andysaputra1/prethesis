@@ -1,0 +1,133 @@
+{
+  "job": {
+    "job_id": "r002161_v01",
+    "case_name": "outside_window_unknown",
+    "case_description": "14-16 pesan total. Pembahasan lama telah putus/beralih. Teks dan anotasi 12 konteks terakhir tidak cukup menentukan acuan sekarang. Target harus tidak_diketahui; jangan menggunakan informasi lama yang tidak tersedia dalam input.",
+    "source": {
+      "source_row": 2161,
+      "source_group": "e88ed61c72c7b8b5968b",
+      "teks_chat": "gw Civilian, kalau mau eksekusi gw minimal kasih bukti yang bener",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 14,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "outside_window_unknown",
+    "participants": [
+      "Wati",
+      "Yoga",
+      "Zahra",
+      "Arif"
+    ],
+    "focus_player": "Wati",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Yoga",
+        "teks_chat": "Aku curiga Wati Hitman karena terlalu cepat mengajak vote.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Wati",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Arif",
+        "teks_chat": "Sebentar, aku ingin memastikan aturan skill.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Zahra",
+        "teks_chat": "Skill yang mana?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Arif",
+        "teks_chat": "Guard digunakan pada fase apa?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Yoga",
+        "teks_chat": "Malam hari.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Zahra",
+        "teks_chat": "Spy memilih satu pemain untuk dilindungi.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Arif",
+        "teks_chat": "Boleh memilih pemain yang sama pada dua malam berturut-turut?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Yoga",
+        "teks_chat": "Tidak boleh dua malam berturut-turut.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Zahra",
+        "teks_chat": "Kalau Peek, itu skill Stalker.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Arif",
+        "teks_chat": "Sekali pakai bisa memilih berapa pemain?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Yoga",
+        "teks_chat": "Satu pemain.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Zahra",
+        "teks_chat": "Cooldown-nya sekali setiap dua ronde.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Arif",
+        "teks_chat": "Oke, aturan skill sudah lebih jelas.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Zahra",
+        "teks_chat": "Balik ke tuduhan tadi, menurutku dia belum terbukti Hitman.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "tidak_diketahui",
+            "relasi": "defend",
+            "bukti_pesan": []
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 35.txt"
+  }
+}

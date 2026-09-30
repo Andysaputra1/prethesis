@@ -1,0 +1,103 @@
+{
+  "job": {
+    "job_id": "r004322_v01",
+    "case_name": "mixed_relations",
+    "case_description": "Membela satu pemain dan menuduh pemain lain. Intent utama offend; simpan kedua relasi.",
+    "source": {
+      "source_row": 4322,
+      "source_group": "2c3afa444161f8658075",
+      "teks_chat": "kalau kalian mau menang, jangan eksekusi orang yang paling aktif; lihat saja siapa yang sengaja pasif, yaitu Riko",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 5,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "mixed_relations",
+    "participants": [
+      "Sandi",
+      "Rani",
+      "Dino",
+      "Coki"
+    ],
+    "focus_player": "Dino",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Sandi",
+        "teks_chat": "Semalam ada korban jatuh tapi anehnya kita tidak dikasih tahu siapa orangnya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Rani",
+        "teks_chat": "Iya, jadi kita cuma bisa nebak dari obrolan.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Dino",
+        "teks_chat": "Aku curiga Coki Hitman karena belum ikut memberi pendapat.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Coki",
+            "relasi": "offend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Coki",
+        "teks_chat": "Aku bukan Hitman, diam bukan bukti.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Coki",
+            "relasi": "defend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Sandi",
+        "teks_chat": "Coki belum terbukti Hitman hanya karena diam. Justru Dino yang aku curigai karena menuduh tanpa alasan kuat.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Coki",
+            "relasi": "defend",
+            "bukti_pesan": [
+              5
+            ]
+          },
+          {
+            "pemain": "Dino",
+            "relasi": "offend",
+            "bukti_pesan": [
+              5
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 64.txt"
+  },
+  "revisi": [
+    {
+      "pesan": 2,
+      "kategori": "meta",
+      "alasan": "Kalimat contoh kebocoran aturan: identitas korban tidak diumumkan secara publik"
+    }
+  ]
+}

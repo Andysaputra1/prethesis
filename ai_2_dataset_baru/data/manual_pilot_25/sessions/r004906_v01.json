@@ -1,0 +1,125 @@
+{
+  "job": {
+    "job_id": "r004906_v01",
+    "case_name": "neutral_names",
+    "case_description": "Neutral menyebut nama tanpa menuduh/membela; target kosong.",
+    "source": {
+      "source_row": 4906,
+      "source_group": "f6bee93f348789253c33",
+      "teks_chat": "saya mengaku sebagai spy, tetapi target guard belum bisa saya buka sekarang",
+      "label_intent": "neutral"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 13,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "neutral_names",
+    "participants": [
+      "Panji",
+      "Qori",
+      "Rama",
+      "Siska"
+    ],
+    "focus_player": "",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Panji",
+        "teks_chat": "Ada yang merasa aneh dengan ronde ini?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Qori",
+        "teks_chat": "Mungkin ada yang kena efek skill Gag Order.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Rama",
+        "teks_chat": "Iya, soalnya chat kelihatan lebih sepi dari biasanya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Siska",
+        "teks_chat": "Kira-kira siapa ya yang diincar sama skill itu?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Panji",
+        "teks_chat": "Bisa jadi pemain yang cerewet di awal.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Qori",
+        "teks_chat": "Tapi belum tentu juga, kadang pelakunya random.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Rama",
+        "teks_chat": "Kita lihat aja siapa yang gak ngetik apa-apa sampai akhir waktu.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Siska",
+        "teks_chat": "Diam saja belum memastikan efek skill, bisa ada alasan lain.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Panji",
+        "teks_chat": "Iya, kita tidak bisa memastikan hanya dari chat yang sepi.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Qori",
+        "teks_chat": "Mudah-mudahan bukan peran penting yang kena.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Rama",
+        "teks_chat": "Yang masih bisa ngetik lanjut ngobrol aja.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Siska",
+        "teks_chat": "Setuju, komunikasi jalan terus aja.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Panji",
+        "teks_chat": "Rama, Siska, dari tadi kalian lihat ada yang tiba-tiba hilang dari chat nggak?",
+        "label_intent": "neutral",
+        "target": []
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 72.txt"
+  },
+  "revisi": [
+    {
+      "pesan": 11,
+      "kategori": "tidak_natural",
+      "alasan": "Kaku ('Pemain yang masih bisa chat dapat melanjutkan pembahasan')."
+    },
+    {
+      "pesan": 13,
+      "kategori": "meta",
+      "alasan": "Menjelaskan efek Gag Order lewat contoh hipotetis; Rama juga baru saja chat."
+    }
+  ]
+}

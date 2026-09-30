@@ -1,0 +1,195 @@
+{
+  "job": {
+    "job_id": "r003945_v01",
+    "case_name": "quotation",
+    "case_description": "Ada tuduhan yang dikutip; bedakan sikap pengirim dari ucapan orang yang dikutip.",
+    "source": {
+      "source_row": 3945,
+      "source_group": "4105fbde91fdecc3106d",
+      "teks_chat": "Kalau ada yang di-guard, tolong buka targetnya sekarang supaya alibinya bisa dicek",
+      "label_intent": "neutral"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 12,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "quotation",
+    "participants": [
+      "Oka",
+      "Peni",
+      "Qori",
+      "Riko"
+    ],
+    "focus_player": "Riko",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Oka",
+        "teks_chat": "Riko mengubah ajakan vote di akhir diskusi, aku curiga dia Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Riko",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Peni",
+        "teks_chat": "Pasti dia nyoba nyelametin temennya yang sesama hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Riko",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Riko",
+        "teks_chat": "Aku bukan Hitman, aku mengubah ajakan setelah membaca argumen Qori.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Riko",
+            "relasi": "defend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Qori",
+        "teks_chat": "Argumenku belum selesai, aku curiga kamu Hitman yang mencari alasan.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Riko",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Oka",
+        "teks_chat": "Makanya, kelihatan banget paniknya si Riko ini.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Riko",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Peni",
+        "teks_chat": "Vote Riko aja langsung ronde ini biar aman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Riko",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Riko",
+        "teks_chat": "Aku bukan Hitman, aku memang berubah pikiran soal ajakan vote.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Riko",
+            "relasi": "defend",
+            "bukti_pesan": [
+              7
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Oka",
+        "teks_chat": "Insting apa alesan buat nutupin kedok?",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Riko",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Peni",
+        "teks_chat": "Udah fix dia pelakunya, buang aja.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Riko",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Qori",
+        "teks_chat": "Iya, kelakuan Riko emang yang paling sus di sini.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Riko",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Oka",
+        "teks_chat": "Kayak kata Peni, 'Riko pasti nyoba nyelametin temennya', itu bener banget posisinya.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Riko",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Peni",
+        "teks_chat": "Peni tadi bilang 'Riko pasti nyoba nyelametin temennya'. Aku hanya mencatat itu sebagai pendapat Peni, belum menilainya.",
+        "label_intent": "neutral",
+        "target": []
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 61.txt"
+  }
+}

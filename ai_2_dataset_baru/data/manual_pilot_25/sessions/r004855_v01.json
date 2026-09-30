@@ -1,0 +1,181 @@
+{
+  "job": {
+    "job_id": "r004855_v01",
+    "case_name": "quotation",
+    "case_description": "Ada tuduhan yang dikutip; bedakan sikap pengirim dari ucapan orang yang dikutip.",
+    "source": {
+      "source_row": 4855,
+      "source_group": "a6983cc550b0bc641bae",
+      "teks_chat": "dia bisa saja kena Gag Order, tapi itu tidak mengubah fakta bahwa Aldi mencurigakan",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 10,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "quotation",
+    "participants": [
+      "Coki",
+      "Deni",
+      "Euis"
+    ],
+    "focus_player": "Deni",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Coki",
+        "teks_chat": "Deni terus mengajak vote Euis tanpa alasan, aku curiga Deni Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Deni",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Deni",
+        "teks_chat": "Aku curiga Euis Hitman karena jawaban chatnya menghindar.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Euis",
+            "relasi": "offend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Euis",
+        "teks_chat": "Mencurigakan bagaimana? Jangan asal menuduh orang dong.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Euis",
+            "relasi": "defend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Coki",
+        "teks_chat": "Makanya, dia mengajak vote tanpa memberikan bukti yang jelas sama sekali.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Deni",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Deni",
+        "teks_chat": "Nanti buktinya akan terlihat dengan jelas kalau kita sudah menyingkirkan dia.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Euis",
+            "relasi": "offend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Euis",
+        "teks_chat": "Aku menolak vote itu, belum ada bukti aku Hitman.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Euis",
+            "relasi": "defend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Coki",
+        "teks_chat": "Aku curiga Deni Hitman, jangan ikuti ajakannya.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Deni",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Deni",
+        "teks_chat": "Aku bukan Hitman, aku yakin dugaanku benar.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Deni",
+            "relasi": "defend",
+            "bukti_pesan": [
+              7
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Euis",
+        "teks_chat": "Aku curiga Deni Hitman yang sengaja mengajak vote tanpa bukti.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Deni",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Coki",
+        "teks_chat": "Benar, omongan dia \"nanti buktinya akan terlihat kalau kita sudah menyingkirkan dia\" itu cuma usaha murahan untuk menipu kita.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Deni",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 71.txt"
+  },
+  "revisi": [
+    {
+      "pesan": 10,
+      "kategori": "tidak_natural",
+      "alasan": "Kutipan 'ayo kita vote Euis sekarang' yang 'diulang-ulang' tidak pernah muncul di chat; diganti kutipan ucapan Deni di [5]."
+    }
+  ]
+}

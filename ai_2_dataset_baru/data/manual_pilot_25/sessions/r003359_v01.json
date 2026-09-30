@@ -1,0 +1,69 @@
+{
+  "job": {
+    "job_id": "r003359_v01",
+    "case_name": "topic_switch",
+    "case_description": "Pembahasan berganti pemain; pesan sekarang mengikuti topik baru, bukan otomatis target lama.",
+    "source": {
+      "source_row": 3359,
+      "source_group": "78d72130cfdcd27d7adc",
+      "teks_chat": "lu boleh curiga, tapi vote gw sekarang terlalu terburu-buru",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 2,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "topic_switch",
+    "participants": [
+      "Ika",
+      "Jojo",
+      "Kevin"
+    ],
+    "focus_player": "Kevin",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Ika",
+        "teks_chat": "Jojo mengubah klaim, aku curiga dia Hitman. Tapi sekarang aku juga curiga Kevin karena terlalu cepat membela diri.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Jojo",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          },
+          {
+            "pemain": "Kevin",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Jojo",
+        "teks_chat": "Kevin itu memang suka berbicara duluan kok dari permainan sebelumnya, jangan langsung menyimpulkan dia pelakunya.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Kevin",
+            "relasi": "defend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 49.txt"
+  }
+}

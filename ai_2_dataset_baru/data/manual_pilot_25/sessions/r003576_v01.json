@@ -1,0 +1,75 @@
+{
+  "job": {
+    "job_id": "r003576_v01",
+    "case_name": "neutral_after_accusation",
+    "case_description": "Konteks berisi tuduhan, tetapi pesan sekarang neutral; jangan mewarisi relasi lama.",
+    "source": {
+      "source_row": 3576,
+      "source_group": "38736f54a569ad114dcf",
+      "teks_chat": "gw gak akan kabur dari tuduhan, role gw Civilian dan silakan cek konsistensi argumen kalian",
+      "label_intent": "neutral"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 3,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "neutral_after_accusation",
+    "participants": [
+      "Tari",
+      "Udin",
+      "Vina"
+    ],
+    "focus_player": "",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Tari",
+        "teks_chat": "Udin terlihat terlalu pasif, mari kita singkirkan dia sekarang.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Udin",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Udin",
+        "teks_chat": "Aku hanya sedang menyimak alur percakapan kalian secara diam-diam.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Udin",
+            "relasi": "defend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Vina",
+        "teks_chat": "Waktu kita tinggal berapa lama lagi sebelum vote?",
+        "label_intent": "neutral",
+        "target": []
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 55.txt"
+  },
+  "revisi": [
+    {
+      "pesan": 3,
+      "kategori": "tidak_natural",
+      "alasan": "Kalimat kaku seperti buku pelajaran"
+    }
+  ]
+}

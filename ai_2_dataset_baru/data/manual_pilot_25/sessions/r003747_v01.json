@@ -1,0 +1,160 @@
+{
+  "job": {
+    "job_id": "r003747_v01",
+    "case_name": "reference_end",
+    "case_description": "Tepat 12 konteks. Penyebutan target eksplisit di pesan konteks terakhir.",
+    "source": {
+      "source_row": 3747,
+      "source_group": "cd7502384dde3218de51",
+      "teks_chat": "mereka mungkin percaya aku hitman, padahal aku spy yang gagal baca situasi",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 13,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "reference_end",
+    "participants": [
+      "Aldo",
+      "Bima",
+      "Citra",
+      "Deni",
+      "Tino"
+    ],
+    "focus_player": "Tino",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Aldo",
+        "teks_chat": "Ada yang berani klaim peran tidak ronde ini?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Bima",
+        "teks_chat": "Belum ada yang buka suara nih dari tadi.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Citra",
+        "teks_chat": "Mending disimpan dulu aja rahasia rolenya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Deni",
+        "teks_chat": "Iya biar tidak langsung diincar musuh nanti malam.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Aldo",
+        "teks_chat": "Ada yang memberi klaim role bertentangan. Aku curiga orang itu Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "tidak_diketahui",
+            "relasi": "offend",
+            "bukti_pesan": []
+          }
+        ]
+      },
+      {
+        "pengirim": "Bima",
+        "teks_chat": "Info apaan tuh emangnya?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Citra",
+        "teks_chat": "Dia awalnya mengaku Civilian lalu Spy, aku curiga klaimnya palsu.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "tidak_diketahui",
+            "relasi": "offend",
+            "bukti_pesan": []
+          }
+        ]
+      },
+      {
+        "pengirim": "Deni",
+        "teks_chat": "Wah parah, berarti ngasih info palsu dong.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "tidak_diketahui",
+            "relasi": "offend",
+            "bukti_pesan": []
+          }
+        ]
+      },
+      {
+        "pengirim": "Aldo",
+        "teks_chat": "Sengaja mau menyesatkan kita itu pasti.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "tidak_diketahui",
+            "relasi": "offend",
+            "bukti_pesan": []
+          }
+        ]
+      },
+      {
+        "pengirim": "Bima",
+        "teks_chat": "Siapa yang mengubah klaim di chat tadi?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Citra",
+        "teks_chat": "Pemain yang sebelumnya mengaku Civilian itu. Aku curiga dia Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "tidak_diketahui",
+            "relasi": "offend",
+            "bukti_pesan": []
+          }
+        ]
+      },
+      {
+        "pengirim": "Deni",
+        "teks_chat": "Tino yang dimaksud. Aku juga curiga Tino Hitman karena klaimnya berubah.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Tino",
+            "relasi": "offend",
+            "bukti_pesan": [
+              12
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Aldo",
+        "teks_chat": "Jangan langsung vote dia. Perubahan klaim belum cukup membuktikan dia Hitman.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Tino",
+            "relasi": "defend",
+            "bukti_pesan": [
+              12
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 58.txt"
+  }
+}

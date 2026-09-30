@@ -1,0 +1,54 @@
+{
+  "job": {
+    "job_id": "r005123_v01",
+    "case_name": "quotation",
+    "case_description": "Ada tuduhan yang dikutip; bedakan sikap pengirim dari ucapan orang yang dikutip.",
+    "source": {
+      "source_row": 5123,
+      "source_group": "f4c8edfdd7d77c480c9d",
+      "teks_chat": "gw Spy, target guard-ku selamat dari serangan malam, tapi gue belum tahu siapa yang nyerang",
+      "label_intent": "neutral"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 2,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "quotation",
+    "participants": [
+      "Kinan",
+      "Manda",
+      "Leo"
+    ],
+    "focus_player": "",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Kinan",
+        "teks_chat": "Leo pasti Hitman, klaim rolenya berubah tanpa alasan!",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Leo",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Manda",
+        "teks_chat": "Tadi ada yang bilang \"Leo itu Hitman\", tapi emang beneran ada buktinya?",
+        "label_intent": "neutral",
+        "target": []
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 74.txt"
+  }
+}

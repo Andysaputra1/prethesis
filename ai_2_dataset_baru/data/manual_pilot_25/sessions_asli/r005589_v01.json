@@ -1,0 +1,53 @@
+{
+  "job": {
+    "job_id": "r005589_v01",
+    "case_name": "short_history_1",
+    "case_description": "Awal diskusi dengan tepat 1 pesan sebelumnya. Jangan menambah riwayat fiktif atau mengisi sampai 12.",
+    "source": {
+      "source_row": 5589,
+      "source_group": "650b90aa70be0b2efe8f",
+      "teks_chat": "aku baru sempat mengirim aksi sebelum timer malam habis",
+      "label_intent": "neutral"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 2,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "short_history_1",
+    "participants": [
+      "Maya",
+      "Niko"
+    ],
+    "focus_player": "",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Maya",
+        "teks_chat": "Mari kita langsung berikan vote kepada Niko tanpa perlu diskusi panjang.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Niko",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Niko",
+        "teks_chat": "Maya mengajak vote tanpa dasar bukti yang jelas sama sekali.",
+        "label_intent": "neutral",
+        "target": []
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 79.txt"
+  }
+}

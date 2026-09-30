@@ -1,0 +1,64 @@
+{
+  "job": {
+    "job_id": "r000720_v01",
+    "case_name": "neutral_names",
+    "case_description": "Neutral menyebut nama tanpa menuduh/membela; target kosong.",
+    "source": {
+      "source_row": 720,
+      "source_group": "3a95e42b47ea6ebd669f",
+      "teks_chat": "tadi malam aku tidak bisa mengawal target yang sama lagi karena ada batasan aturan",
+      "label_intent": "neutral"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 3,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "neutral_names",
+    "participants": [
+      "Udin",
+      "Vera",
+      "Wawan"
+    ],
+    "focus_player": "",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Udin",
+        "teks_chat": "Tadi siapa yang ngaku habis Peek semalam?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Vera",
+        "teks_chat": "Wawan yang bilang di chat.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Udin",
+        "teks_chat": "Oke, aku akan membaca ulang pesan Wawan.",
+        "label_intent": "neutral",
+        "target": []
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 14.txt"
+  },
+  "revisi": [
+    {
+      "pesan": 1,
+      "kategori": "meta",
+      "alasan": "Menanyakan siapa yang menyebut 'aturan cooldown Peek' (pemain menjelaskan aturan)."
+    },
+    {
+      "pesan": 2,
+      "kategori": "meta",
+      "alasan": "Wawan digambarkan menjelaskan aturan di chat."
+    }
+  ]
+}

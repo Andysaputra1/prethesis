@@ -1,0 +1,125 @@
+{
+  "job": {
+    "job_id": "r005120_v01",
+    "case_name": "ambiguous",
+    "case_description": "Beberapa acuan sama-sama mungkin; target tidak_diketahui, bukan nama terakhir.",
+    "source": {
+      "source_row": 5120,
+      "source_group": "3ef9b298fbaa187ffe08",
+      "teks_chat": "gw Stalker dan semalam peek si C, identitasnya Hitman",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 11,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "ambiguous",
+    "participants": [
+      "Eka",
+      "Fikri",
+      "Gita",
+      "Hadi"
+    ],
+    "focus_player": "",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Eka",
+        "teks_chat": "Siapa korban Hostage semalam, ya?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Fikri",
+        "teks_chat": "Gak tau, dari tadi belum ada petunjuk.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Gita",
+        "teks_chat": "Mungkin Civilian yang terkena Hostage, tetapi kita belum tahu.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Hadi",
+        "teks_chat": "Bisa juga role lain, kita kan nggak tahu.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Eka",
+        "teks_chat": "Terus gimana kita bisa cari hitmannya kalau info kurang gini?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Fikri",
+        "teks_chat": "Coba perhatiin aja siapa yang paling banyak omong hari ini.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Gita",
+        "teks_chat": "Atau yang dari tadi sengaja diam aja juga patut dicurigai.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Hadi",
+        "teks_chat": "Intinya pasti ada yang nyoba ngalihin isu diskusi kita.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Eka",
+        "teks_chat": "Menurutku kita harus curiga sama mereka yang suka mancing opini.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "tidak_diketahui",
+            "relasi": "offend",
+            "bukti_pesan": []
+          }
+        ]
+      },
+      {
+        "pengirim": "Fikri",
+        "teks_chat": "Tapi mereka siapa yang kamu maksud spesifiknya?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Gita",
+        "teks_chat": "Pokoknya yang tingkahnya paling aneh hari ini pasti pelakunya, buruan cari.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "tidak_diketahui",
+            "relasi": "offend",
+            "bukti_pesan": []
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 74.txt"
+  },
+  "revisi": [
+    {
+      "pesan": 2,
+      "kategori": "meta",
+      "alasan": "'di gamenya kan gak ngumumin identitas korban' = desain game"
+    },
+    {
+      "pesan": 4,
+      "kategori": "meta",
+      "alasan": "'identitasnya tidak diumumkan' = aturan game"
+    }
+  ]
+}

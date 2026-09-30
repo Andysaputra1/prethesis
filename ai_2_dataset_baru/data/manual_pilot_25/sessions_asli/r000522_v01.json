@@ -1,0 +1,133 @@
+{
+  "job": {
+    "job_id": "r000522_v01",
+    "case_name": "outside_window_unknown",
+    "case_description": "14-16 pesan total. Pembahasan lama telah putus/beralih. Teks dan anotasi 12 konteks terakhir tidak cukup menentukan acuan sekarang. Target harus tidak_diketahui; jangan menggunakan informasi lama yang tidak tersedia dalam input.",
+    "source": {
+      "source_row": 522,
+      "source_group": "f31a94b3ecd5c5ab8df6",
+      "teks_chat": "lu nuduh gw karena fakta atau karena gw nggak ikut arus?",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 14,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "outside_window_unknown",
+    "participants": [
+      "Yoga",
+      "Zain",
+      "Aldi",
+      "Beni"
+    ],
+    "focus_player": "Zain",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Yoga",
+        "teks_chat": "Aku curiga Zain pelakunya karena balasan chatnya sangat lambat.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Zain",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Aldi",
+        "teks_chat": "Kita jeda pembahasan orang dulu. Aku belum paham Peek.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Beni",
+        "teks_chat": "Itu skill Stalker untuk melihat identitas satu pemain.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Yoga",
+        "teks_chat": "Dipakai pada fase apa?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Aldi",
+        "teks_chat": "Pada fase malam.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Beni",
+        "teks_chat": "Bisa dipakai setiap ronde?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Yoga",
+        "teks_chat": "Tidak, ada cooldown: satu kali tiap dua ronde.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Aldi",
+        "teks_chat": "Hasilnya langsung diketahui semua pemain?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Beni",
+        "teks_chat": "Tidak, hasil Peek merupakan informasi pribadi pemilik skill.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Yoga",
+        "teks_chat": "Kalau ada yang menyampaikan hasilnya di chat?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Aldi",
+        "teks_chat": "Itu tetap klaim yang mungkin benar atau mungkin bohong.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Beni",
+        "teks_chat": "Baik, jadi mendengar klaim bukan berarti sudah melihat hasil skillnya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Yoga",
+        "teks_chat": "Sekarang kembali ke orang yang dibahas sebelum penjelasan Peek tadi.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Aldi",
+        "teks_chat": "Menurutku dia belum pantas dituduh; respons lambat bisa karena koneksi.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "tidak_diketahui",
+            "relasi": "defend",
+            "bukti_pesan": []
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 8.txt"
+  }
+}

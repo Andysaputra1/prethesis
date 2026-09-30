@@ -1,0 +1,111 @@
+{
+  "job": {
+    "job_id": "r000662_v01",
+    "case_name": "multiple_targets",
+    "case_description": "Dua atau lebih pemain menjadi target relasi yang sama secara jelas.",
+    "source": {
+      "source_row": 662,
+      "source_group": "f94a2e324d3e0cd6f1a8",
+      "teks_chat": "gw bukan Hitman, dari awal targetku cuma baca pola, bukan nyari kambing hitam",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 5,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "multiple_targets",
+    "participants": [
+      "Kiki",
+      "Lani",
+      "Miko",
+      "Nina"
+    ],
+    "focus_player": "",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Kiki",
+        "teks_chat": "Kok Miko sama Nina dari tadi pasif banget dan mojok terus di chat room ya?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Lani",
+        "teks_chat": "Orang yang mojok pasif begitu biasanya Hitman yang lagi nyamar, mari kita habisi Miko dan Nina!",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Miko",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          },
+          {
+            "pemain": "Nina",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Miko",
+        "teks_chat": "Loh, aku kan lagi dengerin penjelasan kalian biar ngerti alur diskusinya.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Miko",
+            "relasi": "defend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Nina",
+        "teks_chat": "Aku juga cuma nyimak doang kok, belum ada info tambahan yang bisa kuberikan.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Nina",
+            "relasi": "defend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Kiki",
+        "teks_chat": "Wajar sih kalau mereka cuma menyimak, kita jangan sembarangan menuduh mereka karena diam itu belum tentu Hitman.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Miko",
+            "relasi": "defend",
+            "bukti_pesan": [
+              1
+            ]
+          },
+          {
+            "pemain": "Nina",
+            "relasi": "defend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 12.txt"
+  }
+}

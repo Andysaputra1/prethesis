@@ -1,0 +1,132 @@
+{
+  "job": {
+    "job_id": "r005131_v01",
+    "case_name": "neutral_names",
+    "case_description": "Neutral menyebut nama tanpa menuduh/membela; target kosong.",
+    "source": {
+      "source_row": 5131,
+      "source_group": "3563cfcd01c958d3ae28",
+      "teks_chat": "aku Spy, semalam guard-ku gagal atau targetku memang tidak diserang, jadi jangan overclaim",
+      "label_intent": "neutral"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 10,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "neutral_names",
+    "participants": [
+      "Ojan",
+      "Putri",
+      "Rizky",
+      "Sinta"
+    ],
+    "focus_player": "",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Ojan",
+        "teks_chat": "Ada klaim skill semalam yang mau dibagikan?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Putri",
+        "teks_chat": "Aku belum ingin membuka klaim.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Rizky",
+        "teks_chat": "Aku juga ingin mendengar dulu.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Sinta",
+        "teks_chat": "Kalau belum ada klaim, semalam ada yang ngerasa diincar?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Ojan",
+        "teks_chat": "Putri tadi sempat bilang semalam aman-aman aja.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Putri",
+        "teks_chat": "Iya, semalam aku nggak ngerasa ada apa-apa.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Rizky",
+        "teks_chat": "Sinta sendiri gimana semalam?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Sinta",
+        "teks_chat": "Aman juga, nggak ada yang aneh.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Ojan",
+        "teks_chat": "Berarti belum ada yang dapat petunjuk, ya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Putri",
+        "teks_chat": "Ojan dan Rizky ada info lain yang mau dibagi?",
+        "label_intent": "neutral",
+        "target": []
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 74.txt"
+  },
+  "revisi": [
+    {
+      "pesan": 4,
+      "kategori": "meta",
+      "alasan": "Mengajak membahas aturan skill."
+    },
+    {
+      "pesan": 5,
+      "kategori": "meta",
+      "alasan": "Merujuk pertanyaan aturan Guard."
+    },
+    {
+      "pesan": 6,
+      "kategori": "meta",
+      "alasan": "Menjelaskan larangan target Guard berulang."
+    },
+    {
+      "pesan": 7,
+      "kategori": "meta",
+      "alasan": "Menanyakan skill yang ingin dibahas."
+    },
+    {
+      "pesan": 8,
+      "kategori": "meta",
+      "alasan": "Membahas cooldown Peek."
+    },
+    {
+      "pesan": 9,
+      "kategori": "meta",
+      "alasan": "Menjelaskan cooldown Peek."
+    },
+    {
+      "pesan": 10,
+      "kategori": "meta",
+      "alasan": "Pesan utama mengajak melanjutkan pembahasan aturan."
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "job": {
+    "job_id": "r004807_v01",
+    "case_name": "short_history_1",
+    "case_description": "Awal diskusi dengan tepat 1 pesan sebelumnya. Jangan menambah riwayat fiktif atau mengisi sampai 12.",
+    "source": {
+      "source_row": 4807,
+      "source_group": "52847df3e14b683e9fc0",
+      "teks_chat": "dari pola chatnya si A paling mencurigakan, yuk kita vote dia dulu",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 2,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "short_history_1",
+    "participants": [
+      "Bima",
+      "Siti",
+      "Cici",
+      "Doni"
+    ],
+    "focus_player": "Bima",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Bima",
+        "teks_chat": "Tadi aku curiga ke Cici, tapi sekarang kayaknya Doni yang lebih pantas kita curigai.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Doni",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Siti",
+        "teks_chat": "Tuduhanmu berubah-ubah terus, Bima, kamu pasti pelakunya yang mencoba mengalihkan isu.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Bima",
+            "relasi": "offend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 70.txt"
+  }
+}

@@ -1,0 +1,162 @@
+{
+  "job": {
+    "job_id": "r002359_v01",
+    "case_name": "multiple_targets",
+    "case_description": "Dua atau lebih pemain menjadi target relasi yang sama secara jelas.",
+    "source": {
+      "source_row": 2359,
+      "source_group": "f1305091f116e8858461",
+      "teks_chat": "aku bukan penjahat, roleku Stalker dan bakal cek pemain mencurigakan",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 10,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "multiple_targets",
+    "participants": [
+      "Sani",
+      "Tono",
+      "Umi"
+    ],
+    "focus_player": "",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Sani",
+        "teks_chat": "Tono dan Umi belum membalas pertanyaan tadi.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Tono",
+        "teks_chat": "Baru sempat baca, maaf.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Umi",
+        "teks_chat": "Aku juga sedang membaca chat.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Sani",
+        "teks_chat": "Aku curiga Tono dan Umi Hitman yang sengaja menghindar.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Tono",
+            "relasi": "offend",
+            "bukti_pesan": [
+              4
+            ]
+          },
+          {
+            "pemain": "Umi",
+            "relasi": "offend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Tono",
+        "teks_chat": "Aku bukan Hitman, terlambat membalas bukan bukti.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Tono",
+            "relasi": "defend",
+            "bukti_pesan": [
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Umi",
+        "teks_chat": "Aku juga bukan Hitman, jangan asal tuduh dong.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Umi",
+            "relasi": "defend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Sani",
+        "teks_chat": "Aku masih curiga kalian berdua pelakunya.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Tono",
+            "relasi": "offend",
+            "bukti_pesan": [
+              4
+            ]
+          },
+          {
+            "pemain": "Umi",
+            "relasi": "offend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Tono",
+        "teks_chat": "Coba baca penjelasanku dulu.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Umi",
+        "teks_chat": "Kita bisa lanjut membahas pertanyaannya sekarang.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Sani",
+        "teks_chat": "Aku tarik tuduhan ke Tono dan Umi. Jeda balasan mereka belum membuktikan mereka Hitman.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Tono",
+            "relasi": "defend",
+            "bukti_pesan": [
+              10
+            ]
+          },
+          {
+            "pemain": "Umi",
+            "relasi": "defend",
+            "bukti_pesan": [
+              10
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 38.txt"
+  },
+  "revisi": [
+    {
+      "pesan": 6,
+      "kategori": "tidak_natural",
+      "alasan": "'menolak tuduhan ke aku' janggal."
+    }
+  ]
+}

@@ -1,0 +1,138 @@
+{
+  "job": {
+    "job_id": "r003833_v01",
+    "case_name": "neutral_after_accusation",
+    "case_description": "Konteks berisi tuduhan, tetapi pesan sekarang neutral; jangan mewarisi relasi lama.",
+    "source": {
+      "source_row": 3833,
+      "source_group": "b25a3d42d317f846739d",
+      "teks_chat": "aku role Spy dan aksi malamku adalah Guard, bukan menyerang",
+      "label_intent": "neutral"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 8,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "neutral_after_accusation",
+    "participants": [
+      "Doni",
+      "Eko",
+      "Caca"
+    ],
+    "focus_player": "",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Doni",
+        "teks_chat": "Eko lambat membalas, aku curiga dia Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Eko",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Eko",
+        "teks_chat": "Sinyalku jelek banget, makanya wajar kalau telat masuknya.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Eko",
+            "relasi": "defend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Caca",
+        "teks_chat": "Alasan sinyal dan chat terpotong itu klise banget buat Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Eko",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Eko",
+        "teks_chat": "Beneran, pesanku kepotong terus dari tadi.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Eko",
+            "relasi": "defend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Doni",
+        "teks_chat": "Aku setuju sama Caca, si Eko ini patut dicurigai.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Eko",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Eko",
+        "teks_chat": "Tolong jangan langsung nuduh sembarangan, posisiku aman.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Eko",
+            "relasi": "defend",
+            "bukti_pesan": [
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Caca",
+        "teks_chat": "Kita kumpulkan vote buat Eko aja nanti.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Eko",
+            "relasi": "offend",
+            "bukti_pesan": [
+              7
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Eko",
+        "teks_chat": "Sisa waktu diskusi di timer kita masih berapa menit ya?",
+        "label_intent": "neutral",
+        "target": []
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 60.txt"
+  }
+}

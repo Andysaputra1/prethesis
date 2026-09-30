@@ -1,0 +1,97 @@
+{
+  "job": {
+    "job_id": "r000268_v01",
+    "case_name": "rhetorical_question",
+    "case_description": "Pesan sekarang berbentuk pertanyaan retoris yang sebenarnya menuduh atau membela, misalnya 'kenapa Andy diam terus?' (offend) atau 'masa sih Andy Hitman?' (defend). Bukan pertanyaan informasi.",
+    "source": {
+      "source_row": 268,
+      "source_group": "1294bd9641eb8a311c7b",
+      "teks_chat": "teori gw, Hitman sengaja memilih Wawan untuk diserang lalu menuduh orang lain",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 7,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "rhetorical_question",
+    "participants": [
+      "Vina",
+      "Wira",
+      "Yudi",
+      "Zaki"
+    ],
+    "focus_player": "Vina",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Vina",
+        "teks_chat": "Aku mengaku Spy. Semalam aku memakai Guard untuk Wira.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Wira",
+        "teks_chat": "Kenapa kamu Guard aku?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Vina",
+        "teks_chat": "Soalnya kamu dari awal aktif, kupikir kamu bakal diincar Hitman.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Yudi",
+        "teks_chat": "Klaim pilihan Guard tidak bisa langsung kami pastikan benar.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Zaki",
+        "teks_chat": "Kamu tadi bilang memilih Wira. Masih sama jawabanmu?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Vina",
+        "teks_chat": "Tunggu, maksudku aku memilih Zaki semalam.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Yudi",
+        "teks_chat": "Pilihanmu berubah begitu, masa aku harus percaya? Aku curiga kamu Hitman yang mengarang klaim Spy.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Vina",
+            "relasi": "offend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 3.txt"
+  },
+  "revisi": [
+    {
+      "pesan": 2,
+      "kategori": "meta",
+      "alasan": "Bertanya fungsi skill Guard (penjelasan aturan)"
+    },
+    {
+      "pesan": 3,
+      "kategori": "meta",
+      "alasan": "Menjelaskan mekanisme Guard"
+    }
+  ]
+}

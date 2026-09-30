@@ -1,0 +1,47 @@
+{
+  "job": {
+    "job_id": "r004633_v00",
+    "case_name": "original",
+    "case_description": "Satu pesan tanpa riwayat. Pertahankan teks dan intent sumber persis; jangan mengarang riwayat asli.",
+    "source": {
+      "source_row": 4633,
+      "source_group": "d542b0f17960d3f282f8",
+      "teks_chat": "semua perhatiin, Vino konsisten memelintir ucapan orang lain, fix dia target voting hari ini",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 1,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "original",
+    "participants": [
+      "Anton",
+      "Vino"
+    ],
+    "focus_player": "Vino",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Anton",
+        "teks_chat": "semua perhatiin, Vino konsisten memelintir ucapan orang lain, fix dia target voting hari ini",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Vino",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 68.txt"
+  }
+}

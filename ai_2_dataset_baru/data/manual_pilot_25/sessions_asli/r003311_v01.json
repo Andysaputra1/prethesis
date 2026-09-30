@@ -1,0 +1,62 @@
+{
+  "job": {
+    "job_id": "r003311_v01",
+    "case_name": "rhetorical_question",
+    "case_description": "Pesan sekarang berbentuk pertanyaan retoris yang sebenarnya menuduh atau membela, misalnya 'kenapa Andy diam terus?' (offend) atau 'masa sih Andy Hitman?' (defend). Bukan pertanyaan informasi.",
+    "source": {
+      "source_row": 3311,
+      "source_group": "6cdbf04f95cbbe62968a",
+      "teks_chat": "fix bukan aku, kalau aku hitman harusnya gag order pemain yang paling vokal dari awal",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 2,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "rhetorical_question",
+    "participants": [
+      "Eka",
+      "Gina",
+      "Fajar"
+    ],
+    "focus_player": "Fajar",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Eka",
+        "teks_chat": "Fajar awalnya klaim Civilian lalu Spy. Aku curiga dia Hitman!",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Fajar",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Gina",
+        "teks_chat": "Masa sih Fajar berani berbohong sejelas itu kalau memang dia Hitman?",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Fajar",
+            "relasi": "defend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 49.txt"
+  }
+}

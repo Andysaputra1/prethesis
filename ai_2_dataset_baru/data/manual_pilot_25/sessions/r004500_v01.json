@@ -1,0 +1,67 @@
+{
+  "job": {
+    "job_id": "r004500_v01",
+    "case_name": "explicit",
+    "case_description": "Target eksplisit di pesan sekarang. Contoh: Aku yakin bukan Andy = defend Andy.",
+    "source": {
+      "source_row": 4500,
+      "source_group": "418d999650253a533990",
+      "teks_chat": "aku tidak perlu membela diri panjang-panjang, periksa saja inkonsistensi si A",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 3,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "explicit",
+    "participants": [
+      "Gina",
+      "Hendra",
+      "Fahmi"
+    ],
+    "focus_player": "Gina",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Gina",
+        "teks_chat": "Kenapa ajakan vote di chat berubah ke Hendra?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Hendra",
+        "teks_chat": "Iya nih, aku juga heran kenapa pada nargetin aku.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Fahmi",
+        "teks_chat": "Aku curiga Gina Hitman, dia pura-pura heran padahal tadi dia sendiri yang ngarahin vote ke Hendra.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Gina",
+            "relasi": "offend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 67.txt"
+  },
+  "revisi": [
+    {
+      "pesan": 3,
+      "kategori": "tidak_natural",
+      "alasan": "Gina hanya bertanya kenapa vote beralih ke Hendra, tetapi dituduh mengarahkan vote; tidak nyambung."
+    }
+  ]
+}

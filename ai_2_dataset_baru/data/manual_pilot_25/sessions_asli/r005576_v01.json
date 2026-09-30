@@ -1,0 +1,165 @@
+{
+  "job": {
+    "job_id": "r005576_v01",
+    "case_name": "neutral_after_accusation",
+    "case_description": "Konteks berisi tuduhan, tetapi pesan sekarang neutral; jangan mewarisi relasi lama.",
+    "source": {
+      "source_row": 5576,
+      "source_group": "01ca65c87b9bb376920a",
+      "teks_chat": "gw tetap pilih baca aturan dari awal daripada nebak-nebak",
+      "label_intent": "neutral"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 11,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "neutral_after_accusation",
+    "participants": [
+      "Irfan",
+      "Jihan",
+      "Kevin",
+      "Lilis"
+    ],
+    "focus_player": "",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Irfan",
+        "teks_chat": "Jihan pasif, aku curiga dia Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Jihan",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Jihan",
+        "teks_chat": "Aku membaca semua pesan kalian dengan teliti.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Jihan",
+            "relasi": "defend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Kevin",
+        "teks_chat": "Sikap pasif Jihan memang mencurigakan.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Jihan",
+            "relasi": "offend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Lilis",
+        "teks_chat": "Jangan terburu-buru menuduh orang yang pasif.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Jihan",
+            "relasi": "defend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Irfan",
+        "teks_chat": "Bisa jadi dia adalah Hitman yang sedang bersembunyi.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Jihan",
+            "relasi": "offend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Jihan",
+        "teks_chat": "Aku hanya ingin mengamati situasi terlebih dahulu.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Jihan",
+            "relasi": "defend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Kevin",
+        "teks_chat": "Aku tetap curiga dia Hitman karena belum memberi pendapat.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Jihan",
+            "relasi": "offend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Lilis",
+        "teks_chat": "Sekarang aku curiga Kevin Hitman karena terus memaksa tuduhan itu.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Kevin",
+            "relasi": "offend",
+            "bukti_pesan": [
+              8
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Irfan",
+        "teks_chat": "Lilis tiba-tiba mengalihkan perhatian ke Kevin.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Jihan",
+        "teks_chat": "Terima kasih Lilis karena sudah membelaku.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Kevin",
+        "teks_chat": "Apakah Irfan dan Lilis sedang berdiskusi tentang siapa pemain paling pasif di sini?",
+        "label_intent": "neutral",
+        "target": []
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 79.txt"
+  }
+}

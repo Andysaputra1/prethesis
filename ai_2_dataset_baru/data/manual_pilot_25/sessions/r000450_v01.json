@@ -1,0 +1,62 @@
+{
+  "job": {
+    "job_id": "r000450_v01",
+    "case_name": "short_history_1",
+    "case_description": "Awal diskusi dengan tepat 1 pesan sebelumnya. Jangan menambah riwayat fiktif atau mengisi sampai 12.",
+    "source": {
+      "source_row": 450,
+      "source_group": "946fc2c76d2e0c9499ca",
+      "teks_chat": "aku membela diri karena namaku diseret tanpa bukti yang valid",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 2,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "short_history_1",
+    "participants": [
+      "Erwin",
+      "Fira",
+      "Gilang"
+    ],
+    "focus_player": "Fira",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Erwin",
+        "teks_chat": "Ayo semuanya langsung kumpulkan suara ke Fira saja, aku merasa dia pelakunya.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Fira",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Gilang",
+        "teks_chat": "Kamu tidak bisa mengajak kami vote Fira hanya bermodalkan firasat saja, dia memiliki hak untuk menjelaskan posisinya.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Fira",
+            "relasi": "defend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 6.txt"
+  }
+}

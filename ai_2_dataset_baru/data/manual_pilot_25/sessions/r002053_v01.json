@@ -1,0 +1,90 @@
+{
+  "job": {
+    "job_id": "r002053_v01",
+    "case_name": "negation",
+    "case_description": "Negasi menentukan relasi: Andy Hitman berbeda dari Andy bukan Hitman.",
+    "source": {
+      "source_row": 2053,
+      "source_group": "a252b3144ea8f6550a10",
+      "teks_chat": "aku melihat identitas O lewat Peek di ronde ini, jadi warga bisa mengikuti pilihan vote yang diarahkan ke O",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 4,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "negation",
+    "participants": [
+      "Eka",
+      "Fikri",
+      "Gita"
+    ],
+    "focus_player": "Fikri",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Eka",
+        "teks_chat": "Fikri, kamu menuduh Gita lalu beralih menuduh aku tanpa alasan. Aku curiga kamu Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Fikri",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Fikri",
+        "teks_chat": "Aku kan cuma memberikan analisa lain sebagai bahan pertimbangan.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Fikri",
+            "relasi": "defend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Gita",
+        "teks_chat": "Aku curiga kamu Hitman karena berganti target tanpa alasan.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Fikri",
+            "relasi": "offend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Eka",
+        "teks_chat": "Analisa apanya, kamu itu jelas bukan warga yang baik, fix kamu pelakunya karena suka ganti-ganti target!",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Fikri",
+            "relasi": "offend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 33.txt"
+  }
+}

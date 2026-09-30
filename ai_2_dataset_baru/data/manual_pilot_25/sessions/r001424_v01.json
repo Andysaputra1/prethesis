@@ -1,0 +1,164 @@
+{
+  "job": {
+    "job_id": "r001424_v01",
+    "case_name": "topic_switch",
+    "case_description": "Pembahasan berganti pemain; pesan sekarang mengikuti topik baru, bukan otomatis target lama.",
+    "source": {
+      "source_row": 1424,
+      "source_group": "b001517ddadc7df35364",
+      "teks_chat": "kalau aku hitman, ngapain dari tadi cuma ikut arus",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 11,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "topic_switch",
+    "participants": [
+      "Zul",
+      "Acep",
+      "Bagus",
+      "Cepi"
+    ],
+    "focus_player": "Cepi",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Acep",
+        "teks_chat": "Aku curiga Zul Hitman karena belum memberi alasan untuk ajakan vote.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Zul",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Zul",
+        "teks_chat": "Aku bukan Hitman. Aku menarik ajakan itu karena alasannya belum kuat.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Zul",
+            "relasi": "defend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Bagus",
+        "teks_chat": "Sekarang aku justru curiga Cepi, dia belum menjawab sejak tadi.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Cepi",
+            "relasi": "offend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Cepi",
+        "teks_chat": "Aku bukan pelakunya. Aplikasi di ponselku sempat berhenti merespons.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Cepi",
+            "relasi": "defend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Zul",
+        "teks_chat": "Aku juga curiga Cepi sedang mencari alasan.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Cepi",
+            "relasi": "offend",
+            "bukti_pesan": [
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Acep",
+        "teks_chat": "Kita belum tahu penyebab keterlambatan chat itu.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Bagus",
+        "teks_chat": "Penjelasannya perlu didengar dulu.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Cepi",
+        "teks_chat": "Sekarang aku sudah bisa membaca pertanyaan kalian.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Zul",
+        "teks_chat": "Oke, kalau gitu jelasin dulu tadi kenapa lama nggak jawab.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Acep",
+        "teks_chat": "Cepi belum pantas dituduh dari jeda chat saja.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Cepi",
+            "relasi": "defend",
+            "bukti_pesan": [
+              10
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Bagus",
+        "teks_chat": "Aku setuju membela Cepi. Masalah aplikasi bisa terjadi dan belum ada bukti dia Hitman.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Cepi",
+            "relasi": "defend",
+            "bukti_pesan": [
+              11
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 25.txt"
+  },
+  "revisi": [
+    {
+      "pesan": 9,
+      "kategori": "tidak_natural",
+      "alasan": "Zul menyuruh Cepi menjawab soal alasan ajakan vote, padahal itu topik Zul sendiri; tidak nyambung"
+    }
+  ]
+}

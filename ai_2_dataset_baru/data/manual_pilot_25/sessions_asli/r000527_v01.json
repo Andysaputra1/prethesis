@@ -1,0 +1,63 @@
+{
+  "job": {
+    "job_id": "r000527_v01",
+    "case_name": "witness",
+    "case_description": "Nama saksi/korban disebut, tetapi bukan target serangan atau pembelaan.",
+    "source": {
+      "source_row": 527,
+      "source_group": "3c9dd32b8e80083578da",
+      "teks_chat": "kalau gw Hitman, target Hostage semalam harusnya bikin posisi gw lebih aman, bukan begini",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 2,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "witness",
+    "participants": [
+      "Gani",
+      "Hani",
+      "Ivan",
+      "Joko"
+    ],
+    "focus_player": "Ivan",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Gani",
+        "teks_chat": "Ivan tadi mengajak vote, lalu menarik ajakannya. Aku curiga Ivan Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Ivan",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Joko",
+        "teks_chat": "Hani tadi mengingatkan bahwa alasan vote itu keliru. Wajar Ivan mengoreksi dugaan setelah mendengarnya; Ivan belum pantas dituduh.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Ivan",
+            "relasi": "defend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 8.txt"
+  }
+}

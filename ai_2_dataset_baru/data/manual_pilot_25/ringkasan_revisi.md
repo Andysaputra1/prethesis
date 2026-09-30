@@ -1,0 +1,72 @@
+# Ringkasan revisi pilot
+
+Total perubahan: 826 pesan di 351 percakapan.
+
+- meta: 405
+- tidak_natural: 270
+- label: 94
+- singkatan: 50
+- aturan_game: 7
+
+## Contoh per kategori
+
+- **tidak_natural** r000011_v01 #2: Jawaban 'Bukan' tidak nyambung dengan pertanyaan 'Apa ada kendala?'
+  - sebelum: Bukan, aku cuma malas ngetik. Kalau kalian curiga vote aku saja sekarang. → `offend` Tono (offend)
+  - sesudah: Nggak ada, aku cuma malas ngetik. Kalau kalian curiga vote aku saja sekarang. → `offend` Tono (offend)
+- **tidak_natural** r000058_v01 #8: Menyebut 'koreksi salah ketik' padahal belum ada yang membahas salah ketik; tidak nyambung.
+  - sebelum: Aku belum membaca koreksi salah ketik. → `neutral` -
+  - sesudah: Aku belum lihat dia jelasin kenapa klaimnya berubah. → `neutral` -
+- **tidak_natural** r000080_v01 #10: Kalimat kaku ('batasan skill disebut')
+  - sebelum: Sekarang ada perubahan cerita setelah batasan skill disebut. → `neutral` -
+  - sesudah: Ceritanya langsung berubah begitu ketahuan nggak cocok. → `neutral` -
+- **tidak_natural** r000088_v01 #11: Kaku dan tidak nyambung (status korban).
+  - sebelum: Iya, itu berbeda dari mengetahui status korban secara pasti. → `neutral` -
+  - sesudah: Iya, jadi jangan buru-buru nyimpulin dari diamnya orang. → `neutral` -
+- **label** r000082_v01 #4: Tio menjelaskan inkonsistensi Siska untuk menguatkan tuduhannya (menekan Siska); juga frasa 'menyebut sebuah nama' kaku
+  - sebelum: Tadi kamu mengaku belum menentukan ajakan vote, lalu menyebut sebuah nama. → `neutral` -
+  - sesudah: Tadi kamu bilang belum nentuin mau vote siapa, terus tiba-tiba nyebut nama. Itu yang aneh. → `offend` Siska (offend)
+- **label** r000082_v01 #6: Pertanyaan retoris menuduh Raka menutupi Siska = menyudutkan Raka
+  - sebelum: Kamu nutupin dia ya Raka? → `neutral` -
+  - sesudah: Kamu nutupin dia ya Raka? → `offend` Raka (offend)
+- **label** r000082_v01 #7: Raka menolak tuduhan menutupi dan membela Siska (tuduhan belum kuat) = defend
+  - sebelum: Aku hanya menilai alasan tuduhannya belum cukup kuat. → `neutral` -
+  - sesudah: Aku hanya menilai alasan tuduhannya belum cukup kuat. → `defend` Raka (defend), Siska (defend)
+- **label** r000082_v01 #11: Tio mengulang kecurigaannya pada perubahan ajakan vote Siska = offend Siska
+  - sebelum: Aku hanya merasa perubahan ajakan vote itu mencurigakan. → `neutral` -
+  - sesudah: Aku hanya merasa perubahan ajakan vote itu mencurigakan. → `offend` Siska (offend)
+- **meta** r000088_v01 #2: Pemain menanyakan aturan fase Gag Order.
+  - sebelum: Sebentar, apakah Gag Order dipakai saat malam juga? → `neutral` -
+  - sesudah: Eh bentar, dari tadi ada yang ngerasa kena Gag Order nggak? → `neutral` -
+- **meta** r000088_v01 #3: Menjelaskan efek dan fase Gag Order.
+  - sebelum: Tidak, Gag Order membungkam chat seorang pemain pada fase siang. → `neutral` -
+  - sesudah: Aku nggak, dari tadi masih bisa ngetik. → `neutral` -
+- **meta** r000088_v01 #4: Menanyakan skill malam Hitman.
+  - sebelum: Lalu skill Hitman saat malam yang mana? → `neutral` -
+  - sesudah: Aku juga aman. Terus semalam ada yang disandera nggak ya? → `neutral` -
+- **meta** r000088_v01 #5: Menjelaskan fungsi Hostage.
+  - sebelum: Hostage, untuk menyandera korban. → `neutral` -
+  - sesudah: Belum ada yang tahu, belum ada yang ngaku kena juga. → `neutral` -
+- **singkatan** r000217_v01 #4: 'tdk' di luar slot typo (slot kosong)
+  - sebelum: Bagas tdk pantas dituduh karena bertanya. Justru Anton yang aku curigai sebagai Hitman karena memaksa kita percaya klaimnya. → `offend` Bagas (defend), Anton (offend)
+  - sesudah: Bagas nggak pantas dituduh karena bertanya. Justru Anton yang aku curigai sebagai Hitman karena memaksa kita percaya klaimnya. → `offend` Bagas (defend), Anton (offend)
+- **singkatan** r000526_v01 #2: Slot typo [2] tidak berisi singkatan.
+  - sebelum: Iya, banyak yang tiba-tiba menarik ajakannya. → `neutral` -
+  - sesudah: Iya, banyak yg tiba-tiba menarik ajakannya. → `neutral` -
+- **singkatan** r000554_v01 #14: 'tdk' di luar slot typo; 'Hitman Hostage' janggal
+  - sebelum: Setelah kupikir-pikir, dia memang tdk terlihat seperti Hitman Hostage, mending kita batalin aja niat buat vote-nya. → `defend` Qori (defend)
+  - sesudah: Setelah kupikir-pikir, dia memang nggak terlihat seperti Hitman, mending kita batalin aja niat buat vote-nya. → `defend` Qori (defend)
+- **singkatan** r000584_v01 #6: Salah ketik 'ngelepar' di luar slot typo.
+  - sebelum: Seorang Hitman emang suka ngelepar tuduhan palsu buat mancing kepanikan. → `neutral` -
+  - sesudah: Seorang Hitman emang suka ngelempar tuduhan palsu buat mancing kepanikan. → `neutral` -
+- **aturan_game** r000584_v01 #13: Menyatakan role Mamat (civilian) sebagai fakta.
+  - sebelum: Dia cuma civilian yang asal nebak karena bingung, jangan langsung nuduh balik begitu ke dia. → `defend` Mamat (defend)
+  - sesudah: Dia kayaknya cuma asal nebak karena bingung, jangan langsung nuduh balik begitu ke dia. → `defend` Mamat (defend)
+- **aturan_game** r000683_v01 #10: 'dihabisi' menyiratkan pembunuhan; skill Hitman adalah menyandera
+  - sebelum: Setuju, daripada kita yang dihabisi mending kita nyerang duluan. → `offend` Willy (offend)
+  - sesudah: Setuju, daripada kita yang disandera nanti malam, mending kita gerak duluan. → `offend` Willy (offend)
+- **aturan_game** r000684_v01 #4: Membahas tebusan uang untuk sandera.
+  - sebelum: Berarti sandera tidak bisa ditebus dengan uang? → `neutral` -
+  - sesudah: Aku juga, nggak ada kejadian aneh. → `neutral` -
+- **aturan_game** r000883_v01 #13: Menjamin role rahasia Yogi (civilian murni) sebagai fakta.
+  - sebelum: Udah, jangan dengerin mereka, aku jamin dia cuma civilian murni yang tadi emang agak linglung. → `defend` Yogi (defend)
+  - sesudah: Udah, jangan dengerin mereka, aku yakin dia bukan Hitman, tadi emang cuma agak linglung. → `defend` Yogi (defend)

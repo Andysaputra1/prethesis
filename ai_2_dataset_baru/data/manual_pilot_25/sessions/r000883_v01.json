@@ -1,0 +1,230 @@
+{
+  "job": {
+    "job_id": "r000883_v01",
+    "case_name": "reference_start",
+    "case_description": "Tepat 12 konteks. Penyebutan target eksplisit di pesan konteks pertama; pesan sekarang memakai kata ganti.",
+    "source": {
+      "source_row": 883,
+      "source_group": "87e91eccf206cc401fb4",
+      "teks_chat": "kalau mau aman, ikuti aku; gw Stalker dan L sudah terbukti bukan Hitman",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 13,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "reference_start",
+    "participants": [
+      "Xena",
+      "Yogi",
+      "Zain",
+      "Aldi",
+      "Bima"
+    ],
+    "focus_player": "Yogi",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Xena",
+        "teks_chat": "Yogi menarik ajakan vote di chat menjelang diskusi selesai. Aku curiga Yogi Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Yogi",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Zain",
+        "teks_chat": "Iya, kelihatan banget pengen nylametin Hitman-nya.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Yogi",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Yogi",
+        "teks_chat": "Aku menarik ajakan vote karena belum punya alasan kuat, bukan karena aku pelakunya.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Yogi",
+            "relasi": "defend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Aldi",
+        "teks_chat": "Tapi lu telat banget nariknya, kayak nunggu situasi dulu.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Yogi",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Bima",
+        "teks_chat": "Mungkin dia emang kebingungan sih, namanya juga game deduksi.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Yogi",
+            "relasi": "defend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Xena",
+        "teks_chat": "Mana ada kebingungan kalau udah disengaja gitu polanya.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Yogi",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Zain",
+        "teks_chat": "Udah pasti dia itu pelakunya, kita kumpulin suara buat dia aja.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Yogi",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Yogi",
+        "teks_chat": "Sumpah aku bukan Hitman, aku cuma nggak mau salah pilih orang.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Yogi",
+            "relasi": "defend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Aldi",
+        "teks_chat": "Kelihatan banget paniknya pas dituduh.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Yogi",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Bima",
+        "teks_chat": "Kalian jangan asal nuduh tanpa kasih kesempatan dia jelasin.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Yogi",
+            "relasi": "defend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Xena",
+        "teks_chat": "Mending kita keluarin dia sekarang daripada nyesel.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Yogi",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Zain",
+        "teks_chat": "Aku setuju sama Xena, ayo vote dia.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Yogi",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Bima",
+        "teks_chat": "Udah, jangan dengerin mereka, aku yakin dia bukan Hitman, tadi emang cuma agak linglung.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Yogi",
+            "relasi": "defend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 17.txt"
+  },
+  "revisi": [
+    {
+      "pesan": 4,
+      "kategori": "singkatan",
+      "alasan": "'Tpi' di luar slot typo."
+    },
+    {
+      "pesan": 13,
+      "kategori": "aturan_game",
+      "alasan": "Menjamin role rahasia Yogi (civilian murni) sebagai fakta."
+    }
+  ]
+}

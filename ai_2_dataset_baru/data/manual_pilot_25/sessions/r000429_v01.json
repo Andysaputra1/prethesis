@@ -1,0 +1,189 @@
+{
+  "job": {
+    "job_id": "r000429_v01",
+    "case_name": "reference_middle",
+    "case_description": "Tepat 12 konteks. Penyebutan target eksplisit di pesan konteks ke-6 atau ke-7.",
+    "source": {
+      "source_row": 429,
+      "source_group": "add451fdd1213834aafa",
+      "teks_chat": "dia nuduh aku buat ngalihin perhatian, jangan langsung kemakan omongannya",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 13,
+    "pesan_typo_ringan": [
+      5
+    ]
+  },
+  "session": {
+    "case_name": "reference_middle",
+    "participants": [
+      "Oki",
+      "Putri",
+      "Rafi",
+      "Sinta",
+      "Nanda"
+    ],
+    "focus_player": "Nanda",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Oki",
+        "teks_chat": "Ada klaim atau omongan di chat yang perlu kita cek nggak?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Putri",
+        "teks_chat": "Aku belum mendapat informasi apa-apa nih, kondisi sangat sepi.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Rafi",
+        "teks_chat": "Tadi ada pemain yang mengganti nama orang yang dituduh, ya?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Sinta",
+        "teks_chat": "Siapa memangnya yang berani menuduh tanpa bukti begitu?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Oki",
+        "teks_chat": "Itu sdh ada yang mengganti target tuduhan berkali-kali sejak tadi.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Putri",
+        "teks_chat": "Nanda menuduh aku, lalu Rafi tanpa menjelaskan alasannya. Aku curiga Nanda Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Nanda",
+            "relasi": "offend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Rafi",
+        "teks_chat": "Aku juga curiga dia, alasannya belum jelas.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Nanda",
+            "relasi": "offend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Sinta",
+        "teks_chat": "Mungkin dia sedang panik makanya asal menunjuk orang lain.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Oki",
+        "teks_chat": "Pola seperti itu biasanya dipakai oleh pelaku untuk mengadu domba kita semua.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Nanda",
+            "relasi": "offend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Putri",
+        "teks_chat": "Lebih baik kita kumpulkan suara untuk mengeluarkan dia saja.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Nanda",
+            "relasi": "offend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Rafi",
+        "teks_chat": "Aku setuju, mending kita keluarin dia sekarang.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Nanda",
+            "relasi": "offend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Sinta",
+        "teks_chat": "Jangan vote dia dulu; perubahan dugaan belum membuktikan dia pelakunya.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Nanda",
+            "relasi": "defend",
+            "bukti_pesan": [
+              10
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Oki",
+        "teks_chat": "Benar kata Sinta. Dia belum pantas dituduh sebagai Hitman hanya karena mengubah dugaan.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Nanda",
+            "relasi": "defend",
+            "bukti_pesan": [
+              12
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 6.txt"
+  },
+  "revisi": [
+    {
+      "pesan": 1,
+      "kategori": "tidak_natural",
+      "alasan": "Kaku ('Apakah ada klaim atau ucapan...')."
+    },
+    {
+      "pesan": 9,
+      "kategori": "label",
+      "alasan": "Menyiratkan pola Nanda adalah pola pelaku = menyudutkan Nanda."
+    },
+    {
+      "pesan": 11,
+      "kategori": "tidak_natural",
+      "alasan": "'kondisi markas menjadi aman' janggal."
+    }
+  ]
+}

@@ -1,0 +1,190 @@
+{
+  "job": {
+    "job_id": "r000522_v01",
+    "case_name": "outside_window_unknown",
+    "case_description": "14-16 pesan total. Pembahasan lama telah putus/beralih. Teks dan anotasi 12 konteks terakhir tidak cukup menentukan acuan sekarang. Target harus tidak_diketahui; jangan menggunakan informasi lama yang tidak tersedia dalam input.",
+    "source": {
+      "source_row": 522,
+      "source_group": "f31a94b3ecd5c5ab8df6",
+      "teks_chat": "lu nuduh gw karena fakta atau karena gw nggak ikut arus?",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 14,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "outside_window_unknown",
+    "participants": [
+      "Yoga",
+      "Zain",
+      "Aldi",
+      "Beni"
+    ],
+    "focus_player": "Zain",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Yoga",
+        "teks_chat": "Aku curiga Zain pelakunya karena balasan chatnya sangat lambat.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Zain",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Aldi",
+        "teks_chat": "Kita jeda pembahasan orang dulu. Ada yang semalam pakai Peek?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Beni",
+        "teks_chat": "Belum ada yang ngaku Stalker dari tadi.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Yoga",
+        "teks_chat": "Mungkin Stalker-nya masih nahan info.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Aldi",
+        "teks_chat": "Bisa jadi, biar nggak langsung diincar.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Beni",
+        "teks_chat": "Kalau nanti ada yang ngaku, kita tanya dia Peek siapa.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Yoga",
+        "teks_chat": "Iya, terus kita cocokin sama omongannya sebelumnya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Aldi",
+        "teks_chat": "Tapi gimana kalau dia bohong soal hasilnya?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Beni",
+        "teks_chat": "Makanya jangan langsung ditelan mentah-mentah.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Yoga",
+        "teks_chat": "Terus kalau ada dua orang ngaku Stalker?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Aldi",
+        "teks_chat": "Itu tetap klaim yang mungkin benar atau mungkin bohong.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Beni",
+        "teks_chat": "Oke, jadi klaim Peek tetap harus dicek dulu.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Yoga",
+        "teks_chat": "Sekarang balik ke orang yang dibahas sebelum obrolan Peek tadi.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Aldi",
+        "teks_chat": "Menurutku dia belum pantas dituduh; respons lambat bisa karena koneksi.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "tidak_diketahui",
+            "relasi": "defend",
+            "bukti_pesan": []
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 8.txt"
+  },
+  "revisi": [
+    {
+      "pesan": 2,
+      "kategori": "meta",
+      "alasan": "'Aku belum paham Peek' memulai penjelasan aturan skill."
+    },
+    {
+      "pesan": 3,
+      "kategori": "meta",
+      "alasan": "Menjelaskan Peek adalah skill Stalker."
+    },
+    {
+      "pesan": 4,
+      "kategori": "meta",
+      "alasan": "Menanyakan fase pemakaian skill (aturan)."
+    },
+    {
+      "pesan": 5,
+      "kategori": "meta",
+      "alasan": "Menjelaskan fase pemakaian skill."
+    },
+    {
+      "pesan": 6,
+      "kategori": "meta",
+      "alasan": "Menanyakan frekuensi skill (aturan)."
+    },
+    {
+      "pesan": 7,
+      "kategori": "meta",
+      "alasan": "Menjelaskan cooldown Peek (aturan)."
+    },
+    {
+      "pesan": 8,
+      "kategori": "meta",
+      "alasan": "Menanyakan visibilitas hasil skill (aturan)."
+    },
+    {
+      "pesan": 9,
+      "kategori": "meta",
+      "alasan": "'hasil Peek merupakan informasi pribadi pemilik skill' = penjelasan desain."
+    },
+    {
+      "pesan": 10,
+      "kategori": "tidak_natural",
+      "alasan": "Disesuaikan agar nyambung setelah perbaikan [8]-[9]."
+    },
+    {
+      "pesan": 12,
+      "kategori": "tidak_natural",
+      "alasan": "Kalimat kaku ('Baik, jadi mendengar klaim bukan berarti...')."
+    },
+    {
+      "pesan": 13,
+      "kategori": "meta",
+      "alasan": "'sebelum penjelasan Peek tadi' merujuk diskusi aturan."
+    }
+  ]
+}

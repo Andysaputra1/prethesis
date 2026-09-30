@@ -1,0 +1,104 @@
+{
+  "job": {
+    "job_id": "r003998_v01",
+    "case_name": "neutral_names",
+    "case_description": "Neutral menyebut nama tanpa menuduh/membela; target kosong.",
+    "source": {
+      "source_row": 3998,
+      "source_group": "b6a747cea5722f8ff69e",
+      "teks_chat": "Spy, kalau emang ada, berani sebut siapa yang kamu kawal tadi malam?",
+      "label_intent": "neutral"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 5,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "neutral_names",
+    "participants": [
+      "Umar",
+      "Vina",
+      "Wawan",
+      "Yayan"
+    ],
+    "focus_player": "Vina",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Umar",
+        "teks_chat": "Vina, aku curiga kamu Hitman yang membuat klaim Spy palsu.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Vina",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Vina",
+        "teks_chat": "Aku bukan Hitman, klaimku Spy. Semalam aku Guard Wawan.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Vina",
+            "relasi": "defend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Wawan",
+        "teks_chat": "Jangan percaya, dia cuma ngulur waktu biar gak divote.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Vina",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Yayan",
+        "teks_chat": "Vote Vina aja guys biar tenang.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Vina",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Umar",
+        "teks_chat": "Vina dan Wawan sudah membagikan klaim role masing-masing?",
+        "label_intent": "neutral",
+        "target": []
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 61.txt"
+  },
+  "revisi": [
+    {
+      "pesan": 2,
+      "kategori": "tidak_natural",
+      "alasan": "'Pilihan Guard semalam adalah Wawan' kaku"
+    }
+  ]
+}

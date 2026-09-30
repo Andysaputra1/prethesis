@@ -1,0 +1,83 @@
+{
+  "job": {
+    "job_id": "r003830_v01",
+    "case_name": "short_history_3",
+    "case_description": "Awal diskusi dengan tepat 3 pesan sebelumnya. Acuan tidak harus berada di pesan terakhir.",
+    "source": {
+      "source_row": 3830,
+      "source_group": "67761d4ac445ef12fb70",
+      "teks_chat": "aku Spy, malam ini aku tidak bisa Guard target yang sama seperti kemarin",
+      "label_intent": "neutral"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 4,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "short_history_3",
+    "participants": [
+      "Zaki",
+      "Adi",
+      "Bima",
+      "Caca"
+    ],
+    "focus_player": "",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Zaki",
+        "teks_chat": "Adi balesnya lama bener, jangan-jangan lagi diskusi sama temen hitmannya.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Adi",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Adi",
+        "teks_chat": "Sori, internet ngelag jadi chatku masuknya pending terus.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Adi",
+            "relasi": "defend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Bima",
+        "teks_chat": "Alasan klasik tuh nyalahin internet ngelag.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Adi",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Caca",
+        "teks_chat": "Btw, waktu diskusi kita sisa berapa detik lagi nih sebelum voting?",
+        "label_intent": "neutral",
+        "target": []
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 59.txt"
+  }
+}

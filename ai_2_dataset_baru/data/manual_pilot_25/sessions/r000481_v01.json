@@ -1,0 +1,74 @@
+{
+  "job": {
+    "job_id": "r000481_v01",
+    "case_name": "witness",
+    "case_description": "Nama saksi/korban disebut, tetapi bukan target serangan atau pembelaan.",
+    "source": {
+      "source_row": 481,
+      "source_group": "bf3d01ada81f44aecf68",
+      "teks_chat": "bukan aku yang perlu kalian eksekusi pagi ini; aku sudah membela diri dengan konsisten, sekarang kita kunci target ke si F",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 4,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "witness",
+    "participants": [
+      "Dika",
+      "Eka",
+      "Fajar"
+    ],
+    "focus_player": "Fajar",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Dika",
+        "teks_chat": "Eka, apa yang kamu perhatikan dari chat Fajar?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Eka",
+        "teks_chat": "Fajar tadi mengajak vote, tetapi tidak menjawab saat diminta alasannya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Fajar",
+        "teks_chat": "Aku tidak sedang memfitnah siapa pun, aku belum selesai menyusun jawaban.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Fajar",
+            "relasi": "defend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Dika",
+        "teks_chat": "Dari pengamatan Eka soal chat tadi, aku curiga Fajar Hitman yang mau menggiring vote tanpa alasan.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Fajar",
+            "relasi": "offend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 7.txt"
+  }
+}

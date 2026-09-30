@@ -1,0 +1,206 @@
+{
+  "job": {
+    "job_id": "r004376_v01",
+    "case_name": "mixed_relations",
+    "case_description": "Membela satu pemain dan menuduh pemain lain. Intent utama offend; simpan kedua relasi.",
+    "source": {
+      "source_row": 4376,
+      "source_group": "bfbe1dafc1bde68554df",
+      "teks_chat": "kalau argumen gw dianggap lemah, argumen Galih malah tidak ada sama sekali",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 11,
+    "pesan_typo_ringan": [
+      2
+    ]
+  },
+  "session": {
+    "case_name": "mixed_relations",
+    "participants": [
+      "Yudha",
+      "Fina",
+      "Roni",
+      "Wawan",
+      "Doni"
+    ],
+    "focus_player": "Wawan",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Yudha",
+        "teks_chat": "Wawan cepat membela Doni tanpa alasan, aku curiga Wawan Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Wawan",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Fina",
+        "teks_chat": "Yg punya kebiasaan melindungi teman begitu biasanya bagian dari komplotan.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Wawan",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Roni",
+        "teks_chat": "Masa sih? Aku rasa Wawan murni berpendapat santai saja.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Wawan",
+            "relasi": "defend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Doni",
+        "teks_chat": "Aku curiga Wawan Hitman yang mencari simpati dengan membelaku.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Wawan",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Yudha",
+        "teks_chat": "Nah, tuh dengar, yang dilindungi saja sampai keheranan.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Wawan",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Fina",
+        "teks_chat": "Sudah pasti dia adalah Hitman yang sok akrab untuk merangkul simpati.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Wawan",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Roni",
+        "teks_chat": "Jangan menghakimi Wawan terlalu cepat, buktinya belum nyata.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Wawan",
+            "relasi": "defend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Doni",
+        "teks_chat": "Jujur, aku sama sekali tidak ada kerja sama dengan Wawan.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Doni",
+            "relasi": "defend",
+            "bukti_pesan": [
+              8
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Yudha",
+        "teks_chat": "Meski begitu, cara Wawan menyela sangat meyakinkan kalau dia berniat jelek.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Wawan",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Fina",
+        "teks_chat": "Hati-hati saja, Wawan tetap jadi tersangka utamaku hari ini.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Wawan",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Roni",
+        "teks_chat": "Oke, Doni mungkin bersih, tapi Wawan yang jelas-jelas memainkan taktik menyesatkan ini layak di-vote.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Doni",
+            "relasi": "defend",
+            "bukti_pesan": [
+              11
+            ]
+          },
+          {
+            "pemain": "Wawan",
+            "relasi": "offend",
+            "bukti_pesan": [
+              11
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 64.txt"
+  },
+  "revisi": [
+    {
+      "pesan": 8,
+      "kategori": "label",
+      "alasan": "Doni menepis sindiran komplotan (pesan 2, 4-6); ini pembelaan diri."
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "job": {
+    "job_id": "r005222_v01",
+    "case_name": "short_history_1",
+    "case_description": "Awal diskusi dengan tepat 1 pesan sebelumnya. Jangan menambah riwayat fiktif atau mengisi sampai 12.",
+    "source": {
+      "source_row": 5222,
+      "source_group": "4644cafd4b72eb315552",
+      "teks_chat": "aku Hitman? ngaco, role-ku jelas Spy dari awal ronde",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 2,
+    "pesan_typo_ringan": [
+      2
+    ]
+  },
+  "session": {
+    "case_name": "short_history_1",
+    "participants": [
+      "Budi",
+      "Dani",
+      "Ciko"
+    ],
+    "focus_player": "Ciko",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Budi",
+        "teks_chat": "Ciko diam terus dari tadi, aku curiga dia hitmannya.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Ciko",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Dani",
+        "teks_chat": "Bisa aja dia kena gag order, jadi tdk bisa ngetik sama sekali.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Ciko",
+            "relasi": "defend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 76.txt"
+  }
+}

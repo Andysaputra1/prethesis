@@ -1,0 +1,103 @@
+{
+  "job": {
+    "job_id": "r003127_v01",
+    "case_name": "witness",
+    "case_description": "Nama saksi/korban disebut, tetapi bukan target serangan atau pembelaan.",
+    "source": {
+      "source_row": 3127,
+      "source_group": "ef1f38bc587ca9ee7a5b",
+      "teks_chat": "tadi pas diskusi mulai si A langsung kena Gag Order, gw nuduh dia Hitman",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 10,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "witness",
+    "participants": [
+      "Fajar",
+      "Gilang",
+      "Hendra",
+      "Irfan"
+    ],
+    "focus_player": "Irfan",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Fajar",
+        "teks_chat": "Saat diskusi siang sebelumnya ada yang tidak bisa chat?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Gilang",
+        "teks_chat": "Hendra diam, tetapi aku tidak tahu apakah karena skill.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Hendra",
+        "teks_chat": "Aku mengaku terkena Gag Order saat itu.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Irfan",
+        "teks_chat": "Pantesan sepi banget.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Fajar",
+        "teks_chat": "Tapi ada yang diamnya aneh.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Gilang",
+        "teks_chat": "Siapa tuh?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Fajar",
+        "teks_chat": "Si Irfan tuh.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Irfan",
+        "teks_chat": "Aku tadi hanya menyimak.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Hendra",
+        "teks_chat": "Aku sebagai saksi lihat chat emang mandek sih.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Gilang",
+        "teks_chat": "Hendra mengaku kena Gag Order. Kalau Irfan, aku justru curiga dia Hitman yang sengaja menghindari diskusi.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Irfan",
+            "relasi": "offend",
+            "bukti_pesan": [
+              10
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 45.txt"
+  }
+}

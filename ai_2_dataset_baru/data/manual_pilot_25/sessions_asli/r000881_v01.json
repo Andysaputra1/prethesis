@@ -1,0 +1,129 @@
+{
+  "job": {
+    "job_id": "r000881_v01",
+    "case_name": "multiple_targets",
+    "case_description": "Dua atau lebih pemain menjadi target relasi yang sama secara jelas.",
+    "source": {
+      "source_row": 881,
+      "source_group": "c06ace059203ab9a3fbb",
+      "teks_chat": "serius, gw Stalker dan J kelihatan punya role jahat dari hasil intip",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 8,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "multiple_targets",
+    "participants": [
+      "Puji",
+      "Qila",
+      "Rafi",
+      "Sinta"
+    ],
+    "focus_player": "",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Puji",
+        "teks_chat": "Tadi ada yang claim Stalker tapi infonya abu-abu banget ya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Qila",
+        "teks_chat": "Rafi tadi mengaku Stalker tanpa menjelaskan apa pun. Aku curiga Rafi Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Rafi",
+            "relasi": "offend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Rafi",
+        "teks_chat": "Aku bukan Hitman. Aku memang mengaku Stalker, tetapi belum ingin membuka hasilnya.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Rafi",
+            "relasi": "defend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Sinta",
+        "teks_chat": "Oh, si Qila juga tadi sempat bilang kalau dia yang Stalker kan?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Puji",
+        "teks_chat": "Jadi ada dua orang yang ngaku dapet info Peek nih?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Rafi",
+        "teks_chat": "Dua klaim itu belum bisa kita pastikan mana yang benar.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Qila",
+        "teks_chat": "Aku bukan Hitman, aku mengaku Stalker. Justru Rafi yang aku curigai sedang menyamar.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Qila",
+            "relasi": "defend",
+            "bukti_pesan": [
+              7
+            ]
+          },
+          {
+            "pemain": "Rafi",
+            "relasi": "offend",
+            "bukti_pesan": [
+              7
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Sinta",
+        "teks_chat": "Udahlah, karena klaim mereka berdua sama-sama nggak ada bukti kuatnya, mending Rafi dan Qila langsung kita vote aja hari ini!",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Rafi",
+            "relasi": "offend",
+            "bukti_pesan": [
+              2
+            ]
+          },
+          {
+            "pemain": "Qila",
+            "relasi": "offend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 17.txt"
+  }
+}

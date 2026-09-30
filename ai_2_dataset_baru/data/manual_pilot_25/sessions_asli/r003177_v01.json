@@ -1,0 +1,149 @@
+{
+  "job": {
+    "job_id": "r003177_v01",
+    "case_name": "interruption",
+    "case_description": "Pembahasan target disela obrolan waktu/ronde; kaitan kembali ke target masih jelas.",
+    "source": {
+      "source_row": 3177,
+      "source_group": "2b3ded5e5c872bce05ba",
+      "teks_chat": "Saya tetap pada pernyataan sebelumnya; tidak ada bagian yang berubah meski tekanan diskusi makin tinggi",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 12,
+    "pesan_typo_ringan": [
+      8
+    ]
+  },
+  "session": {
+    "case_name": "interruption",
+    "participants": [
+      "Yudi",
+      "Zaki",
+      "Aldi",
+      "Beni"
+    ],
+    "focus_player": "Zaki",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Yudi",
+        "teks_chat": "Zaki kok dari awal game diam terus ya?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Zaki",
+        "teks_chat": "Aku sedang menyimak.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Aldi",
+        "teks_chat": "Diam terus biasanya punya role jahat sih.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Zaki",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Beni",
+        "teks_chat": "Jangan tuduh dia hanya karena diam.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Zaki",
+            "relasi": "defend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Yudi",
+        "teks_chat": "Eh bentar, ini sisa waktu diskusi tinggal berapa menit?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Aldi",
+        "teks_chat": "Kayaknya sisa dua menit lagi.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Beni",
+        "teks_chat": "Wah, cepet banget ya rondenya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Yudi",
+        "teks_chat": "Tadi ada pertanyaan yang belum dibalas?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Aldi",
+        "teks_chat": "Gak merhatiin aku.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Zaki",
+        "teks_chat": "Ya ampun, aku kan emang tipe pendiam dari dulu.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Zaki",
+            "relasi": "defend",
+            "bukti_pesan": [
+              10
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Aldi",
+        "teks_chat": "Tetap aja mencurigakan buat aku.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Zaki",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Yudi",
+        "teks_chat": "Udahlah, mending kita fokus ke yang lain, si Zaki emang gayanya gitu kok bukan berarti dia pelakunya.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Zaki",
+            "relasi": "defend",
+            "bukti_pesan": [
+              12
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 45.txt"
+  }
+}

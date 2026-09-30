@@ -1,0 +1,178 @@
+{
+  "job": {
+    "job_id": "r001483_v01",
+    "case_name": "multiple_targets",
+    "case_description": "Dua atau lebih pemain menjadi target relasi yang sama secara jelas.",
+    "source": {
+      "source_row": 1483,
+      "source_group": "c7e4c00d0dcd46f921a9",
+      "teks_chat": "daripada debat soal gw terus, mending kita eksekusi si Fajar yang alibinya paling bolong",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 10,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "multiple_targets",
+    "participants": [
+      "Zaki",
+      "Andi",
+      "Bella",
+      "Caca"
+    ],
+    "focus_player": "",
+    "panggilan": [
+      {
+        "pemain": "Zaki",
+        "sebutan": [
+          "Zak"
+        ]
+      }
+    ],
+    "messages": [
+      {
+        "pengirim": "Zaki",
+        "teks_chat": "Andi tadi mengajak kita vote, lalu menarik ajakannya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Andi",
+        "teks_chat": "Iya, aku menilai alasan awalku belum kuat.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Bella",
+        "teks_chat": "Caca juga menarik ajakannya setelah membaca jawaban baru.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Caca",
+        "teks_chat": "Aku dan Andi bukan Hitman. Kami mengoreksi dugaan yang lemah.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Caca",
+            "relasi": "defend",
+            "bukti_pesan": [
+              4
+            ]
+          },
+          {
+            "pemain": "Andi",
+            "relasi": "defend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Zaki",
+        "teks_chat": "Aku curiga Caca dan Andi sedang mengubah cerita untuk lolos.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Caca",
+            "relasi": "offend",
+            "bukti_pesan": [
+              5
+            ]
+          },
+          {
+            "pemain": "Andi",
+            "relasi": "offend",
+            "bukti_pesan": [
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Andi",
+        "teks_chat": "Aku tidak bersalah, alasan perubahanku sudah kujelaskan.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Andi",
+            "relasi": "defend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Bella",
+        "teks_chat": "Aku masih curiga dia mengarang alasan.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Andi",
+            "relasi": "offend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Caca",
+        "teks_chat": "Zak, aku dan Andi belum pantas dituduh hanya karena berubah pikiran.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Caca",
+            "relasi": "defend",
+            "bukti_pesan": [
+              8
+            ]
+          },
+          {
+            "pemain": "Andi",
+            "relasi": "defend",
+            "bukti_pesan": [
+              8
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Zaki",
+        "teks_chat": "Aku akan membaca ulang jawaban kalian.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Bella",
+        "teks_chat": "Aku tetap curiga Andi dan Caca Hitman karena cerita mereka berubah. Aku ingin vote mereka berdua.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Andi",
+            "relasi": "offend",
+            "bukti_pesan": [
+              10
+            ]
+          },
+          {
+            "pemain": "Caca",
+            "relasi": "offend",
+            "bukti_pesan": [
+              10
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 26.txt"
+  }
+}

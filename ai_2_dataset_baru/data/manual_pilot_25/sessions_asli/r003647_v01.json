@@ -1,0 +1,47 @@
+{
+  "job": {
+    "job_id": "r003647_v01",
+    "case_name": "neutral_names",
+    "case_description": "Neutral menyebut nama tanpa menuduh/membela; target kosong.",
+    "source": {
+      "source_row": 3647,
+      "source_group": "83a9c439f18d71f95f4e",
+      "teks_chat": "aku cuma civilian, sengaja diem buat lihat siapa yang paling defensif",
+      "label_intent": "neutral"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 2,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "neutral_names",
+    "participants": [
+      "Wawan",
+      "Xena",
+      "Yanto",
+      "Zaki"
+    ],
+    "focus_player": "",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Wawan",
+        "teks_chat": "Malam tadi ada kejadian apa aja?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Xena",
+        "teks_chat": "Yanto dan Zaki belum membagikan klaim skill semalam.",
+        "label_intent": "neutral",
+        "target": []
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 56.txt"
+  }
+}

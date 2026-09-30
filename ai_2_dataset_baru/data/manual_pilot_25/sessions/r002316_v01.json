@@ -1,0 +1,77 @@
+{
+  "job": {
+    "job_id": "r002316_v01",
+    "case_name": "neutral_after_accusation",
+    "case_description": "Konteks berisi tuduhan, tetapi pesan sekarang neutral; jangan mewarisi relasi lama.",
+    "source": {
+      "source_row": 2316,
+      "source_group": "b5e96b1590b85b36677c",
+      "teks_chat": "sumpah gw civilian biasa, gak punya aksi malam",
+      "label_intent": "neutral"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 3,
+    "pesan_typo_ringan": [
+      3
+    ]
+  },
+  "session": {
+    "case_name": "neutral_after_accusation",
+    "participants": [
+      "Gani",
+      "Hani",
+      "Iwan"
+    ],
+    "focus_player": "",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Gani",
+        "teks_chat": "Iwan balesnya lama terus, pasti lu pelakunya!",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Iwan",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Hani",
+        "teks_chat": "Iya tuh, jangan-jangan lagi mikirin alasan.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Iwan",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Iwan",
+        "teks_chat": "Internetku sekarang udh nyambung lagi. Sisa waktu diskusi berapa?",
+        "label_intent": "neutral",
+        "target": []
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 38.txt"
+  },
+  "revisi": [
+    {
+      "pesan": 3,
+      "kategori": "singkatan",
+      "alasan": "Slot typo [3] tapi pesan utama tidak memuat singkatan ringan"
+    }
+  ]
+}

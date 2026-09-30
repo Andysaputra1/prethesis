@@ -1,0 +1,154 @@
+{
+  "job": {
+    "job_id": "r003283_v01",
+    "case_name": "reference_start",
+    "case_description": "Tepat 12 konteks. Penyebutan target eksplisit di pesan konteks pertama; pesan sekarang memakai kata ganti.",
+    "source": {
+      "source_row": 3283,
+      "source_group": "8a961c4b4ad2e973749f",
+      "teks_chat": "gw baru gabung diskusinya, jangan jadikan telat respon sebagai bukti",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 13,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "reference_start",
+    "participants": [
+      "Mamat",
+      "Nina",
+      "Oki",
+      "Putri",
+      "Rizky"
+    ],
+    "focus_player": "Nina",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Mamat",
+        "teks_chat": "Nina diam cukup lama, aku curiga dia Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Nina",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Nina",
+        "teks_chat": "Aku bukan Hitman, aku sedang membaca chat.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Nina",
+            "relasi": "defend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Oki",
+        "teks_chat": "Aku tetap curiga dia pelakunya.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Nina",
+            "relasi": "offend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Putri",
+        "teks_chat": "Apa ada alasan selain jeda balasan?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Rizky",
+        "teks_chat": "Aku belum membaca alasan tambahan.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Oki",
+        "teks_chat": "Aku masih menduga dia Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Nina",
+            "relasi": "offend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Mamat",
+        "teks_chat": "Kita perlu menilai alasan itu sebelum Tribunal.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Putri",
+        "teks_chat": "Berapa lama waktu diskusi tersisa?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Rizky",
+        "teks_chat": "Masih cukup untuk membaca chat lagi.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Mamat",
+        "teks_chat": "Oke, periksa pesan yang sudah ada.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Oki",
+        "teks_chat": "Aku sudah membacanya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Putri",
+        "teks_chat": "Belum ada alasan tambahan yang dibagikan.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Rizky",
+        "teks_chat": "Aku menolak tuduhan ke dia hanya karena lama membalas.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Nina",
+            "relasi": "defend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 48.txt"
+  }
+}

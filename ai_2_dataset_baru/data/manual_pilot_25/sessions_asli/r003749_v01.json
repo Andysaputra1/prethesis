@@ -1,0 +1,226 @@
+{
+  "job": {
+    "job_id": "r003749_v01",
+    "case_name": "memory_outside_window",
+    "case_description": "14-16 pesan total. Nama target hanya disebut sebelum 12 konteks terakhir. Dalam jendela, ada pesan yang meneruskan acuan dengan jelas dan menyimpan anotasi target berdasarkan pesan lama. Pesan sekarang merujuk target sama. Nama target tidak muncul dalam teks 12 konteks terakhir atau pesan sekarang; target diketahui lewat memori.",
+    "source": {
+      "source_row": 3749,
+      "source_group": "9a8f18e77a2f269e0aa6",
+      "teks_chat": "gw punya alibi malam yang kuat, role gw bukan pembunuh",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 14,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "memory_outside_window",
+    "participants": [
+      "Agus",
+      "Budi",
+      "Caca",
+      "Dedi",
+      "Eko",
+      "Fani",
+      "Umar"
+    ],
+    "focus_player": "Umar",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Agus",
+        "teks_chat": "Umar mengaku Spy lalu mengubah klaim menjadi Civilian.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Budi",
+        "teks_chat": "Aku curiga dia Hitman karena perubahan klaim itu.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Umar",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Caca",
+        "teks_chat": "Aku juga curiga dia Hitman karena klaimnya berubah.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Umar",
+            "relasi": "offend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Dedi",
+        "teks_chat": "Benar, menurutku dia mengarang role untuk cari aman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Umar",
+            "relasi": "offend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Eko",
+        "teks_chat": "Sengaja banget ngasih info sesat biar kita bingung.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Umar",
+            "relasi": "offend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Fani",
+        "teks_chat": "Mencurigakan sekali kelakuannya.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Umar",
+            "relasi": "offend",
+            "bukti_pesan": [
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Agus",
+        "teks_chat": "Berarti dia bohong soal role yang diklaim.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Umar",
+            "relasi": "offend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Budi",
+        "teks_chat": "Sudah pasti hitman yang lagi menyamar itu mah.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Umar",
+            "relasi": "offend",
+            "bukti_pesan": [
+              7
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Caca",
+        "teks_chat": "Masa sih dia senekat itu bohong terang-terangan?",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Umar",
+            "relasi": "defend",
+            "bukti_pesan": [
+              8
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Dedi",
+        "teks_chat": "Ya namanya juga usaha nyari alibi biar tidak dituduh.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Umar",
+            "relasi": "offend",
+            "bukti_pesan": [
+              8
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Eko",
+        "teks_chat": "Mending kita sepakat vote dia aja sekarang biar aman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Umar",
+            "relasi": "offend",
+            "bukti_pesan": [
+              10
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Fani",
+        "teks_chat": "Setuju, singkirkan aja sebelum bahaya.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Umar",
+            "relasi": "offend",
+            "bukti_pesan": [
+              11
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Agus",
+        "teks_chat": "Ayo buruan divote mumpung waktunya masih ada.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Umar",
+            "relasi": "offend",
+            "bukti_pesan": [
+              12
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Budi",
+        "teks_chat": "Aku tarik tuduhan. Perubahan klaim belum membuktikan dia Hitman, mungkin tadi salah ketik.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Umar",
+            "relasi": "defend",
+            "bukti_pesan": [
+              13
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 58.txt"
+  }
+}

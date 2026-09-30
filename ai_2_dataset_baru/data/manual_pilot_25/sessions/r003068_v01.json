@@ -1,0 +1,190 @@
+{
+  "job": {
+    "job_id": "r003068_v01",
+    "case_name": "outside_window_unknown",
+    "case_description": "14-16 pesan total. Pembahasan lama telah putus/beralih. Teks dan anotasi 12 konteks terakhir tidak cukup menentukan acuan sekarang. Target harus tidak_diketahui; jangan menggunakan informasi lama yang tidak tersedia dalam input.",
+    "source": {
+      "source_row": 3068,
+      "source_group": "51b0276dfa4dd2edf0f1",
+      "teks_chat": "si C langsung kena Gag Order pas mau jelasin alibi, fix pelakunya ada di antara yang nyerang dia",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 14,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "outside_window_unknown",
+    "participants": [
+      "Xena",
+      "Yudi",
+      "Zaki",
+      "Agus"
+    ],
+    "focus_player": "Yudi",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Xena",
+        "teks_chat": "Yudi terlalu cepat membela diri, aku curiga dia Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Yudi",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Yudi",
+        "teks_chat": "Sebentar, ada yang kena Gag Order nggak hari ini?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Zaki",
+        "teks_chat": "Aku aman, masih bisa ngetik.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Agus",
+        "teks_chat": "Aku juga aman.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Xena",
+        "teks_chat": "Aku juga.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Yudi",
+        "teks_chat": "Oke, berarti semua bisa ikut diskusi.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Zaki",
+        "teks_chat": "Waktu siang tinggal berapa lama ya?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Agus",
+        "teks_chat": "Kayaknya masih dua menitan.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Xena",
+        "teks_chat": "Oke, masih cukup buat ngobrol.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Yudi",
+        "teks_chat": "Jangan sampai kita vote asal karena buru-buru.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Zaki",
+        "teks_chat": "Setuju, bahas satu-satu aja.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Agus",
+        "teks_chat": "Oke, aku baca ulang pesannya dulu.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Xena",
+        "teks_chat": "Kita punya waktu untuk menilai sebelum Tribunal.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Yudi",
+        "teks_chat": "Orang yang asal nuduh di awal tadi pasti Hitman, vote dia!",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "tidak_diketahui",
+            "relasi": "offend",
+            "bukti_pesan": []
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 44.txt"
+  },
+  "revisi": [
+    {
+      "pesan": 2,
+      "kategori": "meta",
+      "alasan": "Jendela berisi pembahasan cara membaca klaim/fungsi Peek seperti penjelasan aturan; diganti obrolan in-game netral tanpa menyebut target lama"
+    },
+    {
+      "pesan": 3,
+      "kategori": "meta",
+      "alasan": "Jendela berisi pembahasan cara membaca klaim/fungsi Peek seperti penjelasan aturan; diganti obrolan in-game netral tanpa menyebut target lama"
+    },
+    {
+      "pesan": 4,
+      "kategori": "meta",
+      "alasan": "Jendela berisi pembahasan cara membaca klaim/fungsi Peek seperti penjelasan aturan; diganti obrolan in-game netral tanpa menyebut target lama"
+    },
+    {
+      "pesan": 5,
+      "kategori": "meta",
+      "alasan": "Jendela berisi pembahasan cara membaca klaim/fungsi Peek seperti penjelasan aturan; diganti obrolan in-game netral tanpa menyebut target lama"
+    },
+    {
+      "pesan": 6,
+      "kategori": "meta",
+      "alasan": "Jendela berisi pembahasan cara membaca klaim/fungsi Peek seperti penjelasan aturan; diganti obrolan in-game netral tanpa menyebut target lama"
+    },
+    {
+      "pesan": 7,
+      "kategori": "meta",
+      "alasan": "Jendela berisi pembahasan cara membaca klaim/fungsi Peek seperti penjelasan aturan; diganti obrolan in-game netral tanpa menyebut target lama"
+    },
+    {
+      "pesan": 8,
+      "kategori": "meta",
+      "alasan": "Jendela berisi pembahasan cara membaca klaim/fungsi Peek seperti penjelasan aturan; diganti obrolan in-game netral tanpa menyebut target lama"
+    },
+    {
+      "pesan": 9,
+      "kategori": "meta",
+      "alasan": "Jendela berisi pembahasan cara membaca klaim/fungsi Peek seperti penjelasan aturan; diganti obrolan in-game netral tanpa menyebut target lama"
+    },
+    {
+      "pesan": 10,
+      "kategori": "meta",
+      "alasan": "Jendela berisi pembahasan cara membaca klaim/fungsi Peek seperti penjelasan aturan; diganti obrolan in-game netral tanpa menyebut target lama"
+    },
+    {
+      "pesan": 11,
+      "kategori": "meta",
+      "alasan": "Jendela berisi pembahasan cara membaca klaim/fungsi Peek seperti penjelasan aturan; diganti obrolan in-game netral tanpa menyebut target lama"
+    },
+    {
+      "pesan": 14,
+      "kategori": "tidak_natural",
+      "alasan": "Yudi (yang di pesan 1 dituduh terlalu cepat membela diri) menuduh 'orang yang membela diri di awal' = dirinya sendiri; tidak logis. Target tetap tidak_diketahui"
+    }
+  ]
+}

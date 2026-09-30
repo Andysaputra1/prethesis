@@ -1,0 +1,190 @@
+{
+  "job": {
+    "job_id": "r003549_v01",
+    "case_name": "reference_middle",
+    "case_description": "Tepat 12 konteks. Penyebutan target eksplisit di pesan konteks ke-6 atau ke-7.",
+    "source": {
+      "source_row": 3549,
+      "source_group": "34053de3f42844b329a2",
+      "teks_chat": "jangan asal vote gw, role gw Civilian biasa, yang maksa nuduh malah mencurigakan",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 13,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "reference_middle",
+    "participants": [
+      "Eka",
+      "Fani",
+      "Gita",
+      "Hari",
+      "Ivan"
+    ],
+    "focus_player": "Ivan",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Eka",
+        "teks_chat": "Ada klaim yang ingin dibahas lagi?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Fani",
+        "teks_chat": "Aku masih membaca pesan sebelumnya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Gita",
+        "teks_chat": "Ini kenapa ada yang dari tadi chatnya kepotong-potong terus ya?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Hari",
+        "teks_chat": "Iya, balasnya juga lama banget kayak lagi mikir keras mau bohong apa.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "tidak_diketahui",
+            "relasi": "offend",
+            "bukti_pesan": []
+          }
+        ]
+      },
+      {
+        "pengirim": "Eka",
+        "teks_chat": "Jangan tuduh dia hanya karena lambat membalas, mungkin koneksi bermasalah.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "tidak_diketahui",
+            "relasi": "defend",
+            "bukti_pesan": []
+          }
+        ]
+      },
+      {
+        "pengirim": "Fani",
+        "teks_chat": "Ivan yang dimaksud. Aku curiga Ivan Hitman yang sengaja menghindari pertanyaan.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Ivan",
+            "relasi": "offend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Gita",
+        "teks_chat": "Oh iya bener, Ivan mencurigakan banget sih kalau perilakunya gitu.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Ivan",
+            "relasi": "offend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Hari",
+        "teks_chat": "Biasanya yang chatnya telat itu lagi sibuk koordinasi sama hitman lain di luar.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Ivan",
+            "relasi": "offend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Eka",
+        "teks_chat": "Bisa jadi koneksinya yang jelek makanya ngelag.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Ivan",
+            "relasi": "defend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Fani",
+        "teks_chat": "Tapi masa dari ronde pertama alasannya cuma koneksi terus?",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Ivan",
+            "relasi": "offend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Gita",
+        "teks_chat": "Bener, aku juga gak percaya kalau itu cuma karena masalah jaringan.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Ivan",
+            "relasi": "offend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Hari",
+        "teks_chat": "Aku tetap curiga dia Hitman karena tidak menjawab pertanyaan.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Ivan",
+            "relasi": "offend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Fani",
+        "teks_chat": "Ayo vote dia, aku curiga dia Hitman yang akan beraksi malam nanti.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Ivan",
+            "relasi": "offend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 54.txt"
+  }
+}

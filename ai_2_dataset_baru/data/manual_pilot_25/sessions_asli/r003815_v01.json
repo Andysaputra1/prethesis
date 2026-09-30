@@ -1,0 +1,61 @@
+{
+  "job": {
+    "job_id": "r003815_v01",
+    "case_name": "self",
+    "case_description": "Defend diri sendiri atau offend/vote diri sendiri sesuai label. Target = pengirim.",
+    "source": {
+      "source_row": 3815,
+      "source_group": "49be56ce13e6105c95b9",
+      "teks_chat": "Gag Order barusan cuma usaha Hitman nutup mulut gw; aku Spy, bukan target yang harus dicurigai",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 2,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "self",
+    "participants": [
+      "Xena",
+      "Yanto"
+    ],
+    "focus_player": "Yanto",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Xena",
+        "teks_chat": "Yanto mengubah klaim tanpa alasan, aku curiga dia Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Yanto",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Yanto",
+        "teks_chat": "Ya ampun, kalau kalian emang mau nyari kambing hitam mending vote aku aja sekalian!",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Yanto",
+            "relasi": "offend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 59.txt"
+  }
+}

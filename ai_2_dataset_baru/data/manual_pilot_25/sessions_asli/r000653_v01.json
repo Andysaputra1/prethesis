@@ -1,0 +1,154 @@
+{
+  "job": {
+    "job_id": "r000653_v01",
+    "case_name": "reference_middle",
+    "case_description": "Tepat 12 konteks. Penyebutan target eksplisit di pesan konteks ke-6 atau ke-7.",
+    "source": {
+      "source_row": 653,
+      "source_group": "9faf4a6bf9bf2e7a2f90",
+      "teks_chat": "gw tadi membela si C karena alibinya masuk akal, bukan karena kami satu tim jahat",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 13,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "reference_middle",
+    "participants": [
+      "Sani",
+      "Tari",
+      "Umar",
+      "Vina",
+      "Willy"
+    ],
+    "focus_player": "Willy",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Sani",
+        "teks_chat": "Ada bagian klaim role yang perlu kita cocokkan?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Tari",
+        "teks_chat": "Ada yang bilang tidak bisa memakai Peek malam ini.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Umar",
+        "teks_chat": "Apakah itu selalu berarti klaimnya palsu?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Vina",
+        "teks_chat": "Kita perlu tahu kapan skill itu dipakai sebelumnya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Sani",
+        "teks_chat": "Benar, jangan lewatkan soal cooldown.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Tari",
+        "teks_chat": "Willy mengaku memakai Peek malam sebelumnya. Aku curiga Willy memakai alasan cooldown untuk menghindar.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Willy",
+            "relasi": "offend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Umar",
+        "teks_chat": "Willy, coba jelaskan aturan yang kamu maksud.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Vina",
+        "teks_chat": "Aku juga curiga dia Hitman yang mengarang alasan tidak punya hasil baru.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Willy",
+            "relasi": "offend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Willy",
+        "teks_chat": "Aku bukan Hitman. Peek hanya bisa satu kali tiap dua ronde.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Willy",
+            "relasi": "defend",
+            "bukti_pesan": [
+              9
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Sani",
+        "teks_chat": "Aku masih curiga dia berbohong soal itu.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Willy",
+            "relasi": "offend",
+            "bukti_pesan": [
+              9
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Tari",
+        "teks_chat": "Kita baca aturannya dulu sebelum memutuskan.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Umar",
+        "teks_chat": "Di aturan memang tertulis Peek satu kali tiap dua ronde.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Vina",
+        "teks_chat": "Kalau begitu, aku tarik tuduhan kepadanya. Penjelasannya soal cooldown benar.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Willy",
+            "relasi": "defend",
+            "bukti_pesan": [
+              10
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 12.txt"
+  }
+}

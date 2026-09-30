@@ -1,0 +1,203 @@
+{
+  "job": {
+    "job_id": "r004569_v01",
+    "case_name": "stance_change",
+    "case_description": "Pengirim pesan sekarang sebelumnya menuduh atau membela seorang pemain di konteks, lalu berubah sikap terhadap pemain yang sama. Anotasi mengikuti sikap terbaru.",
+    "source": {
+      "source_row": 4569,
+      "source_group": "c002ad8aec98cfce3afd",
+      "teks_chat": "kalau gak ada info lain, eksekusi Nia dulu aja",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 12,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "stance_change",
+    "participants": [
+      "Eka",
+      "Dika",
+      "Fina",
+      "Gilang"
+    ],
+    "focus_player": "Dika",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Gilang",
+        "teks_chat": "Dika lambat membalas, aku curiga dia Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Dika",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Eka",
+        "teks_chat": "Mungkin Dika sedang sibuk membaca riwayat chat kita, wajar saja kalau lambat.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Dika",
+            "relasi": "defend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Fina",
+        "teks_chat": "Diskusi siang sudah hampir selesai, aku tetap curiga dia Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Dika",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Dika",
+        "teks_chat": "Maaf, tadi aku sedang ada urusan di dapur sebentar.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Dika",
+            "relasi": "defend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Gilang",
+        "teks_chat": "Tuh kan, alasannya mulai tidak masuk akal.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Dika",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Eka",
+        "teks_chat": "Jangan terburu-buru menuduh, kita berikan kesempatan dia ikut diskusi dulu.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Dika",
+            "relasi": "defend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Dika",
+        "teks_chat": "Iya, aku ini hanya Civilian biasa kok, tidak berbahaya.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Dika",
+            "relasi": "defend",
+            "bukti_pesan": [
+              7
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Fina",
+        "teks_chat": "Kamu bahkan sama sekali tidak memberikan pendapat soal korban semalam.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Dika",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Dika",
+        "teks_chat": "Aku bingung dan tidak tahu mau membahas apa.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Dika",
+            "relasi": "defend",
+            "bukti_pesan": [
+              9
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Gilang",
+        "teks_chat": "Fiks dia mencoba menghindar dari tekanan kita.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Dika",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Eka",
+        "teks_chat": "Eh, setelah aku pikir-pikir lagi, jawaban Dika memang terlalu mencurigakan dari awal.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Dika",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Eka",
+        "teks_chat": "Aku menarik kata-kataku sebelumnya, lebih baik kita serentak vote Dika saja sekarang.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Dika",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 68.txt"
+  }
+}

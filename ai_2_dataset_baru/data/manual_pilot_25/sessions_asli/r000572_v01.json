@@ -1,0 +1,68 @@
+{
+  "job": {
+    "job_id": "r000572_v01",
+    "case_name": "short_history_2",
+    "case_description": "Awal diskusi dengan tepat 2 pesan sebelumnya. Gunakan hanya petunjuk yang tersedia.",
+    "source": {
+      "source_row": 572,
+      "source_group": "e13bf3efc05f7f2780d4",
+      "teks_chat": "gw bukan hitman, tuduhan lu cuma karena gw beda pendapat doang",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 3,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "short_history_2",
+    "participants": [
+      "Jaka",
+      "Kiki",
+      "Lila"
+    ],
+    "focus_player": "Lila",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Jaka",
+        "teks_chat": "Lila belum membalas pertanyaan sejak tadi.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Kiki",
+        "teks_chat": "Aku curiga Lila Hitman yang sengaja diam agar tidak ditanya.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Lila",
+            "relasi": "offend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Jaka",
+        "teks_chat": "Lila belum pantas dituduh. Kita tidak tahu penyebab diamnya, bisa saja koneksi atau efek skill.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Lila",
+            "relasi": "defend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 10.txt"
+  }
+}

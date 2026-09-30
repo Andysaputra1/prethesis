@@ -1,0 +1,52 @@
+{
+  "job": {
+    "job_id": "r000371_v01",
+    "case_name": "ambiguous",
+    "case_description": "Beberapa acuan sama-sama mungkin; target tidak_diketahui, bukan nama terakhir.",
+    "source": {
+      "source_row": 371,
+      "source_group": "134fdf9bb546db93580c",
+      "teks_chat": "aku nggak menghindar, dari tadi pertanyaanku fokus ke siapa yang paling diuntungkan dari kekacauan ini",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 2,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "ambiguous",
+    "participants": [
+      "Vera",
+      "Wandi",
+      "Xena"
+    ],
+    "focus_player": "",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Vera",
+        "teks_chat": "Wandi dan Xena sama-sama dituduh karena terlambat mengetik, tanpa alasan lain.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Wandi",
+        "teks_chat": "Salah satu dari mereka itu bukan Hitman menurutku, tetapi aku belum mau menyebut siapa.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "tidak_diketahui",
+            "relasi": "defend",
+            "bukti_pesan": []
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 4.txt"
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "job": {
+    "job_id": "r002715_v01",
+    "case_name": "neutral_status",
+    "case_description": "Klaim status/role atau pertanyaan informasi saja tanpa pembelaan/serangan; target kosong.",
+    "source": {
+      "source_row": 2715,
+      "source_group": "5ee018b1ea678cdbd21b",
+      "teks_chat": "oh jadi malam semua orang aksinya diam-diam",
+      "label_intent": "neutral"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 6,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "neutral_status",
+    "participants": [
+      "Wawan",
+      "Xena",
+      "Yudi"
+    ],
+    "focus_player": "",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Wawan",
+        "teks_chat": "Pagi semua, semalam aman-aman aja?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Xena",
+        "teks_chat": "Aman kok, aku nggak ngapa-ngapain.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Yudi",
+        "teks_chat": "Ada yang semalam pakai skill?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Wawan",
+        "teks_chat": "Kalau ada Spy atau Stalker, boleh cerita sekarang.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Xena",
+        "teks_chat": "Aku sih nggak punya skill apa-apa.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Yudi",
+        "teks_chat": "Aku juga klaim Civilian ya, biar jelas sebelum lanjut diskusi.",
+        "label_intent": "neutral",
+        "target": []
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 80.txt"
+  },
+  "revisi": [
+    {
+      "pesan": 1,
+      "kategori": "meta",
+      "alasan": "Menanyakan aturan chat malam."
+    },
+    {
+      "pesan": 2,
+      "kategori": "meta",
+      "alasan": "Menjelaskan fase diskusi."
+    },
+    {
+      "pesan": 3,
+      "kategori": "meta",
+      "alasan": "Menjelaskan skill dipakai malam."
+    },
+    {
+      "pesan": 4,
+      "kategori": "meta",
+      "alasan": "'Guard milik Spy dan Peek milik Stalker' = kebocoran prompt."
+    },
+    {
+      "pesan": 5,
+      "kategori": "meta",
+      "alasan": "'Civilian tidak punya skill malam' = penjelasan aturan."
+    },
+    {
+      "pesan": 6,
+      "kategori": "tidak_natural",
+      "alasan": "Kaku ('Aku ingin menyampaikan klaim Civilian sebelum diskusi berlanjut')."
+    }
+  ]
+}

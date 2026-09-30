@@ -1,0 +1,75 @@
+{
+  "job": {
+    "job_id": "r003373_v01",
+    "case_name": "short_history_2",
+    "case_description": "Awal diskusi dengan tepat 2 pesan sebelumnya. Gunakan hanya petunjuk yang tersedia.",
+    "source": {
+      "source_row": 3373,
+      "source_group": "367104c2e82f45fe50e1",
+      "teks_chat": "jangan asal vote gw cuma karena dia paling vokal di chat",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 3,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "short_history_2",
+    "participants": [
+      "Asep",
+      "Bagus",
+      "Gilang"
+    ],
+    "focus_player": "Bagus",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Asep",
+        "teks_chat": "Si Bagus dari tadi diam aja nih, pasti Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Bagus",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Gilang",
+        "teks_chat": "Hmm, dari awal memang belum ada suara dari Bagus.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Gilang",
+        "teks_chat": "Jangan buru-buru vote Bagus. Diam bisa punya banyak alasan, belum membuktikan dia Hitman.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Bagus",
+            "relasi": "defend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 50.txt"
+  },
+  "revisi": [
+    {
+      "pesan": 2,
+      "kategori": "tidak_natural",
+      "alasan": "Gilang menuduh Bagus lalu langsung membela di pesan berikutnya tanpa pemicu."
+    }
+  ]
+}

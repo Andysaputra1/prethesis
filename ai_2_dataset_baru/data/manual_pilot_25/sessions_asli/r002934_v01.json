@@ -1,0 +1,129 @@
+{
+  "job": {
+    "job_id": "r002934_v01",
+    "case_name": "interruption",
+    "case_description": "Pembahasan target disela obrolan waktu/ronde; kaitan kembali ke target masih jelas.",
+    "source": {
+      "source_row": 2934,
+      "source_group": "9901de2dc50e13b90bb4",
+      "teks_chat": "mungkin gw telat, tapi alasan Fikri berubah-ubah dari tadi nggak masuk akal, gw vote dia sebagai hitman",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 9,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "interruption",
+    "participants": [
+      "Kiki",
+      "Lala",
+      "Maman",
+      "Nino"
+    ],
+    "focus_player": "Maman",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Kiki",
+        "teks_chat": "Maman, kamu berganti tuduhan tanpa alasan. Aku curiga kamu Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Maman",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Lala",
+        "teks_chat": "Iya tuh, Maman plin-plan banget.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Maman",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Maman",
+        "teks_chat": "Gue kan cuma menganalisa berbagai kemungkinan.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Maman",
+            "relasi": "defend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Nino",
+        "teks_chat": "Waktu vote tinggal 20 detik lagi nih!",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Kiki",
+        "teks_chat": "Buru-buru amat Nin.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Lala",
+        "teks_chat": "Wah udah mau abis aja.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Nino",
+        "teks_chat": "Iya makanya cepet putusin.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Kiki",
+        "teks_chat": "Gue sih udah fix, tuduhan Maman yang ganti-ganti itu bukti kuat dia pelakunya.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Maman",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Lala",
+        "teks_chat": "Bener banget, ayo kita sepakat vote Maman aja!",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Maman",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 42.txt"
+  }
+}

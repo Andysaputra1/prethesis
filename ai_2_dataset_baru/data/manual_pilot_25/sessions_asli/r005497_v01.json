@@ -1,0 +1,82 @@
+{
+  "job": {
+    "job_id": "r005497_v01",
+    "case_name": "quotation",
+    "case_description": "Ada tuduhan yang dikutip; bedakan sikap pengirim dari ucapan orang yang dikutip.",
+    "source": {
+      "source_row": 5497,
+      "source_group": "05a1c4b0a7c9a07547e4",
+      "teks_chat": "waduh malamnya langsung dikunci, tegang juga",
+      "label_intent": "neutral"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 4,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "quotation",
+    "participants": [
+      "Edi",
+      "Fina",
+      "Gerry"
+    ],
+    "focus_player": "",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Edi",
+        "teks_chat": "Gerry itu Hitman, ayo kita berikan vote kepada dia sekarang juga.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Gerry",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Gerry",
+        "teks_chat": "Aku bukan Hitman, klaim roleku Spy.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Gerry",
+            "relasi": "defend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Fina",
+        "teks_chat": "Aku curiga Edi Hitman karena mengajak vote tanpa alasan.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Edi",
+            "relasi": "offend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Gerry",
+        "teks_chat": "Mengutip kata Edi yang mengatakan 'Gerry itu Hitman', apakah ada yang bisa membuktikan klaim Spy aku ini benar atau salah?",
+        "label_intent": "neutral",
+        "target": []
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 77.txt"
+  }
+}

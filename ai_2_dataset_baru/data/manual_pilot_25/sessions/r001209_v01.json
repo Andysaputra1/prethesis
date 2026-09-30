@@ -1,0 +1,195 @@
+{
+  "job": {
+    "job_id": "r001209_v01",
+    "case_name": "outside_window_unknown",
+    "case_description": "14-16 pesan total. Pembahasan lama telah putus/beralih. Teks dan anotasi 12 konteks terakhir tidak cukup menentukan acuan sekarang. Target harus tidak_diketahui; jangan menggunakan informasi lama yang tidak tersedia dalam input.",
+    "source": {
+      "source_row": 1209,
+      "source_group": "db8a4453b5408de52b74",
+      "teks_chat": "aneh, dia selamat padahal paling mencurigakan; siapa yang jagain?",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 14,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "outside_window_unknown",
+    "participants": [
+      "Budi",
+      "Citra",
+      "Dodi",
+      "Erna"
+    ],
+    "focus_player": "Erna",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Budi",
+        "teks_chat": "Erna mengaku Spy tetapi belum menjelaskan pilihan Guard. Aku curiga Erna Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Erna",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Citra",
+        "teks_chat": "Sebentar, sebelum bahas klaim itu, waktu siang kita tinggal berapa lama?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Dodi",
+        "teks_chat": "Kayaknya tinggal dua menitan.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Budi",
+        "teks_chat": "Oke, berarti masih sempat ngobrol sebentar.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Citra",
+        "teks_chat": "Ada yang kena Gag Order nggak hari ini?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Dodi",
+        "teks_chat": "Aku aman, masih bisa ngetik normal.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Budi",
+        "teks_chat": "Aku juga aman.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Citra",
+        "teks_chat": "Oke, berarti diskusi bisa jalan.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Dodi",
+        "teks_chat": "Iya, syukurlah, jadi lebih lancar.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Budi",
+        "teks_chat": "Jangan sampai waktunya habis buat hal yang nggak penting.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Citra",
+        "teks_chat": "Setuju, fokus ke yang mencurigakan aja.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Dodi",
+        "teks_chat": "Oke, siapa yang mau mulai duluan?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Budi",
+        "teks_chat": "Balik lagi ke orang yang ngaku tadi sebelum kita ngobrolin waktu.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Citra",
+        "teks_chat": "Aku curiga dia memakai klaim palsu dan ingin vote dia saat Tribunal.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "tidak_diketahui",
+            "relasi": "offend",
+            "bukti_pesan": []
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 23.txt"
+  },
+  "revisi": [
+    {
+      "pesan": 2,
+      "kategori": "meta",
+      "alasan": "Seluruh jendela berisi penjelasan mekanisme voting/Tribunal dan pesan 13 menyebut 'pertanyaan aturan'; diganti obrolan in-game netral tanpa menyebut target lama"
+    },
+    {
+      "pesan": 3,
+      "kategori": "meta",
+      "alasan": "Seluruh jendela berisi penjelasan mekanisme voting/Tribunal dan pesan 13 menyebut 'pertanyaan aturan'; diganti obrolan in-game netral tanpa menyebut target lama"
+    },
+    {
+      "pesan": 4,
+      "kategori": "meta",
+      "alasan": "Seluruh jendela berisi penjelasan mekanisme voting/Tribunal dan pesan 13 menyebut 'pertanyaan aturan'; diganti obrolan in-game netral tanpa menyebut target lama"
+    },
+    {
+      "pesan": 5,
+      "kategori": "meta",
+      "alasan": "Seluruh jendela berisi penjelasan mekanisme voting/Tribunal dan pesan 13 menyebut 'pertanyaan aturan'; diganti obrolan in-game netral tanpa menyebut target lama"
+    },
+    {
+      "pesan": 6,
+      "kategori": "meta",
+      "alasan": "Seluruh jendela berisi penjelasan mekanisme voting/Tribunal dan pesan 13 menyebut 'pertanyaan aturan'; diganti obrolan in-game netral tanpa menyebut target lama"
+    },
+    {
+      "pesan": 7,
+      "kategori": "meta",
+      "alasan": "Seluruh jendela berisi penjelasan mekanisme voting/Tribunal dan pesan 13 menyebut 'pertanyaan aturan'; diganti obrolan in-game netral tanpa menyebut target lama"
+    },
+    {
+      "pesan": 8,
+      "kategori": "meta",
+      "alasan": "Seluruh jendela berisi penjelasan mekanisme voting/Tribunal dan pesan 13 menyebut 'pertanyaan aturan'; diganti obrolan in-game netral tanpa menyebut target lama"
+    },
+    {
+      "pesan": 9,
+      "kategori": "meta",
+      "alasan": "Seluruh jendela berisi penjelasan mekanisme voting/Tribunal dan pesan 13 menyebut 'pertanyaan aturan'; diganti obrolan in-game netral tanpa menyebut target lama"
+    },
+    {
+      "pesan": 10,
+      "kategori": "meta",
+      "alasan": "Seluruh jendela berisi penjelasan mekanisme voting/Tribunal dan pesan 13 menyebut 'pertanyaan aturan'; diganti obrolan in-game netral tanpa menyebut target lama"
+    },
+    {
+      "pesan": 11,
+      "kategori": "meta",
+      "alasan": "Seluruh jendela berisi penjelasan mekanisme voting/Tribunal dan pesan 13 menyebut 'pertanyaan aturan'; diganti obrolan in-game netral tanpa menyebut target lama"
+    },
+    {
+      "pesan": 12,
+      "kategori": "meta",
+      "alasan": "Seluruh jendela berisi penjelasan mekanisme voting/Tribunal dan pesan 13 menyebut 'pertanyaan aturan'; diganti obrolan in-game netral tanpa menyebut target lama"
+    },
+    {
+      "pesan": 13,
+      "kategori": "meta",
+      "alasan": "Seluruh jendela berisi penjelasan mekanisme voting/Tribunal dan pesan 13 menyebut 'pertanyaan aturan'; diganti obrolan in-game netral tanpa menyebut target lama"
+    }
+  ]
+}

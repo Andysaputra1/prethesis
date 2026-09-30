@@ -1,0 +1,117 @@
+{
+  "job": {
+    "job_id": "r003184_v01",
+    "case_name": "quotation",
+    "case_description": "Ada tuduhan yang dikutip; bedakan sikap pengirim dari ucapan orang yang dikutip.",
+    "source": {
+      "source_row": 3184,
+      "source_group": "79d1193581f8f4e9caba",
+      "teks_chat": "Kalau kalian mengeksekusi aku sekarang, informasi yang hilang justru menguntungkan Hitman. Evaluasi lagi sebelum voting final",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 7,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "quotation",
+    "participants": [
+      "Irfan",
+      "Jaka",
+      "Kiki",
+      "Laras"
+    ],
+    "focus_player": "Laras",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Irfan",
+        "teks_chat": "Identitas korban Hostage semalam tidak diumumkan, ya?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Jaka",
+        "teks_chat": "Iya, identitas korban tidak dibuka secara publik.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Kiki",
+        "teks_chat": "Saat diskusi Laras bilang 'Aku tahu korbannya'. Aku curiga Laras Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Laras",
+            "relasi": "offend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Laras",
+        "teks_chat": "Aku cuma menebak dari pemain yang diam, bukan tahu pasti. Aku bukan Hitman.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Laras",
+            "relasi": "defend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Jaka",
+        "teks_chat": "Masuk akal sih penjelasan si Laras.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Laras",
+            "relasi": "defend",
+            "bukti_pesan": [
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Kiki",
+        "teks_chat": "Tapi kata-kata 'Aku tahu korbannya' itu khas Hitman yang mau pamer ke warga.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Laras",
+            "relasi": "offend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Irfan",
+        "teks_chat": "Ucapan 'Aku tahu korbannya' tadi sudah dikoreksi menjadi tebakan. Itu belum membuktikan dia Hitman, jangan vote dia dulu.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Laras",
+            "relasi": "defend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 46.txt"
+  }
+}

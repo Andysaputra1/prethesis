@@ -1,0 +1,135 @@
+{
+  "job": {
+    "job_id": "r001937_v01",
+    "case_name": "outside_window_unknown",
+    "case_description": "14-16 pesan total. Pembahasan lama telah putus/beralih. Teks dan anotasi 12 konteks terakhir tidak cukup menentukan acuan sekarang. Target harus tidak_diketahui; jangan menggunakan informasi lama yang tidak tersedia dalam input.",
+    "source": {
+      "source_row": 1937,
+      "source_group": "36fdfafa5f831dba3a3d",
+      "teks_chat": "menurut gw Arman sengaja bikin diskusi berantakan supaya targetnya lolos, kita eksekusi Arman",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 14,
+    "pesan_typo_ringan": [
+      5
+    ]
+  },
+  "session": {
+    "case_name": "outside_window_unknown",
+    "participants": [
+      "Nina",
+      "Oka",
+      "Putri",
+      "Rian"
+    ],
+    "focus_player": "Nina",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Oka",
+        "teks_chat": "Nina mengganti klaim role tanpa penjelasan. Aku curiga Nina Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Nina",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Putri",
+        "teks_chat": "Kita berhenti membahas nama sebentar. Apakah semua pemain bisa menggunakan Peek?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Rian",
+        "teks_chat": "Tidak, Peek adalah skill Stalker.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Oka",
+        "teks_chat": "Bagaimana pemain memilih sasarannya?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Putri",
+        "teks_chat": "Satu pemain dipilih sebagai target Peek saat fase malam.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Rian",
+        "teks_chat": "Bukan satu lokasi atau seluruh ruangan.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Oka",
+        "teks_chat": "Dan hasilnya tentang identitas pemain tersebut.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Putri",
+        "teks_chat": "Iya, bukan laporan siapa berjalan ke suatu tempat.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Rian",
+        "teks_chat": "Berapa sering skillnya bisa dipakai?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Oka",
+        "teks_chat": "Satu kali tiap dua ronde.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Putri",
+        "teks_chat": "Berarti klaim melihat beberapa pemain dalam satu penggunaan perlu dipertanyakan.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Rian",
+        "teks_chat": "Benar, kita cocokkan dengan batasan skill.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Oka",
+        "teks_chat": "Sekarang kembali ke orang yang disebut sebelum pertanyaan Peek tadi.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Putri",
+        "teks_chat": "Aku curiga dia Hitman karena mengganti klaim tanpa memberi alasan. Aku ingin vote dia.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "tidak_diketahui",
+            "relasi": "offend",
+            "bukti_pesan": []
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 32.txt"
+  }
+}

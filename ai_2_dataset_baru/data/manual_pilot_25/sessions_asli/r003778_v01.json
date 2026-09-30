@@ -1,0 +1,218 @@
+{
+  "job": {
+    "job_id": "r003778_v01",
+    "case_name": "negation",
+    "case_description": "Negasi menentukan relasi: Andy Hitman berbeda dari Andy bukan Hitman.",
+    "source": {
+      "source_row": 3778,
+      "source_group": "c72af8871fa45a411d9d",
+      "teks_chat": "gw udah cek si H, dia bukan Hitman, jadi aliansi kita harus lindungi dia",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 13,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "negation",
+    "participants": [
+      "Agus",
+      "Bila",
+      "Cici",
+      "Doni",
+      "Edo"
+    ],
+    "focus_player": "Bila",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Agus",
+        "teks_chat": "Bila awalnya mengaku Guard Cici lalu Doni, aku curiga dia Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Bila",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Cici",
+        "teks_chat": "Aku juga curiga Bila Hitman karena klaim target Guard-nya berubah.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Bila",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Bila",
+        "teks_chat": "Aku bukan Hitman, tadi salah ketik nama target. Yang benar Cici.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Bila",
+            "relasi": "defend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Doni",
+        "teks_chat": "Alasan aja, ucapan yang berubah-ubah gini ciri khas pelaku.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Bila",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Edo",
+        "teks_chat": "Bisa aja dia emang salah ketik beneran pas lagi panik.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Bila",
+            "relasi": "defend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Agus",
+        "teks_chat": "Gak mungkin, kelihatan banget bohongnya dari awal.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Bila",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Cici",
+        "teks_chat": "Kalau bukan hitman ngapain dia repot-repot ngarang cerita?",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Bila",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Bila",
+        "teks_chat": "Sumpah aku nggak ngarang, jangan asal nuduh tanpa bukti kuat.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Bila",
+            "relasi": "defend",
+            "bukti_pesan": [
+              8
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Doni",
+        "teks_chat": "Vote dia saja, aku curiga dia Hitman yang akan memakai Hostage malam nanti.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Bila",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Agus",
+        "teks_chat": "Setuju, kumpulin vote ke Bila aja sekarang.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Bila",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Cici",
+        "teks_chat": "Gas aja sebelum waktunya habis.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Bila",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Bila",
+        "teks_chat": "Tolong percaya sama aku sekali ini aja!",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Bila",
+            "relasi": "defend",
+            "bukti_pesan": [
+              12
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Edo",
+        "teks_chat": "Tenang aja, aku yakin Bila ini bukan Hitman karena dari awal mainnya kelihatan jujur.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Bila",
+            "relasi": "defend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 59.txt"
+  }
+}

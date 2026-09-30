@@ -1,0 +1,124 @@
+{
+  "job": {
+    "job_id": "r000832_v01",
+    "case_name": "stance_change",
+    "case_description": "Pengirim pesan sekarang sebelumnya menuduh atau membela seorang pemain di konteks, lalu berubah sikap terhadap pemain yang sama. Anotasi mengikuti sikap terbaru.",
+    "source": {
+      "source_row": 832,
+      "source_group": "3cc3564353d8fb989f5d",
+      "teks_chat": "aku Stalker dan info yang kupunya cukup jelas, Sari lebih mencurigakan daripada Bima, ikut vote Sari",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 7,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "stance_change",
+    "participants": [
+      "Kiki",
+      "Lila",
+      "Maman",
+      "Nisa"
+    ],
+    "focus_player": "Lila",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Kiki",
+        "teks_chat": "Lila tiba-tiba mengaku Spy. Aku curiga Lila menggunakan klaim itu untuk cari aman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Lila",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Lila",
+        "teks_chat": "Aku bukan Hitman. Aku mengaku memilih Guard untuk Nisa semalam.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Lila",
+            "relasi": "defend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Maman",
+        "teks_chat": "Klaim itu perlu ditanya lebih lanjut.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Nisa",
+        "teks_chat": "Aku juga curiga Lila Hitman yang bersembunyi di balik klaim Spy.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Lila",
+            "relasi": "offend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Kiki",
+        "teks_chat": "Lila belum pantas langsung dituduh; belum ada kontradiksi dalam klaimnya sejauh ini.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Lila",
+            "relasi": "defend",
+            "bukti_pesan": [
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Lila",
+        "teks_chat": "Aku juga memilih Guard untuk Nisa pada malam sebelumnya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Kiki",
+        "teks_chat": "Lho, dua malam berturut-turut Guard ke Nisa? Aku tarik pembelaanku; sekarang aku curiga Lila mengarang klaimnya.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Lila",
+            "relasi": "offend",
+            "bukti_pesan": [
+              7
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 16.txt"
+  },
+  "revisi": [
+    {
+      "pesan": 7,
+      "kategori": "meta",
+      "alasan": "Menjelaskan aturan Guard dua malam berturut-turut."
+    }
+  ]
+}

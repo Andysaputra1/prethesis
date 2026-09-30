@@ -1,0 +1,174 @@
+{
+  "job": {
+    "job_id": "r004797_v01",
+    "case_name": "ambiguous",
+    "case_description": "Beberapa acuan sama-sama mungkin; target tidak_diketahui, bukan nama terakhir.",
+    "source": {
+      "source_row": 4797,
+      "source_group": "19a0e3c73a06bc1e1fd8",
+      "teks_chat": "sus banget, Rosi berubah pendapat setelah chat Kiki dibungkam, menurutku Rosi harus dieksekusi",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 12,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "ambiguous",
+    "participants": [
+      "Fandi",
+      "Maya",
+      "Riko",
+      "Nina"
+    ],
+    "focus_player": "",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Fandi",
+        "teks_chat": "Ada beberapa orang yang telat sekali masuk ke ruang diskusi.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Maya",
+        "teks_chat": "Riko dan Nina daritadi pasif dan chat mereka sering terpotong.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Riko",
+        "teks_chat": "Jaringanku sedang bermasalah.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Nina",
+        "teks_chat": "Aku juga kesulitan mengirim pesan.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Fandi",
+        "teks_chat": "Aku curiga Riko dan Nina Hitman yang membuat alasan koneksi.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Riko",
+            "relasi": "offend",
+            "bukti_pesan": [
+              3
+            ]
+          },
+          {
+            "pemain": "Nina",
+            "relasi": "offend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Maya",
+        "teks_chat": "Sangat mencurigakan kalau dua orang serentak bermasalah.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Riko",
+            "relasi": "offend",
+            "bukti_pesan": [
+              3
+            ]
+          },
+          {
+            "pemain": "Nina",
+            "relasi": "offend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Riko",
+        "teks_chat": "Itu benar-benar terjadi, aku tidak berbohong.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Riko",
+            "relasi": "defend",
+            "bukti_pesan": [
+              7
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Nina",
+        "teks_chat": "Iya, kalian jangan langsung berasumsi buruk.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Nina",
+            "relasi": "defend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Fandi",
+        "teks_chat": "Kalian berdua pasti bersekongkol malam tadi.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Riko",
+            "relasi": "offend",
+            "bukti_pesan": [
+              3
+            ]
+          },
+          {
+            "pemain": "Nina",
+            "relasi": "offend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Maya",
+        "teks_chat": "Sudah saatnya kita mengambil keputusan sebelum waktu habis.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Fandi",
+        "teks_chat": "Aku ingin membaca ulang penjelasan kedua pemain itu.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Maya",
+        "teks_chat": "Dia diam saja dan balasnya lambat, pasti dia Hitman-nya dan pantas dinaikkan.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "tidak_diketahui",
+            "relasi": "offend",
+            "bukti_pesan": []
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 70.txt"
+  }
+}

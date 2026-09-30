@@ -1,0 +1,141 @@
+{
+  "job": {
+    "job_id": "r004985_v01",
+    "case_name": "ambiguous",
+    "case_description": "Beberapa acuan sama-sama mungkin; target tidak_diketahui, bukan nama terakhir.",
+    "source": {
+      "source_row": 4985,
+      "source_group": "ca9ba2bfd78a29b29b79",
+      "teks_chat": "stop maksa narasi, gue spy dan dari tadi main buat lindungi tim",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 8,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "ambiguous",
+    "participants": [
+      "Feri",
+      "Gita",
+      "Hadi",
+      "Intan",
+      "Joko"
+    ],
+    "focus_player": "",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Feri",
+        "teks_chat": "Ini kok banyak yang diam aja dari tadi.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Gita",
+        "teks_chat": "Iya nih, Hadi sama Joko tumben tidak cerewet.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Hadi",
+        "teks_chat": "Aku sedang baca ulang chat di atas.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Intan",
+        "teks_chat": "Jangan-jangan salah satu dari kalian pelakunya.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "tidak_diketahui",
+            "relasi": "offend",
+            "bukti_pesan": []
+          }
+        ]
+      },
+      {
+        "pengirim": "Feri",
+        "teks_chat": "Bisa jadi, Joko juga dari tadi menyimak doang.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Joko",
+            "relasi": "offend",
+            "bukti_pesan": [
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Gita",
+        "teks_chat": "Atau memang dua-duanya hitman yang sedang sembunyi?",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Hadi",
+            "relasi": "offend",
+            "bukti_pesan": [
+              2
+            ]
+          },
+          {
+            "pemain": "Joko",
+            "relasi": "offend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Joko",
+        "teks_chat": "Aku dan Hadi sama-sama sedang menunggu informasi tambahan.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Joko",
+            "relasi": "defend",
+            "bukti_pesan": [
+              7
+            ]
+          },
+          {
+            "pemain": "Hadi",
+            "relasi": "defend",
+            "bukti_pesan": [
+              7
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Intan",
+        "teks_chat": "Salah satu dari dua pemain tadi menurutku belum pantas dicurigai; dia mungkin hanya menunggu informasi.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "tidak_diketahui",
+            "relasi": "defend",
+            "bukti_pesan": []
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 73.txt"
+  },
+  "revisi": [
+    {
+      "pesan": 7,
+      "kategori": "label",
+      "alasan": "Joko menolak tuduhan [6] untuk dirinya dan Hadi = defend keduanya."
+    }
+  ]
+}

@@ -1,0 +1,210 @@
+{
+  "job": {
+    "job_id": "r004894_v01",
+    "case_name": "stance_change",
+    "case_description": "Pengirim pesan sekarang sebelumnya menuduh atau membela seorang pemain di konteks, lalu berubah sikap terhadap pemain yang sama. Anotasi mengikuti sikap terbaru.",
+    "source": {
+      "source_row": 4894,
+      "source_group": "e243ca52ec95ef61d7b2",
+      "teks_chat": "aku mencatat Aldi terakhir mengirim pesan sebelum fase malam dikunci, vote Aldi",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 13,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "stance_change",
+    "participants": [
+      "Hadi",
+      "Intan",
+      "Juna",
+      "Kiki"
+    ],
+    "focus_player": "Intan",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Hadi",
+        "teks_chat": "Aku merasa Intan itu Hitman, pembelaannya terlalu cepat.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Intan",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Juna",
+        "teks_chat": "Jangan buru-buru nuduh Intan, dia mungkin cuma mau klarifikasi.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Intan",
+            "relasi": "defend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Kiki",
+        "teks_chat": "Iya sih, tapi tetep aja mencurigakan.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Intan",
+            "relasi": "offend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Intan",
+        "teks_chat": "Aku kan cuma merespons apa yang dituduhkan, bukan berarti aku panik.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Intan",
+            "relasi": "defend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Hadi",
+        "teks_chat": "Tapi kenapa kamu langsung ngerespons orang pertama yang nanya?",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Intan",
+            "relasi": "offend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Intan",
+        "teks_chat": "Ya masa aku diam aja kalau namaku disebut?",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Intan",
+            "relasi": "defend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Kiki",
+        "teks_chat": "Masuk akal juga sih balasannya.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Intan",
+            "relasi": "defend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Hadi",
+        "teks_chat": "Tetap aja aku ngerasa ada yang ganjil dari cara bicaranya.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Intan",
+            "relasi": "offend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Juna",
+        "teks_chat": "Kita baca dulu pesan-pesannya ronde ini.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Intan",
+        "teks_chat": "Aku siap kok diperiksa sama Stalker kalau ada yang mau.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Intan",
+            "relasi": "defend",
+            "bukti_pesan": [
+              10
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Kiki",
+        "teks_chat": "Ada yang ngaku Stalker gak nih?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Hadi",
+        "teks_chat": "Belum ada yang berani claim sepertinya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Juna",
+        "teks_chat": "Setelah dipikir-pikir, omongan Hadi benar. Kamu memang sus banget dari tadi sibuk defensif, ayo kita vote Intan.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Intan",
+            "relasi": "offend",
+            "bukti_pesan": [
+              13
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 72.txt"
+  },
+  "revisi": [
+    {
+      "pesan": 3,
+      "kategori": "label",
+      "alasan": "'tetep aja mencurigakan' = mencurigai Intan."
+    },
+    {
+      "pesan": 7,
+      "kategori": "label",
+      "alasan": "Menyetujui pembelaan Intan = defend."
+    },
+    {
+      "pesan": 8,
+      "kategori": "label",
+      "alasan": "'ada yang ganjil dari cara bicaranya' = tetap mencurigai Intan."
+    }
+  ]
+}

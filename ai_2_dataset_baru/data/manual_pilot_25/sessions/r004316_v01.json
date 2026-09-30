@@ -1,0 +1,73 @@
+{
+  "job": {
+    "job_id": "r004316_v01",
+    "case_name": "short_history_3",
+    "case_description": "Awal diskusi dengan tepat 3 pesan sebelumnya. Acuan tidak harus berada di pesan terakhir.",
+    "source": {
+      "source_row": 4316,
+      "source_group": "55806a96d57f7dfe768a",
+      "teks_chat": "gw enggak akan ikut debat muter-muter, sekarang kita arahkan voting ke Wulan yang paling inkonsisten",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 4,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "short_history_3",
+    "participants": [
+      "Bagas",
+      "Kiki",
+      "Tono"
+    ],
+    "focus_player": "Tono",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Bagas",
+        "teks_chat": "Ada yang mendapat informasi soal siapa korbannya semalam?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Kiki",
+        "teks_chat": "Belum ada, aku juga penasaran siapa yang disandera.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Tono",
+        "teks_chat": "Lebih baik bahas isi klaim dan chat daripada menebak identitas korban.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Bagas",
+        "teks_chat": "Sikapmu yang mencoba mengalihkan pembicaraan itulah yang membuatku curiga padamu, Tono.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Tono",
+            "relasi": "offend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 64.txt"
+  },
+  "revisi": [
+    {
+      "pesan": 2,
+      "kategori": "meta",
+      "alasan": "Menjelaskan bahwa identitas korban tidak diumumkan/disembunyikan"
+    }
+  ]
+}

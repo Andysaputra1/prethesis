@@ -1,0 +1,47 @@
+{
+  "job": {
+    "job_id": "r004697_v01",
+    "case_name": "first_message_self",
+    "case_description": "Pesan pertama tanpa konteks membela atau menuduh diri sendiri. Target = pengirim; tidak perlu riwayat untuk memahami aku.",
+    "source": {
+      "source_row": 4697,
+      "source_group": "b54ce381deb3b622ae63",
+      "teks_chat": "Sebelum Maya pakai alasan koneksi atau lupa, mending kita amankan voting ke dia",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 1,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "first_message_self",
+    "participants": [
+      "Ojan",
+      "Putri"
+    ],
+    "focus_player": "Ojan",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Ojan",
+        "teks_chat": "Vote gua saja sekarang, biar cepat ada keputusan.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Ojan",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 69.txt"
+  }
+}

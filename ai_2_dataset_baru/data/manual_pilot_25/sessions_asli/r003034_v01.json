@@ -1,0 +1,159 @@
+{
+  "job": {
+    "job_id": "r003034_v01",
+    "case_name": "nickname",
+    "case_description": "Pesan sekarang menyebut pemain dengan nama panggilan, singkatan, atau salah ketik ringan (Andy -> ndy, andi, si And) tanpa menulis nama aslinya. Catat sebutan itu di panggilan. Target tetap memakai nama asli; jika neutral, target kosong.",
+    "source": {
+      "source_row": 3034,
+      "source_group": "e30fd7538e2010fc6cf4",
+      "teks_chat": "si Adit bilang semua analisis itu ngawur, tapi tidak memberi alternatif apa pun, fix mencurigakan",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 13,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "nickname",
+    "participants": [
+      "Mario",
+      "Nanda",
+      "Opan"
+    ],
+    "focus_player": "Nanda",
+    "panggilan": [
+      {
+        "pemain": "Nanda",
+        "sebutan": [
+          "Nand"
+        ]
+      }
+    ],
+    "messages": [
+      {
+        "pengirim": "Mario",
+        "teks_chat": "Apakah ada yang mengalami gangguan pengiriman pesan?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Nanda",
+        "teks_chat": "Pesan saya sering terputus di tengah kalimat.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Opan",
+        "teks_chat": "Itu masalah koneksi biasa.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Mario",
+        "teks_chat": "Pesan terpotong tidak menunjukkan Gag Order, karena skill itu membisukan chat.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Nanda",
+        "teks_chat": "Ba...",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Opan",
+        "teks_chat": "Tuh kan terpotong lagi.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Mario",
+        "teks_chat": "Aku curiga dia Hitman yang sengaja membuat alasan gangguan pesan.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Nanda",
+            "relasi": "offend",
+            "bukti_pesan": [
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Nanda",
+        "teks_chat": "gi...",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Opan",
+        "teks_chat": "Aktingnya terlalu berlebihan.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Nanda",
+            "relasi": "offend",
+            "bukti_pesan": [
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Mario",
+        "teks_chat": "Kita tidak boleh terkecoh oleh trik murahannya.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Nanda",
+            "relasi": "offend",
+            "bukti_pesan": [
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Nanda",
+        "teks_chat": "ma...",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Opan",
+        "teks_chat": "Sudahlah, kinerjamu sangat mencurigakan.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Nanda",
+            "relasi": "offend",
+            "bukti_pesan": [
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Mario",
+        "teks_chat": "Nand, aku tetap curiga kamu Hitman yang mengarang alasan pesan terpotong.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Nanda",
+            "relasi": "offend",
+            "bukti_pesan": [
+              5
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 44.txt"
+  }
+}

@@ -1,0 +1,149 @@
+{
+  "job": {
+    "job_id": "r003212_v01",
+    "case_name": "witness",
+    "case_description": "Nama saksi/korban disebut, tetapi bukan target serangan atau pembelaan.",
+    "source": {
+      "source_row": 3212,
+      "source_group": "8b1175be95acae60fcf6",
+      "teks_chat": "jangan salah paham, aku pasif karena belum yakin siapa yang mencurigakan",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 11,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "witness",
+    "participants": [
+      "Wawan",
+      "Yanto",
+      "Zidan",
+      "Anton"
+    ],
+    "focus_player": "Yanto",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Wawan",
+        "teks_chat": "Ada yang mau ngaku Spy ga nih ronde ini?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Yanto",
+        "teks_chat": "Aku klaim Spy, semalam aku memilih Zidan sebagai target Guard.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Zidan",
+        "teks_chat": "Oke, itu klaim pilihanmu. Aku belum bisa memastikan kebenarannya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Anton",
+        "teks_chat": "Bohong banget, lu pasti cuma ngaku-ngaku kan Yan biar ga divote?",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Yanto",
+            "relasi": "offend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Yanto",
+        "teks_chat": "Gua beneran role Spy kok, sumpah ga bohong.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Yanto",
+            "relasi": "defend",
+            "bukti_pesan": [
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Wawan",
+        "teks_chat": "Zidan belum tentu dapat memastikan pilihan Guard Yanto. Kita dengar penjelasannya dulu.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Anton",
+        "teks_chat": "Halah, Yanto itu cuma Hitman yang mau cari alibi pake namanya si Zidan.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Yanto",
+            "relasi": "offend",
+            "bukti_pesan": [
+              7
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Yanto",
+        "teks_chat": "Lu dari tadi nuduh gua terus Ton, jangan-jangan lu kali pelakunya yang kepanasan.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Anton",
+            "relasi": "offend",
+            "bukti_pesan": [
+              7
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Zidan",
+        "teks_chat": "Udah jangan ribut, mending kita cari bukti lain yang lebih jelas.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Wawan",
+        "teks_chat": "Tapi emang sih, Yanto ini gelagatnya mencurigakan banget dari awal.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Yanto",
+            "relasi": "offend",
+            "bukti_pesan": [
+              10
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Zidan",
+        "teks_chat": "Anton menuduh Yanto, tetapi aku menolak tuduhan itu karena klaimnya belum terbukti palsu.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Yanto",
+            "relasi": "defend",
+            "bukti_pesan": [
+              11
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 46.txt"
+  }
+}

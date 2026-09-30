@@ -1,0 +1,82 @@
+{
+  "job": {
+    "job_id": "r003940_v01",
+    "case_name": "short_history_3",
+    "case_description": "Awal diskusi dengan tepat 3 pesan sebelumnya. Acuan tidak harus berada di pesan terakhir.",
+    "source": {
+      "source_row": 3940,
+      "source_group": "ef6ae820d5c070fef610",
+      "teks_chat": "Kalau lu beneran Spy, target guard malam pertama siapa?",
+      "label_intent": "neutral"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 4,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "short_history_3",
+    "participants": [
+      "Iwan",
+      "Joko",
+      "Rina"
+    ],
+    "focus_player": "Joko",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Iwan",
+        "teks_chat": "Joko berganti tuduhan dari Rina ke aku tanpa alasan, aku curiga Joko Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Joko",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Joko",
+        "teks_chat": "Karena lu baru aja ngetik sesuatu yang sangat mencurigakan.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Iwan",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Rina",
+        "teks_chat": "Joko ini emang suka ganti-ganti target, jangan dipercaya omongannya.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Joko",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Iwan",
+        "teks_chat": "Ngomong-ngomong, sisa waktu diskusi kita tinggal berapa detik lagi nih?",
+        "label_intent": "neutral",
+        "target": []
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 61.txt"
+  }
+}

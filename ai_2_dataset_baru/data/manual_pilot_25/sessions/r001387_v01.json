@@ -1,0 +1,130 @@
+{
+  "job": {
+    "job_id": "r001387_v01",
+    "case_name": "reference_end",
+    "case_description": "Tepat 12 konteks. Penyebutan target eksplisit di pesan konteks terakhir.",
+    "source": {
+      "source_row": 1387,
+      "source_group": "61f7969e03226138dfcb",
+      "teks_chat": "gw belum tentu salah, kenapa perilaku si A yang aneh malah dilewatin",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 13,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "reference_end",
+    "participants": [
+      "Omar",
+      "Putri",
+      "Qila",
+      "Rafi",
+      "Sinta"
+    ],
+    "focus_player": "Sinta",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Omar",
+        "teks_chat": "Tadi ada yang mengubah klaim Spy menjadi Stalker.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Putri",
+        "teks_chat": "Kita perlu membaca apakah dia menyebut itu koreksi salah ketik.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Qila",
+        "teks_chat": "Jangan sampai keliru mengutip.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Rafi",
+        "teks_chat": "Siapa yang mengirim dua klaim itu?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Omar",
+        "teks_chat": "Aku sedang mencari kembali pesannya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Putri",
+        "teks_chat": "Cari dari awal diskusi saat klaim mulai dibagikan.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Qila",
+        "teks_chat": "Klaim yang berubah perlu ditanya, tetapi belum otomatis memastikan role asli.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Rafi",
+        "teks_chat": "Benar, kita hanya melihat ucapannya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Omar",
+        "teks_chat": "Aku menemukan kedua pesannya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Putri",
+        "teks_chat": "Ada penjelasan koreksi di antaranya?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Qila",
+        "teks_chat": "Kalau belum ada, kita bisa meminta alasan.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Rafi",
+        "teks_chat": "Sinta yang mengganti klaim itu. Aku curiga Sinta Hitman yang sedang mengarang.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Sinta",
+            "relasi": "offend",
+            "bukti_pesan": [
+              12
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Omar",
+        "teks_chat": "Aku juga curiga dia pelakunya karena klaimnya berubah tanpa penjelasan.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Sinta",
+            "relasi": "offend",
+            "bukti_pesan": [
+              12
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 24.txt"
+  }
+}

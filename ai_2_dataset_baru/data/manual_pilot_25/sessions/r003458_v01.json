@@ -1,0 +1,98 @@
+{
+  "job": {
+    "job_id": "r003458_v01",
+    "case_name": "topic_switch",
+    "case_description": "Pembahasan berganti pemain; pesan sekarang mengikuti topik baru, bukan otomatis target lama.",
+    "source": {
+      "source_row": 3458,
+      "source_group": "7c8ff17dcbc19735a470",
+      "teks_chat": "Gw belum menyandera siapa pun, semalam cuma menunggu sampai fase pagi",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 5,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "topic_switch",
+    "participants": [
+      "Rudi",
+      "Mira",
+      "Sari",
+      "Joko",
+      "Dika"
+    ],
+    "focus_player": "Dika",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Rudi",
+        "teks_chat": "Joko berubah klaim tanpa penjelasan, aku curiga dia Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Joko",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Mira",
+        "teks_chat": "Iya si Joko emang sus parah ronde ini.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Joko",
+            "relasi": "offend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Sari",
+        "teks_chat": "Eh tunggu, tapi si Dika tadi ngaku Spy lho pas awal.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Rudi",
+        "teks_chat": "Hah, Dika Spy? Ga percaya aku, pasti dia cuma hitman yang lagi nyamar.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Dika",
+            "relasi": "offend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Mira",
+        "teks_chat": "Tapi kan emang belum ada yang ngeklaim peran Spy selain dia, mending kita percaya dulu aja.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Dika",
+            "relasi": "defend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 53.txt"
+  }
+}

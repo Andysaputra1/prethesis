@@ -1,0 +1,161 @@
+{
+  "job": {
+    "job_id": "r003376_v01",
+    "case_name": "plural_reference",
+    "case_description": "Pesan sekarang memakai mereka/kalian/keduanya/berdua untuk dua pemain atau lebih yang jelas dari konteks, tanpa menyebut ulang nama mereka. Simpan semua pemain itu sebagai target.",
+    "source": {
+      "source_row": 3376,
+      "source_group": "35012525a58758d541a2",
+      "teks_chat": "sumpah bukan aku, kalian terlalu cepat menganggap mayoritas itu pasti benar",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 7,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "plural_reference",
+    "participants": [
+      "Indah",
+      "Galih",
+      "Hadi",
+      "Lina",
+      "Mira",
+      "Niko"
+    ],
+    "focus_player": "",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Indah",
+        "teks_chat": "Korban semalam siapa ya? Kok tidak ada yang keluar?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Lina",
+        "teks_chat": "Nggak ada yang tahu, dari tadi juga belum ada yang bahas.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Mira",
+        "teks_chat": "Galih dan Hadi tidak ikut memberi pendapat. Aku curiga mereka Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Galih",
+            "relasi": "offend",
+            "bukti_pesan": [
+              3
+            ]
+          },
+          {
+            "pemain": "Hadi",
+            "relasi": "offend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Niko",
+        "teks_chat": "Aku juga curiga mereka Hitman karena terus diam.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Galih",
+            "relasi": "offend",
+            "bukti_pesan": [
+              3
+            ]
+          },
+          {
+            "pemain": "Hadi",
+            "relasi": "offend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Indah",
+        "teks_chat": "Jangan-jangan mereka itu komplotan yang bertugas semalam.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Galih",
+            "relasi": "offend",
+            "bukti_pesan": [
+              3
+            ]
+          },
+          {
+            "pemain": "Hadi",
+            "relasi": "offend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Lina",
+        "teks_chat": "Jangan vote mereka hanya karena diam. Mereka belum terbukti Hitman.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Galih",
+            "relasi": "defend",
+            "bukti_pesan": [
+              3
+            ]
+          },
+          {
+            "pemain": "Hadi",
+            "relasi": "defend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Niko",
+        "teks_chat": "Benar, mereka berdua belum terbukti pelakunya hanya karena pasif.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Galih",
+            "relasi": "defend",
+            "bukti_pesan": [
+              3
+            ]
+          },
+          {
+            "pemain": "Hadi",
+            "relasi": "defend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 50.txt"
+  },
+  "revisi": [
+    {
+      "pesan": 2,
+      "kategori": "meta",
+      "alasan": "'disembunyikan sama game' membahas desain game"
+    }
+  ]
+}

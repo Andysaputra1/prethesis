@@ -1,0 +1,302 @@
+{
+  "job": {
+    "job_id": "r004042_v01",
+    "case_name": "mixed_relations",
+    "case_description": "Membela satu pemain dan menuduh pemain lain. Intent utama offend; simpan kedua relasi.",
+    "source": {
+      "source_row": 4042,
+      "source_group": "ad4f6706c39f1c8c43e1",
+      "teks_chat": "gw curiga ada info tersembunyi, siapa yang semalam terlihat berubah sikap?",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 13,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "mixed_relations",
+    "participants": [
+      "Fajar",
+      "Gita",
+      "Hasan",
+      "Intan",
+      "Joko"
+    ],
+    "focus_player": "",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Fajar",
+        "teks_chat": "Intan pasti hitmannya, dia diam aja dari awal ronde.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Intan",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Gita",
+        "teks_chat": "Hasan cepat membela Intan tanpa alasan, aku curiga keduanya Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Hasan",
+            "relasi": "offend",
+            "bukti_pesan": [
+              2
+            ]
+          },
+          {
+            "pemain": "Intan",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Hasan",
+        "teks_chat": "Aku bukan Hitman, dan Intan belum terbukti Hitman hanya karena diam.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Hasan",
+            "relasi": "defend",
+            "bukti_pesan": [
+              3
+            ]
+          },
+          {
+            "pemain": "Intan",
+            "relasi": "defend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Joko",
+        "teks_chat": "Pembelaan yang terlalu instan itu biasanya mereka sekongkol.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Hasan",
+            "relasi": "offend",
+            "bukti_pesan": [
+              2
+            ]
+          },
+          {
+            "pemain": "Intan",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Intan",
+        "teks_chat": "Aku dan Hasan bukan Hitman, tuduhan itu belum terbukti.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Intan",
+            "relasi": "defend",
+            "bukti_pesan": [
+              5
+            ]
+          },
+          {
+            "pemain": "Hasan",
+            "relasi": "defend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Fajar",
+        "teks_chat": "Itu mah alasan doang buatan kalian berdua.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Intan",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          },
+          {
+            "pemain": "Hasan",
+            "relasi": "offend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Gita",
+        "teks_chat": "Udah ketahuan kedoknya, langsung pada panik gitu.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Intan",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          },
+          {
+            "pemain": "Hasan",
+            "relasi": "offend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Hasan",
+        "teks_chat": "Buktinya apa kalau kami berdua hitman? Gak ada kan?",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Hasan",
+            "relasi": "defend",
+            "bukti_pesan": [
+              7
+            ]
+          },
+          {
+            "pemain": "Intan",
+            "relasi": "defend",
+            "bukti_pesan": [
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Joko",
+        "teks_chat": "Jawaban kalian saling membela, aku tetap curiga kalian Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Intan",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          },
+          {
+            "pemain": "Hasan",
+            "relasi": "offend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Intan",
+        "teks_chat": "Aku dan Hasan menolak tuduhan itu, alasan kalian belum cukup.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Intan",
+            "relasi": "defend",
+            "bukti_pesan": [
+              10
+            ]
+          },
+          {
+            "pemain": "Hasan",
+            "relasi": "defend",
+            "bukti_pesan": [
+              8
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Fajar",
+        "teks_chat": "Aku tetap curiga kalian berdua Hitman yang saling membela.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Intan",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          },
+          {
+            "pemain": "Hasan",
+            "relasi": "offend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Gita",
+        "teks_chat": "Daripada ribet diskusi, vote salah satu dari mereka aja.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Intan",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          },
+          {
+            "pemain": "Hasan",
+            "relasi": "offend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Joko",
+        "teks_chat": "Mending kita jangan nuduh Intan dulu, menurutku justru Fajar yang nuduh asal-asalan buat mecah fokus kita!",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Intan",
+            "relasi": "defend",
+            "bukti_pesan": [
+              1
+            ]
+          },
+          {
+            "pemain": "Fajar",
+            "relasi": "offend",
+            "bukti_pesan": [
+              13
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 61.txt"
+  }
+}

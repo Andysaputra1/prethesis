@@ -1,0 +1,143 @@
+{
+  "job": {
+    "job_id": "r002443_v01",
+    "case_name": "neutral_status",
+    "case_description": "Klaim status/role atau pertanyaan informasi saja tanpa pembelaan/serangan; target kosong.",
+    "source": {
+      "source_row": 2443,
+      "source_group": "6feebbcd61844aeccfd7",
+      "teks_chat": "Hah semua aksi malam dilakukan buta ternyata",
+      "label_intent": "neutral"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 10,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "neutral_status",
+    "participants": [
+      "Bagas",
+      "Cinta",
+      "Doni",
+      "Elsa"
+    ],
+    "focus_player": "",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Bagas",
+        "teks_chat": "Cinta, mau berbagi klaim role?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Cinta",
+        "teks_chat": "Aku klaim Civilian.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Doni",
+        "teks_chat": "Cinta bohong, aku klaim Stalker dan hasil Peek-ku menunjukkan dia Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Cinta",
+            "relasi": "offend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Cinta",
+        "teks_chat": "Itu tidak benar, aku bukan Hitman!",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Cinta",
+            "relasi": "defend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Elsa",
+        "teks_chat": "Aku percaya klaim itu, Cinta pasti Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Cinta",
+            "relasi": "offend",
+            "bukti_pesan": [
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Bagas",
+        "teks_chat": "Doni, kamu yakin menyebut target Peek yang benar?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Doni",
+        "teks_chat": "Iya, aku tetap menuduh Cinta berdasarkan klaim hasilku itu.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Cinta",
+            "relasi": "offend",
+            "bukti_pesan": [
+              7
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Cinta",
+        "teks_chat": "Aku menolak tuduhan itu. Klaim hasilnya belum tentu benar.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Cinta",
+            "relasi": "defend",
+            "bukti_pesan": [
+              8
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Elsa",
+        "teks_chat": "Aku masih mendukung vote Cinta.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Cinta",
+            "relasi": "offend",
+            "bukti_pesan": [
+              9
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Bagas",
+        "teks_chat": "Sebentar, identitas korban Hostage memang tidak diumumkan ke semua pemain, ya?",
+        "label_intent": "neutral",
+        "target": []
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 39.txt"
+  }
+}

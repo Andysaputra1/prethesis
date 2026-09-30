@@ -1,0 +1,145 @@
+{
+  "job": {
+    "job_id": "r001985_v01",
+    "case_name": "mixed_relations",
+    "case_description": "Membela satu pemain dan menuduh pemain lain. Intent utama offend; simpan kedua relasi.",
+    "source": {
+      "source_row": 1985,
+      "source_group": "4ef7040b831f123241f9",
+      "teks_chat": "gw percaya sama lu, tapi si R dari tadi muter-muter dan nggak jawab inti masalah",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 8,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "mixed_relations",
+    "participants": [
+      "Indra",
+      "Kaka",
+      "Leo"
+    ],
+    "focus_player": "",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Indra",
+        "teks_chat": "Kaka tadi mengajak vote lalu menariknya. Aku curiga Kaka Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Kaka",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Kaka",
+        "teks_chat": "Aku bukan Hitman. Aku menarik dugaan setelah membaca jawaban baru.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Kaka",
+            "relasi": "defend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Leo",
+        "teks_chat": "Jawaban mana yang membuatmu berubah pikiran?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Indra",
+        "teks_chat": "Aku tetap curiga dia sedang mengubah cerita untuk lolos.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Kaka",
+            "relasi": "offend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Leo",
+        "teks_chat": "Aku juga sempat curiga dia berbohong.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Kaka",
+            "relasi": "offend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Kaka",
+        "teks_chat": "Aku tidak bersalah. Baca jawaban yang terkirim sebelum aku menarik dugaan.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Kaka",
+            "relasi": "defend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Indra",
+        "teks_chat": "Aku tetap ingin vote dia.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Kaka",
+            "relasi": "offend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Leo",
+        "teks_chat": "Kaka belum pantas dituduh setelah jawaban baru itu dibaca. Justru aku curiga Indra Hitman karena terus memaksakan tuduhan.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Kaka",
+            "relasi": "defend",
+            "bukti_pesan": [
+              8
+            ]
+          },
+          {
+            "pemain": "Indra",
+            "relasi": "offend",
+            "bukti_pesan": [
+              8
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 32.txt"
+  }
+}

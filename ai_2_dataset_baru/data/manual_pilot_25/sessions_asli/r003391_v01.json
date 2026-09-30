@@ -1,0 +1,161 @@
+{
+  "job": {
+    "job_id": "r003391_v01",
+    "case_name": "topic_switch",
+    "case_description": "Pembahasan berganti pemain; pesan sekarang mengikuti topik baru, bukan otomatis target lama.",
+    "source": {
+      "source_row": 3391,
+      "source_group": "036734cb39040c0c1914",
+      "teks_chat": "kalian boleh curiga, tapi jangan menyamakan curiga dengan bukti",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 10,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "topic_switch",
+    "participants": [
+      "Dina",
+      "Eko",
+      "Tio",
+      "Fani",
+      "Heri",
+      "Gilang"
+    ],
+    "focus_player": "Gilang",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Dina",
+        "teks_chat": "Si Tio ini kena gag order atau emang sengaja diam?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Eko",
+        "teks_chat": "Paling sengaja, hitman kan suka pura-pura.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Tio",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Tio",
+        "teks_chat": "...",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Dina",
+        "teks_chat": "Tuh kan, aneh banget.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Tio",
+            "relasi": "offend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Fani",
+        "teks_chat": "Sekarang aku curiga Gilang Hitman karena penjelasannya tidak menjawab pertanyaan.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Gilang",
+            "relasi": "offend",
+            "bukti_pesan": [
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Heri",
+        "teks_chat": "Iya, Gilang chatnya banyak tapi isinya muter-muter.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Gilang",
+            "relasi": "offend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Gilang",
+        "teks_chat": "Lah, aku kan cuma mau bantu ngasih info.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Gilang",
+            "relasi": "defend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Eko",
+        "teks_chat": "Info apaan, kamu dari tadi cuma nebak doang.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Gilang",
+            "relasi": "offend",
+            "bukti_pesan": [
+              7
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Heri",
+        "teks_chat": "Bener, aku makin curiga dia ini pelakunya.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Gilang",
+            "relasi": "offend",
+            "bukti_pesan": [
+              8
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Dina",
+        "teks_chat": "Menurutku dia belum terbukti Hitman, mungkin cuma kesulitan menjelaskan dugaannya.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Gilang",
+            "relasi": "defend",
+            "bukti_pesan": [
+              9
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 51.txt"
+  }
+}

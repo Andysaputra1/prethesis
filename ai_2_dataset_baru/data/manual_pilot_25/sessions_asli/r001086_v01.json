@@ -1,0 +1,39 @@
+{
+  "job": {
+    "job_id": "r001086_v01",
+    "case_name": "first_message",
+    "case_description": "Pesan pertama permainan, tanpa konteks. Neutral boleh menyapa/membuka diskusi; offend/defend menyebut target jelas. Jangan mengarang kejadian malam, voting, atau percakapan yang belum terjadi.",
+    "source": {
+      "source_row": 1086,
+      "source_group": "22536bb159a840c4ad31",
+      "teks_chat": "siapa yang tadi malam merasa jadi target Hitman?",
+      "label_intent": "neutral"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 1,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "first_message",
+    "participants": [
+      "Intan",
+      "Joko"
+    ],
+    "focus_player": "",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Intan",
+        "teks_chat": "Halo semuanya, apa ada yang sempat memperhatikan aktivitas aneh di awal ronde ini?",
+        "label_intent": "neutral",
+        "target": []
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 21.txt"
+  }
+}

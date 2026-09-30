@@ -1,0 +1,47 @@
+{
+  "job": {
+    "job_id": "r002939_v00",
+    "case_name": "original",
+    "case_description": "Satu pesan tanpa riwayat. Pertahankan teks dan intent sumber persis; jangan mengarang riwayat asli.",
+    "source": {
+      "source_row": 2939,
+      "source_group": "a92700dfbc2249e7f090",
+      "teks_chat": "eh, bukannya aturan Peek cuma sekali tiap dua ronde? Niko ngaku tahu terlalu banyak, bisa jadi dia hitman yang pura-pura Stalker",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 1,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "original",
+    "participants": [
+      "Andi",
+      "Niko"
+    ],
+    "focus_player": "Niko",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Andi",
+        "teks_chat": "eh, bukannya aturan Peek cuma sekali tiap dua ronde? Niko ngaku tahu terlalu banyak, bisa jadi dia hitman yang pura-pura Stalker",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Niko",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 43.txt"
+  }
+}

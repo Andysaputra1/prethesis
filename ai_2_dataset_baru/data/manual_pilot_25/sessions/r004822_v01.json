@@ -1,0 +1,184 @@
+{
+  "job": {
+    "job_id": "r004822_v01",
+    "case_name": "interruption",
+    "case_description": "Pembahasan target disela obrolan waktu/ronde; kaitan kembali ke target masih jelas.",
+    "source": {
+      "source_row": 4822,
+      "source_group": "fc3155d385f0284490ab",
+      "teks_chat": "kalau si P dibiarkan hidup, dia bisa pakai Gag Order untuk mengacaukan voting berikutnya",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 13,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "interruption",
+    "participants": [
+      "Elsa",
+      "Farhan",
+      "Gita"
+    ],
+    "focus_player": "Farhan",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Elsa",
+        "teks_chat": "Farhan pasif, aku curiga dia Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Farhan",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Gita",
+        "teks_chat": "Iya, sama sekali tidak ada kontribusi untuk mencari pelaku.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Farhan",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Farhan",
+        "teks_chat": "Aku sedang berpikir, jangan langsung menuduh begitu.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Farhan",
+            "relasi": "defend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Elsa",
+        "teks_chat": "Aku tetap curiga dia pelakunya karena belum memberi pendapat.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Farhan",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Gita",
+        "teks_chat": "Aku juga curiga dia Hitman yang menghindari diskusi.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Farhan",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Elsa",
+        "teks_chat": "Eh, ronde ini sisa berapa menit lagi ya?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Farhan",
+        "teks_chat": "Tinggal dua menit lagi kalau tidak salah.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Gita",
+        "teks_chat": "Wah, kita harus cepat mengumpulkan suara ini.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Elsa",
+        "teks_chat": "Betul, jangan sampai seri atau hangus waktunya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Gita",
+        "teks_chat": "Aku masih menduga pemain yang diam tadi Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Farhan",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Farhan",
+        "teks_chat": "Kan sudah aku bilang, aku masih membaca situasinya.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Farhan",
+            "relasi": "defend",
+            "bukti_pesan": [
+              10
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Elsa",
+        "teks_chat": "Situasi apa yang dibaca dari tadi tidak selesai-selesai?",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Farhan",
+            "relasi": "offend",
+            "bukti_pesan": [
+              10
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Gita",
+        "teks_chat": "Sudah, kita sepakat membuang dia saja karena sengaja pasif.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Farhan",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 71.txt"
+  }
+}

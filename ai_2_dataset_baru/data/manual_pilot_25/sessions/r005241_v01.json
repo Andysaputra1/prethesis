@@ -1,0 +1,114 @@
+{
+  "job": {
+    "job_id": "r005241_v01",
+    "case_name": "neutral_status",
+    "case_description": "Klaim status/role atau pertanyaan informasi saja tanpa pembelaan/serangan; target kosong.",
+    "source": {
+      "source_row": 5241,
+      "source_group": "5cc777a00a29cb4b9e7f",
+      "teks_chat": "saya Civilian, aktivitas saya hanya berdiskusi dan voting",
+      "label_intent": "neutral"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 12,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "neutral_status",
+    "participants": [
+      "Hasan",
+      "Indra",
+      "Jojo",
+      "Kiki"
+    ],
+    "focus_player": "",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Hasan",
+        "teks_chat": "Ada yang lihat korban semalam siapa?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Indra",
+        "teks_chat": "Belum ada yang tahu, nggak ada yang ngaku juga.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Jojo",
+        "teks_chat": "Diam mungkin jadi petunjuk, tetapi tidak memastikan siapa korban.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Kiki",
+        "teks_chat": "Coba cek siapa aja yang dari tadi belum muncul.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Hasan",
+        "teks_chat": "Sepertinya semua masih rajin ngetik sih.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Indra",
+        "teks_chat": "Mungkin ada yang sekadar jadi penonton.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Jojo",
+        "teks_chat": "Atau jangan-jangan korbannya beneran afk.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Kiki",
+        "teks_chat": "Kita juga belum tahu pilihan Guard Spy semalam.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Hasan",
+        "teks_chat": "Belum ada yang membagikan klaim pilihan Guard di chat ini.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Indra",
+        "teks_chat": "Emang paling susah kalau infonya buta gini.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Jojo",
+        "teks_chat": "Makanya kita perhatiin pola chat mereka aja.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Kiki",
+        "teks_chat": "Aku cuma mau bilang kalau peranku cuma civilian biasa.",
+        "label_intent": "neutral",
+        "target": []
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 76.txt"
+  },
+  "revisi": [
+    {
+      "pesan": 2,
+      "kategori": "meta",
+      "alasan": "'Kan emang identitasnya dirahasiakan' = penjelasan aturan."
+    }
+  ]
+}

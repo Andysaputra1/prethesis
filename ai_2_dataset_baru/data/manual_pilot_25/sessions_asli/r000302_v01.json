@@ -1,0 +1,130 @@
+{
+  "job": {
+    "job_id": "r000302_v01",
+    "case_name": "reference_end",
+    "case_description": "Tepat 12 konteks. Penyebutan target eksplisit di pesan konteks terakhir.",
+    "source": {
+      "source_row": 302,
+      "source_group": "c8b1dbc165426ed55ed0",
+      "teks_chat": "dari awal gw udah curiga sama Raka, cara dia ngeles fix banget gaya Hitman",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 13,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "reference_end",
+    "participants": [
+      "Hana",
+      "Iqbal",
+      "Jaka",
+      "Karin",
+      "Leo"
+    ],
+    "focus_player": "Jaka",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Hana",
+        "teks_chat": "Hari ini apakah ada pemain yang ingin maju mengklaim sebagai Stalker?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Iqbal",
+        "teks_chat": "Sepertinya belum ada tanda-tanda yang ingin membuka identitasnya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Jaka",
+        "teks_chat": "Biarkan saja dulu, mungkin dia masih menunggu waktu yang lebih aman.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Karin",
+        "teks_chat": "Namun kita sangat membutuhkan hasil Peek untuk menyaring siapa Hitman-nya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Hana",
+        "teks_chat": "Bagaimana kalau Stalker terkena Hostage sebelum sempat menyampaikan klaim hasilnya?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Iqbal",
+        "teks_chat": "Makanya lebih baik bersuara dari sekarang selagi posisi masih menguntungkan.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Leo",
+        "teks_chat": "Aku mengaku Stalker, dan aku punya klaim hasil Peek semalam.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Karin",
+        "teks_chat": "Bagus sekali. Lalu siapa orang yang kamu Peek semalam?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Leo",
+        "teks_chat": "Aku memilih seorang pemain yang belum pernah kuperiksa sebelumnya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Hana",
+        "teks_chat": "Kalau kamu mau membagikan klaim itu, sebutkan siapa yang kamu pilih.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Iqbal",
+        "teks_chat": "Lantas apa yang kamu temukan dari sana Leo?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Leo",
+        "teks_chat": "Aku mengaku memakai Peek pada Jaka dan melihat role Hitman. Menurutku Jaka pelakunya.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Jaka",
+            "relasi": "offend",
+            "bukti_pesan": [
+              12
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Karin",
+        "teks_chat": "Aku percaya klaim itu dan ingin vote dia saat Tribunal.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Jaka",
+            "relasi": "offend",
+            "bukti_pesan": [
+              12
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 3.txt"
+  }
+}

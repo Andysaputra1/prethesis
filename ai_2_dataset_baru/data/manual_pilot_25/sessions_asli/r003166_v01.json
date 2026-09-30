@@ -1,0 +1,220 @@
+{
+  "job": {
+    "job_id": "r003166_v01",
+    "case_name": "plural_reference",
+    "case_description": "Pesan sekarang memakai mereka/kalian/keduanya/berdua untuk dua pemain atau lebih yang jelas dari konteks, tanpa menyebut ulang nama mereka. Simpan semua pemain itu sebagai target.",
+    "source": {
+      "source_row": 3166,
+      "source_group": "6bc515e14588f7fa659f",
+      "teks_chat": "Gw gak kabur dari pertanyaan, cuma minta bukti yang konkret. Apa dasar kalian mengaitkan aku dengan sandera?",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 13,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "plural_reference",
+    "participants": [
+      "Raka",
+      "Sinta",
+      "Toni",
+      "Uci"
+    ],
+    "focus_player": "",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Raka",
+        "teks_chat": "Korban malam ini siapa ya?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Sinta",
+        "teks_chat": "Identitas korban memang tidak diumumkan secara publik.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Toni",
+        "teks_chat": "Iya, kita jadi buta info nih.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Uci",
+        "teks_chat": "Yang mencurigakan tuh Raka sama Toni.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Raka",
+            "relasi": "offend",
+            "bukti_pesan": [
+              4
+            ]
+          },
+          {
+            "pemain": "Toni",
+            "relasi": "offend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Raka",
+        "teks_chat": "Kok jadi ke aku?",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Raka",
+            "relasi": "defend",
+            "bukti_pesan": [
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Sinta",
+        "teks_chat": "Aku juga curiga kalian berdua Hitman karena sama-sama tidak memberi pendapat.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Raka",
+            "relasi": "offend",
+            "bukti_pesan": [
+              4
+            ]
+          },
+          {
+            "pemain": "Toni",
+            "relasi": "offend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Toni",
+        "teks_chat": "Aku bukan Hitman, aku sedang membaca chat.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Toni",
+            "relasi": "defend",
+            "bukti_pesan": [
+              7
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Uci",
+        "teks_chat": "Alasan aja kalian ini.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Raka",
+            "relasi": "offend",
+            "bukti_pesan": [
+              4
+            ]
+          },
+          {
+            "pemain": "Toni",
+            "relasi": "offend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Raka",
+        "teks_chat": "Aku bukan Hitman, tadi mengerjakan tugas kuliah sebentar.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Raka",
+            "relasi": "defend",
+            "bukti_pesan": [
+              9
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Sinta",
+        "teks_chat": "Kalian sekarang sudah ikut membalas.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Toni",
+        "teks_chat": "Aku tidak bekerja sama dengan pelaku.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Toni",
+            "relasi": "defend",
+            "bukti_pesan": [
+              11
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Uci",
+        "teks_chat": "Fix kalian berdua kerja sama.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Raka",
+            "relasi": "offend",
+            "bukti_pesan": [
+              4
+            ]
+          },
+          {
+            "pemain": "Toni",
+            "relasi": "offend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Sinta",
+        "teks_chat": "Enggak deh, kayaknya mereka emang nggak tau apa-apa soal korbannya.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Raka",
+            "relasi": "defend",
+            "bukti_pesan": [
+              4
+            ]
+          },
+          {
+            "pemain": "Toni",
+            "relasi": "defend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 45.txt"
+  }
+}

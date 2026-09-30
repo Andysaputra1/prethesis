@@ -1,0 +1,134 @@
+{
+  "job": {
+    "job_id": "r003448_v01",
+    "case_name": "stance_change",
+    "case_description": "Pengirim pesan sekarang sebelumnya menuduh atau membela seorang pemain di konteks, lalu berubah sikap terhadap pemain yang sama. Anotasi mengikuti sikap terbaru.",
+    "source": {
+      "source_row": 3448,
+      "source_group": "35683ab5db49063e2b8b",
+      "teks_chat": "lu semua terlalu cepat nuduh gw, padahal alibi gw masih lebih masuk akal",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 7,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "stance_change",
+    "participants": [
+      "Seno",
+      "Aris",
+      "Rio",
+      "Rani",
+      "Bima"
+    ],
+    "focus_player": "Rio",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Seno",
+        "teks_chat": "Rio dari tadi nyalahin orang terus, dia pelakunya nih.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Rio",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Aris",
+        "teks_chat": "Iya, tuduhannya ke mana-mana ga jelas.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Rio",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Rio",
+        "teks_chat": "Aku bukan Hitman, aku menebak dari isi chat kalian.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Rio",
+            "relasi": "defend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Rani",
+        "teks_chat": "Masa cuma nebak tapi maksa sampe nuduh 3 orang beda?",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Rio",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Bima",
+        "teks_chat": "Ajakan vote Rio berubah terus, aku curiga dia Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Rio",
+            "relasi": "offend",
+            "bukti_pesan": [
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Rio",
+        "teks_chat": "Aku Civilian, aku tadi panik saat membahas hasil Tribunal.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Rio",
+            "relasi": "defend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Seno",
+        "teks_chat": "Oke deh, kelihatannya dia emang panik doang bukan hitman.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Rio",
+            "relasi": "defend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 53.txt"
+  }
+}

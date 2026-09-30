@@ -1,0 +1,115 @@
+{
+  "job": {
+    "job_id": "r000171_v01",
+    "case_name": "topic_switch",
+    "case_description": "Pembahasan berganti pemain; pesan sekarang mengikuti topik baru, bukan otomatis target lama.",
+    "source": {
+      "source_row": 171,
+      "source_group": "a9bdeaa696a9d0a1cdf3",
+      "teks_chat": "dari pola chat, Q kelihatan sedang mengarahkan kita menjauh dari target asli",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 6,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "topic_switch",
+    "participants": [
+      "Andi",
+      "Bayu",
+      "Citra",
+      "Dion"
+    ],
+    "focus_player": "Citra",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Andi",
+        "teks_chat": "Aku curiga Bayu Hitman karena dari tadi tidak menjawab pertanyaan soal alasan vote.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Bayu",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Bayu",
+        "teks_chat": "Aku bukan Hitman, aku sedang membaca ulang chat sebelum menjawab.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Bayu",
+            "relasi": "defend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Citra",
+        "teks_chat": "Bayu belum pantas dituduh; membaca ulang chat itu alasan yang masuk akal.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Bayu",
+            "relasi": "defend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Dion",
+        "teks_chat": "Eh ngomong-ngomong, dari tadi Citra baru ngomong sekali ya?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Andi",
+        "teks_chat": "Oh iya, benar juga kata Dion, Citra jarang ikut diskusi di ronde ini.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Dion",
+        "teks_chat": "Diam-diam begini biasanya dia Hitman yang sedang bersembunyi dari kita, ayo vote Citra!",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Citra",
+            "relasi": "offend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 2.txt"
+  },
+  "revisi": [
+    {
+      "pesan": 4,
+      "kategori": "tidak_natural",
+      "alasan": "Citra baru saja bicara di [3], jadi 'tumben tidak cerewet' kontradiktif."
+    },
+    {
+      "pesan": 5,
+      "kategori": "tidak_natural",
+      "alasan": "'Citra tumben pasif banget' bertentangan dengan Citra yang baru membela Bayu."
+    }
+  ]
+}

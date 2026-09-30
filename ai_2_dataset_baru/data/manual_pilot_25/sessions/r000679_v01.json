@@ -1,0 +1,193 @@
+{
+  "job": {
+    "job_id": "r000679_v01",
+    "case_name": "reference_start",
+    "case_description": "Tepat 12 konteks. Penyebutan target eksplisit di pesan konteks pertama; pesan sekarang memakai kata ganti.",
+    "source": {
+      "source_row": 679,
+      "source_group": "7ad1b8d53f7fd36d0737",
+      "teks_chat": "chatku memang keras, tapi gaya ngomong bukan bukti aku role jahat",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 13,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "reference_start",
+    "participants": [
+      "Eka",
+      "Fahmi",
+      "Gita",
+      "Hasan",
+      "Ira"
+    ],
+    "focus_player": "Fahmi",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Eka",
+        "teks_chat": "Fahmi tiba-tiba mengaku Spy saat ditanya. Aku curiga Fahmi Hitman yang mencari aman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Fahmi",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Gita",
+        "teks_chat": "Iya, tapi sayang laporannya kurang lengkap jadi agak diragukan kebenarannya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Fahmi",
+        "teks_chat": "Aku belum sempat mengetik lengkap pilihanku sebagai Spy.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Hasan",
+        "teks_chat": "Klaim role perlu dicatat dulu, bukan langsung dipercaya atau ditolak.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Ira",
+        "teks_chat": "Bisa jadi dia cuma ngasal claim biar aman dari sasaran vote kita.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Fahmi",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Eka",
+        "teks_chat": "Aku juga curiga dia memakai klaim role untuk lolos dari vote.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Fahmi",
+            "relasi": "offend",
+            "bukti_pesan": [
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Fahmi",
+        "teks_chat": "Aku bukan Hitman. Aku mengaku memilih Guard untuk Hasan semalam.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Fahmi",
+            "relasi": "defend",
+            "bukti_pesan": [
+              7
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Gita",
+        "teks_chat": "Oke, klaim Guard ke Hasan kita catat dulu.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Hasan",
+        "teks_chat": "Alesannya makin keliatan ngarang deh.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Fahmi",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Ira",
+        "teks_chat": "Aku setuju sama Hasan, mending kita turunin dia sekarang juga.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Fahmi",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Fahmi",
+        "teks_chat": "Aku tetap mengaku Spy, bukan Hitman. Kalian boleh bertanya soal klaimku.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Fahmi",
+            "relasi": "defend",
+            "bukti_pesan": [
+              11
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Eka",
+        "teks_chat": "Aku masih curiga dia mengarang klaim.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Fahmi",
+            "relasi": "offend",
+            "bukti_pesan": [
+              11
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Gita",
+        "teks_chat": "Dia belum pantas divote hanya karena klaimnya belum terbukti. Sejauh ini belum ada kontradiksi yang ditunjukkan.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Fahmi",
+            "relasi": "defend",
+            "bukti_pesan": [
+              12
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 13.txt"
+  },
+  "revisi": [
+    {
+      "pesan": 8,
+      "kategori": "meta",
+      "alasan": "Menjelaskan fungsi Guard dan pilihan rahasia."
+    }
+  ]
+}

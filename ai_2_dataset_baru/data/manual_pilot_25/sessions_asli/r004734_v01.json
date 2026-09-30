@@ -1,0 +1,150 @@
+{
+  "job": {
+    "job_id": "r004734_v01",
+    "case_name": "mixed_relations",
+    "case_description": "Membela satu pemain dan menuduh pemain lain. Intent utama offend; simpan kedua relasi.",
+    "source": {
+      "source_row": 4734,
+      "source_group": "791f4a0a9bef91df390a",
+      "teks_chat": "aku lebih percaya pola tindakan daripada pembelaan si R, vote dia sebelum terlambat",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 9,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "mixed_relations",
+    "participants": [
+      "Zaki",
+      "Ayu",
+      "Bagas"
+    ],
+    "focus_player": "",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Zaki",
+        "teks_chat": "Ayu belum membalas pertanyaan tadi.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Bagas",
+        "teks_chat": "Aku curiga dia Hitman yang sengaja menghindari pertanyaan.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Ayu",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Ayu",
+        "teks_chat": "Aku bukan Hitman, tadi belum sempat membalas.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Ayu",
+            "relasi": "defend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Zaki",
+        "teks_chat": "Kita beri waktu untuk menjawab.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Bagas",
+        "teks_chat": "Gua tetep curiga berat sih sama Ayu, ga masuk akal.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Ayu",
+            "relasi": "offend",
+            "bukti_pesan": [
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Zaki",
+        "teks_chat": "Ayu belum terbukti Hitman hanya karena lambat membalas.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Ayu",
+            "relasi": "defend",
+            "bukti_pesan": [
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Ayu",
+        "teks_chat": "Nah tuh si Zaki ngerti situasinya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Bagas",
+        "teks_chat": "Kalian berdua bersekongkol ya buat nutupin identitas Hitman?",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Ayu",
+            "relasi": "offend",
+            "bukti_pesan": [
+              7
+            ]
+          },
+          {
+            "pemain": "Zaki",
+            "relasi": "offend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Zaki",
+        "teks_chat": "Ayu itu jelas bukan pelakunya, justru Bagas yang dari tadi sibuk nuduh membabi buta itu yang Hitman aslinya!",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Ayu",
+            "relasi": "defend",
+            "bukti_pesan": [
+              7
+            ]
+          },
+          {
+            "pemain": "Bagas",
+            "relasi": "offend",
+            "bukti_pesan": [
+              8
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 69.txt"
+  }
+}

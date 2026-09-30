@@ -1,0 +1,75 @@
+{
+  "job": {
+    "job_id": "r000589_v01",
+    "case_name": "interruption",
+    "case_description": "Pembahasan target disela obrolan waktu/ronde; kaitan kembali ke target masih jelas.",
+    "source": {
+      "source_row": 589,
+      "source_group": "e47737606d69a2db58af",
+      "teks_chat": "aku nggak percaya klaim dia mentah-mentah, tapi itu juga bukan alasan buat ngegas vote aku",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 4,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "interruption",
+    "participants": [
+      "Wawan",
+      "Xena",
+      "Yogi",
+      "Zain"
+    ],
+    "focus_player": "Xena",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Wawan",
+        "teks_chat": "Xena tadi mengajak vote lalu menarik ajakannya. Aku curiga Xena Hitman yang sedang mengubah cerita.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Xena",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Yogi",
+        "teks_chat": "Sisa waktu ronde ini sisa berapa menit lagi sih?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Zain",
+        "teks_chat": "Kayaknya tinggal dua menitan doang deh di timerku.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Yogi",
+        "teks_chat": "Xena belum pantas dituduh. Menarik dugaan yang lemah itu wajar, bukan otomatis berbohong.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Xena",
+            "relasi": "defend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 10.txt"
+  }
+}

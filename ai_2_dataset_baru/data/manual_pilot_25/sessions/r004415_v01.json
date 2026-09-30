@@ -1,0 +1,63 @@
+{
+  "job": {
+    "job_id": "r004415_v01",
+    "case_name": "topic_switch",
+    "case_description": "Pembahasan berganti pemain; pesan sekarang mengikuti topik baru, bukan otomatis target lama.",
+    "source": {
+      "source_row": 4415,
+      "source_group": "142792295116df653f88",
+      "teks_chat": "kalau gw salah, buktikan lewat pola, bukan karena si O paling keras teriak nama gw",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 2,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "topic_switch",
+    "participants": [
+      "Dimas",
+      "Ayu",
+      "Bima",
+      "Riko"
+    ],
+    "focus_player": "Bima",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Dimas",
+        "teks_chat": "Tadi Ayu terlalu tergesa-gesa membela Riko, bisa jadi dia kaki tangannya.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Ayu",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Ayu",
+        "teks_chat": "Kita bahas Bima saja: menurutku Bima bukan Hitman dan belum pantas divote.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Bima",
+            "relasi": "defend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 66.txt"
+  }
+}

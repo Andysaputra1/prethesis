@@ -1,0 +1,48 @@
+{
+  "job": {
+    "job_id": "r003370_v01",
+    "case_name": "first_message_self",
+    "case_description": "Pesan pertama tanpa konteks membela atau menuduh diri sendiri. Target = pengirim; tidak perlu riwayat untuk memahami aku.",
+    "source": {
+      "source_row": 3370,
+      "source_group": "cfba7110dd71a8782720",
+      "teks_chat": "lu nuduh gw karena gw diem? itu bukan bukti, bisa aja gw lagi baca situasi",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 1,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "first_message_self",
+    "participants": [
+      "Aldo",
+      "Bima",
+      "Candra"
+    ],
+    "focus_player": "Aldo",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Aldo",
+        "teks_chat": "Aku bukan Hitman, jangan memilihku tanpa bukti.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Aldo",
+            "relasi": "defend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 50.txt"
+  }
+}

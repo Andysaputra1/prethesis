@@ -1,0 +1,235 @@
+{
+  "job": {
+    "job_id": "r001906_v01",
+    "case_name": "reference_start",
+    "case_description": "Tepat 12 konteks. Penyebutan target eksplisit di pesan konteks pertama; pesan sekarang memakai kata ganti.",
+    "source": {
+      "source_row": 1906,
+      "source_group": "6be3a99137467288a763",
+      "teks_chat": "gw lihat Dito selalu nunggu orang lain buka suara sebelum ikut vote, kayaknya dia lagi cari arah aman, pilih Dito",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 13,
+    "pesan_typo_ringan": [
+      3
+    ]
+  },
+  "session": {
+    "case_name": "reference_start",
+    "participants": [
+      "Udin",
+      "Vina",
+      "Wira"
+    ],
+    "focus_player": "Udin",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Vina",
+        "teks_chat": "Udin belum menjawab pertanyaan soal ajakan vote. Aku curiga Udin Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Udin",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Udin",
+        "teks_chat": "Aku bukan Hitman. Aku sedang membaca ulang percakapan sebelum menjawab.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Udin",
+            "relasi": "defend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Wira",
+        "teks_chat": "Aku jg curiga dia sengaja menunda jawaban untuk mengarang alasan.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Udin",
+            "relasi": "offend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Udin",
+        "teks_chat": "Aku tidak bersalah, aku ingin memastikan tidak salah memahami pertanyaan.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Udin",
+            "relasi": "defend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Vina",
+        "teks_chat": "Itu hanya alasan yang kamu buat-buat saja.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Udin",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Wira",
+        "teks_chat": "Iya, penjelasannya agak mencurigakan sih.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Udin",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Udin",
+        "teks_chat": "Aku bukan pelakunya. Jawabanku belum selesai kuketik.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Udin",
+            "relasi": "defend",
+            "bukti_pesan": [
+              7
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Vina",
+        "teks_chat": "Lalu kenapa jawabanmu nggak selesai-selesai dari tadi?",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Udin",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Wira",
+        "teks_chat": "Mungkin dia sedang berpikir keras mencari alasan lain.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Udin",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Udin",
+        "teks_chat": "Aku tetap tidak bersalah, jangan langsung vote aku dari jeda chat.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Udin",
+            "relasi": "defend",
+            "bukti_pesan": [
+              10
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Vina",
+        "teks_chat": "Sudah kelihatan gelagat jahatnya.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Udin",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Wira",
+        "teks_chat": "Sudah, kita sepakat vote dia aja sebelum waktu habis.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Udin",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Vina",
+        "teks_chat": "Aku tetap curiga dia Hitman karena belum menjelaskan ajakan votenya. Aku ingin vote dia.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Udin",
+            "relasi": "offend",
+            "bukti_pesan": [
+              12
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 31.txt"
+  },
+  "revisi": [
+    {
+      "pesan": 3,
+      "kategori": "singkatan",
+      "alasan": "Slot typo [3] tidak berisi singkatan."
+    },
+    {
+      "pesan": 8,
+      "kategori": "tidak_natural",
+      "alasan": "'diam saja dari awal' bertentangan; Udin sudah berkali-kali menjawab."
+    },
+    {
+      "pesan": 12,
+      "kategori": "label",
+      "alasan": "'Mari kita sepakat saja' tidak jelas menuduh Udin padahal berlabel offend; teks diperjelas."
+    }
+  ]
+}

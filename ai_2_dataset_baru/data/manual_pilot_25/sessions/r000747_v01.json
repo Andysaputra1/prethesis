@@ -1,0 +1,95 @@
+{
+  "job": {
+    "job_id": "r000747_v01",
+    "case_name": "witness",
+    "case_description": "Nama saksi/korban disebut, tetapi bukan target serangan atau pembelaan.",
+    "source": {
+      "source_row": 747,
+      "source_group": "abe663d01311e1fa0ff6",
+      "teks_chat": "aku bukan Hitman, kalau mau objektif bandingkan timeline aksiku dulu",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 6,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "witness",
+    "participants": [
+      "Sari",
+      "Tito",
+      "Wawan",
+      "Zaki"
+    ],
+    "focus_player": "Tito",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Sari",
+        "teks_chat": "Wawan, kamu membaca jawaban Tito soal alasan vote tadi?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Wawan",
+        "teks_chat": "Iya, Tito bilang pesan sebelumnya gagal terkirim lalu mengirim jawabannya lagi.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Zaki",
+        "teks_chat": "Aku curiga Tito mengarang alasan koneksi karena dia Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Tito",
+            "relasi": "offend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Sari",
+        "teks_chat": "Aku juga curiga dia sengaja menunda jawaban.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Tito",
+            "relasi": "offend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Wawan",
+        "teks_chat": "Kita bisa membaca jawaban yang sekarang sudah terkirim.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Tito",
+        "teks_chat": "Aku bukan Hitman. Wawan membaca jawabanku yang sudah terkirim, jadi jangan anggap jeda chat tadi sebagai bukti aku menghindar.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Tito",
+            "relasi": "defend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 15.txt"
+  }
+}

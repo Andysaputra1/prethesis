@@ -1,0 +1,123 @@
+{
+  "job": {
+    "job_id": "r000093_v01",
+    "case_name": "witness",
+    "case_description": "Nama saksi/korban disebut, tetapi bukan target serangan atau pembelaan.",
+    "source": {
+      "source_row": 93,
+      "source_group": "707a1f409a945f589699",
+      "teks_chat": "si B langsung nuduh orang lain begitu diskusi mulai panas, gaya banget nutupin jejak",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 12,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "witness",
+    "participants": [
+      "Coki",
+      "Dena",
+      "Elsa",
+      "Feri"
+    ],
+    "focus_player": "Dena",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Feri",
+        "teks_chat": "Ada klaim Spy yang ingin kita periksa.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Dena",
+        "teks_chat": "Klaim dari siapa?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Feri",
+        "teks_chat": "Klaimmu sendiri tentang pilihan Guard semalam.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Elsa",
+        "teks_chat": "Aku membaca Dena menyebut dua target berbeda untuk malam yang sama.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Coki",
+        "teks_chat": "Elsa, apa kedua pesannya masih ada di riwayat chat?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Elsa",
+        "teks_chat": "Ada, satu menyebut Feri dan satu menyebut Coki.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Dena",
+        "teks_chat": "Pesan pertama salah ketik, yang kumaksud Coki.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Coki",
+        "teks_chat": "Kapan kamu memberi koreksi itu?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Dena",
+        "teks_chat": "Aku bukan Hitman. Aku memang mengaku Spy, tetapi baru sekarang mengoreksinya.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Dena",
+            "relasi": "defend",
+            "bukti_pesan": [
+              9
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Feri",
+        "teks_chat": "Berarti koreksi baru muncul setelah perbedaannya ditanyakan.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Elsa",
+        "teks_chat": "Iya, itu urutan pesan yang kubaca.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Coki",
+        "teks_chat": "Dari pengamatan Elsa soal dua klaim tadi, aku curiga Dena Hitman yang mengarang pilihan Guard. Aku ingin vote Dena.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Dena",
+            "relasi": "offend",
+            "bukti_pesan": [
+              12
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 78.txt"
+  }
+}

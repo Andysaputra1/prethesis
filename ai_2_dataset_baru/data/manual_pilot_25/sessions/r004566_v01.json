@@ -1,0 +1,136 @@
+{
+  "job": {
+    "job_id": "r004566_v01",
+    "case_name": "agreement",
+    "case_description": "Pesan sekarang menyetujui atau membantah pesan pemain lain di konteks tanpa menyebut ulang nama target. Setuju dengan tuduhan = offend pemain yang dituduh; membantah tuduhan atau setuju dengan pembelaan = defend. Identitas target diwarisi dari pesan yang ditanggapi.",
+    "source": {
+      "source_row": 4566,
+      "source_group": "1f45802e966051a9542b",
+      "teks_chat": "aku rangkum singkat, si D punya alibi lemah, voting oportunistis, dan respons defensif, jadi kita sepakati eksekusi D",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 9,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "agreement",
+    "participants": [
+      "Andi",
+      "Budi",
+      "Cici",
+      "Deni"
+    ],
+    "focus_player": "Andi",
+    "panggilan": [
+      {
+        "pemain": "Andi",
+        "sebutan": [
+          "Ndi"
+        ]
+      }
+    ],
+    "messages": [
+      {
+        "pengirim": "Andi",
+        "teks_chat": "Aku klaim Spy, semalam aku memakai Guard.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Budi",
+        "teks_chat": "Siapa target Guard-mu?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Cici",
+        "teks_chat": "Iya, sebutkan pilihanmu kalau ingin dibahas.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Andi",
+        "teks_chat": "Aku memilih Deni sebagai target Guard.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Deni",
+        "teks_chat": "Bohong, kamu pasti asal sebut nama karena belum siap alibi.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Andi",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Andi",
+        "teks_chat": "Aku benar-benar Spy, berani sumpah deh.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Andi",
+            "relasi": "defend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Budi",
+        "teks_chat": "Bukti kamu kurang kuat sih buat mengklaim posisi penting seperti itu.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Andi",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Cici",
+        "teks_chat": "Aku setuju dengan keraguan Budi, rasanya sulit mempercayai dia.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Andi",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Deni",
+        "teks_chat": "Sudah sangat jelas dia berbohong kepada kita semua, ayo kita sepakat untuk memilih dia saja hari ini.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Andi",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 68.txt"
+  }
+}

@@ -1,0 +1,133 @@
+{
+  "job": {
+    "job_id": "r003207_v01",
+    "case_name": "outside_window_unknown",
+    "case_description": "14-16 pesan total. Pembahasan lama telah putus/beralih. Teks dan anotasi 12 konteks terakhir tidak cukup menentukan acuan sekarang. Target harus tidak_diketahui; jangan menggunakan informasi lama yang tidak tersedia dalam input.",
+    "source": {
+      "source_row": 3207,
+      "source_group": "f4adb7133a991dd1b5a2",
+      "teks_chat": "aku cuma mengikuti keputusan tim, bukan berusaha mengarahkan vote",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 14,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "outside_window_unknown",
+    "participants": [
+      "Rio",
+      "Siska",
+      "Tio",
+      "Vina"
+    ],
+    "focus_player": "Tio",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Rio",
+        "teks_chat": "Tio pasif sejak awal, aku curiga dia Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Tio",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Siska",
+        "teks_chat": "Aku ingin memastikan kenapa chat malam tidak bisa dipakai.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Tio",
+        "teks_chat": "Memang dikunci pada fase malam.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Vina",
+        "teks_chat": "Jadi diskusinya kapan?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Rio",
+        "teks_chat": "Saat fase siang.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Siska",
+        "teks_chat": "Lalu keputusan vote melalui Tribunal?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Tio",
+        "teks_chat": "Iya, sebelum melanjutkan putaran berikutnya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Vina",
+        "teks_chat": "Kalau pemain diam saat diskusi, apa pasti kena skill?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Rio",
+        "teks_chat": "Belum tentu, bisa juga memilih diam atau mengalami kendala koneksi.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Siska",
+        "teks_chat": "Berarti tidak bisa langsung memastikan penyebabnya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Tio",
+        "teks_chat": "Benar, kita hanya melihat pesan yang dikirim.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Vina",
+        "teks_chat": "Baik, terima kasih penjelasannya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Rio",
+        "teks_chat": "Kita lanjut menilai alasan tuduhan setelah ini.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Siska",
+        "teks_chat": "Balik ke tuduhan tadi, menurutku dia bukan Hitman hanya karena diam.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "tidak_diketahui",
+            "relasi": "defend",
+            "bukti_pesan": []
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 46.txt"
+  }
+}

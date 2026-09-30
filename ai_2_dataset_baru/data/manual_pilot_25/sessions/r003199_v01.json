@@ -1,0 +1,173 @@
+{
+  "job": {
+    "job_id": "r003199_v01",
+    "case_name": "nickname",
+    "case_description": "Pesan sekarang menyebut pemain dengan nama panggilan, singkatan, atau salah ketik ringan (Andy -> ndy, andi, si And) tanpa menulis nama aslinya. Catat sebutan itu di panggilan. Target tetap memakai nama asli; jika neutral, target kosong.",
+    "source": {
+      "source_row": 3199,
+      "source_group": "31c46fd06ac9d218f2c3",
+      "teks_chat": "dia nuduh gw tanpa bukti, aku cuma menjawab karena ditanya",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 10,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "nickname",
+    "participants": [
+      "Nanda",
+      "Opan",
+      "Putri",
+      "Raka"
+    ],
+    "focus_player": "Putri",
+    "panggilan": [
+      {
+        "pemain": "Putri",
+        "sebutan": [
+          "Put"
+        ]
+      }
+    ],
+    "messages": [
+      {
+        "pengirim": "Nanda",
+        "teks_chat": "Ada yang mau ngaku Spy ga ronde ini?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Opan",
+        "teks_chat": "Aku klaim Spy, pilihan Guard-ku semalam Putri.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Putri",
+        "teks_chat": "Aku curiga Opan Hitman yang mengarang pilihan Guard.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Opan",
+            "relasi": "offend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Raka",
+        "teks_chat": "Klaim Guard Opan belum terbukti palsu. Aku menolak tuduhan ke Opan.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Opan",
+            "relasi": "defend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Nanda",
+        "teks_chat": "Si Put ini mencurigakan banget dari tadi nuduh-nuduh terus.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Putri",
+            "relasi": "offend",
+            "bukti_pesan": [
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Putri",
+        "teks_chat": "Aku bukan Hitman, aku cuma menyampaikan kecurigaan.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Putri",
+            "relasi": "defend",
+            "bukti_pesan": [
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Opan",
+        "teks_chat": "Halah alasan aja, si put ini pasti pelakunya yang ketakutan.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Putri",
+            "relasi": "offend",
+            "bukti_pesan": [
+              7
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Raka",
+        "teks_chat": "Jangan vote dia cuma karena meragukan klaim Opan.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Putri",
+            "relasi": "defend",
+            "bukti_pesan": [
+              7
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Nanda",
+        "teks_chat": "Udah, kita buang put aja hari ini biar aman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Putri",
+            "relasi": "offend",
+            "bukti_pesan": [
+              9
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Raka",
+        "teks_chat": "Jangan nge-vote put dulu, buktinya belum kuat buat naikin dia ke tiang.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Putri",
+            "relasi": "defend",
+            "bukti_pesan": [
+              10
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 46.txt"
+  },
+  "revisi": [
+    {
+      "pesan": 8,
+      "kategori": "tidak_natural",
+      "alasan": "Putri tidak 'menanyakan klaim', ia menuduh Opan mengarang klaim."
+    }
+  ]
+}

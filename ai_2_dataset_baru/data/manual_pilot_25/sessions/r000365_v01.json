@@ -1,0 +1,151 @@
+{
+  "job": {
+    "job_id": "r000365_v01",
+    "case_name": "reference_end",
+    "case_description": "Tepat 12 konteks. Penyebutan target eksplisit di pesan konteks terakhir.",
+    "source": {
+      "source_row": 365,
+      "source_group": "781bf18b72fd847da131",
+      "teks_chat": "aku bukan pelakunya, tadi malah chatku kena Gag Order saat mulai membahas pola vote",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 13,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "reference_end",
+    "participants": [
+      "Sari",
+      "Tono",
+      "Umar",
+      "Vina"
+    ],
+    "focus_player": "Sari",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Sari",
+        "teks_chat": "Aku mengaku Spy. Semalam aku memilih Guard untuk Vina.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Tono",
+        "teks_chat": "Apa yang bisa kami periksa dari klaim itu?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Sari",
+        "teks_chat": "Aku hanya bisa menyampaikan pilihanku, kalian tidak melihat aksi malamku.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Umar",
+        "teks_chat": "Jadi klaim itu belum bisa kami pastikan dari chat saja.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Vina",
+        "teks_chat": "Iya, aku juga tidak bisa membuktikan siapa yang memilih Guard.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Sari",
+        "teks_chat": "Aku paham kalau klaimku perlu dipertanyakan.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Tono",
+        "teks_chat": "Terus malam ini kamu mau Guard siapa?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Sari",
+        "teks_chat": "Belum tahu, yang jelas bukan Vina lagi karena semalam sudah.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Vina",
+        "teks_chat": "Oke, kita catat dulu klaimmu.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Umar",
+        "teks_chat": "Tahu soal Guard belum membuktikan dia beneran Spy.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Tono",
+        "teks_chat": "Betul, siapa pun bisa ngaku-ngaku Spy.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Umar",
+        "teks_chat": "Aku tetap curiga Sari Hitman yang menggunakan klaim Spy untuk cari aman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Sari",
+            "relasi": "offend",
+            "bukti_pesan": [
+              12
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Vina",
+        "teks_chat": "Jangan terlalu cepat menuduh, klaim yang belum terbukti tidak otomatis membuat dia pelakunya.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Sari",
+            "relasi": "defend",
+            "bukti_pesan": [
+              12
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 4.txt"
+  },
+  "revisi": [
+    {
+      "pesan": 7,
+      "kategori": "meta",
+      "alasan": "Menanyakan aturan batasan Guard"
+    },
+    {
+      "pesan": 8,
+      "kategori": "meta",
+      "alasan": "Menjelaskan aturan skill Spy secara buku"
+    },
+    {
+      "pesan": 10,
+      "kategori": "tidak_natural",
+      "alasan": "Kaku dan membahas 'aturan role'"
+    },
+    {
+      "pesan": 11,
+      "kategori": "meta",
+      "alasan": "Menyebut 'membaca aturan'"
+    }
+  ]
+}

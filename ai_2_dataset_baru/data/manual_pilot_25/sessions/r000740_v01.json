@@ -1,0 +1,120 @@
+{
+  "job": {
+    "job_id": "r000740_v01",
+    "case_name": "ambiguous",
+    "case_description": "Beberapa acuan sama-sama mungkin; target tidak_diketahui, bukan nama terakhir.",
+    "source": {
+      "source_row": 740,
+      "source_group": "04a184f419c125c447b0",
+      "teks_chat": "secara objektif aku Civilian, tuduhan ke aku belum punya bukti mekanis",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 11,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "ambiguous",
+    "participants": [
+      "Ivan",
+      "Joko",
+      "Lina",
+      "Maya"
+    ],
+    "focus_player": "",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Ivan",
+        "teks_chat": "Ajakan vote tadi berganti-ganti sampai aku sulit mengikuti.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Joko",
+        "teks_chat": "Iya, keliatannya ada yang sengaja nyuruh temen-temennya pindah haluan.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Lina",
+        "teks_chat": "Pasti tujuannya buat ngegagalin kita ngevote Hitman yang sebenernya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Maya",
+        "teks_chat": "Bisa jadi, atau emang pada dapet info baru aja makanya ragu.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Ivan",
+        "teks_chat": "Ada dua orang yang sama-sama menarik ajakan vote, tapi aku nggak tahu alasan keduanya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Joko",
+        "teks_chat": "Menurutku salah satu dari dua orang yang berubah pilihan itu Hitman, tetapi aku belum mau menyebut siapa.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "tidak_diketahui",
+            "relasi": "offend",
+            "bukti_pesan": []
+          }
+        ]
+      },
+      {
+        "pengirim": "Lina",
+        "teks_chat": "Kalau belum mau menyebut siapa, tuduhannya belum bisa ditanggapi secara khusus.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Maya",
+        "teks_chat": "Makanya bahaya banget kalau langsung asal tebak siapa dalangnya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Ivan",
+        "teks_chat": "Terus kita diemin aja gitu orang-orang yang manipulasi vote?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Joko",
+        "teks_chat": "Kita sebaiknya meminta alasan perubahan ajakan vote satu per satu.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Maya",
+        "teks_chat": "Aku membela salah satu dari dua orang tadi, tetapi belum mau menyebut namanya. Menarik dugaan bukan bukti dia Hitman.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "tidak_diketahui",
+            "relasi": "defend",
+            "bukti_pesan": []
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 15.txt"
+  },
+  "revisi": [
+    {
+      "pesan": 5,
+      "kategori": "tidak_natural",
+      "alasan": "Joko termasuk dua orang yang disebut, lalu di pesan 6 Joko menuduh 'salah satu dari dua orang itu' tanpa mau menyebut siapa (tidak logis)"
+    }
+  ]
+}

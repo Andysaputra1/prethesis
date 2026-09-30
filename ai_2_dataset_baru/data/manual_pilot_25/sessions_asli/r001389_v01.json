@@ -1,0 +1,136 @@
+{
+  "job": {
+    "job_id": "r001389_v01",
+    "case_name": "reference_end",
+    "case_description": "Tepat 12 konteks. Penyebutan target eksplisit di pesan konteks terakhir.",
+    "source": {
+      "source_row": 1389,
+      "source_group": "743a22ea5c8a28c19e3a",
+      "teks_chat": "kalau gw hitman, ngapain gw buka pola voting si C dari awal",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 13,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "reference_end",
+    "participants": [
+      "Tito",
+      "Umar",
+      "Vina",
+      "Wawan",
+      "Xena"
+    ],
+    "focus_player": "Xena",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Tito",
+        "teks_chat": "Ini kok ada yang ngetiknya sepotong-sepotong terus ya dari tadi?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Umar",
+        "teks_chat": "Iya, terus balesnya juga delay banget, nggak kayak biasanya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Vina",
+        "teks_chat": "Aku curiga orang yang lambat membalas itu Hitman yang sengaja menghindari pertanyaan.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "tidak_diketahui",
+            "relasi": "offend",
+            "bukti_pesan": []
+          }
+        ]
+      },
+      {
+        "pengirim": "Wawan",
+        "teks_chat": "Itu masih dugaan, penyebab jeda chat belum jelas.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Tito",
+        "teks_chat": "Gag Order membungkam chat, bukan membuat pesan yang terkirim jadi terpotong.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Umar",
+        "teks_chat": "Jadi pesan terpotong bisa karena cara mengetik atau masalah koneksi.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Vina",
+        "teks_chat": "Iya, kita belum bisa memastikan penyebabnya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Wawan",
+        "teks_chat": "Coba kita pancing ngobrol, ntar kelihatan polanya natural atau dibikin-bikin.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Tito",
+        "teks_chat": "Bener, biar kita nggak salah ngambil keputusan pas vote nanti.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Umar",
+        "teks_chat": "Tapi tetep harus waspada sih, takutnya dia malah nyerang balik.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Vina",
+        "teks_chat": "Aku udah siapin argumen nih kalau dia mulai ngeles.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Wawan",
+        "teks_chat": "Yang kita bahas Xena. Aku curiga Xena Hitman karena tidak menjawab soal alasan vote.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Xena",
+            "relasi": "offend",
+            "bukti_pesan": [
+              12
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Tito",
+        "teks_chat": "Dia belum pantas dituduh hanya karena terlambat membalas. Bisa saja ada masalah koneksi.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Xena",
+            "relasi": "defend",
+            "bukti_pesan": [
+              12
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 24.txt"
+  }
+}

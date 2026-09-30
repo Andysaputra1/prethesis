@@ -1,0 +1,174 @@
+{
+  "job": {
+    "job_id": "r001063_v01",
+    "case_name": "nickname",
+    "case_description": "Pesan sekarang menyebut pemain dengan nama panggilan, singkatan, atau salah ketik ringan (Andy -> ndy, andi, si And) tanpa menulis nama aslinya. Catat sebutan itu di panggilan. Target tetap memakai nama asli; jika neutral, target kosong.",
+    "source": {
+      "source_row": 1063,
+      "source_group": "135197c4854ff20568dc",
+      "teks_chat": "gw stalker, pekan lalu gw sudah peek si Sari",
+      "label_intent": "neutral"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 10,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "nickname",
+    "participants": [
+      "Aldi",
+      "Beni",
+      "Cita",
+      "Dina"
+    ],
+    "focus_player": "",
+    "panggilan": [
+      {
+        "pemain": "Beni",
+        "sebutan": [
+          "Ben"
+        ]
+      }
+    ],
+    "messages": [
+      {
+        "pengirim": "Aldi",
+        "teks_chat": "Dari awal mulai game kok Beni diam aja, curiga deh aku.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Beni",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Cita",
+        "teks_chat": "Iya, yang diam-diam biasanya menghanyutkan.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Beni",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Beni",
+        "teks_chat": "Eh, aku lagi baca chat history kalian kok, baru balik dr kamar mandi.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Beni",
+            "relasi": "defend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Dina",
+        "teks_chat": "Alasan klise banget, palingan dia pelakunya tuh.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Beni",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Aldi",
+        "teks_chat": "Udahlah, kita vote aja dia langsung sekarang.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Beni",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Beni",
+        "teks_chat": "Kalian ini nuduh tanpa bukti yang jelas tau nggak?",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Beni",
+            "relasi": "defend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Cita",
+        "teks_chat": "Bukti apa lagi? Tingkah lu aja udah aneh dari awal.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Beni",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Beni",
+        "teks_chat": "Sumpah aku civilian, tadi beneran kebelet.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Beni",
+            "relasi": "defend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Dina",
+        "teks_chat": "Halah, Hitman mana ada yang ngaku.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Beni",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Aldi",
+        "teks_chat": "Ben, bagian chat mana yang belum sempat kamu baca?",
+        "label_intent": "neutral",
+        "target": []
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 21.txt"
+  }
+}

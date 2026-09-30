@@ -1,0 +1,74 @@
+{
+  "job": {
+    "job_id": "r000337_v01",
+    "case_name": "multiple_targets",
+    "case_description": "Dua atau lebih pemain menjadi target relasi yang sama secara jelas.",
+    "source": {
+      "source_row": 337,
+      "source_group": "e2effddc9835f84090a0",
+      "teks_chat": "setelah aku sebut nama si F, chatku mendadak dibungkam, jadi F yang aku laporkan sebagai Hitman",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 4,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "multiple_targets",
+    "participants": [
+      "Lusi",
+      "Mira",
+      "Nando",
+      "Oki"
+    ],
+    "focus_player": "",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Lusi",
+        "teks_chat": "Nando dan Oki sama-sama mengaku Spy, tetapi kita belum memeriksa cerita mereka.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Nando",
+        "teks_chat": "Aku mengaku memakai Guard untuk Lusi semalam.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Oki",
+        "teks_chat": "Aku mengaku memakai Guard untuk Mira.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Mira",
+        "teks_chat": "Aku curiga Nando dan Oki sedang memakai klaim Spy untuk menghindari pertanyaan. Aku ingin vote mereka berdua.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Nando",
+            "relasi": "offend",
+            "bukti_pesan": [
+              4
+            ]
+          },
+          {
+            "pemain": "Oki",
+            "relasi": "offend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 4.txt"
+  }
+}

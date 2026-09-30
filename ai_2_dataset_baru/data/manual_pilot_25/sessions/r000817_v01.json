@@ -1,0 +1,66 @@
+{
+  "job": {
+    "job_id": "r000817_v01",
+    "case_name": "self",
+    "case_description": "Defend diri sendiri atau offend/vote diri sendiri sesuai label. Target = pengirim.",
+    "source": {
+      "source_row": 817,
+      "source_group": "b871dc5dea30cb899778",
+      "teks_chat": "dengerin dulu, gw Stalker dan sudah cek Tio, dia bukan pihak kita, langsung arahkan vote ke dia",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 4,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "self",
+    "participants": [
+      "Hasan",
+      "Irfan",
+      "Jihan"
+    ],
+    "focus_player": "Jihan",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Hasan",
+        "teks_chat": "Kenapa Jihan dari tadi telat banget bales chatnya?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Irfan",
+        "teks_chat": "Iya, terus balesannya suka kepotong-potong ngga jelas.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Jihan",
+        "teks_chat": "Sinyalku beneran lagi jelek banget, makanya lag parah.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Jihan",
+        "teks_chat": "Kalau kalian emang ngerasa tingkahku mencurigakan dan ngebebanin tim, yaudah vote aku aja gapapa biar kalian tenang.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Jihan",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 16.txt"
+  }
+}

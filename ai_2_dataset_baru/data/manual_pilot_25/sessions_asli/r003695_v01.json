@@ -1,0 +1,61 @@
+{
+  "job": {
+    "job_id": "r003695_v01",
+    "case_name": "self",
+    "case_description": "Defend diri sendiri atau offend/vote diri sendiri sesuai label. Target = pengirim.",
+    "source": {
+      "source_row": 3695,
+      "source_group": "95f89abf93d71efd2ef0",
+      "teks_chat": "Gw Civilian murni, cuma sengaja diem biar nggak jadi target Gag Order",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 2,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "self",
+    "participants": [
+      "Mia",
+      "Niko"
+    ],
+    "focus_player": "Mia",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Niko",
+        "teks_chat": "Mia, pembelaan kamu di putaran lalu terasa terlalu cepat.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Mia",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Mia",
+        "teks_chat": "Aku bukan Hitman, aku bisa membalas cepat karena sedang memegang ponsel.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Mia",
+            "relasi": "defend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 57.txt"
+  }
+}

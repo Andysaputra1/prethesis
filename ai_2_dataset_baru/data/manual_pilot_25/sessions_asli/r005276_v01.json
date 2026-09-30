@@ -1,0 +1,156 @@
+{
+  "job": {
+    "job_id": "r005276_v01",
+    "case_name": "neutral_after_accusation",
+    "case_description": "Konteks berisi tuduhan, tetapi pesan sekarang neutral; jangan mewarisi relasi lama.",
+    "source": {
+      "source_row": 5276,
+      "source_group": "78c5403077e7ecff2c09",
+      "teks_chat": "fix, antarmukanya simpel tapi bikin penasaran",
+      "label_intent": "neutral"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 11,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "neutral_after_accusation",
+    "participants": [
+      "Oki",
+      "Putra",
+      "Qori"
+    ],
+    "focus_player": "",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Oki",
+        "teks_chat": "Ajakan vote di chat tiba-tiba mengarah ke aku.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Putra",
+        "teks_chat": "Qori yang pertama menulis ajakan itu.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Qori",
+        "teks_chat": "Enak aja, aku kan cuma ngikutin kecurigaan doang.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Qori",
+            "relasi": "defend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Oki",
+        "teks_chat": "Qori mengubah ajakan tanpa alasan, aku curiga dia Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Qori",
+            "relasi": "offend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Qori",
+        "teks_chat": "Bukan tanpa alasan, aku ada analisa sendiri.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Qori",
+            "relasi": "defend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Putra",
+        "teks_chat": "Halah alasan, fix kamu hitmannya yang lagi cuci tangan.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Qori",
+            "relasi": "offend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Qori",
+        "teks_chat": "Aku bukan Hitman, jangan vote aku tanpa bukti.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Qori",
+            "relasi": "defend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Oki",
+        "teks_chat": "Jangan langsung vote dia, alasannya belum cukup.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Qori",
+            "relasi": "defend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Putra",
+        "teks_chat": "Nggak, ini Qori udah paling sus dari awal.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Qori",
+            "relasi": "offend",
+            "bukti_pesan": [
+              9
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Oki",
+        "teks_chat": "Yaudah terserah kalau kalian maksa, kita lihat hasilnya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Qori",
+        "teks_chat": "Ada yang berani claim status di sini gak?",
+        "label_intent": "neutral",
+        "target": []
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 76.txt"
+  }
+}

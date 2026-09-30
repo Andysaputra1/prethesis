@@ -1,0 +1,116 @@
+{
+  "job": {
+    "job_id": "r001263_v01",
+    "case_name": "neutral_after_accusation",
+    "case_description": "Konteks berisi tuduhan, tetapi pesan sekarang neutral; jangan mewarisi relasi lama.",
+    "source": {
+      "source_row": 1263,
+      "source_group": "142781325fc5a0d0839a",
+      "teks_chat": "jangan langsung eksekusi karena tekanan mayoritas, siapa yang punya informasi paling konkret?",
+      "label_intent": "neutral"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 6,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "neutral_after_accusation",
+    "participants": [
+      "Maman",
+      "Nando",
+      "Opi"
+    ],
+    "focus_player": "",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Maman",
+        "teks_chat": "Semalam ada yang disandera nggak sih? Kok belum ada yang tahu siapa.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Nando",
+        "teks_chat": "Maman pasti sengaja nanya gitu padahal dia pelakunya yang nyulik korban!",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Maman",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Opi",
+        "teks_chat": "Maman belum pantas dituduh hanya karena bertanya soal korban.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Maman",
+            "relasi": "defend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Maman",
+        "teks_chat": "Iya, aku beneran nggak tau apa-apa soal korban itu, sumpah aku civilian.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Maman",
+            "relasi": "defend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Nando",
+        "teks_chat": "Alah, palingan kalian berdua sekongkol buat saling melindungi.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Opi",
+            "relasi": "offend",
+            "bukti_pesan": [
+              3
+            ]
+          },
+          {
+            "pemain": "Maman",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Opi",
+        "teks_chat": "Terus menurut kalian, kita harus fokus nyari petunjuk di mana nih sekarang?",
+        "label_intent": "neutral",
+        "target": []
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 23.txt"
+  },
+  "revisi": [
+    {
+      "pesan": 1,
+      "kategori": "meta",
+      "alasan": "Kebocoran aturan: identitas korban Hostage tidak diumumkan."
+    }
+  ]
+}

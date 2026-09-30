@@ -1,0 +1,129 @@
+{
+  "job": {
+    "job_id": "r000620_v01",
+    "case_name": "reference_end",
+    "case_description": "Tepat 12 konteks. Penyebutan target eksplisit di pesan konteks terakhir.",
+    "source": {
+      "source_row": 620,
+      "source_group": "c196e6347cc2a5a20396",
+      "teks_chat": "dari pola voting, gw malah nggak dapat keuntungan kalau pemain itu mati",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 13,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "reference_end",
+    "participants": [
+      "Omar",
+      "Putri",
+      "Qila",
+      "Rama"
+    ],
+    "focus_player": "Rama",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Omar",
+        "teks_chat": "Ada yang sadar ajakan vote tadi berubah menjelang akhir diskusi?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Putri",
+        "teks_chat": "Iya, ada yang menarik ajakannya, tetapi aku belum ingat siapa.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Qila",
+        "teks_chat": "Kita perlu melihat alasan perubahan itu sebelum menilai.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Omar",
+        "teks_chat": "Coba baca ulang chat orang yang menarik ajakannya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Putri",
+        "teks_chat": "Iya, jangan cuma mengandalkan ingatan sekilas.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Qila",
+        "teks_chat": "Ada yang inget nggak siapa orangnya?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Omar",
+        "teks_chat": "Aku tadi agak kurang merhatiin soalnya lagi fokus baca log chat.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Putri",
+        "teks_chat": "Aku cuma sempat membaca potongan pesannya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Qila",
+        "teks_chat": "Aduh, sayang banget kalau sampai kita kelewatan info penting ini.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Omar",
+        "teks_chat": "Mungkin ada orang lain yang lihat dengan lebih jelas?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Putri",
+        "teks_chat": "Eh, tunggu bentar, aku baru inget sesuatu.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Qila",
+        "teks_chat": "Rama tadi menarik ajakan votenya. Aku curiga Rama sedang mengatur arah tuduhan.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Rama",
+            "relasi": "offend",
+            "bukti_pesan": [
+              12
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Omar",
+        "teks_chat": "Dia belum pantas dituduh. Bisa saja dia mengubah pikiran karena membaca pembelaan yang masuk akal.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Rama",
+            "relasi": "defend",
+            "bukti_pesan": [
+              12
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 11.txt"
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "job": {
+    "job_id": "r003290_v01",
+    "case_name": "interruption",
+    "case_description": "Pembahasan target disela obrolan waktu/ronde; kaitan kembali ke target masih jelas.",
+    "source": {
+      "source_row": 3290,
+      "source_group": "84bf6f6fbf9c20768c7d",
+      "teks_chat": "jangan dipelintir, tadi aku cuma minta konteks sebelum ikut voting",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 5,
+    "pesan_typo_ringan": [
+      3
+    ]
+  },
+  "session": {
+    "case_name": "interruption",
+    "participants": [
+      "Aldo",
+      "Budi",
+      "Caca",
+      "Dodi"
+    ],
+    "focus_player": "Budi",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Aldo",
+        "teks_chat": "Korban semalam siapa ya? Kok identitasnya tidak diumumkan?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Budi",
+        "teks_chat": "Identitas korban memang tidak diumumkan secara publik.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Caca",
+        "teks_chat": "Waktu ronde tnggal sedikit nih, ayo cepat putuskan!",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Dodi",
+        "teks_chat": "Fokus mencari alasan dari chat pada diskusi siang ini.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Aldo",
+        "teks_chat": "Tapi menurutku bukan Budi yang melakukan itu, dia dari tadi membantu kita melakukan analisis.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Budi",
+            "relasi": "defend",
+            "bukti_pesan": [
+              5
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 48.txt"
+  }
+}

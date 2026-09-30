@@ -1,0 +1,112 @@
+{
+  "job": {
+    "job_id": "r000410_v01",
+    "case_name": "second_person",
+    "case_description": "Kamu/lu: gunakan pergantian pembicara dan teks yang jelas. Tanpa acuan jelas, target tidak_diketahui.",
+    "source": {
+      "source_row": 410,
+      "source_group": "bbed0103592f4ccc5007",
+      "teks_chat": "gw nggak lihat kejadian malam, jadi jangan dipaksa ngarang",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 5,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "second_person",
+    "participants": [
+      "Eka",
+      "Fikri",
+      "Gani",
+      "Hani"
+    ],
+    "focus_player": "Fikri",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Eka",
+        "teks_chat": "Fikri kok diam terus dari tadi, pasif sekali permainannya.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Fikri",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Gani",
+        "teks_chat": "Mari kita vote Fikri saja, orang yang diam biasanya adalah pelakunya.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Fikri",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Fikri",
+        "teks_chat": "Aku sedang membaca panduan permainan karena ada yang belum aku pahami.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Fikri",
+            "relasi": "defend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Hani",
+        "teks_chat": "Itu pasti hanya alasan kamu untuk menghindari pertanyaan kami.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Fikri",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Eka",
+        "teks_chat": "Fikri, aku membela kamu. Membaca panduan itu masuk akal, dan jeda chat belum membuktikan kamu Hitman.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Fikri",
+            "relasi": "defend",
+            "bukti_pesan": [
+              5
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 6.txt"
+  },
+  "revisi": [
+    {
+      "pesan": 1,
+      "kategori": "label",
+      "alasan": "Pertanyaan retoris 'kok diam terus' + 'pasif sekali' menyudutkan Fikri (contoh offend di definisi)"
+    }
+  ]
+}

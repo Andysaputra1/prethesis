@@ -1,0 +1,160 @@
+{
+  "job": {
+    "job_id": "r000082_v01",
+    "case_name": "mixed_relations",
+    "case_description": "Membela satu pemain dan menuduh pemain lain. Intent utama offend; simpan kedua relasi.",
+    "source": {
+      "source_row": 82,
+      "source_group": "87a41a14f1e06b022b57",
+      "teks_chat": "fitnah ke gw gampang banget dibantah, sementara Gilang terus menghindari pertanyaan soal malam",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 13,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "mixed_relations",
+    "participants": [
+      "Raka",
+      "Siska",
+      "Tio",
+      "Udin"
+    ],
+    "focus_player": "",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Udin",
+        "teks_chat": "Gimana nih, waktu diskusinya mau abis.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Tio",
+        "teks_chat": "Aku tetep curiga sama Siska, omongannya nggak konsisten.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Siska",
+            "relasi": "offend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Siska",
+        "teks_chat": "Aku bukan Hitman. Bagian mana dari ucapanku yang menurutmu tidak konsisten?",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Siska",
+            "relasi": "defend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Tio",
+        "teks_chat": "Tadi kamu mengaku belum menentukan ajakan vote, lalu menyebut sebuah nama.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Raka",
+        "teks_chat": "Menurutku Siska wajar aja kok ngomong gitu.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Siska",
+            "relasi": "defend",
+            "bukti_pesan": [
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Tio",
+        "teks_chat": "Kamu nutupin dia ya Raka?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Raka",
+        "teks_chat": "Aku hanya menilai alasan tuduhannya belum cukup kuat.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Siska",
+        "teks_chat": "Aku bukan Hitman. Mengubah dugaan setelah membaca chat baru itu wajar.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Siska",
+            "relasi": "defend",
+            "bukti_pesan": [
+              8
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Tio",
+        "teks_chat": "Claim doang nggak cukup.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Raka",
+        "teks_chat": "Tio, coba jelaskan alasan tuduhanmu tadi.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Tio",
+        "teks_chat": "Aku hanya merasa perubahan ajakan vote itu mencurigakan.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Siska",
+        "teks_chat": "Ada alasan lain selain perubahan pendapat?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Raka",
+        "teks_chat": "Siska jelas bukan Hitman, justru Tio yang alasannya dari tadi nggak nyambung, vote Tio aja.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Siska",
+            "relasi": "defend",
+            "bukti_pesan": [
+              13
+            ]
+          },
+          {
+            "pemain": "Tio",
+            "relasi": "offend",
+            "bukti_pesan": [
+              13
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 78.txt"
+  }
+}

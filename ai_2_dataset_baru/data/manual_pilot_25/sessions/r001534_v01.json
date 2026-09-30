@@ -1,0 +1,195 @@
+{
+  "job": {
+    "job_id": "r001534_v01",
+    "case_name": "outside_window_unknown",
+    "case_description": "14-16 pesan total. Pembahasan lama telah putus/beralih. Teks dan anotasi 12 konteks terakhir tidak cukup menentukan acuan sekarang. Target harus tidak_diketahui; jangan menggunakan informasi lama yang tidak tersedia dalam input.",
+    "source": {
+      "source_row": 1534,
+      "source_group": "41ecc7f5ecff2681e64e",
+      "teks_chat": "kenapa gw terus yang disorot? dari tadi si Dimas malah pasif banget",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 14,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "outside_window_unknown",
+    "participants": [
+      "Niko",
+      "Oca",
+      "Putra",
+      "Reni"
+    ],
+    "focus_player": "Reni",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Niko",
+        "teks_chat": "Reni mengganti tuduhan tanpa penjelasan. Aku curiga Reni Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Reni",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Oca",
+        "teks_chat": "Sebelum lanjut soal pemain, semalam ada yang pakai skill dan mau cerita?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Putra",
+        "teks_chat": "Aku belum mau cerita dulu, takut malah jadi incaran.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Niko",
+        "teks_chat": "Wajar sih, nanti aja kalau udah mepet vote.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Oca",
+        "teks_chat": "Oke, tapi jangan kelamaan ya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Putra",
+        "teks_chat": "Kalau ada yang ngaku Spy, mending sebut Guard-nya ke siapa.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Niko",
+        "teks_chat": "Setuju, biar gampang dicocokkan sama cerita yang lain.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Oca",
+        "teks_chat": "Yang ngaku Stalker juga sebaiknya sebut hasil Peek-nya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Putra",
+        "teks_chat": "Iya, klaim tanpa detail susah dipercaya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Niko",
+        "teks_chat": "Tapi hati-hati juga, klaim bisa aja bohong.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Oca",
+        "teks_chat": "Makanya nanti kita cocokkan satu per satu.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Putra",
+        "teks_chat": "Oke, soal klaim cukup segitu dulu.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Niko",
+        "teks_chat": "Kembali ke orang yang kita bahas sebelum soal klaim tadi.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Oca",
+        "teks_chat": "Aku curiga dia Hitman karena mengganti tuduhan tanpa memberi alasan.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "tidak_diketahui",
+            "relasi": "offend",
+            "bukti_pesan": []
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 27.txt"
+  },
+  "revisi": [
+    {
+      "pesan": 2,
+      "kategori": "meta",
+      "alasan": "Menanyakan batasan Guard (aturan)."
+    },
+    {
+      "pesan": 3,
+      "kategori": "meta",
+      "alasan": "Menjelaskan aturan Guard."
+    },
+    {
+      "pesan": 4,
+      "kategori": "meta",
+      "alasan": "Menanyakan aturan Guard."
+    },
+    {
+      "pesan": 5,
+      "kategori": "meta",
+      "alasan": "Menjelaskan aturan Guard."
+    },
+    {
+      "pesan": 6,
+      "kategori": "meta",
+      "alasan": "Menanyakan aturan Peek."
+    },
+    {
+      "pesan": 7,
+      "kategori": "meta",
+      "alasan": "Kebocoran aturan: 'Peek milik Stalker, satu kali tiap dua ronde'."
+    },
+    {
+      "pesan": 8,
+      "kategori": "meta",
+      "alasan": "Menyimpulkan jadwal skill (aturan)."
+    },
+    {
+      "pesan": 9,
+      "kategori": "meta",
+      "alasan": "'aturan role masing-masing' adalah pembahasan desain."
+    },
+    {
+      "pesan": 10,
+      "kategori": "meta",
+      "alasan": "Pertanyaan tentang aturan klaim."
+    },
+    {
+      "pesan": 11,
+      "kategori": "meta",
+      "alasan": "Lanjutan pembahasan aturan."
+    },
+    {
+      "pesan": 12,
+      "kategori": "meta",
+      "alasan": "'penjelasan aturan skillnya cukup'."
+    },
+    {
+      "pesan": 13,
+      "kategori": "meta",
+      "alasan": "Merujuk 'soal Guard'; disesuaikan dengan obrolan baru."
+    }
+  ]
+}

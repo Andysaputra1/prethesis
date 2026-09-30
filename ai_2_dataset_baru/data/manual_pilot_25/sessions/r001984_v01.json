@@ -1,0 +1,119 @@
+{
+  "job": {
+    "job_id": "r001984_v01",
+    "case_name": "nickname",
+    "case_description": "Pesan sekarang menyebut pemain dengan nama panggilan, singkatan, atau salah ketik ringan (Andy -> ndy, andi, si And) tanpa menulis nama aslinya. Catat sebutan itu di panggilan. Target tetap memakai nama asli; jika neutral, target kosong.",
+    "source": {
+      "source_row": 1984,
+      "source_group": "a14f8220892c9d47e2d1",
+      "teks_chat": "dari awal dia cuma ikut arus, menurut gw vote dia aja dulu",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 7,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "nickname",
+    "participants": [
+      "Fajar",
+      "Gilang",
+      "Hari"
+    ],
+    "focus_player": "Fajar",
+    "panggilan": [
+      {
+        "pemain": "Fajar",
+        "sebutan": [
+          "Faj"
+        ]
+      }
+    ],
+    "messages": [
+      {
+        "pengirim": "Fajar",
+        "teks_chat": "Aku mengaku Spy dan menggunakan Guard semalam.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Gilang",
+        "teks_chat": "Untuk siapa Guard yang kamu klaim itu?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Hari",
+        "teks_chat": "Fajar, yakin mau buka siapa yang kamu Guard?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Fajar",
+        "teks_chat": "Sebenarnya aku nggak punya Guard, aku Civilian.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Gilang",
+        "teks_chat": "Aku curiga kamu Hitman karena klaim rolemu berubah tanpa penjelasan.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Fajar",
+            "relasi": "offend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Hari",
+        "teks_chat": "Aneh banget sih ceritanya.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Fajar",
+            "relasi": "offend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Gilang",
+        "teks_chat": "Faj, klaimmu berubah dalam beberapa pesan. Aku curiga kamu Hitman yang sedang berbohong.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Fajar",
+            "relasi": "offend",
+            "bukti_pesan": [
+              7
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 32.txt"
+  },
+  "revisi": [
+    {
+      "pesan": 3,
+      "kategori": "tidak_natural",
+      "alasan": "Kaku ('membagikan klaim pilihanmu')."
+    },
+    {
+      "pesan": 4,
+      "kategori": "tidak_natural",
+      "alasan": "'sebenarnya aku mengaku Civilian' janggal."
+    }
+  ]
+}

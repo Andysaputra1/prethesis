@@ -1,0 +1,133 @@
+{
+  "job": {
+    "job_id": "r005164_v01",
+    "case_name": "topic_switch",
+    "case_description": "Pembahasan berganti pemain; pesan sekarang mengikuti topik baru, bukan otomatis target lama.",
+    "source": {
+      "source_row": 5164,
+      "source_group": "86b61bccfdf649b1ea40",
+      "teks_chat": "role asli gue civilian, semua klaim lain soal gue itu fitnah",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 7,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "topic_switch",
+    "participants": [
+      "Irfan",
+      "Hendra",
+      "Joko",
+      "Kiki",
+      "Lina"
+    ],
+    "focus_player": "Irfan",
+    "panggilan": [
+      {
+        "pemain": "Hendra",
+        "sebutan": [
+          "Ndra"
+        ]
+      }
+    ],
+    "messages": [
+      {
+        "pengirim": "Irfan",
+        "teks_chat": "Hendra cepat membela diri sebelum ditanya, aku curiga dia Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Hendra",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Joko",
+        "teks_chat": "Iya, aneh banget, pasti Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Hendra",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Hendra",
+        "teks_chat": "Aku kan cuma menjelaskan posisi sebelum ada yang salah paham.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Hendra",
+            "relasi": "defend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Kiki",
+        "teks_chat": "Tadi malam ada yang Peek?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Lina",
+        "teks_chat": "Irfan dari tadi nuduh terus, jangan-jangan kamu pelakunya.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Irfan",
+            "relasi": "offend",
+            "bukti_pesan": [
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Joko",
+        "teks_chat": "Benar juga, Irfan ngotot banget mau buang Hendra.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Irfan",
+            "relasi": "offend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Irfan",
+        "teks_chat": "Aku cuma curiga wajar, posisiku Civilian murni.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Irfan",
+            "relasi": "defend",
+            "bukti_pesan": [
+              7
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 75.txt"
+  }
+}

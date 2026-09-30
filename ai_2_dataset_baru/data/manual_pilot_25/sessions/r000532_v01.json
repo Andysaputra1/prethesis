@@ -1,0 +1,109 @@
+{
+  "job": {
+    "job_id": "r000532_v01",
+    "case_name": "negation",
+    "case_description": "Negasi menentukan relasi: Andy Hitman berbeda dari Andy bukan Hitman.",
+    "source": {
+      "source_row": 532,
+      "source_group": "20ad9edf6f46bbf9652e",
+      "teks_chat": "lu boleh curiga, tapi jangan bikin kesimpulan dari satu kalimat doang",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 7,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "negation",
+    "participants": [
+      "Dina",
+      "Eka",
+      "Fahmi",
+      "Gilang"
+    ],
+    "focus_player": "Eka",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Dina",
+        "teks_chat": "Eka sempat berhenti mengetik, ada yang tahu kenapa?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Fahmi",
+        "teks_chat": "Kita belum tahu, jangan langsung menyimpulkan Gag Order.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Eka",
+        "teks_chat": "Koneksiku sempat terputus, sekarang aku bisa mengetik lagi.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Gilang",
+        "teks_chat": "Aku curiga Eka Hitman yang memakai alasan koneksi untuk bersembunyi.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Eka",
+            "relasi": "offend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Dina",
+        "teks_chat": "Belum tentu dia pelakunya, masalah koneksi bisa terjadi.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Eka",
+            "relasi": "defend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Gilang",
+        "teks_chat": "Aku tetap curiga dia sedang mengarang alasan.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Eka",
+            "relasi": "offend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Fahmi",
+        "teks_chat": "Eka tidak pantas dituduh sebagai Hitman dari jeda chat saja. Kita belum tahu penyebabnya.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Eka",
+            "relasi": "defend",
+            "bukti_pesan": [
+              7
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 9.txt"
+  }
+}

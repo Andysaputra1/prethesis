@@ -1,0 +1,107 @@
+{
+  "job": {
+    "job_id": "r001876_v01",
+    "case_name": "nickname",
+    "case_description": "Pesan sekarang menyebut pemain dengan nama panggilan, singkatan, atau salah ketik ringan (Andy -> ndy, andi, si And) tanpa menulis nama aslinya. Catat sebutan itu di panggilan. Target tetap memakai nama asli; jika neutral, target kosong.",
+    "source": {
+      "source_row": 1876,
+      "source_group": "150feb9755defd35ad97",
+      "teks_chat": "mending eksekusi si Reno daripada buang vote ke pemain yang cuma pasif",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 7,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "nickname",
+    "participants": [
+      "Bowo",
+      "Caca",
+      "Doni"
+    ],
+    "focus_player": "Bowo",
+    "panggilan": [
+      {
+        "pemain": "Bowo",
+        "sebutan": [
+          "Bow"
+        ]
+      }
+    ],
+    "messages": [
+      {
+        "pengirim": "Bowo",
+        "teks_chat": "Aku mengaku Spy dan memilih Guard untuk Caca semalam.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Caca",
+        "teks_chat": "Oh, begitu ya?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Doni",
+        "teks_chat": "Siapa pilihan Guard pada malam sebelumnya?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Bowo",
+        "teks_chat": "Malam sebelumnya aku juga memilih Caca.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Caca",
+        "teks_chat": "Spy tidak bisa Guard target sama dua malam berturut-turut. Aku curiga kamu berbohong.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Bowo",
+            "relasi": "offend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Doni",
+        "teks_chat": "Iya nih, sangat plin plan.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Bowo",
+            "relasi": "offend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Caca",
+        "teks_chat": "Bow, klaim Guard itu bertentangan dengan batasan skill. Aku curiga kamu Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Bowo",
+            "relasi": "offend",
+            "bukti_pesan": [
+              7
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 31.txt"
+  }
+}

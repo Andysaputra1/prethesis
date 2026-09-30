@@ -1,0 +1,90 @@
+{
+  "job": {
+    "job_id": "r000805_v01",
+    "case_name": "topic_switch",
+    "case_description": "Pembahasan berganti pemain; pesan sekarang mengikuti topik baru, bukan otomatis target lama.",
+    "source": {
+      "source_row": 805,
+      "source_group": "344b24aa3b5399457416",
+      "teks_chat": "kalau gw hitman, harusnya gw nggak bakal ngaku punya hasil peek sekarang",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 4,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "topic_switch",
+    "participants": [
+      "Zaki",
+      "Aura",
+      "Bayu",
+      "Citra"
+    ],
+    "focus_player": "Aura",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Zaki",
+        "teks_chat": "Eh, kenapa kok Bayu tadi cepet banget ngebela si Citra pas dituduh?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Aura",
+        "teks_chat": "Aku curiga Bayu Hitman karena langsung membela tanpa menjelaskan alasan.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Bayu",
+            "relasi": "offend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Bayu",
+        "teks_chat": "Aku bukan pelakunya. Justru aku curiga Aura Hitman karena terus menuduh tanpa alasan.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Bayu",
+            "relasi": "defend",
+            "bukti_pesan": [
+              3
+            ]
+          },
+          {
+            "pemain": "Aura",
+            "relasi": "offend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Citra",
+        "teks_chat": "Aura itu cuma menyampaikan uneg-unegnya secara blak-blakan kok, bukan Hitman yang lagi mancing.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Aura",
+            "relasi": "defend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 16.txt"
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "job": {
+    "job_id": "r001430_v01",
+    "case_name": "second_person",
+    "case_description": "Kamu/lu: gunakan pergantian pembicara dan teks yang jelas. Tanpa acuan jelas, target tidak_diketahui.",
+    "source": {
+      "source_row": 1430,
+      "source_group": "0d39a9665473b2cab1b1",
+      "teks_chat": "kok gue terus yang dibahas, si M juga belum kasih alasan",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 5,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "second_person",
+    "participants": [
+      "Karti",
+      "Lana",
+      "Mega"
+    ],
+    "focus_player": "Lana",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Karti",
+        "teks_chat": "Lana, tadi kamu mengaku Spy atau Stalker?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Lana",
+        "teks_chat": "Aku mengaku Spy.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Mega",
+        "teks_chat": "Di pesan sebelumnya kamu menulis Stalker.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Karti",
+        "teks_chat": "Lana, bisa jelaskan kenapa klaimnya berubah?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Mega",
+        "teks_chat": "Lana, aku curiga kamu Hitman yang mengarang klaim role.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Lana",
+            "relasi": "offend",
+            "bukti_pesan": [
+              5
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 25.txt"
+  }
+}

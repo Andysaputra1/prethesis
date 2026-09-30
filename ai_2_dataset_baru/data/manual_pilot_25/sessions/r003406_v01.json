@@ -1,0 +1,62 @@
+{
+  "job": {
+    "job_id": "r003406_v01",
+    "case_name": "short_history_1",
+    "case_description": "Awal diskusi dengan tepat 1 pesan sebelumnya. Jangan menambah riwayat fiktif atau mengisi sampai 12.",
+    "source": {
+      "source_row": 3406,
+      "source_group": "6ff6b78370ec789129d9",
+      "teks_chat": "kalau aku Hitman, harusnya aku diam dan biarin kalian saling vote",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 2,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "short_history_1",
+    "participants": [
+      "Deka",
+      "Farel",
+      "Ervan"
+    ],
+    "focus_player": "Ervan",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Deka",
+        "teks_chat": "Ervan tadi klaim Civilian, sekarang klaim Spy. Aku curiga dia Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Ervan",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Farel",
+        "teks_chat": "Lupa kali dia, wajar aja kok kalau panik pas ditanya tiba-tiba gitu.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Ervan",
+            "relasi": "defend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 51.txt"
+  }
+}

@@ -1,0 +1,177 @@
+{
+  "job": {
+    "job_id": "r001853_v01",
+    "case_name": "reference_middle",
+    "case_description": "Tepat 12 konteks. Penyebutan target eksplisit di pesan konteks ke-6 atau ke-7.",
+    "source": {
+      "source_row": 1853,
+      "source_group": "2a1268ec0777b011b157",
+      "teks_chat": "kalau Stalker memang dapat info, kenapa Gilang masih dibela? gw rasa Gilang harus dieksekusi",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 13,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "reference_middle",
+    "participants": [
+      "Agus",
+      "Bambang",
+      "Citra",
+      "Dimas"
+    ],
+    "focus_player": "Dimas",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Agus",
+        "teks_chat": "Ajakan vote di chat tadi berubah menjelang diskusi selesai.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Bambang",
+        "teks_chat": "Iya, beberapa orang menarik dugaan awalnya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Citra",
+        "teks_chat": "Ada yang mengganti nama yang diajak vote pada pesan terakhirnya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Agus",
+        "teks_chat": "Siapa yang mengganti ajakan itu?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Bambang",
+        "teks_chat": "Aku kurang perhatiin detailnya sih.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Citra",
+        "teks_chat": "Dimas awalnya mengajak vote Agus lalu Bambang tanpa alasan. Aku curiga Dimas Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Dimas",
+            "relasi": "offend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Dimas",
+        "teks_chat": "Aku bukan Hitman, aku mengubah dugaan setelah membaca jawaban baru.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Dimas",
+            "relasi": "defend",
+            "bukti_pesan": [
+              7
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Agus",
+        "teks_chat": "Ragu kok ganti pilihannya di detik terakhir banget.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Dimas",
+            "relasi": "offend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Bambang",
+        "teks_chat": "Bener juga, itu sangat mencurigakan.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Dimas",
+            "relasi": "offend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Citra",
+        "teks_chat": "Kayaknya dia sengaja biar posisinya aman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Dimas",
+            "relasi": "offend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Dimas",
+        "teks_chat": "Bukan gitu maksudku, sumpah aku warga biasa kok.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Dimas",
+            "relasi": "defend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Agus",
+        "teks_chat": "Ah itu cuma alasan klasik aja.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Dimas",
+            "relasi": "offend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Bambang",
+        "teks_chat": "Jelas banget taktiknya buat ngehindarin kecurigaan, dia pelakunya!",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Dimas",
+            "relasi": "offend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 31.txt"
+  }
+}

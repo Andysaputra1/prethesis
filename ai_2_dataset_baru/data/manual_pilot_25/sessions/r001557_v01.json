@@ -1,0 +1,160 @@
+{
+  "job": {
+    "job_id": "r001557_v01",
+    "case_name": "reference_start",
+    "case_description": "Tepat 12 konteks. Penyebutan target eksplisit di pesan konteks pertama; pesan sekarang memakai kata ganti.",
+    "source": {
+      "source_row": 1557,
+      "source_group": "5391265112c13935265e",
+      "teks_chat": "gw udah terbuka dari awal, sekarang giliran si Galih menjelaskan aksinya",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 13,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "reference_start",
+    "participants": [
+      "Cici",
+      "Dedi",
+      "Euis",
+      "Feri"
+    ],
+    "focus_player": "Dedi",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Cici",
+        "teks_chat": "Gw stalker guys, semalem gw ngintip si Dedi dan dia hitman!",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Dedi",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Euis",
+        "teks_chat": "Serius? Kamu yakin sama hasil itu?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Dedi",
+        "teks_chat": "Dih, ngarang lu, gw aja civilian biasa yang gak tau apa-apa.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Dedi",
+            "relasi": "defend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Feri",
+        "teks_chat": "Kita kumpulin info dulu aja, jangan asal vote.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Cici",
+        "teks_chat": "Gw berani jamin 100 persen info gw bener.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Dedi",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Euis",
+        "teks_chat": "Tapi kita butuh bukti lain gak sih buat mastiin?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Feri",
+        "teks_chat": "Benar, kalau Stalker-nya ternyata palsu gimana?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Cici",
+        "teks_chat": "Terserah kalian kalau gak mau percaya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Dedi",
+        "teks_chat": "Beneran gw difitnah ini mah.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Dedi",
+            "relasi": "defend",
+            "bukti_pesan": [
+              9
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Euis",
+        "teks_chat": "Gimana menurut kalian, mau ngikutin Cici gak?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Feri",
+        "teks_chat": "Gw masih ragu sih ambil keputusan.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Cici",
+        "teks_chat": "Waktu udah mau habis nih, ayo buruan.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Euis",
+        "teks_chat": "Yaudah gw percaya Stalker, kita vote dia aja sekarang juga!",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Dedi",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 27.txt"
+  },
+  "revisi": [
+    {
+      "pesan": 2,
+      "kategori": "tidak_natural",
+      "alasan": "Janggal: Cici sudah membagikan hasilnya."
+    }
+  ]
+}

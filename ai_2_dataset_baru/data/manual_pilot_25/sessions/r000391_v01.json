@@ -1,0 +1,159 @@
+{
+  "job": {
+    "job_id": "r000391_v01",
+    "case_name": "stance_change",
+    "case_description": "Pengirim pesan sekarang sebelumnya menuduh atau membela seorang pemain di konteks, lalu berubah sikap terhadap pemain yang sama. Anotasi mengikuti sikap terbaru.",
+    "source": {
+      "source_row": 391,
+      "source_group": "38a5450f33a2c1aa6c90",
+      "teks_chat": "kalau kalian menilai objektif, kontribusiku lebih banyak membandingkan pola daripada menggiring eksekusi",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 10,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "stance_change",
+    "participants": [
+      "Yanto",
+      "Zaki",
+      "Budi",
+      "Aldo"
+    ],
+    "focus_player": "Zaki",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Yanto",
+        "teks_chat": "Kenapa ya setiap kali Zaki membalas chat selalu telat dan terpotong?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Budi",
+        "teks_chat": "Aku curiga Zaki sengaja menunda jawabannya untuk menyusun alasan palsu. Vote Zaki saja!",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Zaki",
+            "relasi": "offend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Aldo",
+        "teks_chat": "Bisa jadi sih, telatnya sangat tidak wajar soalnya.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Zaki",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Yanto",
+        "teks_chat": "Coba Zaki kamu klarifikasi dulu kebenarannya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Zaki",
+        "teks_chat": "Sinyalku memang sedang jelek banget dari tadi pagi, maaf ya teman-teman.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Zaki",
+            "relasi": "defend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Aldo",
+        "teks_chat": "Alasan klasik banget menyalahkan masalah sinyal internet.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Zaki",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Yanto",
+        "teks_chat": "Iya, sangat gampang banget buat dibikin-bikin alesan seperti itu.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Zaki",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Zaki",
+        "teks_chat": "Beneran kok, ini saja aku mengetiknya harus menunggu proses loading lama banget.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Zaki",
+            "relasi": "defend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Aldo",
+        "teks_chat": "Aku sendiri sempat gagal mengirim pesan juga. Masalah koneksi itu mungkin terjadi, jadi aku tidak ingin menuduh Zaki dari jeda chat saja.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Zaki",
+            "relasi": "defend",
+            "bukti_pesan": [
+              9
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Budi",
+        "teks_chat": "Oh kalau kenyataannya begitu aku tarik tuduhanku tadi, dia sangat wajar telat membalas karena masalah teknis jaringannya.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Zaki",
+            "relasi": "defend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 5.txt"
+  }
+}

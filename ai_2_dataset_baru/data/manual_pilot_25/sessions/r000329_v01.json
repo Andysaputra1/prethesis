@@ -1,0 +1,157 @@
+{
+  "job": {
+    "job_id": "r000329_v01",
+    "case_name": "reference_end",
+    "case_description": "Tepat 12 konteks. Penyebutan target eksplisit di pesan konteks terakhir.",
+    "source": {
+      "source_row": 329,
+      "source_group": "7f4a0d6fdc1498f6046d",
+      "teks_chat": "aku tetap menuduh Doni, bahkan kalau semua orang di sini memilih percaya padanya",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 13,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "reference_end",
+    "participants": [
+      "Hani",
+      "Intan",
+      "Joko",
+      "Kiki"
+    ],
+    "focus_player": "Kiki",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Hani",
+        "teks_chat": "Beberapa pesan datang terlambat. Apa koneksi kalian lancar?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Intan",
+        "teks_chat": "Koneksiku lancar.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Joko",
+        "teks_chat": "Aku sempat terlambat menerima chat.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Kiki",
+        "teks_chat": "Aku juga. Tadi aku mengajak vote Intan, lalu pesannya baru terkirim.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Intan",
+            "relasi": "offend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Hani",
+        "teks_chat": "Ajakan vote perlu alasan, bukan sekadar nama.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Intan",
+        "teks_chat": "Aku tidak bersalah. Kenapa aku langsung diajak vote?",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Intan",
+            "relasi": "defend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Joko",
+        "teks_chat": "Kita tunggu penjelasan ajakan vote tadi.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Hani",
+        "teks_chat": "Chat telat itu wajar, tapi ajakan votenya tetap perlu dijelaskan.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Intan",
+        "teks_chat": "Benar, aku mau tahu kenapa namaku yang disebut.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Kiki",
+        "teks_chat": "Aku tidak pernah mengajak vote siapa pun.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Hani",
+        "teks_chat": "Padahal ada ajakan vote di pesan tadi.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Intan",
+        "teks_chat": "Kiki menyangkal ajakan votenya sendiri. Aku curiga Kiki Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Kiki",
+            "relasi": "offend",
+            "bukti_pesan": [
+              12
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Joko",
+        "teks_chat": "Aku setuju dengan tuduhan itu. Aku akan vote dia.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Kiki",
+            "relasi": "offend",
+            "bukti_pesan": [
+              12
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 4.txt"
+  },
+  "revisi": [
+    {
+      "pesan": 8,
+      "kategori": "meta",
+      "alasan": "Menyinggung Gag Order tanpa konteks dan memancing penjelasan aturan di [9]."
+    },
+    {
+      "pesan": 9,
+      "kategori": "meta",
+      "alasan": "Pemain menjelaskan fungsi Gag Order (penjelasan aturan)."
+    }
+  ]
+}

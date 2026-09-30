@@ -1,0 +1,190 @@
+{
+  "job": {
+    "job_id": "r002933_v01",
+    "case_name": "outside_window_unknown",
+    "case_description": "14-16 pesan total. Pembahasan lama telah putus/beralih. Teks dan anotasi 12 konteks terakhir tidak cukup menentukan acuan sekarang. Target harus tidak_diketahui; jangan menggunakan informasi lama yang tidak tersedia dalam input.",
+    "source": {
+      "source_row": 2933,
+      "source_group": "6e1a799a4dcd6379d327",
+      "teks_chat": "kok cuma Yuni yang langsung tahu siapa yang harus dicurigai setelah fase malam? Informasinya dari mana kalau bukan hitman?",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 14,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "outside_window_unknown",
+    "participants": [
+      "Gani",
+      "Hani",
+      "Irfan",
+      "Jojo"
+    ],
+    "focus_player": "Hani",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Gani",
+        "teks_chat": "Hani membela diri sebelum ditanya, aku curiga dia Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Hani",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Hani",
+        "teks_chat": "Beralih sebentar, semalam ada yang dapat info?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Irfan",
+        "teks_chat": "Aku nggak dapat apa-apa.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Jojo",
+        "teks_chat": "Aku juga nggak. Ada yang mau klaim Spy?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Gani",
+        "teks_chat": "Belum ada yang ngaku kayaknya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Hani",
+        "teks_chat": "Mungkin Spy-nya masih nunggu waktu yang pas.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Irfan",
+        "teks_chat": "Bisa jadi, takut diincar kalau ngaku sekarang.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Jojo",
+        "teks_chat": "Terus semalam ada yang disandera nggak ya?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Gani",
+        "teks_chat": "Nggak tahu, belum ada yang ngeluh apa-apa.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Hani",
+        "teks_chat": "Ya udah, kita fokus ke obrolan siang ini aja.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Irfan",
+        "teks_chat": "Iya, perhatiin siapa yang jawabannya berubah-ubah.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Jojo",
+        "teks_chat": "Oke, makasih infonya semua.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Gani",
+        "teks_chat": "Sekarang kita bisa melanjutkan pembahasan sebelumnya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Hani",
+        "teks_chat": "Pembelaannya terlalu cepat, aku yakin dia pelakunya. Vote dia saja!",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "tidak_diketahui",
+            "relasi": "offend",
+            "bukti_pesan": []
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 42.txt"
+  },
+  "revisi": [
+    {
+      "pesan": 2,
+      "kategori": "meta",
+      "alasan": "Menanyakan aturan Guard."
+    },
+    {
+      "pesan": 3,
+      "kategori": "meta",
+      "alasan": "Menjelaskan Guard milik Spy."
+    },
+    {
+      "pesan": 4,
+      "kategori": "meta",
+      "alasan": "Menanyakan waktu memakai Guard."
+    },
+    {
+      "pesan": 5,
+      "kategori": "meta",
+      "alasan": "Menjelaskan fase pemakaian Guard."
+    },
+    {
+      "pesan": 6,
+      "kategori": "meta",
+      "alasan": "Menanyakan jumlah target Guard."
+    },
+    {
+      "pesan": 7,
+      "kategori": "meta",
+      "alasan": "Menjelaskan jumlah target Guard."
+    },
+    {
+      "pesan": 8,
+      "kategori": "meta",
+      "alasan": "Menanyakan aturan target berulang."
+    },
+    {
+      "pesan": 9,
+      "kategori": "meta",
+      "alasan": "Menjelaskan larangan target sama dua malam."
+    },
+    {
+      "pesan": 10,
+      "kategori": "meta",
+      "alasan": "Menyimpulkan aturan Guard."
+    },
+    {
+      "pesan": 11,
+      "kategori": "meta",
+      "alasan": "Menyebut 'aturan Guard'."
+    },
+    {
+      "pesan": 12,
+      "kategori": "meta",
+      "alasan": "Menutup sesi tanya-jawab aturan."
+    }
+  ]
+}

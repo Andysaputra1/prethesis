@@ -1,0 +1,161 @@
+{
+  "job": {
+    "job_id": "r000882_v01",
+    "case_name": "explicit",
+    "case_description": "Target eksplisit di pesan sekarang. Contoh: Aku yakin bukan Andy = defend Andy.",
+    "source": {
+      "source_row": 882,
+      "source_group": "36a75a99ac85d8d048a9",
+      "teks_chat": "bukan aku yang nyandera, aku Spy dan tadi malam jagain K",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 9,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "explicit",
+    "participants": [
+      "Tito",
+      "Umar",
+      "Vina",
+      "Wawan"
+    ],
+    "focus_player": "Vina",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Tito",
+        "teks_chat": "Vina tadi menarik ajakan vote setelah diminta alasan. Aku curiga Vina sedang mengarang.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Vina",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Umar",
+        "teks_chat": "Iya, kelihatan banget dia lagi nyari alibi buatan.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Vina",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Vina",
+        "teks_chat": "Aku bukan Hitman. Aku menarik ajakan itu karena sadar alasannya lemah.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Vina",
+            "relasi": "defend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Tito",
+        "teks_chat": "Alesan klasik Hitman kalau ketahuan bohong.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Vina",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Umar",
+        "teks_chat": "Fix Vina ini pelakunya, kita kumpulin suara ke dia aja.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Vina",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Wawan",
+        "teks_chat": "Vina belum pantas dituduh hanya karena mengoreksi dugaan.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Vina",
+            "relasi": "defend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Vina",
+        "teks_chat": "Bener kata Wawan, sumpah aku cuma civilian yang lagi pusing.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Vina",
+            "relasi": "defend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Tito",
+        "teks_chat": "Yang namanya Hitman pasti bakal ngaku civilian terus.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Vina",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Wawan",
+        "teks_chat": "Aku sangat yakin kalau Vina itu nggak bersalah dan bukan pelakunya, jadi tolong hentikan tuduhannya.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Vina",
+            "relasi": "defend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 17.txt"
+  }
+}

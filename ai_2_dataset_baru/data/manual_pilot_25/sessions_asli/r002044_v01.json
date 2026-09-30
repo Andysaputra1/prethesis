@@ -1,0 +1,199 @@
+{
+  "job": {
+    "job_id": "r002044_v01",
+    "case_name": "memory_outside_window",
+    "case_description": "14-16 pesan total. Nama target hanya disebut sebelum 12 konteks terakhir. Dalam jendela, ada pesan yang meneruskan acuan dengan jelas dan menyimpan anotasi target berdasarkan pesan lama. Pesan sekarang merujuk target sama. Nama target tidak muncul dalam teks 12 konteks terakhir atau pesan sekarang; target diketahui lewat memori.",
+    "source": {
+      "source_row": 2044,
+      "source_group": "9c03d9bbae9c42a49aa8",
+      "teks_chat": "round ini chat gw dibungkam pakai Gag Order sebelum sempat jelasin, jadi untuk tribunal gw ajak vote C",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 14,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "memory_outside_window",
+    "participants": [
+      "Soni",
+      "Tomi",
+      "Vina",
+      "Ujang"
+    ],
+    "focus_player": "Tomi",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Soni",
+        "teks_chat": "Tomi menuduh aku lalu Vina tanpa alasan. Aku curiga Tomi Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Tomi",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Vina",
+        "teks_chat": "Iya, dia sangat plin plan dan bingung dengan omongannya sendiri.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Tomi",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Ujang",
+        "teks_chat": "Parah sih, perbuatannya bikin kita semua menjadi bingung.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Tomi",
+            "relasi": "offend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Soni",
+        "teks_chat": "Jangan-jangan orang itu sedang mencari kambing hitam untuk dikorbankan.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Tomi",
+            "relasi": "offend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Vina",
+        "teks_chat": "Benar, orang yg seperti itu sangat patut untuk kita waspadai.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Tomi",
+            "relasi": "offend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Ujang",
+        "teks_chat": "Lalu di mana dia sekarang bersembunyi?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Soni",
+        "teks_chat": "Kok dia malah diam saja ya sekarang tanpa suara.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Tomi",
+            "relasi": "offend",
+            "bukti_pesan": [
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Vina",
+        "teks_chat": "Pasti dia sedang pusing menyusun alasan yang baru.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Tomi",
+            "relasi": "offend",
+            "bukti_pesan": [
+              7
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Ujang",
+        "teks_chat": "Kita jangan sampai tertipu sama alasan palsu dari dia nanti.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Tomi",
+            "relasi": "offend",
+            "bukti_pesan": [
+              8
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Soni",
+        "teks_chat": "Waktu diskusi kita juga sudah mau habis sebentar lagi nih.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Vina",
+        "teks_chat": "Ayo teman-teman, kita butuh kepastian secepatnya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Ujang",
+        "teks_chat": "Percuma ditunggu, pengecut seperti dia tidak akan pernah mengaku.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Tomi",
+            "relasi": "offend",
+            "bukti_pesan": [
+              9
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Soni",
+        "teks_chat": "Bagaimana keputusan final kalian semua?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Vina",
+        "teks_chat": "Sudah sangat jelas, orang yang dari awal nuduhnya berubah-ubah itu pasti pelakunya, kita vote dia aja sekarang!",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Tomi",
+            "relasi": "offend",
+            "bukti_pesan": [
+              12
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 33.txt"
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "job": {
+    "job_id": "r005283_v01",
+    "case_name": "nickname",
+    "case_description": "Pesan sekarang menyebut pemain dengan nama panggilan, singkatan, atau salah ketik ringan (Andy -> ndy, andi, si And) tanpa menulis nama aslinya. Catat sebutan itu di panggilan. Target tetap memakai nama asli; jika neutral, target kosong.",
+    "source": {
+      "source_row": 5283,
+      "source_group": "882d536191f504448d20",
+      "teks_chat": "kami belum sempat saling kenal, sudah masuk voting",
+      "label_intent": "neutral"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 6,
+    "pesan_typo_ringan": [
+      5
+    ]
+  },
+  "session": {
+    "case_name": "nickname",
+    "participants": [
+      "Rian",
+      "Siska",
+      "Tono"
+    ],
+    "focus_player": "Siska",
+    "panggilan": [
+      {
+        "pemain": "Siska",
+        "sebutan": [
+          "sis"
+        ]
+      }
+    ],
+    "messages": [
+      {
+        "pengirim": "Rian",
+        "teks_chat": "Semalam ada yang disandera, tapi siapa ya?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Siska",
+        "teks_chat": "Iya, nggak ada yang tahu, dari tadi belum ada yang bahas.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Tono",
+        "teks_chat": "Bikin makin sulit buat nebak pelakunya ini.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Rian",
+        "teks_chat": "Mending kita bahas klaim yang sudah ada aja, jangan nebak korban dari siapa yang diam.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Siska",
+        "teks_chat": "Gak apa, kita sdh biasa main tebak-tebakan buta.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Tono",
+        "teks_chat": "Bener banget kata sis, ayo bahas topik lain aja.",
+        "label_intent": "neutral",
+        "target": []
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 76.txt"
+  },
+  "revisi": [
+    {
+      "pesan": 1,
+      "kategori": "meta",
+      "alasan": "Menanyakan aturan pengumuman korban"
+    },
+    {
+      "pesan": 2,
+      "kategori": "meta",
+      "alasan": "Menjelaskan peraturan identitas disembunyikan"
+    },
+    {
+      "pesan": 4,
+      "kategori": "tidak_natural",
+      "alasan": "Kalimat kaku ('bukan memastikan korban dari diam saja')"
+    }
+  ]
+}

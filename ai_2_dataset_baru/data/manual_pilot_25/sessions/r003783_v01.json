@@ -1,0 +1,120 @@
+{
+  "job": {
+    "job_id": "r003783_v01",
+    "case_name": "quotation",
+    "case_description": "Ada tuduhan yang dikutip; bedakan sikap pengirim dari ucapan orang yang dikutip.",
+    "source": {
+      "source_row": 3783,
+      "source_group": "3bd80bd4596246b31677",
+      "teks_chat": "semalam gw peek si C, hasilnya aman; gw yakin ancamannya justru si D",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 6,
+    "pesan_typo_ringan": [
+      2
+    ]
+  },
+  "session": {
+    "case_name": "quotation",
+    "participants": [
+      "Feri",
+      "Gita",
+      "Hani",
+      "Iwan"
+    ],
+    "focus_player": "Feri",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Feri",
+        "teks_chat": "Aku klaim Civilian.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Gita",
+        "teks_chat": "Tadi kamu klaim Spy. Aku curiga Feri Hitman krn klaimnya berubah.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Feri",
+            "relasi": "offend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Feri",
+        "teks_chat": "Aku bukan Hitman, tadi salah mengetik.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Feri",
+            "relasi": "defend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Hani",
+        "teks_chat": "Aku juga curiga Feri Hitman karena klaimnya berubah.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Feri",
+            "relasi": "offend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Iwan",
+        "teks_chat": "Aku mendukung tuduhan itu.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Feri",
+            "relasi": "offend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Gita",
+        "teks_chat": "Kamu bilang 'Aku klaim Civilian', padahal sebelumnya Spy. Aku curiga kamu Hitman!",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Feri",
+            "relasi": "offend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 59.txt"
+  },
+  "revisi": [
+    {
+      "pesan": 2,
+      "kategori": "singkatan",
+      "alasan": "Slot typo [2] tidak berisi singkatan."
+    }
+  ]
+}

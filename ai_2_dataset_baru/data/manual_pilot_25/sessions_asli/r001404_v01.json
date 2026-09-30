@@ -1,0 +1,60 @@
+{
+  "job": {
+    "job_id": "r001404_v01",
+    "case_name": "short_history_2",
+    "case_description": "Awal diskusi dengan tepat 2 pesan sebelumnya. Gunakan hanya petunjuk yang tersedia.",
+    "source": {
+      "source_row": 1404,
+      "source_group": "3fac392e4cb7de8d2d77",
+      "teks_chat": "tuduhan ke aku belum konsisten, sedangkan alibi si A berubah dua kali",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 3,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "short_history_2",
+    "participants": [
+      "Yogi",
+      "Zain",
+      "Aldi"
+    ],
+    "focus_player": "Zain",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Yogi",
+        "teks_chat": "Identitas korban diculik kok dirahasiakan gini, kita jadi makin susah nebaknya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Zain",
+        "teks_chat": "Mungkin emang sengaja buat bikin kita panik saling tuduh.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Aldi",
+        "teks_chat": "Zain, kamu kok tenang banget padahal yang lain pada bingung? Pasti kamu pelakunya ya!",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Zain",
+            "relasi": "offend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 24.txt"
+  }
+}

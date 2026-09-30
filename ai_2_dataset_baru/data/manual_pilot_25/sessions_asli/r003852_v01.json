@@ -1,0 +1,67 @@
+{
+  "job": {
+    "job_id": "r003852_v01",
+    "case_name": "neutral_status",
+    "case_description": "Klaim status/role atau pertanyaan informasi saja tanpa pembelaan/serangan; target kosong.",
+    "source": {
+      "source_row": 3852,
+      "source_group": "12afb15fa0a929c46fab",
+      "teks_chat": "lu bilang punya info malam, target yang kamu pantau siapa?",
+      "label_intent": "neutral"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 3,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "neutral_status",
+    "participants": [
+      "Kiki",
+      "Lani"
+    ],
+    "focus_player": "",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Kiki",
+        "teks_chat": "Lani cepat membalas, aku curiga dia Hitman yang sudah menyiapkan alasan.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Lani",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Lani",
+        "teks_chat": "Aku gak nyiapin apa-apa, emang kebetulan lagi pegang hp aja.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Lani",
+            "relasi": "defend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Kiki",
+        "teks_chat": "Peranku di sini cuma sebagai Civilian biasa, jadi wajar aku mengulik info sebanyak-banyaknya.",
+        "label_intent": "neutral",
+        "target": []
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 60.txt"
+  }
+}

@@ -1,0 +1,117 @@
+{
+  "job": {
+    "job_id": "r003927_v01",
+    "case_name": "stance_change",
+    "case_description": "Pengirim pesan sekarang sebelumnya menuduh atau membela seorang pemain di konteks, lalu berubah sikap terhadap pemain yang sama. Anotasi mengikuti sikap terbaru.",
+    "source": {
+      "source_row": 3927,
+      "source_group": "9de9a868a187072813b8",
+      "teks_chat": "kenapa tuduhan selalu balik ke gw? Siapa yang pertama kali mengarahkan narasi ini?",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 6,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "stance_change",
+    "participants": [
+      "Gilang",
+      "Hana",
+      "Fajar"
+    ],
+    "focus_player": "Fajar",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Gilang",
+        "teks_chat": "Kira-kira siapa ya yang nyandera orang semalam?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Hana",
+        "teks_chat": "Aku curiga Fajar Hitman karena menghindari pertanyaan.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Fajar",
+            "relasi": "offend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Gilang",
+        "teks_chat": "Bener juga, Fajar diam aja dari awal, pasti dia hitmannya.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Fajar",
+            "relasi": "offend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Fajar",
+        "teks_chat": "Aku bukan Hitman, aku sedang membaca ulang chat.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Fajar",
+            "relasi": "defend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Hana",
+        "teks_chat": "Itu mah alibi klasik pelaku buat nutupin jejak.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Fajar",
+            "relasi": "offend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Gilang",
+        "teks_chat": "Aku tarik tuduhanku. Membaca chat dan lambat membalas belum membuktikan dia Hitman.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Fajar",
+            "relasi": "defend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 61.txt"
+  },
+  "revisi": [
+    {
+      "pesan": 1,
+      "kategori": "tidak_natural",
+      "alasan": "'Siapa yang memakai Hostage semalam' janggal/berbau istilah sistem"
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "job": {
+    "job_id": "r005352_v01",
+    "case_name": "neutral_status",
+    "case_description": "Klaim status/role atau pertanyaan informasi saja tanpa pembelaan/serangan; target kosong.",
+    "source": {
+      "source_row": 5352,
+      "source_group": "fcca1a5f019454ded048",
+      "teks_chat": "oh, jadi chat memang dikunci saat malam",
+      "label_intent": "neutral"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 3,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "neutral_status",
+    "participants": [
+      "Hani",
+      "Indra",
+      "Joko"
+    ],
+    "focus_player": "",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Hani",
+        "teks_chat": "Indra lambat membalas, aku curiga dia Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Indra",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Indra",
+        "teks_chat": "Maaf, koneksiku buruk jadi pesan aku terpotong dan telat masuk.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Indra",
+            "relasi": "defend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Joko",
+        "teks_chat": "Indra, pesanmu yang telat itu sering kejadian atau baru kali ini?",
+        "label_intent": "neutral",
+        "target": []
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 77.txt"
+  },
+  "revisi": [
+    {
+      "pesan": 3,
+      "kategori": "meta",
+      "alasan": "Menjelaskan/menanyakan mekanisme Gag Order"
+    }
+  ]
+}

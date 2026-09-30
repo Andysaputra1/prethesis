@@ -1,0 +1,90 @@
+{
+  "job": {
+    "job_id": "r001492_v01",
+    "case_name": "short_history_3",
+    "case_description": "Awal diskusi dengan tepat 3 pesan sebelumnya. Acuan tidak harus berada di pesan terakhir.",
+    "source": {
+      "source_row": 1492,
+      "source_group": "1676dbbd19c910ad8cf4",
+      "teks_chat": "aneh, kenapa cuma gw yang disorot padahal si Beni bahkan belum kasih kontribusi satu pun",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 4,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "short_history_3",
+    "participants": [
+      "Doni",
+      "Erna",
+      "Fikri"
+    ],
+    "focus_player": "Doni",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Doni",
+        "teks_chat": "Fikri mencurigakan banget, diam aja terus.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Fikri",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Erna",
+        "teks_chat": "Iya bener, patut diwaspadai.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Fikri",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Doni",
+        "teks_chat": "Tapi tunggu, Erna lu kok langsung setuju, jangan-jangan lu yang hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Erna",
+            "relasi": "offend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Fikri",
+        "teks_chat": "Keliatan banget kan si Doni nuduhnya berubah-ubah terus buat ngadu domba kita berdua.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Doni",
+            "relasi": "offend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 27.txt"
+  }
+}

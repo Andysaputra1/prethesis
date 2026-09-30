@@ -1,0 +1,196 @@
+{
+  "job": {
+    "job_id": "r004652_v01",
+    "case_name": "mixed_relations",
+    "case_description": "Membela satu pemain dan menuduh pemain lain. Intent utama offend; simpan kedua relasi.",
+    "source": {
+      "source_row": 4652,
+      "source_group": "a3038d6ad52f050e870d",
+      "teks_chat": "vote kita harus terkonsentrasi ke Hendra supaya hitman tidak lolos karena suara pecah",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 11,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "mixed_relations",
+    "participants": [
+      "Bayu",
+      "Ayu",
+      "Cita",
+      "Dery"
+    ],
+    "focus_player": "",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Bayu",
+        "teks_chat": "Ayu menurutku paling mencurigakan di ronde ini karena hanya diam saja.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Ayu",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Ayu",
+        "teks_chat": "Aku dari tadi sedang serius membaca chat, jangan asal tunjuk dong.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Ayu",
+            "relasi": "defend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Cita",
+        "teks_chat": "Lagian Ayu baru sebentar gabung di diskusi, masa langsung disudutkan.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Ayu",
+            "relasi": "defend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Bayu",
+        "teks_chat": "Ya sudah, kalau begitu berarti Cita yang menjadi Hitman karena berani membelanya.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Cita",
+            "relasi": "offend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Cita",
+        "teks_chat": "Bayu, aku curiga kamu Hitman karena menuduh tanpa alasan.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Bayu",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Dery",
+        "teks_chat": "Aku juga curiga Bayu Hitman yang menebar tuduhan.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Bayu",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Bayu",
+        "teks_chat": "Sekarang malah Dery yang tiba-tiba menyerang aku, fix Dery otak utamanya!",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Dery",
+            "relasi": "offend",
+            "bukti_pesan": [
+              7
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Dery",
+        "teks_chat": "Aku cuma memastikan tujuanmu, kamu terlihat sangat panik.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Bayu",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Ayu",
+        "teks_chat": "Kelakuan Bayu hari ini sudah melampaui batas kewajaran.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Bayu",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Cita",
+        "teks_chat": "Jelas sekali dia sedang panik mencari kambing hitam untuk dikorbankan.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Bayu",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Ayu",
+        "teks_chat": "Dery itu sama sekali bukan pelakunya, jelas-jelas Bayu yang merupakan Hitman karena dari tadi melempar tuduhan ke sana kemari, mari kita putuskan vote Bayu!",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Dery",
+            "relasi": "defend",
+            "bukti_pesan": [
+              7
+            ]
+          },
+          {
+            "pemain": "Bayu",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 68.txt"
+  }
+}

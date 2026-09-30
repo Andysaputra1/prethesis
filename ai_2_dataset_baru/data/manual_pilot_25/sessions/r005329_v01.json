@@ -1,0 +1,96 @@
+{
+  "job": {
+    "job_id": "r005329_v01",
+    "case_name": "explicit",
+    "case_description": "Target eksplisit di pesan sekarang. Contoh: Aku yakin bukan Andy = defend Andy.",
+    "source": {
+      "source_row": 5329,
+      "source_group": "e29574795e846bd9417f",
+      "teks_chat": "lu serius nuduh gw cuma gara-gara telat balas?",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 4,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "explicit",
+    "participants": [
+      "Wira",
+      "Yanto"
+    ],
+    "focus_player": "Yanto",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Wira",
+        "teks_chat": "Yanto tadi mengaku tahu siapa Hitman, sekarang bilang belum tahu. Aku curiga dia pelakunya.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Yanto",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Yanto",
+        "teks_chat": "Aku bukan Hitman, maksudku tadi hanya dugaan.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Yanto",
+            "relasi": "defend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Wira",
+        "teks_chat": "Kamu pasti bohong buat nutupin sesuatu kan.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Yanto",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Yanto",
+        "teks_chat": "Yanto di sini bukan Hitman ya, Wira. Tadi itu cuma dugaan, jangan fitnah aku.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Yanto",
+            "relasi": "defend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 76.txt"
+  },
+  "revisi": [
+    {
+      "pesan": 4,
+      "kategori": "tidak_natural",
+      "alasan": "Yanto menyebut diri sendiri sebagai orang ketiga dengan kalimat janggal ('Aku sendiri yang menegaskan itu')."
+    }
+  ]
+}

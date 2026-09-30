@@ -1,0 +1,58 @@
+{
+  "job": {
+    "job_id": "r002085_v01",
+    "case_name": "short_history_3",
+    "case_description": "Awal diskusi dengan tepat 3 pesan sebelumnya. Acuan tidak harus berada di pesan terakhir.",
+    "source": {
+      "source_row": 2085,
+      "source_group": "515052744dd87e361bab",
+      "teks_chat": "role aku Civilian, jadi argumenku murni dari urutan aksi dan voting",
+      "label_intent": "neutral"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 4,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "short_history_3",
+    "participants": [
+      "Putra",
+      "Qori",
+      "Rani"
+    ],
+    "focus_player": "",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Putra",
+        "teks_chat": "Qori, tadi kamu menyebut Guard itu skill siapa?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Qori",
+        "teks_chat": "Skill Spy, dipakai malam hari untuk melindungi satu pemain.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Rani",
+        "teks_chat": "Oh, aku tadi salah baca dan mengira itu skill Stalker.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Putra",
+        "teks_chat": "Berarti Peek punya Stalker dan Guard punya Spy, ya.",
+        "label_intent": "neutral",
+        "target": []
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 34.txt"
+  }
+}

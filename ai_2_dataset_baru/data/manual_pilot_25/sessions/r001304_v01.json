@@ -1,0 +1,118 @@
+{
+  "job": {
+    "job_id": "r001304_v01",
+    "case_name": "neutral_names",
+    "case_description": "Neutral menyebut nama tanpa menuduh/membela; target kosong.",
+    "source": {
+      "source_row": 1304,
+      "source_group": "f6b72a214efcef60be64",
+      "teks_chat": "lu semalam melakukan aksi ke siapa, atau belum bisa cerita?",
+      "label_intent": "neutral"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 11,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "neutral_names",
+    "participants": [
+      "Raka",
+      "Sinta",
+      "Tito",
+      "Umar"
+    ],
+    "focus_player": "",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Raka",
+        "teks_chat": "Sinta, tadi kamu mengaku punya role apa?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Sinta",
+        "teks_chat": "Aku mengaku Civilian.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Tito",
+        "teks_chat": "Sinta, berarti semalam kamu nggak pakai Guard atau Peek?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Sinta",
+        "teks_chat": "Iya, aku hanya ikut berdiskusi.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Umar",
+        "teks_chat": "Aku akan mencatat klaim role masing-masing dulu.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Raka",
+        "teks_chat": "Tapi ingat, itu semua baru pengakuan, belum tentu benar.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Tito",
+        "teks_chat": "Siapa yang belum membagikan klaim?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Umar",
+        "teks_chat": "Aku belum mengatakannya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Sinta",
+        "teks_chat": "Tidak harus dibagikan sekarang kalau kamu belum ingin.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Raka",
+        "teks_chat": "Baik, kita lanjut membaca percakapannya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Tito",
+        "teks_chat": "Sinta, ada lagi yang mau kamu tanyain?",
+        "label_intent": "neutral",
+        "target": []
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 23.txt"
+  },
+  "revisi": [
+    {
+      "pesan": 3,
+      "kategori": "tidak_natural",
+      "alasan": "'mengklaim penggunaan Guard atau Peek' kaku"
+    },
+    {
+      "pesan": 6,
+      "kategori": "meta",
+      "alasan": "Menjelaskan beda klaim dan role yang diketahui seperti aturan"
+    },
+    {
+      "pesan": 11,
+      "kategori": "tidak_natural",
+      "alasan": "Kalimat kaku ('apa ada pesan yang ingin kamu tanyakan')"
+    }
+  ]
+}

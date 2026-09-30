@@ -1,0 +1,112 @@
+{
+  "job": {
+    "job_id": "r000470_v01",
+    "case_name": "plural_reference",
+    "case_description": "Pesan sekarang memakai mereka/kalian/keduanya/berdua untuk dua pemain atau lebih yang jelas dari konteks, tanpa menyebut ulang nama mereka. Simpan semua pemain itu sebagai target.",
+    "source": {
+      "source_row": 470,
+      "source_group": "b0c75cf36347cb860eb4",
+      "teks_chat": "aku bisa salah analisis, tapi bukan berarti jahat; mari bandingkan semua jawaban dan lihat siapa yang paling sering ganti cerita",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 5,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "plural_reference",
+    "participants": [
+      "Puput",
+      "Siska",
+      "Qori",
+      "Rian",
+      "Tino"
+    ],
+    "focus_player": "",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Puput",
+        "teks_chat": "Qori sama Rian kok balas chatnya lama banget ya dari tadi?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Siska",
+        "teks_chat": "Aku curiga Qori dan Rian sengaja menunda jawaban supaya bisa mengarang alasan. Aku ingin vote mereka.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Qori",
+            "relasi": "offend",
+            "bukti_pesan": [
+              2
+            ]
+          },
+          {
+            "pemain": "Rian",
+            "relasi": "offend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Qori",
+        "teks_chat": "Maaf banget, sinyalku dari tadi putus-putus jadinya telat masuk.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Qori",
+            "relasi": "defend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Rian",
+        "teks_chat": "Aku juga nge-lag parah ini aplikasinya, baru bisa buka.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Rian",
+            "relasi": "defend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Tino",
+        "teks_chat": "Jangan langsung menuduh, kalian berdua wajar merespons lambat kalau masalahnya ada di koneksi internet.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Qori",
+            "relasi": "defend",
+            "bukti_pesan": [
+              1
+            ]
+          },
+          {
+            "pemain": "Rian",
+            "relasi": "defend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 7.txt"
+  }
+}

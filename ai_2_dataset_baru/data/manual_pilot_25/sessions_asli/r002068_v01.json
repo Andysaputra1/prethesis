@@ -1,0 +1,209 @@
+{
+  "job": {
+    "job_id": "r002068_v01",
+    "case_name": "reference_start",
+    "case_description": "Tepat 12 konteks. Penyebutan target eksplisit di pesan konteks pertama; pesan sekarang memakai kata ganti.",
+    "source": {
+      "source_row": 2068,
+      "source_group": "6a3518eb73eda5f32530",
+      "teks_chat": "aku melihat identitas MM saat Peek aktif, jadi warga dapat mengikuti vote ke MM tanpa membagi suara",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 13,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "reference_start",
+    "participants": [
+      "Rara",
+      "Tino",
+      "Siska",
+      "Umi"
+    ],
+    "focus_player": "Tino",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Rara",
+        "teks_chat": "Tino belum menjawab pertanyaan soal alasan vote. Aku curiga Tino Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Tino",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Tino",
+        "teks_chat": "Aku bukan Hitman. Aku tadi kesulitan membaca chat karena tampilan ponselku bermasalah.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Tino",
+            "relasi": "defend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Siska",
+        "teks_chat": "Aku curiga dia memakai alasan teknis untuk menghindari pertanyaan.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Tino",
+            "relasi": "offend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Umi",
+        "teks_chat": "Aku juga curiga dia Hitman yang menunda jawaban.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Tino",
+            "relasi": "offend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Rara",
+        "teks_chat": "Aku tetap curiga dia sengaja mengulur waktu.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Tino",
+            "relasi": "offend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Tino",
+        "teks_chat": "Aku tidak bersalah. Aku sedang mengatur tampilan supaya pesannya bisa kubaca.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Tino",
+            "relasi": "defend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Siska",
+        "teks_chat": "Aku masih curiga dia mengarang kendala itu.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Tino",
+            "relasi": "offend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Umi",
+        "teks_chat": "Aku setuju dengan tuduhan itu.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Tino",
+            "relasi": "offend",
+            "bukti_pesan": [
+              7
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Rara",
+        "teks_chat": "Aku ingin vote dia kalau tidak ada penjelasan ajakan vote tadi.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Tino",
+            "relasi": "offend",
+            "bukti_pesan": [
+              8
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Tino",
+        "teks_chat": "Aku bukan pelakunya. Aku akan menjawab setelah selesai membaca pertanyaannya.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Tino",
+            "relasi": "defend",
+            "bukti_pesan": [
+              10
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Siska",
+        "teks_chat": "Aku masih curiga dia Hitman yang berusaha menghindar.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Tino",
+            "relasi": "offend",
+            "bukti_pesan": [
+              10
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Umi",
+        "teks_chat": "Waktu diskusi hampir selesai.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Rara",
+        "teks_chat": "Aku tetap ingin vote dia. Jawaban tentang ajakan vote belum juga diberikan.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Tino",
+            "relasi": "offend",
+            "bukti_pesan": [
+              11
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 33.txt"
+  }
+}

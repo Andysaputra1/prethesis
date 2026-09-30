@@ -1,0 +1,82 @@
+{
+  "job": {
+    "job_id": "r000325_v01",
+    "case_name": "mixed_relations",
+    "case_description": "Membela satu pemain dan menuduh pemain lain. Intent utama offend; simpan kedua relasi.",
+    "source": {
+      "source_row": 325,
+      "source_group": "76e9a9b9e11dab826b0a",
+      "teks_chat": "menurut gw Wawan pelakunya, dia selalu muncul setelah orang lain selesai bicara",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 4,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "mixed_relations",
+    "participants": [
+      "Arief",
+      "Bima",
+      "Cika",
+      "Doni"
+    ],
+    "focus_player": "",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Arief",
+        "teks_chat": "Tadi ada yang memperhatikan kenapa ajakan vote tiba-tiba berubah arah menjelang diskusi selesai?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Bima",
+        "teks_chat": "Iya, Cika tadinya mengajak vote, lalu bilang ingin menunda.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Cika",
+        "teks_chat": "Aku menarik ajakanku karena ragu dengan alasannya, bukan mau menjebak siapa pun.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Cika",
+            "relasi": "defend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Doni",
+        "teks_chat": "Cika wajar saja merasa ragu, justru Bima yang memancing suasana untuk menyudutkan Cika, Bima ini pasti pelakunya!",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Cika",
+            "relasi": "defend",
+            "bukti_pesan": [
+              3
+            ]
+          },
+          {
+            "pemain": "Bima",
+            "relasi": "offend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 4.txt"
+  }
+}

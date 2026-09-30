@@ -1,0 +1,109 @@
+{
+  "job": {
+    "job_id": "r005151_v01",
+    "case_name": "interruption",
+    "case_description": "Pembahasan target disela obrolan waktu/ronde; kaitan kembali ke target masih jelas.",
+    "source": {
+      "source_row": 5151,
+      "source_group": "22a40c3689ecd00c3797",
+      "teks_chat": "serius, aku civilian; kalau mau tes, lihat konsistensi vote-ku",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 6,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "interruption",
+    "participants": [
+      "Tomi",
+      "Vano",
+      "Wawan",
+      "Udin"
+    ],
+    "focus_player": "Udin",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Tomi",
+        "teks_chat": "Udin belain Vano cepet banget, curiga mereka sekongkol nih.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Udin",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          },
+          {
+            "pemain": "Vano",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Vano",
+        "teks_chat": "Dih, orang emang kita gak ngapa-ngapain dari tadi.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Udin",
+            "relasi": "defend",
+            "bukti_pesan": [
+              1
+            ]
+          },
+          {
+            "pemain": "Vano",
+            "relasi": "defend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Wawan",
+        "teks_chat": "Eh guys ini sisa waktunya tinggal berapa detik lagi sih?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Tomi",
+        "teks_chat": "Sebentar lagi Tribunal, perhatikan sisa waktu diskusi.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Wawan",
+        "teks_chat": "Oke sip, persiapkan diri masing-masing ya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Udin",
+        "teks_chat": "Balik ke yang tadi, aku cuma ngasih fakta ya, bukan berarti sengaja bantuin pelaku.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Udin",
+            "relasi": "defend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 74.txt"
+  }
+}

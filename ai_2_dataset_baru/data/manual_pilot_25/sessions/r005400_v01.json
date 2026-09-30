@@ -1,0 +1,52 @@
+{
+  "job": {
+    "job_id": "r005400_v01",
+    "case_name": "short_history_1",
+    "case_description": "Awal diskusi dengan tepat 1 pesan sebelumnya. Jangan menambah riwayat fiktif atau mengisi sampai 12.",
+    "source": {
+      "source_row": 5400,
+      "source_group": "ff961f0eed092656840b",
+      "teks_chat": "ini ronde keberapa sekarang, ya?",
+      "label_intent": "neutral"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 2,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "short_history_1",
+    "participants": [
+      "Umar",
+      "Vina"
+    ],
+    "focus_player": "",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Umar",
+        "teks_chat": "Aku ini Stalker, dan aku sudah melakukan Peek kepada Vina semalam.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Vina",
+        "teks_chat": "Terus hasil Peek-mu ke aku apa, Umar?",
+        "label_intent": "neutral",
+        "target": []
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 77.txt"
+  },
+  "revisi": [
+    {
+      "pesan": 2,
+      "kategori": "tidak_natural",
+      "alasan": "Kaku ('Lalu apa hasil yang kamu dapatkan saat mengintip aku')"
+    }
+  ]
+}

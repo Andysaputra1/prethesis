@@ -1,0 +1,53 @@
+{
+  "job": {
+    "job_id": "r001583_v01",
+    "case_name": "explicit",
+    "case_description": "Target eksplisit di pesan sekarang. Contoh: Aku yakin bukan Andy = defend Andy.",
+    "source": {
+      "source_row": 1583,
+      "source_group": "7ad448abd79eeaa6166b",
+      "teks_chat": "saya rasa tuduhan ini terlalu cepat, mari periksa peran dan sikap si F terlebih dahulu",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 2,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "explicit",
+    "participants": [
+      "Dani",
+      "Erna"
+    ],
+    "focus_player": "Dani",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Dani",
+        "teks_chat": "Kalian mau dengar tebakanku tentang siapa pelakunya tidak?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Erna",
+        "teks_chat": "Langsung saja kita kumpulkan suara untuk Dani, dia pasti berbohong dari awal!",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Dani",
+            "relasi": "offend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 28.txt"
+  }
+}

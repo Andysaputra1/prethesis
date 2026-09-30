@@ -1,0 +1,58 @@
+{
+  "job": {
+    "job_id": "r005593_v01",
+    "case_name": "neutral_names",
+    "case_description": "Neutral menyebut nama tanpa menuduh/membela; target kosong.",
+    "source": {
+      "source_row": 5593,
+      "source_group": "5e8cef755717864ae222",
+      "teks_chat": "aku bisa chat lagi setelah fase tribunal dimulai",
+      "label_intent": "neutral"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 4,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "neutral_names",
+    "participants": [
+      "Oky",
+      "Putra",
+      "Riki"
+    ],
+    "focus_player": "",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Oky",
+        "teks_chat": "Putra mengatakan bahwa dia adalah Spy semalam.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Putra",
+        "teks_chat": "Aku klaim Spy, tetapi belum ingin membuka pilihan Guard semalam.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Riki",
+        "teks_chat": "Apakah klaim Spy dari Putra ini bisa dipercaya?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Oky",
+        "teks_chat": "Putra dan Riki mau melanjutkan pembahasan klaim skill?",
+        "label_intent": "neutral",
+        "target": []
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 79.txt"
+  }
+}

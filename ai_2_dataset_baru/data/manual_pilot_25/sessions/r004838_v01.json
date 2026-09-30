@@ -1,0 +1,126 @@
+{
+  "job": {
+    "job_id": "r004838_v01",
+    "case_name": "plural_reference",
+    "case_description": "Pesan sekarang memakai mereka/kalian/keduanya/berdua untuk dua pemain atau lebih yang jelas dari konteks, tanpa menyebut ulang nama mereka. Simpan semua pemain itu sebagai target.",
+    "source": {
+      "source_row": 4838,
+      "source_group": "65fbca72853b079c9cbd",
+      "teks_chat": "fix Dimas Hitman, alasan dia muter terus dan gak pernah jelas",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 5,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "plural_reference",
+    "participants": [
+      "Nita",
+      "Oki",
+      "Puput",
+      "Rio"
+    ],
+    "focus_player": "",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Nita",
+        "teks_chat": "Puput dan Rio membela diri sebelum ditanya, aku curiga mereka Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Puput",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          },
+          {
+            "pemain": "Rio",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Puput",
+        "teks_chat": "Biar jelas saja dari awal kalau aku bersih dan tidak terlibat.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Puput",
+            "relasi": "defend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Rio",
+        "teks_chat": "Aku bukan Hitman, aku tidak mau dituduh tanpa alasan.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Rio",
+            "relasi": "defend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Oki",
+        "teks_chat": "Tapi rasanya terlalu cepat buat membela diri sebelum ada yang bertanya.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Puput",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          },
+          {
+            "pemain": "Rio",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Nita",
+        "teks_chat": "Makanya, mereka berdua ini sangat mencurigakan.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Puput",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          },
+          {
+            "pemain": "Rio",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 71.txt"
+  }
+}

@@ -1,0 +1,152 @@
+{
+  "job": {
+    "job_id": "r000085_v01",
+    "case_name": "reference_middle",
+    "case_description": "Tepat 12 konteks. Penyebutan target eksplisit di pesan konteks ke-6 atau ke-7.",
+    "source": {
+      "source_row": 85,
+      "source_group": "223c6fcf962971e9074d",
+      "teks_chat": "gw bersih, dan menurutku Jaka sengaja memancing reaksi supaya vote beralih ke aku",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 13,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "reference_middle",
+    "participants": [
+      "Umar",
+      "Vina",
+      "Wira",
+      "Yayan"
+    ],
+    "focus_player": "Vina",
+    "panggilan": [
+      {
+        "pemain": "Vina",
+        "sebutan": [
+          "Vin"
+        ]
+      }
+    ],
+    "messages": [
+      {
+        "pengirim": "Wira",
+        "teks_chat": "Ada klaim role yang berubah di chat tadi?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Umar",
+        "teks_chat": "Aku belum selesai membaca semuanya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Yayan",
+        "teks_chat": "Aku melihat ada dua klaim berbeda dari satu pengirim.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Wira",
+        "teks_chat": "Klaim apa yang dimaksud?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Umar",
+        "teks_chat": "Kita sebutkan isi pesannya dulu supaya jelas.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Wira",
+        "teks_chat": "Vina sempat mengaku Spy lalu Stalker. Aku curiga Vina Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Vina",
+            "relasi": "offend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Vina",
+        "teks_chat": "Aku bukan Hitman, pesan pertama salah ketik.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Vina",
+            "relasi": "defend",
+            "bukti_pesan": [
+              7
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Umar",
+        "teks_chat": "Vin, apa klaim yang sekarang kamu pertahankan?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Vina",
+        "teks_chat": "Aku mengaku Stalker.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Yayan",
+        "teks_chat": "Kalau begitu, kapan kamu memakai Peek?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Wira",
+        "teks_chat": "Aku juga ingin mendengar penjelasan penggunaan skillnya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Vina",
+        "teks_chat": "Aku belum mau membuka hasilnya, tetapi aku bukan Hitman.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Vina",
+            "relasi": "defend",
+            "bukti_pesan": [
+              12
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Umar",
+        "teks_chat": "Aku tetap curiga dia Hitman karena klaimnya berubah dan belum dijelaskan dengan baik.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Vina",
+            "relasi": "offend",
+            "bukti_pesan": [
+              12
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 78.txt"
+  }
+}

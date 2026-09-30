@@ -48,7 +48,7 @@
           },
           {
             "pengirim": "Joko",
-            "teks_chat": "Lho, kok pesannya kepotong, apa jangan-jangan ada yang pakai skill?",
+            "teks_chat": "Pesannya cuma satu huruf. Itu salah ketik atau koneksinya bermasalah?",
             "label_intent": "neutral",
             "target": []
           }
@@ -81,7 +81,7 @@
           },
           {
             "pengirim": "Maman",
-            "teks_chat": "Nah itu, jangan-jangan kamu yang nyembunyiin biar kita bingung!",
+            "teks_chat": "Nia, jawabanmu singkat banget. Aku curiga kamu Hitman yang menghindari diskusi.",
             "label_intent": "offend",
             "target": [
               {
@@ -95,7 +95,7 @@
           },
           {
             "pengirim": "Nia",
-            "teks_chat": "Enak aja, mana bisa aku ngelakuin itu, aku cuma civilian biasa.",
+            "teks_chat": "Aku cuma menjelaskan aturan korban, bukan menghindar. Aku Civilian, bukan Hitman.",
             "label_intent": "defend",
             "target": [
               {
@@ -156,33 +156,25 @@
         "messages": [
           {
             "pengirim": "Putra",
-            "teks_chat": "Qori, semalam kamu ke arah barat kan?",
+            "teks_chat": "Qori, tadi kamu menyebut Guard itu skill siapa?",
             "label_intent": "neutral",
             "target": []
           },
           {
             "pengirim": "Qori",
-            "teks_chat": "Iya, aku nyari kotak listrik di sana.",
+            "teks_chat": "Skill Spy, dipakai malam hari untuk melindungi satu pemain.",
             "label_intent": "neutral",
             "target": []
           },
           {
             "pengirim": "Rani",
-            "teks_chat": "Tapi di log nggak ada pergerakan ke sana tuh, kamu bohong pasti!",
-            "label_intent": "offend",
-            "target": [
-              {
-                "pemain": "Qori",
-                "relasi": "offend",
-                "bukti_pesan": [
-                  3
-                ]
-              }
-            ]
+            "teks_chat": "Oh, aku tadi salah baca dan mengira itu skill Stalker.",
+            "label_intent": "neutral",
+            "target": []
           },
           {
             "pengirim": "Putra",
-            "teks_chat": "Sabar dulu, mungkin lognya belum update.",
+            "teks_chat": "Berarti Peek punya Stalker dan Guard punya Spy, ya.",
             "label_intent": "neutral",
             "target": []
           }
@@ -203,31 +195,31 @@
         "messages": [
           {
             "pengirim": "Sani",
-            "teks_chat": "Tadi ada yang tiba-tiba ganti vote di detik terakhir nggak?",
+            "teks_chat": "Ada yang mengganti ajakan vote di chat tadi?",
             "label_intent": "neutral",
             "target": []
           },
           {
             "pengirim": "Toni",
-            "teks_chat": "Kayaknya sih ada, tapi aku nggak merhatiin namanya.",
+            "teks_chat": "Ada, tapi aku lupa siapa yang menulisnya.",
             "label_intent": "neutral",
             "target": []
           },
           {
             "pengirim": "Udin",
-            "teks_chat": "Tolong dong kalau ada yang lihat kasih tahu.",
+            "teks_chat": "Kalau ingat pesannya, sebutkan supaya bisa kita baca lagi.",
             "label_intent": "neutral",
             "target": []
           },
           {
             "pengirim": "Sani",
-            "teks_chat": "Masalahnya pergerakannya cepat banget.",
+            "teks_chat": "Aku juga mau baca ulang diskusinya.",
             "label_intent": "neutral",
             "target": []
           },
           {
             "pengirim": "Toni",
-            "teks_chat": "Aku ini cuma civilian biasa, nggak punya kemampuan lihat yang begituan.",
+            "teks_chat": "Sambil menunggu, aku klaim Civilian. Itu info role dariku.",
             "label_intent": "neutral",
             "target": []
           }
@@ -248,7 +240,7 @@
         "messages": [
           {
             "pengirim": "Vina",
-            "teks_chat": "Wawan kok kamu dari tadi bilang bukan hitman terus, padahal belum ada yang nanya.",
+            "teks_chat": "Wawan, kamu terus bilang bukan Hitman tanpa ditanya. Aku justru curiga kamu Hitman.",
             "label_intent": "offend",
             "target": [
               {
@@ -296,7 +288,7 @@
         "messages": [
           {
             "pengirim": "Yoga",
-            "teks_chat": "Kenapa identitas korban nggak ketahuan ya?",
+            "teks_chat": "Ada tuduhan ke Yoga dan Zaki, tetapi alasannya belum dibahas di sini.",
             "label_intent": "neutral",
             "target": []
           },
@@ -329,7 +321,7 @@
         "messages": [
           {
             "pengirim": "Aldo",
-            "teks_chat": "Ayo langsung vote Caca aja, gerak-geriknya sus!",
+            "teks_chat": "Ayo langsung vote Caca aja, chatnya sus!",
             "label_intent": "offend",
             "target": [
               {
@@ -343,12 +335,12 @@
           },
           {
             "pengirim": "Budi",
-            "teks_chat": "Bentar, kamu ngajak vote kok nggak ada buktinya Do?",
-            "label_intent": "offend",
+            "teks_chat": "Tunggu, jangan vote Caca tanpa alasan yang jelas.",
+            "label_intent": "defend",
             "target": [
               {
-                "pemain": "Aldo",
-                "relasi": "offend",
+                "pemain": "Caca",
+                "relasi": "defend",
                 "bukti_pesan": [
                   2
                 ]
@@ -357,49 +349,33 @@
           },
           {
             "pengirim": "Caca",
-            "teks_chat": "Iya nih, nuduh sembarangan banget.",
-            "label_intent": "offend",
+            "teks_chat": "Aku menolak tuduhan itu, belum ada bukti aku Hitman.",
+            "label_intent": "defend",
             "target": [
               {
-                "pemain": "Aldo",
-                "relasi": "offend",
+                "pemain": "Caca",
+                "relasi": "defend",
                 "bukti_pesan": [
-                  1
+                  3
                 ]
               }
             ]
           },
           {
             "pengirim": "Aldo",
-            "teks_chat": "Kan ini cuma opini aku aja.",
-            "label_intent": "defend",
-            "target": [
-              {
-                "pemain": "Aldo",
-                "relasi": "defend",
-                "bukti_pesan": [
-                  4
-                ]
-              }
-            ]
+            "teks_chat": "Itu baru dugaan aku.",
+            "label_intent": "neutral",
+            "target": []
           },
           {
             "pengirim": "Budi",
-            "teks_chat": "Opini sih opini, tapi ngajak vote itu fatal akibatnya.",
-            "label_intent": "offend",
-            "target": [
-              {
-                "pemain": "Aldo",
-                "relasi": "offend",
-                "bukti_pesan": [
-                  4
-                ]
-              }
-            ]
+            "teks_chat": "Mengajak vote perlu alasan, sebab hasil Tribunal bisa mengeksekusi pemain.",
+            "label_intent": "neutral",
+            "target": []
           },
           {
             "pengirim": "Caca",
-            "teks_chat": "Pasti kamu hitmannya yang mau nyingkirin aku kan!",
+            "teks_chat": "Aldo, pasti kamu Hitman yang mau menyingkirkan aku!",
             "label_intent": "offend",
             "target": [
               {
@@ -451,7 +427,7 @@
           "Erna",
           "Fikri"
         ],
-        "focus_player": "Erna",
+        "focus_player": "Fikri",
         "panggilan": [],
         "messages": [
           {
@@ -462,7 +438,7 @@
           },
           {
             "pengirim": "Erna",
-            "teks_chat": "Belum nih, dari tadi keliling doang.",
+            "teks_chat": "Belum, aku masih membaca chat.",
             "label_intent": "neutral",
             "target": []
           },
@@ -482,7 +458,7 @@
           },
           {
             "pengirim": "Dika",
-            "teks_chat": "Tumben langsung lapor aman, padahal nggak ditanya.",
+            "teks_chat": "Tumben langsung lapor aman tanpa ditanya. Aku curiga Fikri Hitman.",
             "label_intent": "offend",
             "target": [
               {
@@ -510,7 +486,7 @@
           },
           {
             "pengirim": "Fikri",
-            "teks_chat": "Lah, kan cuma ngasih tahu biar clear.",
+            "teks_chat": "Aku cuma memberi tahu. Aku bukan Hitman.",
             "label_intent": "defend",
             "target": [
               {
@@ -551,8 +527,8 @@
             ]
           },
           {
-            "pengirim": "Fikri",
-            "teks_chat": "Terserah lu mau bilang apa, yang jelas gw gak ngelakuin.",
+            "pengirim": "Dika",
+            "teks_chat": "Fikri, kamu belum terbukti Hitman. Aku tarik tuduhanku tadi.",
             "label_intent": "defend",
             "target": [
               {
@@ -580,7 +556,7 @@
         "messages": [
           {
             "pengirim": "Gita",
-            "teks_chat": "Aku nggak tahu-menahu soal vote kemaren ya, aku cuma ngikutin insting.",
+            "teks_chat": "Aku bukan Hitman, jangan langsung memilihku untuk dieksekusi.",
             "label_intent": "defend",
             "target": [
               {
@@ -608,7 +584,7 @@
         "messages": [
           {
             "pengirim": "Jojo",
-            "teks_chat": "Aku yakin sih dia bukan orang yang mindahin vote tadi.",
+            "teks_chat": "Aku yakin dia bukan Hitman.",
             "label_intent": "defend",
             "target": [
               {

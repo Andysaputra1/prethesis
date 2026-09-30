@@ -1,0 +1,76 @@
+{
+  "job": {
+    "job_id": "r003305_v01",
+    "case_name": "short_history_2",
+    "case_description": "Awal diskusi dengan tepat 2 pesan sebelumnya. Gunakan hanya petunjuk yang tersedia.",
+    "source": {
+      "source_row": 3305,
+      "source_group": "a16a7e694fd5e4f28372",
+      "teks_chat": "aku baru mengikuti separuh diskusi, tetapi dari informasi yang ada belum tentu aku pelakunya",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 3,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "short_history_2",
+    "participants": [
+      "Andi",
+      "Rio",
+      "Deni"
+    ],
+    "focus_player": "Rio",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Andi",
+        "teks_chat": "Rio kok diam saja dari tadi? Pasti dia pelakunya.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Rio",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Andi",
+        "teks_chat": "Ayo kita kumpulkan suara buat dia.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Rio",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Deni",
+        "teks_chat": "Jangan buru-buru, bisa jadi Rio itu terkena efek Gag Order makanya tidak bisa bicara.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Rio",
+            "relasi": "defend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 49.txt"
+  }
+}

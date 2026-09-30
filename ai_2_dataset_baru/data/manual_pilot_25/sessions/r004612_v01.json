@@ -1,0 +1,132 @@
+{
+  "job": {
+    "job_id": "r004612_v01",
+    "case_name": "negation",
+    "case_description": "Negasi menentukan relasi: Andy Hitman berbeda dari Andy bukan Hitman.",
+    "source": {
+      "source_row": 4612,
+      "source_group": "67dce3eef10b95d55d99",
+      "teks_chat": "Stop muter-muter di aku, semua jawaban gw sudah sama dari awal; Reno yang berubah alibi setiap ditanya harus kita Tribunal sekarang",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 7,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "negation",
+    "participants": [
+      "Nita",
+      "Oki",
+      "Miko"
+    ],
+    "focus_player": "Miko",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Miko",
+        "teks_chat": "Oki kelihatan sangat mencurigakan karena dia enggan berbagi informasi.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Oki",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Oki",
+        "teks_chat": "Aku bukan Hitman, aku memang belum punya informasi.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Oki",
+            "relasi": "defend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Miko",
+        "teks_chat": "Ya sudah, kalau bukan Oki, mungkin Nita yang sebenarnya beraksi semalam.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Nita",
+            "relasi": "offend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Nita",
+        "teks_chat": "Aku bukan Hitman, jangan asal menuduhku.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Nita",
+            "relasi": "defend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Miko",
+        "teks_chat": "Sebagai pemain kita memang harus selalu curiga kepada semua orang kan?",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Miko",
+            "relasi": "defend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Oki",
+        "teks_chat": "Tetapi caramu berpindah target tuduhan terlalu cepat dan tanpa dasar yang jelas.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Miko",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Nita",
+        "teks_chat": "Miko ini bukan pemain biasa yang sedang bimbang, dia pasti Hitman yang sengaja mengadu domba kita, cepat vote dia.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Miko",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 68.txt"
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "job": {
+    "job_id": "r003914_v01",
+    "case_name": "short_history_1",
+    "case_description": "Awal diskusi dengan tepat 1 pesan sebelumnya. Jangan menambah riwayat fiktif atau mengisi sampai 12.",
+    "source": {
+      "source_row": 3914,
+      "source_group": "0a8ee4ad37b39a404312",
+      "teks_chat": "jangan fokus ke gw terus, siapa yang sebenarnya kalian lihat mencurigakan tadi malam?",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 2,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "short_history_1",
+    "participants": [
+      "Surya",
+      "Tari"
+    ],
+    "focus_player": "Tari",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Surya",
+        "teks_chat": "Tari, omonganmu barusan beda sama yang sebelumnya, pasti kamu pelakunya.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Tari",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Tari",
+        "teks_chat": "Ucapanku sama sekali gak bertentangan kok, kamu aja yang salah paham mengartikan kalimatku.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Tari",
+            "relasi": "defend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 60.txt"
+  }
+}

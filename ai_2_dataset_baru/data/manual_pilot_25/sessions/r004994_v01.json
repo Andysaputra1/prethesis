@@ -1,0 +1,78 @@
+{
+  "job": {
+    "job_id": "r004994_v01",
+    "case_name": "ambiguous",
+    "case_description": "Beberapa acuan sama-sama mungkin; target tidak_diketahui, bukan nama terakhir.",
+    "source": {
+      "source_row": 4994,
+      "source_group": "428b5499de192aeee8bc",
+      "teks_chat": "aku mau buka identitas, role-ku stalker dan target peek-ku kemarin ternyata hitman, yaitu Fajar",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 5,
+    "pesan_typo_ringan": [
+      4
+    ]
+  },
+  "session": {
+    "case_name": "ambiguous",
+    "participants": [
+      "Okan",
+      "Putri",
+      "Qori"
+    ],
+    "focus_player": "",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Okan",
+        "teks_chat": "Ini kenapa pada sepi sekali ya tumben.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Putri",
+        "teks_chat": "Mungkin ada yang kena gag order dari hitman?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Qori",
+        "teks_chat": "Bisa jadi, atau memang pada sengaja menahan info.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Okan",
+        "teks_chat": "Jangan-jangan yg diam memang pelakunya sengaja cari aman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "tidak_diketahui",
+            "relasi": "offend",
+            "bukti_pesan": []
+          }
+        ]
+      },
+      {
+        "pengirim": "Putri",
+        "teks_chat": "Wah parah sih kalau memang dia sengaja sembunyi sambil pura-pura kena skill.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "tidak_diketahui",
+            "relasi": "offend",
+            "bukti_pesan": []
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 73.txt"
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "job": {
+    "job_id": "r003636_v01",
+    "case_name": "quotation",
+    "case_description": "Ada tuduhan yang dikutip; bedakan sikap pengirim dari ucapan orang yang dikutip.",
+    "source": {
+      "source_row": 3636,
+      "source_group": "eb40c85df0eb7924fa91",
+      "teks_chat": "fix bukan gw Hitman, role gw Spy dan target Guard semalam adalah Seno",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 3,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "quotation",
+    "participants": [
+      "Putri",
+      "Qori",
+      "Rara"
+    ],
+    "focus_player": "Qori",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Putri",
+        "teks_chat": "Qori itu pasti hitman soalnya bales chatnya sering kepotong.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Qori",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Qori",
+        "teks_chat": "Sinyalku emang lagi jelek banget ini.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Qori",
+            "relasi": "defend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Rara",
+        "teks_chat": "Tadi si Putri bilang 'Qori itu pasti hitman', padahal menurutku Qori emang lagi ngelag beneran dari tadi kok.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Qori",
+            "relasi": "defend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 56.txt"
+  }
+}

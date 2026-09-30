@@ -1,0 +1,133 @@
+{
+  "job": {
+    "job_id": "r001043_v01",
+    "case_name": "outside_window_unknown",
+    "case_description": "14-16 pesan total. Pembahasan lama telah putus/beralih. Teks dan anotasi 12 konteks terakhir tidak cukup menentukan acuan sekarang. Target harus tidak_diketahui; jangan menggunakan informasi lama yang tidak tersedia dalam input.",
+    "source": {
+      "source_row": 1043,
+      "source_group": "bdcda1bddcb4f586a670",
+      "teks_chat": "jangan termakan fitnah, gw Civilian biasa dan gak punya skill malam",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 14,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "outside_window_unknown",
+    "participants": [
+      "Puput",
+      "Qori",
+      "Rafa",
+      "Sinta"
+    ],
+    "focus_player": "Sinta",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Puput",
+        "teks_chat": "Sinta mengaku Spy. Aku curiga Sinta menggunakan klaim itu untuk lolos dari vote.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Sinta",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Qori",
+        "teks_chat": "Sebentar, kita samakan dulu arti klaim role.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Rafa",
+        "teks_chat": "Klaim berarti pemain mengatakan bahwa ia punya role tertentu.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Puput",
+        "teks_chat": "Apakah mengatakan role otomatis membuktikan role aslinya?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Qori",
+        "teks_chat": "Tidak, pemain bisa jujur atau berbohong.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Rafa",
+        "teks_chat": "Termasuk kalau dia menyebut pilihan skill malam?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Puput",
+        "teks_chat": "Iya, yang kita terima dari chat tetap ucapan pemain.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Qori",
+        "teks_chat": "Lalu apa yang bisa diperiksa bersama?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Rafa",
+        "teks_chat": "Konsistensi ucapan dengan pesan sebelumnya dan aturan skill.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Puput",
+        "teks_chat": "Kalau ceritanya konsisten, apakah pasti benar?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Qori",
+        "teks_chat": "Belum tentu; cerita bohong juga bisa konsisten.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Rafa",
+        "teks_chat": "Baik, jadi kita bedakan klaim, dugaan, dan informasi yang memang terlihat.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Puput",
+        "teks_chat": "Kembali ke orang yang mengaku sebelum pembahasan ini.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Qori",
+        "teks_chat": "Aku membela dia untuk sekarang. Belum ada alasan yang menunjukkan klaimnya palsu.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "tidak_diketahui",
+            "relasi": "defend",
+            "bukti_pesan": []
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 21.txt"
+  }
+}

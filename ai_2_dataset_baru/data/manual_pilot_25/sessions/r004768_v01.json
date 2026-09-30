@@ -1,0 +1,100 @@
+{
+  "job": {
+    "job_id": "r004768_v01",
+    "case_name": "interruption",
+    "case_description": "Pembahasan target disela obrolan waktu/ronde; kaitan kembali ke target masih jelas.",
+    "source": {
+      "source_row": 4768,
+      "source_group": "64d79a9094a4447b77fd",
+      "teks_chat": "Vino bilang tidak mungkin dia kena Gag Order karena sedang mengetik, itu bukan pembelaan yang kuat; jangan biarkan Vino lolos",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 7,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "interruption",
+    "participants": [
+      "Lina",
+      "Bagas",
+      "Romi"
+    ],
+    "focus_player": "Romi",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Lina",
+        "teks_chat": "Romi terus menebak korban, aku curiga dia Hitman yang mengalihkan pembahasan.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Romi",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Romi",
+        "teks_chat": "Aku cuma mau mencari pola serangan malam, siapa tahu berguna.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Romi",
+            "relasi": "defend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Bagas",
+        "teks_chat": "Eh kawan-kawan, peringatan waktu nih, sisa 30 detik sebelum voting dimulai.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Lina",
+        "teks_chat": "Wah cepat sekali ronde ini.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Bagas",
+        "teks_chat": "Ayo kembali fokus, jangan buang-buang detik terakhir.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Lina",
+        "teks_chat": "Balik ke masalah tadi ya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Bagas",
+        "teks_chat": "Setuju, rasa ingin tahunya yang berlebihan itu membuktikan dia adalah pelakunya.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Romi",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 70.txt"
+  }
+}

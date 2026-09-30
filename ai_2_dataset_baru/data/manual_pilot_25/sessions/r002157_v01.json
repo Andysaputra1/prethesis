@@ -1,0 +1,184 @@
+{
+  "job": {
+    "job_id": "r002157_v01",
+    "case_name": "reference_middle",
+    "case_description": "Tepat 12 konteks. Penyebutan target eksplisit di pesan konteks ke-6 atau ke-7.",
+    "source": {
+      "source_row": 2157,
+      "source_group": "e751125f77e8ad809788",
+      "teks_chat": "gw berani claim di depan semua: aku Spy, bukan musuh kalian",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 13,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "reference_middle",
+    "participants": [
+      "Tio",
+      "Udin",
+      "Vera"
+    ],
+    "focus_player": "Tio",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Tio",
+        "teks_chat": "Halo semua.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Udin",
+        "teks_chat": "Baru muncul nih?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Vera",
+        "teks_chat": "Dari tadi pada ke mana aja?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Tio",
+        "teks_chat": "Ada kok, nyimak dari tadi.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Udin",
+        "teks_chat": "Nyimak doang tapi nggak bersuara, aneh.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Tio",
+            "relasi": "offend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Vera",
+        "teks_chat": "Iya, mencurigakan tuh si Tio.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Tio",
+            "relasi": "offend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Tio",
+        "teks_chat": "Bukan gitu, aku sambil makan tadi jadi belum bisa ngetik.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Tio",
+            "relasi": "defend",
+            "bukti_pesan": [
+              7
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Udin",
+        "teks_chat": "Alasan klasik buat nutupin kejahatan.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Tio",
+            "relasi": "offend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Vera",
+        "teks_chat": "Orang pasif kayak gini nih yang biasanya berbahaya.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Tio",
+            "relasi": "offend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Udin",
+        "teks_chat": "Langsung kita target dia aja yuk.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Tio",
+            "relasi": "offend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Vera",
+        "teks_chat": "Ayo, mumpung waktu masih ada.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Tio",
+            "relasi": "offend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Tio",
+        "teks_chat": "Tolong lah, aku beneran nggak ngelakuin apa-apa.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Tio",
+            "relasi": "defend",
+            "bukti_pesan": [
+              12
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Udin",
+        "teks_chat": "Aku tarik ajakan vote tadi. Dia belum terbukti Hitman hanya karena pendiam.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Tio",
+            "relasi": "defend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 35.txt"
+  }
+}

@@ -1,0 +1,216 @@
+{
+  "job": {
+    "job_id": "r000871_v01",
+    "case_name": "plural_reference",
+    "case_description": "Pesan sekarang memakai mereka/kalian/keduanya/berdua untuk dua pemain atau lebih yang jelas dari konteks, tanpa menyebut ulang nama mereka. Simpan semua pemain itu sebagai target.",
+    "source": {
+      "source_row": 871,
+      "source_group": "88cbaef4174b00e633af",
+      "teks_chat": "gw Civilian kok, telat baca chat bukan berarti lagi nyusun fitnah",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 10,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "plural_reference",
+    "participants": [
+      "Kiki",
+      "Lala",
+      "Maman",
+      "Nando",
+      "Opi"
+    ],
+    "focus_player": "",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Kiki",
+        "teks_chat": "Lala tadi mengajak vote lalu menariknya. Aku curiga Lala sedang mengarang alasan.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Lala",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Maman",
+        "teks_chat": "Sama persis kayak Nando, ucapannya beda-beda terus.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Nando",
+            "relasi": "offend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Opi",
+        "teks_chat": "Biasanya yang kayak gitu Hitman yang lagi koordinasi.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Lala",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          },
+          {
+            "pemain": "Nando",
+            "relasi": "offend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Lala",
+        "teks_chat": "Aku bukan Hitman, aku menarik ajakan itu karena alasan awalku belum kuat.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Lala",
+            "relasi": "defend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Nando",
+        "teks_chat": "Aku juga bukan Hitman. Aku membaca penjelasan baru lalu mengubah dugaan.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Nando",
+            "relasi": "defend",
+            "bukti_pesan": [
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Kiki",
+        "teks_chat": "Alasan klasik banget, kalian berdua pasti sekongkol.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Lala",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          },
+          {
+            "pemain": "Nando",
+            "relasi": "offend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Maman",
+        "teks_chat": "Kita vote mereka aja deh, bahaya kalau dibiarin.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Lala",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          },
+          {
+            "pemain": "Nando",
+            "relasi": "offend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Lala",
+        "teks_chat": "Tolong lah percaya sama aku, beneran deh aku civilian.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Lala",
+            "relasi": "defend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Nando",
+        "teks_chat": "Iya, jangan gampang curiga gitu sama temen sendiri.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Nando",
+            "relasi": "defend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Opi",
+        "teks_chat": "Aku membela mereka berdua. Mengubah dugaan setelah berpikir lagi belum membuktikan mereka Hitman.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Lala",
+            "relasi": "defend",
+            "bukti_pesan": [
+              8
+            ]
+          },
+          {
+            "pemain": "Nando",
+            "relasi": "defend",
+            "bukti_pesan": [
+              9
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 17.txt"
+  },
+  "revisi": [
+    {
+      "pesan": 3,
+      "kategori": "label",
+      "alasan": "Menyetujui tuduhan ke Lala & Nando ('yang kayak gitu Hitman') = offend"
+    },
+    {
+      "pesan": 7,
+      "kategori": "tidak_natural",
+      "alasan": "'kelayapan' janggal dalam konteks"
+    }
+  ]
+}

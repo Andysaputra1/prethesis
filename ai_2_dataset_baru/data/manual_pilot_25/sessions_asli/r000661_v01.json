@@ -1,0 +1,75 @@
+{
+  "job": {
+    "job_id": "r000661_v01",
+    "case_name": "witness",
+    "case_description": "Nama saksi/korban disebut, tetapi bukan target serangan atau pembelaan.",
+    "source": {
+      "source_row": 661,
+      "source_group": "5c6d8db438a8d98af8ff",
+      "teks_chat": "percaya atau tidak, aku siap buka semua alasan pilihanku supaya kita tidak salah eksekusi",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 4,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "witness",
+    "participants": [
+      "Gani",
+      "Hasan",
+      "Intan",
+      "Joko"
+    ],
+    "focus_player": "Intan",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Gani",
+        "teks_chat": "Intan tadi menarik ajakan vote di chat, ya?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Hasan",
+        "teks_chat": "Pasti Intan mau menyelamatkan temannya sesama Hitman yang lagi terpojok.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Intan",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Joko",
+        "teks_chat": "Aku membaca Intan bilang alasan votenya belum kuat, jadi dia menarik ajakannya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Gani",
+        "teks_chat": "Dari pengamatan Joko soal chat tadi, Intan belum pantas dituduh. Dia mengoreksi dugaan, bukan terbukti mengatur suara.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Intan",
+            "relasi": "defend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 12.txt"
+  }
+}

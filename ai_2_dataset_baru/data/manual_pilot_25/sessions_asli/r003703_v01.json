@@ -1,0 +1,167 @@
+{
+  "job": {
+    "job_id": "r003703_v01",
+    "case_name": "quotation",
+    "case_description": "Ada tuduhan yang dikutip; bedakan sikap pengirim dari ucapan orang yang dikutip.",
+    "source": {
+      "source_row": 3703,
+      "source_group": "dfc8b20604e04ca03e59",
+      "teks_chat": "aku bukan Hitman, role-ku Spy dan target guard-ku semalam adalah Sari",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 10,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "quotation",
+    "participants": [
+      "Soni",
+      "Tika",
+      "Umar",
+      "Vina"
+    ],
+    "focus_player": "Umar",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Soni",
+        "teks_chat": "Mari kita pilih Umar sekarang juga.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Umar",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Tika",
+        "teks_chat": "Soni, jangan vote Umar tanpa bukti.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Umar",
+            "relasi": "defend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Umar",
+        "teks_chat": "Soni sangat mencurigakan, dia pasti Hitman yang sedang panik.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Soni",
+            "relasi": "offend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Soni",
+        "teks_chat": "Aku hanya mengikuti insting, Umar berdiam diri terlalu lama.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Umar",
+            "relasi": "offend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Vina",
+        "teks_chat": "Insting Soni belum cukup untuk menuduh Umar.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Umar",
+            "relasi": "defend",
+            "bukti_pesan": [
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Tika",
+        "teks_chat": "Kita tidak boleh membuang suara dengan sia-sia.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Umar",
+        "teks_chat": "Soni terus memaksakan kehendak, mari kita singkirkan dia.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Soni",
+            "relasi": "offend",
+            "bukti_pesan": [
+              7
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Soni",
+        "teks_chat": "Kalian semua sudah termakan tipu daya Umar.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Umar",
+            "relasi": "offend",
+            "bukti_pesan": [
+              8
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Vina",
+        "teks_chat": "Aku curiga Soni Hitman karena memaksa vote tanpa alasan.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Soni",
+            "relasi": "offend",
+            "bukti_pesan": [
+              9
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Tika",
+        "teks_chat": "Tadi Soni berkata \"Mari kita pilih Umar\", tetapi aku rasa Umar sama sekali tidak mencurigakan.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Umar",
+            "relasi": "defend",
+            "bukti_pesan": [
+              10
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 57.txt"
+  }
+}

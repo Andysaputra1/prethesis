@@ -1,0 +1,74 @@
+{
+  "job": {
+    "job_id": "r000445_v01",
+    "case_name": "second_person",
+    "case_description": "Kamu/lu: gunakan pergantian pembicara dan teks yang jelas. Tanpa acuan jelas, target tidak_diketahui.",
+    "source": {
+      "source_row": 445,
+      "source_group": "c0d907f2de57ffa856ce",
+      "teks_chat": "lu bilang gw defensif, ya jelas karena tuduhan kalian ngawur",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 4,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "second_person",
+    "participants": [
+      "Aldo",
+      "Beni",
+      "Cika"
+    ],
+    "focus_player": "Aldo",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Aldo",
+        "teks_chat": "Aku mengaku Spy dan memilih Guard untuk Beni semalam.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Cika",
+        "teks_chat": "Aku curiga Aldo memakai klaim Spy palsu supaya aman dari vote.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Aldo",
+            "relasi": "offend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Beni",
+        "teks_chat": "Aku tidak bisa memastikan klaim Guard dari Aldo, tetapi belum ada kontradiksi dalam ceritanya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Beni",
+        "teks_chat": "Aldo, aku membela kamu. Klaim yang belum terbukti bukan berarti kamu Hitman.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Aldo",
+            "relasi": "defend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 6.txt"
+  }
+}

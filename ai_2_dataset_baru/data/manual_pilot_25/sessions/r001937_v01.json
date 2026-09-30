@@ -1,0 +1,197 @@
+{
+  "job": {
+    "job_id": "r001937_v01",
+    "case_name": "outside_window_unknown",
+    "case_description": "14-16 pesan total. Pembahasan lama telah putus/beralih. Teks dan anotasi 12 konteks terakhir tidak cukup menentukan acuan sekarang. Target harus tidak_diketahui; jangan menggunakan informasi lama yang tidak tersedia dalam input.",
+    "source": {
+      "source_row": 1937,
+      "source_group": "36fdfafa5f831dba3a3d",
+      "teks_chat": "menurut gw Arman sengaja bikin diskusi berantakan supaya targetnya lolos, kita eksekusi Arman",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 14,
+    "pesan_typo_ringan": [
+      5
+    ]
+  },
+  "session": {
+    "case_name": "outside_window_unknown",
+    "participants": [
+      "Nina",
+      "Oka",
+      "Putri",
+      "Rian"
+    ],
+    "focus_player": "Nina",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Oka",
+        "teks_chat": "Nina mengganti klaim role tanpa penjelasan. Aku curiga Nina Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Nina",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Putri",
+        "teks_chat": "Kita berhenti bahas nama sebentar. Ada yang mau klaim Stalker?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Rian",
+        "teks_chat": "Aku bukan Stalker, semalam nggak dapat info apa-apa.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Oka",
+        "teks_chat": "Aku juga bukan. Berarti Stalker-nya belum mau muncul.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Putri",
+        "teks_chat": "Mungkin dia blm berani ngaku, takut jadi incaran.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Rian",
+        "teks_chat": "Masuk akal sih, mending nunggu punya hasil yang jelas dulu.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Oka",
+        "teks_chat": "Tapi kalau kelamaan, keburu disandera duluan.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Putri",
+        "teks_chat": "Iya, itu juga risikonya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Rian",
+        "teks_chat": "Ya udah, kita tunggu aja sampai dia siap.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Oka",
+        "teks_chat": "Oke, jangan dipaksa dulu.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Putri",
+        "teks_chat": "Nanti kalau ada yang klaim, kita cek ceritanya konsisten atau nggak.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Rian",
+        "teks_chat": "Setuju, kita cocokin sama klaim-klaim sebelumnya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Oka",
+        "teks_chat": "Sekarang balik lagi ke orang yang kita bahas paling awal tadi.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Putri",
+        "teks_chat": "Aku curiga dia Hitman karena mengganti klaim tanpa memberi alasan. Aku ingin vote dia.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "tidak_diketahui",
+            "relasi": "offend",
+            "bukti_pesan": []
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 32.txt"
+  },
+  "revisi": [
+    {
+      "pesan": 2,
+      "kategori": "meta",
+      "alasan": "Menanyakan siapa yang bisa memakai Peek."
+    },
+    {
+      "pesan": 3,
+      "kategori": "meta",
+      "alasan": "Menjelaskan Peek milik Stalker."
+    },
+    {
+      "pesan": 4,
+      "kategori": "meta",
+      "alasan": "Menanyakan cara memilih sasaran Peek."
+    },
+    {
+      "pesan": 5,
+      "kategori": "meta",
+      "alasan": "Menjelaskan aturan Peek; slot typo [5] juga belum ada."
+    },
+    {
+      "pesan": 6,
+      "kategori": "meta",
+      "alasan": "Menjelaskan sasaran Peek."
+    },
+    {
+      "pesan": 7,
+      "kategori": "meta",
+      "alasan": "Menjelaskan hasil Peek."
+    },
+    {
+      "pesan": 8,
+      "kategori": "meta",
+      "alasan": "Menjelaskan hasil Peek."
+    },
+    {
+      "pesan": 9,
+      "kategori": "meta",
+      "alasan": "Menanyakan frekuensi skill."
+    },
+    {
+      "pesan": 10,
+      "kategori": "meta",
+      "alasan": "Menjelaskan cooldown Peek."
+    },
+    {
+      "pesan": 11,
+      "kategori": "meta",
+      "alasan": "Menyimpulkan dari batasan skill."
+    },
+    {
+      "pesan": 12,
+      "kategori": "meta",
+      "alasan": "Mencocokkan dengan batasan skill."
+    },
+    {
+      "pesan": 13,
+      "kategori": "tidak_natural",
+      "alasan": "Merujuk 'pertanyaan Peek'; disesuaikan dengan konteks baru."
+    }
+  ]
+}

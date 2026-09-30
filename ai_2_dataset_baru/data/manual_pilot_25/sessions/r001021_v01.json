@@ -1,0 +1,82 @@
+{
+  "job": {
+    "job_id": "r001021_v01",
+    "case_name": "stance_change",
+    "case_description": "Pengirim pesan sekarang sebelumnya menuduh atau membela seorang pemain di konteks, lalu berubah sikap terhadap pemain yang sama. Anotasi mengikuti sikap terbaru.",
+    "source": {
+      "source_row": 1021,
+      "source_group": "e0b2ec4315c447b97991",
+      "teks_chat": "fix role-ku Stalker, bukan Hitman. Ikut analisis aku dan kita bisa bersihin mereka satu-satu",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 4,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "stance_change",
+    "participants": [
+      "Eka",
+      "Fani",
+      "Gita"
+    ],
+    "focus_player": "Fani",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Eka",
+        "teks_chat": "Kalian percaya sama klaim Stalkernya Fani? Menurutku laporannya itu ngarang doang.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Fani",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Fani",
+        "teks_chat": "Aku beneran Stalker kok, masa aku ngarang hasil Peek-nya.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Fani",
+            "relasi": "defend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Gita",
+        "teks_chat": "Iya sih, agak susah dipercaya kalau cuma omongan aja.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Eka",
+        "teks_chat": "Aku tarik tuduhanku pada Fani. Belum ada kontradiksi yang kutunjukkan; aku terlalu cepat menganggap klaimnya palsu.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Fani",
+            "relasi": "defend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 20.txt"
+  }
+}

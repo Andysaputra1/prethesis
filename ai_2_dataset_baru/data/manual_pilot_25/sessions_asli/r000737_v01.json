@@ -1,0 +1,99 @@
+{
+  "job": {
+    "job_id": "r000737_v01",
+    "case_name": "interruption",
+    "case_description": "Pembahasan target disela obrolan waktu/ronde; kaitan kembali ke target masih jelas.",
+    "source": {
+      "source_row": 737,
+      "source_group": "dc31a89d47844dea66c0",
+      "teks_chat": "kalau kalian eksekusi aku, kalian kehilangan Spy yang bisa lindungi target malam ini",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 8,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "interruption",
+    "participants": [
+      "Eka",
+      "Fahmi",
+      "Gita",
+      "Hana"
+    ],
+    "focus_player": "Fahmi",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Eka",
+        "teks_chat": "Udah ada yang berani buka suara soal hasil Peek-nya belom nih?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Fahmi",
+        "teks_chat": "Kayaknya pada takut kena incer Hitman nanti malem kalau langsung ngaku Stalker.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Gita",
+        "teks_chat": "Aku curiga Fahmi Hitman yang sengaja membuat orang lain takut berbagi klaim.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Fahmi",
+            "relasi": "offend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Hana",
+        "teks_chat": "Eh by the way, sisa waktu buat diskusi ini brapa menit lagi ya?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Eka",
+        "teks_chat": "Di layarku sih sisa sekitar 3 menitan lagi, harus cepet nih.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Fahmi",
+        "teks_chat": "Wah mepet banget waktunya buat mikir mateng-mateng.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Hana",
+        "teks_chat": "Iya makanya jangan kelamaan buang waktu bahas yg ngga penting.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Fahmi",
+        "teks_chat": "Kembali ke tuduhan tadi, aku bukan Hitman. Aku hanya menyebut risiko membagikan klaim, bukan melarang diskusi.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Fahmi",
+            "relasi": "defend",
+            "bukti_pesan": [
+              8
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 15.txt"
+  }
+}

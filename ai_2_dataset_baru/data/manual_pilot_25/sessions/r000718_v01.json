@@ -1,0 +1,138 @@
+{
+  "job": {
+    "job_id": "r000718_v01",
+    "case_name": "explicit",
+    "case_description": "Target eksplisit di pesan sekarang. Contoh: Aku yakin bukan Andy = defend Andy.",
+    "source": {
+      "source_row": 718,
+      "source_group": "026df223659c62131580",
+      "teks_chat": "aku memakai Guard semalam, bukan Hostage, karena dua kemampuan itu berbeda",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 13,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "explicit",
+    "participants": [
+      "Oki",
+      "Puji",
+      "Rama",
+      "Sinta",
+      "Tito"
+    ],
+    "focus_player": "Tito",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Oki",
+        "teks_chat": "Diskusi kita daritadi ngga ada arahnya yang jelas nih.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Puji",
+        "teks_chat": "Iya, banyak yang diem aja ngga mau ngeluarin info.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Rama",
+        "teks_chat": "Waktu vote kita sisa dikit lagi, kita harus gerak cepet.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Sinta",
+        "teks_chat": "Tadi ada yang tiba-tiba nyuruh kita kumpulin suara padahal ga ada buktinya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Oki",
+        "teks_chat": "Siapa tuh yang berani main tuduh asal-asalan gitu?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Puji",
+        "teks_chat": "Aku rasa itu cara kotor buat ngalihin perhatian kita dari pelaku aslinya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Rama",
+        "teks_chat": "Bener banget, kita nggak boleh kepancing sama trik kayak gitu.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Sinta",
+        "teks_chat": "Kalian ingat nggak, Tito kan tadi yang teriak-teriak ngajakin vote?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Oki",
+        "teks_chat": "Aku curiga dia Hitman karena mengajak vote tanpa alasan.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Tito",
+            "relasi": "offend",
+            "bukti_pesan": [
+              8
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Tito",
+        "teks_chat": "Aku cuma panik doang makanya pengen cepet-cepet kelar, bukan pelakunya.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Tito",
+            "relasi": "defend",
+            "bukti_pesan": [
+              8
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Puji",
+        "teks_chat": "Tapi tetep aja ajakan tanpa dasar itu ngerugiin kita.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Rama",
+        "teks_chat": "Gimana menurut kalian, mau lanjutin interogasi atau langsung vote?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Sinta",
+        "teks_chat": "Aku yakin bukan Tito pelakunya, dia cuma civilian yang mainnya terlalu grasa-grusu karena bingung.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Tito",
+            "relasi": "defend",
+            "bukti_pesan": [
+              8
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 14.txt"
+  }
+}

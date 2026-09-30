@@ -1,0 +1,149 @@
+{
+  "job": {
+    "job_id": "r004414_v01",
+    "case_name": "ambiguous",
+    "case_description": "Beberapa acuan sama-sama mungkin; target tidak_diketahui, bukan nama terakhir.",
+    "source": {
+      "source_row": 4414,
+      "source_group": "4d9f0f8106b8d3895442",
+      "teks_chat": "jangan percaya suara terbanyak dulu, mayoritas juga bisa diarahkan Hitman, lihat siapa yang mulai narasinya",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 13,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "ambiguous",
+    "participants": [
+      "Lina",
+      "Reza",
+      "Toni",
+      "Ari"
+    ],
+    "focus_player": "",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Lina",
+        "teks_chat": "Ajakan vote di chat berubah-ubah tadi.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Reza",
+        "teks_chat": "Iya, beberapa ajakan berubah di akhir diskusi.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Toni",
+        "teks_chat": "Kita cari alasan perubahannya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Ari",
+        "teks_chat": "Siapa yang mengubah ajakan vote tadi?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Lina",
+        "teks_chat": "Aku belum perhatikan secara rinci.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Reza",
+        "teks_chat": "Aku mau membaca pesan yang tepat dulu.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Toni",
+        "teks_chat": "Aku juga belum mau menyimpulkan tanpa membaca alasannya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Ari",
+        "teks_chat": "Kalian harus bantu mengingat siapa saja nama-namanya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Lina",
+        "teks_chat": "Aku baca ulang chat sebentar.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Reza",
+        "teks_chat": "Cepat beritahu kami jika sudah ketemu.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Lina",
+        "teks_chat": "Toni dan Ari mengubah ajakan tanpa alasan jelas. Aku curiga mereka Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Toni",
+            "relasi": "offend",
+            "bukti_pesan": [
+              11
+            ]
+          },
+          {
+            "pemain": "Ari",
+            "relasi": "offend",
+            "bukti_pesan": [
+              11
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Reza",
+        "teks_chat": "Wah iya bener banget, dua orang itu mencurigakan.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Toni",
+            "relasi": "offend",
+            "bukti_pesan": [
+              11
+            ]
+          },
+          {
+            "pemain": "Ari",
+            "relasi": "offend",
+            "bukti_pesan": [
+              11
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Lina",
+        "teks_chat": "Dia emang licik banget, pasti pelakunya dan harus kita hilangkan hari ini.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "tidak_diketahui",
+            "relasi": "offend",
+            "bukti_pesan": []
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 66.txt"
+  }
+}

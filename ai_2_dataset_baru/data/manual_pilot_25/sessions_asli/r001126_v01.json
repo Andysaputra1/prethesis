@@ -1,0 +1,83 @@
+{
+  "job": {
+    "job_id": "r001126_v01",
+    "case_name": "short_history_3",
+    "case_description": "Awal diskusi dengan tepat 3 pesan sebelumnya. Acuan tidak harus berada di pesan terakhir.",
+    "source": {
+      "source_row": 1126,
+      "source_group": "16062854be0d6101e5d6",
+      "teks_chat": "Kalau ada yang bilang aku pelaku, dasar informasinya dari siapa dan dia Peek siapa?",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 4,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "short_history_3",
+    "participants": [
+      "Oki",
+      "Puput",
+      "Qori",
+      "Rafa"
+    ],
+    "focus_player": "Qori",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Oki",
+        "teks_chat": "Ada yang sadar ngga semalam korbannya disandera dan nggak ada pengumuman namanya?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Puput",
+        "teks_chat": "Qori dari tadi kalem banget, pasti dia Hitman Hostage-nya!",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Qori",
+            "relasi": "offend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Qori",
+        "teks_chat": "Aku kalem karena emang lagi nyimak diskusi kalian.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Qori",
+            "relasi": "defend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Rafa",
+        "teks_chat": "Setuju sama Qori, dia emang civilian biasa yang lagi mantau situasi, nggak ada hubungannya sama korban yang disembunyiin.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Qori",
+            "relasi": "defend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 22.txt"
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "job": {
+    "job_id": "r002145_v01",
+    "case_name": "first_message_self",
+    "case_description": "Pesan pertama tanpa konteks membela atau menuduh diri sendiri. Target = pengirim; tidak perlu riwayat untuk memahami aku.",
+    "source": {
+      "source_row": 2145,
+      "source_group": "2dce81907a440744478c",
+      "teks_chat": "gw Spy, bukan orang yang kalian cari. Tolong bedain klaim sama asumsi",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 1,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "first_message_self",
+    "participants": [
+      "Iwan",
+      "Kaka"
+    ],
+    "focus_player": "Iwan",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Iwan",
+        "teks_chat": "Sebelum kalian menuduh, aku bukan Hitman. Jangan vote aku tanpa bukti.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Iwan",
+            "relasi": "defend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 35.txt"
+  }
+}

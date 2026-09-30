@@ -1,0 +1,61 @@
+{
+  "job": {
+    "job_id": "r001667_v01",
+    "case_name": "stance_change",
+    "case_description": "Pengirim pesan sekarang sebelumnya menuduh atau membela seorang pemain di konteks, lalu berubah sikap terhadap pemain yang sama. Anotasi mengikuti sikap terbaru.",
+    "source": {
+      "source_row": 1667,
+      "source_group": "ec1e1c5b28b16612f5d6",
+      "teks_chat": "gw nggak akan pindah target, menurutku Jovan tetap Hitman dan tuduhan ke aku cuma pengalihan",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 2,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "stance_change",
+    "participants": [
+      "Bagus",
+      "Cindy"
+    ],
+    "focus_player": "Cindy",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Bagus",
+        "teks_chat": "Cindy belum pantas dituduh hanya karena diam. Mungkin ada masalah koneksi atau urusan lain.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Cindy",
+            "relasi": "defend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Bagus",
+        "teks_chat": "Eh tapi setelah aku pikir-pikir, diamnya Cindy terlalu lama, fix dia hitmannya yang lagi sembunyi!",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Cindy",
+            "relasi": "offend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 29.txt"
+  }
+}

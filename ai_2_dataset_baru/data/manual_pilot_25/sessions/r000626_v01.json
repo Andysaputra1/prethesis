@@ -1,0 +1,113 @@
+{
+  "job": {
+    "job_id": "r000626_v01",
+    "case_name": "topic_switch",
+    "case_description": "Pembahasan berganti pemain; pesan sekarang mengikuti topik baru, bukan otomatis target lama.",
+    "source": {
+      "source_row": 626,
+      "source_group": "b219756bf468d4f2f8fe",
+      "teks_chat": "gw diem bukan karena sus, tapi karena lagi nyusun siapa yang paling mungkin bohong",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 5,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "topic_switch",
+    "participants": [
+      "Aldo",
+      "Bima",
+      "Citra",
+      "Dodi",
+      "Erna"
+    ],
+    "focus_player": "Bima",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Aldo",
+        "teks_chat": "Aku curiga Erna Hitman karena belum ikut berdiskusi.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Erna",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Citra",
+        "teks_chat": "Erna belum tentu pelakunya, kita belum tahu penyebab diamnya.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Erna",
+            "relasi": "defend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Dodi",
+        "teks_chat": "Iya, diam doang belum bisa jadi bukti dia Hitman.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Erna",
+            "relasi": "defend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Aldo",
+        "teks_chat": "Sekarang aku justru curiga Bima karena tiba-tiba menarik ajakan votenya.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Bima",
+            "relasi": "offend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Erna",
+        "teks_chat": "Dia belum pantas dituduh hanya karena menarik ajakan vote. Bisa saja dia ragu dengan alasan awalnya.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Bima",
+            "relasi": "defend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 11.txt"
+  },
+  "revisi": [
+    {
+      "pesan": 3,
+      "kategori": "label",
+      "alasan": "Setuju dengan pembelaan Citra untuk Erna = defend; teks kaku/meta ('memastikan korban Hostage atau role')"
+    }
+  ]
+}

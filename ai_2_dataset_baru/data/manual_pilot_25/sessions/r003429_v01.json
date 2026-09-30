@@ -1,0 +1,188 @@
+{
+  "job": {
+    "job_id": "r003429_v01",
+    "case_name": "self",
+    "case_description": "Defend diri sendiri atau offend/vote diri sendiri sesuai label. Target = pengirim.",
+    "source": {
+      "source_row": 3429,
+      "source_group": "248b57a1746966fe4f87",
+      "teks_chat": "fix bukan gue pelakunya, semalam gue cuma nunggu fase pagi",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 12,
+    "pesan_typo_ringan": [
+      6
+    ]
+  },
+  "session": {
+    "case_name": "self",
+    "participants": [
+      "Lani",
+      "Maya",
+      "Niko",
+      "Ojan"
+    ],
+    "focus_player": "Niko",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Lani",
+        "teks_chat": "Ada yang ingin membagikan hasil Peek semalam?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Maya",
+        "teks_chat": "Niko sebelumnya mengaku Stalker, kita bisa bertanya kepadanya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Niko",
+        "teks_chat": "Aku klaim Stalker, semalam aku Peek Maya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Ojan",
+        "teks_chat": "Tadi kamu bilang Peek Lani. Aku curiga Niko Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Niko",
+            "relasi": "offend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Lani",
+        "teks_chat": "Aku juga curiga dia mengarang hasil sebagai Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Niko",
+            "relasi": "offend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Niko",
+        "teks_chat": "Aku bukan Hitman, td salah menyebut target.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Niko",
+            "relasi": "defend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Maya",
+        "teks_chat": "Aku tetap curiga kamu Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Niko",
+            "relasi": "offend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Ojan",
+        "teks_chat": "Aku mendukung tuduhan itu.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Niko",
+            "relasi": "offend",
+            "bukti_pesan": [
+              7
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Lani",
+        "teks_chat": "Vote dia saja.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Niko",
+            "relasi": "offend",
+            "bukti_pesan": [
+              8
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Maya",
+        "teks_chat": "Aku setuju vote dia.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Niko",
+            "relasi": "offend",
+            "bukti_pesan": [
+              9
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Ojan",
+        "teks_chat": "Aku yakin dia Hitman yang mengarang.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Niko",
+            "relasi": "offend",
+            "bukti_pesan": [
+              10
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Niko",
+        "teks_chat": "Aku bukan Hitman. Aku membetulkan nama target, bukan mengarang role.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Niko",
+            "relasi": "defend",
+            "bukti_pesan": [
+              12
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 52.txt"
+  },
+  "revisi": [
+    {
+      "pesan": 6,
+      "kategori": "singkatan",
+      "alasan": "Slot typo [6] tidak berisi singkatan."
+    }
+  ]
+}

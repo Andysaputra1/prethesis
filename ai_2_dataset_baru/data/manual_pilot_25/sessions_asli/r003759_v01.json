@@ -1,0 +1,111 @@
+{
+  "job": {
+    "job_id": "r003759_v01",
+    "case_name": "neutral_after_accusation",
+    "case_description": "Konteks berisi tuduhan, tetapi pesan sekarang neutral; jangan mewarisi relasi lama.",
+    "source": {
+      "source_row": 3759,
+      "source_group": "3a2eee1a66f0be1482f8",
+      "teks_chat": "sumpah gw Civilian biasa, tapi kita bisa saling backup pas tribunal",
+      "label_intent": "neutral"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 6,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "neutral_after_accusation",
+    "participants": [
+      "Andi",
+      "Budi",
+      "Caca",
+      "Doni"
+    ],
+    "focus_player": "",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Andi",
+        "teks_chat": "Caca diam terus, aku curiga dia Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Caca",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Budi",
+        "teks_chat": "Iya, jangan-jangan dia Hitman yang lagi sembunyi.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Caca",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Caca",
+        "teks_chat": "Aku bukan Hitman, tadi belum sempat membalas.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Caca",
+            "relasi": "defend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Andi",
+        "teks_chat": "Alasan doang lu, pasti bohong.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Caca",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Budi",
+        "teks_chat": "Udah vote aja Caca biar cepat selesai.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Caca",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Doni",
+        "teks_chat": "Eh, emang efek Gag Order itu bisa bikin orang gak bisa ngetik sama sekali ya?",
+        "label_intent": "neutral",
+        "target": []
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 59.txt"
+  }
+}

@@ -1,0 +1,131 @@
+{
+  "job": {
+    "job_id": "r000809_v01",
+    "case_name": "witness",
+    "case_description": "Nama saksi/korban disebut, tetapi bukan target serangan atau pembelaan.",
+    "source": {
+      "source_row": 809,
+      "source_group": "ac0ce11ec66afd7f4023",
+      "teks_chat": "lu nuduh gw karena gw bantah terus, padahal gw stalker yang lagi jagain info",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 8,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "witness",
+    "participants": [
+      "Dian",
+      "Erwin",
+      "Fara",
+      "Gilang"
+    ],
+    "focus_player": "Fara",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Dian",
+        "teks_chat": "Erwin belum membalas pertanyaan sejak tadi, ya?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Fara",
+        "teks_chat": "Penyebab diamnya belum jelas. Bisa saja dia tidak bisa mengetik, jadi jangan langsung menuduh.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Gilang",
+        "teks_chat": "Ah masa? Fara pasti lagi kerja sama sama Erwin buat ngebohongin kita, vote Fara!",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Fara",
+            "relasi": "offend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Fara",
+        "teks_chat": "Nggak lah, aku cuma baca sikon doang, sumpah aku civilian.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Fara",
+            "relasi": "defend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Dian",
+        "teks_chat": "Gilang, jangan asal nuduh Fara gitu, dia kan cuma beropini soal kondisi Erwin.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Fara",
+            "relasi": "defend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Gilang",
+        "teks_chat": "Biasanya orang yang cepet-cepet kasihan itu temen satu timnya Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Fara",
+            "relasi": "offend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Fara",
+        "teks_chat": "Ya ampun, logika darimana coba itu? Aku beneran nggak tau apa-apa.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Fara",
+            "relasi": "defend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Dian",
+        "teks_chat": "Aku setuju sama Fara, tebakanmu itu terlalu maksa Gilang, aku yakin Fara bukan pelakunya.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Fara",
+            "relasi": "defend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 16.txt"
+  }
+}

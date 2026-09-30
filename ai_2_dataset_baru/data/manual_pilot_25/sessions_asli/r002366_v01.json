@@ -1,0 +1,88 @@
+{
+  "job": {
+    "job_id": "r002366_v01",
+    "case_name": "negation",
+    "case_description": "Negasi menentukan relasi: Andy Hitman berbeda dari Andy bukan Hitman.",
+    "source": {
+      "source_row": 2366,
+      "source_group": "389feeb59b2fabc97076",
+      "teks_chat": "gw bukan Hitman, aku Civilian yang bakal ikut keputusan mayoritas",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 5,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "negation",
+    "participants": [
+      "Bobi",
+      "Citra",
+      "Deni"
+    ],
+    "focus_player": "Deni",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Bobi",
+        "teks_chat": "Deni, kamu mau menyampaikan klaim role?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Deni",
+        "teks_chat": "Aku klaim Civilian.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Citra",
+        "teks_chat": "Aku curiga Deni Hitman yang mengaku Civilian.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Deni",
+            "relasi": "offend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Bobi",
+        "teks_chat": "Aku juga curiga Deni pelakunya.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Deni",
+            "relasi": "offend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Deni",
+        "teks_chat": "Aku bukan Hitman, jangan anggap klaim Civilian sebagai bukti aku pelakunya!",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Deni",
+            "relasi": "defend",
+            "bukti_pesan": [
+              5
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 38.txt"
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "job": {
+    "job_id": "r002152_v01",
+    "case_name": "rhetorical_question",
+    "case_description": "Pesan sekarang berbentuk pertanyaan retoris yang sebenarnya menuduh atau membela, misalnya 'kenapa Andy diam terus?' (offend) atau 'masa sih Andy Hitman?' (defend). Bukan pertanyaan informasi.",
+    "source": {
+      "source_row": 2152,
+      "source_group": "5d775401eabad5ff827a",
+      "teks_chat": "lu boleh curiga, tapi gw Stalker dan punya alasan kenapa belum buka info",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 7,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "rhetorical_question",
+    "participants": [
+      "Maman",
+      "Nia",
+      "Opan"
+    ],
+    "focus_player": "Nia",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Maman",
+        "teks_chat": "Nia baru membalas setelah jeda cukup lama.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Opan",
+        "teks_chat": "Nia pasti Hitman yang sengaja menghindari pertanyaan.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Nia",
+            "relasi": "offend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Nia",
+        "teks_chat": "Maaf, koneksiku tadi putus.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Maman",
+        "teks_chat": "Sekarang pesanmu sudah masuk.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Opan",
+        "teks_chat": "Aku tetap curiga dia Hitman, alasan koneksi itu bisa dibuat-buat.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Nia",
+            "relasi": "offend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Nia",
+        "teks_chat": "Aku bukan Hitman, jeda balasanku bukan bukti.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Nia",
+            "relasi": "defend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Maman",
+        "teks_chat": "Masa dia dianggap Hitman cuma karena telat membalas chat?",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Nia",
+            "relasi": "defend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 35.txt"
+  }
+}

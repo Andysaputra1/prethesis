@@ -1,0 +1,75 @@
+{
+  "job": {
+    "job_id": "r000609_v01",
+    "case_name": "short_history_3",
+    "case_description": "Awal diskusi dengan tepat 3 pesan sebelumnya. Acuan tidak harus berada di pesan terakhir.",
+    "source": {
+      "source_row": 609,
+      "source_group": "613186d4edbdeda2456b",
+      "teks_chat": "fix bukan gw, Stalker seharusnya bisa cek identitas gw kalau cooldown-nya sudah siap",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 4,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "short_history_3",
+    "participants": [
+      "Galih",
+      "Hasan",
+      "Imam",
+      "Joko"
+    ],
+    "focus_player": "Hasan",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Galih",
+        "teks_chat": "Ajakan vote di diskusi tadi berubah-ubah terus.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Imam",
+        "teks_chat": "Hasan tadi yang pertama menarik ajakan votenya di chat.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Joko",
+        "teks_chat": "Itu udah jadi bukti jelas kalau Hasan adalah Hitman yang mau ngelindungin temennya, vote Hasan aja!",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Hasan",
+            "relasi": "offend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Hasan",
+        "teks_chat": "Aku cuma ganti pikiran doang gara-gara tadi baru dikasih tau info baru, bukan karena aku Hitman kok.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Hasan",
+            "relasi": "defend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 11.txt"
+  }
+}

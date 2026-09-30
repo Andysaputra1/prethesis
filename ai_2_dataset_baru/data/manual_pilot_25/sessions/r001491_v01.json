@@ -1,0 +1,90 @@
+{
+  "job": {
+    "job_id": "r001491_v01",
+    "case_name": "short_history_2",
+    "case_description": "Awal diskusi dengan tepat 2 pesan sebelumnya. Gunakan hanya petunjuk yang tersedia.",
+    "source": {
+      "source_row": 1491,
+      "source_group": "02c7140173420a7e5739",
+      "teks_chat": "kalau memang ada bukti lawan gw, keluarkan; kalau tidak, kita pindahkan fokus ke si Wira",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 3,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "short_history_2",
+    "participants": [
+      "Andi",
+      "Budi",
+      "Coki"
+    ],
+    "focus_player": "Andi",
+    "panggilan": [
+      {
+        "pemain": "Andi",
+        "sebutan": [
+          "Ndi"
+        ]
+      }
+    ],
+    "messages": [
+      {
+        "pengirim": "Andi",
+        "teks_chat": "Gw curiga si Budi nih pelakunya, dari tadi pasif.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Budi",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Andi",
+        "teks_chat": "Aku tarik tuduhanku pada Budi, alasannya belum kuat. Sekarang aku curiga Coki karena tidak menjawab pertanyaan.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Budi",
+            "relasi": "defend",
+            "bukti_pesan": [
+              2
+            ]
+          },
+          {
+            "pemain": "Coki",
+            "relasi": "offend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Budi",
+        "teks_chat": "Lu dari tadi nuduhnya berubah-ubah mulu, fix lu pelakunya Ndi!",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Andi",
+            "relasi": "offend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 27.txt"
+  }
+}

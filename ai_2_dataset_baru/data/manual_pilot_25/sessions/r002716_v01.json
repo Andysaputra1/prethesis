@@ -1,0 +1,115 @@
+{
+  "job": {
+    "job_id": "r002716_v01",
+    "case_name": "quotation",
+    "case_description": "Ada tuduhan yang dikutip; bedakan sikap pengirim dari ucapan orang yang dikutip.",
+    "source": {
+      "source_row": 2716,
+      "source_group": "43365c6b4c30151bdd65",
+      "teks_chat": "kaget juga lihat hasil tribunal barusan",
+      "label_intent": "neutral"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 7,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "quotation",
+    "participants": [
+      "Zara",
+      "Arif",
+      "Bayu"
+    ],
+    "focus_player": "",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Zara",
+        "teks_chat": "Arif terlalu cepat mengajak vote, aku curiga dia Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Arif",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Arif",
+        "teks_chat": "Aku bukan Hitman. Aku baru mengusulkan nama untuk dibahas.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Arif",
+            "relasi": "defend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Bayu",
+        "teks_chat": "Kita perlu mendengar alasan setiap usulan.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Zara",
+        "teks_chat": "Aku masih ingin vote Arif.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Arif",
+            "relasi": "offend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Arif",
+        "teks_chat": "Jangan vote aku tanpa alasan kuat.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Arif",
+            "relasi": "defend",
+            "bukti_pesan": [
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Bayu",
+        "teks_chat": "Aku sedang mencatat siapa yang mengusulkan vote.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Bayu",
+        "teks_chat": "Zara bilang 'aku masih ingin vote Arif'. Aku cuma nyatet itu ya, aku sendiri belum nentuin pilihan.",
+        "label_intent": "neutral",
+        "target": []
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 80.txt"
+  },
+  "revisi": [
+    {
+      "pesan": 7,
+      "kategori": "tidak_natural",
+      "alasan": "Kaku ('Itu ajakan yang kutemukan dalam chat, belum keputusan pilihanku')."
+    }
+  ]
+}

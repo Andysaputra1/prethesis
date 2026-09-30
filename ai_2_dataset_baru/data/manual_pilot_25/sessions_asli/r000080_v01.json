@@ -1,0 +1,132 @@
+{
+  "job": {
+    "job_id": "r000080_v01",
+    "case_name": "stance_change",
+    "case_description": "Pengirim pesan sekarang sebelumnya menuduh atau membela seorang pemain di konteks, lalu berubah sikap terhadap pemain yang sama. Anotasi mengikuti sikap terbaru.",
+    "source": {
+      "source_row": 80,
+      "source_group": "a4260f207ed9637927fa",
+      "teks_chat": "Gag Order itu bukan bukti gw, malah Hendra yang paling diuntungkan karena lawannya dibungkam",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 11,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "stance_change",
+    "participants": [
+      "Oki",
+      "Putri",
+      "Qori"
+    ],
+    "focus_player": "Putri",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Qori",
+        "teks_chat": "Putri mengaku Spy tetapi belum menjelaskan pilihan Guard. Aku curiga Putri.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Putri",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Putri",
+        "teks_chat": "Aku bukan Hitman. Aku mengaku memilih Guard untuk Oki semalam.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Putri",
+            "relasi": "defend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Oki",
+        "teks_chat": "Aku belum bisa memastikan klaim itu dari chat saja.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Oki",
+        "teks_chat": "Tetapi Putri belum pantas dituduh; belum ada kontradiksi dalam klaimnya.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Putri",
+            "relasi": "defend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Qori",
+        "teks_chat": "Bagaimana pilihan Guard pada malam sebelumnya?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Oki",
+        "teks_chat": "Iya, itu penting untuk memeriksa konsistensi klaimnya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Putri",
+        "teks_chat": "Malam sebelumnya aku juga memilih Oki.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Qori",
+        "teks_chat": "Spy tidak bisa memilih target sama dua malam berturut-turut.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Putri",
+        "teks_chat": "Aku salah ingat malam yang kumaksud.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Qori",
+        "teks_chat": "Sekarang ada perubahan cerita setelah batasan skill disebut.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Oki",
+        "teks_chat": "Aku tarik pembelaanku. Aku curiga Putri Hitman karena pilihan Guard yang diklaim bertentangan dengan aturan.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Putri",
+            "relasi": "offend",
+            "bukti_pesan": [
+              11
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 78.txt"
+  }
+}

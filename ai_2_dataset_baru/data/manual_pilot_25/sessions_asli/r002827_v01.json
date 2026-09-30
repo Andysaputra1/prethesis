@@ -1,0 +1,102 @@
+{
+  "job": {
+    "job_id": "r002827_v01",
+    "case_name": "ambiguous",
+    "case_description": "Beberapa acuan sama-sama mungkin; target tidak_diketahui, bukan nama terakhir.",
+    "source": {
+      "source_row": 2827,
+      "source_group": "6e3bf6c21ec190e48d24",
+      "teks_chat": "B diem banget, gw ikut yang curiga dia",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 10,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "ambiguous",
+    "participants": [
+      "Wati",
+      "Yoga",
+      "Zahra",
+      "Arif",
+      "Bayu"
+    ],
+    "focus_player": "",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Wati",
+        "teks_chat": "Kok banyak banget yang gak ikut diskusi sih?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Yoga",
+        "teks_chat": "Iya nih, si Arif sama Bayu mana suaranya?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Zahra",
+        "teks_chat": "Mungkin mereka lagi afk kali.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Wati",
+        "teks_chat": "Afk kok barengan, janjian ya?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Yoga",
+        "teks_chat": "Keduanya memang belum membalas pertanyaan yang sama.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Zahra",
+        "teks_chat": "Bisa aja mereka lagi mikirin strategi.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Arif",
+        "teks_chat": "Sori guys, tadi ada tamu bentar.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Bayu",
+        "teks_chat": "Sama, gue juga barusan kebelet.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Wati",
+        "teks_chat": "Oke, alasan kalian sudah masuk ke chat.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Yoga",
+        "teks_chat": "Yang pasif daritadi itu biasanya hitmannya, kita seret dia aja yuk!",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "tidak_diketahui",
+            "relasi": "offend",
+            "bukti_pesan": []
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 41.txt"
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "job": {
+    "job_id": "r003182_v01",
+    "case_name": "witness",
+    "case_description": "Nama saksi/korban disebut, tetapi bukan target serangan atau pembelaan.",
+    "source": {
+      "source_row": 3182,
+      "source_group": "22d313470e2c29c145f5",
+      "teks_chat": "Mereka menuduhku karena aku tidak ikut vote mayoritas, padahal keputusan itu berdasarkan analisis pola, bukan asal melawan",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 5,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "witness",
+    "participants": [
+      "Budi",
+      "Caca",
+      "Doni",
+      "Elang"
+    ],
+    "focus_player": "Caca",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Budi",
+        "teks_chat": "Caca mengubah ajakan vote di chat tadi.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Caca",
+        "teks_chat": "Iya, setelah membaca alasan baru.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Elang",
+        "teks_chat": "Doni juga membaca pesan perubahan ajakan itu.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Budi",
+        "teks_chat": "Iya, kita bisa baca ulang chatnya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Elang",
+        "teks_chat": "Doni memang membaca perubahan ajakannya, tetapi itu belum membuktikan Caca Hitman. Jangan vote Caca hanya karena itu.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Caca",
+            "relasi": "defend",
+            "bukti_pesan": [
+              5
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 46.txt"
+  }
+}

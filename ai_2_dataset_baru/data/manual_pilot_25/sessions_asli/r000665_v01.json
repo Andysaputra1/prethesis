@@ -1,0 +1,115 @@
+{
+  "job": {
+    "job_id": "r000665_v01",
+    "case_name": "second_person",
+    "case_description": "Kamu/lu: gunakan pergantian pembicara dan teks yang jelas. Tanpa acuan jelas, target tidak_diketahui.",
+    "source": {
+      "source_row": 665,
+      "source_group": "ca5ceb55bf74b053e1a7",
+      "teks_chat": "kalau aku Hitman, ngapain dari awal aku minta Stalker buka info",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 8,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "second_person",
+    "participants": [
+      "Bimo",
+      "Dinda",
+      "Erik",
+      "Fani"
+    ],
+    "focus_player": "Fani",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Bimo",
+        "teks_chat": "Identitas korban Hostage semalam tidak diumumkan kepada kita.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Dinda",
+        "teks_chat": "Penyebab pemain diam bisa bermacam-macam, kita belum tahu.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Erik",
+        "teks_chat": "Aku perhatiin Fani dari tadi santai banget kayak nggak terjadi apa-apa.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Fani",
+        "teks_chat": "Aku santai karena aku nggak ngerasa bersalah, ngapain panik?",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Fani",
+            "relasi": "defend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Bimo",
+        "teks_chat": "Kita memang tidak diberi nama korban; itu bukan bukti siapa pelakunya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Dinda",
+        "teks_chat": "Aku curiga Fani Hitman karena terlihat tidak ingin membahas kejadian malam.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Fani",
+            "relasi": "offend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Erik",
+        "teks_chat": "Fix sih, Fani ini Hitman yang nyulik korbannya semalam, ayo vote dia!",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Fani",
+            "relasi": "offend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Erik",
+        "teks_chat": "Fani, setelah kupikir, kamu belum pantas dituduh hanya karena tenang. Aku membela kamu.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Fani",
+            "relasi": "defend",
+            "bukti_pesan": [
+              8
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 13.txt"
+  }
+}

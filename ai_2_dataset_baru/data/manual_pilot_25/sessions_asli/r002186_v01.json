@@ -1,0 +1,223 @@
+{
+  "job": {
+    "job_id": "r002186_v01",
+    "case_name": "memory_outside_window",
+    "case_description": "14-16 pesan total. Nama target hanya disebut sebelum 12 konteks terakhir. Dalam jendela, ada pesan yang meneruskan acuan dengan jelas dan menyimpan anotasi target berdasarkan pesan lama. Pesan sekarang merujuk target sama. Nama target tidak muncul dalam teks 12 konteks terakhir atau pesan sekarang; target diketahui lewat memori.",
+    "source": {
+      "source_row": 2186,
+      "source_group": "bc5dce4015623546a0ea",
+      "teks_chat": "aku Stalker, hasil Peek-ku menemukan bahwa Bagas adalah Hitman, jadi tolong ikuti call ini dan vote Bagas",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 14,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "memory_outside_window",
+    "participants": [
+      "Bobi",
+      "Coki",
+      "Didi",
+      "Eno"
+    ],
+    "focus_player": "Bobi",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Coki",
+        "teks_chat": "Bobi tiba-tiba mengaku Stalker. Aku curiga itu klaim palsu dari Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Bobi",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Bobi",
+        "teks_chat": "Lah kan emang itu role gue.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Bobi",
+            "relasi": "defend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Didi",
+        "teks_chat": "Paling dia cuma bohong biar aman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Bobi",
+            "relasi": "offend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Eno",
+        "teks_chat": "Udah, jangan langsung nuduh.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Bobi",
+            "relasi": "defend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Coki",
+        "teks_chat": "Eh tapi seriusan, hasil intip lu semalam gimana?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Bobi",
+        "teks_chat": "Aku belum ingin membuka hasil Peek, tapi aku tidak bohong soal role.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Bobi",
+            "relasi": "defend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Didi",
+        "teks_chat": "Alasan banget sih.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Bobi",
+            "relasi": "offend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Eno",
+        "teks_chat": "Belum membuka hasil bukan bukti dia Hitman. Jangan langsung vote.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Bobi",
+            "relasi": "defend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Coki",
+        "teks_chat": "Aku tetap curiga orang itu Hitman yang memakai klaim palsu.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Bobi",
+            "relasi": "offend",
+            "bukti_pesan": [
+              8
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Didi",
+        "teks_chat": "Iya, ceritanya ngarang mulu.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Bobi",
+            "relasi": "offend",
+            "bukti_pesan": [
+              9
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Eno",
+        "teks_chat": "Masa sih? Aku rasa masih wajar.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Bobi",
+            "relasi": "defend",
+            "bukti_pesan": [
+              9
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Coki",
+        "teks_chat": "Tapi tetep aja nggak masuk akal.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Bobi",
+            "relasi": "offend",
+            "bukti_pesan": [
+              9
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Didi",
+        "teks_chat": "Udah ketahuan belangnya.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Bobi",
+            "relasi": "offend",
+            "bukti_pesan": [
+              9
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Coki",
+        "teks_chat": "Kayaknya dia beneran bukan Stalker, fix dia hitmannya!",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Bobi",
+            "relasi": "offend",
+            "bukti_pesan": [
+              9
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 36.txt"
+  }
+}

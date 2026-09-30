@@ -1,0 +1,130 @@
+{
+  "job": {
+    "job_id": "r000838_v01",
+    "case_name": "reference_end",
+    "case_description": "Tepat 12 konteks. Penyebutan target eksplisit di pesan konteks terakhir.",
+    "source": {
+      "source_row": 838,
+      "source_group": "bbe23b58121e51092419",
+      "teks_chat": "gw punya peran Stalker, Tio bukan target aman, jadi jangan pecah suara ke pemain lain",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 13,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "reference_end",
+    "participants": [
+      "Omar",
+      "Putri",
+      "Qila",
+      "Rafi",
+      "Sinta"
+    ],
+    "focus_player": "Sinta",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Omar",
+        "teks_chat": "Ada klaim yang berubah di percakapan tadi?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Putri",
+        "teks_chat": "Iya, ada yang menyebut dua pilihan Guard untuk malam yang sama.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Qila",
+        "teks_chat": "Siapa yang mengatakannya?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Rafi",
+        "teks_chat": "Aku sedang membaca ulang pesannya agar tidak salah mengutip.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Omar",
+        "teks_chat": "Pastikan keduanya memang merujuk malam yang sama.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Putri",
+        "teks_chat": "Benar, jangan sampai yang satu malam sebelumnya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Qila",
+        "teks_chat": "Pilihan Guard itu aksi rahasia, yang kita periksa hanya konsistensi klaim.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Rafi",
+        "teks_chat": "Di kedua pesannya tertulis semalam.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Omar",
+        "teks_chat": "Apakah ada koreksi salah ketik setelahnya?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Putri",
+        "teks_chat": "Belum ada koreksi yang kubaca.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Qila",
+        "teks_chat": "Baik, sebutkan dulu siapa yang mengirim pesan itu.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Rafi",
+        "teks_chat": "Sinta. Awalnya Guard Omar, lalu Putri untuk malam yang sama. Aku curiga Sinta mengarang klaim Spy.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Sinta",
+            "relasi": "offend",
+            "bukti_pesan": [
+              12
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Omar",
+        "teks_chat": "Aku juga curiga dia Hitman karena klaimnya bertentangan. Aku ingin vote dia.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Sinta",
+            "relasi": "offend",
+            "bukti_pesan": [
+              12
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 16.txt"
+  }
+}

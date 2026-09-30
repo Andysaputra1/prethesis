@@ -1,0 +1,136 @@
+{
+  "job": {
+    "job_id": "r000167_v01",
+    "case_name": "reference_end",
+    "case_description": "Tepat 12 konteks. Penyebutan target eksplisit di pesan konteks terakhir.",
+    "source": {
+      "source_row": 167,
+      "source_group": "e9a445c8cac95c2f1eb8",
+      "teks_chat": "fix M adalah tersangka utama, dia selalu muncul saat tuduhan mulai panas",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 13,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "reference_end",
+    "participants": [
+      "Vera",
+      "Wawan",
+      "Xander",
+      "Yuli"
+    ],
+    "focus_player": "Wawan",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Vera",
+        "teks_chat": "Sebelum malam tadi, ada yang mengaku sebagai Spy.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Wawan",
+        "teks_chat": "Aku yang mengaku Spy.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Xander",
+        "teks_chat": "Siapa yang kamu Guard semalam?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Wawan",
+        "teks_chat": "Aku memilih Yuli.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Yuli",
+        "teks_chat": "Aku tidak bisa memastikan klaim Guard itu dari chat saja.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Vera",
+        "teks_chat": "Iya, kita juga nggak bisa ngecek siapa yang beneran dijaga semalam.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Xander",
+        "teks_chat": "Yang bisa kita periksa sekarang adalah konsistensi ceritanya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Wawan",
+        "teks_chat": "Silakan, aku tidak keberatan ditanya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Yuli",
+        "teks_chat": "Bisa jelaskan lagi pilihan Guard yang barusan kamu sebut?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Wawan",
+        "teks_chat": "Aku memilih Vera semalam.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Vera",
+        "teks_chat": "Tunggu, jawaban itu berbeda dari jawaban pertamamu.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Yuli",
+        "teks_chat": "Wawan, tadi bilang Guard aku, sekarang Vera. Aku curiga Wawan mengarang klaim Spy.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Wawan",
+            "relasi": "offend",
+            "bukti_pesan": [
+              12
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Xander",
+        "teks_chat": "Aku juga curiga dia Hitman yang memakai klaim palsu. Aku akan vote dia.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Wawan",
+            "relasi": "offend",
+            "bukti_pesan": [
+              12
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 2.txt"
+  },
+  "revisi": [
+    {
+      "pesan": 6,
+      "kategori": "meta",
+      "alasan": "Menjelaskan aturan bahwa hasil aksi malam tidak publik"
+    }
+  ]
+}

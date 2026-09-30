@@ -1,0 +1,46 @@
+skenario,role,chat,vote,aksi,tersangka/kambing,urgensi,npc_decision,lulus,catatan,metode
+01 Awal game hening,civilian,tanya_info → —,tidak_bisa → —,tidak_bisa → —,Andi,0.25,wait → —,True,,utility
+02 Bot dituduh dua pemain,civilian,bela_diri → Nara,tidak_bisa → —,tidak_bisa → —,Andi,0.25,wait → —,True,,utility
+03 Korban Gag menuduh Dodi,civilian,tuduh → Dodi,tidak_bisa → —,tidak_bisa → —,Dodi,0.25,wait → —,True,,utility
+04 Vote setelah pola Gag,civilian,tuduh → Dodi,vote → Dodi,tidak_bisa → —,Dodi,0.25,vote → Dodi,True,,utility
+05 Korban Hostage menuduh Budi,civilian,tuduh → Budi,tidak_bisa → —,tidak_bisa → —,Budi,0.48,wait → —,True,,utility
+06 Vote setelah pola Hostage,civilian,tuduh → Budi,vote → Budi,tidak_bisa → —,Budi,0.48,vote → Budi,True,,utility
+07 Membela dugaan korban Hostage,civilian,bela_orang → Eka,tidak_bisa → —,tidak_bisa → —,Andi,0.48,wait → —,True,,utility
+08 Tidak ikut vote korban Hostage,civilian,bela_orang → Eka,abstain → —,tidak_bisa → —,Andi,0.48,wait → —,True,,utility
+09 Pendorong eksekusi warga,civilian,tuduh → Dodi,tidak_bisa → —,tidak_bisa → —,Dodi,0.5,wait → —,True,,utility
+10 Budi terus menyerang bot,civilian,bela_diri → Nara,tidak_bisa → —,tidak_bisa → —,Budi,0.25,wait → —,True,,utility
+11 Bentrok klaim Stalker,civilian,tanya_info → —,tidak_bisa → —,tidak_bisa → —,Citra,0.25,wait → —,True,,utility
+12 Akhir game kritis,civilian,tuduh → Andi,vote → Andi,tidak_bisa → —,Andi,0.96,vote → Andi,True,,utility
+13 Tuduhan tanpa bukti dibela,civilian,ajak_bicara → Citra,tidak_bisa → —,tidak_bisa → —,Citra,0.25,wait → —,True,,utility
+14 Pengalihan berulang,civilian,ajak_bicara → Eka,tidak_bisa → —,tidak_bisa → —,Budi,0.25,wait → —,True,,utility
+15 Bot di-Gag setelah menuduh,civilian,tuduh → Dodi,tidak_bisa → —,tidak_bisa → —,Dodi,0.25,wait → —,True,,utility
+16 Stalker menemukan Hitman,stalker,ungkap → Dodi (klaim),vote → Dodi,tidak_bisa → —,Dodi,0.25,vote → Dodi,True,,utility
+17 Stalker membela pemain bersih,stalker,bela_orang → Citra (klaim),vote → Andi,tidak_bisa → —,Andi,0.25,vote → Andi,True,,utility
+18 Stalker memilih target Peek,stalker,tunggu → —,tidak_bisa → —,peek → Dodi,Dodi,0.25,peek → Dodi,True,,utility
+19 Stalker: Peek belum tersedia,stalker,tunggu → —,tidak_bisa → —,tidak_bisa → —,Dodi,0.25,wait → —,True,,utility
+20 Stalker tahu klaim palsu,stalker,tuduh → Andi,tidak_bisa → —,tidak_bisa → —,Andi,0.25,wait → —,True,,utility
+21 Spy menjaga penuduh tersangka,spy,tunggu → —,tidak_bisa → —,guard → Citra,Dodi,0.25,guard → Citra,True,,utility
+22 Spy tidak menjaga target yang sama,spy,tunggu → —,tidak_bisa → —,guard → Eka,Dodi,0.25,guard → Eka,True,,utility
+23 Spy disandera tetap menjaga,spy,tunggu → —,tidak_bisa → —,guard → Citra,Dodi,0.25,guard → Citra,True,,utility
+24 Hitman dituduh,hitman,bela_diri → Nara,tidak_bisa → —,tunggu → —,Andi,0.25,wait → —,True,,utility
+25 Hitman menyandera pengaku Stalker,hitman,tunggu → —,tidak_bisa → —,hostage → Andi,Andi,0.25,hostage → Andi,True,,utility
+26 Hitman memilih target yang pasti tidak dijaga,hitman,tunggu → —,tidak_bisa → —,hostage → Eka,Dodi,0.25,hostage → Eka,True,,utility
+27 Hitman memakai Gag,hitman,bela_diri → Nara,tidak_bisa → —,gag → Citra,Andi,0.25,gag → Citra,True,,utility
+28 Hitman menyimpan Gag,hitman,tunggu → —,tidak_bisa → —,tunggu → —,Andi,0.25,wait → —,True,,utility
+29 Hitman vote kambing hitam,hitman,tunggu → —,vote → Budi,tidak_bisa → —,Budi,0.25,vote → Budi,True,,utility
+30 Hitman memimpin suara,hitman,bela_diri → Nara,vote → Eka,tidak_bisa → —,Eka,0.25,vote → Eka,True,,utility
+31 Hitman tidak menyandera korbannya,hitman,tunggu → —,tidak_bisa → —,hostage → Andi,Andi,0.48,hostage → Andi,True,,utility
+32 Hitman: Gag belum tersedia,hitman,tunggu → —,tidak_bisa → —,tidak_bisa → —,Andi,0.44,wait → —,True,,utility
+33 Warga ditanya langsung,civilian,jawab → —,tidak_bisa → —,tidak_bisa → —,Andi,0.25,wait → —,True,,utility
+34 Hitman ditanya langsung,hitman,jawab → —,tidak_bisa → —,tunggu → —,Andi,0.25,wait → —,True,,utility
+35 Hitman tidak menuduh rekan,hitman,bela_orang → Dodi,tidak_bisa → —,tunggu → —,Budi,0.75,wait → —,True,,utility
+36 Hitman menyelamatkan rekan di Tribunal,hitman,bela_orang → Dodi,vote → Budi,tidak_bisa → —,Budi,0.75,vote → Budi,True,,utility
+37 Hitman mengikuti target Hostage rekan,hitman,tunggu → —,tidak_bisa → —,hostage → Budi,Andi,0.75,hostage → Budi,True,,utility
+38 Hitman tidak menyandera rekan,hitman,tunggu → —,tidak_bisa → —,hostage → Budi,Budi,0.75,hostage → Budi,True,,utility
+39 Gag bersama sudah dipakai rekan,hitman,bela_diri → Nara,tidak_bisa → —,tidak_bisa → —,Andi,0.75,wait → —,True,,utility
+40 Perburuan berlanjut setelah satu Hitman dieksekusi,stalker,tuduh → Budi,tidak_bisa → —,tidak_bisa → —,Budi,0.69,wait → —,True,,utility
+41 Syndicate hampir unggul,civilian,info_sandera → Dodi,vote → Andi,tidak_bisa → —,Andi,1.0,vote → Andi,True,,utility
+42 Eksekusi warga menurut pengumuman,civilian,tuduh → Dodi,tidak_bisa → —,tidak_bisa → —,Dodi,1.0,wait → —,True,,utility
+43 Eksekusi Hitman menurut pengumuman,civilian,tunggu → —,tidak_bisa → —,tidak_bisa → —,Citra,0.5,wait → —,True,,utility
+44 Hitman tidak memakai eksekusi rekan (dengan pengumuman),hitman,bela_diri → Nara,tidak_bisa → —,gag → Citra,Citra,0.5,gag → Citra,True,,utility
+45 Hitman tidak memakai eksekusi rekan (tanpa pengumuman),hitman,bela_diri → Nara,tidak_bisa → —,gag → Citra,Citra,0.5,gag → Citra,True,,utility

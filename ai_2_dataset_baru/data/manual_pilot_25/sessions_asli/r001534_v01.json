@@ -1,0 +1,133 @@
+{
+  "job": {
+    "job_id": "r001534_v01",
+    "case_name": "outside_window_unknown",
+    "case_description": "14-16 pesan total. Pembahasan lama telah putus/beralih. Teks dan anotasi 12 konteks terakhir tidak cukup menentukan acuan sekarang. Target harus tidak_diketahui; jangan menggunakan informasi lama yang tidak tersedia dalam input.",
+    "source": {
+      "source_row": 1534,
+      "source_group": "41ecc7f5ecff2681e64e",
+      "teks_chat": "kenapa gw terus yang disorot? dari tadi si Dimas malah pasif banget",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 14,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "outside_window_unknown",
+    "participants": [
+      "Niko",
+      "Oca",
+      "Putra",
+      "Reni"
+    ],
+    "focus_player": "Reni",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Niko",
+        "teks_chat": "Reni mengganti tuduhan tanpa penjelasan. Aku curiga Reni Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Reni",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Oca",
+        "teks_chat": "Sebelum lanjut soal pemain, apa batasan Guard?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Putra",
+        "teks_chat": "Spy tidak boleh melindungi target sama dua malam berturut-turut.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Niko",
+        "teks_chat": "Kalau target berbeda tiap malam, itu diperbolehkan?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Oca",
+        "teks_chat": "Ya, batasannya melarang target sama pada dua malam berurutan.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Putra",
+        "teks_chat": "Bagaimana dengan Peek?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Niko",
+        "teks_chat": "Peek milik Stalker, satu kali tiap dua ronde.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Oca",
+        "teks_chat": "Jadi bukan berarti semua skill bisa dipakai dengan jadwal yang sama.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Putra",
+        "teks_chat": "Benar, kita perlu membandingkan klaim dengan aturan role masing-masing.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Niko",
+        "teks_chat": "Kalau sebuah klaim melanggar aturan, apa otomatis tahu role aslinya?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Oca",
+        "teks_chat": "Belum, tetapi ada ketidaksesuaian ucapan yang bisa ditanyakan.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Putra",
+        "teks_chat": "Oke, penjelasan aturan skillnya cukup.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Niko",
+        "teks_chat": "Kembali ke orang yang kita bahas sebelum soal Guard tadi.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Oca",
+        "teks_chat": "Aku curiga dia Hitman karena mengganti tuduhan tanpa memberi alasan.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "tidak_diketahui",
+            "relasi": "offend",
+            "bukti_pesan": []
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 27.txt"
+  }
+}

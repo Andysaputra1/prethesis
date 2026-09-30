@@ -1,0 +1,191 @@
+{
+  "job": {
+    "job_id": "r002314_v01",
+    "case_name": "memory_outside_window",
+    "case_description": "14-16 pesan total. Nama target hanya disebut sebelum 12 konteks terakhir. Dalam jendela, ada pesan yang meneruskan acuan dengan jelas dan menyimpan anotasi target berdasarkan pesan lama. Pesan sekarang merujuk target sama. Nama target tidak muncul dalam teks 12 konteks terakhir atau pesan sekarang; target diketahui lewat memori.",
+    "source": {
+      "source_row": 2314,
+      "source_group": "c952316cefe59a510d58",
+      "teks_chat": "aku civilian biasa, sementara dia mengaku Spy tanpa menjelaskan apa pun",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 14,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "memory_outside_window",
+    "participants": [
+      "Budi",
+      "Coki",
+      "Dika",
+      "Evan",
+      "Fina"
+    ],
+    "focus_player": "Coki",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Budi",
+        "teks_chat": "Coki lama sekali membalas, aku curiga dia Hitman!",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Coki",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Coki",
+        "teks_chat": "Maaf, koneksiku tadi terputus.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Coki",
+            "relasi": "defend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Dika",
+        "teks_chat": "Jeda balasan belum membuktikan dia Hitman.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Coki",
+            "relasi": "defend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Evan",
+        "teks_chat": "Aku curiga dia memakai alasan koneksi untuk menutupi role Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Coki",
+            "relasi": "offend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Fina",
+        "teks_chat": "Aku tidak setuju, dia belum terbukti pelakunya.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Coki",
+            "relasi": "defend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Budi",
+        "teks_chat": "Sebentar, kita masih di fase diskusi kan?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Dika",
+        "teks_chat": "Iya, lanjutkan pembahasan sebelum Tribunal.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Evan",
+        "teks_chat": "Aku mau membaca ulang chat dulu.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Fina",
+        "teks_chat": "Silakan, supaya tidak salah kutip.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Budi",
+        "teks_chat": "Balik ke pemain yang terlambat membalas tadi.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Dika",
+        "teks_chat": "Ada alasan lain selain jeda balasan?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Evan",
+        "teks_chat": "Aku tetap curiga dia Hitman yang mengarang alasan.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Coki",
+            "relasi": "offend",
+            "bukti_pesan": [
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Fina",
+        "teks_chat": "Aku masih menolak tuduhan itu, dia belum terbukti Hitman.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Coki",
+            "relasi": "defend",
+            "bukti_pesan": [
+              12
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Budi",
+        "teks_chat": "Dia pasti pelakunya yang pura-pura putus koneksi!",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Coki",
+            "relasi": "offend",
+            "bukti_pesan": [
+              13
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 38.txt"
+  },
+  "revisi": [
+    {
+      "pesan": 2,
+      "kategori": "label",
+      "alasan": "Alasan koneksi sebagai jawaban atas tuduhan di pesan 1 = defend diri (konsisten dengan kasus lain)"
+    }
+  ]
+}

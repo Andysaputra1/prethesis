@@ -1,0 +1,136 @@
+{
+  "job": {
+    "job_id": "r001686_v01",
+    "case_name": "second_person",
+    "case_description": "Kamu/lu: gunakan pergantian pembicara dan teks yang jelas. Tanpa acuan jelas, target tidak_diketahui.",
+    "source": {
+      "source_row": 1686,
+      "source_group": "fbfbfed9d7171934befd",
+      "teks_chat": "kalau pertanyaannya ke gw, si D juga belum kasih penjelasan dari ronde awal",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 9,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "second_person",
+    "participants": [
+      "Dodi",
+      "Faris",
+      "Gita"
+    ],
+    "focus_player": "Faris",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Dodi",
+        "teks_chat": "Ada yang aneh nggak sih sama diskusi kita di awal tadi?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Faris",
+        "teks_chat": "Aneh gimana maksudnya?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Gita",
+        "teks_chat": "Iya, kok tadi ada yang buru-buru banget membela diri?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Faris",
+        "teks_chat": "Aku cuma nggak mau dituduh aja dari awal gara-gara diam.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Faris",
+            "relasi": "defend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Dodi",
+        "teks_chat": "Faris, aku curiga kamu Hitman karena membela diri sebelum ada yang menuduh.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Faris",
+            "relasi": "offend",
+            "bukti_pesan": [
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Gita",
+        "teks_chat": "Nah itu, kelihatan panik duluan.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Faris",
+            "relasi": "offend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Faris",
+        "teks_chat": "Aku bukan Hitman, cuma waspada karena sering difitnah.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Faris",
+            "relasi": "defend",
+            "bukti_pesan": [
+              7
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Gita",
+        "teks_chat": "Alasan klise banget itu mah.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Faris",
+            "relasi": "offend",
+            "bukti_pesan": [
+              7
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Dodi",
+        "teks_chat": "Faris, kenapa kamu langsung membela diri sebelum dituduh? Aku curiga kamu pelakunya.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Faris",
+            "relasi": "offend",
+            "bukti_pesan": [
+              9
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 29.txt"
+  }
+}

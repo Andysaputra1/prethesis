@@ -1,0 +1,94 @@
+{
+  "job": {
+    "job_id": "r002978_v01",
+    "case_name": "rhetorical_question",
+    "case_description": "Pesan sekarang berbentuk pertanyaan retoris yang sebenarnya menuduh atau membela, misalnya 'kenapa Andy diam terus?' (offend) atau 'masa sih Andy Hitman?' (defend). Bukan pertanyaan informasi.",
+    "source": {
+      "source_row": 2978,
+      "source_group": "a911b5ab1d4bbe81aa47",
+      "teks_chat": "gw curiga banget sama Nia, dia terus ngarahin vote ke orang yang sama",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 5,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "rhetorical_question",
+    "participants": [
+      "Rani",
+      "Sandi"
+    ],
+    "focus_player": "Sandi",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Rani",
+        "teks_chat": "Sandi, kamu sebelumnya klaim Civilian, kan?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Sandi",
+        "teks_chat": "Sekarang aku mau klaim Spy.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Rani",
+        "teks_chat": "Aku curiga Sandi Hitman karena klaimnya berubah.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Sandi",
+            "relasi": "offend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Sandi",
+        "teks_chat": "Aku bukan Hitman, tadi belum ingin mengungkap role.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Sandi",
+            "relasi": "defend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Rani",
+        "teks_chat": "Kok klaimnya bisa berubah gitu kalau bukan Hitman yang lagi bohong?",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Sandi",
+            "relasi": "offend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 43.txt"
+  },
+  "revisi": [
+    {
+      "pesan": 5,
+      "kategori": "tidak_natural",
+      "alasan": "'Bukankah ... menunjukkan' kaku seperti tulisan formal"
+    }
+  ]
+}

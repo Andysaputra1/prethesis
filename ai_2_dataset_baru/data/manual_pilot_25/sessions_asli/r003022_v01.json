@@ -1,0 +1,145 @@
+{
+  "job": {
+    "job_id": "r003022_v01",
+    "case_name": "negation",
+    "case_description": "Negasi menentukan relasi: Andy Hitman berbeda dari Andy bukan Hitman.",
+    "source": {
+      "source_row": 3022,
+      "source_group": "e20d18709a4fb8b7ac65",
+      "teks_chat": "si Tania kena Gag Order setelah menuduh Edo, berarti Edo layak dicurigai sebagai hitman",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 13,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "negation",
+    "participants": [
+      "Fajar",
+      "Gilang",
+      "Hadi",
+      "Intan"
+    ],
+    "focus_player": "Intan",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Fajar",
+        "teks_chat": "Apakah ada yang mendapatkan hasil intipan Stalker semalam?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Gilang",
+        "teks_chat": "Aku tidak mendapat apa-apa.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Hadi",
+        "teks_chat": "Aku juga bersih.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Intan",
+        "teks_chat": "Aku adalah Stalker yang bertugas semalam.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Fajar",
+        "teks_chat": "Kalau begitu sebutkan siapa yang kamu intip.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Gilang",
+        "teks_chat": "Jangan berlama-lama menyembunyikan informasi.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Intan",
+        "teks_chat": "Aku mengintip Fajar.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Hadi",
+        "teks_chat": "Lalu apa hasil akhirnya?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Intan",
+        "teks_chat": "Hasilnya menunjukkan bahwa Fajar bukan orang jahat.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Fajar",
+            "relasi": "defend",
+            "bukti_pesan": [
+              7
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Fajar",
+        "teks_chat": "Nah, sudah kuduga keteranganku aman.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Fajar",
+            "relasi": "defend",
+            "bukti_pesan": [
+              9
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Gilang",
+        "teks_chat": "Aku meragukan klaim Stalker tersebut.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Hadi",
+        "teks_chat": "Bisa jadi klaim Stalker itu rekayasa untuk melindungi rekan kelompoknya.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Intan",
+            "relasi": "offend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Fajar",
+        "teks_chat": "Intan bukan Stalker asli yang membawa kebenaran, dia adalah penjahat yang menyamar!",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Intan",
+            "relasi": "offend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 44.txt"
+  }
+}

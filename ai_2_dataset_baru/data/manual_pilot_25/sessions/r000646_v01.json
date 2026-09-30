@@ -1,0 +1,204 @@
+{
+  "job": {
+    "job_id": "r000646_v01",
+    "case_name": "stance_change",
+    "case_description": "Pengirim pesan sekarang sebelumnya menuduh atau membela seorang pemain di konteks, lalu berubah sikap terhadap pemain yang sama. Anotasi mengikuti sikap terbaru.",
+    "source": {
+      "source_row": 646,
+      "source_group": "72b2364bf248a2b692a0",
+      "teks_chat": "bukan dia yang perlu dibela, aku sendiri bisa jelasin semua keputusan tadi",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 13,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "stance_change",
+    "participants": [
+      "Dian",
+      "Edi",
+      "Fina",
+      "Gilang",
+      "Hani"
+    ],
+    "focus_player": "Fina",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Dian",
+        "teks_chat": "Ada yang semalam pakai skill dan mau cerita?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Edi",
+        "teks_chat": "Fina tadi mengaku Stalker, mungkin bisa ditanya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Gilang",
+        "teks_chat": "Apa yang membuat klaim itu dipertanyakan?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Hani",
+        "teks_chat": "Aku curiga Fina Hitman karena bilang tidak bisa Peek setiap ronde.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Fina",
+            "relasi": "offend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Fina",
+        "teks_chat": "Aku bukan Hitman. Peek-ku semalam masih cooldown, jadi belum bisa dipakai.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Fina",
+            "relasi": "defend",
+            "bukti_pesan": [
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Gilang",
+        "teks_chat": "Fina belum pantas dituduh; alasan cooldown itu masih masuk akal.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Fina",
+            "relasi": "defend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Dian",
+        "teks_chat": "Aku sendiri belum hafal batasan skill itu.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Edi",
+        "teks_chat": "Jangan buru-buru nilai klaimnya dulu.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Gilang",
+        "teks_chat": "Tapi setahuku Peek bisa dipakai tiap ronde. Kalau begitu, aku curiga Fina sedang berbohong.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Fina",
+            "relasi": "offend",
+            "bukti_pesan": [
+              9
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Fina",
+        "teks_chat": "Aku nggak bohong soal cooldown, Peek-ku memang belum bisa dipakai semalam.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Fina",
+            "relasi": "defend",
+            "bukti_pesan": [
+              10
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Dian",
+        "teks_chat": "Oh iya, aku ingat, Peek memang nggak bisa dipakai tiap ronde.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Edi",
+        "teks_chat": "Oke, berarti soal cooldown sudah jelas.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Gilang",
+        "teks_chat": "Aku tarik tuduhanku kepada Fina. Dia benar soal cooldown; itu bukan alasan untuk menyebutnya Hitman.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Fina",
+            "relasi": "defend",
+            "bukti_pesan": [
+              13
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 12.txt"
+  },
+  "revisi": [
+    {
+      "pesan": 1,
+      "kategori": "meta",
+      "alasan": "Meminta pemain 'menjelaskan aturan Peek'."
+    },
+    {
+      "pesan": 5,
+      "kategori": "meta",
+      "alasan": "Fina mendikte aturan cooldown seperti buku aturan; diubah jadi klaim in-game."
+    },
+    {
+      "pesan": 6,
+      "kategori": "meta",
+      "alasan": "'bisa kita cocokkan dengan aturan' = merujuk buku aturan."
+    },
+    {
+      "pesan": 8,
+      "kategori": "meta",
+      "alasan": "'Mari baca aturannya' = merujuk aturan, kaku."
+    },
+    {
+      "pesan": 9,
+      "kategori": "tidak_natural",
+      "alasan": "Logika janggal: 'sempat mengira Peek bisa setiap ronde. Kalau begitu, curiga Fina' (kata 'sempat' menyiratkan ia sudah tahu salah)."
+    },
+    {
+      "pesan": 10,
+      "kategori": "meta",
+      "alasan": "'silakan periksa aturannya' merujuk buku aturan."
+    },
+    {
+      "pesan": 11,
+      "kategori": "meta",
+      "alasan": "'Di aturan tertulis ...' = membacakan aturan game."
+    },
+    {
+      "pesan": 12,
+      "kategori": "meta",
+      "alasan": "Kalimat kaku yang memvalidasi aturan."
+    }
+  ]
+}

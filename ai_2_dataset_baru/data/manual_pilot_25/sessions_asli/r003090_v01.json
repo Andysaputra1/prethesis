@@ -1,0 +1,136 @@
+{
+  "job": {
+    "job_id": "r003090_v01",
+    "case_name": "explicit",
+    "case_description": "Target eksplisit di pesan sekarang. Contoh: Aku yakin bukan Andy = defend Andy.",
+    "source": {
+      "source_row": 3090,
+      "source_group": "14994f52397e7c02cbda",
+      "teks_chat": "menurut pengamatanku, si C paling sering menggiring voting tanpa dasar yang konsisten",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 9,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "explicit",
+    "participants": [
+      "Feri",
+      "Gina",
+      "Hendra"
+    ],
+    "focus_player": "Hendra",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Feri",
+        "teks_chat": "Kita harus segera menentukan pilihan suara.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Gina",
+        "teks_chat": "Apakah ada usulan nama dari kalian?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Hendra",
+        "teks_chat": "Bagaimana kalau kita langsung vote Feri tanpa bukti?",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Feri",
+            "relasi": "offend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Feri",
+        "teks_chat": "Mengapa kamu mengajak memilihku secara sembarangan?",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Feri",
+            "relasi": "defend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Gina",
+        "teks_chat": "Aku curiga Hendra Hitman karena mengajak vote tanpa alasan.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Hendra",
+            "relasi": "offend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Hendra",
+        "teks_chat": "Aku cuma ingin permainannya cepat selesai.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Feri",
+        "teks_chat": "Alasan khas seorang penjahat.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Hendra",
+            "relasi": "offend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Gina",
+        "teks_chat": "Aku setuju dengan Feri, perilakunya sangat mencurigakan.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Hendra",
+            "relasi": "offend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Feri",
+        "teks_chat": "Mari kita singkirkan Hendra karena kebiasaannya mengajak vote tanpa dasar yang jelas!",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Hendra",
+            "relasi": "offend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 44.txt"
+  }
+}

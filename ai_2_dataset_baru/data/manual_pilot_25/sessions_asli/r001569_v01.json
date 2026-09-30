@@ -1,0 +1,129 @@
+{
+  "job": {
+    "job_id": "r001569_v01",
+    "case_name": "negation",
+    "case_description": "Negasi menentukan relasi: Andy Hitman berbeda dari Andy bukan Hitman.",
+    "source": {
+      "source_row": 1569,
+      "source_group": "c728cfb8ab5a4b04063a",
+      "teks_chat": "tuduhan ke gw masih asumsi doang, coba bahas kenapa si E langsung ikut arus",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 12,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "negation",
+    "participants": [
+      "Gilang",
+      "Hesti",
+      "Iwan"
+    ],
+    "focus_player": "Hesti",
+    "panggilan": [
+      {
+        "pemain": "Gilang",
+        "sebutan": [
+          "Lang"
+        ]
+      }
+    ],
+    "messages": [
+      {
+        "pengirim": "Gilang",
+        "teks_chat": "Gw semalem intip pemain pake skill gw.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Iwan",
+        "teks_chat": "Lu Stalker Lang? Intip siapa emangnya?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Gilang",
+        "teks_chat": "Iya bener, gw intip Hesti semalem.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Hesti",
+        "teks_chat": "Wah, apa hasilnya Lang?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Gilang",
+        "teks_chat": "Lu yakin mau gw bongkar sekarang?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Iwan",
+        "teks_chat": "Bongkar aja, biar jelas siapa kawan siapa lawan.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Hesti",
+        "teks_chat": "Santai aja, gw mah pasti aman karena gw bukan pelakunya.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Hesti",
+            "relasi": "defend",
+            "bukti_pesan": [
+              7
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Gilang",
+        "teks_chat": "Tunggu bentar, gw baca ulang lognya biar gak salah.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Iwan",
+        "teks_chat": "Lama banget lu ngasih taunya Lang.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Gilang",
+        "teks_chat": "Oke, gw udah yakin nih sekarang.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Hesti",
+        "teks_chat": "Buruan kasih tau aja hasilnya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Gilang",
+        "teks_chat": "Hasilnya adalah Hesti bukan orang baik, dia pasti pelakunya!",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Hesti",
+            "relasi": "offend",
+            "bukti_pesan": [
+              12
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 27.txt"
+  }
+}

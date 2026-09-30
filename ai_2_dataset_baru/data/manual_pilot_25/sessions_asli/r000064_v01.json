@@ -1,0 +1,83 @@
+{
+  "job": {
+    "job_id": "r000064_v01",
+    "case_name": "ambiguous",
+    "case_description": "Beberapa acuan sama-sama mungkin; target tidak_diketahui, bukan nama terakhir.",
+    "source": {
+      "source_row": 64,
+      "source_group": "741002651c4be7e42bac",
+      "teks_chat": "kalau gw hitman, ngapain gw terus terang begini? fokus ke Nia yang mendadak diem",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 7,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "ambiguous",
+    "participants": [
+      "Ivan",
+      "Jojo",
+      "Hana",
+      "Kevin"
+    ],
+    "focus_player": "",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Hana",
+        "teks_chat": "Siapa yang menarik ajakan vote di chat tadi?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Kevin",
+        "teks_chat": "Ivan dan Jojo sama-sama menarik ajakan votenya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Ivan",
+        "teks_chat": "Aku ragu dengan alasannya, jadi menarik ajakan itu.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Jojo",
+        "teks_chat": "Aku juga belum punya alasan kuat.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Kevin",
+        "teks_chat": "Tapi perpindahannya barengan gitu.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Ivan",
+        "teks_chat": "Kami sama-sama berubah pikiran, tetapi belum menjelaskan alasannya satu per satu.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Hana",
+        "teks_chat": "Aku curiga dia Hitman yang sengaja mengubah arah tuduhan.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "tidak_diketahui",
+            "relasi": "offend",
+            "bukti_pesan": []
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 78.txt"
+  }
+}

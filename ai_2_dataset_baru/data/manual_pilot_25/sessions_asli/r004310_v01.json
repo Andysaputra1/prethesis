@@ -1,0 +1,72 @@
+{
+  "job": {
+    "job_id": "r004310_v01",
+    "case_name": "second_person",
+    "case_description": "Kamu/lu: gunakan pergantian pembicara dan teks yang jelas. Tanpa acuan jelas, target tidak_diketahui.",
+    "source": {
+      "source_row": 4310,
+      "source_group": "ef8dfbf57bc5dc33656f",
+      "teks_chat": "bukan gw yang mengalihkan isu, Reva dari tadi mengubah topik setiap ditanya soal target malam",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 5,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "second_person",
+    "participants": [
+      "Hani",
+      "Gita",
+      "Reno"
+    ],
+    "focus_player": "Hani",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Gita",
+        "teks_chat": "Ada yang membaca perubahan ajakan vote di chat siang tadi?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Reno",
+        "teks_chat": "Iya, ada beberapa ajakan yang berubah di akhir diskusi.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Hani",
+        "teks_chat": "Aku juga melihat hal itu, sangat tidak masuk akal.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Hani",
+        "teks_chat": "Aku mengubah ajakan vote dari Reno ke pemain lain karena firasat.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Gita",
+        "teks_chat": "Alasan kamu sangat aneh dan tidak wajar, pasti kamu pelakunya.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Hani",
+            "relasi": "offend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 62.txt"
+  }
+}

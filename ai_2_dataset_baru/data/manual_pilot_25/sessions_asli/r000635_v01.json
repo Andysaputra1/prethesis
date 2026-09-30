@@ -1,0 +1,47 @@
+{
+  "job": {
+    "job_id": "r000635_v01",
+    "case_name": "first_message",
+    "case_description": "Pesan pertama permainan, tanpa konteks. Neutral boleh menyapa/membuka diskusi; offend/defend menyebut target jelas. Jangan mengarang kejadian malam, voting, atau percakapan yang belum terjadi.",
+    "source": {
+      "source_row": 635,
+      "source_group": "b9a8a5ac2e0328087c90",
+      "teks_chat": "kalau aku Hitman, ngapain dari awal bantu bongkar alibi mereka?",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 1,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "first_message",
+    "participants": [
+      "Maman",
+      "Nisa"
+    ],
+    "focus_player": "Nisa",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Maman",
+        "teks_chat": "Aku belum punya alasan mencurigai Nisa. Jangan langsung ajak vote Nisa.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Nisa",
+            "relasi": "defend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 11.txt"
+  }
+}

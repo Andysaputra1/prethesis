@@ -1,0 +1,195 @@
+{
+  "job": {
+    "job_id": "r003207_v01",
+    "case_name": "outside_window_unknown",
+    "case_description": "14-16 pesan total. Pembahasan lama telah putus/beralih. Teks dan anotasi 12 konteks terakhir tidak cukup menentukan acuan sekarang. Target harus tidak_diketahui; jangan menggunakan informasi lama yang tidak tersedia dalam input.",
+    "source": {
+      "source_row": 3207,
+      "source_group": "f4adb7133a991dd1b5a2",
+      "teks_chat": "aku cuma mengikuti keputusan tim, bukan berusaha mengarahkan vote",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 14,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "outside_window_unknown",
+    "participants": [
+      "Rio",
+      "Siska",
+      "Tio",
+      "Vina"
+    ],
+    "focus_player": "Tio",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Rio",
+        "teks_chat": "Tio pasif sejak awal, aku curiga dia Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Tio",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Siska",
+        "teks_chat": "Bentar, aku mau nanya soal semalam dulu.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Tio",
+        "teks_chat": "Nanya apa?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Vina",
+        "teks_chat": "Semalam ada yang pakai skill nggak?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Rio",
+        "teks_chat": "Aku nggak, aku cuma Civilian.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Siska",
+        "teks_chat": "Yang ngaku Spy atau Stalker belum ada juga ya?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Tio",
+        "teks_chat": "Belum ada, mungkin masih pada nunggu waktu yang pas.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Vina",
+        "teks_chat": "Kayaknya yang punya skill lagi main aman semua.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Rio",
+        "teks_chat": "Wajar sih, takut diincer nanti malam.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Siska",
+        "teks_chat": "Ya udah, kita tunggu aja sampai ada yang berani ngaku.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Tio",
+        "teks_chat": "Setuju, jangan dipaksa juga.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Vina",
+        "teks_chat": "Oke, makasih infonya semua.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Rio",
+        "teks_chat": "Waktunya masih ada, lanjut bahas yang lain yuk.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Siska",
+        "teks_chat": "Balik ke tuduhan tadi, menurutku dia bukan Hitman hanya karena diam.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "tidak_diketahui",
+            "relasi": "defend",
+            "bukti_pesan": []
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 46.txt"
+  },
+  "revisi": [
+    {
+      "pesan": 2,
+      "kategori": "meta",
+      "alasan": "Blok pesan 2-13 berisi tanya-jawab aturan (chat malam dikunci, fase, Tribunal, efek skill)"
+    },
+    {
+      "pesan": 3,
+      "kategori": "meta",
+      "alasan": "Blok pesan 2-13 berisi tanya-jawab aturan (chat malam dikunci, fase, Tribunal, efek skill)"
+    },
+    {
+      "pesan": 4,
+      "kategori": "meta",
+      "alasan": "Blok pesan 2-13 berisi tanya-jawab aturan (chat malam dikunci, fase, Tribunal, efek skill)"
+    },
+    {
+      "pesan": 5,
+      "kategori": "meta",
+      "alasan": "Blok pesan 2-13 berisi tanya-jawab aturan (chat malam dikunci, fase, Tribunal, efek skill)"
+    },
+    {
+      "pesan": 6,
+      "kategori": "meta",
+      "alasan": "Blok pesan 2-13 berisi tanya-jawab aturan (chat malam dikunci, fase, Tribunal, efek skill)"
+    },
+    {
+      "pesan": 7,
+      "kategori": "meta",
+      "alasan": "Blok pesan 2-13 berisi tanya-jawab aturan (chat malam dikunci, fase, Tribunal, efek skill)"
+    },
+    {
+      "pesan": 8,
+      "kategori": "meta",
+      "alasan": "Blok pesan 2-13 berisi tanya-jawab aturan (chat malam dikunci, fase, Tribunal, efek skill)"
+    },
+    {
+      "pesan": 9,
+      "kategori": "meta",
+      "alasan": "Blok pesan 2-13 berisi tanya-jawab aturan (chat malam dikunci, fase, Tribunal, efek skill)"
+    },
+    {
+      "pesan": 10,
+      "kategori": "meta",
+      "alasan": "Blok pesan 2-13 berisi tanya-jawab aturan (chat malam dikunci, fase, Tribunal, efek skill)"
+    },
+    {
+      "pesan": 11,
+      "kategori": "meta",
+      "alasan": "Blok pesan 2-13 berisi tanya-jawab aturan (chat malam dikunci, fase, Tribunal, efek skill)"
+    },
+    {
+      "pesan": 12,
+      "kategori": "meta",
+      "alasan": "Blok pesan 2-13 berisi tanya-jawab aturan (chat malam dikunci, fase, Tribunal, efek skill)"
+    },
+    {
+      "pesan": 13,
+      "kategori": "meta",
+      "alasan": "Blok pesan 2-13 berisi tanya-jawab aturan (chat malam dikunci, fase, Tribunal, efek skill)"
+    }
+  ]
+}

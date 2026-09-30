@@ -1,0 +1,161 @@
+{
+  "job": {
+    "job_id": "r001030_v01",
+    "case_name": "reference_start",
+    "case_description": "Tepat 12 konteks. Penyebutan target eksplisit di pesan konteks pertama; pesan sekarang memakai kata ganti.",
+    "source": {
+      "source_row": 1030,
+      "source_group": "c3d9a1cbec7ff980336f",
+      "teks_chat": "aku bukan Hitman, aku cuma Civilian, bukti kalian ke gw gak nyambung",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 13,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "reference_start",
+    "participants": [
+      "Puput",
+      "Qori",
+      "Rama",
+      "Sinta"
+    ],
+    "focus_player": "Qori",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Puput",
+        "teks_chat": "Qori tadi menuduh Rama, sekarang membelanya. Aku curiga Qori Hitman yang mengubah cerita.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Qori",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Qori",
+        "teks_chat": "Aku membela Rama karena jawaban barunya menunjukkan bahwa dugaan awalku terlalu lemah.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Rama",
+            "relasi": "defend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Rama",
+        "teks_chat": "Aku tadi menjawab alasan kenapa belum membalas chat.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Sinta",
+        "teks_chat": "Tapi tetep aja aneh, kok bisa secepat itu berubah pikiran?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Puput",
+        "teks_chat": "Nah itu dia, dari benci jadi cinta dalam hitungan menit.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Qori",
+        "teks_chat": "Aku bukan Hitman. Aku mengoreksi dugaan setelah membaca jawaban baru.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Qori",
+            "relasi": "defend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Rama",
+        "teks_chat": "Kalian jangan terlalu parno gitu lah, wajar aja kok.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Sinta",
+        "teks_chat": "Biasanya orang yang gampang berubah haluan tuh lagi nyari muka.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Puput",
+        "teks_chat": "Atau lagi nutupin rencana jahatnya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Qori",
+        "teks_chat": "Aku tidak bersalah. Perubahan pendapatku mengikuti penjelasan yang baru kubaca.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Qori",
+            "relasi": "defend",
+            "bukti_pesan": [
+              10
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Rama",
+        "teks_chat": "Orang yang menarik tuduhan itu belum pantas dianggap Hitman hanya karena mengubah dugaan.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Qori",
+            "relasi": "defend",
+            "bukti_pesan": [
+              10
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Sinta",
+        "teks_chat": "Biarin aja, emang harus waspada terus di game ini.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Puput",
+        "teks_chat": "Aku tarik tuduhan kepadanya. Mengoreksi dugaan setelah ada jawaban baru itu wajar.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Qori",
+            "relasi": "defend",
+            "bukti_pesan": [
+              11
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 20.txt"
+  }
+}

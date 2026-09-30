@@ -1,0 +1,117 @@
+{
+  "job": {
+    "job_id": "r003579_v01",
+    "case_name": "self",
+    "case_description": "Defend diri sendiri atau offend/vote diri sendiri sesuai label. Target = pengirim.",
+    "source": {
+      "source_row": 3579,
+      "source_group": "c76c22bd4a36c5d3f43b",
+      "teks_chat": "sumpah gw civilian, tapi pola chat Bimo udah kayak hitman, langsung tribunal aja",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 6,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "self",
+    "participants": [
+      "Wahyu",
+      "Yayan"
+    ],
+    "focus_player": "Wahyu",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Wahyu",
+        "teks_chat": "Yayan, kamu cepat membela diri sebelum ditanya, aku curiga kamu Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Yayan",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Yayan",
+        "teks_chat": "Aku hanya berjaga-jaga karena merasa sedang dicurigai sejak awal.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Yayan",
+            "relasi": "defend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Wahyu",
+        "teks_chat": "Itu adalah tingkah laku khas dari seorang pelaku kejahatan.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Yayan",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Yayan",
+        "teks_chat": "Aku adalah pemain biasa yang tidak memiliki peran khusus sama sekali.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Yayan",
+            "relasi": "defend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Wahyu",
+        "teks_chat": "Ayo kita segera kumpulkan suara untuk mengeliminasi Yayan.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Yayan",
+            "relasi": "offend",
+            "bukti_pesan": [
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Wahyu",
+        "teks_chat": "Rasanya aku seperti sedang berbicara sendiri, mari vote aku saja kalau kalian tidak percaya.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Wahyu",
+            "relasi": "offend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 55.txt"
+  }
+}

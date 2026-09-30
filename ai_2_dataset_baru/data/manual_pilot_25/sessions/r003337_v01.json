@@ -1,0 +1,82 @@
+{
+  "job": {
+    "job_id": "r003337_v01",
+    "case_name": "quotation",
+    "case_description": "Ada tuduhan yang dikutip; bedakan sikap pengirim dari ucapan orang yang dikutip.",
+    "source": {
+      "source_row": 3337,
+      "source_group": "81d6b8cb67a90ef962c7",
+      "teks_chat": "bukan gw hitman, dari awal gw cuma ikut analisis yang masuk akal",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 4,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "quotation",
+    "participants": [
+      "Putri",
+      "Qori",
+      "Raka"
+    ],
+    "focus_player": "Raka",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Putri",
+        "teks_chat": "Raka kok balas obrolannya lama sekali?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Qori",
+        "teks_chat": "Aku curiga dia Hitman yang sengaja menghindari pertanyaan.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Raka",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Raka",
+        "teks_chat": "Sinyalku sedang jelek sekali.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Raka",
+            "relasi": "defend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Putri",
+        "teks_chat": "Qori bilang 'Hitman yang sengaja menghindari pertanyaan'. Aku tidak setuju, jeda balasan belum membuktikan Raka Hitman.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Raka",
+            "relasi": "defend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 49.txt"
+  }
+}

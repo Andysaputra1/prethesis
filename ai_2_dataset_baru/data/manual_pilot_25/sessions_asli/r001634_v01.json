@@ -1,0 +1,96 @@
+{
+  "job": {
+    "job_id": "r001634_v01",
+    "case_name": "second_person",
+    "case_description": "Kamu/lu: gunakan pergantian pembicara dan teks yang jelas. Tanpa acuan jelas, target tidak_diketahui.",
+    "source": {
+      "source_row": 1634,
+      "source_group": "40d55904ab471eac50a2",
+      "teks_chat": "tuduhan itu ngawur, coba kita bandingkan jawaban gw sama jawaban si Rere",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 5,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "second_person",
+    "participants": [
+      "Aldo",
+      "Bunga",
+      "Coki"
+    ],
+    "focus_player": "Aldo",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Aldo",
+        "teks_chat": "Aku mengaku Spy dan memilih Guard untuk Coki semalam.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Bunga",
+        "teks_chat": "Aldo, aku curiga kamu memakai klaim Spy palsu agar tidak divote.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Aldo",
+            "relasi": "offend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Coki",
+        "teks_chat": "Aku juga curiga dia Hitman yang sedang mengarang role.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Aldo",
+            "relasi": "offend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Aldo",
+        "teks_chat": "Aku bukan Hitman, aku tetap pada klaim pilihan Guard tadi.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Aldo",
+            "relasi": "defend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Bunga",
+        "teks_chat": "Aldo, aku tarik tuduhanku. Kamu belum pantas disebut Hitman tanpa alasan selain klaim yang belum terbukti.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Aldo",
+            "relasi": "defend",
+            "bukti_pesan": [
+              5
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 28.txt"
+  }
+}

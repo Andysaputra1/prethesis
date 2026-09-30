@@ -1,0 +1,62 @@
+{
+  "job": {
+    "job_id": "r002831_v01",
+    "case_name": "quotation",
+    "case_description": "Ada tuduhan yang dikutip; bedakan sikap pengirim dari ucapan orang yang dikutip.",
+    "source": {
+      "source_row": 2831,
+      "source_group": "81d181fa68222889fdc9",
+      "teks_chat": "si A cuma ikut arus dari awal, berasa lagi nyamar jadi Civilian",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 2,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "quotation",
+    "participants": [
+      "Cinta",
+      "Deni",
+      "Elsa"
+    ],
+    "focus_player": "",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Cinta",
+        "teks_chat": "Deni kok dari tadi diem mulu, lu pasti pelakunya ya?",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Deni",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Elsa",
+        "teks_chat": "Tadi Cinta bilang 'Deni pasti pelakunya', gue sih setuju banget, dia terlalu pasif buat jadi warga biasa.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Deni",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 41.txt"
+  }
+}

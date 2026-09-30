@@ -1,0 +1,137 @@
+{
+  "job": {
+    "job_id": "r001806_v01",
+    "case_name": "self",
+    "case_description": "Defend diri sendiri atau offend/vote diri sendiri sesuai label. Target = pengirim.",
+    "source": {
+      "source_row": 1806,
+      "source_group": "eaaa1732450d3ace2113",
+      "teks_chat": "Riko tiba-tiba nuduh orang tanpa dasar, menurut gw dia hitman, langsung eksekusi Riko",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 9,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "self",
+    "participants": [
+      "Iwan",
+      "Jaka",
+      "Kiki",
+      "Lina"
+    ],
+    "focus_player": "Iwan",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Iwan",
+        "teks_chat": "Aku Stalker dan aku mempunyai informasi penting.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Jaka",
+        "teks_chat": "Coba bagikan informasi kamu Iwan kepada kami.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Iwan",
+        "teks_chat": "Aku mengaku memakai Peek pada Kiki, tetapi belum ingin membagikan hasilnya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Kiki",
+        "teks_chat": "Aku curiga Iwan Hitman yang memakai klaim tanpa hasil untuk mencari aman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Iwan",
+            "relasi": "offend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Lina",
+        "teks_chat": "Aku juga curiga dia mengarang klaim Stalker.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Iwan",
+            "relasi": "offend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Iwan",
+        "teks_chat": "Aku bukan Hitman. Aku masih mempertimbangkan risiko membagikan hasil yang kuklaim.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Iwan",
+            "relasi": "defend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Jaka",
+        "teks_chat": "Aku curiga kamu Hitman yang berbohong soal role.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Iwan",
+            "relasi": "offend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Kiki",
+        "teks_chat": "Sangat jelas dia mengarang cerita perannya.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Iwan",
+            "relasi": "offend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Iwan",
+        "teks_chat": "Kalau memang kalian semua sudah tidak percaya dengan penjelasanku, pilih saja aku sekalian!",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Iwan",
+            "relasi": "offend",
+            "bukti_pesan": [
+              9
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 30.txt"
+  }
+}

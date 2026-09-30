@@ -1,0 +1,80 @@
+{
+  "job": {
+    "job_id": "r002085_v01",
+    "case_name": "short_history_3",
+    "case_description": "Awal diskusi dengan tepat 3 pesan sebelumnya. Acuan tidak harus berada di pesan terakhir.",
+    "source": {
+      "source_row": 2085,
+      "source_group": "515052744dd87e361bab",
+      "teks_chat": "role aku Civilian, jadi argumenku murni dari urutan aksi dan voting",
+      "label_intent": "neutral"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 4,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "short_history_3",
+    "participants": [
+      "Putra",
+      "Qori",
+      "Rani"
+    ],
+    "focus_player": "",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Putra",
+        "teks_chat": "Qori, tadi kamu ngaku role apa?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Qori",
+        "teks_chat": "Aku ngaku Spy, semalam aku Guard satu orang.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Rani",
+        "teks_chat": "Oh, aku tadi salah baca, kukira kamu ngaku Stalker.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Putra",
+        "teks_chat": "Berarti Qori ngaku Spy, bukan Stalker, ya.",
+        "label_intent": "neutral",
+        "target": []
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 34.txt"
+  },
+  "revisi": [
+    {
+      "pesan": 1,
+      "kategori": "meta",
+      "alasan": "Menanyakan Guard itu skill siapa (aturan)."
+    },
+    {
+      "pesan": 2,
+      "kategori": "meta",
+      "alasan": "Menjelaskan Guard milik Spy dan fungsinya."
+    },
+    {
+      "pesan": 3,
+      "kategori": "meta",
+      "alasan": "Salah baca aturan skill."
+    },
+    {
+      "pesan": 4,
+      "kategori": "meta",
+      "alasan": "'Peek punya Stalker dan Guard punya Spy' = kebocoran prompt."
+    }
+  ]
+}

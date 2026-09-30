@@ -1,0 +1,66 @@
+{
+  "job": {
+    "job_id": "r001549_v01",
+    "case_name": "short_history_3",
+    "case_description": "Awal diskusi dengan tepat 3 pesan sebelumnya. Acuan tidak harus berada di pesan terakhir.",
+    "source": {
+      "source_row": 1549,
+      "source_group": "820a5ab0a7828a971f71",
+      "teks_chat": "yang mulai nuduh duluan justru si Wawan, mungkin dia sedang mengalihkan perhatian",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 4,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "short_history_3",
+    "participants": [
+      "Vian",
+      "Weni",
+      "Xaver"
+    ],
+    "focus_player": "Vian",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Vian",
+        "teks_chat": "Aku mengaku Spy dan memakai Guard semalam.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Weni",
+        "teks_chat": "Siapa yang kamu pilih, Vian?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Vian",
+        "teks_chat": "Aku tidak punya Guard; aku mengaku Civilian.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Xaver",
+        "teks_chat": "Vian, klaimmu baru saja berubah tanpa penjelasan. Aku curiga kamu Hitman yang mengarang role.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Vian",
+            "relasi": "offend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 27.txt"
+  }
+}

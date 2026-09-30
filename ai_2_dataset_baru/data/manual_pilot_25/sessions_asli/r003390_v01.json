@@ -1,0 +1,139 @@
+{
+  "job": {
+    "job_id": "r003390_v01",
+    "case_name": "interruption",
+    "case_description": "Pembahasan target disela obrolan waktu/ronde; kaitan kembali ke target masih jelas.",
+    "source": {
+      "source_row": 3390,
+      "source_group": "d6b8f6a333aee8e94799",
+      "teks_chat": "kalau aku pelaku, harusnya aku tidak akan membuka celah sebesar ini di diskusi",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 9,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "interruption",
+    "participants": [
+      "Fajar",
+      "Maya",
+      "Reza",
+      "Aldo",
+      "Bima",
+      "Citra"
+    ],
+    "focus_player": "Reza",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Fajar",
+        "teks_chat": "Reza diam terus, aku curiga dia Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Reza",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Maya",
+        "teks_chat": "Iya nih, telat banget balesnya.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Reza",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Reza",
+        "teks_chat": "Sori sori, inetku ngelag parah.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Reza",
+            "relasi": "defend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Aldo",
+        "teks_chat": "Alasan klasik, jangan-jangan lu lagi siapin rencana ya.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Reza",
+            "relasi": "offend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Bima",
+        "teks_chat": "Waktu diskusi tinggal 10 detik lagi guys!",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Citra",
+        "teks_chat": "Wah gila cepet banget waktunya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Aldo",
+        "teks_chat": "Eh iya, jangan lupa siapin vote kalian.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Maya",
+        "teks_chat": "Tapi balik ke yang tadi, dia kan bisa aja beneran lag jaringannya.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Reza",
+            "relasi": "defend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Fajar",
+        "teks_chat": "Betul juga, lagian respon dia emang sering kepotong dari ronde awal.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Reza",
+            "relasi": "defend",
+            "bukti_pesan": [
+              8
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 51.txt"
+  }
+}

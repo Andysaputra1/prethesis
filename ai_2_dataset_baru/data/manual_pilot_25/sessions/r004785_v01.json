@@ -1,0 +1,167 @@
+{
+  "job": {
+    "job_id": "r004785_v01",
+    "case_name": "rhetorical_question",
+    "case_description": "Pesan sekarang berbentuk pertanyaan retoris yang sebenarnya menuduh atau membela, misalnya 'kenapa Andy diam terus?' (offend) atau 'masa sih Andy Hitman?' (defend). Bukan pertanyaan informasi.",
+    "source": {
+      "source_row": 4785,
+      "source_group": "558d556916c12f18d494",
+      "teks_chat": "kalau mau menang, kita harus eksekusi Vina sebelum dia makin menggiring opini",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 12,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "rhetorical_question",
+    "participants": [
+      "Siti",
+      "Hadi",
+      "Gita",
+      "Yusuf"
+    ],
+    "focus_player": "Yusuf",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Siti",
+        "teks_chat": "Ada yang membaca perubahan ajakan vote di chat tadi?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Hadi",
+        "teks_chat": "Iya, beberapa ajakan berubah tanpa penjelasan.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Gita",
+        "teks_chat": "Kita perlu membaca alasannya sebelum menyimpulkan.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Yusuf",
+        "teks_chat": "Aku mengubah ajakan karena ragu dengan dugaan awalku.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Siti",
+        "teks_chat": "Aku curiga Yusuf Hitman, alasan ragu itu terlalu gampang dipakai.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Yusuf",
+            "relasi": "offend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Hadi",
+        "teks_chat": "Sangat mencurigakan memang.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Yusuf",
+            "relasi": "offend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Yusuf",
+        "teks_chat": "Aku bukan Hitman, perubahan ajakan itu bukan bukti.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Yusuf",
+            "relasi": "defend",
+            "bukti_pesan": [
+              7
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Gita",
+        "teks_chat": "Susah percaya kalau sudah berkaitan dengan keselamatan warga.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Yusuf",
+            "relasi": "offend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Siti",
+        "teks_chat": "Polanya selalu berulang jika Hitman sedang terpojok.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Yusuf",
+            "relasi": "offend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Hadi",
+        "teks_chat": "Mari kita pertimbangkan baik-baik langkah kita selanjutnya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Gita",
+        "teks_chat": "Aku sudah cukup yakin dengan analisaku.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Siti",
+        "teks_chat": "Kok Yusuf bisa ngubah ajakan gitu aja kalau bukan Hitman yang mau mecah suara?",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Yusuf",
+            "relasi": "offend",
+            "bukti_pesan": [
+              12
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 70.txt"
+  },
+  "revisi": [
+    {
+      "pesan": 5,
+      "kategori": "tidak_natural",
+      "alasan": "Siti bilang perubahan ajakan 'tidak dijelaskan' padahal Yusuf baru menjelaskan di pesan 4"
+    },
+    {
+      "pesan": 12,
+      "kategori": "tidak_natural",
+      "alasan": "'Bukankah' kaku dan 'tanpa alasan' bertentangan dengan pesan 4"
+    }
+  ]
+}

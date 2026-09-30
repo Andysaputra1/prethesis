@@ -1,0 +1,176 @@
+{
+  "job": {
+    "job_id": "r003885_v01",
+    "case_name": "nickname",
+    "case_description": "Pesan sekarang menyebut pemain dengan nama panggilan, singkatan, atau salah ketik ringan (Andy -> ndy, andi, si And) tanpa menulis nama aslinya. Catat sebutan itu di panggilan. Target tetap memakai nama asli; jika neutral, target kosong.",
+    "source": {
+      "source_row": 3885,
+      "source_group": "1aef06fca3ad18b01961",
+      "teks_chat": "siapa yang kelihatan mencurigakan setelah fase malam?",
+      "label_intent": "neutral"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 12,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "nickname",
+    "participants": [
+      "Nando",
+      "Opik",
+      "Putri"
+    ],
+    "focus_player": "Nando",
+    "panggilan": [
+      {
+        "pemain": "Nando",
+        "sebutan": [
+          "Nan"
+        ]
+      }
+    ],
+    "messages": [
+      {
+        "pengirim": "Nando",
+        "teks_chat": "Opik diam aja dari tadi, jangan-jangan dia Hitman yang sembunyi.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Opik",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Opik",
+        "teks_chat": "Aku lagi nyimak bentar, baca riwayat chat dulu.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Opik",
+            "relasi": "defend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Putri",
+        "teks_chat": "Aku curiga kamu Hitman karena terlalu lama diam.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Opik",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Opik",
+        "teks_chat": "Ya masa aku langsung ngetik tanpa tau konteks bahasannya.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Opik",
+            "relasi": "defend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Nando",
+        "teks_chat": "Tapi kelakuanmu tetap aja kelewat pasif dibanding yang lain.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Opik",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Putri",
+        "teks_chat": "Bener banget, orang yang pasif biasanya nyembunyiin identitas jahatnya.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Opik",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Opik",
+        "teks_chat": "Tolong percaya sama aku, aku ini bukan pelakunya.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Opik",
+            "relasi": "defend",
+            "bukti_pesan": [
+              7
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Nando",
+        "teks_chat": "Mending kita semua kumpulin info dulu sebelum terburu-buru milih.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Putri",
+        "teks_chat": "Setuju, lebih baik kita jalani diskusi baik-baik aja.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Opik",
+        "teks_chat": "Oke, aku lanjut baca chat dulu.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Nando",
+        "teks_chat": "Waktu timer kita kan masih lumayan panjang buat nyari tahu sisanya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Putri",
+        "teks_chat": "Nan, ada info tambahan yang mau dibagikan?",
+        "label_intent": "neutral",
+        "target": []
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 60.txt"
+  },
+  "revisi": [
+    {
+      "pesan": 10,
+      "kategori": "tidak_natural",
+      "alasan": "Kaku ('mari lanjut membaca chat')"
+    }
+  ]
+}

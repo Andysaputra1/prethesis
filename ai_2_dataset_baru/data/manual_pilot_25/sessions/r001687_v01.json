@@ -1,0 +1,46 @@
+{
+  "job": {
+    "job_id": "r001687_v01",
+    "case_name": "first_message_self",
+    "case_description": "Pesan pertama tanpa konteks membela atau menuduh diri sendiri. Target = pengirim; tidak perlu riwayat untuk memahami aku.",
+    "source": {
+      "source_row": 1687,
+      "source_group": "49e1277377137c10af46",
+      "teks_chat": "aku cuma ikut vote terakhir, yang mulai nuduh duluan tadi si E",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 1,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "first_message_self",
+    "participants": [
+      "Galih"
+    ],
+    "focus_player": "Galih",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Galih",
+        "teks_chat": "Sebelum ada yang nuduh macam-macam, aku mau bilang dari awal kalau aku orang baik dan cuma civilian biasa.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Galih",
+            "relasi": "defend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 29.txt"
+  }
+}

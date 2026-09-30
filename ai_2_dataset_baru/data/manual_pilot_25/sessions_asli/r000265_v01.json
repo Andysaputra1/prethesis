@@ -1,0 +1,76 @@
+{
+  "job": {
+    "job_id": "r000265_v01",
+    "case_name": "short_history_3",
+    "case_description": "Awal diskusi dengan tepat 3 pesan sebelumnya. Acuan tidak harus berada di pesan terakhir.",
+    "source": {
+      "source_row": 265,
+      "source_group": "a9b7edb1c0eab2b38ce0",
+      "teks_chat": "kalau Tono bukan Hitman, kenapa dia terus membela pemain yang paling mencurigakan",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 4,
+    "pesan_typo_ringan": [
+      1
+    ]
+  },
+  "session": {
+    "case_name": "short_history_3",
+    "participants": [
+      "Sandi",
+      "Tari",
+      "Umar"
+    ],
+    "focus_player": "Tari",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Sandi",
+        "teks_chat": "Tari, tadi kamu mengajak vote siapa? Ada yg ingin aku cocokkan dari ucapanmu.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Tari",
+        "teks_chat": "Aku mengajak vote Umar karena menurutku alasannya mencurigakan.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Umar",
+            "relasi": "offend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Umar",
+        "teks_chat": "Sebelumnya kamu bilang ingin menunda vote sampai ada alasan yang jelas.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Sandi",
+        "teks_chat": "Tari langsung berubah tanpa menjelaskan alasannya. Aku curiga Tari Hitman yang mau menggiring vote.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Tari",
+            "relasi": "offend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 3.txt"
+  }
+}

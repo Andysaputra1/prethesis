@@ -1,0 +1,161 @@
+{
+  "job": {
+    "job_id": "r003498_v01",
+    "case_name": "stance_change",
+    "case_description": "Pengirim pesan sekarang sebelumnya menuduh atau membela seorang pemain di konteks, lalu berubah sikap terhadap pemain yang sama. Anotasi mengikuti sikap terbaru.",
+    "source": {
+      "source_row": 3498,
+      "source_group": "b837abe6df85e72fc3b4",
+      "teks_chat": "gw bukan Hitman, kalau punya skill Gag Order tadi pasti sudah gw pakai ke orang yang paling vokal",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 9,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "stance_change",
+    "participants": [
+      "Gilang",
+      "Caca",
+      "Nando",
+      "Tomi"
+    ],
+    "focus_player": "Nando",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Gilang",
+        "teks_chat": "Si Nando ini aneh, ada yang dituduh dikit dia langsung cepet banget ngebela.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Nando",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Caca",
+        "teks_chat": "Iya, Nando kayaknya satu komplotan sama hitman deh.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Nando",
+            "relasi": "offend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Nando",
+        "teks_chat": "Aku bukan komplotan, aku membela karena tuduhannya belum berdasar.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Nando",
+            "relasi": "defend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Tomi",
+        "teks_chat": "Tetep aja ngebela orang terlalu cepet itu mencurigakan.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Nando",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Gilang",
+        "teks_chat": "Makanya, pasti Nando ini juga pelakunya yang bantu nutupin.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Nando",
+            "relasi": "offend",
+            "bukti_pesan": [
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Caca",
+        "teks_chat": "Aku udah terlanjur masukin vote ke Nando sih.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Nando",
+            "relasi": "offend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Nando",
+        "teks_chat": "Kalian cek aja kelakuanku dari awal, aku civilian tulen kok!",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Nando",
+            "relasi": "defend",
+            "bukti_pesan": [
+              7
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Tomi",
+        "teks_chat": "Halah, hitman juga bisa bikin alasan ngomong gitu.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Nando",
+            "relasi": "offend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Gilang",
+        "teks_chat": "Aku tarik tuduhan. Membela tuduhan yang belum berdasar tidak membuktikan dia Hitman.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Nando",
+            "relasi": "defend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 53.txt"
+  }
+}

@@ -1,0 +1,153 @@
+{
+  "job": {
+    "job_id": "r003678_v01",
+    "case_name": "neutral_status",
+    "case_description": "Klaim status/role atau pertanyaan informasi saja tanpa pembelaan/serangan; target kosong.",
+    "source": {
+      "source_row": 3678,
+      "source_group": "c41a7edfe102690dc599",
+      "teks_chat": "Aku Stalker, info yang bisa kubagi cuma Tio aman dari hasil peek-ku",
+      "label_intent": "neutral"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 9,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "neutral_status",
+    "participants": [
+      "Lina",
+      "Bagas",
+      "Deni",
+      "Sari"
+    ],
+    "focus_player": "",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Lina",
+        "teks_chat": "Bagas pasti Hitman, dia diam saja dari tadi.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Bagas",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Bagas",
+        "teks_chat": "Aku sedang mengamati obrolan kalian dengan saksama.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Bagas",
+            "relasi": "defend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Lina",
+        "teks_chat": "Kalau begitu, Deni yang pelakunya!",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Deni",
+            "relasi": "offend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Deni",
+        "teks_chat": "Kenapa tiba-tiba kamu menuduh aku?",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Deni",
+            "relasi": "defend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Sari",
+        "teks_chat": "Lina berganti tuduhan tanpa alasan, aku curiga dia Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Lina",
+            "relasi": "offend",
+            "bukti_pesan": [
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Bagas",
+        "teks_chat": "Aku setuju, Lina sepertinya mencoba mencari korban secara sembarangan.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Lina",
+            "relasi": "offend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Lina",
+        "teks_chat": "Aku hanya memancing reaksi kalian saja.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Lina",
+            "relasi": "defend",
+            "bukti_pesan": [
+              7
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Deni",
+        "teks_chat": "Alasan yang sangat klasik, Lina.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Lina",
+            "relasi": "offend",
+            "bukti_pesan": [
+              8
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Sari",
+        "teks_chat": "Aku adalah Civilian biasa, aku hanya mengamati tuduhan kalian yang berganti-ganti.",
+        "label_intent": "neutral",
+        "target": []
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 57.txt"
+  }
+}

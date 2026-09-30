@@ -1,0 +1,137 @@
+{
+  "job": {
+    "job_id": "r002141_v01",
+    "case_name": "negation",
+    "case_description": "Negasi menentukan relasi: Andy Hitman berbeda dari Andy bukan Hitman.",
+    "source": {
+      "source_row": 2141,
+      "source_group": "2c30d470c59141f05968",
+      "teks_chat": "tuduhan itu gak berdasar, gw cuma Civilian yang lagi baca situasi",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 8,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "negation",
+    "participants": [
+      "Aldo",
+      "Budi",
+      "Caca"
+    ],
+    "focus_player": "Aldo",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Aldo",
+        "teks_chat": "Ayo langsung vote Caca aja, chatnya sus!",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Caca",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Budi",
+        "teks_chat": "Tunggu, jangan vote Caca tanpa alasan yang jelas.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Caca",
+            "relasi": "defend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Caca",
+        "teks_chat": "Aku menolak tuduhan itu, belum ada bukti aku Hitman.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Caca",
+            "relasi": "defend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Aldo",
+        "teks_chat": "Itu baru dugaan aku.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Budi",
+        "teks_chat": "Kalau mau ngajak vote, kasih alasan dulu dong, jangan sampai kita salah ngeluarin orang.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Caca",
+        "teks_chat": "Aldo, pasti kamu Hitman yang mau menyingkirkan aku!",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Aldo",
+            "relasi": "offend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Budi",
+        "teks_chat": "Gimana nih, kita vote Aldo aja?",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Aldo",
+            "relasi": "offend",
+            "bukti_pesan": [
+              7
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Aldo",
+        "teks_chat": "Aku bukan hitman, jangan terhasut ya!",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Aldo",
+            "relasi": "defend",
+            "bukti_pesan": [
+              8
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 34.txt"
+  },
+  "revisi": [
+    {
+      "pesan": 5,
+      "kategori": "meta",
+      "alasan": "Menjelaskan mekanisme Tribunal mengeksekusi pemain"
+    }
+  ]
+}

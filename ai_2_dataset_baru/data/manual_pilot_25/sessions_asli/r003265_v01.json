@@ -1,0 +1,135 @@
+{
+  "job": {
+    "job_id": "r003265_v01",
+    "case_name": "outside_window_unknown",
+    "case_description": "14-16 pesan total. Pembahasan lama telah putus/beralih. Teks dan anotasi 12 konteks terakhir tidak cukup menentukan acuan sekarang. Target harus tidak_diketahui; jangan menggunakan informasi lama yang tidak tersedia dalam input.",
+    "source": {
+      "source_row": 3265,
+      "source_group": "5d85aba2232af33b8aba",
+      "teks_chat": "gw paham kenapa kalian curiga, tapi pola sebenarnya ada di dia yang selalu membela tersangka lain",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 14,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "outside_window_unknown",
+    "participants": [
+      "Putri",
+      "Dinda",
+      "Aris",
+      "Bagus",
+      "Cita",
+      "Bayu"
+    ],
+    "focus_player": "Bayu",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Putri",
+        "teks_chat": "Bayu tidak mau menjelaskan klaimnya, aku curiga dia Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Bayu",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Dinda",
+        "teks_chat": "Kita jeda pembahasan itu untuk memastikan aturan.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Aris",
+        "teks_chat": "Skill yang mau dibahas yang mana?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Bagus",
+        "teks_chat": "Guard digunakan oleh Spy saat malam.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Cita",
+        "teks_chat": "Berapa target perlindungannya?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Bayu",
+        "teks_chat": "Satu pemain pada satu malam.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Putri",
+        "teks_chat": "Boleh melindungi pemain yang sama berturut-turut?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Dinda",
+        "teks_chat": "Tidak boleh dua malam berturut-turut.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Aris",
+        "teks_chat": "Kalau Peek milik Stalker, kan?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Bagus",
+        "teks_chat": "Iya, Peek membuka identitas satu pemain.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Cita",
+        "teks_chat": "Cooldown Peek sekali setiap dua ronde.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Bayu",
+        "teks_chat": "Saat malam, chat dikunci.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Putri",
+        "teks_chat": "Diskusi dilanjutkan siang sebelum Tribunal.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Dinda",
+        "teks_chat": "Dia malah diam setelah ditanya, vote orang yang dibahas tadi!",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "tidak_diketahui",
+            "relasi": "offend",
+            "bukti_pesan": []
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 47.txt"
+  }
+}

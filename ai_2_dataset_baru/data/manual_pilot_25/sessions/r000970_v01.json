@@ -1,0 +1,156 @@
+{
+  "job": {
+    "job_id": "r000970_v01",
+    "case_name": "ambiguous",
+    "case_description": "Beberapa acuan sama-sama mungkin; target tidak_diketahui, bukan nama terakhir.",
+    "source": {
+      "source_row": 970,
+      "source_group": "2fc23a5b01400f7c31c4",
+      "teks_chat": "kalau gw hitman, harusnya dari tadi sudah ada yang kena gag order",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 13,
+    "pesan_typo_ringan": [
+      2
+    ]
+  },
+  "session": {
+    "case_name": "ambiguous",
+    "participants": [
+      "Udin",
+      "Vera",
+      "Wawan",
+      "Xena",
+      "Yoga"
+    ],
+    "focus_player": "",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Udin",
+        "teks_chat": "Vera dan Xena sama-sama cepat membela pemain yang baru dituduh tadi, ya?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Vera",
+        "teks_chat": "Mending kita bahas alasan pembelaan itu, bukan cuma kecepatannya yg dipersoalkan.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Wawan",
+        "teks_chat": "Benar, cepat membalas belum membuktikan role siapa pun.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Xena",
+        "teks_chat": "Terus alasan pembelaan siapa yang mau dibahas duluan?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Yoga",
+        "teks_chat": "Menurutku kalau civilian murni pasti mikir-mikir dulu sebelum ngebela orang.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Udin",
+        "teks_chat": "Aku curiga salah satu dari dua pembela tadi Hitman, tetapi belum ingin menyebut siapa.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "tidak_diketahui",
+            "relasi": "offend",
+            "bukti_pesan": []
+          }
+        ]
+      },
+      {
+        "pengirim": "Vera",
+        "teks_chat": "Aku belum tahu siapa yang kamu maksud, jadi belum bisa menanggapi tuduhan itu.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Wawan",
+        "teks_chat": "Terus kita harus gimana nih?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Xena",
+        "teks_chat": "Periksa isi chat kedua orang yang disebut tadi dulu.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Yoga",
+        "teks_chat": "Kalau makin kelihatan kerjasamanya, kita langsung serang aja.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Udin",
+        "teks_chat": "Yang aku curigai salah satu dari dua pembela itu, tetapi namanya belum ingin kusebut.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "tidak_diketahui",
+            "relasi": "offend",
+            "bukti_pesan": []
+          }
+        ]
+      },
+      {
+        "pengirim": "Vera",
+        "teks_chat": "Kalau begitu, jangan ajak vote sebelum jelas siapa dan alasannya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Wawan",
+        "teks_chat": "Aku membela salah satu dari dua orang yang cepat membalas tadi, tetapi belum mau menyebut namanya. Dia belum pantas dicap Hitman.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "tidak_diketahui",
+            "relasi": "defend",
+            "bukti_pesan": []
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 19.txt"
+  },
+  "revisi": [
+    {
+      "pesan": 2,
+      "kategori": "singkatan",
+      "alasan": "Slot typo [2] tapi pesan 2 tidak berisi singkatan; teks juga kaku"
+    },
+    {
+      "pesan": 4,
+      "kategori": "tidak_natural",
+      "alasan": "Xena (salah satu pembela cepat) justru menyebut kecepatan pembelaan tidak wajar; kontradiktif"
+    },
+    {
+      "pesan": 5,
+      "kategori": "tidak_natural",
+      "alasan": "'Setuju' menggantung setelah pesan 4 diperbaiki"
+    },
+    {
+      "pesan": 11,
+      "kategori": "label",
+      "alasan": "Isi sama dengan pesan 6 (mencurigai salah satu pembela) yang berlabel offend; tidak konsisten"
+    }
+  ]
+}

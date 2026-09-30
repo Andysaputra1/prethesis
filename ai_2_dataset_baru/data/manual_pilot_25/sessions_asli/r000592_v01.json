@@ -1,0 +1,109 @@
+{
+  "job": {
+    "job_id": "r000592_v01",
+    "case_name": "self",
+    "case_description": "Defend diri sendiri atau offend/vote diri sendiri sesuai label. Target = pengirim.",
+    "source": {
+      "source_row": 592,
+      "source_group": "d90580c57531399750e6",
+      "teks_chat": "aku sempat di-gag pas mau jawab, jadi wajar kalau penjelasanku telat, bukan karena ngeles",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 7,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "self",
+    "participants": [
+      "Fikri",
+      "Gita",
+      "Hana",
+      "Iqbal"
+    ],
+    "focus_player": "Fikri",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Fikri",
+        "teks_chat": "Apa yang sedang dibahas sejak chat dibuka lagi?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Gita",
+        "teks_chat": "Fikri, kenapa kamu ngetiknya baru muncul sekarang sih? Telat banget reaksimu.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Hana",
+        "teks_chat": "Iya nih, dari tadi kita udah ngobrolin topik lain.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Iqbal",
+        "teks_chat": "Aku curiga Fikri Hitman yang sengaja terlambat ikut diskusi supaya tidak ditanya.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Fikri",
+            "relasi": "offend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Gita",
+        "teks_chat": "Aku juga curiga dia sengaja menghindari pertanyaan.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Fikri",
+            "relasi": "offend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Fikri",
+        "teks_chat": "Aku ini baru bisa nyambung lagi soalnya tadi tiba-tiba WiFi di rumah putus, jadi koneksinya error sebentar.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Fikri",
+            "relasi": "defend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Fikri",
+        "teks_chat": "Sumpah aku bukan pelakunya, koneksiku emang dari tadi bermasalah makanya pesanku kepotong-potong dan lambat banget masuknya.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Fikri",
+            "relasi": "defend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 10.txt"
+  }
+}

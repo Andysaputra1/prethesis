@@ -1,0 +1,67 @@
+{
+  "job": {
+    "job_id": "r004033_v01",
+    "case_name": "short_history_2",
+    "case_description": "Awal diskusi dengan tepat 2 pesan sebelumnya. Gunakan hanya petunjuk yang tersedia.",
+    "source": {
+      "source_row": 4033,
+      "source_group": "1198105092134ce70707",
+      "teks_chat": "Spy, kalau mau dipercaya sebutin minimal siapa yang lu lindungi",
+      "label_intent": "neutral"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 3,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "short_history_2",
+    "participants": [
+      "Deni",
+      "Eka"
+    ],
+    "focus_player": "Eka",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Deni",
+        "teks_chat": "Eka, aku curiga kamu Hitman yang mengaku Spy.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Eka",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Eka",
+        "teks_chat": "Aku bukan Hitman, aku klaim Spy dan belum ingin membuka pilihan Guard.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Eka",
+            "relasi": "defend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Deni",
+        "teks_chat": "Ada yang ingin bertanya soal aturan Guard?",
+        "label_intent": "neutral",
+        "target": []
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 61.txt"
+  }
+}

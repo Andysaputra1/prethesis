@@ -1,0 +1,209 @@
+{
+  "job": {
+    "job_id": "r004847_v01",
+    "case_name": "memory_outside_window",
+    "case_description": "14-16 pesan total. Nama target hanya disebut sebelum 12 konteks terakhir. Dalam jendela, ada pesan yang meneruskan acuan dengan jelas dan menyimpan anotasi target berdasarkan pesan lama. Pesan sekarang merujuk target sama. Nama target tidak muncul dalam teks 12 konteks terakhir atau pesan sekarang; target diketahui lewat memori.",
+    "source": {
+      "source_row": 4847,
+      "source_group": "7d3c1e1c9adfbf93a2f0",
+      "teks_chat": "aku tetap pada teori awal, Galih adalah Hitman meskipun dia ngaku punya role",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 14,
+    "pesan_typo_ringan": [
+      12
+    ]
+  },
+  "session": {
+    "case_name": "memory_outside_window",
+    "participants": [
+      "Vina",
+      "Wira",
+      "Yaya"
+    ],
+    "focus_player": "Yaya",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Vina",
+        "teks_chat": "Aku klaim Stalker, hasil Peek-ku menunjukkan Yaya Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Yaya",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Wira",
+        "teks_chat": "Hah, masa sih begitu?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Yaya",
+        "teks_chat": "Aku bukan Hitman, klaim hasil itu tidak benar.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Yaya",
+            "relasi": "defend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Vina",
+        "teks_chat": "Aku tetap yakin kamu Hitman, hasil Peek-ku jelas.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Yaya",
+            "relasi": "offend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Wira",
+        "teks_chat": "Ini klaim Stalker ya?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Vina",
+        "teks_chat": "Iya, aku memakai skill Stalker tadi malam.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Yaya",
+        "teks_chat": "Sekali lagi, aku bukan Hitman. Hasil Peek itu karangan dia.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Yaya",
+            "relasi": "defend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Wira",
+        "teks_chat": "Terus bagaimana ini? Kita mau mengikuti petunjuk Vina?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Vina",
+        "teks_chat": "Ikuti saja usulku, aku jamin informasiku akurat seratus persen.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Yaya",
+            "relasi": "offend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Wira",
+        "teks_chat": "Agak ragu sih, takutnya malah salah sasaran.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Yaya",
+        "teks_chat": "Tuh kan, Wira saja merasa ragu. Kalian jangan asal percaya klaim sepihak.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Yaya",
+            "relasi": "defend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Vina",
+        "teks_chat": "Aku tetap yakin dia Hitman krn hasil Peek-ku.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Yaya",
+            "relasi": "offend",
+            "bukti_pesan": [
+              11
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Wira",
+        "teks_chat": "Aku ikut vote dia berdasarkan klaim itu.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Yaya",
+            "relasi": "offend",
+            "bukti_pesan": [
+              12
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Vina",
+        "teks_chat": "Ayo kita vote dia sebelum waktunya habis.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Yaya",
+            "relasi": "offend",
+            "bukti_pesan": [
+              12
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 71.txt"
+  },
+  "revisi": [
+    {
+      "pesan": 4,
+      "kategori": "tidak_natural",
+      "alasan": "'tetap menuduh kamu ... berdasarkan klaim hasil Peek-ku' kaku"
+    },
+    {
+      "pesan": 7,
+      "kategori": "tidak_natural",
+      "alasan": "Mengulang persis kalimat pesan 3"
+    },
+    {
+      "pesan": 12,
+      "kategori": "singkatan",
+      "alasan": "Slot typo [12] tapi pesan tidak memuat singkatan ringan"
+    }
+  ]
+}

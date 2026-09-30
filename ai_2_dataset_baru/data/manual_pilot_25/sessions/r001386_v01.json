@@ -1,0 +1,165 @@
+{
+  "job": {
+    "job_id": "r001386_v01",
+    "case_name": "reference_middle",
+    "case_description": "Tepat 12 konteks. Penyebutan target eksplisit di pesan konteks ke-6 atau ke-7.",
+    "source": {
+      "source_row": 1386,
+      "source_group": "87c69e6854bcab7ed926",
+      "teks_chat": "tuduhan ke gw belum ada buktinya, malah si D sempat ubah argumen mendadak",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 13,
+    "pesan_typo_ringan": [
+      13
+    ]
+  },
+  "session": {
+    "case_name": "reference_middle",
+    "participants": [
+      "Irfan",
+      "Joko",
+      "Lina",
+      "Maman",
+      "Nisa"
+    ],
+    "focus_player": "Maman",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Irfan",
+        "teks_chat": "Ada klaim role yang perlu dicocokkan lagi?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Joko",
+        "teks_chat": "Aku melihat ada pemain yang mengubah klaim.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Lina",
+        "teks_chat": "Awalnya dia menyebut Spy, lalu Stalker.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Nisa",
+        "teks_chat": "Dia ada bilang salah ketik nggak?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Irfan",
+        "teks_chat": "Aku belum membaca penjelasannya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Lina",
+        "teks_chat": "Maman yang mengubah klaim. Aku curiga Maman Hitman karena ceritanya tidak konsisten.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Maman",
+            "relasi": "offend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Maman",
+        "teks_chat": "Aku bukan Hitman, tadi aku salah mengetik nama role.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Maman",
+            "relasi": "defend",
+            "bukti_pesan": [
+              7
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Joko",
+        "teks_chat": "Terus, role mana yang sekarang kamu klaim?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Maman",
+        "teks_chat": "Aku mengaku Stalker.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Irfan",
+        "teks_chat": "Kapan kamu memakai Peek?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Lina",
+        "teks_chat": "Aku juga ingin mendengar jawaban itu.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Maman",
+        "teks_chat": "Aku tidak mau membuka hasilnya sekarang, tetapi aku bukan Hitman.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Maman",
+            "relasi": "defend",
+            "bukti_pesan": [
+              12
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Nisa",
+        "teks_chat": "Aku curiga kamu mengubah klaim krn mau menghindari pertanyaan. Menurutku kamu Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Maman",
+            "relasi": "offend",
+            "bukti_pesan": [
+              12
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 24.txt"
+  },
+  "revisi": [
+    {
+      "pesan": 4,
+      "kategori": "tidak_natural",
+      "alasan": "Pertanyaan kaku ('Apakah dia bilang ...')"
+    },
+    {
+      "pesan": 8,
+      "kategori": "label",
+      "alasan": "Nama focus Maman muncul lagi di pesan 8 sehingga ciri reference_middle (nama hanya di posisi 6) rusak"
+    },
+    {
+      "pesan": 13,
+      "kategori": "singkatan",
+      "alasan": "Slot typo [13] tapi pesan tidak memuat singkatan ringan"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "job": {
+    "job_id": "r000345_v01",
+    "case_name": "short_history_2",
+    "case_description": "Awal diskusi dengan tepat 2 pesan sebelumnya. Gunakan hanya petunjuk yang tersedia.",
+    "source": {
+      "source_row": 345,
+      "source_group": "3787e9b6611192286bdf",
+      "teks_chat": "aku kena Gag Order setelah menulis bahwa si O terlihat pasif, O yang aku tuduh Hitman",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 3,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "short_history_2",
+    "participants": [
+      "Putri",
+      "Qori",
+      "Raka"
+    ],
+    "focus_player": "Putri",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Putri",
+        "teks_chat": "Halo semuanya, aku mau klaim sebagai Spy pada ronde ini ya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Qori",
+        "teks_chat": "Klaim begitu saja tanpa membawa info apa-apa rasanya kurang meyakinkan buat kita.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Raka",
+        "teks_chat": "Pasti Putri cuma mau cari aman dengan pura-pura memberikan klaim kosong, mari kita turunkan dia saja sekarang.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Putri",
+            "relasi": "offend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 4.txt"
+  }
+}

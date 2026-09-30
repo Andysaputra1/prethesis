@@ -1,0 +1,60 @@
+{
+  "job": {
+    "job_id": "r000899_v01",
+    "case_name": "short_history_2",
+    "case_description": "Awal diskusi dengan tepat 2 pesan sebelumnya. Gunakan hanya petunjuk yang tersedia.",
+    "source": {
+      "source_row": 899,
+      "source_group": "bd9bcc88283c096fd2f7",
+      "teks_chat": "aku Spy, malam pertama jagain Z, jadi klaim dia sebagai korban itu bohong",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 3,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "short_history_2",
+    "participants": [
+      "Eka",
+      "Fani",
+      "Gilang"
+    ],
+    "focus_player": "Fani",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Eka",
+        "teks_chat": "Kalian ngerasa ada yang aneh ngga sih dari awal permainan ini?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Fani",
+        "teks_chat": "Aneh apanya? Perasaanku biasa aja kok dari tadi.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Gilang",
+        "teks_chat": "Fani kok tenang banget ya pas situasi lagi genting gini? Pasti dia pelakunya yang udah nyiapin rencana, ayo vote dia!",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Fani",
+            "relasi": "offend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 18.txt"
+  }
+}

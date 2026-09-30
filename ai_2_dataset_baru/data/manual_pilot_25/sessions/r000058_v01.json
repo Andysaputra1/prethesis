@@ -1,0 +1,144 @@
+{
+  "job": {
+    "job_id": "r000058_v01",
+    "case_name": "reference_middle",
+    "case_description": "Tepat 12 konteks. Penyebutan target eksplisit di pesan konteks ke-6 atau ke-7.",
+    "source": {
+      "source_row": 58,
+      "source_group": "2fbae3c1ae873d1965dc",
+      "teks_chat": "aku ikut pendapat kalian, tapi Luki memang paling mencurigakan",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 13,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "reference_middle",
+    "participants": [
+      "Eka",
+      "Fajar",
+      "Gilang",
+      "Hani"
+    ],
+    "focus_player": "Gilang",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Eka",
+        "teks_chat": "Ada klaim penggunaan skill semalam yang ingin dibagikan?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Hani",
+        "teks_chat": "Aku belum membaca klaim baru.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Fajar",
+        "teks_chat": "Kita beri waktu pemain menyusun pesannya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Eka",
+        "teks_chat": "Klaim itu nanti tetap perlu dibandingkan dengan aturan role.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Hani",
+        "teks_chat": "Iya, konsistensi cerita bisa diperiksa dari chat.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Fajar",
+        "teks_chat": "Gilang tadi mengaku Spy, lalu Stalker. Aku curiga Gilang Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Gilang",
+            "relasi": "offend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Hani",
+        "teks_chat": "Ada penjelasan kenapa klaimnya berubah?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Eka",
+        "teks_chat": "Aku belum lihat dia jelasin kenapa klaimnya berubah.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Fajar",
+        "teks_chat": "Aku juga belum, kedua klaimnya masih berbeda.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Hani",
+        "teks_chat": "Berarti kita bisa meminta penjelasan dari orangnya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Eka",
+        "teks_chat": "Kita tidak melihat role asli, tetapi ketidaksesuaian ucapannya jelas.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Fajar",
+        "teks_chat": "Aku masih curiga dia sedang mengarang untuk cari aman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Gilang",
+            "relasi": "offend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Eka",
+        "teks_chat": "Aku setuju dengan tuduhan itu. Aku ingin vote dia kalau tidak ada penjelasan yang masuk akal.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Gilang",
+            "relasi": "offend",
+            "bukti_pesan": [
+              12
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 78.txt"
+  },
+  "revisi": [
+    {
+      "pesan": 8,
+      "kategori": "tidak_natural",
+      "alasan": "Menyebut 'koreksi salah ketik' padahal belum ada yang membahas salah ketik; tidak nyambung."
+    }
+  ]
+}

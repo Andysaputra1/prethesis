@@ -1,0 +1,143 @@
+{
+  "job": {
+    "job_id": "r001998_v01",
+    "case_name": "quotation",
+    "case_description": "Ada tuduhan yang dikutip; bedakan sikap pengirim dari ucapan orang yang dikutip.",
+    "source": {
+      "source_row": 1998,
+      "source_group": "cb00a34b3c88e145b245",
+      "teks_chat": "daripada buang vote ke pemain diam, mending tekan si P yang jawabannya terus berubah",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 9,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "quotation",
+    "participants": [
+      "Feri",
+      "Dina",
+      "Gilang"
+    ],
+    "focus_player": "Feri",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Feri",
+        "teks_chat": "Dina belum membalas lagi. Pasti Dina kena Gag Order.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Dina",
+        "teks_chat": "Aku baru bisa membalas, koneksiku sempat terputus.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Gilang",
+        "teks_chat": "Kita belum tahu penyebab jeda chat itu dari pesan saja.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Feri",
+        "teks_chat": "Dina belum pantas dituduh hanya karena terlambat membalas.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Dina",
+            "relasi": "defend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Gilang",
+        "teks_chat": "Feri, aku curiga kamu Hitman karena terlalu yakin mengetahui status pemain lain.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Feri",
+            "relasi": "offend",
+            "bukti_pesan": [
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Feri",
+        "teks_chat": "Aku bukan Hitman. Ucapan awalku cuma dugaan yang kusampaikan terlalu yakin.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Feri",
+            "relasi": "defend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Dina",
+        "teks_chat": "Aku memang bukan Hitman, tetapi aku tidak bisa membuktikan role Feri.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Dina",
+            "relasi": "defend",
+            "bukti_pesan": [
+              7
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Gilang",
+        "teks_chat": "Aku tetap curiga Feri menggunakan dugaan status korban untuk mencari kepercayaan.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Feri",
+            "relasi": "offend",
+            "bukti_pesan": [
+              8
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Gilang",
+        "teks_chat": "Dina belum pantas dituduh. Feri tadi bilang 'Pasti Dina kena Gag Order'; kepastiannya itu membuatku curiga Feri Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Dina",
+            "relasi": "defend",
+            "bukti_pesan": [
+              9
+            ]
+          },
+          {
+            "pemain": "Feri",
+            "relasi": "offend",
+            "bukti_pesan": [
+              9
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 33.txt"
+  }
+}

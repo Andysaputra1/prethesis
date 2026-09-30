@@ -1,0 +1,155 @@
+{
+  "job": {
+    "job_id": "r003454_v01",
+    "case_name": "reference_end",
+    "case_description": "Tepat 12 konteks. Penyebutan target eksplisit di pesan konteks terakhir.",
+    "source": {
+      "source_row": 3454,
+      "source_group": "1a46f75d91a8a08fcabc",
+      "teks_chat": "jangan samakan sikap keras kepala gw dengan perilaku sus, dari awal posisi gw jelas",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 13,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "reference_end",
+    "participants": [
+      "Tora",
+      "Lina",
+      "Andi",
+      "Nia",
+      "Geri",
+      "Wawan"
+    ],
+    "focus_player": "Wawan",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Tora",
+        "teks_chat": "Ada klaim skill semalam yang ingin dibagikan?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Lina",
+        "teks_chat": "Aku belum mau membuka klaim.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Andi",
+        "teks_chat": "Kita bisa membaca chat dulu sambil menunggu.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Nia",
+        "teks_chat": "Iya, periksa alasan yang sudah disebut.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Tora",
+        "teks_chat": "Oke, aku baca ulang.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Geri",
+        "teks_chat": "Ada satu pemain pasif yang aku curigai Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "tidak_diketahui",
+            "relasi": "offend",
+            "bukti_pesan": []
+          }
+        ]
+      },
+      {
+        "pengirim": "Lina",
+        "teks_chat": "Aku juga curiga pemain itu Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "tidak_diketahui",
+            "relasi": "offend",
+            "bukti_pesan": []
+          }
+        ]
+      },
+      {
+        "pengirim": "Andi",
+        "teks_chat": "Siapa yang kalian maksud?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Nia",
+        "teks_chat": "Jangan vote pemain itu hanya karena diam.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "tidak_diketahui",
+            "relasi": "defend",
+            "bukti_pesan": []
+          }
+        ]
+      },
+      {
+        "pengirim": "Geri",
+        "teks_chat": "Aku tetap menduga pemain itu pelakunya.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "tidak_diketahui",
+            "relasi": "offend",
+            "bukti_pesan": []
+          }
+        ]
+      },
+      {
+        "pengirim": "Lina",
+        "teks_chat": "Sebutkan namanya supaya jelas.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Geri",
+        "teks_chat": "Wawan. Aku curiga Wawan Hitman karena tidak memberi pendapat.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Wawan",
+            "relasi": "offend",
+            "bukti_pesan": [
+              12
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Andi",
+        "teks_chat": "Jangan vote dia hanya karena pasif, dia belum terbukti Hitman.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Wawan",
+            "relasi": "defend",
+            "bukti_pesan": [
+              12
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 53.txt"
+  }
+}

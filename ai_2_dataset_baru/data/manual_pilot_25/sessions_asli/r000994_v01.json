@@ -1,0 +1,160 @@
+{
+  "job": {
+    "job_id": "r000994_v01",
+    "case_name": "second_person",
+    "case_description": "Kamu/lu: gunakan pergantian pembicara dan teks yang jelas. Tanpa acuan jelas, target tidak_diketahui.",
+    "source": {
+      "source_row": 994,
+      "source_group": "019eff08a6f47804c790",
+      "teks_chat": "sumpah aku bukan Hitman, role-ku Spy. Lu bisa jadi partnerku buat ngawasin pola vote mereka",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 13,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "second_person",
+    "participants": [
+      "Indra",
+      "Joko",
+      "Lina"
+    ],
+    "focus_player": "Indra",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Indra",
+        "teks_chat": "Halo semua, aku mau claim Spy nih buat ronde ini.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Joko",
+        "teks_chat": "Wah cepet banget claimnya, emang ada info apa?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Indra",
+        "teks_chat": "Aku mengaku memilih Guard untuk Joko semalam.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Joko",
+        "teks_chat": "Kenapa kamu memilih Guard untukku?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Indra",
+        "teks_chat": "Aku menilai pertanyaanmu di diskusi sebelumnya membantu, jadi ingin melindungimu.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Lina",
+        "teks_chat": "Klaim yang minim bukti gitu biasanya cuma trik doang.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Joko",
+        "teks_chat": "Indra, aku curiga kamu Hitman yang sedang mengarang klaim Spy.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Indra",
+            "relasi": "offend",
+            "bukti_pesan": [
+              7
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Indra",
+        "teks_chat": "Aku bukan Hitman. Itulah pilihan Guard yang kuklaim.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Indra",
+            "relasi": "defend",
+            "bukti_pesan": [
+              8
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Joko",
+        "teks_chat": "Klaim itu belum bisa kami verifikasi dari chat saja.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Lina",
+        "teks_chat": "Iya, kyknya sengaja dibikin samar biar ngga ketauan belangnya.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Indra",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Indra",
+        "teks_chat": "Kalian ngga percaya sama laporanku? Aku sumpah deh aku ini Spy murni.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Indra",
+            "relasi": "defend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Joko",
+        "teks_chat": "Halah, lu pasti Hitman yang lagi manfaatin situasi.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Indra",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Lina",
+        "teks_chat": "Indra, aku membela kamu untuk sekarang. Klaim yang belum terbukti tidak otomatis membuat kamu Hitman.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Indra",
+            "relasi": "defend",
+            "bukti_pesan": [
+              13
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 19.txt"
+  }
+}

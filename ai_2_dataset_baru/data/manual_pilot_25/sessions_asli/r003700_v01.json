@@ -1,0 +1,108 @@
+{
+  "job": {
+    "job_id": "r003700_v01",
+    "case_name": "witness",
+    "case_description": "Nama saksi/korban disebut, tetapi bukan target serangan atau pembelaan.",
+    "source": {
+      "source_row": 3700,
+      "source_group": "97e2b2415d91ead5912c",
+      "teks_chat": "kalau kalian mau eksekusi aku, silakan, tapi aku Spy yang sudah guard Dito",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 7,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "witness",
+    "participants": [
+      "Oka",
+      "Putri",
+      "Rudi"
+    ],
+    "focus_player": "Putri",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Oka",
+        "teks_chat": "Ada yang membaca perubahan klaim role Putri?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Putri",
+        "teks_chat": "Aku mengaku Civilian dari awal.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Rudi",
+        "teks_chat": "Putri bohong, tadi dia mengaku Spy. Aku curiga dia Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Putri",
+            "relasi": "offend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Oka",
+        "teks_chat": "Kita cocokkan isi chatnya dulu.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Putri",
+        "teks_chat": "Aku bukan Hitman. Pesan klaim Spy itu bukan tulisanku.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Putri",
+            "relasi": "defend",
+            "bukti_pesan": [
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Rudi",
+        "teks_chat": "Aku tetap curiga Putri pelakunya.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Putri",
+            "relasi": "offend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Oka",
+        "teks_chat": "Rudi tampaknya salah membaca pengirim. Aku menolak tuduhan ke Putri berdasarkan pesan itu.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Putri",
+            "relasi": "defend",
+            "bukti_pesan": [
+              7
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 57.txt"
+  }
+}

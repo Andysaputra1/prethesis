@@ -1,0 +1,76 @@
+{
+  "job": {
+    "job_id": "r003252_v01",
+    "case_name": "rhetorical_question",
+    "case_description": "Pesan sekarang berbentuk pertanyaan retoris yang sebenarnya menuduh atau membela, misalnya 'kenapa Andy diam terus?' (offend) atau 'masa sih Andy Hitman?' (defend). Bukan pertanyaan informasi.",
+    "source": {
+      "source_row": 3252,
+      "source_group": "14f3370651691e821798",
+      "teks_chat": "lu nuduh gw karena gw tegas, padahal yang mencurigakan itu si B yang dari tadi menghindar",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 3,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "rhetorical_question",
+    "participants": [
+      "Nisa",
+      "Edo",
+      "Tomi"
+    ],
+    "focus_player": "Edo",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Nisa",
+        "teks_chat": "Edo ini pasti pelakunya, dia langsung membela diri padahal belum dituduh.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Edo",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Edo",
+        "teks_chat": "Aku cuma menjelaskan posisiku biar kalian tidak curiga.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Edo",
+            "relasi": "defend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Tomi",
+        "teks_chat": "Kenapa kamu panik sekali kalau memang bukan pelakunya?",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Edo",
+            "relasi": "offend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 47.txt"
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "job": {
+    "job_id": "r001139_v01",
+    "case_name": "explicit",
+    "case_description": "Target eksplisit di pesan sekarang. Contoh: Aku yakin bukan Andy = defend Andy.",
+    "source": {
+      "source_row": 1139,
+      "source_group": "8580e1f01945ade00582",
+      "teks_chat": "Kalau memang ada bukti aku Hitman, tunjukkan hasil Peek atau info Guard-nya",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 2,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "explicit",
+    "participants": [
+      "Irfan",
+      "Joko"
+    ],
+    "focus_player": "Irfan",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Joko",
+        "teks_chat": "Identitas korban diculik kok dirahasiakan, pasti ini ulah Irfan yang lagi main Hitman Hostage!",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Irfan",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Joko",
+        "teks_chat": "Aku tarik tuduhanku. Irfan belum pantas dituduh hanya karena nama korban memang tidak diumumkan.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Irfan",
+            "relasi": "defend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 22.txt"
+  }
+}

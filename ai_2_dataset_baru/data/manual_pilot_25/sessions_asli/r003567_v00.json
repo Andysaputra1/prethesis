@@ -1,0 +1,46 @@
+{
+  "job": {
+    "job_id": "r003567_v00",
+    "case_name": "original",
+    "case_description": "Satu pesan tanpa riwayat. Pertahankan teks dan intent sumber persis; jangan mengarang riwayat asli.",
+    "source": {
+      "source_row": 3567,
+      "source_group": "f892b5713b70923a7bce",
+      "teks_chat": "santai, gw bukan pelaku. gw Civilian dan gak pernah punya akses buat Hostage",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 1,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "original",
+    "participants": [
+      "Hendra"
+    ],
+    "focus_player": "Hendra",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Hendra",
+        "teks_chat": "santai, gw bukan pelaku. gw Civilian dan gak pernah punya akses buat Hostage",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Hendra",
+            "relasi": "defend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 55.txt"
+  }
+}

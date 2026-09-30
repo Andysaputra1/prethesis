@@ -1,0 +1,60 @@
+{
+  "job": {
+    "job_id": "r002855_v01",
+    "case_name": "self",
+    "case_description": "Defend diri sendiri atau offend/vote diri sendiri sesuai label. Target = pengirim.",
+    "source": {
+      "source_row": 2855,
+      "source_group": "1c1156bda426d6bf5cb4",
+      "teks_chat": "mayoritas curiga E, gw ikut vote dia karena chatnya memang janggal",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 2,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "self",
+    "participants": [
+      "Jojo",
+      "Kiki"
+    ],
+    "focus_player": "Jojo",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Kiki",
+        "teks_chat": "Jojo, lu tahu nggak siapa yang disandera semalam?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Jojo",
+        "teks_chat": "Daripada debat terus, vote gue aja sekalian!",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Jojo",
+            "relasi": "offend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 42.txt"
+  },
+  "revisi": [
+    {
+      "pesan": 1,
+      "kategori": "aturan_game",
+      "alasan": "'diserang' tidak sesuai skill Hitman (menyandera)"
+    }
+  ]
+}

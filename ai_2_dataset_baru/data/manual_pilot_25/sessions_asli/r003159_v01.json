@@ -1,0 +1,78 @@
+{
+  "job": {
+    "job_id": "r003159_v01",
+    "case_name": "second_person",
+    "case_description": "Kamu/lu: gunakan pergantian pembicara dan teks yang jelas. Tanpa acuan jelas, target tidak_diketahui.",
+    "source": {
+      "source_row": 3159,
+      "source_group": "ed0080030e3fd1fe1791",
+      "teks_chat": "Sabar, gue bukan tersangka yang tepat. Pola target malam ini lebih cocok dengan pemain yang kemarin paling vokal",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 6,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "second_person",
+    "participants": [
+      "Dani",
+      "Eka",
+      "Fani"
+    ],
+    "focus_player": "Eka",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Dani",
+        "teks_chat": "Eka, ada klaim skill yang ingin dibagikan?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Eka",
+        "teks_chat": "Aku klaim Stalker dan memakai Peek semalam.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Fani",
+        "teks_chat": "Siapa targetnya?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Eka",
+        "teks_chat": "Aku tidak mau menyebut targetnya sekarang.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Dani",
+        "teks_chat": "Baik, klaimnya belum bisa kita bahas lebih lanjut.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Fani",
+        "teks_chat": "Eka, kamu pasti Hitman yang membuat klaim palsu untuk cari aman!",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Eka",
+            "relasi": "offend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 45.txt"
+  }
+}

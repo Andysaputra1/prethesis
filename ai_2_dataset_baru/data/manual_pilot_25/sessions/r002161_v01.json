@@ -1,0 +1,195 @@
+{
+  "job": {
+    "job_id": "r002161_v01",
+    "case_name": "outside_window_unknown",
+    "case_description": "14-16 pesan total. Pembahasan lama telah putus/beralih. Teks dan anotasi 12 konteks terakhir tidak cukup menentukan acuan sekarang. Target harus tidak_diketahui; jangan menggunakan informasi lama yang tidak tersedia dalam input.",
+    "source": {
+      "source_row": 2161,
+      "source_group": "e88ed61c72c7b8b5968b",
+      "teks_chat": "gw Civilian, kalau mau eksekusi gw minimal kasih bukti yang bener",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 14,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "outside_window_unknown",
+    "participants": [
+      "Wati",
+      "Yoga",
+      "Zahra",
+      "Arif"
+    ],
+    "focus_player": "Wati",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Yoga",
+        "teks_chat": "Aku curiga Wati Hitman karena terlalu cepat mengajak vote.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Wati",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Arif",
+        "teks_chat": "Bentar, semalam ada yang pakai skill nggak?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Zahra",
+        "teks_chat": "Maksudnya skill yang mana?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Arif",
+        "teks_chat": "Guard atau Peek, siapa tahu ada yang mau ngaku.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Yoga",
+        "teks_chat": "Aku bukan Spy, jadi nggak bisa bantu soal Guard.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Zahra",
+        "teks_chat": "Aku juga bukan, cuma Civilian biasa.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Arif",
+        "teks_chat": "Kalau ada Stalker, hasil Peek-nya bisa bantu banget.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Yoga",
+        "teks_chat": "Mungkin pada takut diincer kalau ngaku sekarang.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Zahra",
+        "teks_chat": "Masuk akal sih, takut disandera nanti malam.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Arif",
+        "teks_chat": "Ya udah, yang penting jangan ada yang ngaku-ngaku palsu.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Yoga",
+        "teks_chat": "Setuju, klaim palsu bikin kita makin bingung.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Zahra",
+        "teks_chat": "Waktu diskusi tinggal sedikit nih.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Arif",
+        "teks_chat": "Oke, kita lanjut lagi aja.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Zahra",
+        "teks_chat": "Balik ke tuduhan tadi, menurutku dia belum terbukti Hitman.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "tidak_diketahui",
+            "relasi": "defend",
+            "bukti_pesan": []
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 35.txt"
+  },
+  "revisi": [
+    {
+      "pesan": 2,
+      "kategori": "meta",
+      "alasan": "Blok pesan 2-13 berisi tanya-jawab aturan skill (fase Guard, larangan dua malam, Peek milik Stalker, cooldown)"
+    },
+    {
+      "pesan": 3,
+      "kategori": "meta",
+      "alasan": "Blok pesan 2-13 berisi tanya-jawab aturan skill (fase Guard, larangan dua malam, Peek milik Stalker, cooldown)"
+    },
+    {
+      "pesan": 4,
+      "kategori": "meta",
+      "alasan": "Blok pesan 2-13 berisi tanya-jawab aturan skill (fase Guard, larangan dua malam, Peek milik Stalker, cooldown)"
+    },
+    {
+      "pesan": 5,
+      "kategori": "meta",
+      "alasan": "Blok pesan 2-13 berisi tanya-jawab aturan skill (fase Guard, larangan dua malam, Peek milik Stalker, cooldown)"
+    },
+    {
+      "pesan": 6,
+      "kategori": "meta",
+      "alasan": "Blok pesan 2-13 berisi tanya-jawab aturan skill (fase Guard, larangan dua malam, Peek milik Stalker, cooldown)"
+    },
+    {
+      "pesan": 7,
+      "kategori": "meta",
+      "alasan": "Blok pesan 2-13 berisi tanya-jawab aturan skill (fase Guard, larangan dua malam, Peek milik Stalker, cooldown)"
+    },
+    {
+      "pesan": 8,
+      "kategori": "meta",
+      "alasan": "Blok pesan 2-13 berisi tanya-jawab aturan skill (fase Guard, larangan dua malam, Peek milik Stalker, cooldown)"
+    },
+    {
+      "pesan": 9,
+      "kategori": "meta",
+      "alasan": "Blok pesan 2-13 berisi tanya-jawab aturan skill (fase Guard, larangan dua malam, Peek milik Stalker, cooldown)"
+    },
+    {
+      "pesan": 10,
+      "kategori": "meta",
+      "alasan": "Blok pesan 2-13 berisi tanya-jawab aturan skill (fase Guard, larangan dua malam, Peek milik Stalker, cooldown)"
+    },
+    {
+      "pesan": 11,
+      "kategori": "meta",
+      "alasan": "Blok pesan 2-13 berisi tanya-jawab aturan skill (fase Guard, larangan dua malam, Peek milik Stalker, cooldown)"
+    },
+    {
+      "pesan": 12,
+      "kategori": "meta",
+      "alasan": "Blok pesan 2-13 berisi tanya-jawab aturan skill (fase Guard, larangan dua malam, Peek milik Stalker, cooldown)"
+    },
+    {
+      "pesan": 13,
+      "kategori": "meta",
+      "alasan": "Blok pesan 2-13 berisi tanya-jawab aturan skill (fase Guard, larangan dua malam, Peek milik Stalker, cooldown)"
+    }
+  ]
+}

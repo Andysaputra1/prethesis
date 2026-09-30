@@ -1,0 +1,173 @@
+{
+  "job": {
+    "job_id": "r000907_v01",
+    "case_name": "self",
+    "case_description": "Defend diri sendiri atau offend/vote diri sendiri sesuai label. Target = pengirim.",
+    "source": {
+      "source_row": 907,
+      "source_group": "4a85e57d05ab8423189e",
+      "teks_chat": "aku bukan Hitman, aku Stalker dan tadi malam ngecek si Naya",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 10,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "self",
+    "participants": [
+      "Joko",
+      "Lila",
+      "Maman",
+      "Nisa"
+    ],
+    "focus_player": "Nisa",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Joko",
+        "teks_chat": "Kok Nisa cepet banget ngebela Maman tadi pas awal diskusi?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Lila",
+        "teks_chat": "Aku curiga Nisa dan Maman sama-sama Hitman karena saling membela terlalu cepat.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Nisa",
+            "relasi": "offend",
+            "bukti_pesan": [
+              2
+            ]
+          },
+          {
+            "pemain": "Maman",
+            "relasi": "offend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Nisa",
+        "teks_chat": "Aku bukan Hitman, dan Maman belum pantas dituduh. Aku hanya melihat bahwa alasan tuduhan kepadanya lemah.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Nisa",
+            "relasi": "defend",
+            "bukti_pesan": [
+              3
+            ]
+          },
+          {
+            "pemain": "Maman",
+            "relasi": "defend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Maman",
+        "teks_chat": "Nisa belum pantas dituduh karena membantah alasan yang lemah.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Nisa",
+            "relasi": "defend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Joko",
+        "teks_chat": "Tapi tetep aja mencurigakan kalau terlalu cepet bereaksi.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Nisa",
+            "relasi": "offend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Lila",
+        "teks_chat": "Biasanya Hitman emang gitu, panikan.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Nisa",
+            "relasi": "offend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Nisa",
+        "teks_chat": "Aku tidak bersalah. Membaca kelemahan tuduhan bukan bukti aku Hitman.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Nisa",
+            "relasi": "defend",
+            "bukti_pesan": [
+              7
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Maman",
+        "teks_chat": "Udah, jangan maksa nuduh Nisa, dia bersih kok.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Nisa",
+            "relasi": "defend",
+            "bukti_pesan": [
+              7
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Joko",
+        "teks_chat": "Kita lihat aja perkembangannya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Nisa",
+        "teks_chat": "Terserah lah kalian mau ngomong apa, yang jelas aku cuma ngebelain fakta karena aku ini civilian murni.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Nisa",
+            "relasi": "defend",
+            "bukti_pesan": [
+              10
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 18.txt"
+  }
+}

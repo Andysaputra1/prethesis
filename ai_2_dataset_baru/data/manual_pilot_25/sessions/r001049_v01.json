@@ -1,0 +1,123 @@
+{
+  "job": {
+    "job_id": "r001049_v01",
+    "case_name": "topic_switch",
+    "case_description": "Pembahasan berganti pemain; pesan sekarang mengikuti topik baru, bukan otomatis target lama.",
+    "source": {
+      "source_row": 1049,
+      "source_group": "64a10194007acc911ce8",
+      "teks_chat": "aku Spy, semalam nge-guard Gita, jadi jangan asal lempar tuduhan ke aku",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 8,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "topic_switch",
+    "participants": [
+      "Wawan",
+      "Xena",
+      "Yogi",
+      "Zain"
+    ],
+    "focus_player": "Yogi",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Wawan",
+        "teks_chat": "Tadi Xena bilang dia Stalker, tapi kok nggak mau nyebutin nama targetnya?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Xena",
+        "teks_chat": "Ya kan takutnya dia langsung diincer Hitman, mending keep secret dulu.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Yogi",
+        "teks_chat": "Alesan aja lu, lu pasti Hitman yang lagi nyari aman kan!",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Xena",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Zain",
+        "teks_chat": "Eh ngomong-ngomong, Yogi dari tadi cuma ikutan nyerang orang tanpa bawa bukti jelas ya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Wawan",
+        "teks_chat": "Aku curiga Yogi Hitman karena menuduh orang tanpa memberi alasan yang jelas.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Yogi",
+            "relasi": "offend",
+            "bukti_pesan": [
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Xena",
+        "teks_chat": "Nah kan, malah Yogi yang kelihatan kayak Hitman asli yang lagi adu domba kita.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Yogi",
+            "relasi": "offend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Yogi",
+        "teks_chat": "Aku cuma berusaha kritis aja sama semua klaim yang masuk, sumpah aku bukan pelakunya.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Yogi",
+            "relasi": "defend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Zain",
+        "teks_chat": "Aku setuju sama alasannya Yogi sih, wajar aja kok civilian waspada sama klaim tanpa bukti kuat.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Yogi",
+            "relasi": "defend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 21.txt"
+  }
+}

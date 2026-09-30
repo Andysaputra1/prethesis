@@ -1,0 +1,64 @@
+{
+  "job": {
+    "job_id": "r002090_v01",
+    "case_name": "neutral_status",
+    "case_description": "Klaim status/role atau pertanyaan informasi saja tanpa pembelaan/serangan; target kosong.",
+    "source": {
+      "source_row": 2090,
+      "source_group": "bfb7be949083b57d5339",
+      "teks_chat": "secara terbuka aku claim Spy, tetapi target Guard belum bisa kusebutkan",
+      "label_intent": "neutral"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 5,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "neutral_status",
+    "participants": [
+      "Sani",
+      "Toni",
+      "Udin"
+    ],
+    "focus_player": "",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Sani",
+        "teks_chat": "Ada yang mengganti ajakan vote di chat tadi?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Toni",
+        "teks_chat": "Ada, tapi aku lupa siapa yang menulisnya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Udin",
+        "teks_chat": "Kalau ingat pesannya, sebutkan supaya bisa kita baca lagi.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Sani",
+        "teks_chat": "Aku juga mau baca ulang diskusinya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Toni",
+        "teks_chat": "Sambil menunggu, aku klaim Civilian. Itu info role dariku.",
+        "label_intent": "neutral",
+        "target": []
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 34.txt"
+  }
+}

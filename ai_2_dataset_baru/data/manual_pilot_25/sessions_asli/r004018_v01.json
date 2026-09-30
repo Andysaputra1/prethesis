@@ -1,0 +1,90 @@
+{
+  "job": {
+    "job_id": "r004018_v01",
+    "case_name": "short_history_3",
+    "case_description": "Awal diskusi dengan tepat 3 pesan sebelumnya. Acuan tidak harus berada di pesan terakhir.",
+    "source": {
+      "source_row": 4018,
+      "source_group": "d3248498ebcd617ab4f5",
+      "teks_chat": "lu terlalu cepat nuduh, jangan-jangan tahu hasil Peek semalam",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 4,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "short_history_3",
+    "participants": [
+      "Aldo",
+      "Bimo",
+      "Candra"
+    ],
+    "focus_player": "Candra",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Aldo",
+        "teks_chat": "Candra lama membalas, aku curiga dia Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Candra",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Bimo",
+        "teks_chat": "Paling lagi ngatur rencana sama temen hitmannya itu.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Candra",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Candra",
+        "teks_chat": "Keyboardku agak error dari tadi siang, sori banget kalau putus-putus.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Candra",
+            "relasi": "defend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Aldo",
+        "teks_chat": "Ah alasan aja lu, kelakuan lu udah ketebak mencurigakan dari awal ronde!",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Candra",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 61.txt"
+  }
+}

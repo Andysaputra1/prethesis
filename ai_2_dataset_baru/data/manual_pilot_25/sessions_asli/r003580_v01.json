@@ -1,0 +1,117 @@
+{
+  "job": {
+    "job_id": "r003580_v01",
+    "case_name": "witness",
+    "case_description": "Nama saksi/korban disebut, tetapi bukan target serangan atau pembelaan.",
+    "source": {
+      "source_row": 3580,
+      "source_group": "68f333cb8133279aa81b",
+      "teks_chat": "kalian jangan kejebak, aku stalker dan hasil peek-ku nunjuk Gilang",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 7,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "witness",
+    "participants": [
+      "Aldi",
+      "Beni",
+      "Cici",
+      "Dodi"
+    ],
+    "focus_player": "Beni",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Aldi",
+        "teks_chat": "Beni, tadi kamu mengaku Guard Dodi semalam, ya?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Beni",
+        "teks_chat": "Iya, aku klaim Spy dan Guard Dodi.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Cici",
+        "teks_chat": "Tadi kamu bilang Guard Aldi. Aku curiga Beni Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Beni",
+            "relasi": "offend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Beni",
+        "teks_chat": "Aku salah menyebut nama, bukan Hitman. Yang benar Dodi.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Beni",
+            "relasi": "defend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Aldi",
+        "teks_chat": "Aku tetap curiga Beni Hitman karena klaim target berubah.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Beni",
+            "relasi": "offend",
+            "bukti_pesan": [
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Beni",
+        "teks_chat": "Aku bukan Hitman, koreksiku sudah jelas.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Beni",
+            "relasi": "defend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Cici",
+        "teks_chat": "Aldi juga membaca perubahan klaimnya. Vote Beni, aku curiga dia Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Beni",
+            "relasi": "offend",
+            "bukti_pesan": [
+              7
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 55.txt"
+  }
+}

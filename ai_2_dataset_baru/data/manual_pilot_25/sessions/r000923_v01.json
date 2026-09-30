@@ -1,0 +1,54 @@
+{
+  "job": {
+    "job_id": "r000923_v01",
+    "case_name": "neutral_after_accusation",
+    "case_description": "Konteks berisi tuduhan, tetapi pesan sekarang neutral; jangan mewarisi relasi lama.",
+    "source": {
+      "source_row": 923,
+      "source_group": "5921e2e83ac747b416ed",
+      "teks_chat": "semalam aku guard kamu, jadi kalau ada serangan berarti targetnya memang kamu",
+      "label_intent": "neutral"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 2,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "neutral_after_accusation",
+    "participants": [
+      "Raka",
+      "Sinta",
+      "Tito"
+    ],
+    "focus_player": "",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Raka",
+        "teks_chat": "Sinta, kenapa lu ngajakin kita buat nge-vote Tito padahal nggak ada bukti apa-apa? Pasti lu Hitman!",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Sinta",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Tito",
+        "teks_chat": "Ngomong-ngomong soal vote, sisa waktu kita buat mutusin tuh berapa menit lagi sih?",
+        "label_intent": "neutral",
+        "target": []
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 18.txt"
+  }
+}

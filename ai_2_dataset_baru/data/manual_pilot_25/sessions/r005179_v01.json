@@ -1,0 +1,83 @@
+{
+  "job": {
+    "job_id": "r005179_v01",
+    "case_name": "short_history_2",
+    "case_description": "Awal diskusi dengan tepat 2 pesan sebelumnya. Gunakan hanya petunjuk yang tersedia.",
+    "source": {
+      "source_row": 5179,
+      "source_group": "edb3663db1f2177fb871",
+      "teks_chat": "aku Hitman, bercanda, jangan langsung telan claim siapa pun mentah-mentah",
+      "label_intent": "neutral"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 3,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "short_history_2",
+    "participants": [
+      "Toni",
+      "Umar",
+      "Vina",
+      "Wawan"
+    ],
+    "focus_player": "",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Umar",
+        "teks_chat": "Aku sebelumnya curiga Toni, sekarang lebih curiga Vina.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Vina",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Vina",
+        "teks_chat": "Kok malah nuduh aku? Kamu sendiri yang putar-putar alibi!",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Vina",
+            "relasi": "defend",
+            "bukti_pesan": [
+              2
+            ]
+          },
+          {
+            "pemain": "Umar",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Wawan",
+        "teks_chat": "Coba kita kumpulkan dulu semua bukti sebelum saling tuduh.",
+        "label_intent": "neutral",
+        "target": []
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 75.txt"
+  },
+  "revisi": [
+    {
+      "pesan": 2,
+      "kategori": "label",
+      "alasan": "'Kok malah nuduh aku?' membela diri + menuduh Umar; relasi defend Vina hilang"
+    }
+  ]
+}

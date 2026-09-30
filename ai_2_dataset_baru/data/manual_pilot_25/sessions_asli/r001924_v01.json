@@ -1,0 +1,68 @@
+{
+  "job": {
+    "job_id": "r001924_v01",
+    "case_name": "short_history_2",
+    "case_description": "Awal diskusi dengan tepat 2 pesan sebelumnya. Gunakan hanya petunjuk yang tersedia.",
+    "source": {
+      "source_row": 1924,
+      "source_group": "0f3d8beebc671e8bfb5e",
+      "teks_chat": "mayoritas nuduh Raka cuma karena dia telat ngomong? bukti tipis, mending vote Dimas yang terus ngarahin diskusi",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 3,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "short_history_2",
+    "participants": [
+      "Hani",
+      "Ivan",
+      "Jojo"
+    ],
+    "focus_player": "Ivan",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Hani",
+        "teks_chat": "Siapa yang mengganti ajakan vote di chat tadi?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Ivan",
+        "teks_chat": "Aku tidak sedang memanipulasi dugaan, aku memang belum mengajak vote siapa pun.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Ivan",
+            "relasi": "defend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Jojo",
+        "teks_chat": "Ivan, tadi kamu mengajak vote lalu mengganti namanya. Aku curiga kamu Hitman yang mengacaukan diskusi.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Ivan",
+            "relasi": "offend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 32.txt"
+  }
+}

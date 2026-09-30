@@ -1,0 +1,76 @@
+{
+  "job": {
+    "job_id": "r000480_v01",
+    "case_name": "self",
+    "case_description": "Defend diri sendiri atau offend/vote diri sendiri sesuai label. Target = pengirim.",
+    "source": {
+      "source_row": 480,
+      "source_group": "6c390f7c79b366fffcbd",
+      "teks_chat": "aku siap kalau mau diperiksa lewat alur diskusi, tapi vote ke aku sekarang terlalu gegabah; si Z punya lebih banyak kontradiksi",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 3,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "self",
+    "participants": [
+      "Andi",
+      "Budi",
+      "Caca"
+    ],
+    "focus_player": "Caca",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Andi",
+        "teks_chat": "Budi dari tadi pasif banget dan tidak membantu, jangan-jangan dia Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Budi",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Caca",
+        "teks_chat": "Budi belum pantas dituduh sebagai Hitman hanya karena belum membalas.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Budi",
+            "relasi": "defend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Caca",
+        "teks_chat": "Eh kok aku jadi ngerasa pembelaanku sendiri terlalu cepat dan malah mencurigakan, ya udah kalau kalian ragu mending vote aku saja!",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Caca",
+            "relasi": "offend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 7.txt"
+  }
+}

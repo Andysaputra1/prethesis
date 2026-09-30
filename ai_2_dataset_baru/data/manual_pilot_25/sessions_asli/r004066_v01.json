@@ -1,0 +1,58 @@
+{
+  "job": {
+    "job_id": "r004066_v01",
+    "case_name": "short_history_3",
+    "case_description": "Awal diskusi dengan tepat 3 pesan sebelumnya. Acuan tidak harus berada di pesan terakhir.",
+    "source": {
+      "source_row": 4066,
+      "source_group": "a982ddbc411586505b6d",
+      "teks_chat": "ada yang di-Gag Order kemarin? sebelum dibungkam, dia sempat ngomong apa?",
+      "label_intent": "neutral"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 4,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "short_history_3",
+    "participants": [
+      "Deni",
+      "Eko",
+      "Fina"
+    ],
+    "focus_player": "",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Deni",
+        "teks_chat": "Kenapa ajakan vote di chat berubah menjelang akhir diskusi?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Eko",
+        "teks_chat": "Aku juga ingin membaca alasan perubahannya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Fina",
+        "teks_chat": "Kita bisa cari pesan yang menyebut alasan baru.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Deni",
+        "teks_chat": "Siapa yang pertama menulis perubahan ajakan itu?",
+        "label_intent": "neutral",
+        "target": []
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 63.txt"
+  }
+}

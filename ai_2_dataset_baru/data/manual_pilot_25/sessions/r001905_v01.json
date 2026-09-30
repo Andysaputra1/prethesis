@@ -1,0 +1,197 @@
+{
+  "job": {
+    "job_id": "r001905_v01",
+    "case_name": "explicit",
+    "case_description": "Target eksplisit di pesan sekarang. Contoh: Aku yakin bukan Andy = defend Andy.",
+    "source": {
+      "source_row": 1905,
+      "source_group": "d329a23df1d50616d1c5",
+      "teks_chat": "kalau Fajar benar-benar Civilian, harusnya dia tidak perlu menggiring kita sekeras ini, ayo keluarkan Fajar",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 12,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "explicit",
+    "participants": [
+      "Romi",
+      "Siska",
+      "Toni"
+    ],
+    "focus_player": "Toni",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Romi",
+        "teks_chat": "Tadi kalian membahas apa saja di sini?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Siska",
+        "teks_chat": "Kami masih sibuk mencari petunjuk.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Toni",
+        "teks_chat": "Aku curiga sama Siska.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Siska",
+            "relasi": "offend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Siska",
+        "teks_chat": "Kenapa tiba-tiba menyalahkan aku?",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Siska",
+            "relasi": "defend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Romi",
+        "teks_chat": "Santai dulu, jangan terburu-buru.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Toni",
+        "teks_chat": "Aku tarik tuduhan pada Siska, alasannya belum kuat. Sekarang aku curiga Romi.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Siska",
+            "relasi": "defend",
+            "bukti_pesan": [
+              6
+            ]
+          },
+          {
+            "pemain": "Romi",
+            "relasi": "offend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Romi",
+        "teks_chat": "Lho kok sekarang targetnya pindah ke aku?",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Romi",
+            "relasi": "defend",
+            "bukti_pesan": [
+              7
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Siska",
+        "teks_chat": "Toni aneh banget, tadi nuduh aku, sekarang pindah ke Romi.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Toni",
+            "relasi": "offend",
+            "bukti_pesan": [
+              8
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Toni",
+        "teks_chat": "Itu hanya perubahan firasatku, aku belum punya alasan kuat.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Toni",
+            "relasi": "defend",
+            "bukti_pesan": [
+              9
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Siska",
+        "teks_chat": "Firasat kok ganti-ganti dalam semenit.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Toni",
+            "relasi": "offend",
+            "bukti_pesan": [
+              9
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Romi",
+        "teks_chat": "Betul, ini mah cuma akal-akalan mau cari tumbal aja.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Toni",
+            "relasi": "offend",
+            "bukti_pesan": [
+              9
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Siska",
+        "teks_chat": "Fix, Toni pelakunya karena nuduhnya asal ganti-ganti terus dari tadi!",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Toni",
+            "relasi": "offend",
+            "bukti_pesan": [
+              12
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 31.txt"
+  },
+  "revisi": [
+    {
+      "pesan": 8,
+      "kategori": "label",
+      "alasan": "Siska menilai perilaku Toni (yang baru memindah tuduhan) aneh = mencurigai Toni; teks diperjelas agar acuan & bukti sah"
+    },
+    {
+      "pesan": 9,
+      "kategori": "label",
+      "alasan": "Toni membela diri atas perubahan tuduhannya = defend diri"
+    }
+  ]
+}

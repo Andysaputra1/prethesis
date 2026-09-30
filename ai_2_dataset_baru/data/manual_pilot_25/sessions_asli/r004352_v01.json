@@ -1,0 +1,169 @@
+{
+  "job": {
+    "job_id": "r004352_v01",
+    "case_name": "reference_middle",
+    "case_description": "Tepat 12 konteks. Penyebutan target eksplisit di pesan konteks ke-6 atau ke-7.",
+    "source": {
+      "source_row": 4352,
+      "source_group": "0c9c383f8b768c547b92",
+      "teks_chat": "mereka ramai menekan aku, tapi tidak ada yang berani menanyakan peran si F",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 13,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "reference_middle",
+    "participants": [
+      "Aldo",
+      "Beni",
+      "Dinda",
+      "Dimas"
+    ],
+    "focus_player": "Dimas",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Aldo",
+        "teks_chat": "Chat malam memang dikunci, ya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Beni",
+        "teks_chat": "Iya, diskusi berlangsung siang.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Dinda",
+        "teks_chat": "Ngomong-ngomong, ada pemain yang balas chatnya lambat sekali.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Aldo",
+        "teks_chat": "Siapa orang yang kamu maksud itu?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Beni",
+        "teks_chat": "Aku perhatikan ada beberapa yang agak pasif.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Dinda",
+        "teks_chat": "Dimas lambat membalas sejak diskusi dibuka. Aku curiga Dimas Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Dimas",
+            "relasi": "offend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Aldo",
+        "teks_chat": "Oh, betul juga, Dimas selalu begitu tiap ronde.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Dimas",
+            "relasi": "offend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Beni",
+        "teks_chat": "Mungkin otaknya sedang berpikir keras merangkai skenario palsu.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Dimas",
+            "relasi": "offend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Dinda",
+        "teks_chat": "Atau dia bimbang karena kehabisan alibi.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Dimas",
+            "relasi": "offend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Aldo",
+        "teks_chat": "Orang yang bermain jujur biasanya cepat merespons chat.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Dimas",
+            "relasi": "offend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Beni",
+        "teks_chat": "Betul sekali, respons spontan menunjukkan tidak ada yang disembunyikan.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Dimas",
+            "relasi": "offend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Dinda",
+        "teks_chat": "Bagaimana, apakah kita semua sudah satu suara soal ini?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Aldo",
+        "teks_chat": "Ya, gayanya yang lambat sangat mencurigakan, aku vote dia.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Dimas",
+            "relasi": "offend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 64.txt"
+  }
+}

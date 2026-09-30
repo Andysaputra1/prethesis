@@ -1,0 +1,177 @@
+{
+  "job": {
+    "job_id": "r001227_v01",
+    "case_name": "reference_middle",
+    "case_description": "Tepat 12 konteks. Penyebutan target eksplisit di pesan konteks ke-6 atau ke-7.",
+    "source": {
+      "source_row": 1227,
+      "source_group": "50d4f40ea1e1ad20afe4",
+      "teks_chat": "lu nuduh dia Hitman, tapi bukannya dia mungkin baru saja diselamatkan Spy?",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 13,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "reference_middle",
+    "participants": [
+      "Fikri",
+      "Gita",
+      "Hasan",
+      "Indra",
+      "Jihan"
+    ],
+    "focus_player": "Jihan",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Fikri",
+        "teks_chat": "Ada pertanyaan di chat yang belum dijawab?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Gita",
+        "teks_chat": "Aku belum selesai membaca percakapan.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Hasan",
+        "teks_chat": "Aku melihat pertanyaan soal alasan vote yang belum ditanggapi.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Indra",
+        "teks_chat": "Kita beri kesempatan orangnya membaca dulu.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Fikri",
+        "teks_chat": "Siapa yang ditanya soal alasan vote?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Gita",
+        "teks_chat": "Jihan yang belum menjawab sejak tadi.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Hasan",
+        "teks_chat": "Aku curiga Jihan Hitman karena menghindari pertanyaan itu.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Jihan",
+            "relasi": "offend",
+            "bukti_pesan": [
+              7
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Indra",
+        "teks_chat": "Belum menjawab saja belum menjelaskan penyebabnya.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Jihan",
+            "relasi": "defend",
+            "bukti_pesan": [
+              7
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Jihan",
+        "teks_chat": "Aku bukan Hitman. Aku sedang membaca ulang chat sebelum menjawab.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Jihan",
+            "relasi": "defend",
+            "bukti_pesan": [
+              9
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Fikri",
+        "teks_chat": "Aku tetap curiga dia mengarang alasan.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Jihan",
+            "relasi": "offend",
+            "bukti_pesan": [
+              9
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Gita",
+        "teks_chat": "Aku setuju dengan tuduhan itu, aku ingin vote dia.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Jihan",
+            "relasi": "offend",
+            "bukti_pesan": [
+              10
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Hasan",
+        "teks_chat": "Aku juga masih curiga dia pelakunya.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Jihan",
+            "relasi": "offend",
+            "bukti_pesan": [
+              11
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Indra",
+        "teks_chat": "Dia belum pantas dituduh hanya dari jeda chat. Kita belum membaca penjelasannya.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Jihan",
+            "relasi": "defend",
+            "bukti_pesan": [
+              12
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 23.txt"
+  },
+  "revisi": [
+    {
+      "pesan": 8,
+      "kategori": "label",
+      "alasan": "Menolak alasan tuduhan Hasan terhadap Jihan = defend Jihan."
+    }
+  ]
+}

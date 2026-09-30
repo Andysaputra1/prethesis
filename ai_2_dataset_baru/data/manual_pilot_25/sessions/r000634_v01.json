@@ -1,0 +1,208 @@
+{
+  "job": {
+    "job_id": "r000634_v01",
+    "case_name": "second_person",
+    "case_description": "Kamu/lu: gunakan pergantian pembicara dan teks yang jelas. Tanpa acuan jelas, target tidak_diketahui.",
+    "source": {
+      "source_row": 634,
+      "source_group": "0e87094257c99415bd27",
+      "teks_chat": "santai, aku bukan pelaku; tadi malam aku cuma jadi target yang gagal disandera",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 13,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "second_person",
+    "participants": [
+      "Jaka",
+      "Kiki",
+      "Lila"
+    ],
+    "focus_player": "Jaka",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Kiki",
+        "teks_chat": "Aku curiga Jaka Hitman karena terus menunda jawaban.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Jaka",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Jaka",
+        "teks_chat": "Sinyalku bener-bener lagi jelek dari tadi, maaf ya.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Jaka",
+            "relasi": "defend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Lila",
+        "teks_chat": "Ah, alesan klise banget nyalahin sinyal.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Jaka",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Kiki",
+        "teks_chat": "Aku juga curiga dia sengaja mengulur waktu supaya tidak perlu menjawab.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Jaka",
+            "relasi": "offend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Jaka",
+        "teks_chat": "Beneran kok, lagian daritadi aku diem juga karena ngga ada hal penting buat dibahas.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Jaka",
+            "relasi": "defend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Lila",
+        "teks_chat": "Nggak penting gimana? Kan kita butuh info buat nentuin siapa pelakunya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Kiki",
+        "teks_chat": "Pasti dia sengaja nggak mau nimbrung biar nggak blunder.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Jaka",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Jaka",
+        "teks_chat": "Sumpah aku bukan Hitman, aku cuma beneran ngga tau apa-apa.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Jaka",
+            "relasi": "defend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Lila",
+        "teks_chat": "Makin ngeles makin kelihatan bohongnya.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Jaka",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Kiki",
+        "teks_chat": "Vote Jaka aja guys, daripada pusing mikirin alasannya yang nggak masuk akal.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Jaka",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Jaka",
+        "teks_chat": "Aku tidak bersalah. Jangan vote aku hanya karena respons chat lambat.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Jaka",
+            "relasi": "defend",
+            "bukti_pesan": [
+              11
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Lila",
+        "teks_chat": "Tapi tingkah lu itu bikin kita curiga setengah mati tau.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Jaka",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Kiki",
+        "teks_chat": "Jaka, setelah kupikir, kamu belum pantas dituduh. Gangguan koneksi bisa menjelaskan responsmu yang lambat.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Jaka",
+            "relasi": "defend",
+            "bukti_pesan": [
+              13
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 11.txt"
+  }
+}

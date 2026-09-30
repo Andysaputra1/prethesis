@@ -1,0 +1,93 @@
+{
+  "job": {
+    "job_id": "r000109_v01",
+    "case_name": "mixed_relations",
+    "case_description": "Membela satu pemain dan menuduh pemain lain. Intent utama offend; simpan kedua relasi.",
+    "source": {
+      "source_row": 109,
+      "source_group": "e61bf44c8d62f35b7854",
+      "teks_chat": "jangan vote acak, fokus ke si U yang tiba-tiba agresif setelah Gag Order terjadi",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 4,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "mixed_relations",
+    "participants": [
+      "Agus",
+      "Budi",
+      "Citra"
+    ],
+    "focus_player": "",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Agus",
+        "teks_chat": "Setelah malam selesai, aku masih belum tahu siapa sasaran Hostage.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Budi",
+        "teks_chat": "Belum ada yang tahu siapa yang disandera, mending nggak usah dibahas dulu.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Citra",
+        "teks_chat": "Budi, kamu buru-buru banget nyuruh kita berhenti bahas korban. Aku curiga kamu Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Budi",
+            "relasi": "offend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Agus",
+        "teks_chat": "Budi jelas bukan pelakunya, justru Citra yang dari tadi menuduh sembarangan tanpa bukti, ayo vote Citra!",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Budi",
+            "relasi": "defend",
+            "bukti_pesan": [
+              3
+            ]
+          },
+          {
+            "pemain": "Citra",
+            "relasi": "offend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 2.txt"
+  },
+  "revisi": [
+    {
+      "pesan": 2,
+      "kategori": "meta",
+      "alasan": "Menjelaskan aturan bahwa identitas korban tidak diumumkan"
+    },
+    {
+      "pesan": 3,
+      "kategori": "meta",
+      "alasan": "Menyesuaikan dengan perbaikan pesan 2 (sebelumnya merujuk 'menjelaskan soal korban')"
+    }
+  ]
+}

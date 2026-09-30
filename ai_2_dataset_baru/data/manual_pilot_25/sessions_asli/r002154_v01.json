@@ -1,0 +1,143 @@
+{
+  "job": {
+    "job_id": "r002154_v01",
+    "case_name": "nickname",
+    "case_description": "Pesan sekarang menyebut pemain dengan nama panggilan, singkatan, atau salah ketik ringan (Andy -> ndy, andi, si And) tanpa menulis nama aslinya. Catat sebutan itu di panggilan. Target tetap memakai nama asli; jika neutral, target kosong.",
+    "source": {
+      "source_row": 2154,
+      "source_group": "5d992afd732c10fa8a03",
+      "teks_chat": "gw Spy, tugas gw ngawal orang bukan nyandera. Jangan kebalik",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 9,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "nickname",
+    "participants": [
+      "Putra",
+      "Rani",
+      "Sani"
+    ],
+    "focus_player": "Rani",
+    "panggilan": [
+      {
+        "pemain": "Rani",
+        "sebutan": [
+          "Ran"
+        ]
+      }
+    ],
+    "messages": [
+      {
+        "pengirim": "Putra",
+        "teks_chat": "Ada yang membaca perubahan ajakan vote di chat tadi?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Rani",
+        "teks_chat": "Ada beberapa ajakan yang berubah menjelang akhir diskusi.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Sani",
+        "teks_chat": "Iya, aku juga membaca chat itu.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Putra",
+        "teks_chat": "Rani, tadi kamu mengajak vote Sani lalu mengajak vote aku. Aku curiga kamu Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Rani",
+            "relasi": "offend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Sani",
+        "teks_chat": "Wah, mencurigakan banget kalau gitu.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Rani",
+            "relasi": "offend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Rani",
+        "teks_chat": "Aku mengubah ajakan setelah membaca pendapat lain, bukan karena aku Hitman.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Rani",
+            "relasi": "defend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Putra",
+        "teks_chat": "Tetep aja itu pola yang biasa dipake sama hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Rani",
+            "relasi": "offend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Sani",
+        "teks_chat": "Mungkin alasannya memang mengikuti pendapat lain; perubahan ajakan itu belum membuktikan dia Hitman.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Rani",
+            "relasi": "defend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Sani",
+        "teks_chat": "Aku bela si Ran, mengubah ajakan vote setelah membaca pendapat lain belum membuktikan dia Hitman.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Rani",
+            "relasi": "defend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 35.txt"
+  }
+}

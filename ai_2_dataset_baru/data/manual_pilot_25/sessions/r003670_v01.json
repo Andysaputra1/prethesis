@@ -1,0 +1,185 @@
+{
+  "job": {
+    "job_id": "r003670_v01",
+    "case_name": "rhetorical_question",
+    "case_description": "Pesan sekarang berbentuk pertanyaan retoris yang sebenarnya menuduh atau membela, misalnya 'kenapa Andy diam terus?' (offend) atau 'masa sih Andy Hitman?' (defend). Bukan pertanyaan informasi.",
+    "source": {
+      "source_row": 3670,
+      "source_group": "ee541258e9419e4e35f1",
+      "teks_chat": "Lu boleh curiga, tapi aku bukan Hitman, aku Spy yang belum sempat kasih info",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 13,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "rhetorical_question",
+    "participants": [
+      "Tomi",
+      "Siti",
+      "Hasan",
+      "Rika"
+    ],
+    "focus_player": "Tomi",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Tomi",
+        "teks_chat": "Halo semua, apakah ada yang sudah menemukan petunjuk?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Siti",
+        "teks_chat": "Belum ada, situasi masih sangat sepi.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Hasan",
+        "teks_chat": "Tomi, kamu dari tadi mengetik tetapi pesannya terpotong.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Tomi",
+        "teks_chat": "Sinyal aku jelek sepertinya hari ini.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Rika",
+        "teks_chat": "Tomi, aku curiga kamu Hitman yang memakai alasan sinyal.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Tomi",
+            "relasi": "offend",
+            "bukti_pesan": [
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Tomi",
+        "teks_chat": "Aku berkata jujur, pesan aku sangat lambat terkirim.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Tomi",
+            "relasi": "defend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Siti",
+        "teks_chat": "Hitman biasanya mencari alasan seperti itu untuk menghindari diskusi.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Tomi",
+            "relasi": "offend",
+            "bukti_pesan": [
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Hasan",
+        "teks_chat": "Jangan vote dia hanya karena lambat membalas.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Tomi",
+            "relasi": "defend",
+            "bukti_pesan": [
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Rika",
+        "teks_chat": "Tetapi respons Tomi yang sangat lambat ini mencurigakan.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Tomi",
+            "relasi": "offend",
+            "bukti_pesan": [
+              9
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Tomi",
+        "teks_chat": "Aku sedang mencoba berpindah tempat untuk mencari sinyal.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Tomi",
+            "relasi": "defend",
+            "bukti_pesan": [
+              10
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Siti",
+        "teks_chat": "Terserah kamu, aku tetap merasa kamu pelakunya.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Tomi",
+            "relasi": "offend",
+            "bukti_pesan": [
+              10
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Rika",
+        "teks_chat": "Ayo kita sepakat untuk menominasikan Tomi saja sekarang.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Tomi",
+            "relasi": "offend",
+            "bukti_pesan": [
+              12
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Hasan",
+        "teks_chat": "Masa sih Tomi adalah Hitman hanya karena pesannya telat masuk?",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Tomi",
+            "relasi": "defend",
+            "bukti_pesan": [
+              13
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 57.txt"
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "job": {
+    "job_id": "r003338_v01",
+    "case_name": "negation",
+    "case_description": "Negasi menentukan relasi: Andy Hitman berbeda dari Andy bukan Hitman.",
+    "source": {
+      "source_row": 3338,
+      "source_group": "b197e4c963861f7ae13e",
+      "teks_chat": "sumpah aku civilian, jangan asal lempar tuduhan cuma karena aku tadi diam",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 5,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "negation",
+    "participants": [
+      "Siska",
+      "Umar",
+      "Tio",
+      "Vina"
+    ],
+    "focus_player": "Tio",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Siska",
+        "teks_chat": "Tio tadi mengaku Civilian.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Umar",
+        "teks_chat": "Sekarang dia mengaku Spy. Aku curiga dia Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Tio",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Tio",
+        "teks_chat": "Aku bukan Hitman, tadi belum ingin membuka role.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Tio",
+            "relasi": "defend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Umar",
+        "teks_chat": "Itu cuma alasan kamu saja biar posisinya aman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Tio",
+            "relasi": "offend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Vina",
+        "teks_chat": "Tio bukan Hitman menurutku. Perubahan klaimnya belum cukup jadi bukti.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Tio",
+            "relasi": "defend",
+            "bukti_pesan": [
+              5
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 49.txt"
+  }
+}

@@ -1,0 +1,172 @@
+{
+  "job": {
+    "job_id": "r000645_v01",
+    "case_name": "rhetorical_question",
+    "case_description": "Pesan sekarang berbentuk pertanyaan retoris yang sebenarnya menuduh atau membela, misalnya 'kenapa Andy diam terus?' (offend) atau 'masa sih Andy Hitman?' (defend). Bukan pertanyaan informasi.",
+    "source": {
+      "source_row": 645,
+      "source_group": "db2e0e680d3ef7743075",
+      "teks_chat": "lu nuduh gw karena gw vokal, padahal gw justru bantu nyusun kandidat vote",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 12,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "rhetorical_question",
+    "participants": [
+      "Vera",
+      "Wawan",
+      "Xena",
+      "Yoga",
+      "Zain"
+    ],
+    "focus_player": "Yoga",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Vera",
+        "teks_chat": "Setelah chat dibuka lagi, siapa yang belum sempat menjawab?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Wawan",
+        "teks_chat": "Aku masih membaca percakapan sejak awal.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Xena",
+        "teks_chat": "Yoga belum menjawab pertanyaan soal ajakan vote.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Yoga",
+        "teks_chat": "Pesanku sempat gagal terkirim. Sekarang aku bisa ikut diskusi.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Zain",
+        "teks_chat": "Aku curiga Yoga mengarang alasan koneksi karena dia Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Yoga",
+            "relasi": "offend",
+            "bukti_pesan": [
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Vera",
+        "teks_chat": "Belum tentu dia pelakunya, koneksi memang bisa bermasalah.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Yoga",
+            "relasi": "defend",
+            "bukti_pesan": [
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Wawan",
+        "teks_chat": "Aku tetap curiga dia sengaja menghindari pertanyaan.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Yoga",
+            "relasi": "offend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Xena",
+        "teks_chat": "Aku juga curiga dia sedang menunda supaya bisa mengarang alasan.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Yoga",
+            "relasi": "offend",
+            "bukti_pesan": [
+              7
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Zain",
+        "teks_chat": "Aku ingin vote Yoga saja.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Yoga",
+            "relasi": "offend",
+            "bukti_pesan": [
+              9
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Vera",
+        "teks_chat": "Jangan vote dia dulu, kita belum membaca jawabannya.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Yoga",
+            "relasi": "defend",
+            "bukti_pesan": [
+              9
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Wawan",
+        "teks_chat": "Aku masih curiga dia Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Yoga",
+            "relasi": "offend",
+            "bukti_pesan": [
+              10
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Vera",
+        "teks_chat": "Masa dia dianggap Hitman hanya karena pesan terlambat terkirim? Jangan tuduh dia dari itu saja.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Yoga",
+            "relasi": "defend",
+            "bukti_pesan": [
+              11
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 12.txt"
+  }
+}

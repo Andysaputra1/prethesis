@@ -1,0 +1,136 @@
+{
+  "job": {
+    "job_id": "r003834_v01",
+    "case_name": "neutral_status",
+    "case_description": "Klaim status/role atau pertanyaan informasi saja tanpa pembelaan/serangan; target kosong.",
+    "source": {
+      "source_row": 3834,
+      "source_group": "4fea78c9b0d1e3a84259",
+      "teks_chat": "peranku Civilian, jadi aku tidak melakukan apa pun saat fase malam",
+      "label_intent": "neutral"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 9,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "neutral_status",
+    "participants": [
+      "Fajar",
+      "Gita",
+      "Hadi"
+    ],
+    "focus_player": "",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Fajar",
+        "teks_chat": "Gita, semalam kamu aktivitasnya ngapain aja?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Gita",
+        "teks_chat": "Aku klaim Spy, semalam aku memilih Guard Fajar.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Hadi",
+        "teks_chat": "Aku curiga Gita Hitman yang membuat klaim palsu.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Gita",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Gita",
+        "teks_chat": "Aku bukan Hitman, klaim pilihanku benar.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Gita",
+            "relasi": "defend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Fajar",
+        "teks_chat": "Aku juga curiga kamu Hitman, penjelasannya belum meyakinkan.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Gita",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Gita",
+        "teks_chat": "Kalian salah besar kalau nuduh aku yang pelakunya.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Gita",
+            "relasi": "defend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Hadi",
+        "teks_chat": "Aku sih yakin aja kalau Gita pelakunya.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Gita",
+            "relasi": "offend",
+            "bukti_pesan": [
+              7
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Gita",
+        "teks_chat": "Terserah kalian deh kalau emang gak mau percaya.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Gita",
+            "relasi": "defend",
+            "bukti_pesan": [
+              7
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Fajar",
+        "teks_chat": "Aku sendiri klaim Civilian, belum punya info skill untuk dibagikan.",
+        "label_intent": "neutral",
+        "target": []
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 60.txt"
+  }
+}

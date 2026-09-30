@@ -1,0 +1,118 @@
+{
+  "job": {
+    "job_id": "r004983_v01",
+    "case_name": "topic_switch",
+    "case_description": "Pembahasan berganti pemain; pesan sekarang mengikuti topik baru, bukan otomatis target lama.",
+    "source": {
+      "source_row": 4983,
+      "source_group": "910a0df865004fce9f87",
+      "teks_chat": "bukan aku yang pakai gag order, gw civilian dan nggak punya skill itu",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 6,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "topic_switch",
+    "participants": [
+      "Aris",
+      "Bagas",
+      "Citra",
+      "Dian"
+    ],
+    "focus_player": "Bagas",
+    "panggilan": [
+      {
+        "pemain": "Bagas",
+        "sebutan": [
+          "Gas"
+        ]
+      }
+    ],
+    "messages": [
+      {
+        "pengirim": "Aris",
+        "teks_chat": "Coba baca perubahan ajakan vote di chat tadi.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Bagas",
+        "teks_chat": "Citra mengubah ajakan vote tanpa alasan, aku curiga dia Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Citra",
+            "relasi": "offend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Dian",
+        "teks_chat": "Aku juga curiga Citra Hitman karena tiba-tiba mengajak vote Aris.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Citra",
+            "relasi": "offend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Citra",
+        "teks_chat": "Aku bukan Hitman. Aku mengubah ajakan karena menilai ulang diskusi.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Citra",
+            "relasi": "defend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Aris",
+        "teks_chat": "Sekarang aku curiga Bagas Hitman karena baru ikut mengajak vote saat waktu hampir habis.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Bagas",
+            "relasi": "offend",
+            "bukti_pesan": [
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Citra",
+        "teks_chat": "Kalau soal Bagas aku rasa dia aman, dia cuma ragu mau vote siapa.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Bagas",
+            "relasi": "defend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 73.txt"
+  }
+}

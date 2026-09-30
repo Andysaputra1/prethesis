@@ -1,0 +1,81 @@
+{
+  "job": {
+    "job_id": "r000950_v01",
+    "case_name": "neutral_status",
+    "case_description": "Klaim status/role atau pertanyaan informasi saja tanpa pembelaan/serangan; target kosong.",
+    "source": {
+      "source_row": 950,
+      "source_group": "4fa3cfa2b91b5b8e2b67",
+      "teks_chat": "aku sudah peek semalam sebagai Stalker, hasilnya tidak sesuai narasi mayoritas di sini",
+      "label_intent": "neutral"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 5,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "neutral_status",
+    "participants": [
+      "Hana",
+      "Iqbal",
+      "Jaka"
+    ],
+    "focus_player": "",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Hana",
+        "teks_chat": "Ada yang ingin membagikan klaim role?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Iqbal",
+        "teks_chat": "Aku mengaku Spy dan memilih Guard untuk Hana semalam.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Jaka",
+        "teks_chat": "Iqbal, malam sebelumnya kamu juga pilih Hana?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Hana",
+        "teks_chat": "Aku juga mau tahu, biar bisa kucatat.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Iqbal",
+        "teks_chat": "Nggak, malam sebelumnya aku Guard Jaka.",
+        "label_intent": "neutral",
+        "target": []
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 19.txt"
+  },
+  "revisi": [
+    {
+      "pesan": 3,
+      "kategori": "tidak_natural",
+      "alasan": "Pertanyaan kaku ('Apakah ... pada malam sebelumnya')"
+    },
+    {
+      "pesan": 4,
+      "kategori": "tidak_natural",
+      "alasan": "Hana menjawab 'Iya' untuk pertanyaan yang ditujukan ke Iqbal; tidak nyambung"
+    },
+    {
+      "pesan": 5,
+      "kategori": "tidak_natural",
+      "alasan": "'aku mengaku memilih' janggal untuk menjawab pilihan sendiri"
+    }
+  ]
+}

@@ -1,0 +1,121 @@
+{
+  "job": {
+    "job_id": "r003723_v01",
+    "case_name": "rhetorical_question",
+    "case_description": "Pesan sekarang berbentuk pertanyaan retoris yang sebenarnya menuduh atau membela, misalnya 'kenapa Andy diam terus?' (offend) atau 'masa sih Andy Hitman?' (defend). Bukan pertanyaan informasi.",
+    "source": {
+      "source_row": 3723,
+      "source_group": "85fa44eb8a14c68cad4d",
+      "teks_chat": "jangan eksekusi berdasarkan volume chat, gw Civilian dan masih ragu sama tuduhan ke Mita",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 6,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "rhetorical_question",
+    "participants": [
+      "Heri",
+      "Ivan",
+      "Jaka",
+      "Kiki",
+      "Lala",
+      "Maman"
+    ],
+    "focus_player": "Lala",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Heri",
+        "teks_chat": "Lala kok diam terus dari tadi, mencurigakan banget.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Lala",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Ivan",
+        "teks_chat": "Bener, pasif banget mainnya ronde ini.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Lala",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Jaka",
+        "teks_chat": "Jangan-jangan dia lagi nunggu momen buat beraksi.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Lala",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Kiki",
+        "teks_chat": "Setuju, vote aja si Lala biar kita aman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Lala",
+            "relasi": "offend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Maman",
+        "teks_chat": "Ayo kumpul vote sebelum waktu diskusinya habis.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Lala",
+            "relasi": "offend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Ivan",
+        "teks_chat": "Masa Lala dianggap Hitman hanya karena diam? Bisa saja ada kendala lain, jangan langsung vote.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Lala",
+            "relasi": "defend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 58.txt"
+  }
+}

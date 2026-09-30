@@ -1,0 +1,186 @@
+{
+  "job": {
+    "job_id": "r003234_v01",
+    "case_name": "reference_middle",
+    "case_description": "Tepat 12 konteks. Penyebutan target eksplisit di pesan konteks ke-6 atau ke-7.",
+    "source": {
+      "source_row": 3234,
+      "source_group": "4e779617948971e1b2ee",
+      "teks_chat": "tuduhan ini lemah banget, cuma mengandalkan siapa yang paling vokal di chat",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 13,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "reference_middle",
+    "participants": [
+      "Agus",
+      "Lila",
+      "Beno",
+      "Maya",
+      "Fajar"
+    ],
+    "focus_player": "Beno",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Agus",
+        "teks_chat": "Ayo dong, waktunya mau habis ini.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Lila",
+        "teks_chat": "Siapa yang tadi mengajak vote secara acak?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Beno",
+        "teks_chat": "Aku tidak mengajak vote acak.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Beno",
+            "relasi": "defend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Maya",
+        "teks_chat": "Bahaya kalau kita lewati ronde ini, mending cari yang mencurigakan.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Agus",
+        "teks_chat": "Ada yang mengubah ajakan vote di chat tanpa menjelaskan alasan.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Lila",
+        "teks_chat": "Beno mengubah ajakan begitu. Aku curiga dia Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Beno",
+            "relasi": "offend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Beno",
+        "teks_chat": "Aku bukan Hitman, aku mengikuti alasan yang muncul di chat.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Beno",
+            "relasi": "defend",
+            "bukti_pesan": [
+              7
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Maya",
+        "teks_chat": "Kamu bohong, kita tidak ada menyuruh kamu pindah.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Beno",
+            "relasi": "offend",
+            "bukti_pesan": [
+              7
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Agus",
+        "teks_chat": "Curiga ini orang cuma main aman saja.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Beno",
+            "relasi": "offend",
+            "bukti_pesan": [
+              7
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Lila",
+        "teks_chat": "Sudah pasti sih ini, kita keluarkan saja.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Beno",
+            "relasi": "offend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Beno",
+        "teks_chat": "Aku bukan Hitman, kalian salah paham.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Beno",
+            "relasi": "defend",
+            "bukti_pesan": [
+              11
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Maya",
+        "teks_chat": "Kamu memberikan alasan terus dari tadi.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Beno",
+            "relasi": "offend",
+            "bukti_pesan": [
+              11
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Fajar",
+        "teks_chat": "Jangan langsung vote dia, perubahan ajakan itu belum membuktikan dia Hitman.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Beno",
+            "relasi": "defend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 47.txt"
+  }
+}

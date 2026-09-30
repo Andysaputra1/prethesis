@@ -1,0 +1,63 @@
+{
+  "job": {
+    "job_id": "r000783_v01",
+    "case_name": "short_history_1",
+    "case_description": "Awal diskusi dengan tepat 1 pesan sebelumnya. Jangan menambah riwayat fiktif atau mengisi sampai 12.",
+    "source": {
+      "source_row": 783,
+      "source_group": "0d8ddf449fbc6991d4fe",
+      "teks_chat": "jangan asal nuduh, aku stalker dan peek-ku semalam nunjukin dia civilian",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 2,
+    "pesan_typo_ringan": [
+      1
+    ]
+  },
+  "session": {
+    "case_name": "short_history_1",
+    "participants": [
+      "Yogi",
+      "Zidan"
+    ],
+    "focus_player": "Yogi",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Zidan",
+        "teks_chat": "Yogi tadi menarik ajakan vote di chat. Aku curiga Yogi Hitman yg sengaja membingungkan kita.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Yogi",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Yogi",
+        "teks_chat": "Aku bukan Hitman. Aku menarik ajakan itu setelah membaca jawaban yang membuat dugaan awalku lemah.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Yogi",
+            "relasi": "defend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 15.txt"
+  }
+}

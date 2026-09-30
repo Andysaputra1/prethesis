@@ -1,0 +1,47 @@
+{
+  "job": {
+    "job_id": "r001487_v01",
+    "case_name": "first_message",
+    "case_description": "Pesan pertama permainan, tanpa konteks. Neutral boleh menyapa/membuka diskusi; offend/defend menyebut target jelas. Jangan mengarang kejadian malam, voting, atau percakapan yang belum terjadi.",
+    "source": {
+      "source_row": 1487,
+      "source_group": "a53eebf12a8ad6e477ba",
+      "teks_chat": "gw bukan target yang tepat, justru si Seno kelihatan banget lagi mengendalikan voting",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 1,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "first_message",
+    "participants": [
+      "Dika",
+      "Rara"
+    ],
+    "focus_player": "Rara",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Dika",
+        "teks_chat": "Rara, lu pasti hitmannya kan? Langsung vote Rara aja gais!",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Rara",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 26.txt"
+  }
+}

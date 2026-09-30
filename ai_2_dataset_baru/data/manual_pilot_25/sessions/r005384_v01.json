@@ -1,0 +1,89 @@
+{
+  "job": {
+    "job_id": "r005384_v01",
+    "case_name": "short_history_3",
+    "case_description": "Awal diskusi dengan tepat 3 pesan sebelumnya. Acuan tidak harus berada di pesan terakhir.",
+    "source": {
+      "source_row": 5384,
+      "source_group": "4ebb81c9ca7c2e2ff800",
+      "teks_chat": "kok sepi banget, pada kena gag order?",
+      "label_intent": "neutral"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 4,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "short_history_3",
+    "participants": [
+      "Roni",
+      "Santi",
+      "Tono"
+    ],
+    "focus_player": "",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Roni",
+        "teks_chat": "Aku membela Santi, dia belum terbukti Hitman hanya karena diam.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Santi",
+            "relasi": "defend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Tono",
+        "teks_chat": "Roni, tadi kamu justru curiga Santi. Aku curiga kamu Hitman karena berubah pendapat.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Roni",
+            "relasi": "offend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Roni",
+        "teks_chat": "Aku bukan Hitman, aku menilai ulang alasan tuduhannya.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Roni",
+            "relasi": "defend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Santi",
+        "teks_chat": "Roni tadi memang sempat curiga ke aku, baru sekarang belain aku. Aku sendiri belum tahu mau nanggepin gimana.",
+        "label_intent": "neutral",
+        "target": []
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 77.txt"
+  },
+  "revisi": [
+    {
+      "pesan": 4,
+      "kategori": "tidak_natural",
+      "alasan": "'Itu urutan pendapatnya dalam chat' terdengar seperti anotator."
+    }
+  ]
+}

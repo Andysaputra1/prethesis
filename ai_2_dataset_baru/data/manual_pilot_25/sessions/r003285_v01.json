@@ -1,0 +1,130 @@
+{
+  "job": {
+    "job_id": "r003285_v01",
+    "case_name": "reference_end",
+    "case_description": "Tepat 12 konteks. Penyebutan target eksplisit di pesan konteks terakhir.",
+    "source": {
+      "source_row": 3285,
+      "source_group": "76fa5121fc70dd1bb260",
+      "teks_chat": "tunggu, dari potongan info itu belum cukup buat nuduh gw",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 13,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "reference_end",
+    "participants": [
+      "Susi",
+      "Tono",
+      "Ujang",
+      "Vera",
+      "Wawan"
+    ],
+    "focus_player": "Wawan",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Susi",
+        "teks_chat": "Ini kok sepi sekali diskusinya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Tono",
+        "teks_chat": "Bingung mau menuduh siapa, belum ada bukti yang jelas.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Ujang",
+        "teks_chat": "Kalau tidak ada bukti jangan asal menuduh.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Vera",
+        "teks_chat": "Tapi kan kita harus memilih seseorang, masa dilewati.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Wawan",
+        "teks_chat": "Menurutku sebaiknya kita membuat pilihan setelah diskusi.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Susi",
+        "teks_chat": "Tadi ada yang mengajak memilih secara acak lho.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Tono",
+        "teks_chat": "Siapa memangnya yang menyuruh begitu?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Ujang",
+        "teks_chat": "Jangan terpancing, itu taktik Hitman memecah fokus.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Vera",
+        "teks_chat": "Kalau asal pilih malah pemain biasa yang akan rugi.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Wawan",
+        "teks_chat": "Lebih baik mengumpulkan informasi dulu dari malam tadi.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Susi",
+        "teks_chat": "Pokoknya jangan langsung menekan tombol vote.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Tono",
+        "teks_chat": "Wawan ingin kita tetap memilih, aku curiga dia Hitman yang memaksa vote.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Wawan",
+            "relasi": "offend",
+            "bukti_pesan": [
+              12
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Ujang",
+        "teks_chat": "Jangan asal menuduh dia, buktinya belum ada sama sekali.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Wawan",
+            "relasi": "defend",
+            "bukti_pesan": [
+              12
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 48.txt"
+  }
+}

@@ -1,0 +1,128 @@
+{
+  "job": {
+    "job_id": "r003102_v01",
+    "case_name": "quotation",
+    "case_description": "Ada tuduhan yang dikutip; bedakan sikap pengirim dari ucapan orang yang dikutip.",
+    "source": {
+      "source_row": 3102,
+      "source_group": "c7f5d2f88d42e2ac7df4",
+      "teks_chat": "G diam terus, lalu muncul cuma buat ikut vote, fix mencurigakan sebagai Hitman",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 9,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "quotation",
+    "participants": [
+      "Rian",
+      "Dika",
+      "Surya",
+      "Reza"
+    ],
+    "focus_player": "Rian",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Surya",
+        "teks_chat": "Tadi saat diskusi ada yang telat membalas, ya?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Dika",
+        "teks_chat": "Iya, pesannya ada yang terpotong.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Rian",
+        "teks_chat": "Sinyalku tadi jelek, maaf ya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Reza",
+        "teks_chat": "Rian balasnya emang lama banget sih.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Dika",
+        "teks_chat": "Bener, sampe dikira afk.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Surya",
+        "teks_chat": "Jeda balasan belum membuktikan Rian Hitman.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Rian",
+            "relasi": "defend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Rian",
+        "teks_chat": "Iya, aku bukan Hitman.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Rian",
+            "relasi": "defend",
+            "bukti_pesan": [
+              7
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Reza",
+        "teks_chat": "'Sinyalku tadi jelek' itu alasan klasik buat nutupin jejak habis aksi.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Rian",
+            "relasi": "offend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Dika",
+        "teks_chat": "Aku setuju, ucapan Rian 'Sinyalku tadi jelek' membuatku curiga dia Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Rian",
+            "relasi": "offend",
+            "bukti_pesan": [
+              9
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 45.txt"
+  },
+  "revisi": [
+    {
+      "pesan": 8,
+      "kategori": "tidak_natural",
+      "alasan": "Kutipan tidak sesuai ucapan Rian di pesan 3 ('Sinyalku tadi jelek')"
+    }
+  ]
+}

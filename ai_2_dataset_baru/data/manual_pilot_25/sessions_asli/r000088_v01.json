@@ -1,0 +1,133 @@
+{
+  "job": {
+    "job_id": "r000088_v01",
+    "case_name": "outside_window_unknown",
+    "case_description": "14-16 pesan total. Pembahasan lama telah putus/beralih. Teks dan anotasi 12 konteks terakhir tidak cukup menentukan acuan sekarang. Target harus tidak_diketahui; jangan menggunakan informasi lama yang tidak tersedia dalam input.",
+    "source": {
+      "source_row": 88,
+      "source_group": "1c61bf57ae4e9ee9ca36",
+      "teks_chat": "bukan gw yang bikin diskusi kacau, Riko yang terus lempar tuduhan tanpa dasar",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 14,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "outside_window_unknown",
+    "participants": [
+      "Yoga",
+      "Zara",
+      "Andi",
+      "Bimo"
+    ],
+    "focus_player": "Bimo",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Yoga",
+        "teks_chat": "Bimo belum ikut berdiskusi. Aku curiga Bimo Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Bimo",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Zara",
+        "teks_chat": "Sebentar, apakah Gag Order dipakai saat malam juga?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Andi",
+        "teks_chat": "Tidak, Gag Order membungkam chat seorang pemain pada fase siang.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Yoga",
+        "teks_chat": "Lalu skill Hitman saat malam yang mana?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Zara",
+        "teks_chat": "Hostage, untuk menyandera korban.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Andi",
+        "teks_chat": "Pada malam, chat memang terkunci bagi semua pemain.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Yoga",
+        "teks_chat": "Jadi tidak ada chat malam yang bisa dijadikan petunjuk siapa diam.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Zara",
+        "teks_chat": "Benar, kondisi fase itu berlaku untuk semua.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Andi",
+        "teks_chat": "Saat siang juga kita belum tahu pasti penyebab diam seseorang.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Yoga",
+        "teks_chat": "Bisa tidak ingin mengetik atau masalah koneksi juga.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Zara",
+        "teks_chat": "Iya, itu berbeda dari mengetahui status korban secara pasti.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Andi",
+        "teks_chat": "Oke, aturan fase dan efek skillnya sudah jelas.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Zara",
+        "teks_chat": "Kembali ke orang yang kita bahas sebelum soal Gag Order tadi.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Yoga",
+        "teks_chat": "Aku tetap curiga dia Hitman karena terlalu pasif dan ingin vote dia.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "tidak_diketahui",
+            "relasi": "offend",
+            "bukti_pesan": []
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 78.txt"
+  }
+}

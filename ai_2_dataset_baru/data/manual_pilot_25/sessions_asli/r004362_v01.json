@@ -1,0 +1,113 @@
+{
+  "job": {
+    "job_id": "r004362_v01",
+    "case_name": "quotation",
+    "case_description": "Ada tuduhan yang dikutip; bedakan sikap pengirim dari ucapan orang yang dikutip.",
+    "source": {
+      "source_row": 4362,
+      "source_group": "c2586981740a5016d639",
+      "teks_chat": "daripada bahas pembelaan gw, mending lihat siapa yang paling diuntungkan dari Hostage tadi malam",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 9,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "quotation",
+    "participants": [
+      "Doni",
+      "Bara",
+      "Coki",
+      "Toni"
+    ],
+    "focus_player": "Toni",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Doni",
+        "teks_chat": "Aku klaim Stalker dan ingin membagikan hasil Peek semalam.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Bara",
+        "teks_chat": "Siapa target Peek-mu?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Doni",
+        "teks_chat": "Hasil Peek-ku menunjukkan Toni Hitman. Toni sangat berbahaya.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Toni",
+            "relasi": "offend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Coki",
+        "teks_chat": "Jangan terburu-buru, apa bukti kuat dari klaimmu itu?",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Toni",
+            "relasi": "defend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Bara",
+        "teks_chat": "Iya, aku ragu, jangan sampai kita termakan kebohongan.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Doni",
+        "teks_chat": "Terserah jika kalian meragukannya, yang penting tugas awalku sudah kusampaikan.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Coki",
+        "teks_chat": "Tapi perhatikan, orang yang sedang kita bicarakan belum muncul memberikan bantahan.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Bara",
+        "teks_chat": "Benar, pemain itu belum memberi tanggapan.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Coki",
+        "teks_chat": "Setelah Doni menyebut 'Toni sangat berbahaya', aku pikir ada benarnya, mari kita jatuhkan dia sekarang.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Toni",
+            "relasi": "offend",
+            "bukti_pesan": [
+              9
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 64.txt"
+  }
+}

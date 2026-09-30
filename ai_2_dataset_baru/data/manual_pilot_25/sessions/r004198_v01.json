@@ -1,0 +1,218 @@
+{
+  "job": {
+    "job_id": "r004198_v01",
+    "case_name": "neutral_after_accusation",
+    "case_description": "Konteks berisi tuduhan, tetapi pesan sekarang neutral; jangan mewarisi relasi lama.",
+    "source": {
+      "source_row": 4198,
+      "source_group": "5140a08e585a1c83d36c",
+      "teks_chat": "siapa yang tidak bisa memakai aksi malam kemarin?",
+      "label_intent": "neutral"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 13,
+    "pesan_typo_ringan": [
+      6
+    ]
+  },
+  "session": {
+    "case_name": "neutral_after_accusation",
+    "participants": [
+      "Sari",
+      "Tomi",
+      "Udin",
+      "Vina"
+    ],
+    "focus_player": "Tomi",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Sari",
+        "teks_chat": "Tomi ini mencurigakan banget, dari tadi nuduhnya pindah-pindah terus.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Tomi",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Tomi",
+        "teks_chat": "Loh, aku kan cuma nyampein kecurigaan aku aja, wajar dong.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Tomi",
+            "relasi": "defend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Udin",
+        "teks_chat": "Tapi kamu tadi nuduh Vina, sekarang malah nuduh Sari, kan aneh.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Tomi",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Vina",
+        "teks_chat": "Iya, kelihatan banget pengen cari kambing hitam.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Tomi",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Tomi",
+        "teks_chat": "Kalian berdua kok malah nyerang aku sih? Aku beneran civilian!",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Tomi",
+            "relasi": "defend",
+            "bukti_pesan": [
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Sari",
+        "teks_chat": "Tdk usah banyak alasan, mending kita kumpul vote ke Tomi aja.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Tomi",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Udin",
+        "teks_chat": "Setuju, dia paling bahaya kalau dibiarkan.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Tomi",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Vina",
+        "teks_chat": "Ayo, sebelum waktu diskusinya habis nih.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Tomi",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Tomi",
+        "teks_chat": "Kalian jangan begitu dong, nanti kalau aku mati kalian bakal menyesal.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Tomi",
+            "relasi": "defend",
+            "bukti_pesan": [
+              9
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Sari",
+        "teks_chat": "Tidak bakal menyesal, sudah pasti kamu hitmannya.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Tomi",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Udin",
+        "teks_chat": "Mending kamu mengaku aja sekarang sebelum kita vote.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Tomi",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Vina",
+        "teks_chat": "Sudah, vote aja dia, nanti juga ketahuan perannya pas game selesai.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Tomi",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Sari",
+        "teks_chat": "Ngomong-ngomong, ada yang merhatiin siapa aja yang pasif banget ronde ini?",
+        "label_intent": "neutral",
+        "target": []
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 63.txt"
+  },
+  "revisi": [
+    {
+      "pesan": 12,
+      "kategori": "label",
+      "alasan": "'Sudah biarkan saja...' tidak jelas menuduh Tomi padahal berlabel offend; teks diperjelas."
+    }
+  ]
+}

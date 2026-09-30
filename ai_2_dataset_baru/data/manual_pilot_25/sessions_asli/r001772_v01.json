@@ -1,0 +1,146 @@
+{
+  "job": {
+    "job_id": "r001772_v01",
+    "case_name": "reference_middle",
+    "case_description": "Tepat 12 konteks. Penyebutan target eksplisit di pesan konteks ke-6 atau ke-7.",
+    "source": {
+      "source_row": 1772,
+      "source_group": "b4e3b15e0f79cc536f26",
+      "teks_chat": "aku tidak punya bukti keras, tetapi suara terbanyak sebaiknya ke Beni",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 13,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "reference_middle",
+    "participants": [
+      "Farhan",
+      "Gita",
+      "Hadi",
+      "Intan",
+      "Joko"
+    ],
+    "focus_player": "Joko",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Farhan",
+        "teks_chat": "Bagaimana diskusi setelah malam pertama selesai?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Gita",
+        "teks_chat": "Belum ada informasi sama sekali sejauh ini.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Hadi",
+        "teks_chat": "Ada yang ingin membagikan klaim pilihan Guard?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Intan",
+        "teks_chat": "Kita belum tahu siapa korban Hostage karena namanya tidak diumumkan.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Farhan",
+        "teks_chat": "Apakah ada yang memiliki petunjuk peran?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Gita",
+        "teks_chat": "Joko mengaku Spy tanpa penjelasan. Aku curiga Joko memakai klaim itu untuk mencari aman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Joko",
+            "relasi": "offend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Joko",
+        "teks_chat": "Aku bukan Hitman. Aku mengaku memilih Guard untuk Hadi semalam.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Joko",
+            "relasi": "defend",
+            "bukti_pesan": [
+              7
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Hadi",
+        "teks_chat": "Apakah klaim dia bisa dipercaya?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Intan",
+        "teks_chat": "Menurut aku dia bisa saja berbohong soal itu.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Joko",
+            "relasi": "offend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Farhan",
+        "teks_chat": "Kita harus memastikan dahulu sebelum menuduh.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Gita",
+        "teks_chat": "Kita bisa bertanya lebih lanjut tentang klaim pilihan Guard itu.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Hadi",
+        "teks_chat": "Waktu kita hampir habis untuk ronde ini.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Intan",
+        "teks_chat": "Jangan buang waktu, dia pasti berbohong soal perannya, mari kita keluarkan dia!",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Joko",
+            "relasi": "offend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 30.txt"
+  }
+}

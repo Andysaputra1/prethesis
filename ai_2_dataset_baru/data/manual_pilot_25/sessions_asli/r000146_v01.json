@@ -1,0 +1,72 @@
+{
+  "job": {
+    "job_id": "r000146_v01",
+    "case_name": "self",
+    "case_description": "Defend diri sendiri atau offend/vote diri sendiri sesuai label. Target = pengirim.",
+    "source": {
+      "source_row": 146,
+      "source_group": "fc70890368a9b433b829",
+      "teks_chat": "Kita mungkin sudah melewatkan petunjuk ini, setiap target tuduhan Hadi aman, sementara dia selalu lolos dari sorotan, Hadi bisa jadi Hitman",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 5,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "self",
+    "participants": [
+      "Kiki",
+      "Lala",
+      "Maman"
+    ],
+    "focus_player": "Maman",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Kiki",
+        "teks_chat": "Setelah chat dibuka lagi, kita tetap tidak diberi tahu nama korban Hostage.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Lala",
+        "teks_chat": "Iya, kita tidak bisa mengetahui siapa korban hanya dari daftar pemain.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Maman",
+        "teks_chat": "Berarti pemain yang diam belum tentu sengaja tidak ikut diskusi?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Maman",
+        "teks_chat": "Aku jadi bingung membedakan yang pasif dan yang tidak bisa mengetik.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Maman",
+        "teks_chat": "Ah aku pusing memikirkan mekanik gamenya, kalian vote aku saja lah biar aku cepat keluar.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Maman",
+            "relasi": "offend",
+            "bukti_pesan": [
+              5
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 2.txt"
+  }
+}

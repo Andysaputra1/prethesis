@@ -1,0 +1,173 @@
+{
+  "job": {
+    "job_id": "r001617_v01",
+    "case_name": "interruption",
+    "case_description": "Pembahasan target disela obrolan waktu/ronde; kaitan kembali ke target masih jelas.",
+    "source": {
+      "source_row": 1617,
+      "source_group": "5dedf906a5c8c890478f",
+      "teks_chat": "bisa jadi aku salah, tapi si Bayu kelihatan terlalu siap membalikkan semua tuduhan",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 12,
+    "pesan_typo_ringan": [
+      6
+    ]
+  },
+  "session": {
+    "case_name": "interruption",
+    "participants": [
+      "Reza",
+      "Siska",
+      "Tora",
+      "Umi"
+    ],
+    "focus_player": "Siska",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Reza",
+        "teks_chat": "Siska tadi mengaku Spy, sekarang Stalker. Aku curiga Siska sedang mengarang role.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Siska",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Siska",
+        "teks_chat": "Aku bukan Hitman. Pesan pertama salah ketik, yang kumaksud Stalker.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Siska",
+            "relasi": "defend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Tora",
+        "teks_chat": "Pernyataan yang bertentangan itu sangat mencurigakan lho.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Siska",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Umi",
+        "teks_chat": "Teman-teman, waktu kita tersisa lima puluh detik lagi!",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Reza",
+        "teks_chat": "Waktu berjalan sangat cepat rupanya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Tora",
+        "teks_chat": "Iya, tdk terasa waktu diskusi hampir selesai.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Umi",
+        "teks_chat": "Ayo segera putuskan pilihan sebelum terlambat.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Reza",
+        "teks_chat": "Aku rasa kita sudah tahu siapa pembohong di antara kita.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Siska",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Tora",
+        "teks_chat": "Benar, omongannya sama sekali tidak bisa dipercaya.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Siska",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Siska",
+        "teks_chat": "Aku tidak bersalah. Kesalahan ketik nama role tadi bukan berarti aku pelakunya.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Siska",
+            "relasi": "defend",
+            "bukti_pesan": [
+              10
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Umi",
+        "teks_chat": "Itu alasan yang terlalu sering dipakai penjahat.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Siska",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Reza",
+        "teks_chat": "Kembali ke klaim tadi, aku curiga Siska Hitman dan ingin vote Siska saat Tribunal.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Siska",
+            "relasi": "offend",
+            "bukti_pesan": [
+              12
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 28.txt"
+  }
+}

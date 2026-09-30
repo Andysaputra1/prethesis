@@ -1,0 +1,167 @@
+{
+  "job": {
+    "job_id": "r004987_v01",
+    "case_name": "memory_outside_window",
+    "case_description": "14-16 pesan total. Nama target hanya disebut sebelum 12 konteks terakhir. Dalam jendela, ada pesan yang meneruskan acuan dengan jelas dan menyimpan anotasi target berdasarkan pesan lama. Pesan sekarang merujuk target sama. Nama target tidak muncul dalam teks 12 konteks terakhir atau pesan sekarang; target diketahui lewat memori.",
+    "source": {
+      "source_row": 4987,
+      "source_group": "9dd85b7968e12340869f",
+      "teks_chat": "gw civilian, belum punya info malam, tapi pola diemnya Raka paling mencurigakan, vote dia dulu",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 14,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "memory_outside_window",
+    "participants": [
+      "Kiki",
+      "Lila",
+      "Maman",
+      "Nino"
+    ],
+    "focus_player": "Lila",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Kiki",
+        "teks_chat": "Lila menuduh berganti-ganti tanpa alasan, aku curiga dia Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Lila",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Nino",
+        "teks_chat": "Memangnya iya? Tadi bilangnya apa?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Kiki",
+        "teks_chat": "Awalnya dia menyerang aku, terus sekarang pindah haluan.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Lila",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Maman",
+        "teks_chat": "Biasa itu strategi buat cari aman.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Nino",
+        "teks_chat": "Iya, kadang orang panik jadi begitu.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Kiki",
+        "teks_chat": "Tapi cara dia melempar opini itu aneh sekali.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Lila",
+            "relasi": "offend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Maman",
+        "teks_chat": "Kita baca pesan-pesannya dulu.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Nino",
+        "teks_chat": "Belum ada bukti kuat juga untuk vote.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Kiki",
+        "teks_chat": "Kelihatan kok dari pola omongannya yang memutar-mutar.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Lila",
+            "relasi": "offend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Maman",
+        "teks_chat": "Jangan buru-buru, waktu masih panjang.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Nino",
+        "teks_chat": "Masih menunggu info stalker juga nih kita.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Kiki",
+        "teks_chat": "Buat apa menunggu, sudah jelas dia berusaha menutup identitasnya.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Lila",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Maman",
+        "teks_chat": "Tetap saja butuh konfirmasi biar tidak salah vote orang baik.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Nino",
+        "teks_chat": "Aku setuju tuduhan Kiki, vote dia karena menebar tuduhan tanpa alasan.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Lila",
+            "relasi": "offend",
+            "bukti_pesan": [
+              12
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 73.txt"
+  }
+}

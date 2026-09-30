@@ -618,6 +618,28 @@ class ContextDatasetTests(unittest.TestCase):
         self.assertEqual(inference, {"maxTokens": 1000, "temperature": 0.3})
         self.assertEqual(extra, {})
 
+    def test_reference_focus_only_at_case_position(self):
+        messages = [message("Citra", "Andy mencurigakan.", "offend", [relation("Andy", "offend", [1])])]
+        messages += [message("Citra", f"Sisa waktu {60 - i} detik.") for i in range(11)]
+        messages.append(message("Budi", "Dia bukan Hitman.", "defend", [relation("Andy", "defend", [1])]))
+        session, job = self._case("reference_start", "defend", ["Andy", "Budi", "Citra"], messages)
+        session["focus_player"] = "Andy"
+        module.validate_session(session, job)
+        session["messages"][4]["teks_chat"] = "Andy tadi ke mana?"
+        with self.assertRaisesRegex(ValueError, "di luar posisi"):
+            module.validate_session(session, job)
+
+    def test_original_letter_ids_must_be_players(self):
+        text = "gw curiga sama si D, jawabannya muter terus"
+        session, job = self._case("original", "offend", ["Bambang", "Danang"], [
+            message("Bambang", text, "offend", [relation("tidak_diketahui", "offend", [])])])
+        job["source"]["teks_chat"] = text
+        with self.assertRaisesRegex(ValueError, "ID pemain berhuruf"):
+            module.validate_session(session, job)
+        session["participants"] = ["Bambang", "D"]
+        session["messages"][0]["target"] = [relation("D", "offend", [1])]
+        module.validate_session(session, job)
+
     def test_typo_alias_keeps_first_letter(self):
         roster = ["Andika", "Bela", "Fani"]
         self.assertEqual(module.read_aliases({"participants": roster, "panggilan": [

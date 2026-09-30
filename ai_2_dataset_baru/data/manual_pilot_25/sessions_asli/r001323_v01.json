@@ -1,0 +1,52 @@
+{
+  "job": {
+    "job_id": "r001323_v01",
+    "case_name": "short_history_2",
+    "case_description": "Awal diskusi dengan tepat 2 pesan sebelumnya. Gunakan hanya petunjuk yang tersedia.",
+    "source": {
+      "source_row": 1323,
+      "source_group": "d31b35a5c75d17d9ef08",
+      "teks_chat": "kalau ada yang tahu identitas asli seseorang, bisa kasih clue sedikit?",
+      "label_intent": "neutral"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 3,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "short_history_2",
+    "participants": [
+      "Zain",
+      "Aldi",
+      "Bima"
+    ],
+    "focus_player": "",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Zain",
+        "teks_chat": "Tadi ada pemain yang menarik ajakan vote setelah membaca jawaban baru.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Aldi",
+        "teks_chat": "Kita bisa membaca ulang urutan chatnya untuk mencatat perubahan itu.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Bima",
+        "teks_chat": "Oke, aku akan mulai dari pesan sebelum jawaban tersebut.",
+        "label_intent": "neutral",
+        "target": []
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 23.txt"
+  }
+}

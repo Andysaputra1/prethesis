@@ -1,0 +1,53 @@
+{
+  "job": {
+    "job_id": "r002076_v01",
+    "case_name": "neutral_names",
+    "case_description": "Neutral menyebut nama tanpa menuduh/membela; target kosong.",
+    "source": {
+      "source_row": 2076,
+      "source_group": "c576f1f360fb1ebf567c",
+      "teks_chat": "klaim Stalker, tapi Peek-ku baru bisa dipakai lagi dua ronde",
+      "label_intent": "neutral"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 3,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "neutral_names",
+    "participants": [
+      "Wawan",
+      "Yayan",
+      "Zaki",
+      "Aris"
+    ],
+    "focus_player": "",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Wawan",
+        "teks_chat": "Ajakan vote di chat tadi berubah-ubah, aku sedang mencatat urutannya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Yayan",
+        "teks_chat": "Iya Wawan, beberapa pemain juga belum menyampaikan ajakan vote.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Wawan",
+        "teks_chat": "Zaki dan Aris tadi sama-sama mengganti nama yang mereka ajak vote. Siapa yang sudah membaca pesan setelahnya?",
+        "label_intent": "neutral",
+        "target": []
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 33.txt"
+  }
+}

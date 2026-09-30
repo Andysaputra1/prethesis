@@ -1,0 +1,164 @@
+{
+  "job": {
+    "job_id": "r000396_v01",
+    "case_name": "reference_middle",
+    "case_description": "Tepat 12 konteks. Penyebutan target eksplisit di pesan konteks ke-6 atau ke-7.",
+    "source": {
+      "source_row": 396,
+      "source_group": "d766a7a2b506a5f297de",
+      "teks_chat": "gw diem bukan berarti jahat, emang mainnya pasif",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 13,
+    "pesan_typo_ringan": [
+      6
+    ]
+  },
+  "session": {
+    "case_name": "reference_middle",
+    "participants": [
+      "Ira",
+      "Joni",
+      "Rina",
+      "Kiki",
+      "Dani"
+    ],
+    "focus_player": "Rina",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Ira",
+        "teks_chat": "Setelah fase malam selesai, apa ada informasi yang ingin dibagikan?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Joni",
+        "teks_chat": "Belum ada info korban, tetapi ada jawaban chat yang mencurigakan.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Kiki",
+        "teks_chat": "Siapa yang terlihat aneh menurut pantauanmu?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Joni",
+        "teks_chat": "Tadi ada pemain yang langsung menyanggah pas diskusi baru dimulai.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Dani",
+        "teks_chat": "Maksudmu perdebatan di chat saat diskusi dibuka tadi?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Ira",
+        "teks_chat": "Iya, pas Kiki dituduh sedikit, langsung ada yg membela.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Joni",
+        "teks_chat": "Rina tadi langsung membela Kiki. Aku curiga Rina Hitman karena belum menjelaskan alasannya.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Rina",
+            "relasi": "offend",
+            "bukti_pesan": [
+              7
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Kiki",
+        "teks_chat": "Iya benar, dia langsung pasang badan di depanku tadi.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Dani",
+        "teks_chat": "Pemain yang memberikan reaksi secepat itu biasanya komplotannya, Rina pasti Hitman!",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Rina",
+            "relasi": "offend",
+            "bukti_pesan": [
+              7
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Joni",
+        "teks_chat": "Masuk akal sih, terlihat seperti sudah janjian skenario sebelumnya.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Rina",
+            "relasi": "offend",
+            "bukti_pesan": [
+              7
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Dani",
+        "teks_chat": "Langsung vote Rina saja kalau begitu, biar mengurangi beban pikiran.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Rina",
+            "relasi": "offend",
+            "bukti_pesan": [
+              7
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Ira",
+        "teks_chat": "Aku setuju dengan tuduhan itu dan ingin vote dia saat Tribunal.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Rina",
+            "relasi": "offend",
+            "bukti_pesan": [
+              11
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Kiki",
+        "teks_chat": "Cepat membela tidak membuktikan dia pelakunya. Tuduhan awalnya memang belum punya alasan kuat.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Rina",
+            "relasi": "defend",
+            "bukti_pesan": [
+              12
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 5.txt"
+  }
+}

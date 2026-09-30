@@ -1,0 +1,46 @@
+{
+  "job": {
+    "job_id": "r005215_v01",
+    "case_name": "first_message_self",
+    "case_description": "Pesan pertama tanpa konteks membela atau menuduh diri sendiri. Target = pengirim; tidak perlu riwayat untuk memahami aku.",
+    "source": {
+      "source_row": 5215,
+      "source_group": "9f884dbf43f26b3f4120",
+      "teks_chat": "kamu boleh vote aku, tapi identitasku tetap Civilian",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 1,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "first_message_self",
+    "participants": [
+      "Gisel"
+    ],
+    "focus_player": "Gisel",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Gisel",
+        "teks_chat": "Jangan pilih aku untuk dieksekusi, aku bukan Hitman dan mengaku Stalker.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Gisel",
+            "relasi": "defend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 75.txt"
+  }
+}

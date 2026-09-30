@@ -1,0 +1,104 @@
+{
+  "job": {
+    "job_id": "r000259_v01",
+    "case_name": "second_person",
+    "case_description": "Kamu/lu: gunakan pergantian pembicara dan teks yang jelas. Tanpa acuan jelas, target tidak_diketahui.",
+    "source": {
+      "source_row": 259,
+      "source_group": "8222073ade4e9bf8bb32",
+      "teks_chat": "gw nggak punya bukti kuat, tapi gerak-gerik Caca paling mencurigakan sejauh ini",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 10,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "second_person",
+    "participants": [
+      "Maman",
+      "Nia",
+      "Oman",
+      "Putri",
+      "Reza"
+    ],
+    "focus_player": "Reza",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Maman",
+        "teks_chat": "Ada beberapa pemain yang belum mengetik, tetapi kita belum tahu sebabnya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Nia",
+        "teks_chat": "Aku masih bisa mengetik sekarang.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Oman",
+        "teks_chat": "Aku juga. Status kita sendiri tidak menjelaskan status pemain lain.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Putri",
+        "teks_chat": "Reza, kamu masih bisa ikut diskusi?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Reza",
+        "teks_chat": "Aku bisa. Koneksiku tadi sempat terputus.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Maman",
+        "teks_chat": "Jadi jeda chat tadi menurutmu karena koneksi?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Reza",
+        "teks_chat": "Iya, aku baru bisa membaca pesan kalian lagi.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Oman",
+        "teks_chat": "Gag Order membungkam chat, bukan mengacak huruf. Jeda chat saja tidak membuktikan penyebabnya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Putri",
+        "teks_chat": "Reza, apa alasanmu belum menjawab pertanyaan soal ajakan vote tadi?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Maman",
+        "teks_chat": "Reza, aku curiga kamu Hitman yang memakai alasan koneksi untuk menghindar. Aku akan vote kamu.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Reza",
+            "relasi": "offend",
+            "bukti_pesan": [
+              10
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 3.txt"
+  }
+}

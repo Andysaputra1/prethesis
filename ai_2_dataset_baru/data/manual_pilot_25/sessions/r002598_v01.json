@@ -1,0 +1,154 @@
+{
+  "job": {
+    "job_id": "r002598_v01",
+    "case_name": "neutral_status",
+    "case_description": "Klaim status/role atau pertanyaan informasi saja tanpa pembelaan/serangan; target kosong.",
+    "source": {
+      "source_row": 2598,
+      "source_group": "700ee41a1264f6bafda8",
+      "teks_chat": "gw baru masuk, udah pada nuduh aja",
+      "label_intent": "neutral"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 9,
+    "pesan_typo_ringan": [
+      4
+    ]
+  },
+  "session": {
+    "case_name": "neutral_status",
+    "participants": [
+      "Fina",
+      "Gilang",
+      "Hadi",
+      "Intan"
+    ],
+    "focus_player": "",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Fina",
+        "teks_chat": "Sepi banget ya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Gilang",
+        "teks_chat": "Iya nih, pada ke mana.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Hadi",
+        "teks_chat": "Nyimak doang nih gue.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Intan",
+        "teks_chat": "Aku jg mantau aja.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Fina",
+        "teks_chat": "Kok Hadi sama Intan pasif banget sih, mencurigakan tau.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Hadi",
+            "relasi": "offend",
+            "bukti_pesan": [
+              3
+            ]
+          },
+          {
+            "pemain": "Intan",
+            "relasi": "offend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Hadi",
+        "teks_chat": "Aku bukan Hitman, masa cuma nyimak langsung dicurigai.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Hadi",
+            "relasi": "defend",
+            "bukti_pesan": [
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Intan",
+        "teks_chat": "Aku juga bukan Hitman, baru sempat membaca chat.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Intan",
+            "relasi": "defend",
+            "bukti_pesan": [
+              7
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Fina",
+        "teks_chat": "Pokoknya orang pasif tuh biasanya hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Hadi",
+            "relasi": "offend",
+            "bukti_pesan": [
+              6
+            ]
+          },
+          {
+            "pemain": "Intan",
+            "relasi": "offend",
+            "bukti_pesan": [
+              7
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Gilang",
+        "teks_chat": "Teman-teman, ada yang tahu semalam siapa yang disandera?",
+        "label_intent": "neutral",
+        "target": []
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 39.txt"
+  },
+  "revisi": [
+    {
+      "pesan": 4,
+      "kategori": "singkatan",
+      "alasan": "Slot typo [4] tidak berisi singkatan; menyebut diri dengan nama sendiri janggal."
+    },
+    {
+      "pesan": 6,
+      "kategori": "tidak_natural",
+      "alasan": "'Aku bukan Hitman cuma karena menyimak' bermakna janggal."
+    },
+    {
+      "pesan": 9,
+      "kategori": "meta",
+      "alasan": "Menanyakan aturan apakah korban diketahui."
+    }
+  ]
+}

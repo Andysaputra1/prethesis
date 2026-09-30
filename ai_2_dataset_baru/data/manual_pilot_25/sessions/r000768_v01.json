@@ -1,0 +1,68 @@
+{
+  "job": {
+    "job_id": "r000768_v01",
+    "case_name": "negation",
+    "case_description": "Negasi menentukan relasi: Andy Hitman berbeda dari Andy bukan Hitman.",
+    "source": {
+      "source_row": 768,
+      "source_group": "bb37cb2f32df296e7671",
+      "teks_chat": "aku bukan Hitman, dari tadi cuma nunggu arahan",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 3,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "negation",
+    "participants": [
+      "Erna",
+      "Fikri",
+      "Gilang"
+    ],
+    "focus_player": "Fikri",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Erna",
+        "teks_chat": "Tadi pas Gilang dituduh, kok Fikri cepet banget ngebelanya?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Gilang",
+        "teks_chat": "Aku juga curiga Fikri memakai pembelaan itu untuk mencari kepercayaan sebagai Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Fikri",
+            "relasi": "offend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Erna",
+        "teks_chat": "Masa sih Fikri pelakunya? Fikri kan bukan Hitman, dia cuma nyampein alibi yang dia tahu aja makanya cepet.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Fikri",
+            "relasi": "defend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 15.txt"
+  }
+}

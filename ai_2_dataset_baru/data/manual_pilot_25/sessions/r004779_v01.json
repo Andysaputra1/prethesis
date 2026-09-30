@@ -1,0 +1,46 @@
+{
+  "job": {
+    "job_id": "r004779_v01",
+    "case_name": "first_message_self",
+    "case_description": "Pesan pertama tanpa konteks membela atau menuduh diri sendiri. Target = pengirim; tidak perlu riwayat untuk memahami aku.",
+    "source": {
+      "source_row": 4779,
+      "source_group": "cc2ccaf3f15391238b5f",
+      "teks_chat": "kalau Bima benar Civilian, harusnya dia berani nunjuk tersangka, vote Bima aja",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 1,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "first_message_self",
+    "participants": [
+      "Dani"
+    ],
+    "focus_player": "Dani",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Dani",
+        "teks_chat": "Vote aku saja kalau kalian berani menentukan pilihan.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Dani",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 70.txt"
+  }
+}

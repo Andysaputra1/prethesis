@@ -1,0 +1,200 @@
+{
+  "job": {
+    "job_id": "r001426_v01",
+    "case_name": "witness",
+    "case_description": "Nama saksi/korban disebut, tetapi bukan target serangan atau pembelaan.",
+    "source": {
+      "source_row": 1426,
+      "source_group": "c228834058903f321231",
+      "teks_chat": "bukan gue, tadi yang mulai framing itu si I",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 13,
+    "pesan_typo_ringan": [
+      8
+    ]
+  },
+  "session": {
+    "case_name": "witness",
+    "participants": [
+      "Darto",
+      "Endang",
+      "Fitri",
+      "Gatot"
+    ],
+    "focus_player": "Fitri",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Darto",
+        "teks_chat": "Siapa nih yang mau claim Stalker hari ini?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Endang",
+        "teks_chat": "Aku Stalker, dan hasil Peek-ku semalam bilang Fitri bukan Hitman.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Fitri",
+            "relasi": "defend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Fitri",
+        "teks_chat": "Makasih Endang udah nge-clear-in aku.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Gatot",
+        "teks_chat": "Tapi klaim Endang itu meragukan.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Darto",
+        "teks_chat": "Iya, jangan-jangan Endang bohong.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Endang",
+        "teks_chat": "Aku hanya menyampaikan klaim Stalker dan hasil yang kuketahui.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Fitri",
+        "teks_chat": "Aku membela Endang, menurutku klaimnya benar.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Endang",
+            "relasi": "defend",
+            "bukti_pesan": [
+              7
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Gatot",
+        "teks_chat": "Ah lu belain krn diselametin aja, lu berdua pasti komplotan Hitman yang main drama, ayo vote Fitri dan Endang!",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Endang",
+            "relasi": "offend",
+            "bukti_pesan": [
+              2
+            ]
+          },
+          {
+            "pemain": "Fitri",
+            "relasi": "offend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Darto",
+        "teks_chat": "Aku setuju, aku curiga Fitri dan Endang.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Fitri",
+            "relasi": "offend",
+            "bukti_pesan": [
+              9
+            ]
+          },
+          {
+            "pemain": "Endang",
+            "relasi": "offend",
+            "bukti_pesan": [
+              9
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Endang",
+        "teks_chat": "Aku bukan Hitman, tuduhan itu tidak benar.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Endang",
+            "relasi": "defend",
+            "bukti_pesan": [
+              10
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Fitri",
+        "teks_chat": "Sumpah aku civilian.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Fitri",
+            "relasi": "defend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Gatot",
+        "teks_chat": "Nggak bakal percaya.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Fitri",
+            "relasi": "offend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Darto",
+        "teks_chat": "Dari pengamatan Gatot soal pembelaan tadi, aku curiga Fitri Hitman. Aku ingin vote Fitri.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Fitri",
+            "relasi": "offend",
+            "bukti_pesan": [
+              13
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 25.txt"
+  },
+  "revisi": [
+    {
+      "pesan": 2,
+      "kategori": "tidak_natural",
+      "alasan": "'hasil Peek yang kuklaim' janggal (pemain menyebut klaimnya sendiri sebagai klaim)."
+    }
+  ]
+}

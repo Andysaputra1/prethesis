@@ -1,0 +1,129 @@
+{
+  "job": {
+    "job_id": "r001532_v01",
+    "case_name": "reference_end",
+    "case_description": "Tepat 12 konteks. Penyebutan target eksplisit di pesan konteks terakhir.",
+    "source": {
+      "source_row": 1532,
+      "source_group": "6e835903a8cc468f920b",
+      "teks_chat": "lu nuduh gw cuma karena gw beda pendapat, sementara si A dari tadi ikut arus tanpa alasan",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 13,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "reference_end",
+    "participants": [
+      "Jaka",
+      "Kiki",
+      "Lusi",
+      "Mario"
+    ],
+    "focus_player": "Mario",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Jaka",
+        "teks_chat": "Waktu diskusi hampir selesai, kita belum menyepakati dugaan.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Kiki",
+        "teks_chat": "Gw masih bingung banget mau vote siapa.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Lusi",
+        "teks_chat": "Ada yang punya petunjuk ga?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Mario",
+        "teks_chat": "Belum ada yang pasti sih.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Jaka",
+        "teks_chat": "Lusi tadi ingin mengajak vote siapa?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Kiki",
+        "teks_chat": "Lusi belum menyampaikan ajakan vote.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Lusi",
+        "teks_chat": "Iya, aku masih menunggu alasan yang lebih jelas.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Mario",
+        "teks_chat": "Mending kita diskusiin dulu sebelum pada mencet vote.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Jaka",
+        "teks_chat": "Iya jangan buru-buru, ntar kayak kemaren salah target.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Kiki",
+        "teks_chat": "Bener, gw setuju.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Lusi",
+        "teks_chat": "Kalian ada saran gak mending ke siapa?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Jaka",
+        "teks_chat": "Mario selalu menunggu ajakan orang lain lalu ikut tanpa alasan. Aku curiga Mario Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Mario",
+            "relasi": "offend",
+            "bukti_pesan": [
+              12
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Kiki",
+        "teks_chat": "Iya, kelihatan banget dia cuma mau main aman biar gak dicurigai.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Mario",
+            "relasi": "offend",
+            "bukti_pesan": [
+              12
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 27.txt"
+  }
+}

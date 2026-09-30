@@ -1,0 +1,88 @@
+{
+  "job": {
+    "job_id": "r001913_v01",
+    "case_name": "ambiguous",
+    "case_description": "Beberapa acuan sama-sama mungkin; target tidak_diketahui, bukan nama terakhir.",
+    "source": {
+      "source_row": 1913,
+      "source_group": "1ddd4468f270ce0556f7",
+      "teks_chat": "aku lebih percaya data daripada gaya bicara, dan jejak voting Kevin paling menguntungkan pihak Hitman, keluarkan Kevin",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 8,
+    "pesan_typo_ringan": []
+  },
+  "session": {
+    "case_name": "ambiguous",
+    "participants": [
+      "Arif",
+      "Yana",
+      "Zaki"
+    ],
+    "focus_player": "",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Yana",
+        "teks_chat": "Arif dan Zaki sama-sama mengatakan bukan pelaku sebelum ada tuduhan.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Zaki",
+        "teks_chat": "Iya, tadi ada yang langsung bilang bukan pelaku tanpa ditanya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Arif",
+        "teks_chat": "Namanya juga sedia payung sebelum hujan.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Yana",
+        "teks_chat": "Tetapi kalau memang jujur, untuk apa merasa takut.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Zaki",
+        "teks_chat": "Benar, warga biasa pastinya santai saja dari awal.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Arif",
+        "teks_chat": "Dari dua orang tadi, siapa yang ingin kalian bahas?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Yana",
+        "teks_chat": "Ada deh, yang merasa pasti paham maksudku.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Zaki",
+        "teks_chat": "Aku curiga dia Hitman karena terlalu cepat membela diri.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "tidak_diketahui",
+            "relasi": "offend",
+            "bukti_pesan": []
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "tanpa_nama",
+    "source_file": "hasil copy 31.txt"
+  }
+}
