@@ -1,0 +1,91 @@
+{
+  "load_seconds": 3.966989799984731,
+  "smoke": [
+    {
+      "pengirim": "Andi",
+      "teks": "Aku curiga Budi itu Hitman.",
+      "intent": "offend",
+      "conf_intent": 0.9998577237129211,
+      "target": [
+        {
+          "pemain": "Budi",
+          "relasi": "offend",
+          "prob": 0.999863862991333
+        }
+      ],
+      "sumber_nlu": "indobert",
+      "seconds": 2.426
+    },
+    {
+      "pengirim": "Budi",
+      "teks": "Aku bukan Hitman, jangan asal tuduh.",
+      "intent": "defend",
+      "conf_intent": 0.9993553757667542,
+      "target": [
+        {
+          "pemain": "Budi",
+          "relasi": "defend",
+          "prob": 0.9999145269393921
+        }
+      ],
+      "sumber_nlu": "indobert",
+      "seconds": 0.249
+    },
+    {
+      "pengirim": "Citra",
+      "teks": "Menurutku Budi bukan Hitman.",
+      "intent": "offend",
+      "conf_intent": 0.39438262581825256,
+      "target": [
+        {
+          "pemain": "Budi",
+          "relasi": "offend",
+          "prob": 0.9998860359191895
+        }
+      ],
+      "sumber_nlu": "indobert",
+      "seconds": 0.261
+    },
+    {
+      "pengirim": "Eka",
+      "teks": "Ada yang punya info?",
+      "intent": "neutral",
+      "conf_intent": 0.9998500347137451,
+      "target": [],
+      "sumber_nlu": "indobert",
+      "seconds": 0.047
+    },
+    {
+      "pengirim": "Andi",
+      "teks": "Budi mencurigakan, tapi Citra bukan Hitman.",
+      "intent": "offend",
+      "conf_intent": 0.9998393654823303,
+      "target": [
+        {
+          "pemain": "Budi",
+          "relasi": "defend",
+          "prob": 0.9631738066673279
+        },
+        {
+          "pemain": "Citra",
+          "relasi": "offend",
+          "prob": 0.986083447933197
+        }
+      ],
+      "sumber_nlu": "indobert",
+      "seconds": 0.29
+    }
+  ],
+  "artifacts_match_training": {
+    "intent": {
+      "model.safetensors": true,
+      "config.json": true,
+      "tokenizer.json": true
+    },
+    "target": {
+      "model.safetensors": true,
+      "config.json": true,
+      "tokenizer.json": true
+    }
+  }
+}

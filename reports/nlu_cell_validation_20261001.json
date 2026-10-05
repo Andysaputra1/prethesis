@@ -1,0 +1,54 @@
+{
+  "full_flow_checks_previous_run": [
+    {
+      "notebook": "nlu_baru",
+      "cells": 170,
+      "functions_with_calls": 42,
+      "switches": [
+        true,
+        true,
+        true
+      ],
+      "status": "passed",
+      "real_baselines_match_original": true
+    },
+    {
+      "notebook": "nlu_target",
+      "cells": 185,
+      "functions_with_calls": 48,
+      "switches": [
+        true,
+        true,
+        true
+      ],
+      "status": "passed",
+      "real_baselines_match_original": true
+    }
+  ],
+  "switch_checks": [
+    {
+      "notebook": "nlu_target",
+      "cells": 185,
+      "functions_with_calls": 48,
+      "switches": [
+        false,
+        false,
+        false
+      ],
+      "status": "passed"
+    },
+    {
+      "notebook": "nlu_target",
+      "cells": 185,
+      "functions_with_calls": 48,
+      "switches": [
+        false,
+        false,
+        true
+      ],
+      "status": "passed"
+    }
+  ],
+  "limits": "Real sklearn baselines match the original notebooks. Grid Search reduced to one real candidate, Optuna orchestration stub with one real sklearn CV trial, IndoBERT uses simulated Trainer/tokenizer/dataset. Full tuning and GPU fine-tuning were not run. Model artifacts were written only to temporary directories.",
+  "eda": "First 16 cells, including all EDA content and outputs, are unchanged in both notebooks."
+}

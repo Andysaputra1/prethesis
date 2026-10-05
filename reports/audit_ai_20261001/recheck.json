@@ -1,0 +1,228 @@
+{
+  "export_matches_notebooks": {
+    "otak_fuzzy": true,
+    "otak_utility": true,
+    "otak_bt": true,
+    "nlg": true
+  },
+  "fuzzy": {
+    "notebook_checks": [
+      {
+        "cell": 66,
+        "ok": true
+      },
+      {
+        "cell": 67,
+        "ok": true
+      },
+      {
+        "cell": 74,
+        "ok": true
+      },
+      {
+        "cell": 80,
+        "ok": true
+      },
+      {
+        "cell": 81,
+        "ok": true
+      },
+      {
+        "cell": 84,
+        "ok": true
+      }
+    ],
+    "scenarios": 45,
+    "scenario_failures": [],
+    "check_groups": 21,
+    "echo_repro": {
+      "echo_count": 2,
+      "decision": {
+        "kirim": true,
+        "aksi": "ajak_bicara",
+        "intent": "neutral",
+        "target": "Dodi",
+        "klaim": false,
+        "alasan": [
+          "Dodi belum bicara di ronde ini."
+        ],
+        "skor": 50.000000000000014
+      }
+    },
+    "uuid_changes_evidence": {
+      "original_chronology_score": 0.5,
+      "reversed_uuid_score": 0.0
+    },
+    "late_chat_recorded_as": {
+      "ronde": 2,
+      "fase": "day",
+      "waktu": 101
+    }
+  },
+  "utility": {
+    "notebook_checks": [
+      {
+        "cell": 59,
+        "ok": true
+      },
+      {
+        "cell": 60,
+        "ok": true
+      },
+      {
+        "cell": 67,
+        "ok": true
+      },
+      {
+        "cell": 73,
+        "ok": true
+      },
+      {
+        "cell": 74,
+        "ok": true
+      },
+      {
+        "cell": 77,
+        "ok": true
+      }
+    ],
+    "scenarios": 45,
+    "scenario_failures": [],
+    "check_groups": 20,
+    "echo_repro": {
+      "echo_count": 2,
+      "decision": {
+        "kirim": true,
+        "aksi": "ajak_bicara",
+        "intent": "neutral",
+        "target": "Dodi",
+        "klaim": false,
+        "alasan": [
+          "Dodi belum bicara di ronde ini."
+        ],
+        "skor": 0.5059570144900043
+      }
+    },
+    "uuid_changes_evidence": {
+      "original_chronology_score": 0.5,
+      "reversed_uuid_score": 0.0
+    },
+    "late_chat_recorded_as": {
+      "ronde": 2,
+      "fase": "day",
+      "waktu": 101
+    }
+  },
+  "bt": {
+    "notebook_checks": [
+      {
+        "cell": 63,
+        "ok": true
+      },
+      {
+        "cell": 64,
+        "ok": true
+      },
+      {
+        "cell": 71,
+        "ok": true
+      },
+      {
+        "cell": 77,
+        "ok": true
+      },
+      {
+        "cell": 78,
+        "ok": true
+      },
+      {
+        "cell": 81,
+        "ok": true
+      }
+    ],
+    "scenarios": 45,
+    "scenario_failures": [],
+    "check_groups": 18,
+    "echo_repro": {
+      "echo_count": 2,
+      "decision": {
+        "kirim": true,
+        "aksi": "tuduh",
+        "intent": "offend",
+        "target": "Dodi",
+        "klaim": false,
+        "alasan": [
+          "Citra sempat menuduh Dodi, lalu Citra kemungkinan kena Gag (ronde 1).",
+          "3 pemain menuduh atau vote Dodi."
+        ],
+        "skor": null
+      }
+    },
+    "uuid_changes_evidence": {
+      "original_chronology_score": 0.5,
+      "reversed_uuid_score": 0.0
+    },
+    "late_chat_recorded_as": {
+      "ronde": 2,
+      "fase": "day",
+      "waktu": 101
+    }
+  },
+  "name_collision": "PEMAIN_X bukan KANDIDAT_X",
+  "nlg_extra_target_accepted": {
+    "teks": "Aku curiga Budi dan Citra.",
+    "lolos": true,
+    "pelanggaran": [],
+    "nlu": {
+      "lolos": true,
+      "intent_prediksi": "offend",
+      "confidence": 0.99,
+      "target_prediksi": [
+        [
+          "Budi",
+          "offend"
+        ],
+        [
+          "Citra",
+          "offend"
+        ]
+      ],
+      "cocok_intent": true,
+      "cocok_target": true,
+      "target_lain": [
+        "Citra"
+      ]
+    }
+  },
+  "nlg_unsafe_fallback": {
+    "teks": "Aku curiga sama bot.",
+    "sumber": "templat_cadangan",
+    "penulis": null,
+    "lolos_aturan": false,
+    "lolos_nlu": null,
+    "pelanggaran": [
+      "menyebut_ai"
+    ],
+    "nlu": null,
+    "persona": "santai",
+    "percobaan": [
+      {
+        "sumber": "templat",
+        "teks": "Aku curiga sama bot.",
+        "lolos": false,
+        "pelanggaran": [
+          "menyebut_ai"
+        ]
+      },
+      {
+        "sumber": "templat",
+        "teks": "Menurutku bot patut dicurigai.",
+        "lolos": false,
+        "pelanggaran": [
+          "menyebut_ai"
+        ]
+      }
+    ],
+    "detik": 0.0
+  }
+}
