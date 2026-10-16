@@ -44,3 +44,16 @@ skenario,role,chat,vote,aksi,tersangka/kambing,urgensi,npc_decision,lulus,catata
 43 Eksekusi Hitman menurut pengumuman,civilian,bela_orang → Citra,tidak_bisa → —,tidak_bisa → —,Citra,0.5,wait → —,True,,fuzzy
 44 Hitman tidak memakai eksekusi rekan (dengan pengumuman),hitman,bela_diri → Nara,tidak_bisa → —,tunggu → —,Andi,0.5,wait → —,True,,fuzzy
 45 Hitman tidak memakai eksekusi rekan (tanpa pengumuman),hitman,bela_diri → Nara,tidak_bisa → —,tunggu → —,Andi,0.5,wait → —,True,,fuzzy
+46 Dipanggil nama tanpa tanda tanya,civilian,jawab → —,tidak_bisa → —,tidak_bisa → —,Andi,0.25,wait → —,True,,fuzzy
+47 Dipanggil lewat panggilan,civilian,jawab → —,tidak_bisa → —,tidak_bisa → —,Andi,0.25,wait → —,True,,fuzzy
+48 Dipanggil lewat kata kamu,civilian,jawab → —,tidak_bisa → —,tidak_bisa → —,Andi,0.25,wait → —,True,,fuzzy
+49 Pertanyaan untuk semua tidak memaksa jawaban,civilian,tunggu → —,tidak_bisa → —,tidak_bisa → —,Andi,0.25,wait → —,True,,fuzzy
+50 Sudah menjawab tidak menjawab lagi,civilian,tunggu → —,tidak_bisa → —,tidak_bisa → —,Andi,0.25,wait → —,True,,fuzzy
+51 Jatah chat habis tidak menjawab,civilian,tunggu → —,tidak_bisa → —,tidak_bisa → —,Andi,0.25,wait → —,True,,fuzzy
+52 Ditanya saat ada tersangka kuat,civilian,jawab → Budi,tidak_bisa → —,tidak_bisa → —,Budi,0.48,wait → —,True,,fuzzy
+53 Hitman dipanggil menjawab seperti warga,hitman,jawab → —,tidak_bisa → —,tunggu → —,Andi,0.25,wait → —,True,,fuzzy
+54 Pemain keluar: penuduhnya tidak disalahkan,civilian,bela_orang → Citra,tidak_bisa → —,tidak_bisa → —,Dodi,0.5,wait → —,True,,fuzzy
+55 Hitman memilih ulang setelah target keluar,hitman,tunggu → —,tidak_bisa → —,hostage → Budi,Budi,0.5,hostage → Budi,True,,fuzzy
+56 Hitman: pilihan ulang malam tercatat,hitman,tunggu → —,tidak_bisa → —,hostage → Eka,Budi,0.5,hostage → Eka,True,,fuzzy
+57 Anti-gema: tuduhan ketiga tidak diulang,civilian,ajak_bicara → Dodi,tidak_bisa → —,tidak_bisa → —,Dodi,0.25,wait → —,True,,fuzzy
+58 Sudah mengungkap: tidak menuduh lagi,stalker,tunggu → —,vote → Dodi,tidak_bisa → —,Dodi,0.25,vote → Dodi,True,,fuzzy
