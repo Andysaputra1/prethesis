@@ -1,2 +1,34 @@
-aksi,peran,persona,teks,sumber,percobaan_llm,lolos_percobaan_1,status_llm,pelanggaran_llm,detik
-ungkap,stalker,santai,"Aku buka role: aku Stalker. Budi sudah aku peek dan dia Hitman, jadi vote Budi.",templat,1,False,['key ditolak (401)'],[],16.074
+aksi,peran,persona,teks,sumber,penulis,percobaan_llm,lolos_percobaan_1,status_llm,pelanggaran_llm,detik
+ungkap,stalker,santai,"Aku Stalker, semalam peek Budi—dia Hitman. Vote dia aja, sekarang!",llm,openrouter,1,True,['ok'],[],1.955
+bela_diri,civilian,gaul,"Kok gw sih? Gw warga, bukan Hitman.",templat,,2,False,"['ok', 'ok']",[],5.221
+jawab,spy,kalem,"Menurut saya Citra yang paling mencurigakan. Citra ikut mendorong eksekusi Dodi (ronde 1), padahal game berlanjut jadi Dodi bukan Hitman.",templat,,2,False,"['ok', 'ok']",[],4.012
+jawab,civilian,santai,"Aku belum yakin siapa Hitman, masih bingung semua. Kalian semua gimana?",llm,openrouter,1,True,['ok'],[],1.918
+bela_orang,civilian,gaul,"Gw rasa Andi bukan Hitman, tuduhannya belum ada bukti.",templat,,2,False,"['ok', 'ok']",[],3.63
+bela_orang,stalker,kalem,"Saya Stalker, saya sudah peek Eka: dia bukan Hitman. Jangan vote Eka.",templat,,2,False,"['ok', 'ok']",[],3.081
+tuduh,civilian,santai,"Aku curiga Citra, dia ngalihin topik terus waktu dibicarain, kayaknya ada apa. Plus Eka dulu pernah menuduh dia, lalu malamnya disandera.",llm,openrouter,1,True,['ok'],[],1.541
+klaim_palsu,hitman,gaul,"Aku Stalker, semalam aku peek Andi, dia Hitman.",llm,openrouter,1,True,['ok'],[],1.78
+info_sandera,civilian,kalem,"Jangan salah vote, Dodi bukan Hitman. Dia korban sandera.",templat,,2,False,"['ok', 'ok']",[],2.676
+ajak_bicara,spy,santai,"Eka, kamu dari tadi diam, gimana pendapatmu sih?",llm,openrouter,1,True,['ok'],[],2.544
+tanya_info,civilian,gaul,"Aku cuma mau tanya, siapa aja yang kalian curigai dan kenapa?",llm,openrouter,2,False,"['ok', 'ok']",[],4.828
+tanya_info,stalker,kalem,"Andi, menurut saya, Andi dan Citra mengaku role yang sama, jadi mungkin mereka bisa jadi satu tim. Bagaimana menurut kamu?",llm,openrouter,2,False,"['ok', 'ok']",[],4.026
+tuduh,hitman,santai,"Aku rasa Budi bisa jadi target, ada tiga orang yang udah menuduh dia.",llm,openrouter,1,True,['ok'],[],2.055
+bela_diri,hitman,gaul,"Aku bukan Hitman, belum ada bukti sama sekali.",llm,openrouter,1,True,['ok'],[],1.518
+tanya_info,civilian,kalem,"Aku cuma pengin nanya, kok sepi ya, belum ada yang cerita. Ada yang mau berbagi pengalaman malam kemarin?",llm,openrouter,2,False,"['ok', 'ok']",[],2.953
+tanya_info,civilian,santai,"Kok sepi ya, belum ada yang cerita. Aku cuma mau tanya pendapat kalian aja, sih.",llm,openrouter,1,True,['ok'],[],2.106
+bela_diri,civilian,gaul,"Kok gw? Gw bukan Hitman, tuduhan itu nggak ada buktinya.",templat,,2,False,"['ok', 'ok']",[],4.63
+tuduh,civilian,kalem,Menurut saya Dodi patut dicurigai.,templat,,2,False,"['ok', 'ok']",[],3.958
+info_sandera,civilian,santai,"Aku rasa Eka bukan Hitman, tuduhannya belum ada bukti. Kayaknya dia korban sandera.",templat,,2,False,"['ok', 'ok']",[],4.871
+tuduh,civilian,gaul,Gw curiga sama Budi.,templat,,2,False,"['ok', 'ok']",['nama_lain'],6.66
+bela_orang,civilian,kalem,"Eka bukan Hitman menurut saya, jangan vote dia.",templat,,2,False,"['ok', 'ok']",[],2.465
+ajak_bicara,civilian,santai,"Citra, ayo ikut diskusi. Kamu curiga siapa?",templat,,2,False,"['ok', 'ok']",[],2.572
+ajak_bicara,civilian,gaul,"Eka, pendapat lu gimana? Dari tadi belum kedengaran.",templat,,2,False,"['ok', 'ok']",[],2.796
+ungkap,stalker,kalem,"Aku Stalker, semalam aku peek Dodi—dia Hitman. Ayo vote Dodi sekarang.",llm,openrouter,2,False,"['ok', 'ok']",['terlalu_panjang'],2.397
+bela_orang,stalker,santai,"Aku Stalker, sudah peek Citra: dia bukan Hitman, jadi jangan vote dia.",llm,openrouter,1,True,['ok'],[],1.417
+jawab,civilian,gaul,"Gw belum bisa pastiin siapa, masih bingung juga. Kalian semua gimana?",llm,openrouter,1,True,['ok'],[],1.254
+info_sandera,civilian,kalem,"Saya rasa Citra bukan Hitman, tuduhannya belum ada bukti. Kayaknya dia korban sandera.",templat,,2,False,"['ok', 'ok']",[],5.595
+ajak_bicara,civilian,santai,"Dodi, kamu dari tadi diam, ada pendapat gak?",llm,openrouter,1,True,['ok'],[],1.256
+jawab,civilian,gaul,"Aku paling curiga Budi, dia bener-bener nggak jelas. Dua orang udah menuduh dia, tapi dia malah marah-marah ke Eka.",llm,openrouter,1,True,['ok'],[],1.786
+bela_diri,hitman,kalem,Aku bukan Hitman; tuduhan ke aku belum punya bukti.,llm,openrouter,1,True,['ok'],[],1.317
+info_sandera,spy,santai,"Aku rasa Citra bukan Hitman, tuduhannya belum ada bukti. Kayaknya dia korban sandera.",templat,,2,False,"['ok', 'ok']",[],3.612
+ungkap,stalker,gaul,"Aku Stalker, semalam peek Andi—dia Hitman. Vote dia sekarang!",llm,openrouter,1,True,['ok'],[],3.2
+ungkap,stalker,kalem,"Aku Stalker, semalam aku peek Dodi—dia Hitman. Aku sarankan semua vote Dodi sekarang.",llm,openrouter,1,True,['ok'],[],1.405
