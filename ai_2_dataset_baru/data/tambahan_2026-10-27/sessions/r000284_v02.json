@@ -1,0 +1,71 @@
+{
+  "job": {
+    "job_id": "r000284_v02",
+    "case_name": "witness",
+    "case_description": "Nama saksi/korban disebut, tetapi bukan target serangan atau pembelaan. FOKUS TAMBAHAN: Nama sumber/saksi/penuduh bukan target. Sertakan bantahan isi klaim Peek penuduh yang membela pengirim saja.",
+    "source": {
+      "source_row": 284,
+      "source_group": "d9f42d7b92ec001ec5ff",
+      "teks_chat": "Aku tidak yakin pada Reno. Dia tahu detail malam yang seharusnya tidak dia ketahui, Hitman banget",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 3,
+    "pesan_typo_ringan": [],
+    "case_index": 27
+  },
+  "session": {
+    "case_name": "witness",
+    "participants": [
+      "Zafran",
+      "Ratih",
+      "Rizki",
+      "Kautsar",
+      "Aksara"
+    ],
+    "focus_player": "Kautsar",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Rizki",
+        "teks_chat": "Kautsar nulis role dulu lalu menjelaskan skill yang dimaksud.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Kautsar",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Aksara",
+        "teks_chat": "kalau bahas malam pertama, sebut dari awal dong.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Zafran",
+        "teks_chat": "Kautsar seperti menyiapkan alibi palsu, itu kesimpulanku dari cerita Rizki tadi.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Kautsar",
+            "relasi": "offend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "008_codex_revisi1.txt"
+  }
+}

@@ -1,0 +1,91 @@
+{
+  "job": {
+    "job_id": "r004013_v02",
+    "case_name": "ambiguous",
+    "case_description": "Beberapa acuan sama-sama mungkin; target tidak_diketahui, bukan nama terakhir. FOKUS TAMBAHAN: Sedikitnya dua calon acuan dia sama kuat; nama terakhir bukan jawaban. Target tidak_diketahui.",
+    "source": {
+      "source_row": 4013,
+      "source_group": "0c0cf898e2f82c12474a",
+      "teks_chat": "Stalker asli harusnya punya satu nama dari Peek, mana buktinya?",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 3,
+    "pesan_typo_ringan": [],
+    "case_index": 45
+  },
+  "session": {
+    "case_name": "ambiguous",
+    "participants": [
+      "Zafran",
+      "Thalia",
+      "Anindya",
+      "Nabil",
+      "Almira"
+    ],
+    "focus_player": "",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Thalia",
+        "teks_chat": "yang mau bahas dua klaim ini, nih, dari Nabil dan Zafran.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Nabil",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          },
+          {
+            "pemain": "Zafran",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Anindya",
+        "teks_chat": "aku mau membaca ulang ucapan mereka, belum bikin keputusan.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Nabil",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          },
+          {
+            "pemain": "Zafran",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Almira",
+        "teks_chat": "nggak usah ikuti arahan dia, aku curiga sengaja dibuat supaya Hitman lolos.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "tidak_diketahui",
+            "relasi": "offend",
+            "bukti_pesan": []
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "005_codex_revisi1.txt"
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "job": {
+    "job_id": "r003161_v02",
+    "case_name": "interruption",
+    "case_description": "Pembahasan target disela obrolan waktu/ronde; kaitan kembali ke target masih jelas. FOKUS TAMBAHAN: Selingan waktu lalu kembali ke target; sertakan pembelaan diri.",
+    "source": {
+      "source_row": 3161,
+      "source_group": "a841c9af046bd8fdc85b",
+      "teks_chat": "Bukan gw yang pakai Gag Order; kalau punya skill itu, targetnya pasti orang yang paling mengancam argumen Hitman",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 4,
+    "pesan_typo_ringan": [],
+    "case_index": 8
+  },
+  "session": {
+    "case_name": "interruption",
+    "participants": [
+      "Jalu",
+      "Kautsar",
+      "Diandra",
+      "Mutiara",
+      "Almira"
+    ],
+    "focus_player": "Kautsar",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Jalu",
+        "teks_chat": "aku mau Kautsar dikeluarkan, cara jawabnya seperti Hitman cari aman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Kautsar",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Diandra",
+        "teks_chat": "eh, waktu ngobrol tinggal empat belas detik sekarang.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Almira",
+        "teks_chat": "oke nih, pengumuman waktu sudah masuk, kembali ke obrolannya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Kautsar",
+        "teks_chat": "tadi kepotong urusan ronde, tapi aku tetap menyangkal melakukan Hostage.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Kautsar",
+            "relasi": "defend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "044_codex_revisi1.txt"
+  }
+}

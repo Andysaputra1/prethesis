@@ -1,0 +1,516 @@
+```json
+{
+  "results": [
+    {
+      "job_id": "r002382_v02",
+      "session": {
+        "case_name": "agreement",
+        "participants": [
+          "Feby",
+          "Astri",
+          "Jauhar",
+          "Rosita",
+          "Febrian"
+        ],
+        "focus_player": "Jauhar",
+        "panggilan": [],
+        "messages": [
+          {
+            "pengirim": "Astri",
+            "teks_chat": "aku curiga Jauhar, klaimnya terdengar palsu.",
+            "label_intent": "offend",
+            "target": [
+              {
+                "pemain": "Jauhar",
+                "relasi": "offend",
+                "bukti_pesan": [
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "pengirim": "Rosita",
+            "teks_chat": "buat semuanya, timer diskusi menunjukkan empat puluh detik.",
+            "label_intent": "neutral",
+            "target": []
+          },
+          {
+            "pengirim": "Feby",
+            "teks_chat": "setuju sama yang barusan menjelaskan, pilihan vote itu masuk akal.",
+            "label_intent": "offend",
+            "target": [
+              {
+                "pemain": "Jauhar",
+                "relasi": "offend",
+                "bukti_pesan": [
+                  1
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "job_id": "r003707_v02",
+      "session": {
+        "case_name": "agreement",
+        "participants": [
+          "Hilmi",
+          "Wulan",
+          "Aisyah",
+          "Haikal",
+          "Rahma"
+        ],
+        "focus_player": "Haikal",
+        "panggilan": [],
+        "messages": [
+          {
+            "pengirim": "Wulan",
+            "teks_chat": "aku bela Haikal, hasil Peek-ku membersihkan dia.",
+            "label_intent": "defend",
+            "target": [
+              {
+                "pemain": "Haikal",
+                "relasi": "defend",
+                "bukti_pesan": [
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "pengirim": "Rahma",
+            "teks_chat": "sebentar, sisa waktunya satu menit di layarku.",
+            "label_intent": "neutral",
+            "target": []
+          },
+          {
+            "pengirim": "Aisyah",
+            "teks_chat": "aku ikut pendapat Wulan di atas, pembelaannya layak diterima.",
+            "label_intent": "defend",
+            "target": [
+              {
+                "pemain": "Haikal",
+                "relasi": "defend",
+                "bukti_pesan": [
+                  1
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "job_id": "r004503_v02",
+      "session": {
+        "case_name": "agreement",
+        "participants": [
+          "Prita",
+          "Thalia",
+          "Rayhan",
+          "Cahya",
+          "Haikal"
+        ],
+        "focus_player": "Haikal",
+        "panggilan": [],
+        "messages": [
+          {
+            "pengirim": "Rayhan",
+            "teks_chat": "Haikal itu ngarang soal hasil malam menurutku.",
+            "label_intent": "offend",
+            "target": [
+              {
+                "pemain": "Haikal",
+                "relasi": "offend",
+                "bukti_pesan": [
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "pengirim": "Cahya",
+            "teks_chat": "pengingat untuk semua: ronde belum berganti, masih sesi diskusi.",
+            "label_intent": "neutral",
+            "target": []
+          },
+          {
+            "pengirim": "Prita",
+            "teks_chat": "ya, itu juga alasanku dari tadi. Aku mendukung tuduhan yang sama.",
+            "label_intent": "offend",
+            "target": [
+              {
+                "pemain": "Haikal",
+                "relasi": "offend",
+                "bukti_pesan": [
+                  1
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "job_id": "r003548_v02",
+      "session": {
+        "case_name": "agreement",
+        "participants": [
+          "Febrian",
+          "Inaya",
+          "Arum",
+          "Halim",
+          "Kemal"
+        ],
+        "focus_player": "Inaya",
+        "panggilan": [],
+        "messages": [
+          {
+            "pengirim": "Febrian",
+            "teks_chat": "aku nggak percaya Inaya, alibinya berubah terus.",
+            "label_intent": "offend",
+            "target": [
+              {
+                "pemain": "Inaya",
+                "relasi": "offend",
+                "bukti_pesan": [
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "pengirim": "Halim",
+            "teks_chat": "jam diskusi sudah berjalan, sisa tiga puluh detik.",
+            "label_intent": "neutral",
+            "target": []
+          },
+          {
+            "pengirim": "Arum",
+            "teks_chat": "nggak setuju tuduhan Febrian tadi, bukti yang disebut belum cukup buat mengeksekusi orang itu.",
+            "label_intent": "defend",
+            "target": [
+              {
+                "pemain": "Inaya",
+                "relasi": "defend",
+                "bukti_pesan": [
+                  1
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "job_id": "r002918_v02",
+      "session": {
+        "case_name": "agreement",
+        "participants": [
+          "Kemal",
+          "Atika",
+          "Zakia",
+          "Rizal",
+          "Astri"
+        ],
+        "focus_player": "Zakia",
+        "panggilan": [],
+        "messages": [
+          {
+            "pengirim": "Astri",
+            "teks_chat": "yang paling sus bagiku Zakia, motifnya mengulur pembahasan aneh.",
+            "label_intent": "offend",
+            "target": [
+              {
+                "pemain": "Zakia",
+                "relasi": "offend",
+                "bukti_pesan": [
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "pengirim": "Rizal",
+            "teks_chat": "untuk seluruh pemain, waktu vote akan mulai setelah hitungan ini.",
+            "label_intent": "neutral",
+            "target": []
+          },
+          {
+            "pengirim": "Kemal",
+            "teks_chat": "sepaham dengan Astri, aku juga merasa ada yang janggal pada orang yang dibahas.",
+            "label_intent": "offend",
+            "target": [
+              {
+                "pemain": "Zakia",
+                "relasi": "offend",
+                "bukti_pesan": [
+                  1
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "job_id": "r000475_v02",
+      "session": {
+        "case_name": "agreement",
+        "participants": [
+          "Rasyid",
+          "Sekar",
+          "Damar",
+          "Ferdi",
+          "Nabil"
+        ],
+        "focus_player": "Damar",
+        "panggilan": [],
+        "messages": [
+          {
+            "pengirim": "Ferdi",
+            "teks_chat": "aku curiga Damar, klaimnya terdengar palsu.",
+            "label_intent": "offend",
+            "target": [
+              {
+                "pemain": "Damar",
+                "relasi": "offend",
+                "bukti_pesan": [
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "pengirim": "Rasyid",
+            "teks_chat": "buat semuanya, timer diskusi menunjukkan empat puluh detik.",
+            "label_intent": "neutral",
+            "target": []
+          },
+          {
+            "pengirim": "Nabil",
+            "teks_chat": "aku menolak kesimpulan menuduh yang tadi, alasan itu masih bisa dijelaskan dengan wajar.",
+            "label_intent": "defend",
+            "target": [
+              {
+                "pemain": "Damar",
+                "relasi": "defend",
+                "bukti_pesan": [
+                  1
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "job_id": "r000009_v02",
+      "session": {
+        "case_name": "agreement",
+        "participants": [
+          "Febrian",
+          "Pram",
+          "Damar",
+          "Mahira",
+          "Najwa"
+        ],
+        "focus_player": "Pram",
+        "panggilan": [],
+        "messages": [
+          {
+            "pengirim": "Damar",
+            "teks_chat": "vote Pram jadi saranku karena alasan pindah pilihannya janggal.",
+            "label_intent": "offend",
+            "target": [
+              {
+                "pemain": "Pram",
+                "relasi": "offend",
+                "bukti_pesan": [
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "pengirim": "Febrian",
+            "teks_chat": "sebentar, sisa waktunya satu menit di layarku.",
+            "label_intent": "neutral",
+            "target": []
+          },
+          {
+            "pengirim": "Najwa",
+            "teks_chat": "bener, aku ikut vote yang diusulkan sebelum selingan waktu tadi.",
+            "label_intent": "offend",
+            "target": [
+              {
+                "pemain": "Pram",
+                "relasi": "offend",
+                "bukti_pesan": [
+                  1
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "job_id": "r000524_v02",
+      "session": {
+        "case_name": "agreement",
+        "participants": [
+          "Deandra",
+          "Shafa",
+          "Hilmi",
+          "Feby",
+          "Syauqi"
+        ],
+        "focus_player": "Deandra",
+        "panggilan": [],
+        "messages": [
+          {
+            "pengirim": "Hilmi",
+            "teks_chat": "tuduhan ke Deandra belum terbukti, aku menolak vote itu.",
+            "label_intent": "defend",
+            "target": [
+              {
+                "pemain": "Deandra",
+                "relasi": "defend",
+                "bukti_pesan": [
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "pengirim": "Shafa",
+            "teks_chat": "pengingat untuk semua: ronde belum berganti, masih sesi diskusi.",
+            "label_intent": "neutral",
+            "target": []
+          },
+          {
+            "pengirim": "Feby",
+            "teks_chat": "iya, bela saja dulu seperti saran Hilmi; aku tidak mau ikut tuduhan tanpa dasar itu.",
+            "label_intent": "defend",
+            "target": [
+              {
+                "pemain": "Deandra",
+                "relasi": "defend",
+                "bukti_pesan": [
+                  1
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "job_id": "r001847_v02",
+      "session": {
+        "case_name": "agreement",
+        "participants": [
+          "Pram",
+          "Sakti",
+          "Asih",
+          "Wulan",
+          "Mahira"
+        ],
+        "focus_player": "Mahira",
+        "panggilan": [],
+        "messages": [
+          {
+            "pengirim": "Pram",
+            "teks_chat": "aku nggak percaya Mahira, alibinya berubah terus.",
+            "label_intent": "offend",
+            "target": [
+              {
+                "pemain": "Mahira",
+                "relasi": "offend",
+                "bukti_pesan": [
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "pengirim": "Asih",
+            "teks_chat": "jam diskusi sudah berjalan, sisa tiga puluh detik.",
+            "label_intent": "neutral",
+            "target": []
+          },
+          {
+            "pengirim": "Wulan",
+            "teks_chat": "pendapatku sama dengan Pram, jangan percaya klaim orang yang sedang dibicarakan itu.",
+            "label_intent": "offend",
+            "target": [
+              {
+                "pemain": "Mahira",
+                "relasi": "offend",
+                "bukti_pesan": [
+                  1
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "job_id": "r002078_v02",
+      "session": {
+        "case_name": "agreement",
+        "participants": [
+          "Mahira",
+          "Lintang",
+          "Ayunda",
+          "Izza",
+          "Syauqi"
+        ],
+        "focus_player": "Izza",
+        "panggilan": [],
+        "messages": [
+          {
+            "pengirim": "Lintang",
+            "teks_chat": "aku percaya Izza warga; jeda mengetik tidak membuatnya jadi pelaku.",
+            "label_intent": "defend",
+            "target": [
+              {
+                "pemain": "Izza",
+                "relasi": "defend",
+                "bukti_pesan": [
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "pengirim": "Mahira",
+            "teks_chat": "untuk seluruh pemain, waktu vote akan mulai setelah hitungan ini.",
+            "label_intent": "neutral",
+            "target": []
+          },
+          {
+            "pengirim": "Syauqi",
+            "teks_chat": "aku juga berpikir begitu, kesimpulan yang membersihkan tadi patut dipakai.",
+            "label_intent": "defend",
+            "target": [
+              {
+                "pemain": "Izza",
+                "relasi": "defend",
+                "bukti_pesan": [
+                  1
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}
+```

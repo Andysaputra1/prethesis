@@ -1,0 +1,49 @@
+{
+  "job": {
+    "job_id": "r000707_v02",
+    "case_name": "first_message_unknown",
+    "case_description": "Pesan pertama tanpa konteks memakai dia/kamu/lu tanpa acuan jelas. Intent offend/defend tetap diketahui tetapi target tidak_diketahui; roster bukan bukti lawan bicara. FOKUS TAMBAHAN: Tanpa riwayat, dia/kamu tanpa acuan; roster minimal empat.",
+    "source": {
+      "source_row": 707,
+      "source_group": "62a0c11f4d363ed2c367",
+      "teks_chat": "aku tidak bisa menjawab lebih cepat karena terkena Gag Order di fase siang",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 1,
+    "pesan_typo_ringan": [],
+    "case_index": 10
+  },
+  "session": {
+    "case_name": "first_message_unknown",
+    "participants": [
+      "Rengga",
+      "Wardana",
+      "Hafiz",
+      "Almira",
+      "Ghani"
+    ],
+    "focus_player": "",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Almira",
+        "teks_chat": "dia masih kuanggap warga, jangan langsung keluarkan tanpa bukti.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "tidak_diketahui",
+            "relasi": "defend",
+            "bukti_pesan": []
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "047_codex_revisi1.txt"
+  }
+}

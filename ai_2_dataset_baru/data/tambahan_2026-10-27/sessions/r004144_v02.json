@@ -1,0 +1,57 @@
+{
+  "job": {
+    "job_id": "r004144_v02",
+    "case_name": "neutral_status",
+    "case_description": "Klaim status/role atau pertanyaan informasi saja tanpa pembelaan/serangan; target neutral sesuai ATURAN_LABEL.md. FOKUS TAMBAHAN: Neutral bertarget neutral: nama, kamu jelas, atau jawaban ke penanya khusus.",
+    "source": {
+      "source_row": 4144,
+      "source_group": "23e752b12834157a857a",
+      "teks_chat": "lu tadi kena Gag Order bukan? sebelum dibungkam sempat lihat apa?",
+      "label_intent": "neutral"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 2,
+    "pesan_typo_ringan": [],
+    "case_index": 20
+  },
+  "session": {
+    "case_name": "neutral_status",
+    "participants": [
+      "Hanif",
+      "Raisa",
+      "Haris",
+      "Yudhis",
+      "Tirta"
+    ],
+    "focus_player": "Hanif",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Hanif",
+        "teks_chat": "gw baru saja menjelaskan keadaan chat setelah malam selesai.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Tirta",
+        "teks_chat": "kamu masih menunggu giliran membuka klaim atau sudah selesai?",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Hanif",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "050_codex_revisi1.txt"
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "job": {
+    "job_id": "r001703_v02",
+    "case_name": "rhetorical_question",
+    "case_description": "Pesan sekarang berbentuk pertanyaan retoris yang sebenarnya menuduh atau membela, misalnya 'kenapa Andy diam terus?' (offend) atau 'masa sih Andy Hitman?' (defend). Bukan pertanyaan informasi. FOKUS TAMBAHAN: Pertanyaan retoris offend/defend mengacu pembicara terakhir.",
+    "source": {
+      "source_row": 1703,
+      "source_group": "dec4e075ccf6ad26402a",
+      "teks_chat": "gw belum dapat kesempatan ngomong, si E sudah beberapa kali menyela",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 2,
+    "pesan_typo_ringan": [],
+    "case_index": 16
+  },
+  "session": {
+    "case_name": "rhetorical_question",
+    "participants": [
+      "Nadira",
+      "Najwa",
+      "Ghani",
+      "Aksara",
+      "Kemal"
+    ],
+    "focus_player": "Najwa",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Najwa",
+        "teks_chat": "aku sudah menjawab soal pilihan yang sempat berganti.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Kemal",
+        "teks_chat": "bukannya kamu sudah menjelaskan soal lag? Tuduhan Hitman ke kamu nggak beralasan.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Najwa",
+            "relasi": "defend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "037_codex_revisi1.txt"
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "job": {
+    "job_id": "r002833_v02",
+    "case_name": "mixed_relations",
+    "case_description": "Membela satu pemain dan menuduh pemain lain. Intent utama offend; simpan kedua relasi. FOKUS TAMBAHAN: Bela A dan tuduh B; variasi urutan, kata ganti, dan pembelaan dalam anak kalimat.",
+    "source": {
+      "source_row": 2833,
+      "source_group": "6fb43c57056f4c402090",
+      "teks_chat": "C barusan nuduh random lalu langsung diam, fix ada yang disembunyikan",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 3,
+    "pesan_typo_ringan": [],
+    "case_index": 15
+  },
+  "session": {
+    "case_name": "mixed_relations",
+    "participants": [
+      "Naura",
+      "Isna",
+      "Jauhar",
+      "Cakra",
+      "Ayuning"
+    ],
+    "focus_player": "Ayuning",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Cakra",
+        "teks_chat": "aku membaca cerita Ayuning dari awal diskusi sih.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Ayuning",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Jauhar",
+        "teks_chat": "aku belum lihat pengumuman vote terkunci di layar.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Naura",
+        "teks_chat": "aku menuduh Isna sengaja bikin salah vote. Soal Ayuning, alasan telatnya benar-benar masuk akal.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Ayuning",
+            "relasi": "defend",
+            "bukti_pesan": [
+              3
+            ]
+          },
+          {
+            "pemain": "Isna",
+            "relasi": "offend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "012_codex_revisi1.txt"
+  }
+}

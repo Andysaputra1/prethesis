@@ -1,0 +1,57 @@
+{
+  "job": {
+    "job_id": "r002898_v02",
+    "case_name": "short_history_1",
+    "case_description": "Awal diskusi dengan tepat 1 pesan sebelumnya. Jangan menambah riwayat fiktif atau mengisi sampai 12. FOKUS TAMBAHAN: Satu konteks. Tepat 25 pembelaan diri setelah dituduh; penuduh bukan target. Sisanya offend/neutral.",
+    "source": {
+      "source_row": 2898,
+      "source_group": "0f21825636aa99815e5f",
+      "teks_chat": "M muncul setelah situasi aman lalu ikut menuduh orang lain, menurutku dia sedang menutupi jejak",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 2,
+    "pesan_typo_ringan": [],
+    "case_index": 21
+  },
+  "session": {
+    "case_name": "short_history_1",
+    "participants": [
+      "Ayuning",
+      "Zulfikar",
+      "Amel",
+      "Kirana",
+      "Erlina"
+    ],
+    "focus_player": "Kirana",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Kirana",
+        "teks_chat": "aku Civilian sih, sekarang giliran buka role kan?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Ayuning",
+        "teks_chat": "klaim kamu palsu menurutku, terlalu banyak detail yang dipaksakan.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Kirana",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "023_codex_revisi1.txt"
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "job": {
+    "job_id": "r004963_v02",
+    "case_name": "self",
+    "case_description": "Defend diri sendiri atau offend/vote diri sendiri sesuai label. Target = pengirim. FOKUS TAMBAHAN: Bela diri atau permintaan vote diri yang tulus; riwayat menyebut pemain lain sebagai pengalih.",
+    "source": {
+      "source_row": 4963,
+      "source_group": "70cf1f81eafd5b208d01",
+      "teks_chat": "fix gw bukan hitman, aku stalker dan punya hasil intipan",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 3,
+    "pesan_typo_ringan": [],
+    "case_index": 26
+  },
+  "session": {
+    "case_name": "self",
+    "participants": [
+      "Anisa",
+      "Safira",
+      "Tisna",
+      "Kemal",
+      "Yumna"
+    ],
+    "focus_player": "Anisa",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Kemal",
+        "teks_chat": "yang belum mengaku role ada Tisna sama Yumna, keduanya masih ngetik.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Yumna",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          },
+          {
+            "pemain": "Tisna",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Safira",
+        "teks_chat": "buat seluruh pemain, masih ada kesempatan mengirim jawaban.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Anisa",
+        "teks_chat": "aku bukan orang jahat. Satu jawaban pendek tadi jangan dijadikan bukti melawanku.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Anisa",
+            "relasi": "defend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "028_codex_revisi1.txt"
+  }
+}

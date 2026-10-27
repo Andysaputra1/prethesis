@@ -1,0 +1,57 @@
+{
+  "job": {
+    "job_id": "r002073_v02",
+    "case_name": "short_history_1",
+    "case_description": "Awal diskusi dengan tepat 1 pesan sebelumnya. Jangan menambah riwayat fiktif atau mengisi sampai 12. FOKUS TAMBAHAN: Satu konteks. Tepat 25 pembelaan diri setelah dituduh; penuduh bukan target. Sisanya offend/neutral.",
+    "source": {
+      "source_row": 2073,
+      "source_group": "720952542780d9b3c37c",
+      "teks_chat": "aku punya hasil Peek untuk TT dari ronde sebelumnya, dan sekarang saya minta suara warga dikumpulkan ke TT",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 2,
+    "pesan_typo_ringan": [],
+    "case_index": 13
+  },
+  "session": {
+    "case_name": "short_history_1",
+    "participants": [
+      "Deandra",
+      "Arum",
+      "Hafiz",
+      "Salma",
+      "Sakti"
+    ],
+    "focus_player": "Salma",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Salma",
+        "teks_chat": "aku pakai Guard malam kedua, bukan sedang bahas malam pertama.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Deandra",
+        "teks_chat": "kamu terdengar bohong soal role, aku nggak percaya klaim barusan.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Salma",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "022_codex_revisi1.txt"
+  }
+}

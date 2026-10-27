@@ -1,0 +1,78 @@
+{
+  "job": {
+    "job_id": "r001662_v02",
+    "case_name": "mixed_relations",
+    "case_description": "Membela satu pemain dan menuduh pemain lain. Intent utama offend; simpan kedua relasi. FOKUS TAMBAHAN: Bela A dan tuduh B; variasi urutan, kata ganti, dan pembelaan dalam anak kalimat.",
+    "source": {
+      "source_row": 1662,
+      "source_group": "a75548fc8647e21eec15",
+      "teks_chat": "kalau mau cari Hitman, lihat pemain yang memanfaatkan Gag Order, bukan gw",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 3,
+    "pesan_typo_ringan": [],
+    "case_index": 41
+  },
+  "session": {
+    "case_name": "mixed_relations",
+    "participants": [
+      "Kinanti",
+      "Sakti",
+      "Mahdi",
+      "Kemal",
+      "Nadhif"
+    ],
+    "focus_player": "Kinanti",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Mahdi",
+        "teks_chat": "Kinanti sudah menjawab soal role, tinggal bahas isi jawabannya.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Kinanti",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Nadhif",
+        "teks_chat": "semuanya boleh memberi tanggapan dengan alasan yang jelas.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Kemal",
+        "teks_chat": "jangan percaya Sakti yang gonta-ganti cerita. Walau Kinanti diam, aku tahu dia bukan Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Kinanti",
+            "relasi": "defend",
+            "bukti_pesan": [
+              3
+            ]
+          },
+          {
+            "pemain": "Sakti",
+            "relasi": "offend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "015_codex_revisi1.txt"
+  }
+}

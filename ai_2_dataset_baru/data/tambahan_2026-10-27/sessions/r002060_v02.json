@@ -1,0 +1,131 @@
+{
+  "job": {
+    "job_id": "r002060_v02",
+    "case_name": "reference_start",
+    "case_description": "Tepat 12 konteks. Penyebutan target eksplisit di pesan konteks pertama; pesan sekarang memakai kata ganti. FOKUS TAMBAHAN: Tepat 12 konteks; nama target hanya pada konteks pertama; utama dia/-nya.",
+    "source": {
+      "source_row": 2060,
+      "source_group": "ff34700cd996a9d647ef",
+      "teks_chat": "ronde lalu Y menjadi sandera, ronde ini Z yang hilang dari pagi; kita satukan pilihan pada AA",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 13,
+    "pesan_typo_ringan": [],
+    "case_index": 13
+  },
+  "session": {
+    "case_name": "reference_start",
+    "participants": [
+      "Syakira",
+      "Okta",
+      "Ghea",
+      "Febi",
+      "Banyu"
+    ],
+    "focus_player": "Okta",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Ghea",
+        "teks_chat": "Okta pakai kata bukan sebelum menyebut Hitman.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Okta",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Febi",
+        "teks_chat": "eh, baca kalimatnya dari awal dong, semuanya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Syakira",
+        "teks_chat": "gw tadi cuma kebaca bagian akhirnya di notifikasi.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Banyu",
+        "teks_chat": "kalau di chat lengkap, kata awalnya masih ada.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Ghea",
+        "teks_chat": "iya, satu kata itu bikin arti kalimatnya beda sih.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Febi",
+        "teks_chat": "pesannya satu baris atau dua di layar kalian?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Syakira",
+        "teks_chat": "di sini jadi dua baris karena lebar layar.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Banyu",
+        "teks_chat": "tapi masih satu pesan kok, nggak terpisah waktu kirim.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Ghea",
+        "teks_chat": "oh, berarti pergantian baris cuma tampilan.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Febi",
+        "teks_chat": "aku udah buka versi lengkapnya sekarang.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Syakira",
+        "teks_chat": "nih, titiknya baru ada setelah kata terakhir.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Banyu",
+        "teks_chat": "silakan tanggapi kalimat utuhnya, bukan potongan notifikasi.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Banyu",
+        "teks_chat": "habis kita cocokkan waktunya, dia ternyata berbohong soal kapan aksinya dilakukan.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Okta",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "017_codex_revisi1.txt"
+  }
+}

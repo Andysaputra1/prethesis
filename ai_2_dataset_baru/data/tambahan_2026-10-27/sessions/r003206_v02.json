@@ -1,0 +1,91 @@
+{
+  "job": {
+    "job_id": "r003206_v02",
+    "case_name": "ambiguous",
+    "case_description": "Beberapa acuan sama-sama mungkin; target tidak_diketahui, bukan nama terakhir. FOKUS TAMBAHAN: Sedikitnya dua calon acuan dia sama kuat; nama terakhir bukan jawaban. Target tidak_diketahui.",
+    "source": {
+      "source_row": 3206,
+      "source_group": "e52cc00d10eefaa09d2c",
+      "teks_chat": "gw tidak punya info rahasia, jadi wajar kalau chat-ku sedikit",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 3,
+    "pesan_typo_ringan": [],
+    "case_index": 44
+  },
+  "session": {
+    "case_name": "ambiguous",
+    "participants": [
+      "Afifah",
+      "Gendis",
+      "Prita",
+      "Okta",
+      "Syauqi"
+    ],
+    "focus_player": "",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Gendis",
+        "teks_chat": "yang mau bahas dua klaim ini, nih, dari Syauqi dan Afifah.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Syauqi",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          },
+          {
+            "pemain": "Afifah",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Prita",
+        "teks_chat": "kalau bicara kedua orang itu, bagian role-nya sudah terbaca.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Syauqi",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          },
+          {
+            "pemain": "Afifah",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Okta",
+        "teks_chat": "menahan vote ke dia itu masuk akal, alasan telatnya bukan kedok menurutku.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "tidak_diketahui",
+            "relasi": "defend",
+            "bukti_pesan": []
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "005_codex_revisi1.txt"
+  }
+}

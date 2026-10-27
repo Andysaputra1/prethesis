@@ -1,0 +1,78 @@
+{
+  "job": {
+    "job_id": "r000822_v02",
+    "case_name": "mixed_relations",
+    "case_description": "Membela satu pemain dan menuduh pemain lain. Intent utama offend; simpan kedua relasi. FOKUS TAMBAHAN: Bela A dan tuduh B; variasi urutan, kata ganti, dan pembelaan dalam anak kalimat.",
+    "source": {
+      "source_row": 822,
+      "source_group": "56dbf143447e6e0064a3",
+      "teks_chat": "gw punya info sebagai Spy, Dito aman semalam, jadi sekarang semua vote ke Raka",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 3,
+    "pesan_typo_ringan": [],
+    "case_index": 9
+  },
+  "session": {
+    "case_name": "mixed_relations",
+    "participants": [
+      "Niken",
+      "Thalia",
+      "Tasya",
+      "Raksa",
+      "Kemal"
+    ],
+    "focus_player": "Raksa",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Kemal",
+        "teks_chat": "Raksa menambah penjelasan setelah pengakuan role tadi.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Raksa",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Niken",
+        "teks_chat": "pesan berikut boleh masuk nih, grupnya masih aktif.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Thalia",
+        "teks_chat": "yang perlu dicurigai Tasya. Diamnya Raksa masih wajar, jangan jadikan tersangka juga.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Raksa",
+            "relasi": "defend",
+            "bukti_pesan": [
+              3
+            ]
+          },
+          {
+            "pemain": "Tasya",
+            "relasi": "offend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "011_codex_revisi1.txt"
+  }
+}

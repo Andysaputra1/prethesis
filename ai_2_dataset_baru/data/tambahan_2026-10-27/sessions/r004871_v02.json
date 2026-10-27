@@ -1,0 +1,78 @@
+{
+  "job": {
+    "job_id": "r004871_v02",
+    "case_name": "mixed_relations",
+    "case_description": "Membela satu pemain dan menuduh pemain lain. Intent utama offend; simpan kedua relasi. FOKUS TAMBAHAN: Bela A dan tuduh B; variasi urutan, kata ganti, dan pembelaan dalam anak kalimat.",
+    "source": {
+      "source_row": 4871,
+      "source_group": "16f477492952ab685276",
+      "teks_chat": "dari awal ronde Sinta belum kasih tindakan yang jelas, aku vote Sinta",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 3,
+    "pesan_typo_ringan": [],
+    "case_index": 23
+  },
+  "session": {
+    "case_name": "mixed_relations",
+    "participants": [
+      "Fathia",
+      "Tasya",
+      "Ayuning",
+      "Cakra",
+      "Safira"
+    ],
+    "focus_player": "Cakra",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Ayuning",
+        "teks_chat": "gw belum menanggapi, baru selesai baca pesan Cakra.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Cakra",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Fathia",
+        "teks_chat": "aku sudah membuka seluruh chat, bukan cuma notifikasi.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Safira",
+        "teks_chat": "hasil Peek memberatkan Tasya. Untuk Cakra hasilnya Civilian, jadi dia aman menurutku.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Cakra",
+            "relasi": "defend",
+            "bukti_pesan": [
+              3
+            ]
+          },
+          {
+            "pemain": "Tasya",
+            "relasi": "offend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "013_codex_revisi1.txt"
+  }
+}

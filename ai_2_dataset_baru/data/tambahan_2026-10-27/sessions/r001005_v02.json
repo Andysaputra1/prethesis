@@ -1,0 +1,78 @@
+{
+  "job": {
+    "job_id": "r001005_v02",
+    "case_name": "self",
+    "case_description": "Defend diri sendiri atau offend/vote diri sendiri sesuai label. Target = pengirim. FOKUS TAMBAHAN: Bela diri atau permintaan vote diri yang tulus; riwayat menyebut pemain lain sebagai pengalih.",
+    "source": {
+      "source_row": 1005,
+      "source_group": "14b19c060b9f0717a530",
+      "teks_chat": "fix aku bukan pembunuh, aku Stalker. Ada satu hasil peek yang bikin aku yakin ke Fajar",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 3,
+    "pesan_typo_ringan": [],
+    "case_index": 20
+  },
+  "session": {
+    "case_name": "self",
+    "participants": [
+      "Lintang",
+      "Cahya",
+      "Nadhif",
+      "Rahma",
+      "Deandra"
+    ],
+    "focus_player": "Nadhif",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Cahya",
+        "teks_chat": "gw baca Rahma dan Lintang cerita soal jeda chat dengan urutan yang sama.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Rahma",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          },
+          {
+            "pemain": "Lintang",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Deandra",
+        "teks_chat": "aku belum menekan pilihan apa pun, masih dengar obrolan.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Nadhif",
+        "teks_chat": "jangan buang aku dulu, aku Civilian dan tidak pernah punya aksi malam.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Nadhif",
+            "relasi": "defend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "028_codex_revisi1.txt"
+  }
+}

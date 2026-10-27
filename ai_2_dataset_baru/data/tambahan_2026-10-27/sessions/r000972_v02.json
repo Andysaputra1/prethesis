@@ -1,0 +1,77 @@
+{
+  "job": {
+    "job_id": "r000972_v02",
+    "case_name": "interruption",
+    "case_description": "Pembahasan target disela obrolan waktu/ronde; kaitan kembali ke target masih jelas. FOKUS TAMBAHAN: Selingan waktu lalu kembali ke target; sertakan pembelaan diri.",
+    "source": {
+      "source_row": 972,
+      "source_group": "91a03a305314ca2801c9",
+      "teks_chat": "jangan terpancing tuduhan mereka, aku spy yang lagi nutupin target penting",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 4,
+    "pesan_typo_ringan": [],
+    "case_index": 20
+  },
+  "session": {
+    "case_name": "interruption",
+    "participants": [
+      "Tsania",
+      "Sekar",
+      "Naura",
+      "Tasya",
+      "Kautsar"
+    ],
+    "focus_player": "Kautsar",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Tasya",
+        "teks_chat": "Kautsar, aku nggak beli klaim itu, role-mu kayak cuma tameng.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Kautsar",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Naura",
+        "teks_chat": "buat seluruh grup, waktu memilih akan datang setelah ini.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Sekar",
+        "teks_chat": "aku juga melihat timer masih berjalan tanpa berganti fase.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Kautsar",
+        "teks_chat": "melanjutkan jawabanku yang terputus, aku bukan Hitman; jaringan membuat pesan tadi tertunda.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Kautsar",
+            "relasi": "defend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "045_codex_revisi1.txt"
+  }
+}

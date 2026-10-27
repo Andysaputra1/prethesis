@@ -1,0 +1,71 @@
+{
+  "job": {
+    "job_id": "r001831_v02",
+    "case_name": "witness",
+    "case_description": "Nama saksi/korban disebut, tetapi bukan target serangan atau pembelaan. FOKUS TAMBAHAN: Nama sumber/saksi/penuduh bukan target. Sertakan bantahan isi klaim Peek penuduh yang membela pengirim saja.",
+    "source": {
+      "source_row": 1831,
+      "source_group": "d668c59c8227d67b3328",
+      "teks_chat": "setelah semua kronologi disusun, hanya Kevin yang punya alibi bertabrakan, kita eksekusi Kevin",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 3,
+    "pesan_typo_ringan": [],
+    "case_index": 3
+  },
+  "session": {
+    "case_name": "witness",
+    "participants": [
+      "Keisha",
+      "Tasya",
+      "Priska",
+      "Lintang",
+      "Yumna"
+    ],
+    "focus_player": "Priska",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Yumna",
+        "teks_chat": "yang mau bahas klaim Priska, pesannya masih di atas kok.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Priska",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Keisha",
+        "teks_chat": "waktu diskusinya masih ada buat seluruh pemain.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Tasya",
+        "teks_chat": "aku pakai laporan Yumna sebagai petunjuk: Priska yang menurutku berbohong soal Guard.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Priska",
+            "relasi": "offend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "006_codex_revisi1.txt"
+  }
+}

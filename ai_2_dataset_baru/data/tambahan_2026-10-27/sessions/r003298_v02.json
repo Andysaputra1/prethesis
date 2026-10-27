@@ -1,0 +1,131 @@
+{
+  "job": {
+    "job_id": "r003298_v02",
+    "case_name": "reference_start",
+    "case_description": "Tepat 12 konteks. Penyebutan target eksplisit di pesan konteks pertama; pesan sekarang memakai kata ganti. FOKUS TAMBAHAN: Tepat 12 konteks; nama target hanya pada konteks pertama; utama dia/-nya.",
+    "source": {
+      "source_row": 3298,
+      "source_group": "0c4707f495152a7a7a9d",
+      "teks_chat": "gw baru sadar target yang dibahas itu siapa, tapi tetap aja gw bukan pelakunya",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 13,
+    "pesan_typo_ringan": [],
+    "case_index": 20
+  },
+  "session": {
+    "case_name": "reference_start",
+    "participants": [
+      "Haris",
+      "Khalisa",
+      "Rizki",
+      "Kinanti",
+      "Feby"
+    ],
+    "focus_player": "Haris",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Rizki",
+        "teks_chat": "Haris mengoreksi nomor malam pakai tanda bintang.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Haris",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Khalisa",
+        "teks_chat": "buat semua, koreksinya datang sebelum diskusi ditutup nggak?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Feby",
+        "teks_chat": "iya, saat itu kolom chat masih terbuka.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Kinanti",
+        "teks_chat": "gw lihat pesan angka baru beberapa detik setelah yang lama.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Rizki",
+        "teks_chat": "yang diganti angkanya aja sih, kata skill tetap sama.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Khalisa",
+        "teks_chat": "ada penjelasan kenapa diganti pada pesan berikutnya?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Feby",
+        "teks_chat": "di bagian yang terbaca belum ada kok.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Kinanti",
+        "teks_chat": "oh, berarti sekarang kita punya teks awal dan koreksinya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Rizki",
+        "teks_chat": "bisa bahas perubahan itu tanpa mengarang alasan tambahan.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Khalisa",
+        "teks_chat": "aku masih melihat kedua barisnya di atas.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Feby",
+        "teks_chat": "sisa diskusi cukup nih buat menanggapi sekarang.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Kinanti",
+        "teks_chat": "silakan, lanjut ke soal nomor malam itu.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Kinanti",
+        "teks_chat": "jangan kita buang dia setelah bahas sejauh ini, ada penjelasan masuk akal buat jedanya.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Haris",
+            "relasi": "defend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "018_codex_revisi1.txt"
+  }
+}

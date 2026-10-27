@@ -1,0 +1,131 @@
+{
+  "job": {
+    "job_id": "r002108_v02",
+    "case_name": "reference_start",
+    "case_description": "Tepat 12 konteks. Penyebutan target eksplisit di pesan konteks pertama; pesan sekarang memakai kata ganti. FOKUS TAMBAHAN: Tepat 12 konteks; nama target hanya pada konteks pertama; utama dia/-nya.",
+    "source": {
+      "source_row": 2108,
+      "source_group": "7784e1c294cf47cba3a5",
+      "teks_chat": "bukan Hitman ya, saya cuma Civilian",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 13,
+    "pesan_typo_ringan": [],
+    "case_index": 42
+  },
+  "session": {
+    "case_name": "reference_start",
+    "participants": [
+      "Hanif",
+      "Lintang",
+      "Sekar",
+      "Anindya",
+      "Priska"
+    ],
+    "focus_player": "Priska",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Lintang",
+        "teks_chat": "Priska ngaku role sebelum ada yang tanya hasil skill.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Priska",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Anindya",
+        "teks_chat": "buat semuanya, urutan chatnya klaim dulu lalu tanya hasil.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Hanif",
+        "teks_chat": "aku masih bisa melihat pertanyaan hasil di bawahnya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Sekar",
+        "teks_chat": "gw sih belum melihat jawaban detail pada bagian awal.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Lintang",
+        "teks_chat": "nama target skill juga belum disebut saat klaim pertama.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Anindya",
+        "teks_chat": "iya, yang ada baru pengakuan role kok.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Hanif",
+        "teks_chat": "buat grup, nanti hasilnya bisa dijelaskan setelah pertanyaan selesai dong.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Sekar",
+        "teks_chat": "semua masih punya giliran bicara sebelum vote.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Lintang",
+        "teks_chat": "aku mengikuti pesan satu per satu dari awal diskusi.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Anindya",
+        "teks_chat": "hasil yang belum muncul nggak perlu kita isi pakai tebakan.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Hanif",
+        "teks_chat": "oke nih, batas informasi saat klaim pertama sudah jelas.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Sekar",
+        "teks_chat": "silakan lanjut menanggapi klaim itu.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Sekar",
+        "teks_chat": "aku tidak menganggap dia jahat setelah membaca ulang konteks awal, alasan koneksinya wajar.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Priska",
+            "relasi": "defend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "020_codex_revisi1.txt"
+  }
+}

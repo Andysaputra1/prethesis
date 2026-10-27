@@ -1,0 +1,71 @@
+{
+  "job": {
+    "job_id": "r004780_v02",
+    "case_name": "witness",
+    "case_description": "Nama saksi/korban disebut, tetapi bukan target serangan atau pembelaan. FOKUS TAMBAHAN: Nama sumber/saksi/penuduh bukan target. Sertakan bantahan isi klaim Peek penuduh yang membela pengirim saja.",
+    "source": {
+      "source_row": 4780,
+      "source_group": "94b7e539dde3dccf005b",
+      "teks_chat": "jangan sampai kita kemakan alibi Dito, menurut gw dia target eksekusi paling aman",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 3,
+    "pesan_typo_ringan": [],
+    "case_index": 15
+  },
+  "session": {
+    "case_name": "witness",
+    "participants": [
+      "Suci",
+      "Nadira",
+      "Renata",
+      "Izza",
+      "Mahdi"
+    ],
+    "focus_player": "Renata",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Izza",
+        "teks_chat": "aku membaca cerita Renata dari awal diskusi sih.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Renata",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Suci",
+        "teks_chat": "gw sekarang baca sambil nunggu hasil yang belum ditulis.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Mahdi",
+        "teks_chat": "info Izza soal pindah pilihan membuatku menandai Renata sebagai pengatur vote ini.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Renata",
+            "relasi": "offend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "007_codex_revisi1.txt"
+  }
+}

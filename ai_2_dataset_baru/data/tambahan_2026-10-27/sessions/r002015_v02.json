@@ -1,0 +1,85 @@
+{
+  "job": {
+    "job_id": "r002015_v02",
+    "case_name": "second_person",
+    "case_description": "Kamu/lu: gunakan pergantian pembicara dan teks yang jelas. Tanpa acuan jelas, target tidak_diketahui. FOKUS TAMBAHAN: Kamu/lu terikat pembicara jelas, termasuk bukan pengirim tepat sebelumnya.",
+    "source": {
+      "source_row": 2015,
+      "source_group": "ad48d940145583f3e1a3",
+      "teks_chat": "bukti baru itu nggak ngubah apa-apa, menurut gw Dimas tetap target eksekusi",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 4,
+    "pesan_typo_ringan": [],
+    "case_index": 7
+  },
+  "session": {
+    "case_name": "second_person",
+    "participants": [
+      "Deandra",
+      "Priska",
+      "Feby",
+      "Nayla",
+      "Tiara"
+    ],
+    "focus_player": "Deandra",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Deandra",
+        "teks_chat": "menurutmu cerita malamku tadi gimana sih, Priska?",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Priska",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Feby",
+        "teks_chat": "semuanya, masih ada satu menit lebih sedikit.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Deandra",
+        "teks_chat": "aku menunggu jawabanmu soal role yang kuklaim, Priska.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Priska",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Priska",
+        "teks_chat": "aku kembali ke pertanyaan sebelum selingan: lu sedang menutup-nutupi aksi, ya? Aku curiga.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Deandra",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "031_codex_revisi1.txt"
+  }
+}

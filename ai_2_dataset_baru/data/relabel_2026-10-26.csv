@@ -1,0 +1,594 @@
+﻿dataset,baris,posisi,teks,intent_lama,intent_baru,target_lama,target_baru,aturan,alasan
+intent,366,,"gw Stalker, semalam sudah Peek si B dan hasilnya dia bukan Hitman",neutral,defend,,,D-c,hasil peek membersihkan si B: bukan Hitman
+intent,373,,"bukan aku yang menebar fitnah, cek saja siapa yang pertama kali memotong diskusi tanpa alasan",defend,offend,,,O-g,sangkal + alihkan ke ciri: yang pertama memotong diskusi
+intent,378,,"gw bisa jelasin setiap vote-ku, sementara yang menuduh malah belum konsisten soal targetnya",defend,offend,,,O-g,bela diri + serang konsistensi penuduh
+intent,387,,"gw bukan Hitman, dan timing tuduhan ini terlalu pas setelah argumenku mulai mengarah ke pelaku sebenarnya",defend,offend,,,O-g,sangkal + serang motif penuduh: timing menutupi pelaku
+intent,411,,"gw civilian, mau percaya atau nggak terserah kalian",neutral,defend,,,D-b,klaim civilian menjawab keraguan: mau percaya atau nggak
+intent,416,,"aku bukan spy, tapi jelas bukan hitman juga",neutral,defend,,,D-a,ada sangkalan eksplisit: jelas bukan hitman
+intent,419,,"tenang, aku siap ikut keputusan mayoritas, tapi gw bukan hitman",neutral,defend,,,D-a,ada sangkalan eksplisit: gw bukan hitman
+intent,426,,"aku bukan hitman, coba cek siapa yang paling sering mengarahkan vote",defend,offend,,,O-g,sangkal + alihkan ke ciri: paling sering mengarahkan vote
+intent,427,,"dia nuduh aku buat ngalihin perhatian, jangan langsung kemakan omongannya",defend,offend,,,O-g,"bela diri + serang motif penuduh, jangan kemakan omongannya"
+intent,432,,"lu boleh curiga, tapi jangan eksekusi orang cuma karena feeling",neutral,defend,,,D-g,"contoh D-g: boleh curiga, jangan eksekusi karena feeling"
+intent,453,,"bukan aku yang nyandera malam tadi, ya; kalau mau cari hitman, fokus ke pemain yang paling diuntungkan dari kekacauan ini",defend,offend,,,O-g,sangkal + alihkan ke ciri: pemain paling diuntungkan
+intent,468,,"aku bisa salah analisis, tapi bukan berarti jahat; mari bandingkan semua jawaban dan lihat siapa yang paling sering ganti cerita",defend,offend,,,O-g,bela diri + alihkan ke yang paling sering ganti cerita
+intent,476,,"gw tidak membungkam siapa-siapa, chat yang tiba-tiba berhenti itu bukan ulah gw; cek pemain yang paling berkepentingan menutup suara",defend,offend,,,O-g,sangkal + alihkan ke pemain paling berkepentingan menutup suara
+intent,509,,"sebelum vote gw, cek dulu alibinya siapa yang paling bolong",defend,offend,,,O-g,tolak divote + alihkan ke yang alibinya paling bolong
+intent,510,,"lah kok gue terus yang dituduh, yang paling ribut malah lu dari tadi",defend,offend,,,O-g,bela diri + tuding penuduh paling ribut
+intent,514,,"aku bukan Hitman, coba cek siapa yang paling diuntungkan dari eksekusi ini",defend,offend,,,O-g,sangkal + alihkan ke yang paling diuntungkan
+intent,515,,"fix kalian gampang banget dipancing, gw baru ngomong sedikit langsung diserang",defend,offend,,,O-g,bela diri + kritik cara berpikir kelompok gampang dipancing
+intent,523,,yang aneh itu mereka langsung kompak vote gw tanpa bahas kejadian malam,defend,offend,,,O-g,menilai aneh kelompok yang kompak vote dirinya
+intent,534,,"aku tetap di pihak warga, cuma cara bacaku memang lebih keras dari kalian",neutral,defend,,,D-e,"tetap pihak warga, jelaskan gaya baca yang keras"
+intent,538,,"jangan ketipu gaya ngomong gw, fokus ke siapa yang mengarahkan voting",defend,offend,,,O-g,bela diri + alihkan ke yang mengarahkan voting
+intent,550,,"aku Stalker, semalam sudah Peek satu pemain dan hasilnya bukan aku yang jahat",neutral,defend,,,D-b,klaim Stalker + sangkalan bukan aku yang jahat
+intent,573,,"gue bukan sus, dari awal justru dia yang ngarahin diskusi terus",defend,offend,,,O-g,sangkal + justru dia yang ngarahin diskusi
+intent,578,,"aku spy, semalam guard si C dan dia selamat, jadi jangan asal lempar nama",neutral,defend,,,D-d,klaim Spy + teguran jangan asal lempar nama
+intent,579,,"stop ikut suara terbanyak, mereka cuma keras bukan berarti benar",neutral,offend,,,O-c,mereka cuma keras: serang kredibilitas kelompok
+intent,586,,"tuduhan ke aku berubah-ubah terus, kelihatan banget cuma cari kambing hitam",defend,offend,,,O-g,motif cari kambing hitam menyiratkan penuduh menutupi pelaku
+intent,591,,"yang paling vokal nuduh aku justru belum jelasin aksinya sendiri, kok aku yang disorot?",defend,offend,,,O-g,menyerang perilaku penuduh paling vokal + bela diri
+intent,593,,"jangan eksekusi pemain cuma karena dia beda gaya chat, itu bukan logika",neutral,defend,,,D-g,lindungi kelompok berciri beda gaya chat dari eksekusi
+intent,599,,"cek siapa yang pertama kali lempar namaku dan siapa yang langsung ikut, pola itu lebih penting",defend,offend,,,O-e,alihkan ke yang pertama melempar nama dan ikut
+intent,604,,"bukan gw yang nyandera malam tadi, coba cek siapa yang paling diuntungkan",defend,offend,,,O-g,sangkal + alihkan ke yang paling diuntungkan
+intent,613,,"gw bukan sus, kalian aja yang panik karena teori gw kena",defend,offend,,,O-g,sangkal + tuding kelompok panik karena teori kena
+intent,623,,"mereka terlalu cepat percaya sama satu teori, padahal belum ada konfirmasi Stalker",neutral,offend,,,O-c,kritik cara berpikir kelompok terlalu cepat percaya
+intent,628,,"gw yakin ada yang sengaja framing gw, karena timing tuduhannya terlalu pas",defend,offend,,,O-g,"menuduh ada framing sengaja, timing tuduhan terlalu pas"
+intent,637,,"jangan vote aku cuma karena beda pendapat, cek dulu siapa yang paling diuntungkan",defend,offend,,,O-g,tolak divote + alihkan ke yang paling diuntungkan
+intent,641,,"kalau kalian percaya aku, kita bisa fokus cek dua pemain yang paling mencurigakan",defend,offend,,,O-e,arahkan cek ke dua pemain paling mencurigakan
+intent,648,,"jangan ikut arus vote, aku punya alasan jelas kenapa pilih si B",neutral,offend,,,O-a,mempertahankan pilihan vote ke si B
+intent,655,,"jangan percaya klaim mendadak itu, aku bisa mempertanggungjawabkan semua chatku",defend,offend,,,O-g,jangan percaya klaim mendadak + bela diri
+intent,670,,"fix bukan gw pelakunya, pola kejadian ini malah mengarah ke orang lain",offend,defend,,,D-a,sangkal; orang lain tanpa ciri bukan O-e
+intent,690,,"gw bukan Hitman, semalam aku cuma main sebagai Civilian",neutral,defend,,,D-b,klaim Civilian disertai sangkalan bukan Hitman
+intent,721,,"aku Stalker, hasil Peek malam pertama nunjukin B itu Civilian",neutral,defend,,,D-c,hasil Peek membersihkan B sebagai Civilian
+intent,724,,"dari urutan voting, gw yakin aku Stalker dan D bukan Hitman",neutral,defend,,,D-c,membersihkan D: bukan Hitman
+intent,725,,"lu boleh cek argumen gw, aku Peek E dan identitasnya aman",neutral,defend,,,D-c,hasil Peek: identitas E aman
+intent,731,,"jangan termakan Gag Order, aku Civilian dan cuma menyusun kronologi",neutral,defend,,,D-e,"jangan termakan Gag Order, jelaskan sedang menyusun kronologi"
+intent,739,,"aku Peek L di ronde sebelumnya, dia aman dari status Hitman",neutral,defend,,,D-c,hasil Peek: L aman dari status Hitman
+intent,756,,"aku sempat peek si D, dia bukan Hitman",neutral,defend,,,D-c,hasil Peek: si D bukan Hitman
+intent,761,,"gw Stalker, hasil intip si E aman",neutral,defend,,,D-c,hasil intip: si E aman
+intent,764,,"bukan role jahat, aku Civilian doang",neutral,defend,,,D-b,sangkalan bukan role jahat + klaim Civilian
+intent,765,,"gw peek si G, dia kelihatan bersih",neutral,defend,,,D-c,hasil Peek: si G kelihatan bersih
+intent,774,,aku peek si I dan dia nggak kelihatan jahat,neutral,defend,,,D-c,hasil Peek: si I nggak kelihatan jahat
+intent,775,,"role-ku Spy, kalau nggak percaya ya terserah",neutral,defend,,,D-b,klaim Spy + kalau nggak percaya terserah
+intent,796,,"gw cuma warga, nggak ada alasan buat gw tahu target sandera malam tadi",neutral,defend,,,D-b,klaim warga + sangkal tahu target sandera
+intent,844,,"kalau gak salah gw Stalker, semalam intip si Nara dan dia bukan Hitman",neutral,defend,,,D-c,hasil intip: si Nara bukan Hitman
+intent,859,,"gw Stalker, semalam sempat intip si Rafi, hasilnya dia bukan Hitman",neutral,defend,,,D-c,hasil intip: si Rafi bukan Hitman
+intent,863,,"eh ulang nama pemain yang dicurigai, aku Civilian bukan Hitman",neutral,defend,,,D-b,klaim Civilian + sangkalan bukan Hitman
+intent,883,,"gw Spy, tapi guard-ku gagal karena targetnya bukan orang yang sama seperti klaim N",offend,neutral,,,Penilaian vs fakta,kontradiksi dengan klaim N tanpa kata penilaian
+intent,884,,"semalam aku peek O, dia aman, jadi tuduhan ke dia cuma pengalihan",defend,offend,,,O-g,bersihkan O + sebut tuduhan pengalihan (motif penuduh)
+intent,902,,"aku Stalker, hasil peek semalam si Bima aman",neutral,defend,,,D-c,hasil Peek: si Bima aman
+intent,917,,"gw ngaku Stalker, semalam peek si Ardi dan dia bukan Hitman",neutral,defend,,,D-c,hasil Peek: si Ardi bukan Hitman
+intent,925,,"kalian boleh cek alibiku, aku Stalker dan baru sekali pakai Peek",neutral,defend,,,D-b,klaim Stalker + persilakan cek alibi (jawab keraguan)
+intent,928,,semalam aku intip si Lala dan identitasnya bukan Hitman,neutral,defend,,,D-c,hasil intip: si Lala bukan Hitman
+intent,930,,"gw Stalker, semalam gw peek si Raka dan hasilnya dia Civilian, tapi jangan langsung telan info ini mentah-mentah",neutral,defend,,,D-c,"hasil Peek: si Raka Civilian, walau diberi catatan"
+intent,931,,"sumpah aku Spy, tadi malam aku guard Nisa, jadi klaim Hitman mereka agak maksa",offend,defend,,,D-d,"kritik isi tuduhan agak maksa, tanpa serang penuduh"
+intent,935,,"lu yakin gw Hitman cuma karena gw beda pendapat? Gw Civilian biasa, sus banget logikanya",defend,offend,,,O-g,bela diri + menilai logika penuduh sus
+intent,938,,"mayoritas belum tentu benar, aku cuma Civilian dan dari awal belum punya skill apa-apa",neutral,defend,,,D-b,klaim Civilian menjawab keraguan mayoritas
+intent,940,,"jangan gampang percaya sama yang nuduh gw, aku Spy dan target guard-ku bisa jadi bukti",defend,offend,,,O-g,bela diri + 'jangan percaya yang nuduh gw' (O-c)
+intent,942,,"aku bukan Hitman, aku Stalker; semalam sudah peek satu orang, tapi belum mau buka semua info",neutral,defend,,,D-b,sangkalan bukan Hitman + klaim Stalker
+intent,943,,"kalau kalian mau eksekusi gw, silakan, tapi ingat aku Spy yang tadi malam melakukan Guard",neutral,defend,,,D-b,klaim Spy sebagai penolakan dieksekusi
+intent,952,,"klaim Spy-ku bukan asal ngomong, aku benar-benar memilih target Guard tadi malam",neutral,defend,,,D-b,"menyangkal klaim asal ngomong, menjawab keraguan"
+intent,956,,"gw bukan Hitman, cuma Civilian yang mempertanyakan kenapa semua orang ikut satu tuduhan",neutral,defend,,,D-b,sangkalan bukan Hitman + klaim Civilian
+intent,964,,"lu semua salah fokus, gw spy yang jagain korban tadi malam",neutral,defend,,,D-b,'kalian salah fokus' menjawab tuduhan + klaim Spy
+intent,970,,"jangan terpancing tuduhan mereka, aku spy yang lagi nutupin target penting",neutral,defend,,,D-b,menepis tuduhan mereka + klaim Spy
+intent,983,,"aku bukan target empuk, peranku spy dan aku sudah memilih siapa yang dijaga",neutral,defend,,,D-b,'bukan target empuk' menolak divote + klaim Spy
+intent,985,,"kalian boleh curiga, tapi gw pegang role spy dan belum membuka semua info",neutral,defend,,,D-b,"pola 'kalian boleh curiga, tapi' + klaim role"
+intent,991,,"aku Stalker, semalam peek Dito dan hasilnya Civilian. Kita tekan pemain lain aja",neutral,defend,,,D-c,peek Dito hasil Civilian membersihkan; pemain lain tanpa ciri
+intent,1016,,"percaya aku sekali ini, aku Spy. Kalau prediksiku salah, besok kalian boleh vote aku",neutral,defend,,,D-b,"klaim Spy, minta jangan divote sekarang"
+intent,1017,,"gue claim Stalker karena memang punya info malam. Si Deni aman, jadi cari tersangka lain",neutral,defend,,,D-c,Deni aman; cari tersangka lain tanpa ciri
+intent,1037,,"sumpah role gw Civilian, dari tadi cuma bantu baca pola mereka",neutral,defend,,,D-e,klaim + menjelaskan perilaku agar tidak dicurigai
+intent,1050,,"gw stalker, semalam gw peek si Raka dan hasilnya civilian",neutral,defend,,,D-c,hasil peek Raka Civilian membersihkan
+intent,1055,,"gw bukan hitman, role gw stalker dan peek gw masih cooldown",neutral,defend,,,D-b,sangkalan bukan hitman + klaim stalker
+intent,1058,,"aku stalker, hasil peek semalam menunjukkan si Tio aman",neutral,defend,,,D-c,hasil peek Tio aman membersihkan
+intent,1062,,"aku bukan pelaku malam, role aku civilian",neutral,defend,,,D-b,sangkalan bukan pelaku + klaim civilian
+intent,1071,,"gw bukan hitman, aku cuma civilian yang ikut voting",neutral,defend,,,D-b,sangkalan bukan hitman + klaim civilian
+intent,1123,,"Aku bukan Hitman, tapi yang aneh itu siapa yang tahu terlalu banyak soal aksi malam?",defend,offend,,,O-g,bela diri + 'yang aneh' mengalihkan ke kelompok berciri
+intent,1133,,"Gw curiga sama tuduhan ini, siapa yang pertama kali mengarahkan vote ke aku?",defend,offend,,,O-g,bantah tuduhan + menyorot penuduh pertama
+intent,1140,,"Sebelum nama gw dinaikkan ke Tribunal, coba gali dulu siapa yang punya info rahasia",neutral,defend,,,D-g,"menahan vote ke diri sendiri, minta gali info"
+intent,1176,,"dia bilang civilian, tapi ada yang sempat cek identitasnya?",offend,neutral,,,N-b,meragukan klaim tanpa kata penilaian
+intent,1203,,"jangan cuma nuduh, coba bilang dulu siapa yang kamu lindungi tadi malam",neutral,defend,,,D-d,teguran 'jangan cuma nuduh' + pertanyaan info
+intent,1232,,"lu ngaku Spy, tapi semalam guard siapa? jangan cuma klaim doang",offend,neutral,,,N-b,minta bukti klaim tanpa kata penilaian
+intent,1242,,"aku belum percaya klaim itu, target perlindunganmu semalam siapa sebenarnya?",offend,neutral,,,N-b,"belum percaya klaim, tanpa penilaian curiga"
+intent,1247,,kamu dapat info dari mana bahwa dia bukan Hitman? hasil peek atau asumsi?,offend,neutral,,,N-b,tanya sumber info tanpa sindiran
+intent,1256,,"kalau kamu warga biasa, kenapa yakin banget dia Hitman? dapat bocoran dari siapa?",neutral,offend,,,O-d,"warga biasa kok yakin, pola O-d"
+intent,1265,,Siapa yang paling yakin dirinya aman semalam? Biasanya yang tahu itu bukan warga biasa,neutral,offend,,,O-d,sindiran: yang yakin aman bukan warga biasa
+intent,1275,,"Jangan cuma nuduh, kasih tahu dong siapa yang menurut kalian dapat guard",neutral,defend,,,D-d,teguran 'jangan cuma nuduh' + pertanyaan info
+intent,1280,,"Yang paling cepat nuduh biasanya punya info. Lu tahu siapa target guard, ya?",neutral,offend,,,O-d,kaitkan cepat nuduh dengan tahu target guard
+intent,1305,,siapa yang paling mencurigakan setelah Gag Order tadi?,offend,neutral,,,N-b,pertanyaan terbuka tanpa sasaran
+intent,1314,,siapa yang paling mungkin punya informasi tapi sengaja menahannya?,offend,neutral,,,N-b,pertanyaan terbuka tanpa sasaran
+intent,1322,,"lu Spy kan? Semalam lu jaga siapa, jangan muter-muter",offend,neutral,,,N-b,pertanyaan mendesak tanpa sindiran
+intent,1324,,"kalau memang Spy, siapa yang lu kawal semalam?",offend,neutral,,,N-b,pertanyaan target guard tanpa sindiran
+intent,1326,,"fix teori gw lu Spy, sekarang buktiin dengan sebut orang yang dijaga",offend,neutral,,,N-b,menduga Spy bukan kecurigaan; minta bukti
+intent,1327,,"lu bilang punya info, tapi belum jawab semalam jagain siapa",offend,neutral,,,N-b,"fakta belum dijawab, tanpa penilaian"
+intent,1330,,"kalau lu Spy beneran, harusnya tahu siapa yang lu selamatkan",offend,neutral,,,N-b,meragukan klaim tanpa kata penilaian
+intent,1331,,"jangan cuma bilang aman, target pengawalan lu siapa?",offend,neutral,,,N-b,pertanyaan mendesak tanpa sindiran
+intent,1341,,"kalau cooldown bukan alasan, malam tadi Guard lu jatuh ke siapa?",offend,neutral,,,N-b,pertanyaan mendesak tanpa sindiran
+intent,1343,,"dari awal gw bilang lu Spy, sekarang konfirmasi siapa yang lu cover",offend,neutral,,,N-b,menduga Spy bukan kecurigaan; minta konfirmasi
+intent,1346,,"aku belum percaya alibimu, target perlindunganmu tadi malam siapa?",offend,neutral,,,N-b,"belum percaya alibi, tanpa penilaian curiga"
+intent,1410,,"sebelum vote gw, bandingkan dulu klaim si A dengan hasil voting kemarin",defend,offend,,,O-g,tunda vote diri + arahkan pemeriksaan ke klaim si A
+intent,1421,,"jangan asal lempar ke aku, lihat dulu siapa yang belok-belok",defend,offend,,,O-g,bantah + alihkan ke ciri curiga: yang belok-belok
+intent,1435,,"jangan keburu eksekusi aku, cek dulu siapa yang diuntungkan",defend,offend,,,O-g,tunda eksekusi diri + alihkan ke ciri: siapa yang diuntungkan
+intent,1468,,"aku tidak perlu mengarang pembelaan, tapi kalian perlu tanya siapa yang paling diuntungkan dari vote ke aku",defend,offend,,,O-g,bela diri + alihkan ke ciri: paling diuntungkan
+intent,1519,,"gw siap di-tribunal kalau si G juga ikut menjelaskan perannya, jangan cuma lempar nama",defend,offend,,,O-g,bela diri + tuntut si G menjelaskan perannya
+intent,1529,,"aku tidak akan ikut drama si H, lebih baik kita cek siapa yang paling diuntungkan dari kekacauan ini",neutral,offend,,,O-e,nilai si H drama + alihkan ke yang diuntungkan
+intent,1601,,kenapa cuma gw yang disorot? Siapa yang pertama kali lempar nama gw tadi?,defend,offend,,,O-g,bela diri + sindir penuduh pertama sebagai sumber masalah
+intent,1632,,"tuduhan itu ngawur, coba kita bandingkan jawaban gw sama jawaban si Rere",defend,offend,,,O-g,bantah tuduhan + arahkan pembandingan ke si Rere
+intent,1641,,"daripada debat soal aku, mari lihat siapa yang paling diuntungkan dari kekacauan ini",neutral,offend,,,O-g,alihkan dari diri ke ciri: paling diuntungkan
+intent,1683,,"tadi malam gw nggak melakukan apa-apa, coba cek dulu pergerakan si C",defend,offend,,,O-g,contoh O-g: sangkal + coba cek pergerakan si C
+intent,1685,,"aku cuma ikut vote terakhir, yang mulai nuduh duluan tadi si E",defend,offend,,,O-g,bela diri + limpahkan ke si E yang nuduh duluan
+intent,1686,,"bagian itu sudah aku jawab, sekarang giliran si F menjelaskan aksinya",defend,offend,,,O-g,bela diri + giliran si F menjelaskan aksinya
+intent,1688,,"daripada fokus ke aku, urutan aksi si H belum dibahas",defend,offend,,,O-g,alihkan fokus dari diri ke aksi si H
+intent,1694,,"yang ditanyakan ke aku sudah lewat, sekarang ada gerakan si F yang belum dibahas",defend,offend,,,O-g,bela diri + alihkan ke gerakan si F
+intent,1695,,"gw nggak melakukan aksi malam, tapi posisi si G juga belum jelas",defend,offend,,,O-g,sangkal aksi malam + ragukan posisi si G
+intent,1696,,"kalau semua kembali ke gw, penjelasan si H soal targetnya kapan dibahas",defend,offend,,,O-g,tolak disorot + alihkan ke penjelasan si H
+intent,1702,,"daripada langsung vote gw, cocokkan dulu cerita si F dan si G",defend,offend,,,O-g,tunda vote diri + arahkan cek cerita F dan G
+intent,1703,,"aku cuma mengikuti hasil diskusi, keputusan awalnya datang dari si H",defend,offend,,,O-g,bela diri + limpahkan keputusan awal ke si H
+intent,1705,,"gw sudah menjelaskan rute gw, sekarang giliran si B cerita dia ke mana",defend,offend,,,O-g,bela diri + giliran si B menjelaskan
+intent,1709,,"aku sudah merespons tuduhan tadi, pembahasan bisa dialihkan ke aksi si F",defend,offend,,,O-g,bela diri + eksplisit alihkan bahasan ke si F
+intent,2075,,"saya warga biasa, tidak punya skill malam dan tidak menyandera siapa pun",neutral,defend,,,D-b,klaim Civilian plus sangkalan tidak menyandera siapa pun
+intent,2076,,"fix gw bukan Hitman, role gw Civilian",neutral,defend,,,D-b,sangkalan bukan Hitman plus klaim Civilian
+intent,2086,,"lu bisa vote gw kalau mau, tapi klaim gw jelas: Civilian tanpa skill",neutral,defend,,,D-b,"boleh vote, tapi klaim Civilian: menjawab keraguan"
+intent,2096,,"fix aku bukan Hitman, role yang kudapat adalah Spy",neutral,defend,,,D-b,sangkalan bukan Hitman plus klaim Spy
+intent,2101,,"role dia belum tentu benar, sementara gw secara jelas claim sebagai Civilian",offend,neutral,,,N-a,"meragukan klaim tanpa kata penilaian, plus klaim Civilian"
+intent,2106,,"bukan Hitman ya, saya cuma Civilian",neutral,defend,,,D-b,sangkalan bukan Hitman plus klaim Civilian
+intent,2112,,"yaudah, gw Hitman kalau itu yang mau kalian dengar",neutral,defend,,,D-f,sarkasme 'gw Hitman kalau itu yang mau kalian dengar'
+intent,2125,,"aku bukan pelaku, saya Civilian",neutral,defend,,,D-b,sangkalan bukan pelaku plus klaim Civilian
+intent,2147,,"jangan kejebak framing, gw Spy dan tuduhan ke gw cuma pengalihan",defend,offend,,,O-g,bela diri plus sebut tuduhan framing/pengalihan (motif penuduh)
+intent,2204,,"kalau kalian butuh claim jelas, gw Spy dan bukan orang yang pakai Gag Order",neutral,defend,,,D-b,klaim Spy plus sangkalan bukan pemakai Gag Order
+intent,2205,,"gw telat baca dua halaman, tapi role gw Stalker, percaya atau enggak",neutral,defend,,,D-b,klaim plus 'percaya atau enggak': menjawab keraguan
+intent,2213,,"jangan salah baca, gw bukan Spy, role-ku Civilian",defend,neutral,,,N-a,"koreksi bukan Spy, tidak ada sangkalan kesalahan"
+intent,2222,,"telat ikut debat, jadi langsung jelas aja: gw bukan Hitman, gw Spy",neutral,defend,,,D-b,sangkalan bukan Hitman plus klaim Spy
+intent,2225,,"fix gw Stalker, semalam gw peek Raka dan dia bukan Hitman",neutral,defend,,,D-c,hasil Peek membersihkan Raka
+intent,2227,,"sumpah aku bukan Hitman, cuma Civilian yang nunggu kalian blunder",neutral,defend,,,D-b,sumpah bukan Hitman plus klaim Civilian
+intent,2243,,"role gw Civilian, tapi kalau kalian butuh kambing hitam silakan mulai dari gw",neutral,defend,,,D-f,"sarkasme kambing hitam, silakan mulai dari gw"
+intent,2271,,"lu boleh curiga, tapi gw sebenarnya spy yang sedang cari pola serangan",neutral,defend,,,D-b,"pola 'lu boleh curiga, tapi gw Spy'"
+intent,2282,,"aku bukan hitman, role-ku spy dan malam ini harus pilih target guard yang berbeda",neutral,defend,,,D-b,sangkalan bukan Hitman plus klaim Spy
+intent,2292,,aku Hitman kalau kalian percaya pengakuan yang asal keluar itu,neutral,defend,,,D-f,pola contoh D-f 'aku Hitman kalau kalian percaya'
+intent,2296,,"gw klaim Spy, tapi kalau kalian mau vote gw silakan cek siapa yang paling diuntungkan",defend,offend,,,O-g,menolak divote plus arahkan ke yang paling diuntungkan
+intent,2305,,"aku Hitman katanya? lucu, yang nuduh justru belum klaim apa-apa",defend,offend,,,O-g,bantah tuduhan plus serang perilaku penuduh
+intent,2316,,"claim dulu, role gw Stalker dan peek-ku bilang Raka bukan Hitman",neutral,defend,,,D-c,hasil Peek membersihkan Raka
+intent,2325,,"bukan gertakan, gw Stalker dan hasil peek-ku mengarah ke Vina sebagai bukan Hitman",neutral,defend,,,D-c,hasil Peek membersihkan Vina
+intent,2334,,"aku Stalker asli, semalam identitas Lala bukan Hitman, tapi jangan langsung percaya penuh",neutral,defend,,,D-c,hasil Peek membersihkan Lala walau ada catatan
+intent,2337,,"lu boleh anggap ini bluff, tapi gw Stalker dan Nando kelihatan aman dari peek",neutral,defend,,,D-c,Nando aman dari Peek plus menjawab keraguan
+intent,2339,,"gw bukan Hitman, bukan Spy juga, cuma Civilian yang lagi mancing reaksi",neutral,defend,,,D-b,sangkalan bukan Hitman plus klaim Civilian
+intent,2343,,"oke, aku ngaku Hitman kalau itu bikin kalian panik, tapi seriusnya gw Civilian",neutral,defend,,,D-f,"sarkasme ngaku Hitman, lalu menegaskan Civilian"
+intent,2375,,"aku Stalker, semalam sudah Peek Raka dan hasilnya dia bukan Hitman",neutral,defend,,,D-c,hasil Peek membersihkan Raka: bukan Hitman
+intent,2382,,"role gw Civilian, jangan coba alihin pembahasan ke Vina",neutral,defend,,,D-d,"menegur pengalihan ke Vina, melindungi Vina tanpa menuduh"
+intent,2388,,"gw Spy beneran, semalam aku Guard Kevin, percaya atau tidak terserah",neutral,defend,,,D-b,klaim Spy plus 'percaya atau tidak terserah'
+intent,2392,,"claim gw tetap sama: Stalker, dan Peek-ku mengarah ke Riko sebagai pemain aman",neutral,defend,,,D-c,hasil Peek menyatakan Riko pemain aman
+intent,2393,,"gw Spy, malam kemarin aku pasang Guard ke Caca, jadi jangan paksa aku ganti cerita",neutral,defend,,,D-b,"klaim Spy, menolak didesak ganti cerita"
+intent,2397,,"role gw Spy dan aku sudah menjalankan Guard, jadi klaimku konsisten dari awal",neutral,defend,,,D-b,klaim Spy dipakai menjawab keraguan: klaim konsisten
+intent,2410,,"aku Stalker, hasil Peek semalam menunjukkan identitas Dito sebagai Civilian",neutral,defend,,,D-c,"hasil Peek menunjukkan Dito Civilian, membersihkan Dito"
+intent,2521,,"aku tadi cuma salah pencet, bukan sengaja",neutral,defend,,,D-e,menjelaskan salah pencet dengan sangkalan 'bukan sengaja'
+intent,2805,,"si H bilang target malam acak, padahal urutan korbannya jelas menyingkirkan pemain informatif",offend,neutral,,,N (penilaian vs fakta),menunjuk kontradiksi klaim H tanpa kata penilaian curiga
+intent,2881,,"bukan gw sumber fitnahnya, lihat saja siapa yang pertama kali menyebarkan tuduhan ke grup",defend,offend,,,O-g,sangkal diri + arahkan ke penyebar tuduhan pertama
+intent,3162,,"Aku Stalker, tapi kemampuan Peek-ku sedang cooldown, jadi wajar kalau aku belum bisa memberi identitas baru",neutral,defend,,,D-b,klaim Stalker + jawab keraguan: wajar belum ada info
+intent,3163,,"Tuduhan ini terlalu cepat. Aku sudah konsisten sejak ronde pertama, sementara ceritamu berubah setelah hasil voting",defend,offend,,,O-g,membela diri + serang konsistensi cerita penuduh
+intent,3172,,"Tuduhan terhadapku muncul setelah aku mengkritik argumenmu, jadi ada kemungkinan ini cuma upaya membungkam lawan",offend,defend,,,D-d,motif biasa: dituduh setelah mengkritik argumen penuduh
+intent,3183,,"Sus, jangan jadikan satu kalimat sebagai bukti tunggal. Lihat keseluruhan pola chat dan perubahan sikap tiap ronde",offend,defend,,,D-d,teguran bukti tunggal; tanpa sasaran tuduhan
+intent,3226,,"aku Stalker, hasil Peek-ku belum bisa kubuka sembarangan, tapi identitasku bukan Hitman",neutral,defend,,,D-b,klaim Stalker + sangkalan bukan Hitman
+intent,3245,,"gw bukan Hitman, dari ronde pertama malah gw yang buka pembahasan; cek aja pemain yang terus ngikut arus",defend,offend,,,O-g,sangkal + arahkan cek pemain yang ikut arus
+intent,3256,,"kalau kalian masih ragu sama aku, lihat siapa yang paling diuntungkan dari tuduhan ini",defend,offend,,,O-g,jawab keraguan + arahkan ke yang diuntungkan tuduhan
+intent,3279,,"eh ulangin dong, gw dituduh karena apa? setahu gw gw aman",neutral,defend,,,D-d,Menanyakan alasan dituduh dan menyatakan diri aman
+intent,3310,,"jangan kejebak omongan dia, gw udah jelasin posisi gw dari tadi",defend,offend,,,O-g,Menyerang kredibilitas 'dia' sambil membela posisi sendiri
+intent,3321,,yang nge-gag gw tadi malah bikin gw makin yakin ada yang takut kebongkar,offend,neutral,,,N-e,"Komentar soal pelaku Gag Order, tanpa pemain sasaran jelas"
+intent,3324,,"gw nggak perlu bohong buat selamat, justru respons kalian yang mulai kebaca",defend,offend,,,O-g,Membela diri sambil menyiratkan respons penuduh mencurigakan
+intent,3328,,"gw bukan hitman, tapi gw tahu siapa yang paling menikmati kekacauan ini",defend,offend,,,O-g,Sangkalan plus menyindir 'yang paling menikmati kekacauan'
+intent,3379,,"jangan keburu eksekusi, bisa jadi ini framing dari hitman yang mau aman",defend,offend,,,O-g,"Menyebut tuduhan framing Hitman, motif penuduh menyiratkan pelaku"
+intent,3385,,"aku civilian, dan menurutku tuduhan ke gw sengaja diarahkan biar pelaku lolos",defend,offend,,,O-g,Klaim plus motif penuduh: tuduhan diarahkan biar pelaku lolos
+intent,3394,,"kalau mau mengeksekusi gw, jawab dulu kenapa alibi si A dianggap otomatis valid",defend,offend,,,O-g,Menolak dieksekusi sambil mengalihkan sorotan ke alibi si A
+intent,3402,,"lu boleh curiga, tapi jangan anggap teori tanpa bukti sebagai fakta",neutral,defend,,,D-g,"Pola 'lu boleh curiga, tapi' menanggapi kecurigaan"
+intent,3405,,"serius, aku bukan pelaku Hostage, cek lagi siapa yang paling diuntungkan",defend,offend,,,O-g,Sangkalan plus mengalihkan ke 'yang paling diuntungkan'
+intent,3419,,"jangan eksekusi berdasarkan vibes, nanti Hitman dapat kemenangan gratis",defend,neutral,,,N-d,Nasihat umum soal vibes tanpa sasaran atau pembelaan
+intent,3420,,"kalau dia yakin banget aku jahat, kenapa baru ngomong sekarang?",defend,offend,,,O-c,"Mempertanyakan timing si penuduh, menyerang perilaku penuduh"
+intent,3422,,mereka mungkin sengaja bikin aku terlihat sus supaya target asli lolos,defend,offend,,,O-c,Motif penuduh: sengaja bikin aku sus supaya target lolos
+intent,3453,,"kalau aku pelakunya, kenapa aku malah terus minta semua orang cek pola vote si Ardi",defend,offend,,,O-g,Membela diri sambil menegaskan lagi kecurigaan ke si Ardi
+intent,3471,,"Gw sempat menulis pembelaan, tapi pesan itu tidak muncul setelah chat dibungkam",neutral,defend,,,D-e,Menjelaskan pembelaan tidak muncul karena chat dibungkam
+intent,3472,,"Aku tidak punya akses Gag Order, dan tadi hanya menjawab pertanyaan di chat",neutral,defend,,,D-a,Menyangkal punya Gag Order dan menjelaskan perilaku chat
+intent,3493,,"aku Stalker, cooldown-ku baru aktif lagi ronde ini, jadi klaim peek tadi bukan asal tebak",neutral,defend,,,D-b,Klaim Stalker menjawab keraguan: klaim peek bukan asal tebak
+intent,3494,,"bukan aku yang pakai Gag Order; dari timing-nya, Hitman kemungkinan membungkam pemain yang mulai menyusun pola",offend,defend,,,D-a,Sangkalan; bagian kedua pernyataan umum Hitman tanpa sasaran
+intent,3516,,"bukan hitman, aku stalker dan semalam peek Raka, dia aman",neutral,defend,,,D-b,"Sangkalan bukan Hitman, klaim Stalker, membersihkan Raka"
+intent,3519,,"sumpah aku Stalker, semalam intip Naya dan hasilnya aman",neutral,defend,,,D-c,Hasil intip menyatakan Naya aman
+intent,3523,,"tenang, gw Stalker. Si B aman dari hasil peek gw",neutral,defend,,,D-c,Hasil peek menyatakan si B aman
+intent,3524,,"aku bukan Hitman, cuma warga yang ngikutin suara terbanyak",neutral,defend,,,D-a,Sangkalan eksplisit aku bukan Hitman
+intent,3529,,"aku Stalker, semalam cek si D dan dia kelihatan bersih",neutral,defend,,,D-c,Hasil cek menyatakan si D bersih
+intent,3535,,"bukan Hitman, aku Spy dan tadi malam jagain satu orang",neutral,defend,,,D-b,Sangkalan bukan Hitman disertai klaim Spy
+intent,3539,,"aku Stalker, hasil intipku bilang si G bukan Hitman",neutral,defend,,,D-c,Hasil intip menyatakan si G bukan Hitman
+intent,3556,,"gw punya info sebagai Stalker, si F aman, jadi argumen yang nyerang gw itu cuma pengalihan",defend,offend,,,O-g,Membersihkan F tapi menyebut serangan penuduh cuma pengalihan
+intent,3558,,"gw bukan Hitman, role gw Stalker, cuma belum bisa peek lagi karena masih cooldown",neutral,defend,,,D-b,Sangkalan bukan Hitman disertai klaim Stalker
+intent,3569,,"yang pakai Gag Order pasti lagi panik, sedangkan gw Spy yang dari tadi jawab semua tuduhan",offend,defend,,,D-b,Klaim Spy menjawab tuduhan; pelaku Gag Order disebut umum
+intent,3574,,"gw gak akan kabur dari tuduhan, role gw Civilian dan silakan cek konsistensi argumen kalian",neutral,defend,,,D-b,"Klaim Civilian sebagai jawaban atas tuduhan, tidak kabur"
+intent,3584,,"aku stalker, cooldown-ku kepakai buat cek Tio dan hasilnya merah",neutral,offend,,,O-b,"Hasil cek Tio 'merah', memberatkan"
+intent,3607,,"kalau gak salah semalam gw Peek Nisa, hasilnya dia aman, gw Stalker",neutral,defend,,,D-c,Hasil peek menyatakan Nisa aman
+intent,3612,,"tadi diskusinya kelewat, tapi gw Stalker dan hasil Peek gw nunjukin Sari bukan Hitman",neutral,defend,,,D-c,Hasil peek menyatakan Sari bukan Hitman
+intent,3618,,"aku bukan Hitman, aku Stalker; semalam Peek-ku dapat info kalau Vina bukan pihak jahat",neutral,defend,,,D-b,Sangkalan bukan Hitman plus peek membersihkan Vina
+intent,3621,,"dari potongan info yang gw tangkep, gw Stalker dan udah cek Roni, dia bukan Hitman",neutral,defend,,,D-c,Hasil cek menyatakan Roni bukan Hitman
+intent,3624,,"gw Stalker, cooldown Peek-ku memang masih ada, dan hasil terakhir bilang Fajar aman",neutral,defend,,,D-c,Hasil peek terakhir menyatakan Fajar aman
+intent,3627,,"kalau gak ada yang keberatan, gw klaim Stalker, semalam sudah Peek Yudi dan dia bersih",neutral,defend,,,D-c,Hasil peek menyatakan Yudi bersih
+intent,3629,,"sumpah aku bukan Hitman, role-ku Civilian dan dari tadi cuma mengamati",neutral,defend,,,D-b,Sangkalan bukan Hitman disertai klaim Civilian
+intent,3630,,"gw ketinggalan fase malam, tapi sebagai Stalker gw tahu Beni bukan Hitman dari hasil Peek",neutral,defend,,,D-c,Hasil peek menyatakan Beni bukan Hitman
+intent,3631,,"bentar, tadi ada yang bilang gw mencurigakan? aku Spy dan semalam melindungi Caca",neutral,defend,,,D-b,Klaim Spy menjawab tuduhan bahwa dirinya mencurigakan
+intent,3633,,"gw Stalker kok, cuma belum sempat ngomong; semalam Peek-ku nunjukin Arman aman",neutral,defend,,,D-c,Hasil peek menyatakan Arman aman
+intent,3635,,"gw stalker, semalem udah peek si B, dia bukan hitman",neutral,defend,,,D-c,Hasil peek menyatakan si B bukan Hitman
+intent,3669,,"Gw Stalker, hasil peek semalam nunjukin Bima aman",neutral,defend,,,D-c,Hasil peek menyatakan Bima aman
+intent,3673,,"Semalam gw intip Karin, hasilnya dia bukan Hitman",neutral,defend,,,D-c,Hasil intip menyatakan Karin bukan Hitman
+intent,3676,,"Aku Stalker, info yang bisa kubagi cuma Tio aman dari hasil peek-ku",neutral,defend,,,D-c,Hasil peek menyatakan Tio aman
+intent,3678,,"Meski keliatan pasif, gw Civilian dan memang nggak punya aksi malam",neutral,defend,,,D-b,Klaim Civilian menjawab kesan pasif
+intent,3682,,"Role aku Stalker, hasil intipanku bilang Raka aman",neutral,defend,,,D-c,Hasil intip menyatakan Raka aman
+intent,3685,,"Kalau chat gw kena Gag Order, berarti Hitman takut info Stalker-ku kebuka",offend,neutral,,,N-a,Klaim Stalker; Hitman disebut umum tanpa pemain sasaran
+intent,3687,,"Tenang, gw Civilian; yang punya aksi malam itu bukan aku",neutral,defend,,,D-b,Klaim Civilian plus sangkalan 'bukan aku'
+intent,3689,,"Gw Stalker, dan peek pertama-ku jelas menunjukkan Yuda bukan Hitman",neutral,defend,,,D-c,Hasil peek menyatakan Yuda bukan Hitman
+intent,3695,,"gw Stalker, semalam udah peek si Raka dan dia bukan Hitman",neutral,defend,,,D-c,Hasil peek menyatakan Raka bukan Hitman
+intent,3700,,"kalian terlalu percaya sama yang paling berisik, padahal aku Civilian biasa",neutral,offend,,,O-g,Menyerang kepercayaan pada 'yang paling berisik' sambil membela diri
+intent,3707,,"aku Stalker, tapi kalian malah sibuk nuduh orang yang belum tentu bersalah",neutral,defend,,,D-d,Menegur kalian menuduh orang yang belum tentu bersalah
+intent,3719,,"si paling yakin belum tentu punya info, aku Stalker dan peek-ku bilang Eko aman",neutral,defend,,,D-c,Hasil peek menyatakan Eko aman; keraguan tanpa penilaian
+intent,3722,,"aku Stalker, cooldown-ku memang ada, tapi peek semalam cukup buat bilang si Agus bukan Hitman",neutral,defend,,,D-c,Hasil peek menyatakan si Agus bukan Hitman
+intent,3725,,"gw stalker, semalam aku peek Raka dan dia bukan hitman",neutral,defend,,,D-c,Hasil peek menyatakan Raka bukan hitman
+intent,3737,,"aku stalker, hasil peek-ku bilang orang yang paling vokal itu bersih",neutral,defend,,,D-c,Hasil peek membersihkan orang yang paling vokal
+intent,3750,,"kalau aku hitman, target malam tadi pasti sudah tumbang, kan",neutral,defend,,,D-a,"argumen menyangkal diri: kalau aku Hitman, target sudah tumbang"
+intent,3754,,"percaya atau tidak, aku punya informasi bahwa hitman ada di antara dua pemain itu",neutral,offend,,,O-b,info memberatkan: Hitman di antara dua pemain itu
+intent,3768,,"aku Stalker, cooldown-ku baru kepakai, tapi hasilnya si D bukan Hitman",neutral,defend,,,D-c,hasil peek membersihkan: si D bukan Hitman
+intent,3769,,"gw bukan musuh, role gw Civilian; kita bentuk aliansi kecil sama si A dulu",neutral,defend,,,D-b,klaim Civilian disertai sangkalan 'gw bukan musuh'
+intent,3779,,"aku Civilian, tapi bisa jadi partner diskusi lu; kita pantau si B bareng-bareng",neutral,offend,,,O-e,"ajak pantau si B, sasaran jelas"
+intent,3782,,"bukan bluff, aku Stalker dan info ini valid: si E bukan Hitman",neutral,defend,,,D-c,"membersihkan si E dari hasil peek, jawab keraguan"
+intent,3788,,"Kalau kalian tetap vote aku, silakan, tapi gw Stalker dan info soal Bimo valid",neutral,defend,,,D-b,klaim Stalker menjawab ancaman divote
+intent,3792,,"Kalau chat gw dibungkam, makin kelihatan Hitman takut aku buka role, padahal aku Stalker",offend,neutral,,,N-a,tanpa sasaran pemain; Hitman umum; klaim tanpa sangkalan
+intent,3808,,"Gw gak mungkin tiba-tiba ganti claim, dari ronde pertama aku bilang Civilian",neutral,defend,,,D-b,"menyangkal ganti klaim, menjawab keraguan"
+intent,3813,,"Gag Order barusan cuma usaha Hitman nutup mulut gw; aku Spy, bukan target yang harus dicurigai",offend,defend,,,D-b,klaim Spy + bukan target dicurigai; Hitman tanpa sasaran
+intent,3815,,"gw Stalker, malam tadi aku Peek si Raka dan hasilnya Civilian",neutral,defend,,,D-c,"hasil peek Raka Civilian, membersihkan"
+intent,3862,,"aku curiga ada info yang ditahan, siapa sebenarnya yang kamu lihat semalam?",neutral,offend,,,O-d,pertanyaan dengan kecurigaan menahan info
+intent,3905,,"sebelum nuduh gw hitman, Spy semalam guard siapa?",neutral,defend,,,D-d,menegur penuduh: cek info dulu sebelum nuduh gw
+intent,3906,,"yang bilang gw mencurigakan, lu punya info malam apa?",neutral,defend,,,D-d,menanyakan dasar penuduh diri sendiri
+intent,3910,,"lu nuduh gw karena apa, ada hasil peek atau cuma feeling doang?",neutral,defend,,,D-d,pola 'lu nuduh gw karena apa'
+intent,3911,,"yang paling keras nuduh gw, semalam lu ngapain dan dapat info dari mana?",neutral,defend,,,D-d,menantang dasar info penuduh
+intent,3918,,"yang nuduh gw, kenapa bukan pemain yang paling minim kontribusi? jelasin analisismu",defend,offend,,,O-g,bela diri + alihkan ke pemain minim kontribusi
+intent,3924,,"kalau gw Hitman, siapa yang katanya gw sandera semalam? Cocokin dulu faktanya",neutral,defend,,,D-f,tantangan menyiratkan tuduhan Hitman salah
+intent,3925,,kenapa tuduhan selalu balik ke gw? Siapa yang pertama kali mengarahkan narasi ini?,defend,offend,,,O-g,bela diri + alihkan ke pengarah narasi pertama
+intent,3927,,siapa yang paling diuntungkan kalau gw dieksekusi sekarang?,neutral,offend,,,O-g,tolak dieksekusi + arahkan curiga ke yang diuntungkan
+intent,3950,,"Gw curiga ada info yang ditahan. Spy, target jagaanmu semalam siapa?",neutral,offend,,,O-d,pertanyaan disertai kecurigaan info ditahan
+intent,3959,,"Jangan saling lempar tuduhan, E. Lu tahu siapa yang dijaga semalam atau tidak?",neutral,defend,,,D-d,menegur saling lempar tuduhan
+intent,3963,,Kenapa F tiba-tiba yakin G aman? Kalian punya info guard atau cuma tebakan?,neutral,offend,,,O-d,sindiran 'tiba-tiba yakin G aman'
+intent,4004,,"siapa yang lu curigai setelah Peek, Stalker? jangan cuma lempar tuduhan",neutral,defend,,,D-d,teguran 'jangan cuma lempar tuduhan'
+intent,4050,,"kalau bukan Hitman, kenapa kamu yakin target itu tidak diserang?",neutral,offend,,,O-d,sindiran: tahu target tak diserang berarti Hitman
+intent,4062,,"siapa yang pertama kali nuduh dia Hitman, emang lihat sesuatu?",neutral,defend,,,D-d,meragukan dasar tuduhan terhadap dia
+intent,4065,,"lu bilang dia mencurigakan, tapi bukti konkretnya apa?",neutral,defend,,,D-d,menanyakan bukti tuduhan ke dia
+intent,4073,,lu nuduh A karena data atau cuma ikut tekanan chat?,neutral,defend,,,D-d,"menanyakan dasar tuduhan ke A, motif biasa"
+intent,4079,,kamu yakin dia Hitman? apa yang bikin kamu tidak ragu sama sekali?,neutral,defend,,,D-d,meragukan keyakinan penuduh terhadap dia
+intent,4092,,"Jangan cuma nuduh, siapa yang semalam punya alasan buat jaga target itu?",neutral,defend,,,D-d,teguran 'jangan cuma nuduh'
+intent,4104,,"Stalker, lu Peek siapa di ronde terakhir? Jangan jawab semua orang random.",offend,neutral,,,N-b,pertanyaan mendesak tanpa sindiran
+intent,4134,,"yang paling vokal nuduh orang, sebenarnya punya informasi rahasia apa?",neutral,offend,,,O-d,sindiran penuduh vokal punya info rahasia
+intent,4144,,"sebelum voting, masing-masing sebutkan alasan mencurigai target kalian",offend,neutral,,,N-d,ajakan proses umum tanpa sasaran
+intent,4152,,"jangan cuma bilang Spy, target jagaanmu siapa?",offend,neutral,,,N-b,pertanyaan mendesak tanpa sindiran
+intent,4161,,"gw belum percaya klaim lu, buktiin dengan sebut nama yang lu guard",offend,neutral,,,N-b,meragukan klaim tanpa kata penilaian
+intent,4167,,"aku tetap menduga lu Stalker, identitas siapa yang kamu dapat dari Peek?",offend,neutral,,,N-b,menduga role Stalker bukan kecurigaan; minta info
+intent,4232,,"daripada langsung vote aku, susun dulu urutan kejadian dan cek posisi Siska di tiap ronde",defend,offend,,,O-g,"menolak divote, mengalihkan ke posisi Siska"
+intent,4290,,"jangan jadikan aku kambing hitam, cari tahu dulu siapa yang diuntungkan dari eksekusi ini",defend,offend,,,O-g,"membela diri, alihkan ke yang diuntungkan eksekusi"
+intent,4410,,"aku bukan menghindar, aku cuma heran kenapa tuduhan ke aku muncul tepat setelah si W ditekan",defend,offend,,,O-g,"sangkal menghindar, timing tuduhan menyiratkan menutupi W"
+intent,4414,,"aneh banget, setiap gw nanya alibi si Z, pembahasannya malah dibalikin ke gw terus",defend,offend,,,O-g,"penilaian aneh, tuduhan dibalik untuk lindungi Z"
+intent,4424,,"lu nuduh gw karena panik ya, atau ada alasan lain yang belum dibuka",defend,offend,,,O-d,sindiran motif penuduh: panik atau agenda tersembunyi
+intent,4430,,"serius, kenapa cuma aku yang dibahas padahal si H tidak pernah ikut membantu analisis",defend,offend,,,O-g,"membela diri, alihkan ke H yang tak bantu analisis"
+intent,4432,,"tuduhan itu terdengar seperti Gag Order versi halus, supaya kita lupa melihat pemain lain",defend,offend,,,O-c,"motif tuduhan menutupi pelaku, seperti Gag Order"
+intent,4436,,"jangan buru-buru eksekusi aku, cek dulu siapa yang paling menikmati kekacauan ini",defend,offend,,,O-g,"tolak eksekusi, alihkan ke yang menikmati kekacauan"
+intent,4437,,"lu bilang gw defensif, padahal lu sendiri belum menjawab soal aksi malam tadi",defend,offend,,,O-g,membalik ke penuduh yang belum jelaskan aksi malam
+intent,4455,,"jangan asal vote aku, lihat saja siapa yang paling diuntungkan kalau aku keluar",defend,offend,,,O-g,"tolak divote, alihkan ke yang diuntungkan"
+intent,4470,,"lu bisa vote gw, tapi setelah itu hitman bakal bebas karena tersangka sebenarnya dibiarkan",offend,defend,,,D-f,"tantangan vote aku, tanpa sasaran berciri"
+intent,4516,,"tadi aku kena gag order dan tidak sempat menjawab, coba lihat siapa yang paling diuntungkan dari itu",defend,offend,,,O-g,"jelaskan gag order, alihkan ke yang diuntungkan"
+intent,4517,,"kalau laporan malamku diragukan, laporan si I juga belum disampaikan sampai sekarang",defend,offend,,,O-g,"jawab keraguan, alihkan ke laporan si I"
+intent,4520,,"aku sudah menyebut posisiku dari awal, sekarang minta si L menjelaskan pergerakannya",neutral,offend,,,O-e,"minta L menjelaskan pergerakannya, alihkan sorotan"
+intent,4524,,"aku sudah menjawab bagian itu, pertanyaan berikutnya bisa diarahkan ke si N",defend,offend,,,O-e,mengalihkan pertanyaan dari diri ke si N
+intent,4533,,"aku tidak mengubah suara di akhir, tetapi ada pemain lain yang baru ikut memilih",defend,offend,,,O-g,"sangkal ubah suara, tunjuk pemain yang baru memilih"
+intent,4697,,"Jangan terpancing Gag Order, tapi justru cek siapa yang paling diuntungkan saat Deni dibungkam",neutral,offend,,,O-e,arahkan curiga ke yang paling diuntungkan saat Deni dibungkam
+intent,4898,,"fix aku bukan hitman, role-ku civilian dan belum ada aksi malam",neutral,defend,,,D-b,sangkalan bukan hitman plus klaim civilian
+intent,4906,,"aku hitman kalau memang mau percaya klaim paling berisiko, silakan vote aku",offend,defend,,,D-f,"sarkasme 'aku hitman kalau percaya', silakan vote aku"
+intent,4911,,"aku bukan hitman, aku spy dan guard-ku tidak bisa dipakai ke orang yang sama dua malam",neutral,defend,,,D-b,sangkalan bukan hitman plus klaim spy
+intent,4920,,"gw civilian, tapi kalau klaim role mulai bertabrakan berarti salah satunya kemungkinan hitman",offend,neutral,,,N-a,"pernyataan umum kondisional, tanpa sasaran jelas"
+intent,4929,,"jujur role-ku civilian, makanya lebih banyak diam",neutral,defend,,,D-e,menjelaskan alasan diam lewat klaim civilian
+intent,4980,,"aku ini spy, tuduhan ke gw cuma pengalihan dari pelaku sebenarnya",defend,offend,,,O-g,bela diri plus motif penuduh menutupi pelaku
+intent,4988,,"gue bukan hitman, gue civilian yang dari awal ngarahin diskusi, sekarang fokus cek Vino",defend,offend,,,O-g,sangkalan plus mengalihkan: fokus cek Vino
+intent,5006,,"bukan hitman, aku civilian yang sengaja buka suara duluan supaya kita nggak kehilangan kontrol voting ke Aldi",defend,offend,,,O-g,sangkalan plus mengarahkan voting ke Aldi
+intent,5014,,"aku Stalker, info peek-ku belum bisa kuulangi karena cooldown, namun target kemarin terkonfirmasi sebagai hitman",neutral,offend,,,O-b,hasil peek: target kemarin terkonfirmasi hitman
+intent,5035,,"baru ngeh soal tuduhan tadi, tapi gw tetap claim spy",neutral,defend,,,D-b,klaim spy sebagai jawaban atas tuduhan
+intent,5047,,"gw Stalker, ronde lalu gue Peek Naya dan identitasnya Civilian",neutral,defend,,,D-c,hasil peek membersihkan Naya sebagai Civilian
+intent,5050,,"yaudah gue ngaku Hitman, sekarang siapa yang masih berani nuduh gue?",neutral,defend,,,D-f,"sarkasme ngaku Hitman, tantang penuduh"
+intent,5058,,gw Hitman kalau itu bikin kalian berhenti mikir dan langsung salah vote,neutral,defend,,,D-f,"sarkasme 'gw Hitman kalau', vote-nya salah"
+intent,5059,,"role-ku Stalker, dan hasil Peek semalam bilang Ardi itu Spy",neutral,defend,,,D-c,"hasil peek: Ardi Spy, membersihkan dari Hitman"
+intent,5069,,"aku Hitman katanya, tapi anehnya yang paling ribut justru bukan saya",neutral,offend,,,O-g,sarkasme membela plus 'anehnya' tunjuk yang paling ribut
+intent,5094,,"aku bukan Hitman dan bukan Spy, aku Civilian",neutral,defend,,,D-b,sangkalan bukan Hitman plus klaim civilian
+intent,5099,,"gue Stalker, jadi wajar kalau tadi nanya identitas orang",neutral,defend,,,D-e,menjelaskan alasan menanyakan identitas orang
+intent,5107,,"gw Stalker, hasil peek semalam nunjukin si B itu Civilian",neutral,defend,,,D-c,hasil peek membersihkan si B sebagai Civilian
+intent,5108,,"saya bukan Hitman, saya Civilian biasa dan masih meragukan klaim mayoritas",neutral,defend,,,D-b,sangkalan bukan Hitman plus klaim; ragu tanpa penilaian
+intent,5120,,"saya Civilian, tapi aneh kalau semua orang mendadak mengaku punya role penting",neutral,offend,,,O-c,'aneh' menilai perilaku klaim role di chat
+intent,5126,,"gw Hitman kalau itu yang bikin kalian tenang, tapi serius, masa langsung percaya begitu aja?",neutral,defend,,,D-f,sarkasme 'gw Hitman kalau itu bikin tenang'
+intent,5139,,"saya bukan hitman, saya stalker dan siap diverifikasi ronde depan",neutral,defend,,,D-b,sangkalan plus klaim stalker siap diverifikasi
+intent,5141,,"gw civilian asli, role paling sepi tapi bukan ancaman",neutral,defend,,,D-b,klaim civilian plus sangkalan 'bukan ancaman'
+intent,5142,,"aku mengaku stalker, semalam aku peek Raka dan dia bukan hitman",neutral,defend,,,D-c,hasil peek: Raka bukan hitman
+intent,5144,,"lu boleh curiga, tapi gw claim civilian dari awal",neutral,defend,,,D-b,"'lu boleh curiga, tapi' plus klaim civilian"
+intent,5145,,"gw buka kartu sekarang, aku bukan role jahat, cuma civilian",neutral,defend,,,D-b,sangkalan bukan role jahat plus klaim civilian
+intent,5150,,"gw hitman katanya? Itu cuma bluff, role asli gw spy",neutral,defend,,,D-b,klaim Spy sambil menyangkal tuduhan Hitman (bluff)
+intent,5151,,"gue stalker beneran, bukan orang yang asal nuduh dari feeling",neutral,defend,,,D-b,klaim Stalker + sangkal dirinya asal nuduh
+intent,5156,,"gw civilian, bukan bagian dari tim jahat",neutral,defend,,,D-b,klaim Civilian + sangkalan bukan tim jahat
+intent,5157,,"kamu boleh gak percaya, tapi aku claim sebagai spy",neutral,defend,,,D-b,"'boleh gak percaya, tapi' menjawab keraguan atas klaim"
+intent,5159,,"aku mungkin kelihatan mencurigakan, tapi role-ku stalker, bukan hitman",neutral,defend,,,D-b,"akui terlihat curiga, klaim Stalker, sangkal Hitman"
+intent,5160,,"ini bukan gertakan, gw spy dan sudah guard seseorang malam tadi",neutral,defend,,,D-b,'bukan gertakan' menyangkal keraguan atas klaim Spy
+intent,5214,,"si Bimo itu Spy menurut gw, claim-nya paling masuk akal",neutral,defend,,,D-c,"menguatkan klaim Spy Bimo, membersihkan Bimo"
+intent,5342,,gw tidak paham kenapa nama saya muncul di voting,neutral,defend,,,D-d,"mempertanyakan alasan dirinya divote, setara 'nuduh karena apa'"
+intent,475,,"aku sudah kasih semua informasi yang boleh dibuka sebagai Stalker; Peek-ku punya cooldown, jadi jangan paksa aku mengintip lagi malam ini",neutral,defend,,,D-b,klaim + menolak desakan memberi info (penyeragaman)
+intent,564,,"gw nggak dapat informasi Peek malam ini, jadi wajar kalau belum bisa nuduh siapa-siapa",neutral,defend,,,D-e,penjelasan perilaku sendiri dengan makanya/jadi wajar (penyeragaman)
+intent,575,,"aku stalker, peek-ku belum bisa dipakai lagi, jadi jangan paksa aku kasih info palsu",neutral,defend,,,D-b,klaim + menolak desakan memberi info (penyeragaman)
+intent,742,,"gw Civilian biasa, tidak punya skill malam, jadi jangan paksa aku kasih hasil Peek",neutral,defend,,,D-b,klaim + menolak desakan memberi info (penyeragaman)
+intent,792,,"gw spy, makanya gw diem tadi malam sambil nentuin siapa yang perlu dijaga",neutral,defend,,,D-e,penjelasan perilaku sendiri dengan makanya/jadi wajar (penyeragaman)
+intent,804,,"role gw spy, jadi wajar gw fokus nanya siapa yang kemungkinan jadi target",neutral,defend,,,D-e,penjelasan perilaku sendiri dengan makanya/jadi wajar (penyeragaman)
+intent,865,,"aku Stalker, cuma belum bisa peek lagi karena cooldown, jadi jangan paksa kasih nama",neutral,defend,,,D-b,klaim + menolak desakan memberi info (penyeragaman)
+intent,918,,"aku Spy asli, makanya dari tadi lebih fokus lindungi pemain yang dicurigai",neutral,defend,,,D-e,penjelasan perilaku sendiri dengan makanya/jadi wajar (penyeragaman)
+intent,937,,"gw Stalker, tapi info peek ini belum tentu kalian suka, si Bima bukan Civilian",offend,neutral,,,N-f,hasil Peek bukan civilian tanpa kata Hitman (penyeragaman)
+intent,969,,"gw stalker, dan hasil peek-ku bilang si Sari bukan civilian",offend,neutral,,,N-f,hasil Peek bukan civilian tanpa kata Hitman (penyeragaman)
+intent,976,,"menurut info yang aku dapat sebagai stalker, si Rio jelas bukan warga biasa",offend,neutral,,,N-f,hasil Peek bukan civilian tanpa kata Hitman (penyeragaman)
+intent,2157,,"role gw Stalker, makanya gw gak asal ikut vote sebelum punya info",neutral,defend,,,D-e,penjelasan perilaku sendiri dengan makanya/jadi wajar (penyeragaman)
+intent,2237,,"gw Stalker, tapi cuma bisa peek tiap dua ronde, jadi jangan maksa hasil baru",neutral,defend,,,D-b,klaim + menolak desakan memberi info (penyeragaman)
+intent,2508,,"sumpah, tadi koneksi gw sempat nge-lag",neutral,defend,,,D-e,alasan koneksi untuk perilaku sendiri (penyeragaman)
+intent,3311,,"gw stalker, peek gw belum bisa dipakai ronde ini, jadi jangan maksa minta info",neutral,defend,,,D-b,klaim + menolak desakan memberi info (penyeragaman)
+intent,3537,,"aku civilian, makanya dari tadi cuma baca chat",neutral,defend,,,D-e,penjelasan perilaku sendiri dengan makanya/jadi wajar (penyeragaman)
+intent,4969,,"aku spy, jadi wajar kalau dari tadi fokus baca pola serangan",neutral,defend,,,D-e,penjelasan perilaku sendiri dengan makanya/jadi wajar (penyeragaman)
+intent,5055,,"gue Stalker dan Peek-ku belum dipakai, jadi jangan maksa aku buka info sekarang",neutral,defend,,,D-b,klaim + menolak desakan memberi info (penyeragaman)
+intent,5070,,"gue Stalker, belum ada hasil Peek ronde ini, jadi jangan paksa aku karang cerita",neutral,defend,,,D-b,klaim + menolak desakan memberi info (penyeragaman)
+intent,5187,,"aku Stalker, jangan paksa aku buka target peek sebelum waktunya",neutral,defend,,,D-b,klaim + menolak desakan memberi info (penyeragaman)
+target,2,6,Ada penjelasan kenapa klaimnya berubah?,neutral,neutral,[],"[{""pemain"":""Gilang"",""relasi"":""neutral""}]",T-neutral-1,-nya merujuk klaim Gilang yang sedang dibahas
+target,2,8,"Aku juga belum, kedua klaimnya masih berbeda.",neutral,neutral,[],"[{""pemain"":""Gilang"",""relasi"":""neutral""}]",T-neutral-1,-nya merujuk kedua klaim Gilang; fakta tanpa penilaian
+target,2,9,Berarti kita bisa meminta penjelasan dari orangnya.,neutral,neutral,[],"[{""pemain"":""Gilang"",""relasi"":""neutral""}]",T-neutral-1,'orangnya' jelas Gilang dari konteks
+target,2,10,"Kita tidak melihat role asli, tetapi ketidaksesuaian ucapannya jelas.",neutral,offend,[],"[{""pemain"":""Gilang"",""relasi"":""offend""}]",O-c,Penilaian 'ketidaksesuaian jelas' (setara 'nggak cocok') atas ucapan Gilang
+target,3,4,Tapi perpindahannya barengan gitu.,neutral,neutral,[],"[{""pemain"":""Ivan"",""relasi"":""neutral""},{""pemain"":""Jojo"",""relasi"":""neutral""}]",T-neutral-1,-nya merujuk perpindahan Ivan dan Jojo; fakta tanpa penilaian
+target,4,1,Aku sdh membaca jawaban yang membuat dugaan awalku lemah.,neutral,neutral,[],"[{""pemain"":""Nisa"",""relasi"":""neutral""}]",T-neutral-3,Menjawab langsung pertanyaan Nisa kepada Lani dan Maya
+target,4,2,Aku juga berubah pikiran setelah membaca jawaban itu.,neutral,neutral,[],"[{""pemain"":""Nisa"",""relasi"":""neutral""}]",T-neutral-3,Menjawab langsung pertanyaan Nisa kepada Lani dan Maya
+target,4,4,Ada satu pesan yang ternyata terlewat.,neutral,neutral,[],"[{""pemain"":""Nisa"",""relasi"":""neutral""}]",T-neutral-3,Menjawab langsung pertanyaan Nisa di [3] kepada mereka berdua
+target,4,5,Aku juga baru melihatnya belakangan.,neutral,neutral,[],"[{""pemain"":""Nisa"",""relasi"":""neutral""}]",T-neutral-3,Menjawab langsung pertanyaan Nisa di [3] kepada mereka berdua
+target,5,5,"Iya, itu penting untuk memeriksa konsistensi klaimnya.",neutral,neutral,[],"[{""pemain"":""Putri"",""relasi"":""neutral""}]",T-neutral-1,-nya merujuk klaim Putri
+target,5,6,Malam sebelumnya aku juga memilih Oki.,neutral,neutral,"[{""pemain"":""Oki"",""relasi"":""neutral""}]","[{""pemain"":""Oki"",""relasi"":""neutral""},{""pemain"":""Qori"",""relasi"":""neutral""}]",T-neutral-3,Menjawab langsung pertanyaan Qori soal pilihan Guard Putri
+target,5,9,Ceritanya langsung berubah begitu ketahuan nggak cocok.,neutral,offend,[],"[{""pemain"":""Putri"",""relasi"":""offend""}]",O-c,Penilaian 'ketahuan nggak cocok' atas cerita Putri
+target,8,6,"Iya, perhatiin aja siapa yang jarang ngetik.",neutral,offend,[],"[{""pemain"":""tidak_diketahui"",""relasi"":""offend""}]",O-e,Ciri kelompok pasif sebagai sasaran curiga; orangnya tidak jelas
+target,9,4,"Elsa, apa kedua pesannya masih ada di riwayat chat?",neutral,neutral,"[{""pemain"":""Elsa"",""relasi"":""neutral""}]","[{""pemain"":""Elsa"",""relasi"":""neutral""},{""pemain"":""Dena"",""relasi"":""neutral""}]",T-neutral-1,-nya merujuk dua pesan Dena yang disebut Elsa
+target,12,5,Tetapi caramu itu membuat keruh suasana diskusi sejak awal.,neutral,offend,"[{""pemain"":""Joko"",""relasi"":""neutral""}]","[{""pemain"":""Joko"",""relasi"":""offend""}]",O-c,Menyerang perilaku Joko sebagai penuduh/pengajak vote
+target,12,9,Sikap masa bodohmu malah membuat semuanya semakin aneh.,neutral,offend,"[{""pemain"":""Joko"",""relasi"":""neutral""}]","[{""pemain"":""Joko"",""relasi"":""offend""}]",O-a,Penilaian 'semakin aneh' atas sikap Joko
+target,15,5,"Jangan asal nuduh gitu dong, caramu main kotor banget.",defend,offend,"[{""pemain"":""Rafi"",""relasi"":""defend""},{""pemain"":""Umar"",""relasi"":""defend""}]","[{""pemain"":""Rafi"",""relasi"":""defend""},{""pemain"":""Umar"",""relasi"":""defend""},{""pemain"":""Tomi"",""relasi"":""offend""}]",O-g,Teguran tuduhan plus serang perilaku penuduh Tomi ('main kotor')
+target,15,7,"Kalau memang Civilian, harusnya kasih alasan tuduhan yang jelas dong.",neutral,offend,[],"[{""pemain"":""Tomi"",""relasi"":""offend""},{""pemain"":""Rafi"",""relasi"":""defend""}]",O-g,Meragukan klaim Civilian penuduh Tomi sambil membantah tuduhan ke diri
+target,16,3,Aku memilih Yuli.,neutral,neutral,"[{""pemain"":""Yuli"",""relasi"":""neutral""}]","[{""pemain"":""Yuli"",""relasi"":""neutral""},{""pemain"":""Xander"",""relasi"":""neutral""}]",T-neutral-3,Menjawab langsung pertanyaan Xander 'siapa yang kamu Guard'
+target,16,6,Yang bisa kita periksa sekarang adalah konsistensi ceritanya.,neutral,neutral,[],"[{""pemain"":""Wawan"",""relasi"":""neutral""}]",T-neutral-1,-nya merujuk cerita Wawan
+target,16,9,Aku memilih Vera semalam.,neutral,neutral,"[{""pemain"":""Vera"",""relasi"":""neutral""}]","[{""pemain"":""Vera"",""relasi"":""neutral""},{""pemain"":""Yuli"",""relasi"":""neutral""}]",T-neutral-3,Menjawab langsung pertanyaan Yuli kepada Wawan
+target,18,4,Aku juga tidak bersalah; kamu belum menjelaskan alasan menuduh kami.,defend,defend,"[{""pemain"":""Egi"",""relasi"":""defend""}]","[{""pemain"":""Egi"",""relasi"":""defend""},{""pemain"":""Farah"",""relasi"":""defend""}]",D-d,'menuduh kami' membantah tuduhan ke Egi dan Farah
+target,32,4,"Ajakan vote perlu alasan, bukan sekadar nama.",neutral,defend,[],"[{""pemain"":""Intan"",""relasi"":""defend""}]",D-d,Menegur ajakan vote Kiki ke Intan tanpa alasan
+target,32,7,"Chat telat itu wajar, tapi ajakan votenya tetap perlu dijelaskan.",neutral,neutral,[],"[{""pemain"":""Kiki"",""relasi"":""neutral""}]",T-neutral-1,-nya merujuk ajakan vote Kiki
+target,32,8,"Benar, aku mau tahu kenapa namaku yang disebut.",neutral,defend,[],"[{""pemain"":""Intan"",""relasi"":""defend""}]",D-d,"Pihak yang diajak vote mempertanyakan dasarnya, setara 'lu nuduh gw karena apa'"
+target,32,9,Aku tidak pernah mengajak vote siapa pun.,neutral,defend,[],"[{""pemain"":""Kiki"",""relasi"":""defend""}]",D-a,Menyangkal untuk diri sendiri saat ajakan votenya dipersoalkan
+target,35,2,"Aku hanya bisa menyampaikan pilihanku, kalian tidak melihat aksi malamku.",neutral,neutral,[],"[{""pemain"":""Tono"",""relasi"":""neutral""}]",T-neutral-3,Menjawab langsung pertanyaan Tono tentang klaim Sari
+target,35,7,"Belum tahu, yang jelas bukan Vina lagi karena semalam sudah.",neutral,neutral,"[{""pemain"":""Vina"",""relasi"":""neutral""}]","[{""pemain"":""Vina"",""relasi"":""neutral""},{""pemain"":""Tono"",""relasi"":""neutral""}]",T-neutral-3,Menjawab langsung pertanyaan Tono 'kamu mau Guard siapa'
+target,38,6,"Nggak ada, semalam lewat biasa aja.",neutral,neutral,[],"[{""pemain"":""Rama"",""relasi"":""neutral""}]",T-neutral-3,Menjawab langsung pertanyaan Rama kepada Siska
+target,42,6,Kita bisa baca lagi pesan yang mereka kirim setelah diskusi dibuka.,neutral,neutral,[],"[{""pemain"":""Maman"",""relasi"":""neutral""},{""pemain"":""Nando"",""relasi"":""neutral""}]",T-neutral-1,'mereka' jelas Maman dan Nando; ajakan memeriksa tanpa ciri curiga
+target,43,2,Aku mengaku memilih Guard untuk Tomi semalam.,neutral,neutral,"[{""pemain"":""Tomi"",""relasi"":""neutral""}]","[{""pemain"":""Tomi"",""relasi"":""neutral""},{""pemain"":""Sandi"",""relasi"":""neutral""}]",T-neutral-3,Menjawab langsung pertanyaan Sandi 'siapa yang kamu pilih'
+target,45,5,Kalian ini gampang banget punya pikiran negatif ke orang lain.,neutral,defend,"[{""pemain"":""Erwin"",""relasi"":""neutral""},{""pemain"":""Galih"",""relasi"":""neutral""}]","[{""pemain"":""Dian"",""relasi"":""defend""},{""pemain"":""Fara"",""relasi"":""defend""}]",D-d,Menegur para penuduh; melindungi Dian dan Fara yang dituduh
+target,45,6,"Bukan berpikiran negatif, tapi ini kan permainan deduksi, wajar harus curiga.",neutral,neutral,[],"[{""pemain"":""Heri"",""relasi"":""neutral""}]",T-neutral-3,Membalas langsung ucapan Heri yang ditujukan kepada Erwin dan Galih
+target,45,7,Pokoknya kita harus ekstra waspada sama orang yang membela terlalu cepat.,neutral,offend,[],"[{""pemain"":""Dian"",""relasi"":""offend""}]",O-e,Ciri 'membela terlalu cepat' menunjuk Dian dari konteks
+target,45,9,Coba kita perhatikan jawaban mereka pada pertanyaan berikutnya.,neutral,neutral,[],"[{""pemain"":""Dian"",""relasi"":""neutral""},{""pemain"":""Fara"",""relasi"":""neutral""}]",T-neutral-1,'mereka' jelas Dian dan Fara; ajakan memeriksa tanpa ciri curiga
+target,46,3,Tadi ada pemain yang langsung menyanggah pas diskusi baru dimulai.,neutral,neutral,[],"[{""pemain"":""Kiki"",""relasi"":""neutral""}]",T-neutral-3,Menjawab langsung pertanyaan Kiki 'menurut pantauanmu'
+target,47,2,Tadi ada pemain yang membela orang lain dengan kecepatan nggak masuk akal.,neutral,offend,[],"[{""pemain"":""tidak_diketahui"",""relasi"":""offend""}]",O-a,Penilaian 'nggak masuk akal' atas pemain berciri; nama belum diketahui
+target,47,3,"Oh iya, aku juga menyadari ada hal yang seperti itu.",neutral,offend,[],"[{""pemain"":""tidak_diketahui"",""relasi"":""offend""}]",P-setuju,Sekadar setuju dengan [2] yang offend
+target,47,5,"Mungkin itu cara Hitman mencari kepercayaan, tetapi kita perlu melihat isi pembelaannya.",neutral,offend,[],"[{""pemain"":""tidak_diketahui"",""relasi"":""offend""}]",O-a,Menunjuk perilaku di chat sebagai cara Hitman; nama belum diketahui
+target,47,6,"Iya, kecepatan membalas saja belum menjelaskan sikap orangnya.",neutral,defend,[],"[{""pemain"":""tidak_diketahui"",""relasi"":""defend""}]",D-g,Isi melindungi pemain tertentu dari kecurigaan karena cepat membela
+target,65,7,"Balik ke klaim Guard tadi, pilihannya emang nggak masuk akal.",neutral,offend,[],"[{""pemain"":""Udin"",""relasi"":""offend""}]",O-c,Penilaian 'nggak masuk akal' atas klaim Guard Udin
+target,68,1,"Fajar tadi mengajak vote, tetapi tidak menjawab saat diminta alasannya.",neutral,neutral,"[{""pemain"":""Fajar"",""relasi"":""neutral""}]","[{""pemain"":""Fajar"",""relasi"":""neutral""},{""pemain"":""Dika"",""relasi"":""neutral""}]",T-neutral-3,Menjawab langsung pertanyaan Dika kepada Eka
+target,70,6,Kita harus waspada sama pola permainan kayak gini.,neutral,offend,[],"[{""pemain"":""Lusi"",""relasi"":""offend""}]",O-a,Contoh batas 'waspada sama pola main kayak gini'; sasaran Lusi
+target,70,11,Tapi emang agak ngeri sih melihat manuver kilatnya.,neutral,offend,[],"[{""pemain"":""Lusi"",""relasi"":""offend""}]",O-a,Penilaian curiga 'ngeri' atas manuver Lusi di chat
+target,85,7,Kasihan tau kalau ternyata kita salah nuduh orang yang nggak bersalah.,defend,neutral,"[{""pemain"":""Qori"",""relasi"":""defend""}]",[],N-d,"Hati-hati proses, setara 'bahaya kalau kita membuang civilian'"
+target,93,4,Mencurigakan banget sih cara main kayak gitu.,neutral,offend,"[{""pemain"":""Mamat"",""relasi"":""neutral""}]","[{""pemain"":""Mamat"",""relasi"":""offend""}]",O-a,Contoh batas 'mencurigakan banget cara main kayak gitu'; sasaran Mamat
+target,93,8,Sekarang malah bersikap masa bodoh.,neutral,offend,[],"[{""pemain"":""Mamat"",""relasi"":""offend""}]",O-c,Menyerang perilaku Mamat sebagai penuduh
+target,93,9,Ini sih udah fiks nyari masalah aja dari tadi.,neutral,offend,[],"[{""pemain"":""Mamat"",""relasi"":""offend""}]",O-c,Menyerang perilaku Mamat sebagai penuduh
+target,94,0,"Gerakannya memang cepat banget, tapi aku belum mau menyimpulkan apa-apa.",neutral,neutral,[],"[{""pemain"":""Sani"",""relasi"":""neutral""}]",T-neutral-1,-nya merujuk Sani yang dibahas sesi ini
+target,103,6,Dia bilang alasan awalnya belum cukup kuat untuk mengajak orang lain.,neutral,neutral,"[{""pemain"":""Sandi"",""relasi"":""neutral""}]","[{""pemain"":""Sandi"",""relasi"":""neutral""},{""pemain"":""Toni"",""relasi"":""neutral""}]",T-neutral-1,'Dia' jelas Toni dari label riwayat sesi
+target,107,5,Nggak penting gimana? Kan kita butuh info buat nentuin siapa pelakunya.,neutral,neutral,[],"[{""pemain"":""Jaka"",""relasi"":""neutral""}]",T-neutral-3,Membalas langsung ucapan Jaka yang ditujukan ke Lila
+target,111,3,Pesanku sempat gagal terkirim. Sekarang aku bisa ikut diskusi.,neutral,defend,[],"[{""pemain"":""Yoga"",""relasi"":""defend""}]",D-e,Menjelaskan jeda pesan yang disorot Xena; setara 'aku telat karena koneksi'
+target,112,7,Jangan buru-buru nilai klaimnya dulu.,neutral,defend,[],"[{""pemain"":""Fina"",""relasi"":""defend""}]",D-g,Menanggapi tuduhan ke Fina dengan meminta jangan buru-buru menilai
+target,114,1,Kita belum tahu penyebab jeda chatnya.,neutral,defend,[],"[{""pemain"":""Puput"",""relasi"":""defend""}]",D-d,Langsung menanggapi tuduhan ke Puput: dasar jeda chat belum jelas
+target,114,7,"Iya, biarin dia jwb dulu sebelum kita nilai.",neutral,defend,"[{""pemain"":""Puput"",""relasi"":""neutral""}]","[{""pemain"":""Puput"",""relasi"":""defend""}]",D-g,Minta jangan menilai Puput yang sedang dituduh sebelum dia menjawab
+target,116,7,"Aku ngerasa aneh aja sih, masa di saat genting kayak gini masih aja lemot.",neutral,offend,[],"[{""pemain"":""tidak_diketahui"",""relasi"":""offend""}]",O-a,Penilaian 'aneh' atas pemain yang lemot; nama belum diketahui
+target,117,1,"Aman kok, mungkin pelakunya ada di antara kita yang berusaha bersikap tenang.",neutral,offend,[],"[{""pemain"":""tidak_diketahui"",""relasi"":""offend""}]",O-e,Curiga ciri kelompok 'yang berusaha bersikap tenang'; orangnya tidak jelas
+target,122,4,Pesanku memang muncul sebelum dia menarik tuduhan.,neutral,neutral,[],"[{""pemain"":""Citra"",""relasi"":""neutral""}]",T-neutral-1,'dia' jelas Citra; fakta tanpa penilaian
+target,123,1,"Iya, tapi sayang laporannya kurang lengkap jadi agak diragukan kebenarannya.",neutral,neutral,[],"[{""pemain"":""Fahmi"",""relasi"":""neutral""}]",T-neutral-1,-nya merujuk laporan Fahmi; ragu tanpa kata penilaian curiga
+target,123,2,Aku belum sempat mengetik lengkap pilihanku sebagai Spy.,neutral,defend,[],"[{""pemain"":""Fahmi"",""relasi"":""defend""}]",D-b,Klaim Spy menjawab keraguan saat Fahmi sedang dituduh
+target,124,11,"Kembali ke orang yang menarik tuduhan tadi, apakah kita punya alasan lain selain perubahan dugaan?",neutral,neutral,[],"[{""pemain"":""Maman"",""relasi"":""neutral""}]",T-neutral-1,"'orang yang menarik tuduhan' jelas Maman, sama seperti di [U]"
+target,126,10,Ya terserah kalau mau tetep percaya sama dia.,neutral,neutral,[],"[{""pemain"":""Willy"",""relasi"":""neutral""}]",T-neutral-1,'dia' jelas Willy dari label riwayat sesi
+target,127,6,"Kita tanya baik-baik aja, jangan langsung dituduh.",neutral,defend,[],"[{""pemain"":""tidak_diketahui"",""relasi"":""defend""}]",D-g,Teguran 'jangan langsung dituduh' melindungi yang belum ngomong; orangnya tak jelas
+target,128,3,Ya kan kita lagi mengobservasi situasi biar nggak blunder ngasih info.,neutral,defend,[],"[{""pemain"":""Ega"",""relasi"":""defend""},{""pemain"":""Gilang"",""relasi"":""defend""}]",D-e,Menjelaskan sikap pasif Ega dan Gilang yang dipersoalkan Fira
+target,130,4,Jangan gampang terpengaruh sama ajakan yang nggak jelas dasarnya.,neutral,defend,[],"[{""pemain"":""Gani"",""relasi"":""defend""}]",D-d,Mengkritik ajakan vote ke Gani yang tak berdasar
+target,130,7,Bahaya banget kalau kita turutin omongan Sari yang nggak berdasar ini.,neutral,defend,"[{""pemain"":""Sari"",""relasi"":""neutral""}]","[{""pemain"":""Gani"",""relasi"":""defend""}]",D-d,Mengkritik isi tuduhan Sari ke Gani; Sari tidak diserang
+target,132,3,Aku cuma menyampaikan dugaan yang belum pasti.,neutral,defend,[],"[{""pemain"":""Vina"",""relasi"":""defend""}]",D-e,Menjelaskan ajakan vote-nya yang dipersoalkan agar tidak disalahkan
+target,132,9,Saran yang menyesatkan mending nggak usah dikeluarin sekalian.,neutral,offend,[],"[{""pemain"":""Vina"",""relasi"":""offend""}]",O-c,Menyerang perilaku Vina sebagai pengajak vote ('menyesatkan')
+target,134,0,kalian sadar ngga tdi Imam ngajak vote Joko tanpa nyebutin alasannya sama sekali?,neutral,defend,"[{""pemain"":""Imam"",""relasi"":""neutral""},{""pemain"":""Joko"",""relasi"":""neutral""}]","[{""pemain"":""Joko"",""relasi"":""defend""}]",D-d,Menegur ajakan vote Imam ke Joko tanpa alasan
+target,134,3,Emang bahaya banget main tuduh tanpa bawa info atau bukti.,neutral,defend,[],"[{""pemain"":""Joko"",""relasi"":""defend""}]",D-d,Menegur tindakan menuduh tanpa bukti saat Joko sedang dituduh
+target,135,8,"Tapi kita juga nggak tahu apa-apa soal semalam, tenang doang belum tentu pelaku.",neutral,defend,[],"[{""pemain"":""Maman"",""relasi"":""defend""}]",D-d,Membantah dasar tuduhan 'tenang' ke Maman; belum tentu pelaku
+target,136,5,Aku rasa itu cara kotor buat ngalihin perhatian kita dari pelaku aslinya.,neutral,offend,[],"[{""pemain"":""tidak_diketahui"",""relasi"":""offend""}]",O-c,Motif menutupi pelaku pada pengajak vote yang belum diketahui
+target,136,6,"Bener banget, kita nggak boleh kepancing sama trik kayak gitu.",neutral,offend,[],"[{""pemain"":""tidak_diketahui"",""relasi"":""offend""}]",O-c,Perilaku pengajak vote dicap 'trik'; orangnya belum diketahui
+target,136,10,Tapi tetep aja ajakan tanpa dasar itu ngerugiin kita.,neutral,offend,[],"[{""pemain"":""Tito"",""relasi"":""offend""}]",O-c,Menyerang perilaku Tito sebagai pengajak vote setelah pembelaannya
+target,139,8,Kalau gitu jangan asal nebak dari siapa yang diam.,neutral,defend,[],"[{""pemain"":""tidak_diketahui"",""relasi"":""defend""}]",D-g,"Melindungi kelompok berciri 'yang diam', setara contoh D-g"
+target,141,1,"Iya, keliatannya ada yang sengaja nyuruh temen-temennya pindah haluan.",neutral,offend,[],"[{""pemain"":""tidak_diketahui"",""relasi"":""offend""}]",O-a,Curiga ada yang sengaja menggiring teman; nama belum diketahui
+target,141,2,Pasti tujuannya buat ngegagalin kita ngevote Hitman yang sebenernya.,neutral,offend,[],"[{""pemain"":""tidak_diketahui"",""relasi"":""offend""}]",O-c,Motif menggagalkan vote Hitman; orangnya belum diketahui
+target,141,6,"Kalau belum mau menyebut siapa, tuduhannya belum bisa ditanggapi secara khusus.",neutral,neutral,[],"[{""pemain"":""Joko"",""relasi"":""neutral""}]",T-neutral-1,-nya merujuk tuduhan Joko di [5]
+target,141,8,Terus kita diemin aja gitu orang-orang yang manipulasi vote?,neutral,offend,[],"[{""pemain"":""tidak_diketahui"",""relasi"":""offend""}]",O-d,Pertanyaan retoris mencap kelompok 'yang manipulasi vote'
+target,143,1,"Iya, Tito bilang pesan sebelumnya gagal terkirim lalu mengirim jawabannya lagi.",neutral,neutral,"[{""pemain"":""Tito"",""relasi"":""neutral""}]","[{""pemain"":""Tito"",""relasi"":""neutral""},{""pemain"":""Sari"",""relasi"":""neutral""}]",T-neutral-3,Menjawab langsung pertanyaan Sari kepada Wawan
+target,146,0,"Jihan, lu dari tadi nuduhnya ganti-ganti mulu, pertama ke Koko terus sekarang ke aku.",neutral,offend,"[{""pemain"":""Jihan"",""relasi"":""neutral""},{""pemain"":""Koko"",""relasi"":""neutral""}]","[{""pemain"":""Jihan"",""relasi"":""offend""},{""pemain"":""Koko"",""relasi"":""defend""},{""pemain"":""Hadi"",""relasi"":""defend""}]",O-g,"Pola 'kamu dari tadi menuduh aku, sekarang menuduh X' di aturan"
+target,150,1,"Iya, kelihatan banget ada yang mau nyelamatin temennya dari eksekusi.",neutral,offend,[],"[{""pemain"":""tidak_diketahui"",""relasi"":""offend""}]",O-a,Curiga ada yang menyelamatkan teman setim; nama belum diketahui
+target,156,2,"Ah masa? Fara pasti lagi kerja sama sama Erwin buat ngebohongin kita, vote Fara!",offend,offend,"[{""pemain"":""Fara"",""relasi"":""offend""}]","[{""pemain"":""Fara"",""relasi"":""offend""},{""pemain"":""Erwin"",""relasi"":""offend""}]",O-a,Erwin juga dituduh bekerja sama membohongi
+target,157,2,"Sinyalku beneran lagi jelek banget, makanya lag parah.",neutral,defend,[],"[{""pemain"":""Jihan"",""relasi"":""defend""}]",D-e,Menjelaskan lambat balas yang dipersoalkan; setara 'aku telat karena koneksi'
+target,164,2,Aku menarik dugaan awal setelah membaca jawaban baru di chat.,neutral,defend,[],"[{""pemain"":""Hana"",""relasi"":""defend""}]",D-e,Menjelaskan penarikan tuduhan yang baru dipersoalkan Gani dan Indra
+target,169,4,"Tapi kalau sering ganti target gitu, biasanya lagi nyari kambing hitam.",neutral,offend,[],"[{""pemain"":""tidak_diketahui"",""relasi"":""offend""}]",O-c,Perilaku ganti target di chat dinilai cari kambing hitam
+target,170,1,"Iya, kelihatan banget ada yang mau nyelametin temen satu timnya.",neutral,offend,[],"[{""pemain"":""tidak_diketahui"",""relasi"":""offend""}]",O-a,Curiga ada yang menyelamatkan teman setim; nama belum diketahui
+target,170,4,"Perubahan ajakan vote perlu ditanya alasannya, bukan langsung dianggap jahat.",neutral,defend,[],"[{""pemain"":""tidak_diketahui"",""relasi"":""defend""}]",D-d,Menanggapi kecurigaan [1]; setara 'ajakan vote perlu alasan'
+target,179,10,"Waktunya memang cocok, tapi belum tentu hasil Peek-nya benar.",neutral,neutral,[],"[{""pemain"":""Citra"",""relasi"":""neutral""}]",T-neutral-1,-nya merujuk hasil Peek Citra; ragu tanpa penilaian
+target,183,1,"Koneksiku lagi jelek banget nih, makanya delay.",neutral,defend,"[{""pemain"":""Nisa"",""relasi"":""neutral""}]","[{""pemain"":""Oman"",""relasi"":""defend""}]",D-e,Menjelaskan chat terpotong yang dipersoalkan; setara 'aku telat karena koneksi'
+target,183,3,"Eh tapi kalau dipikir-pikir, Putri juga baru ngerespon sekarang setelah lama diam, kan?",neutral,offend,"[{""pemain"":""Putri"",""relasi"":""neutral""}]","[{""pemain"":""Putri"",""relasi"":""offend""}]",O-e,Mengalihkan kecurigaan ke Putri yang juga lama diam
+target,187,4,"Tapi tetep aja, kalau terlalu pasif gitu kan merugikan tim.",neutral,offend,[],"[{""pemain"":""Dodi"",""relasi"":""offend""},{""pemain"":""Erna"",""relasi"":""offend""}]",O-a,Menolak pembelaan; pasif Dodi dan Erna dinilai merugikan tim
+target,189,1,"Wah cepet banget claimnya, emang ada info apa?",neutral,neutral,[],"[{""pemain"":""Indra"",""relasi"":""neutral""}]",T-neutral-1,-nya merujuk klaim Indra
+target,189,5,Klaim yang minim bukti gitu biasanya cuma trik doang.,neutral,offend,[],"[{""pemain"":""Indra"",""relasi"":""offend""}]",O-c,Klaim Indra dinilai 'cuma trik'
+target,198,1,Aku membela Rama karena jawaban barunya menunjukkan bahwa dugaan awalku terlalu lemah.,defend,defend,"[{""pemain"":""Rama"",""relasi"":""defend""}]","[{""pemain"":""Rama"",""relasi"":""defend""},{""pemain"":""Qori"",""relasi"":""defend""}]",D-e,Qori dituduh berubah; menjelaskan alasan perubahan sekaligus membela Rama
+target,200,3,Tapi tuduhan yang dia bantah tadi memang hanya berdasarkan firasat.,neutral,defend,[],"[{""pemain"":""Joko"",""relasi"":""defend""}]",D-e,Membenarkan tindakan Joko: tuduhan yang dibantahnya cuma firasat
+target,200,5,Kita perlu membaca lagi alasan pembelaannya.,neutral,neutral,[],"[{""pemain"":""Joko"",""relasi"":""neutral""}]",T-neutral-1,-nya pada 'pembelaannya' jelas Joko
+target,201,7,Kalau dia nggak ngomong-ngomong gimana?,neutral,neutral,"[{""pemain"":""Opi"",""relasi"":""neutral""}]","[{""pemain"":""Opi"",""relasi"":""neutral""},{""pemain"":""Maman"",""relasi"":""neutral""}]",T-neutral-1,'dia' jelas Maman yang sedang dibahas
+target,201,11,Kamu yakin mau biarin dia gitu aja?,neutral,neutral,"[{""pemain"":""Opi"",""relasi"":""neutral""}]","[{""pemain"":""Opi"",""relasi"":""neutral""},{""pemain"":""Maman"",""relasi"":""neutral""}]",T-neutral-1,'dia' jelas Maman; 'kamu' Opi
+target,204,3,"Eh ngomong-ngomong, Yogi dari tadi cuma ikutan nyerang orang tanpa bawa bukti jelas ya.",neutral,offend,"[{""pemain"":""Yogi"",""relasi"":""neutral""}]","[{""pemain"":""Yogi"",""relasi"":""offend""}]",O-c,Mencap pola Yogi 'cuma ikutan nyerang' = kritik perilaku penuduh
+target,206,5,"Iya, aku belum pernah mengaku Spy.",neutral,neutral,[],"[{""pemain"":""Ega"",""relasi"":""neutral""}]",T-neutral-3,Menjawab langsung ucapan Ega tentang 'pesanmu'
+target,238,4,"Bisa aja itu cuma kebiasaan ngetiknya, belum tentu disengaja.",neutral,defend,[],"[{""pemain"":""tidak_diketahui"",""relasi"":""defend""}]",D-e,Penjelasan polos atas perilaku yang dituduh Vina; orangnya belum jelas
+target,241,6,Malam sebelumnya aku juga memilih Eko.,neutral,neutral,"[{""pemain"":""Eko"",""relasi"":""neutral""}]","[{""pemain"":""Eko"",""relasi"":""neutral""},{""pemain"":""Ferry"",""relasi"":""neutral""}]",T-neutral-3,Menjawab langsung pertanyaan Ferry soal Guard malam sebelumnya
+target,242,0,"Iya, plin-plan banget bikin pusing.",neutral,offend,[],"[{""pemain"":""Luki"",""relasi"":""offend""}]",O-a,"Penilaian 'plin-plan banget' atas perilaku Luki, seperti 'mencla-mencle'"
+target,244,2,Keduanya perlu menjelaskan perubahannya sebelum dinilai.,neutral,neutral,[],"[{""pemain"":""Roni"",""relasi"":""neutral""}]",T-neutral-1,'Keduanya' jelas Roni dan Siska (pengirim)
+target,244,5,Kalau nggak jelas jangan nuduh.,neutral,defend,[],"[{""pemain"":""Roni"",""relasi"":""defend""},{""pemain"":""Siska"",""relasi"":""defend""}]",D-d,Teguran 'jangan nuduh' melindungi dua pemain yang klaimnya dipertimbangkan
+target,246,6,Penjelasannya perlu didengar dulu.,neutral,neutral,[],"[{""pemain"":""Cepi"",""relasi"":""neutral""}]",T-neutral-1,-nya pada 'penjelasannya' jelas Cepi
+target,247,3,Tapi klaim Endang itu meragukan.,neutral,offend,"[{""pemain"":""Endang"",""relasi"":""neutral""}]","[{""pemain"":""Endang"",""relasi"":""offend""}]",O-c,Menilai klaim Endang 'meragukan' = serang kredibilitas
+target,247,4,"Iya, jangan-jangan Endang bohong.",neutral,offend,"[{""pemain"":""Endang"",""relasi"":""neutral""}]","[{""pemain"":""Endang"",""relasi"":""offend""}]",O-c,'jangan-jangan Endang bohong' = tuduhan bohong
+target,247,5,Aku hanya menyampaikan klaim Stalker dan hasil yang kuketahui.,neutral,defend,[],"[{""pemain"":""Endang"",""relasi"":""defend""}]",D-b,Menegaskan klaim Stalker untuk menjawab tuduhan bohong
+target,251,2,Aku tadi ada urusan sebentar di luar permainan.,neutral,neutral,[],"[{""pemain"":""Eka"",""relasi"":""neutral""}]",T-neutral-3,Menjawab langsung pertanyaan Eka kepada dua pemain yang terlambat
+target,251,3,Aku juga baru kembali memegang ponsel.,neutral,neutral,[],"[{""pemain"":""Eka"",""relasi"":""neutral""}]",T-neutral-3,Menjawab langsung pertanyaan Eka kepada dua pemain yang terlambat
+target,251,10,Dua orang yang tadi terlambat sudah menyampaikan penjelasannya.,neutral,neutral,[],"[{""pemain"":""Dani"",""relasi"":""neutral""},{""pemain"":""Fajar"",""relasi"":""neutral""}]",T-neutral-1,'dua orang yang terlambat ... penjelasannya' jelas Dani dan Fajar
+target,253,2,"Iya, kita jangan langsung memastikan penyebabnya.",neutral,neutral,[],"[{""pemain"":""Laras"",""relasi"":""neutral""}]",T-neutral-1,-nya pada 'penyebabnya' merujuk diamnya Laras
+target,266,2,Aku tidak punya Guard; aku mengaku Civilian.,neutral,neutral,[],"[{""pemain"":""Weni"",""relasi"":""neutral""}]",T-neutral-3,"Menjawab langsung pertanyaan Weni 'Siapa yang kamu pilih, Vian?'"
+target,268,2,"Dih, ngarang lu, gw aja civilian biasa yang gak tau apa-apa.",defend,offend,"[{""pemain"":""Dedi"",""relasi"":""defend""}]","[{""pemain"":""Dedi"",""relasi"":""defend""},{""pemain"":""Cici"",""relasi"":""offend""}]",O-g,Bela diri + 'ngarang lu' menyerang kredibilitas Cici
+target,268,6,"Benar, kalau Stalker-nya ternyata palsu gimana?",neutral,neutral,[],"[{""pemain"":""Cici"",""relasi"":""neutral""}]",T-neutral-1,"'Stalker-nya' jelas Cici, satu-satunya pengaku Stalker"
+target,269,2,"Iya bener, gw intip Hesti semalem.",neutral,neutral,"[{""pemain"":""Hesti"",""relasi"":""neutral""}]","[{""pemain"":""Hesti"",""relasi"":""neutral""},{""pemain"":""Iwan"",""relasi"":""neutral""}]",T-neutral-3,Menjawab langsung pertanyaan Iwan 'Intip siapa emangnya?'
+target,269,9,"Oke, gw udah yakin nih sekarang.",neutral,neutral,[],"[{""pemain"":""Iwan"",""relasi"":""neutral""}]",T-neutral-3,Menjawab langsung keluhan Iwan 'lama banget lu ngasih taunya'
+target,269,10,Buruan kasih tau aja hasilnya.,neutral,neutral,[],"[{""pemain"":""Gilang"",""relasi"":""neutral""}]",T-neutral-1,'hasilnya' merujuk hasil Peek Gilang yang ditunggu
+target,270,2,"Awalnya mengajak vote Dika, lalu mengajak vote aku saat diskusi hampir selesai.",neutral,neutral,"[{""pemain"":""Dika"",""relasi"":""neutral""}]","[{""pemain"":""Dika"",""relasi"":""neutral""},{""pemain"":""Citra"",""relasi"":""neutral""}]",T-neutral-3,Menjawab langsung pertanyaan Citra kepada Agung
+target,274,1,"Pesan terpotong belum tentu ada apa-apa, bisa aja koneksinya lagi jelek.",neutral,defend,"[{""pemain"":""Jojo"",""relasi"":""neutral""}]","[{""pemain"":""Jojo"",""relasi"":""defend""}]",D-e,"'belum tentu ada apa-apa, bisa aja koneksinya jelek' membela Jojo"
+target,291,7,Klaimnya bisa dipercaya nggak ya?,neutral,neutral,[],"[{""pemain"":""Joko"",""relasi"":""neutral""}]",T-neutral-1,-nya merujuk klaim Joko yang sedang dibahas
+target,293,8,Semoga dia segera merespons dengan jelas.,neutral,neutral,[],"[{""pemain"":""Qori"",""relasi"":""neutral""}]",T-neutral-1,"dia = Qori, pemain yang dibahas sepanjang sesi"
+target,294,3,Aku memutuskan untuk mengintip Xena.,neutral,neutral,"[{""pemain"":""Xena"",""relasi"":""neutral""}]","[{""pemain"":""Xena"",""relasi"":""neutral""},{""pemain"":""Wawan"",""relasi"":""neutral""}]",T-neutral-3,menjawab langsung pertanyaan Wawan siapa yang diintip
+target,297,2,"Semalam aku Peek Kiki, tapi hasilnya belum mau kubagikan.",neutral,neutral,"[{""pemain"":""Kiki"",""relasi"":""neutral""}]","[{""pemain"":""Kiki"",""relasi"":""neutral""},{""pemain"":""Jaka"",""relasi"":""neutral""}]",T-neutral-3,menjawab langsung permintaan Jaka membagikan info
+target,302,3,Malam sebelumnya aku juga memilih Caca.,neutral,neutral,"[{""pemain"":""Caca"",""relasi"":""neutral""}]","[{""pemain"":""Caca"",""relasi"":""neutral""},{""pemain"":""Doni"",""relasi"":""neutral""}]",T-neutral-3,menjawab langsung pertanyaan Doni soal Guard malam sebelumnya
+target,303,2,"Iya, aku merasa ada yang omongannya beda dari awal.",neutral,neutral,"[{""pemain"":""Fifi"",""relasi"":""neutral""}]",[],T-neutral-umum,"menjawab pertanyaan Fifi untuk semua orang, tanpa nama"
+target,305,1,"Iya, jangan langsung nyimpulin apa-apa cuma karena dia diam.",neutral,defend,"[{""pemain"":""Reno"",""relasi"":""neutral""},{""pemain"":""Nina"",""relasi"":""neutral""}]","[{""pemain"":""Reno"",""relasi"":""defend""}]",D-g,minta jangan menyimpulkan hanya karena Reno diam
+target,309,1,"Iya, aku mengikuti saran Reni.",neutral,neutral,"[{""pemain"":""Reni"",""relasi"":""neutral""}]","[{""pemain"":""Reni"",""relasi"":""neutral""},{""pemain"":""Bima"",""relasi"":""neutral""}]",T-neutral-3,menjawab langsung pertanyaan Bima
+target,312,2,"Nggak bisa, kita cuma bisa pegang omongannya.",neutral,neutral,[],"[{""pemain"":""Kiki"",""relasi"":""neutral""}]",T-neutral-1,omongannya = klaim Kiki yang sedang dibahas
+target,312,5,Apa alasan tuduhan itu selain klaimnya belum bisa dipastikan?,neutral,neutral,[],"[{""pemain"":""Kiki"",""relasi"":""neutral""}]",T-neutral-1,klaimnya = klaim Spy Kiki; pertanyaan tanpa penilaian
+target,316,6,"Iya bener, semalam aku Guard Cinta.",neutral,neutral,"[{""pemain"":""Cinta"",""relasi"":""neutral""}]","[{""pemain"":""Cinta"",""relasi"":""neutral""},{""pemain"":""Bima"",""relasi"":""neutral""}]",T-neutral-3,menjawab langsung pertanyaan Bima soal pilihan Guard
+target,316,11,"Aku tidak punya Guard, aku mengaku Stalker.",neutral,neutral,[],"[{""pemain"":""Cinta"",""relasi"":""neutral""},{""pemain"":""Bima"",""relasi"":""neutral""}]",T-neutral-3,menjawab langsung pertanyaan Cinta dan ucapan Bima
+target,317,3,"Sebenarnya aku nggak punya Guard, aku Civilian.",neutral,neutral,[],"[{""pemain"":""Gilang"",""relasi"":""neutral""},{""pemain"":""Hari"",""relasi"":""neutral""}]",T-neutral-3,menjawab langsung pertanyaan Gilang dan Hari soal Guard
+target,319,7,Aku belum ingin membagikan hasilnya sekarang.,neutral,neutral,[],"[{""pemain"":""Niko"",""relasi"":""neutral""}]",T-neutral-3,menjawab langsung pertanyaan Niko soal hasil intip
+target,320,6,Pesan kepotong gitu bisa aja gara-gara kena Gag Order.,neutral,defend,[],"[{""pemain"":""Bima"",""relasi"":""defend""},{""pemain"":""Doni"",""relasi"":""defend""}]",D-e,menjelaskan pesan terpotong Bima dan Doni agar tak dicurigai
+target,321,1,"Aku baru bisa membalas, koneksiku sempat terputus.",neutral,defend,[],"[{""pemain"":""Dina"",""relasi"":""defend""}]",D-e,"menjelaskan telat membalas karena koneksi, sama dengan teks defend lain"
+target,324,4,"Terus dia sekarang ke mana, kok nggak muncul?",neutral,neutral,[],"[{""pemain"":""Tomi"",""relasi"":""neutral""}]",T-neutral-1,dia = Tomi yang dibahas di pesan sebelumnya
+target,325,4,"Tapi tetep aja, gantinya cepet banget tadi.",neutral,neutral,[],"[{""pemain"":""Budi"",""relasi"":""neutral""}]",T-neutral-1,gantinya merujuk perubahan ajakan vote Budi
+target,331,1,"Gak tahu, aku aja nggak tahu siapa yang disandera semalam.",neutral,neutral,[],"[{""pemain"":""Maman"",""relasi"":""neutral""}]",T-neutral-3,menjawab langsung pertanyaan Maman
+target,336,4,"Kalau mau ngajak vote, kasih alasan dulu dong, jangan sampai kita salah ngeluarin orang.",neutral,defend,[],"[{""pemain"":""Caca"",""relasi"":""defend""}]",D-d,menegur ajakan vote Caca tanpa alasan
+target,345,2,"Guard atau Peek, siapa tahu ada yang mau ngaku.",neutral,neutral,[],"[{""pemain"":""Zahra"",""relasi"":""neutral""}]",T-neutral-3,menjawab langsung pertanyaan klarifikasi Zahra
+target,350,3,"Eh tapi seriusan, hasil intip lu semalam gimana?",neutral,neutral,[],"[{""pemain"":""Bobi"",""relasi"":""neutral""}]",T-neutral-2,lu = Bobi yang mengaku Stalker
+target,358,1,"Maaf, tadi koneksiku putus.",neutral,defend,[],"[{""pemain"":""Nia"",""relasi"":""defend""}]",D-e,menjelaskan belum membalas karena koneksi putus
+target,381,2,"Aku klaim Stalker, hasil Peek-ku menunjukkan Evan Civilian.",neutral,defend,"[{""pemain"":""Evan"",""relasi"":""neutral""}]","[{""pemain"":""Evan"",""relasi"":""defend""}]",D-c,"hasil Peek menyatakan Evan Civilian, membersihkan Evan"
+target,381,5,"Eh, maksudku Cici. Hasilnya Civilian.",neutral,defend,"[{""pemain"":""Cici"",""relasi"":""neutral""}]","[{""pemain"":""Cici"",""relasi"":""defend""}]",D-c,"hasil Peek menyatakan Cici Civilian, membersihkan Cici"
+target,384,1,"Maaf, koneksi putus tadi.",neutral,defend,[],"[{""pemain"":""Gilang"",""relasi"":""defend""}]",D-e,menjelaskan jeda balasan karena koneksi putus
+target,388,8,"Sebentar, aku sedang mengetik penjelasannya.",neutral,neutral,[],"[{""pemain"":""Cinta"",""relasi"":""neutral""}]",T-neutral-3,Menjawab langsung permintaan Cinta 'jelaskan pilihan Guard-mu'
+target,400,2,"Sebentar, aku sedang menyusun penjelasan.",neutral,neutral,[],"[{""pemain"":""Budi"",""relasi"":""neutral""}]",T-neutral-3,"Menjawab pertanyaan Budi kepada pengklaim Spy, yaitu Doni"
+target,401,2,Di akhir diskusi ada yang mengganti ajakan vote di chat.,neutral,neutral,[],"[{""pemain"":""Bima"",""relasi"":""neutral""}]",T-neutral-3,Menjawab langsung pertanyaan Bima 'Nyadar apa cuy?'
+target,401,4,"Iya, ajakannya berubah dari satu nama ke nama lain.",neutral,neutral,[],"[{""pemain"":""Citra"",""relasi"":""neutral""}]",T-neutral-3,Menjawab langsung 'Ah masa sih?' dari Citra
+target,401,6,"Nah itu dia, aku nggak sempet lihat namanya.",neutral,neutral,[],"[{""pemain"":""Bima"",""relasi"":""neutral""}]",T-neutral-3,Menjawab langsung pertanyaan Bima siapa yang memindahkan ajakan
+target,404,1,"Boleh, rencananya gimana? Aku jg mau dengar.",neutral,neutral,[],"[{""pemain"":""Maman"",""relasi"":""neutral""}]",T-neutral-1,-nya merujuk rencana vote Maman
+target,414,3,"Bisa jadi, atau dia takut jadi incaran.",neutral,neutral,"[{""pemain"":""Udin"",""relasi"":""neutral""}]",[],T-neutral,"'dia' = Stalker tak dikenal; Udin hanya disetujui, tidak disapa"
+target,417,1,Omongan yang mana Bim?,neutral,neutral,[],"[{""pemain"":""Bima"",""relasi"":""neutral""}]",T-neutral-1,Panggilan 'Bim' = Bima
+target,418,9,"Iya, perhatiin siapa yang jawabannya berubah-ubah.",neutral,offend,[],"[{""pemain"":""tidak_diketahui"",""relasi"":""offend""}]",O-e,Ciri curiga 'jawabannya berubah-ubah'; orangnya belum jelas
+target,422,1,"Iya, pesannya baru masuk.",neutral,neutral,[],"[{""pemain"":""Hadi"",""relasi"":""neutral""}]",T-neutral-1,-nya merujuk pesan Hadi yang dibahas
+target,430,8,"Coba scroll lagi, tadi dia ngomong apa persisnya.",neutral,neutral,[],"[{""pemain"":""Doni"",""relasi"":""neutral""}]",T-neutral-1,'dia' jelas Doni yang ucapannya sedang dibahas
+target,431,7,Lalu apa hasil akhirnya?,neutral,neutral,[],"[{""pemain"":""Intan"",""relasi"":""neutral""}]",T-neutral-1,-nya merujuk hasil Peek Intan
+target,442,4,Tapi ada yang diamnya aneh.,neutral,offend,[],"[{""pemain"":""tidak_diketahui"",""relasi"":""offend""}]",O-a,Penilaian 'aneh' atas diam seseorang; orangnya belum disebut
+target,445,2,Siapa targetnya?,neutral,neutral,[],"[{""pemain"":""Eka"",""relasi"":""neutral""}]",T-neutral-1,-nya merujuk target Peek Eka
+target,445,3,Aku tidak mau menyebut targetnya sekarang.,neutral,neutral,[],"[{""pemain"":""Fani"",""relasi"":""neutral""}]",T-neutral-3,Menjawab langsung pertanyaan Fani soal target Peek
+target,445,4,"Oke deh, berarti klaimnya belum bisa dicek.",neutral,neutral,[],"[{""pemain"":""Eka"",""relasi"":""neutral""}]",T-neutral-1,-nya merujuk klaim Stalker Eka; tanpa penilaian
+target,447,9,Kalian sekarang sudah ikut membalas.,neutral,neutral,"[{""pemain"":""Raka"",""relasi"":""neutral""},{""pemain"":""Uci"",""relasi"":""neutral""}]","[{""pemain"":""Raka"",""relasi"":""neutral""},{""pemain"":""Toni"",""relasi"":""neutral""}]",T-neutral-2,"'Kalian' = Raka dan Toni yang tadi dituduh diam, bukan Uci"
+target,451,2,"Aku biasa aja kok, kalian yang panik sendiri.",defend,offend,"[{""pemain"":""Hani"",""relasi"":""defend""}]","[{""pemain"":""Hani"",""relasi"":""defend""},{""pemain"":""Fani"",""relasi"":""offend""},{""pemain"":""Gilang"",""relasi"":""offend""}]",O-g,Bela diri plus serang perilaku penuduh ('kalian yang panik')
+target,461,9,"Yang dituduh tadi, ada tanggapan soal klaim Peek itu?",neutral,neutral,[],"[{""pemain"":""Gilang"",""relasi"":""neutral""}]",T-neutral-2,Sapaan 'yang dituduh tadi' jelas Gilang
+target,461,11,Agak aneh sih klaim dari Fikri tadi.,neutral,offend,"[{""pemain"":""Fikri"",""relasi"":""neutral""}]","[{""pemain"":""Fikri"",""relasi"":""offend""}]",O-c,Penilaian 'aneh' atas klaim Fikri
+target,467,0,Aku membaca perubahan ajakan vote yang aneh dalam chat.,neutral,offend,[],"[{""pemain"":""tidak_diketahui"",""relasi"":""offend""}]",O-a,Penilaian 'aneh' atas perilaku di chat; pelaku belum disebut
+target,468,8,"Iya, sambil perhatiin siapa yang jawabannya berubah-ubah.",neutral,offend,[],"[{""pemain"":""tidak_diketahui"",""relasi"":""offend""}]",O-e,Ciri curiga 'jawabannya berubah-ubah'; orangnya belum jelas
+target,470,2,Kita dengarkan penjelasan keduanya.,neutral,neutral,[],"[{""pemain"":""Budi"",""relasi"":""neutral""},{""pemain"":""Deni"",""relasi"":""neutral""}]",T-neutral-1,'keduanya' jelas Budi dan Deni
+target,470,6,Keduanya belum memberi penjelasan lebih lanjut.,neutral,neutral,[],"[{""pemain"":""Budi"",""relasi"":""neutral""},{""pemain"":""Deni"",""relasi"":""neutral""}]",T-neutral-1,'Keduanya' jelas Budi dan Deni; fakta tanpa penilaian
+target,473,7,"Jangan terpancing, itu taktik Hitman memecah fokus.",neutral,offend,[],"[{""pemain"":""tidak_diketahui"",""relasi"":""offend""}]",O-a,Menilai ajakan vote acak di chat sebagai taktik Hitman
+target,475,3,"Hati-hati, klaim peran begini sering menjadi jebakan musuh.",neutral,offend,[],"[{""pemain"":""tidak_diketahui"",""relasi"":""offend""}]",O-a,Setara 'waspada sama pola main kayak gini'; klaim mana tak jelas
+target,476,8,Koreksinya bisa kita baca lagi di chat.,neutral,neutral,[],"[{""pemain"":""Mirza"",""relasi"":""neutral""}]",T-neutral-1,-nya merujuk koreksi klaim Mirza
+target,494,U,"Tuduhanmu berpindah tanpa alasan kuat. Dia belum terbukti Hitman, jangan vote dulu.",defend,offend,"[{""pemain"":""Sandi"",""relasi"":""defend""}]","[{""pemain"":""Sandi"",""relasi"":""defend""},{""pemain"":""Rina"",""relasi"":""offend""}]",O-g,Membela Sandi sambil menyerang penuduh yang berpindah sasaran tanpa alasan.
+target,495,1,"Iya, aku membaca perubahan ajakannya.",neutral,neutral,[],"[{""pemain"":""Fajar"",""relasi"":""neutral""}]",T-neutral-1,'ajakannya' jelas merujuk Fajar dari pesan sebelumnya.
+target,497,6,"Ada pesan penjelasannya, ya?",neutral,neutral,[],"[{""pemain"":""Intan"",""relasi"":""neutral""}]",T-neutral-1,'penjelasannya' jelas merujuk penjelasan Intan.
+target,505,0,"Kok Bimo kemaren nuduh si Caca, sekarang malah nuduh aku?",neutral,offend,"[{""pemain"":""Bimo"",""relasi"":""neutral""},{""pemain"":""Caca"",""relasi"":""neutral""}]","[{""pemain"":""Hana"",""relasi"":""defend""},{""pemain"":""Bimo"",""relasi"":""offend""}]",O-g,Penuduh pindah sasaran ke pengirim; membela diri sambil menyerang Bimo.
+target,510,2,Biasanya sih hitman emang nyari aman dan gak mau menonjol.,offend,neutral,"[{""pemain"":""tidak_diketahui"",""relasi"":""offend""}]",[],N-hitman-umum,"Pernyataan umum tentang Hitman, tidak menunjuk perilaku pemain."
+target,511,1,Nuduh sana sini emang ciri khas hitman.,offend,neutral,"[{""pemain"":""Fina"",""relasi"":""offend""}]",[],N-hitman-umum,Pernyataan umum ciri Hitman tanpa menunjuk pemain di chat.
+target,524,4,Terus jadinya kita mau vote yang mana nih dari mereka?,neutral,neutral,[],"[{""pemain"":""Budi"",""relasi"":""neutral""},{""pemain"":""Coki"",""relasi"":""neutral""}]",T-neutral-1,'mereka' jelas Budi dan Coki dari konteks.
+target,528,2,"Oke, klaimnya sudah terbaca.",neutral,neutral,[],"[{""pemain"":""Rian"",""relasi"":""neutral""}]",T-neutral-1,'klaimnya' jelas merujuk klaim Rian.
+target,530,3,"Lah kok gw, lu nyari tumbal ya?",defend,offend,"[{""pemain"":""Budi"",""relasi"":""defend""}]","[{""pemain"":""Budi"",""relasi"":""defend""},{""pemain"":""Andi"",""relasi"":""offend""}]",O-g,Membela diri sambil menuduh Andi mencari tumbal (motif pelaku).
+target,531,6,Kita pantau aja siapa yang dari tadi belum ngomong sama sekali.,neutral,offend,[],"[{""pemain"":""tidak_diketahui"",""relasi"":""offend""}]",O-e,Mengarahkan pantauan ke kelompok berciri belum bicara.
+target,548,1,"Iya, aku klaim Spy dan Guard Dodi.",neutral,neutral,"[{""pemain"":""Dodi"",""relasi"":""neutral""}]","[{""pemain"":""Dodi"",""relasi"":""neutral""},{""pemain"":""Aldi"",""relasi"":""neutral""}]",T-neutral-3,Menjawab langsung pertanyaan Aldi kepada Beni.
+target,561,3,Sinyal aku jelek sepertinya hari ini.,neutral,neutral,[],"[{""pemain"":""Hasan"",""relasi"":""neutral""}]",T-neutral-3,Menjawab langsung ucapan Hasan kepada Tomi.
+target,565,5,Aku melakukan peek pada Jamil tadi malam.,neutral,neutral,"[{""pemain"":""Jamil"",""relasi"":""neutral""}]","[{""pemain"":""Jamil"",""relasi"":""neutral""},{""pemain"":""Ivan"",""relasi"":""neutral""}]",T-neutral-3,Menjawab langsung pertanyaan Ivan kepada Lestari.
+target,568,3,"Aku hanya mengikuti insting, Umar berdiam diri terlalu lama.",offend,offend,"[{""pemain"":""Umar"",""relasi"":""offend""}]","[{""pemain"":""Soni"",""relasi"":""defend""},{""pemain"":""Umar"",""relasi"":""offend""}]",O-g,Campuran: menjelaskan tindakannya sendiri lalu menuduh Umar.
+target,573,6,Klaim keduanya sudah terdengar.,neutral,neutral,[],"[{""pemain"":""Miko"",""relasi"":""neutral""},{""pemain"":""Ojan"",""relasi"":""neutral""}]",T-neutral-1,"'keduanya' jelas Miko dan Ojan, sesuai konvensi 'Keduanya diam'."
+target,575,11,Buruan waktunya sudah mau habis.,offend,neutral,"[{""pemain"":""Siska"",""relasi"":""offend""}]",[],N-c,"Hanya soal waktu, tanpa sasaran atau tuduhan."
+target,621,2,Bagaimana kalau kita perhatikan pemain yang pasif?,neutral,offend,[],"[{""pemain"":""tidak_diketahui"",""relasi"":""offend""}]",O-e,Ajakan memeriksa kelompok berciri 'yang pasif'; orangnya belum jelas
+target,621,4,Mending kita cari yg jarang berbicara dari awal.,neutral,offend,[],"[{""pemain"":""tidak_diketahui"",""relasi"":""offend""}]",O-e,Arahkan pencarian pelaku ke ciri 'jarang berbicara'; orangnya belum jelas
+target,622,3,"Itu terlalu umum, tolong sebutkan detailnya.",neutral,neutral,[],"[{""pemain"":""Raka"",""relasi"":""neutral""}]",T-neutral-1,-nya merujuk dugaan Raka yang baru disampaikan
+target,622,4,"Aku tidak bisa mengungkapkannya sekarang, masih terlalu berisiko.",neutral,neutral,[],"[{""pemain"":""Citra"",""relasi"":""neutral""}]",T-neutral-3,Menjawab langsung permintaan Citra kepada Raka
+target,626,2,Kita tidak boleh terburu-buru mengikuti ajakannya.,neutral,neutral,[],"[{""pemain"":""Gilang"",""relasi"":""neutral""}]",T-neutral-1,-nya merujuk ajakan vote Gilang
+target,626,6,Belum ada penjelasan tambahan dari pemain itu.,neutral,neutral,[],"[{""pemain"":""Gilang"",""relasi"":""neutral""}]",T-neutral-1,'pemain itu' jelas Gilang; fakta tanpa penilaian
+target,627,2,Mereka pasti sengaja menghindar biar nggak salah ngomong.,neutral,offend,[],"[{""pemain"":""tidak_diketahui"",""relasi"":""offend""}]",O-a,Penilaian 'pasti sengaja menghindar' atas kelompok; orangnya belum disebut
+target,633,8,"Jadi, kembali ke orang yang pasif tadi ya?",neutral,neutral,[],"[{""pemain"":""Hani"",""relasi"":""neutral""}]",T-neutral-1,'orang yang pasif tadi' jelas Hani dari [0]
+target,634,3,Kok tiba-tiba ke Joko? Apa alasannya?,neutral,neutral,"[{""pemain"":""Joko"",""relasi"":""neutral""}]","[{""pemain"":""Joko"",""relasi"":""neutral""},{""pemain"":""Cinta"",""relasi"":""neutral""}]",T-neutral-1,-nya merujuk alasan tuduhan Cinta yang ditanya
+target,634,8,"Tunggu sebentar, coba kita pikirkan ulang dan jangan fokus pada Joko terus.",neutral,defend,"[{""pemain"":""Joko"",""relasi"":""neutral""}]","[{""pemain"":""Joko"",""relasi"":""defend""}]",D-g,Menanggapi tuduhan ke Joko dengan meminta jangan buru-buru
+target,635,0,"Maafkan aku kawan-kawan, aku tdk bisa merespons cepat karena masalah jaringan.",neutral,defend,[],"[{""pemain"":""Danang"",""relasi"":""defend""}]",D-e,Setara contoh 'aku telat karena koneksi'
+target,638,6,"Tapi perhatikan, orang yang sedang kita bicarakan belum muncul memberikan bantahan.",neutral,neutral,[],"[{""pemain"":""Toni"",""relasi"":""neutral""}]",T-neutral-1,'orang yang sedang kita bicarakan' jelas Toni
+target,638,7,"Benar, pemain itu belum memberi tanggapan.",neutral,neutral,[],"[{""pemain"":""Toni"",""relasi"":""neutral""}]",T-neutral-1,'pemain itu' jelas Toni; fakta tanpa penilaian
+target,640,1,Apa klaim pilihan Guard-nya?,neutral,neutral,[],"[{""pemain"":""Eko"",""relasi"":""neutral""}]",T-neutral-1,-nya merujuk klaim Guard Eko
+target,640,4,Mungkin dia salah menyebut urutan malamnya?,neutral,defend,"[{""pemain"":""Eko"",""relasi"":""neutral""},{""pemain"":""Budi"",""relasi"":""neutral""}]","[{""pemain"":""Eko"",""relasi"":""defend""}]",D-e,Penjelasan polos atas klaim Eko yang dicurigai
+target,640,7,Coba kita tunggu penjelasan lebih detail darinya.,neutral,defend,[],"[{""pemain"":""Eko"",""relasi"":""defend""}]",D-g,Menanggapi tuduhan ke Eko dengan meminta tunggu penjelasannya
+target,644,3,Apa sudah ada penjelasannya?,neutral,neutral,[],"[{""pemain"":""Kiki"",""relasi"":""neutral""}]",T-neutral-1,-nya merujuk perubahan klaim Kiki
+target,650,0,Kenapa ya tadi Budi menuduhku terus?,neutral,defend,"[{""pemain"":""Budi"",""relasi"":""neutral""}]","[{""pemain"":""Rama"",""relasi"":""defend""}]",D-d,Setara 'lu nuduh gw karena apa?'; membela diri
+target,654,2,"Iya, aku membaca klaim itu.",neutral,neutral,[],"[{""pemain"":""Sarah"",""relasi"":""neutral""}]",T-neutral-1,'klaim itu' merujuk klaim Civilian Sarah
+target,655,4,Kita jangan sampai terpancing provokasi murahan itu.,neutral,offend,[],"[{""pemain"":""Willy"",""relasi"":""offend""}]",O-c,"Mencap ajakan Willy 'provokasi murahan', setara 'jangan percaya F'"
+target,655,7,"Tunggu sebentar, apakah ada yang mau memberinya kesempatan bicara?",neutral,defend,[],"[{""pemain"":""Willy"",""relasi"":""defend""}]",D-g,Menanggapi ajakan vote Willy dengan meminta jangan buru-buru
+target,659,4,"Hasilnya udah dibagi nih, ada yang mau nanggepin?",neutral,neutral,[],"[{""pemain"":""Beni"",""relasi"":""neutral""}]",T-neutral-1,-nya merujuk hasil Peek Beni
+target,660,3,Kita dengarkan dulu klaim pilihan Guard-nya.,neutral,neutral,[],"[{""pemain"":""Kiki"",""relasi"":""neutral""}]",T-neutral-1,-nya merujuk klaim Kiki
+target,660,5,"Kalau beneran Spy, harusnya bisa kasih info yang berguna dong.",neutral,offend,[],"[{""pemain"":""Kiki"",""relasi"":""offend""}]",O-d,Sindiran klaim Spy Kiki palsu; setara row 584 [7]
+target,660,6,"Betul, dari tadi informasinya kurang jelas.",neutral,neutral,[],"[{""pemain"":""Kiki"",""relasi"":""neutral""}]",T-neutral-1,-nya merujuk informasi Kiki; tanpa penilaian curiga
+target,660,7,"Jangan buru-buru nuduh, kita kumpulin info dulu aja.",neutral,defend,[],"[{""pemain"":""Kiki"",""relasi"":""defend""}]",D-d,Teguran 'jangan langsung nuduh' melindungi Kiki
+target,660,10,Aku sih tetep waspada sama klaim ini.,neutral,offend,[],"[{""pemain"":""Kiki"",""relasi"":""offend""}]",O-c,"Tetap curiga pada klaim Kiki, setara 'waspada sama pola ini'"
+target,660,11,"Oke, soal Guard-nya kita bahas besok aja.",neutral,neutral,[],"[{""pemain"":""Kiki"",""relasi"":""neutral""}]",T-neutral-1,-nya merujuk Guard Kiki
+target,662,1,"Iya nih, aku juga heran kenapa pada nargetin aku.",neutral,defend,"[{""pemain"":""Gina"",""relasi"":""neutral""}]","[{""pemain"":""Hendra"",""relasi"":""defend""}]",D-d,"Mempertanyakan dasar dirinya ditarget, setara 'nuduh gw karena apa'"
+target,663,4,Nyimak doang gak ngebantu nemuin pelakunya.,neutral,neutral,[],"[{""pemain"":""Iwan"",""relasi"":""neutral""}]",T-neutral-3,Membalas langsung ucapan Iwan kepada para penuduh
+target,665,2,Aku memilihnya karena dia aktif berdiskusi.,neutral,neutral,"[{""pemain"":""Putri"",""relasi"":""neutral""}]","[{""pemain"":""Putri"",""relasi"":""neutral""},{""pemain"":""Qori"",""relasi"":""neutral""}]",T-neutral-3,Menjawab langsung pertanyaan Qori soal alasan memilih Putri
+target,666,1,Emang klaimnya berubah gimana?,neutral,neutral,[],"[{""pemain"":""Rani"",""relasi"":""neutral""}]",T-neutral-1,-nya merujuk klaim Rani
+target,666,3,Koreksi itu memang ada pada pesan berikutnya.,neutral,neutral,[],"[{""pemain"":""Rani"",""relasi"":""neutral""}]",T-neutral-1,'koreksi itu' merujuk koreksi Rani; fakta
+target,667,1,Mungkin dia lagi mikir strategi.,neutral,defend,"[{""pemain"":""Umar"",""relasi"":""neutral""}]","[{""pemain"":""Umar"",""relasi"":""defend""}]",D-e,Menjelaskan diamnya Umar yang dipertanyakan
+target,668,1,Nuduh tanpa alasan gimana maksudnya?,neutral,neutral,[],"[{""pemain"":""Zain"",""relasi"":""neutral""}]",T-neutral-1,-nya merujuk ucapan Zain yang ditanya
+target,668,6,Kita dengerin dulu aja penjelasan dia perlahan.,neutral,defend,"[{""pemain"":""Yudi"",""relasi"":""neutral""}]","[{""pemain"":""Yudi"",""relasi"":""defend""}]",D-g,Menanggapi tuduhan ke Yudi dengan meminta jangan buru-buru
+target,668,7,"Harus hati-hati, bisa aja itu trik dari pelaku.",neutral,offend,[],"[{""pemain"":""Yudi"",""relasi"":""offend""}]",O-a,Menilai strategi Yudi sebagai trik pelaku
+target,670,3,Aku memilih Deni sebagai target Guard.,neutral,neutral,"[{""pemain"":""Deni"",""relasi"":""neutral""}]","[{""pemain"":""Deni"",""relasi"":""neutral""},{""pemain"":""Budi"",""relasi"":""neutral""},{""pemain"":""Cici"",""relasi"":""neutral""}]",T-neutral-3,Menjawab langsung pertanyaan Budi dan Cici soal target Guard
+target,672,2,Aku sedang menyimak alur diskusi.,neutral,neutral,[],"[{""pemain"":""Fira"",""relasi"":""neutral""},{""pemain"":""Hana"",""relasi"":""neutral""}]",T-neutral-3,Menjawab langsung pertanyaan Fira dan ucapan Hana kepadanya
+target,678,1,"Sinyalku sedang jelek, harap maklum.",neutral,defend,"[{""pemain"":""Wira"",""relasi"":""neutral""}]","[{""pemain"":""Yuda"",""relasi"":""defend""}]",D-e,Setara contoh 'aku telat karena koneksi'
+target,679,7,"Aku cuma memastikan tujuanmu, kamu terlihat sangat panik.",offend,offend,"[{""pemain"":""Bayu"",""relasi"":""offend""}]","[{""pemain"":""Bayu"",""relasi"":""offend""},{""pemain"":""Dery"",""relasi"":""defend""}]",O-g,Menjelaskan serangannya ke Bayu (D-e) sekaligus menilai Bayu panik
+target,687,1,"Iya juga sih, tapi buktinya apa dia bisa ngomong gitu?",neutral,neutral,"[{""pemain"":""Umar"",""relasi"":""neutral""},{""pemain"":""Tito"",""relasi"":""neutral""}]","[{""pemain"":""Umar"",""relasi"":""neutral""}]",T-neutral-semua,"Tito tidak disebut; ucapannya untuk semua, bukan kepada Vina"
+target,691,3,Aku memutuskan membuka klaim supaya bisa dibahas.,neutral,neutral,[],"[{""pemain"":""Coki"",""relasi"":""neutral""}]",T-neutral-3,Menjawab langsung pertanyaan Coki kepada Andi dan Rina
+target,698,7,"Iya, kalian jangan langsung berasumsi buruk.",defend,defend,"[{""pemain"":""Nina"",""relasi"":""defend""}]","[{""pemain"":""Nina"",""relasi"":""defend""},{""pemain"":""Riko"",""relasi"":""defend""}]",D-d,Teguran 'jangan berasumsi buruk' melindungi Riko dan Nina yang dituduh
+target,698,10,Aku ingin membaca ulang penjelasan kedua pemain itu.,neutral,neutral,[],"[{""pemain"":""Riko"",""relasi"":""neutral""},{""pemain"":""Nina"",""relasi"":""neutral""}]",T-neutral-1,'kedua pemain itu' jelas Riko dan Nina
+target,705,2,"Iya, kalian urus saja berdua.",neutral,neutral,"[{""pemain"":""Udin"",""relasi"":""neutral""}]","[{""pemain"":""Udin"",""relasi"":""neutral""},{""pemain"":""Tari"",""relasi"":""neutral""}]",T-neutral-3,Menjawab langsung pertanyaan Tari kepada Samsul
+target,706,4,"Iya, aku memakai skill Stalker tadi malam.",neutral,neutral,[],"[{""pemain"":""Wira"",""relasi"":""neutral""}]",T-neutral-3,Menjawab langsung pertanyaan Wira soal klaim Stalker Vina
+target,706,5,"Sekali lagi, aku bukan Hitman. Hasil Peek itu karangan dia.",defend,offend,"[{""pemain"":""Yaya"",""relasi"":""defend""}]","[{""pemain"":""Yaya"",""relasi"":""defend""},{""pemain"":""Vina"",""relasi"":""offend""}]",O-g,Sangkalan plus 'hasil Peek karangan dia' menyerang kredibilitas Vina
+target,707,2,Ada ajakan yang berubah di akhir diskusi.,neutral,neutral,[],"[{""pemain"":""Ayu"",""relasi"":""neutral""}]",T-neutral-3,Menjawab langsung pertanyaan Ayu atas ucapan Zaki
+target,708,7,"Aku bukan Hitman, aku yakin dugaanku benar.",defend,offend,"[{""pemain"":""Deni"",""relasi"":""defend""}]","[{""pemain"":""Deni"",""relasi"":""defend""},{""pemain"":""Euis"",""relasi"":""offend""}]",O-g,Sangkalan plus menegaskan dugaannya terhadap Euis benar
+target,711,0,"Gita, kenapa kamu diam terus dari tadi?",offend,neutral,"[{""pemain"":""Gita"",""relasi"":""offend""}]","[{""pemain"":""Gita"",""relasi"":""neutral""}]",N-b,Pertanyaan mendesak tanpa sindiran; Gita disapa
+target,716,2,"Yang satu ternyata kutipan, jadi hanya satu ajakan baru.",neutral,neutral,[],"[{""pemain"":""Anton"",""relasi"":""neutral""}]",T-neutral-3,Menjawab langsung pertanyaan Anton soal ucapan Zidan
+target,716,4,Ya karena ucapannya bisa jadi petunjuk penting.,neutral,neutral,[],"[{""pemain"":""Zidan"",""relasi"":""neutral""}]",T-neutral-1,'ucapannya' jelas merujuk Zidan
+target,716,6,"Aku cuma kasih info aja, gak ada niat nipu.",neutral,defend,[],"[{""pemain"":""Zidan"",""relasi"":""defend""}]",D-a,'gak ada niat nipu' menyangkal untuk diri sendiri
+target,718,1,"Iya, alasan diamnya belum bisa dipastikan.",neutral,neutral,[],"[{""pemain"":""Deni"",""relasi"":""neutral""}]",T-neutral-1,'diamnya' jelas merujuk Deni
+target,723,1,"Awalnya dia menyerang aku, terus sekarang pindah haluan.",offend,neutral,"[{""pemain"":""Lila"",""relasi"":""offend""}]","[{""pemain"":""Lila"",""relasi"":""neutral""}]",N-fakta,Fakta pindah haluan tanpa penilaian dan tanpa membela
+target,734,7,"Aku bukan Hitman, aku membela karena tuduhannya belum berdasar.",defend,defend,"[{""pemain"":""Doni"",""relasi"":""defend""}]","[{""pemain"":""Doni"",""relasi"":""defend""},{""pemain"":""Bayu"",""relasi"":""defend""}]",D-d,'tuduhannya belum berdasar' juga membela Bayu yang dituduh
+target,735,6,Atau yang dari tadi sengaja diam aja juga patut dicurigai.,neutral,offend,[],"[{""pemain"":""tidak_diketahui"",""relasi"":""offend""}]",O-e,"'yang sengaja diam patut dicurigai' kelompok berciri, orangnya tidak jelas"
+target,744,2,Keduanya mengaku Civilian.,neutral,neutral,"[{""pemain"":""Qori"",""relasi"":""neutral""},{""pemain"":""Siska"",""relasi"":""neutral""}]","[{""pemain"":""Qori"",""relasi"":""neutral""},{""pemain"":""Siska"",""relasi"":""neutral""},{""pemain"":""Putri"",""relasi"":""neutral""}]",T-neutral-3,Menjawab langsung pertanyaan Putri 'Klaim yang mana?'
+target,744,9,Keduanya belum memberi penjelasan tambahan.,neutral,neutral,[],"[{""pemain"":""Qori"",""relasi"":""neutral""},{""pemain"":""Siska"",""relasi"":""neutral""}]",T-neutral-1,'Keduanya' jelas Qori dan Siska
+target,759,3,Apanya yang janggal bil?,neutral,neutral,[],"[{""pemain"":""Bilal"",""relasi"":""neutral""}]",T-neutral-1,Panggilan 'bil' untuk Bilal
+target,759,4,Ada yang tuduhannya gonta-ganti terus.,neutral,neutral,[],"[{""pemain"":""Zain"",""relasi"":""neutral""}]",T-neutral-3,Menjawab langsung pertanyaan Zain kepada Bilal
+target,762,4,Kita baca alasan yang ditulis keduanya di chat.,neutral,neutral,[],"[{""pemain"":""Kiki"",""relasi"":""neutral""},{""pemain"":""Maman"",""relasi"":""neutral""}]",T-neutral-1,'keduanya' jelas Kiki dan Maman yang saling tuduh
+target,773,U,"Maya, alasan kamu ngajak vote aku apa?",neutral,defend,"[{""pemain"":""Maya"",""relasi"":""neutral""}]","[{""pemain"":""Niko"",""relasi"":""defend""}]",D-d,Setara 'lu nuduh gw karena apa?'; Maya hanya diajak bicara
+target,23,4,Aku bisa. Koneksiku tadi sempat terputus.,neutral,defend,"[{""pemain"":""Putri"",""relasi"":""neutral""}]","[{""pemain"":""Reza"",""relasi"":""defend""}]",D-e,alasan koneksi untuk perilaku sendiri (penyeragaman)
+target,81,2,"Koneksiku sempat terputus, sekarang aku bisa mengetik lagi.",neutral,defend,[],"[{""pemain"":""Eka"",""relasi"":""defend""}]",D-e,alasan koneksi untuk perilaku sendiri (penyeragaman)
+target,274,2,"Pesanku belum selesai tadi, koneksiku sempat terputus.",neutral,defend,[],"[{""pemain"":""Jojo"",""relasi"":""defend""}]",D-e,alasan koneksi untuk perilaku sendiri (penyeragaman)
+target,412,1,"Maaf, tadi koneksiku putus.",neutral,defend,[],"[{""pemain"":""Maman"",""relasi"":""defend""}]",D-e,alasan koneksi untuk perilaku sendiri (penyeragaman)
+target,422,2,Koneksiku tadi terputus.,neutral,defend,[],"[{""pemain"":""Hadi"",""relasi"":""defend""}]",D-e,alasan koneksi untuk perilaku sendiri (penyeragaman)
+target,433,1,Pesan saya sering terputus di tengah kalimat.,neutral,defend,[],"[{""pemain"":""Nanda"",""relasi"":""defend""}]",D-e,alasan koneksi untuk perilaku sendiri (penyeragaman)
+target,561,3,Sinyal aku jelek sepertinya hari ini.,neutral,defend,"[{""pemain"":""Hasan"",""relasi"":""neutral""}]","[{""pemain"":""Tomi"",""relasi"":""defend""}]",D-e,alasan koneksi untuk perilaku sendiri (penyeragaman)

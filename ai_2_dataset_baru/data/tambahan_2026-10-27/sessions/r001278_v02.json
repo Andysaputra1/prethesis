@@ -1,0 +1,65 @@
+{
+  "job": {
+    "job_id": "r001278_v02",
+    "case_name": "neutral_status",
+    "case_description": "Klaim status/role atau pertanyaan informasi saja tanpa pembelaan/serangan; target neutral sesuai ATURAN_LABEL.md. FOKUS TAMBAHAN: Neutral bertarget neutral: nama, kamu jelas, atau jawaban ke penanya khusus.",
+    "source": {
+      "source_row": 1278,
+      "source_group": "d2045b0a6c0a24864e5f",
+      "teks_chat": "Ada yang berubah sikap setelah malam pertama, mungkin dia tahu identitas orang yang dijaga",
+      "label_intent": "neutral"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 2,
+    "pesan_typo_ringan": [],
+    "case_index": 16
+  },
+  "session": {
+    "case_name": "neutral_status",
+    "participants": [
+      "Ghani",
+      "Yumna",
+      "Rizal",
+      "Lintang",
+      "Tiara"
+    ],
+    "focus_player": "Ghani",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Ghani",
+        "teks_chat": "gw nanya soal aksi malam yang kamu lakukan, Rizal.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Rizal",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Rizal",
+        "teks_chat": "menjawab pertanyaan soal aksiku, aku memilih Guard tadi malam.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Ghani",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "050_codex_revisi1.txt"
+  }
+}

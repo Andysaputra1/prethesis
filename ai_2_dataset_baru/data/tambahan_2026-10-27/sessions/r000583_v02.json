@@ -1,0 +1,131 @@
+{
+  "job": {
+    "job_id": "r000583_v02",
+    "case_name": "reference_start",
+    "case_description": "Tepat 12 konteks. Penyebutan target eksplisit di pesan konteks pertama; pesan sekarang memakai kata ganti. FOKUS TAMBAHAN: Tepat 12 konteks; nama target hanya pada konteks pertama; utama dia/-nya.",
+    "source": {
+      "source_row": 583,
+      "source_group": "fc43fc881ba0d09d09a3",
+      "teks_chat": "dia nuduh aku karena aku nolak ikut vote dia, itu bukan bukti aku hitman",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 13,
+    "pesan_typo_ringan": [],
+    "case_index": 44
+  },
+  "session": {
+    "case_name": "reference_start",
+    "participants": [
+      "Habib",
+      "Haikal",
+      "Zahira",
+      "Nabil",
+      "Tria"
+    ],
+    "focus_player": "Zahira",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Haikal",
+        "teks_chat": "Zahira menaruh waktu baca chat di dalam kurung setelah alasan vote.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Zahira",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Tria",
+        "teks_chat": "buat semua, bagian dalam kurung itu masih satu kalimat ya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Nabil",
+        "teks_chat": "iya, bukan pesan lain yang muncul sesudahnya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Habib",
+        "teks_chat": "gw sih membacanya sebagai penjelasan tambahan.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Haikal",
+        "teks_chat": "kata sebelum ada pada bagian dalam kurung.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Tria",
+        "teks_chat": "jadi letak di belakang belum tentu kejadian paling akhir.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Nabil",
+        "teks_chat": "betul kok, urutan waktu dilihat dari kata penghubungnya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Habib",
+        "teks_chat": "aku lagi baca kalimat utama dan tambahannya sekaligus.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Haikal",
+        "teks_chat": "buat grup, jangan lewati bagian kurung kalau mau tanggapi alasan.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Tria",
+        "teks_chat": "sekarang waktu baca dan pilihan yang dijelaskan sudah nyambung.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Nabil",
+        "teks_chat": "oke nih, isi lengkapnya nggak kepotong lagi.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Habib",
+        "teks_chat": "silakan lanjut menilai alasan vote tadi.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Habib",
+        "teks_chat": "hasil yang kumiliki membersihkan dia, orang yang sejak pembuka kita bicarakan itu.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Zahira",
+            "relasi": "defend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "020_codex_revisi1.txt"
+  }
+}

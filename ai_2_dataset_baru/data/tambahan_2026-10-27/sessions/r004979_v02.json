@@ -1,0 +1,100 @@
+{
+  "job": {
+    "job_id": "r004979_v02",
+    "case_name": "plural_reference",
+    "case_description": "Pesan sekarang memakai mereka/kalian/keduanya/berdua untuk dua pemain atau lebih yang jelas dari konteks, tanpa menyebut ulang nama mereka. Simpan semua pemain itu sebagai target. FOKUS TAMBAHAN: Mereka/keduanya menunjuk dua orang. Sapaan ke pemain ketiga bukan target.",
+    "source": {
+      "source_row": 4979,
+      "source_group": "6a776b635916a6c1b4bc",
+      "teks_chat": "lu salah baca sikap gw, aku stalker bukan hitman",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 3,
+    "pesan_typo_ringan": [],
+    "case_index": 18
+  },
+  "session": {
+    "case_name": "plural_reference",
+    "participants": [
+      "Ferdi",
+      "Deandra",
+      "Rizki",
+      "Okta",
+      "Halim"
+    ],
+    "focus_player": "Ferdi",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Halim",
+        "teks_chat": "Ferdi juga Rizki berhenti mengetik pas sesi vote dimulai.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Ferdi",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          },
+          {
+            "pemain": "Rizki",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Okta",
+        "teks_chat": "keduanya sekarang sudah menyebut waktu penggunaan skill.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Ferdi",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          },
+          {
+            "pemain": "Rizki",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Deandra",
+        "teks_chat": "buatku mereka berdua bersih, hasil Peek tidak menunjukkan Hitman pada salah satunya pun.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Ferdi",
+            "relasi": "defend",
+            "bukti_pesan": [
+              1
+            ]
+          },
+          {
+            "pemain": "Rizki",
+            "relasi": "defend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "035_codex_revisi1.txt"
+  }
+}

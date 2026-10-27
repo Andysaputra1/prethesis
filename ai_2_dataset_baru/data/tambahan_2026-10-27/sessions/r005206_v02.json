@@ -1,0 +1,71 @@
+{
+  "job": {
+    "job_id": "r005206_v02",
+    "case_name": "witness",
+    "case_description": "Nama saksi/korban disebut, tetapi bukan target serangan atau pembelaan. FOKUS TAMBAHAN: Nama sumber/saksi/penuduh bukan target. Sertakan bantahan isi klaim Peek penuduh yang membela pengirim saja.",
+    "source": {
+      "source_row": 5206,
+      "source_group": "899629be02f2cceb6491",
+      "teks_chat": "gw bukan sus, role gw Spy dan target jagaan gw jelas",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 3,
+    "pesan_typo_ringan": [],
+    "case_index": 6
+  },
+  "session": {
+    "case_name": "witness",
+    "participants": [
+      "Erlina",
+      "Khansa",
+      "Mahdi",
+      "Mutiara",
+      "Haikal"
+    ],
+    "focus_player": "Haikal",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Mahdi",
+        "teks_chat": "Haikal Hitman dari hasil Peek-ku semalam, itu yang terlihat nih.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Haikal",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Khansa",
+        "teks_chat": "grupnya masih terbuka kok, semua bisa tanggapi.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Haikal",
+        "teks_chat": "bantahanku ke hasil Mahdi sederhana: aku Civilian, bukan pelaku yang ditulis di situ.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Haikal",
+            "relasi": "defend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "006_codex_revisi1.txt"
+  }
+}

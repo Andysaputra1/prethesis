@@ -1,0 +1,131 @@
+{
+  "job": {
+    "job_id": "r003624_v02",
+    "case_name": "reference_start",
+    "case_description": "Tepat 12 konteks. Penyebutan target eksplisit di pesan konteks pertama; pesan sekarang memakai kata ganti. FOKUS TAMBAHAN: Tepat 12 konteks; nama target hanya pada konteks pertama; utama dia/-nya.",
+    "source": {
+      "source_row": 3624,
+      "source_group": "5cd34e84d2834b2919be",
+      "teks_chat": "tunggu dulu, jangan eksekusi gw, aku Spy dan semalam memilih Guard untuk Maya",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 13,
+    "pesan_typo_ringan": [],
+    "case_index": 34
+  },
+  "session": {
+    "case_name": "reference_start",
+    "participants": [
+      "Febrian",
+      "Savira",
+      "Niken",
+      "Banyu",
+      "Rasyid"
+    ],
+    "focus_player": "Rasyid",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Febrian",
+        "teks_chat": "Rasyid menjelaskan pilihan dengan kalimat sebelum vote dibuka.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Rasyid",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Savira",
+        "teks_chat": "buat grup, itu waktu kejadian yang diceritakan, bukan waktu kirim ya?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Niken",
+        "teks_chat": "iya, pesannya masuk belakangan dari cerita di awal.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Banyu",
+        "teks_chat": "gw suka ketuker dua waktu itu kalau baca cepat sih.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Febrian",
+        "teks_chat": "bagian akhirnya malah menyebut rencana setelah ini.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Savira",
+        "teks_chat": "ada kata akan sebelum rencana tersebut.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Niken",
+        "teks_chat": "berarti belum tentu pilihan itu sudah dimasukkan kok.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Banyu",
+        "teks_chat": "buat semua, baca penghubung waktunya juga dong.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Febrian",
+        "teks_chat": "aku mulai dari kata sebelum, lalu lanjut ke bagian akan.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Savira",
+        "teks_chat": "oke, sekarang masa lalu dan rencana berikutnya terpisah.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Niken",
+        "teks_chat": "jadi lebih gampang diikuti nih urutan ceritanya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Banyu",
+        "teks_chat": "silakan menanggapi alasan memilih yang tadi.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Banyu",
+        "teks_chat": "balik ke nama pembuka tadi, dia tidak perlu membayar kesalahan baca kita dengan dieksekusi.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Rasyid",
+            "relasi": "defend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "019_codex_revisi1.txt"
+  }
+}

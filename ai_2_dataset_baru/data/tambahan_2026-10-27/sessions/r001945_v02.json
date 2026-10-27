@@ -1,0 +1,78 @@
+{
+  "job": {
+    "job_id": "r001945_v02",
+    "case_name": "mixed_relations",
+    "case_description": "Membela satu pemain dan menuduh pemain lain. Intent utama offend; simpan kedua relasi. FOKUS TAMBAHAN: Bela A dan tuduh B; variasi urutan, kata ganti, dan pembelaan dalam anak kalimat.",
+    "source": {
+      "source_row": 1945,
+      "source_group": "9ad22813150ff9bf80f6",
+      "teks_chat": "kalau Nando aman, kenapa dia terus menghindari pertanyaan soal vote malam sebelumnya? eksekusi Nando",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 3,
+    "pesan_typo_ringan": [],
+    "case_index": 38
+  },
+  "session": {
+    "case_name": "mixed_relations",
+    "participants": [
+      "Embun",
+      "Erlina",
+      "Isna",
+      "Marsha",
+      "Pandu"
+    ],
+    "focus_player": "Isna",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Erlina",
+        "teks_chat": "gw lihat Isna menjelaskan bagian waktunya di akhir kalimat.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Isna",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Embun",
+        "teks_chat": "gw pengin dengar dua sisi penjelasan sebelum putuskan apa pun.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Marsha",
+        "teks_chat": "dia nggak pantas dituduh setelah urutannya jelas; Pandu yang menurutku sengaja merusak urutan itu.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Isna",
+            "relasi": "defend",
+            "bukti_pesan": [
+              1
+            ]
+          },
+          {
+            "pemain": "Pandu",
+            "relasi": "offend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "014_codex_revisi1.txt"
+  }
+}

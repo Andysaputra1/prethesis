@@ -1,0 +1,78 @@
+{
+  "job": {
+    "job_id": "r003158_v02",
+    "case_name": "mixed_relations",
+    "case_description": "Membela satu pemain dan menuduh pemain lain. Intent utama offend; simpan kedua relasi. FOKUS TAMBAHAN: Bela A dan tuduh B; variasi urutan, kata ganti, dan pembelaan dalam anak kalimat.",
+    "source": {
+      "source_row": 3158,
+      "source_group": "16bc201f04bc170003c7",
+      "teks_chat": "Tuduhan ke aku belum punya dasar; dari log voting, justru kamu yang konsisten mengalihkan fokus",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 3,
+    "pesan_typo_ringan": [],
+    "case_index": 32
+  },
+  "session": {
+    "case_name": "mixed_relations",
+    "participants": [
+      "Cahya",
+      "Haikal",
+      "Tasya",
+      "Ratih",
+      "Wulan"
+    ],
+    "focus_player": "Ratih",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Wulan",
+        "teks_chat": "gw baru baca cerita Ratih sampai nomor malamnya.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Ratih",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Tasya",
+        "teks_chat": "yang mau menambahkan sesuatu, sekarang boleh ketik.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Haikal",
+        "teks_chat": "dia sempat lag jadi pantas dibela, sedangkan Cahya memakai alasan yang bertabrakan dengan chatnya sendiri.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Ratih",
+            "relasi": "defend",
+            "bukti_pesan": [
+              1
+            ]
+          },
+          {
+            "pemain": "Cahya",
+            "relasi": "offend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "014_codex_revisi1.txt"
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "job": {
+    "job_id": "r001715_v02",
+    "case_name": "self",
+    "case_description": "Defend diri sendiri atau offend/vote diri sendiri sesuai label. Target = pengirim. FOKUS TAMBAHAN: Bela diri atau permintaan vote diri yang tulus; riwayat menyebut pemain lain sebagai pengalih.",
+    "source": {
+      "source_row": 1715,
+      "source_group": "2f18472965e280d0839f",
+      "teks_chat": "B terlalu cepat nuduh C tapi nggak pernah kasih bukti, pola ini paling menguntungkan hitman, vote B aja",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 3,
+    "pesan_typo_ringan": [],
+    "case_index": 35
+  },
+  "session": {
+    "case_name": "self",
+    "participants": [
+      "Pandu",
+      "Cahya",
+      "Fathia",
+      "Hilmi",
+      "Tria"
+    ],
+    "focus_player": "Fathia",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Cahya",
+        "teks_chat": "Pandu dan Hilmi baru selesai menjelaskan kenapa belum memilih.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Hilmi",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          },
+          {
+            "pemain": "Pandu",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Tria",
+        "teks_chat": "gw sudah membaca pesan sebelumnya sampai tuntas kok.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Fathia",
+        "teks_chat": "silakan akhiri bagianku di ronde ini, aku minta kalian vote aku saja.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Fathia",
+            "relasi": "offend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "029_codex_revisi1.txt"
+  }
+}

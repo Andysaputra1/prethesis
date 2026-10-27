@@ -1,0 +1,131 @@
+{
+  "job": {
+    "job_id": "r001637_v02",
+    "case_name": "reference_start",
+    "case_description": "Tepat 12 konteks. Penyebutan target eksplisit di pesan konteks pertama; pesan sekarang memakai kata ganti. FOKUS TAMBAHAN: Tepat 12 konteks; nama target hanya pada konteks pertama; utama dia/-nya.",
+    "source": {
+      "source_row": 1637,
+      "source_group": "18cbbaa94c255e7b31c4",
+      "teks_chat": "bukan waktunya nge-lock ke satu orang, menurutku perilaku si Maya lebih aneh",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 13,
+    "pesan_typo_ringan": [],
+    "case_index": 3
+  },
+  "session": {
+    "case_name": "reference_start",
+    "participants": [
+      "Noval",
+      "Priska",
+      "Nadira",
+      "Salma",
+      "Ayunda"
+    ],
+    "focus_player": "Salma",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Noval",
+        "teks_chat": "Salma ngaku Spy sebelum kita mulai tanya soal aksi.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Salma",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Ayunda",
+        "teks_chat": "sekarang giliran cerita aksi atau masih buka role?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Nadira",
+        "teks_chat": "bisa urut dari klaim dulu, habis itu malamnya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Priska",
+        "teks_chat": "aku sih pengin semua pakai urutan yang sama.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Noval",
+        "teks_chat": "boleh, tapi klaim role nggak perlu panjang-panjang.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Ayunda",
+        "teks_chat": "nama skill cukup ditulis setelahnya dong.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Nadira",
+        "teks_chat": "buat grup, nomor malamnya jangan kelupaan juga.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Priska",
+        "teks_chat": "iya, dua malam udah lewat di permainan ini.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Noval",
+        "teks_chat": "gw tadi sempat baca hasil lama sebagai hasil baru.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Ayunda",
+        "teks_chat": "sekarang udah ketemu bedanya kok, yang lama di atas.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Nadira",
+        "teks_chat": "oke nih, urutan ngobrolnya mulai enak dibaca.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Priska",
+        "teks_chat": "lanjut tanggapi klaim awal tadi.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Priska",
+        "teks_chat": "untuk pemain yang dibahas pertama, klaimnya palsu menurutku. Aku akan vote dia.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Salma",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "016_codex_revisi1.txt"
+  }
+}

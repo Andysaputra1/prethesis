@@ -1,0 +1,65 @@
+{
+  "job": {
+    "job_id": "r003379_v02",
+    "case_name": "short_history_1",
+    "case_description": "Awal diskusi dengan tepat 1 pesan sebelumnya. Jangan menambah riwayat fiktif atau mengisi sampai 12. FOKUS TAMBAHAN: Satu konteks. Tepat 25 pembelaan diri setelah dituduh; penuduh bukan target. Sisanya offend/neutral.",
+    "source": {
+      "source_row": 3379,
+      "source_group": "33bcaa43d151efe9fdf8",
+      "teks_chat": "gw bukan stalker, jadi jangan paksa gw mengarang hasil peek demi terlihat meyakinkan",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 2,
+    "pesan_typo_ringan": [],
+    "case_index": 42
+  },
+  "session": {
+    "case_name": "short_history_1",
+    "participants": [
+      "Syifa",
+      "Yasmin",
+      "Kirana",
+      "Atika",
+      "Jalu"
+    ],
+    "focus_player": "Kirana",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Yasmin",
+        "teks_chat": "aku curiga Kirana yang melakukan Hostage, alasannya belum cocok.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Kirana",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Kirana",
+        "teks_chat": "aku tetap menyangkal tuduhan itu, tidak ada aksi menyerang yang bisa kulakukan.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Kirana",
+            "relasi": "defend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "025_codex_revisi1.txt"
+  }
+}

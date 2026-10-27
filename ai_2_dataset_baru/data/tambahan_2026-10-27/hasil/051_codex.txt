@@ -1,0 +1,49 @@
+{
+  "results": [
+    {
+      "job_id": "r002088_v02",
+      "session": {
+        "case_name": "short_history_1",
+        "participants": [
+          "Nadira",
+          "Marsha",
+          "Raisa",
+          "Mahira",
+          "Gendis"
+        ],
+        "focus_player": "Mahira",
+        "panggilan": [],
+        "messages": [
+          {
+            "pengirim": "Nadira",
+            "teks_chat": "jangan percaya Mahira, klaimnya kelihatan seperti alibi palsu.",
+            "label_intent": "offend",
+            "target": [
+              {
+                "pemain": "Mahira",
+                "relasi": "offend",
+                "bukti_pesan": [
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "pengirim": "Mahira",
+            "teks_chat": "role-ku Spy, dan tuduhan melakukan Gag Order itu salah alamat.",
+            "label_intent": "defend",
+            "target": [
+              {
+                "pemain": "Mahira",
+                "relasi": "defend",
+                "bukti_pesan": [
+                  1
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

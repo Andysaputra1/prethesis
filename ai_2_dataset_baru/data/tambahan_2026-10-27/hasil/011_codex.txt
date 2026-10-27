@@ -1,0 +1,586 @@
+```json
+{
+  "results": [
+    {
+      "job_id": "r005226_v02",
+      "session": {
+        "case_name": "mixed_relations",
+        "participants": [
+          "Nadhif",
+          "Kinanti",
+          "Nayla",
+          "Sakti",
+          "Anindya"
+        ],
+        "focus_player": "Sakti",
+        "panggilan": [],
+        "messages": [
+          {
+            "pengirim": "Nayla",
+            "teks_chat": "sekarang kita baca keterangan Sakti soal malam tadi.",
+            "label_intent": "neutral",
+            "target": [
+              {
+                "pemain": "Sakti",
+                "relasi": "neutral",
+                "bukti_pesan": [
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "pengirim": "Anindya",
+            "teks_chat": "aku membaca urutan waktunya dulu.",
+            "label_intent": "neutral",
+            "target": []
+          },
+          {
+            "pengirim": "Nadhif",
+            "teks_chat": "Sakti bukan Hitman, justru Kinanti yang alibinya berubah tiap ditanya.",
+            "label_intent": "offend",
+            "target": [
+              {
+                "pemain": "Sakti",
+                "relasi": "defend",
+                "bukti_pesan": [
+                  3
+                ]
+              },
+              {
+                "pemain": "Kinanti",
+                "relasi": "offend",
+                "bukti_pesan": [
+                  3
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "job_id": "r002592_v02",
+      "session": {
+        "case_name": "mixed_relations",
+        "participants": [
+          "Hilmi",
+          "Tsania",
+          "Inaya",
+          "Yudhis",
+          "Zakia"
+        ],
+        "focus_player": "Yudhis",
+        "panggilan": [],
+        "messages": [
+          {
+            "pengirim": "Zakia",
+            "teks_chat": "Yudhis sudah mengirim penjelasan, kita bahas bagian itu dulu.",
+            "label_intent": "neutral",
+            "target": [
+              {
+                "pemain": "Yudhis",
+                "relasi": "neutral",
+                "bukti_pesan": [
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "pengirim": "Inaya",
+            "teks_chat": "silakan bahas, semua bisa menyampaikan penilaian.",
+            "label_intent": "neutral",
+            "target": []
+          },
+          {
+            "pengirim": "Tsania",
+            "teks_chat": "aku vote Hilmi; sementara Yudhis jangan ikut diseret, hasil Peek-ku membersihkan dia.",
+            "label_intent": "offend",
+            "target": [
+              {
+                "pemain": "Yudhis",
+                "relasi": "defend",
+                "bukti_pesan": [
+                  3
+                ]
+              },
+              {
+                "pemain": "Hilmi",
+                "relasi": "offend",
+                "bukti_pesan": [
+                  3
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "job_id": "r002985_v02",
+      "session": {
+        "case_name": "mixed_relations",
+        "participants": [
+          "Almira",
+          "Haikal",
+          "Mutiara",
+          "Delima",
+          "Tirta"
+        ],
+        "focus_player": "Haikal",
+        "panggilan": [],
+        "messages": [
+          {
+            "pengirim": "Tirta",
+            "teks_chat": "catatan yang sedang terbuka adalah milik Haikal.",
+            "label_intent": "neutral",
+            "target": [
+              {
+                "pemain": "Haikal",
+                "relasi": "neutral",
+                "bukti_pesan": [
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "pengirim": "Delima",
+            "teks_chat": "bagian klaim dan bagian hasilnya sudah terpisah di catatan.",
+            "label_intent": "neutral",
+            "target": []
+          },
+          {
+            "pengirim": "Mutiara",
+            "teks_chat": "meski Haikal tadi lambat jawab, dia aman. Yang sus itu Almira dengan klaim Spy mendadaknya.",
+            "label_intent": "offend",
+            "target": [
+              {
+                "pemain": "Haikal",
+                "relasi": "defend",
+                "bukti_pesan": [
+                  3
+                ]
+              },
+              {
+                "pemain": "Almira",
+                "relasi": "offend",
+                "bukti_pesan": [
+                  3
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "job_id": "r002861_v02",
+      "session": {
+        "case_name": "mixed_relations",
+        "participants": [
+          "Rayhan",
+          "Okta",
+          "Tiara",
+          "Mahdi",
+          "Fathia"
+        ],
+        "focus_player": "Rayhan",
+        "panggilan": [],
+        "messages": [
+          {
+            "pengirim": "Mahdi",
+            "teks_chat": "aku menaruh keterangan Rayhan pada bagian awal ringkasan.",
+            "label_intent": "neutral",
+            "target": [
+              {
+                "pemain": "Rayhan",
+                "relasi": "neutral",
+                "bukti_pesan": [
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "pengirim": "Okta",
+            "teks_chat": "teks yang masuk belum berubah sejak disalin.",
+            "label_intent": "neutral",
+            "target": []
+          },
+          {
+            "pengirim": "Tiara",
+            "teks_chat": "jangan percaya Fathia soal hasil malam, tapi Rayhan masih kubela karena penjelasannya cocok.",
+            "label_intent": "offend",
+            "target": [
+              {
+                "pemain": "Rayhan",
+                "relasi": "defend",
+                "bukti_pesan": [
+                  3
+                ]
+              },
+              {
+                "pemain": "Fathia",
+                "relasi": "offend",
+                "bukti_pesan": [
+                  3
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "job_id": "r001757_v02",
+      "session": {
+        "case_name": "mixed_relations",
+        "participants": [
+          "Mutiara",
+          "Hilmi",
+          "Lintang",
+          "Tsania",
+          "Nayla"
+        ],
+        "focus_player": "Nayla",
+        "panggilan": [],
+        "messages": [
+          {
+            "pengirim": "Lintang",
+            "teks_chat": "kita sedang meninjau klaim Nayla sebelum pindah topik.",
+            "label_intent": "neutral",
+            "target": [
+              {
+                "pemain": "Nayla",
+                "relasi": "neutral",
+                "bukti_pesan": [
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "pengirim": "Mutiara",
+            "teks_chat": "kita pakai nomor malam yang sama saat membacanya.",
+            "label_intent": "neutral",
+            "target": []
+          },
+          {
+            "pengirim": "Tsania",
+            "teks_chat": "Nayla mungkin bersih menurut catatan ini, sedangkan Hilmi makin mencurigakan setelah pindah vote.",
+            "label_intent": "offend",
+            "target": [
+              {
+                "pemain": "Nayla",
+                "relasi": "defend",
+                "bukti_pesan": [
+                  3
+                ]
+              },
+              {
+                "pemain": "Hilmi",
+                "relasi": "offend",
+                "bukti_pesan": [
+                  3
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "job_id": "r001914_v02",
+      "session": {
+        "case_name": "mixed_relations",
+        "participants": [
+          "Pandu",
+          "Satya",
+          "Ghani",
+          "Khansa",
+          "Atika"
+        ],
+        "focus_player": "Satya",
+        "panggilan": [],
+        "messages": [
+          {
+            "pengirim": "Khansa",
+            "teks_chat": "sekarang kita baca keterangan Satya soal malam tadi.",
+            "label_intent": "neutral",
+            "target": [
+              {
+                "pemain": "Satya",
+                "relasi": "neutral",
+                "bukti_pesan": [
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "pengirim": "Pandu",
+            "teks_chat": "aku membaca urutan waktunya dulu.",
+            "label_intent": "neutral",
+            "target": []
+          },
+          {
+            "pengirim": "Atika",
+            "teks_chat": "arahin vote ke Ghani aja. Untuk Satya, aku sudah cek dan dapat Civilian.",
+            "label_intent": "offend",
+            "target": [
+              {
+                "pemain": "Satya",
+                "relasi": "defend",
+                "bukti_pesan": [
+                  3
+                ]
+              },
+              {
+                "pemain": "Ghani",
+                "relasi": "offend",
+                "bukti_pesan": [
+                  3
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "job_id": "r004459_v02",
+      "session": {
+        "case_name": "mixed_relations",
+        "participants": [
+          "Mahdi",
+          "Ghani",
+          "Savira",
+          "Khalisa",
+          "Tiara"
+        ],
+        "focus_player": "Mahdi",
+        "panggilan": [],
+        "messages": [
+          {
+            "pengirim": "Savira",
+            "teks_chat": "Mahdi sudah mengirim penjelasan, kita bahas bagian itu dulu.",
+            "label_intent": "neutral",
+            "target": [
+              {
+                "pemain": "Mahdi",
+                "relasi": "neutral",
+                "bukti_pesan": [
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "pengirim": "Khalisa",
+            "teks_chat": "silakan bahas, semua bisa menyampaikan penilaian.",
+            "label_intent": "neutral",
+            "target": []
+          },
+          {
+            "pengirim": "Ghani",
+            "teks_chat": "dia tidak layak dieksekusi cuma karena diam; Tiara malah terkesan ngarang soal Guard.",
+            "label_intent": "offend",
+            "target": [
+              {
+                "pemain": "Mahdi",
+                "relasi": "defend",
+                "bukti_pesan": [
+                  1
+                ]
+              },
+              {
+                "pemain": "Tiara",
+                "relasi": "offend",
+                "bukti_pesan": [
+                  3
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "job_id": "r004647_v02",
+      "session": {
+        "case_name": "mixed_relations",
+        "participants": [
+          "Jalu",
+          "Arum",
+          "Cakra",
+          "Niken",
+          "Amel"
+        ],
+        "focus_player": "Arum",
+        "panggilan": [],
+        "messages": [
+          {
+            "pengirim": "Amel",
+            "teks_chat": "catatan yang sedang terbuka adalah milik Arum.",
+            "label_intent": "neutral",
+            "target": [
+              {
+                "pemain": "Arum",
+                "relasi": "neutral",
+                "bukti_pesan": [
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "pengirim": "Cakra",
+            "teks_chat": "bagian klaim dan bagian hasilnya sudah terpisah di catatan.",
+            "label_intent": "neutral",
+            "target": []
+          },
+          {
+            "pengirim": "Jalu",
+            "teks_chat": "klaim Niken palsu buatku, beda dengan Arum yang klaimnya masih masuk akal dan patut dipercaya.",
+            "label_intent": "offend",
+            "target": [
+              {
+                "pemain": "Arum",
+                "relasi": "defend",
+                "bukti_pesan": [
+                  3
+                ]
+              },
+              {
+                "pemain": "Niken",
+                "relasi": "offend",
+                "bukti_pesan": [
+                  3
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "job_id": "r002070_v02",
+      "session": {
+        "case_name": "mixed_relations",
+        "participants": [
+          "Syifa",
+          "Prabu",
+          "Anisa",
+          "Hilmi",
+          "Banyu"
+        ],
+        "focus_player": "Prabu",
+        "panggilan": [],
+        "messages": [
+          {
+            "pengirim": "Banyu",
+            "teks_chat": "aku menaruh keterangan Prabu pada bagian awal ringkasan.",
+            "label_intent": "neutral",
+            "target": [
+              {
+                "pemain": "Prabu",
+                "relasi": "neutral",
+                "bukti_pesan": [
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "pengirim": "Hilmi",
+            "teks_chat": "teks yang masuk belum berubah sejak disalin.",
+            "label_intent": "neutral",
+            "target": []
+          },
+          {
+            "pengirim": "Anisa",
+            "teks_chat": "aku lindungi Prabu dari vote ini, karena Syifa yang jelas-jelas menutupi urutan aksinya.",
+            "label_intent": "offend",
+            "target": [
+              {
+                "pemain": "Prabu",
+                "relasi": "defend",
+                "bukti_pesan": [
+                  3
+                ]
+              },
+              {
+                "pemain": "Syifa",
+                "relasi": "offend",
+                "bukti_pesan": [
+                  3
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "job_id": "r000822_v02",
+      "session": {
+        "case_name": "mixed_relations",
+        "participants": [
+          "Niken",
+          "Thalia",
+          "Tasya",
+          "Raksa",
+          "Kemal"
+        ],
+        "focus_player": "Raksa",
+        "panggilan": [],
+        "messages": [
+          {
+            "pengirim": "Kemal",
+            "teks_chat": "kita sedang meninjau klaim Raksa sebelum pindah topik.",
+            "label_intent": "neutral",
+            "target": [
+              {
+                "pemain": "Raksa",
+                "relasi": "neutral",
+                "bukti_pesan": [
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "pengirim": "Niken",
+            "teks_chat": "kita pakai nomor malam yang sama saat membacanya.",
+            "label_intent": "neutral",
+            "target": []
+          },
+          {
+            "pengirim": "Thalia",
+            "teks_chat": "yang perlu dicurigai Tasya. Diamnya Raksa masih wajar, jangan jadikan tersangka juga.",
+            "label_intent": "offend",
+            "target": [
+              {
+                "pemain": "Raksa",
+                "relasi": "defend",
+                "bukti_pesan": [
+                  3
+                ]
+              },
+              {
+                "pemain": "Tasya",
+                "relasi": "offend",
+                "bukti_pesan": [
+                  3
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}
+```

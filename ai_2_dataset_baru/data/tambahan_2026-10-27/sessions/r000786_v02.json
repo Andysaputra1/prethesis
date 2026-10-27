@@ -1,0 +1,71 @@
+{
+  "job": {
+    "job_id": "r000786_v02",
+    "case_name": "agreement",
+    "case_description": "Pesan sekarang menyetujui atau membantah pesan pemain lain di konteks tanpa menyebut ulang nama target. Setuju dengan tuduhan = offend pemain yang dituduh; membantah tuduhan atau setuju dengan pembelaan = defend. Identitas target diwarisi dari pesan yang ditanggapi. FOKUS TAMBAHAN: Setuju/bantah tanpa ulang nama target; sumber pendapat bukan target.",
+    "source": {
+      "source_row": 786,
+      "source_group": "09e6b66401a497b90bae",
+      "teks_chat": "aku stalker, cooldown-ku baru kepakai ronde ini, jadi jangan bilang aku ngarang",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 3,
+    "pesan_typo_ringan": [],
+    "case_index": 0
+  },
+  "session": {
+    "case_name": "agreement",
+    "participants": [
+      "Tania",
+      "Keisha",
+      "Anisa",
+      "Ghina",
+      "Sekar"
+    ],
+    "focus_player": "Ghina",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Keisha",
+        "teks_chat": "Ghina bukan Hitman menurutku, jangan buru-buru buang dia.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Ghina",
+            "relasi": "defend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Tania",
+        "teks_chat": "masih empat puluh dua detik di timer sini nih.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Sekar",
+        "teks_chat": "sepemikiran dengan Keisha, aku dukung kesimpulan yang tadi disampaikan.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Ghina",
+            "relasi": "defend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "038_codex_revisi1.txt"
+  }
+}

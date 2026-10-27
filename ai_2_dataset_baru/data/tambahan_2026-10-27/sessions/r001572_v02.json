@@ -1,0 +1,131 @@
+{
+  "job": {
+    "job_id": "r001572_v02",
+    "case_name": "reference_start",
+    "case_description": "Tepat 12 konteks. Penyebutan target eksplisit di pesan konteks pertama; pesan sekarang memakai kata ganti. FOKUS TAMBAHAN: Tepat 12 konteks; nama target hanya pada konteks pertama; utama dia/-nya.",
+    "source": {
+      "source_row": 1572,
+      "source_group": "2ac723df0b96cdfa83e2",
+      "teks_chat": "lu bilang gw defensif, tapi si B juga menghindar setiap ditanya targetnya",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 13,
+    "pesan_typo_ringan": [],
+    "case_index": 29
+  },
+  "session": {
+    "case_name": "reference_start",
+    "participants": [
+      "Rasyid",
+      "Isna",
+      "Mutiara",
+      "Rengga",
+      "Zulfikar"
+    ],
+    "focus_player": "Zulfikar",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Isna",
+        "teks_chat": "Zulfikar bilang pilihannya masih bisa berubah sebelum vote dikunci.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Zulfikar",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Rengga",
+        "teks_chat": "tombol ganti pilihan memang masih ada di fase itu?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Mutiara",
+        "teks_chat": "buat semua, iya, sampai hitungan memilihnya selesai.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Rasyid",
+        "teks_chat": "gw sempat melihat tombolnya masih nyala sih.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Isna",
+        "teks_chat": "yang di chat berarti masih rencana saat dikirim.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Rengga",
+        "teks_chat": "alasan perubahan nanti bisa dibahas lewat teksnya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Mutiara",
+        "teks_chat": "layar pilihan sendiri nggak menampilkan motif kok.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Rasyid",
+        "teks_chat": "iya, cuma nama dan jumlah suara yang terlihat.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Isna",
+        "teks_chat": "buat grup, tunggu pengumuman kalau ingin bilang hasil akhir.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Rengga",
+        "teks_chat": "sekarang belum ada pengumuman final di bagian yang dibaca.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Mutiara",
+        "teks_chat": "oke nih, rencana dan hasil jadi nggak ketuker.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Rasyid",
+        "teks_chat": "lanjut ke alasan yang disampaikan sebelum tombol dikunci.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Rasyid",
+        "teks_chat": "kita kembali ke alibi pembuka. Aku curiga dia mengarang jeda chat supaya lolos.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Zulfikar",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "018_codex_revisi1.txt"
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "job": {
+    "job_id": "r001064_v02",
+    "case_name": "plural_reference",
+    "case_description": "Pesan sekarang memakai mereka/kalian/keduanya/berdua untuk dua pemain atau lebih yang jelas dari konteks, tanpa menyebut ulang nama mereka. Simpan semua pemain itu sebagai target. FOKUS TAMBAHAN: Mereka/keduanya menunjuk dua orang. Sapaan ke pemain ketiga bukan target.",
+    "source": {
+      "source_row": 1064,
+      "source_group": "effc6d86d50fb1fb945d",
+      "teks_chat": "aku bukan pelaku malam, role aku civilian",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 3,
+    "pesan_typo_ringan": [],
+    "case_index": 0
+  },
+  "session": {
+    "case_name": "plural_reference",
+    "participants": [
+      "Wulan",
+      "Almira",
+      "Jalu",
+      "Satya",
+      "Savira"
+    ],
+    "focus_player": "Satya",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Almira",
+        "teks_chat": "Satya sama Savira baru jawab setelah sama-sama diam sebentar.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Satya",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          },
+          {
+            "pemain": "Savira",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Jalu",
+        "teks_chat": "gw baca dulu klaim mereka berdua, baru kasih pendapat.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Satya",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          },
+          {
+            "pemain": "Savira",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Wulan",
+        "teks_chat": "jangan suudzon dulu Jalu, mereka berdua aman menurut hasil pengecekanku.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Satya",
+            "relasi": "defend",
+            "bukti_pesan": [
+              1
+            ]
+          },
+          {
+            "pemain": "Savira",
+            "relasi": "defend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "033_codex_revisi1.txt"
+  }
+}

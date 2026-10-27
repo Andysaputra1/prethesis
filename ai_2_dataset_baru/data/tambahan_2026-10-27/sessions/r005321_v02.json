@@ -1,0 +1,77 @@
+{
+  "job": {
+    "job_id": "r005321_v02",
+    "case_name": "interruption",
+    "case_description": "Pembahasan target disela obrolan waktu/ronde; kaitan kembali ke target masih jelas. FOKUS TAMBAHAN: Selingan waktu lalu kembali ke target; sertakan pembelaan diri.",
+    "source": {
+      "source_row": 5321,
+      "source_group": "ee09a9eeabe38b7f627c",
+      "teks_chat": "kok jadi gw yang kena, padahal belum ngomong apa-apa",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 4,
+    "pesan_typo_ringan": [],
+    "case_index": 14
+  },
+  "session": {
+    "case_name": "interruption",
+    "participants": [
+      "Thalia",
+      "Tsania",
+      "Syifa",
+      "Khansa",
+      "Astri"
+    ],
+    "focus_player": "Thalia",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Tsania",
+        "teks_chat": "Thalia menyebut hasil skill di pesan yang barusan lewat.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Thalia",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Syifa",
+        "teks_chat": "buat grup, sisa tiga puluh tujuh detik sebelum memilih.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Khansa",
+        "teks_chat": "di sini waktu diskusinya juga belum selesai semuanya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Astri",
+        "teks_chat": "aku kembali membela Thalia; selisih waktu baca bukan bukti bahwa dia Hitman.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Thalia",
+            "relasi": "defend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "044_codex_revisi1.txt"
+  }
+}

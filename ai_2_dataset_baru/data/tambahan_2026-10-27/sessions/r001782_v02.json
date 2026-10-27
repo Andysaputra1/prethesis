@@ -1,0 +1,79 @@
+{
+  "job": {
+    "job_id": "r001782_v02",
+    "case_name": "multiple_targets",
+    "case_description": "Dua atau lebih pemain menjadi target relasi yang sama secara jelas. FOKUS TAMBAHAN: Dua pemain bernama dengan relasi sama.",
+    "source": {
+      "source_row": 1782,
+      "source_group": "a1a90f43cfa8cff828e4",
+      "teks_chat": "Nama gw terus diseret buat nutupin kesalahan Lala, jadi sebelum salah eksekusi, keluarkan Lala dulu",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 2,
+    "pesan_typo_ringan": [],
+    "case_index": 1
+  },
+  "session": {
+    "case_name": "multiple_targets",
+    "participants": [
+      "Shafa",
+      "Ghani",
+      "Kemal",
+      "Utari",
+      "Fathia"
+    ],
+    "focus_player": "Fathia",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Kemal",
+        "teks_chat": "nih, Shafa dan Fathia dua-duanya lagi cerita soal malam kedua.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Fathia",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          },
+          {
+            "pemain": "Shafa",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Utari",
+        "teks_chat": "aku curiga Fathia bareng Shafa; alibi keduanya kelihatan disusun untuk menutup kejadian malam.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Fathia",
+            "relasi": "offend",
+            "bukti_pesan": [
+              2
+            ]
+          },
+          {
+            "pemain": "Shafa",
+            "relasi": "offend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "041_codex_revisi1.txt"
+  }
+}

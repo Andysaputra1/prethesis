@@ -1,0 +1,78 @@
+{
+  "job": {
+    "job_id": "r002985_v02",
+    "case_name": "mixed_relations",
+    "case_description": "Membela satu pemain dan menuduh pemain lain. Intent utama offend; simpan kedua relasi. FOKUS TAMBAHAN: Bela A dan tuduh B; variasi urutan, kata ganti, dan pembelaan dalam anak kalimat.",
+    "source": {
+      "source_row": 2985,
+      "source_group": "a4c9ea4d5f82e715de6e",
+      "teks_chat": "lu jangan ngalihin topik, dari awal gerak-gerikmu paling aneh",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 3,
+    "pesan_typo_ringan": [],
+    "case_index": 2
+  },
+  "session": {
+    "case_name": "mixed_relations",
+    "participants": [
+      "Almira",
+      "Haikal",
+      "Mutiara",
+      "Delima",
+      "Tirta"
+    ],
+    "focus_player": "Haikal",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Tirta",
+        "teks_chat": "Haikal nulis role dulu lalu menjelaskan skill yang dimaksud.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Haikal",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Delima",
+        "teks_chat": "gw pengin tahu alasan di balik masing-masing pilihan.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Mutiara",
+        "teks_chat": "meski Haikal tadi lambat jawab, dia aman. Yang sus itu Almira dengan klaim Spy mendadaknya.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Haikal",
+            "relasi": "defend",
+            "bukti_pesan": [
+              3
+            ]
+          },
+          {
+            "pemain": "Almira",
+            "relasi": "offend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "011_codex_revisi1.txt"
+  }
+}

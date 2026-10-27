@@ -1,0 +1,131 @@
+{
+  "job": {
+    "job_id": "r000830_v02",
+    "case_name": "reference_start",
+    "case_description": "Tepat 12 konteks. Penyebutan target eksplisit di pesan konteks pertama; pesan sekarang memakai kata ganti. FOKUS TAMBAHAN: Tepat 12 konteks; nama target hanya pada konteks pertama; utama dia/-nya.",
+    "source": {
+      "source_row": 830,
+      "source_group": "c7471b27315caa2c0ded",
+      "teks_chat": "sumpah role-ku Spy, semalam aku cover Naya, sekarang Raka yang perlu kita keluarkan",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 13,
+    "pesan_typo_ringan": [],
+    "case_index": 19
+  },
+  "session": {
+    "case_name": "reference_start",
+    "participants": [
+      "Kresna",
+      "Halim",
+      "Ferdi",
+      "Salsabila",
+      "Delima"
+    ],
+    "focus_player": "Kresna",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Delima",
+        "teks_chat": "Kresna menulis sudah di-Guard, bukan aku Guard.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Kresna",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Halim",
+        "teks_chat": "dua bentuk kalimat itu beda dong, semuanya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Ferdi",
+        "teks_chat": "iya, satu menyebut menerima aksi, satu menyebut melakukan.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Salsabila",
+        "teks_chat": "gw baru sadar pas baca dari awal lagi.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Delima",
+        "teks_chat": "di notifikasi memang gampang kepotong sih.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Halim",
+        "teks_chat": "kalimat lengkapnya masih satu pesan yang sama.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Ferdi",
+        "teks_chat": "buat grup, perhatikan awal kata sebelum menyimpulkan role.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Salsabila",
+        "teks_chat": "ada awalan di pada teks yang tampil kok.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Delima",
+        "teks_chat": "berarti belum otomatis klaim sebagai pengguna skill.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Halim",
+        "teks_chat": "iya, kita cuma bisa bahas isi yang benar-benar tertulis.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Ferdi",
+        "teks_chat": "nih, teks aslinya masih terlihat tanpa perlu diganti.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Salsabila",
+        "teks_chat": "oke, sekarang tanggapannya bisa diteruskan.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Salsabila",
+        "teks_chat": "sekarang makin kelihatan dia sengaja mendorong salah vote, bukan sekadar keliru mengingat.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Kresna",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "017_codex_revisi1.txt"
+  }
+}

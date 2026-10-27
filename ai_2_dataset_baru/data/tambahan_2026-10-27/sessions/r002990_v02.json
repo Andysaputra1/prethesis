@@ -1,0 +1,71 @@
+{
+  "job": {
+    "job_id": "r002990_v02",
+    "case_name": "witness",
+    "case_description": "Nama saksi/korban disebut, tetapi bukan target serangan atau pembelaan. FOKUS TAMBAHAN: Nama sumber/saksi/penuduh bukan target. Sertakan bantahan isi klaim Peek penuduh yang membela pengirim saja.",
+    "source": {
+      "source_row": 2990,
+      "source_group": "6070565f3f0c7eb4951d",
+      "teks_chat": "Eka mendadak agresif setelah malam tadi, menurutku dia punya peran jahat",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 3,
+    "pesan_typo_ringan": [],
+    "case_index": 45
+  },
+  "session": {
+    "case_name": "witness",
+    "participants": [
+      "Kresna",
+      "Nadya",
+      "Yudhis",
+      "Jauhar",
+      "Naufala"
+    ],
+    "focus_player": "Naufala",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Kresna",
+        "teks_chat": "aku lihat Naufala menyebut nomor malam dengan jelas sekarang.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Naufala",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Nadya",
+        "teks_chat": "kita masih ada kesempatan bertanya sebelum memilih.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Jauhar",
+        "teks_chat": "rangkuman Kresna menunjukkan Naufala asal menuduh demi lolos dari pemeriksaan; aku nggak percaya Naufala.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Naufala",
+            "relasi": "offend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "010_codex_revisi1.txt"
+  }
+}

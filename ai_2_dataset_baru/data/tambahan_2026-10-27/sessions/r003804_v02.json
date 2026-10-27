@@ -1,0 +1,71 @@
+{
+  "job": {
+    "job_id": "r003804_v02",
+    "case_name": "witness",
+    "case_description": "Nama saksi/korban disebut, tetapi bukan target serangan atau pembelaan. FOKUS TAMBAHAN: Nama sumber/saksi/penuduh bukan target. Sertakan bantahan isi klaim Peek penuduh yang membela pengirim saja.",
+    "source": {
+      "source_row": 3804,
+      "source_group": "19d2d183fba336895ca4",
+      "teks_chat": "Mereka sengaja bikin gw kena Gag Order? berarti claim gw sebagai Stalker benar, tetap vote Joko",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 3,
+    "pesan_typo_ringan": [],
+    "case_index": 5
+  },
+  "session": {
+    "case_name": "witness",
+    "participants": [
+      "Vanya",
+      "Aisyah",
+      "Larasati",
+      "Yudhis",
+      "Anindya"
+    ],
+    "focus_player": "Anindya",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Aisyah",
+        "teks_chat": "aku dengar Anindya menyebut waktu sebelum fase berganti.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Anindya",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Yudhis",
+        "teks_chat": "yang udah selesai ngetik boleh kirim, nggak perlu tunggu giliran panjang.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Vanya",
+        "teks_chat": "dengar kesaksian Aisyah tadi, makin jelas Anindya sengaja menggeser vote tanpa alasan.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Anindya",
+            "relasi": "offend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "006_codex_revisi1.txt"
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "job": {
+    "job_id": "r002893_v02",
+    "case_name": "mixed_relations",
+    "case_description": "Membela satu pemain dan menuduh pemain lain. Intent utama offend; simpan kedua relasi. FOKUS TAMBAHAN: Bela A dan tuduh B; variasi urutan, kata ganti, dan pembelaan dalam anak kalimat.",
+    "source": {
+      "source_row": 2893,
+      "source_group": "b2e021f55ef57fbfabac",
+      "teks_chat": "G terus mendorong kita memilih C tanpa bukti jelas, ini pola Hitman, fokus vote G",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 3,
+    "pesan_typo_ringan": [],
+    "case_index": 19
+  },
+  "session": {
+    "case_name": "mixed_relations",
+    "participants": [
+      "Aruna",
+      "Syauqi",
+      "Raisa",
+      "Astri",
+      "Hilmi"
+    ],
+    "focus_player": "Syauqi",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Astri",
+        "teks_chat": "Syauqi menyampaikan urutan kejadian dari sebelum chat terbuka.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Syauqi",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Hilmi",
+        "teks_chat": "kalau mau menjelaskan urutannya, mulai sebelum fase malam saja.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Aruna",
+        "teks_chat": "menurutku Raisa bohong, sedangkan Syauqi hanya salah tulis dan tidak layak dicurigai.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Syauqi",
+            "relasi": "defend",
+            "bukti_pesan": [
+              3
+            ]
+          },
+          {
+            "pemain": "Raisa",
+            "relasi": "offend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "012_codex_revisi1.txt"
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "job": {
+    "job_id": "r005143_v02",
+    "case_name": "witness",
+    "case_description": "Nama saksi/korban disebut, tetapi bukan target serangan atau pembelaan. FOKUS TAMBAHAN: Nama sumber/saksi/penuduh bukan target. Sertakan bantahan isi klaim Peek penuduh yang membela pengirim saja.",
+    "source": {
+      "source_row": 5143,
+      "source_group": "fe7fd25b3fce2b35fca7",
+      "teks_chat": "gw civilian asli, role paling sepi tapi bukan ancaman",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 3,
+    "pesan_typo_ringan": [],
+    "case_index": 28
+  },
+  "session": {
+    "case_name": "witness",
+    "participants": [
+      "Anisa",
+      "Ratih",
+      "Najwa",
+      "Niken",
+      "Raisa"
+    ],
+    "focus_player": "Niken",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Raisa",
+        "teks_chat": "yang mau bahas klaim Niken, pesannya masih di atas kok.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Niken",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Ratih",
+        "teks_chat": "gw sih masih menunggu pendapat yang belum masuk.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Anisa",
+        "teks_chat": "hasil yang diceritakan Raisa menunjukkan Niken Civilian, jadi aku bela Niken.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Niken",
+            "relasi": "defend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "008_codex_revisi1.txt"
+  }
+}

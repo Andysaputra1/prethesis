@@ -1,0 +1,576 @@
+```json
+{
+  "results": [
+    {
+      "job_id": "r001955_v02",
+      "session": {
+        "case_name": "interruption",
+        "participants": [
+          "Raisa",
+          "Keisha",
+          "Sekar",
+          "Isna",
+          "Zulfikar"
+        ],
+        "focus_player": "Zulfikar",
+        "panggilan": [],
+        "messages": [
+          {
+            "pengirim": "Sekar",
+            "teks_chat": "pembahasan kita masih tentang klaim Zulfikar dan alasan jeda chatnya.",
+            "label_intent": "neutral",
+            "target": [
+              {
+                "pemain": "Zulfikar",
+                "relasi": "neutral",
+                "bukti_pesan": [
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "pengirim": "Keisha",
+            "teks_chat": "buat semuanya, timer diskusi menunjukkan empat puluh detik.",
+            "label_intent": "neutral",
+            "target": []
+          },
+          {
+            "pengirim": "Raisa",
+            "teks_chat": "di layarku hitungannya sama, masih sesi diskusi.",
+            "label_intent": "neutral",
+            "target": []
+          },
+          {
+            "pengirim": "Isna",
+            "teks_chat": "kita lanjut lagi, klaim Zulfikar tidak masuk akal dan aku menandainya sebagai calon pelaku.",
+            "label_intent": "offend",
+            "target": [
+              {
+                "pemain": "Zulfikar",
+                "relasi": "offend",
+                "bukti_pesan": [
+                  4
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "job_id": "r002137_v02",
+      "session": {
+        "case_name": "interruption",
+        "participants": [
+          "Kirana",
+          "Tsania",
+          "Dyah",
+          "Rengga",
+          "Salma"
+        ],
+        "focus_player": "Tsania",
+        "panggilan": [],
+        "messages": [
+          {
+            "pengirim": "Rengga",
+            "teks_chat": "aku menduga Tsania yang melakukan Hostage, ceritanya belum meyakinkan.",
+            "label_intent": "offend",
+            "target": [
+              {
+                "pemain": "Tsania",
+                "relasi": "offend",
+                "bukti_pesan": [
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "pengirim": "Dyah",
+            "teks_chat": "sebentar, sisa waktunya satu menit di layarku.",
+            "label_intent": "neutral",
+            "target": []
+          },
+          {
+            "pengirim": "Salma",
+            "teks_chat": "aku sudah melihat timernya, silakan teruskan pembahasan.",
+            "label_intent": "neutral",
+            "target": []
+          },
+          {
+            "pengirim": "Tsania",
+            "teks_chat": "aku belum selesai tadi: jangan vote aku, role-ku Civilian dan tidak punya skill menyerang.",
+            "label_intent": "defend",
+            "target": [
+              {
+                "pemain": "Tsania",
+                "relasi": "defend",
+                "bukti_pesan": [
+                  4
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "job_id": "r004763_v02",
+      "session": {
+        "case_name": "interruption",
+        "participants": [
+          "Tania",
+          "Ghina",
+          "Safira",
+          "Niken",
+          "Febrian"
+        ],
+        "focus_player": "Niken",
+        "panggilan": [],
+        "messages": [
+          {
+            "pengirim": "Safira",
+            "teks_chat": "pembahasan kita masih tentang klaim Niken dan alasan jeda chatnya.",
+            "label_intent": "neutral",
+            "target": [
+              {
+                "pemain": "Niken",
+                "relasi": "neutral",
+                "bukti_pesan": [
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "pengirim": "Tania",
+            "teks_chat": "pengingat untuk semua: ronde belum berganti, masih sesi diskusi.",
+            "label_intent": "neutral",
+            "target": []
+          },
+          {
+            "pengirim": "Ghina",
+            "teks_chat": "oke, penanda waktunya sudah terlihat untuk semua.",
+            "label_intent": "neutral",
+            "target": []
+          },
+          {
+            "pengirim": "Febrian",
+            "teks_chat": "waktu memang pendek, tapi alasanku vote Niken tetap karena klaimnya palsu, bukan karena buru-buru.",
+            "label_intent": "offend",
+            "target": [
+              {
+                "pemain": "Niken",
+                "relasi": "offend",
+                "bukti_pesan": [
+                  4
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "job_id": "r000659_v02",
+      "session": {
+        "case_name": "interruption",
+        "participants": [
+          "Shafa",
+          "Embun",
+          "Almira",
+          "Anisa",
+          "Gendis"
+        ],
+        "focus_player": "Anisa",
+        "panggilan": [],
+        "messages": [
+          {
+            "pengirim": "Almira",
+            "teks_chat": "pembahasan kita masih tentang klaim Anisa dan alasan jeda chatnya.",
+            "label_intent": "neutral",
+            "target": [
+              {
+                "pemain": "Anisa",
+                "relasi": "neutral",
+                "bukti_pesan": [
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "pengirim": "Gendis",
+            "teks_chat": "jam diskusi sudah berjalan, sisa tiga puluh detik.",
+            "label_intent": "neutral",
+            "target": []
+          },
+          {
+            "pengirim": "Shafa",
+            "teks_chat": "belum berganti ronde, kolom diskusi tetap terbuka.",
+            "label_intent": "neutral",
+            "target": []
+          },
+          {
+            "pengirim": "Embun",
+            "teks_chat": "balik ke orang tadi, dia tidak bersalah dari catatan Peek-ku. Tolong tahan vote itu.",
+            "label_intent": "defend",
+            "target": [
+              {
+                "pemain": "Anisa",
+                "relasi": "defend",
+                "bukti_pesan": [
+                  1
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "job_id": "r004369_v02",
+      "session": {
+        "case_name": "interruption",
+        "participants": [
+          "Zulfikar",
+          "Wulan",
+          "Ghani",
+          "Tiara",
+          "Kresna"
+        ],
+        "focus_player": "Wulan",
+        "panggilan": [],
+        "messages": [
+          {
+            "pengirim": "Ghani",
+            "teks_chat": "pembahasan kita masih tentang klaim Wulan dan alasan jeda chatnya.",
+            "label_intent": "neutral",
+            "target": [
+              {
+                "pemain": "Wulan",
+                "relasi": "neutral",
+                "bukti_pesan": [
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "pengirim": "Tiara",
+            "teks_chat": "untuk seluruh pemain, waktu vote akan mulai setelah hitungan ini.",
+            "label_intent": "neutral",
+            "target": []
+          },
+          {
+            "pengirim": "Kresna",
+            "teks_chat": "pengingatnya sudah terbaca, kita bisa lanjut.",
+            "label_intent": "neutral",
+            "target": []
+          },
+          {
+            "pengirim": "Zulfikar",
+            "teks_chat": "setelah jeda obrolan waktu, kecurigaanku masih ke Wulan yang alibinya makin berantakan.",
+            "label_intent": "offend",
+            "target": [
+              {
+                "pemain": "Wulan",
+                "relasi": "offend",
+                "bukti_pesan": [
+                  4
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "job_id": "r000972_v02",
+      "session": {
+        "case_name": "interruption",
+        "participants": [
+          "Tsania",
+          "Sekar",
+          "Naura",
+          "Tasya",
+          "Kautsar"
+        ],
+        "focus_player": "Kautsar",
+        "panggilan": [],
+        "messages": [
+          {
+            "pengirim": "Tasya",
+            "teks_chat": "Kautsar, alasan terlambatmu janggal menurutku, aku pilih vote kamu.",
+            "label_intent": "offend",
+            "target": [
+              {
+                "pemain": "Kautsar",
+                "relasi": "offend",
+                "bukti_pesan": [
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "pengirim": "Naura",
+            "teks_chat": "buat semuanya, timer diskusi menunjukkan empat puluh detik.",
+            "label_intent": "neutral",
+            "target": []
+          },
+          {
+            "pengirim": "Sekar",
+            "teks_chat": "di layarku hitungannya sama, masih sesi diskusi.",
+            "label_intent": "neutral",
+            "target": []
+          },
+          {
+            "pengirim": "Kautsar",
+            "teks_chat": "melanjutkan jawabanku yang terputus, aku bukan Hitman; jaringan membuat pesan tadi tertunda.",
+            "label_intent": "defend",
+            "target": [
+              {
+                "pemain": "Kautsar",
+                "relasi": "defend",
+                "bukti_pesan": [
+                  4
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "job_id": "r003056_v02",
+      "session": {
+        "case_name": "interruption",
+        "participants": [
+          "Kirana",
+          "Marsha",
+          "Halim",
+          "Nadhif",
+          "Ghea"
+        ],
+        "focus_player": "Halim",
+        "panggilan": [],
+        "messages": [
+          {
+            "pengirim": "Ghea",
+            "teks_chat": "pembahasan kita masih tentang klaim Halim dan alasan jeda chatnya.",
+            "label_intent": "neutral",
+            "target": [
+              {
+                "pemain": "Halim",
+                "relasi": "neutral",
+                "bukti_pesan": [
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "pengirim": "Nadhif",
+            "teks_chat": "sebentar, sisa waktunya satu menit di layarku.",
+            "label_intent": "neutral",
+            "target": []
+          },
+          {
+            "pengirim": "Kirana",
+            "teks_chat": "aku sudah melihat timernya, silakan teruskan pembahasan.",
+            "label_intent": "neutral",
+            "target": []
+          },
+          {
+            "pengirim": "Marsha",
+            "teks_chat": "aku ingin kembali menyorot Halim, motifnya mempercepat vote terasa seperti melindungi pelaku.",
+            "label_intent": "offend",
+            "target": [
+              {
+                "pemain": "Halim",
+                "relasi": "offend",
+                "bukti_pesan": [
+                  4
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "job_id": "r003443_v02",
+      "session": {
+        "case_name": "interruption",
+        "participants": [
+          "Ayuning",
+          "Kirana",
+          "Marsha",
+          "Nadhif",
+          "Larasati"
+        ],
+        "focus_player": "Larasati",
+        "panggilan": [],
+        "messages": [
+          {
+            "pengirim": "Nadhif",
+            "teks_chat": "pembahasan kita masih tentang klaim Larasati dan alasan jeda chatnya.",
+            "label_intent": "neutral",
+            "target": [
+              {
+                "pemain": "Larasati",
+                "relasi": "neutral",
+                "bukti_pesan": [
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "pengirim": "Ayuning",
+            "teks_chat": "pengingat untuk semua: ronde belum berganti, masih sesi diskusi.",
+            "label_intent": "neutral",
+            "target": []
+          },
+          {
+            "pengirim": "Kirana",
+            "teks_chat": "oke, penanda waktunya sudah terlihat untuk semua.",
+            "label_intent": "neutral",
+            "target": []
+          },
+          {
+            "pengirim": "Marsha",
+            "teks_chat": "tentang Larasati yang dibahas sebelum selingan, aku percaya dia warga dan menolak eksekusinya.",
+            "label_intent": "defend",
+            "target": [
+              {
+                "pemain": "Larasati",
+                "relasi": "defend",
+                "bukti_pesan": [
+                  4
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "job_id": "r002058_v02",
+      "session": {
+        "case_name": "interruption",
+        "participants": [
+          "Nadya",
+          "Haris",
+          "Izza",
+          "Amel",
+          "Khansa"
+        ],
+        "focus_player": "Khansa",
+        "panggilan": [],
+        "messages": [
+          {
+            "pengirim": "Haris",
+            "teks_chat": "pembahasan kita masih tentang klaim Khansa dan alasan jeda chatnya.",
+            "label_intent": "neutral",
+            "target": [
+              {
+                "pemain": "Khansa",
+                "relasi": "neutral",
+                "bukti_pesan": [
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "pengirim": "Nadya",
+            "teks_chat": "jam diskusi sudah berjalan, sisa tiga puluh detik.",
+            "label_intent": "neutral",
+            "target": []
+          },
+          {
+            "pengirim": "Izza",
+            "teks_chat": "belum berganti ronde, kolom diskusi tetap terbuka.",
+            "label_intent": "neutral",
+            "target": []
+          },
+          {
+            "pengirim": "Amel",
+            "teks_chat": "oke timer lanjut, aku akan vote Khansa. Cerita soal Guard-nya kedengaran ngarang.",
+            "label_intent": "offend",
+            "target": [
+              {
+                "pemain": "Khansa",
+                "relasi": "offend",
+                "bukti_pesan": [
+                  4
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "job_id": "r003218_v02",
+      "session": {
+        "case_name": "interruption",
+        "participants": [
+          "Bagaskara",
+          "Pandu",
+          "Keisha",
+          "Rizal",
+          "Tasya"
+        ],
+        "focus_player": "Keisha",
+        "panggilan": [],
+        "messages": [
+          {
+            "pengirim": "Bagaskara",
+            "teks_chat": "jangan percaya Keisha, klaimnya kelihatan seperti alibi palsu.",
+            "label_intent": "offend",
+            "target": [
+              {
+                "pemain": "Keisha",
+                "relasi": "offend",
+                "bukti_pesan": [
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "pengirim": "Pandu",
+            "teks_chat": "untuk seluruh pemain, waktu vote akan mulai setelah hitungan ini.",
+            "label_intent": "neutral",
+            "target": []
+          },
+          {
+            "pengirim": "Rizal",
+            "teks_chat": "pengingatnya sudah terbaca, kita bisa lanjut.",
+            "label_intent": "neutral",
+            "target": []
+          },
+          {
+            "pengirim": "Keisha",
+            "teks_chat": "sebelum topiknya hilang, aku tetap membela diriku; tuduhan awal tadi tidak punya dasar.",
+            "label_intent": "defend",
+            "target": [
+              {
+                "pemain": "Keisha",
+                "relasi": "defend",
+                "bukti_pesan": [
+                  4
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}
+```

@@ -1,0 +1,131 @@
+{
+  "job": {
+    "job_id": "r001347_v02",
+    "case_name": "reference_start",
+    "case_description": "Tepat 12 konteks. Penyebutan target eksplisit di pesan konteks pertama; pesan sekarang memakai kata ganti. FOKUS TAMBAHAN: Tepat 12 konteks; nama target hanya pada konteks pertama; utama dia/-nya.",
+    "source": {
+      "source_row": 1347,
+      "source_group": "622ff56852a0c918d4d6",
+      "teks_chat": "jawaban lu makin bikin sus, semalam lu nge-Guard siapa?",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 13,
+    "pesan_typo_ringan": [],
+    "case_index": 43
+  },
+  "session": {
+    "case_name": "reference_start",
+    "participants": [
+      "Hafiz",
+      "Zakia",
+      "Amel",
+      "Tiara",
+      "Halim"
+    ],
+    "focus_player": "Amel",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Zakia",
+        "teks_chat": "Amel bilang aman setelah menyebut aksi Guard semalam.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Amel",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Tiara",
+        "teks_chat": "buat grup, kata aman di sini jangan dipisah dari skillnya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Halim",
+        "teks_chat": "iya, Guard bukan skill untuk mengungkap nama role.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Hafiz",
+        "teks_chat": "gw sih melihat kalimatnya sebagai laporan tentang perlindungan.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Zakia",
+        "teks_chat": "tidak ada nama role pada bagian hasil yang tertulis.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Tiara",
+        "teks_chat": "kata Civilian juga nggak muncul kok di pesan itu.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Halim",
+        "teks_chat": "kalau mau menanggapi, baca dari awal dong semuanya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Hafiz",
+        "teks_chat": "nomor malamnya ada di bagian akhir.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Zakia",
+        "teks_chat": "aku sudah melihat keseluruhan pesan sekarang.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Tiara",
+        "teks_chat": "yang jadi sumber tetap ucapan pemain, bukan pengumuman publik.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Halim",
+        "teks_chat": "nih, jenis hasilnya sudah bisa dibedakan dari Peek.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Hafiz",
+        "teks_chat": "oke, lanjutkan pembahasan laporan tersebut.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Hafiz",
+        "teks_chat": "dia sengaja memutar pembicaraan soal pilihannya, dan itu cukup bikin aku curiga berat.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Amel",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "020_codex_revisi1.txt"
+  }
+}

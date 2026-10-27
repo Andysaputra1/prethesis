@@ -1,0 +1,65 @@
+{
+  "job": {
+    "job_id": "r002083_v02",
+    "case_name": "neutral_status",
+    "case_description": "Klaim status/role atau pertanyaan informasi saja tanpa pembelaan/serangan; target neutral sesuai ATURAN_LABEL.md. FOKUS TAMBAHAN: Neutral bertarget neutral: nama, kamu jelas, atau jawaban ke penanya khusus.",
+    "source": {
+      "source_row": 2083,
+      "source_group": "83cba699942943ed85ae",
+      "teks_chat": "gw Hitman, sekalian aja biar diskusinya nggak muter-muter",
+      "label_intent": "neutral"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 2,
+    "pesan_typo_ringan": [],
+    "case_index": 19
+  },
+  "session": {
+    "case_name": "neutral_status",
+    "participants": [
+      "Yasmin",
+      "Sakti",
+      "Tania",
+      "Mutiara",
+      "Thalia"
+    ],
+    "focus_player": "Yasmin",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Yasmin",
+        "teks_chat": "Sakti, ada role atau aksi malam yang mau kamu laporkan?",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Sakti",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Sakti",
+        "teks_chat": "aku Civilian, tidak ada aksi malam untuk dilaporkan ke pertanyaanmu itu.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Yasmin",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "050_codex_revisi1.txt"
+  }
+}

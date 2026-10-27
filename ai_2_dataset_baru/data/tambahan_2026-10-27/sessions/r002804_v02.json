@@ -1,0 +1,57 @@
+{
+  "job": {
+    "job_id": "r002804_v02",
+    "case_name": "rhetorical_question",
+    "case_description": "Pesan sekarang berbentuk pertanyaan retoris yang sebenarnya menuduh atau membela, misalnya 'kenapa Andy diam terus?' (offend) atau 'masa sih Andy Hitman?' (defend). Bukan pertanyaan informasi. FOKUS TAMBAHAN: Pertanyaan retoris offend/defend mengacu pembicara terakhir.",
+    "source": {
+      "source_row": 2804,
+      "source_group": "bc39dcf85ef04bfba655",
+      "teks_chat": "menurut data chat, si F dua kali mengalihkan topik tepat setelah ada tuduhan ke dia",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 2,
+    "pesan_typo_ringan": [],
+    "case_index": 3
+  },
+  "session": {
+    "case_name": "rhetorical_question",
+    "participants": [
+      "Niken",
+      "Lintang",
+      "Tisna",
+      "Noval",
+      "Mahira"
+    ],
+    "focus_player": "Niken",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Niken",
+        "teks_chat": "aku Civilian, itu pengakuan role yang kusampaikan sekarang.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Tisna",
+        "teks_chat": "kamu mengaku Civilian kok tahu detail aksi itu? Mencurigakan banget.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Niken",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "036_codex_revisi1.txt"
+  }
+}

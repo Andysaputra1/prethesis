@@ -1,0 +1,78 @@
+{
+  "job": {
+    "job_id": "r001858_v02",
+    "case_name": "mixed_relations",
+    "case_description": "Membela satu pemain dan menuduh pemain lain. Intent utama offend; simpan kedua relasi. FOKUS TAMBAHAN: Bela A dan tuduh B; variasi urutan, kata ganti, dan pembelaan dalam anak kalimat.",
+    "source": {
+      "source_row": 1858,
+      "source_group": "fd05a23c11e962f43c7e",
+      "teks_chat": "kalau kalian setuju pelaku sengaja memecah suara, nama pertama yang muncul itu Yoga, jadi vote Yoga",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 3,
+    "pesan_typo_ringan": [],
+    "case_index": 17
+  },
+  "session": {
+    "case_name": "mixed_relations",
+    "participants": [
+      "Afifah",
+      "Syifa",
+      "Suci",
+      "Tsania",
+      "Febrian"
+    ],
+    "focus_player": "Syifa",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Afifah",
+        "teks_chat": "pesan Syifa masih tentang malam yang baru selesai.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Syifa",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Tsania",
+        "teks_chat": "yang sedang mengetik nggak perlu memotong kalimat di tengah.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Febrian",
+        "teks_chat": "Suci pantas dikeluarkan sekarang; tolong jangan buang Syifa yang sudah terkonfirmasi Civilian dari Peek-ku.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Syifa",
+            "relasi": "defend",
+            "bukti_pesan": [
+              3
+            ]
+          },
+          {
+            "pemain": "Suci",
+            "relasi": "offend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "012_codex_revisi1.txt"
+  }
+}

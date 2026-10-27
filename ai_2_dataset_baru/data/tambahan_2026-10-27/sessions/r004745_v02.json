@@ -1,0 +1,57 @@
+{
+  "job": {
+    "job_id": "r004745_v02",
+    "case_name": "short_history_1",
+    "case_description": "Awal diskusi dengan tepat 1 pesan sebelumnya. Jangan menambah riwayat fiktif atau mengisi sampai 12. FOKUS TAMBAHAN: Satu konteks. Tepat 25 pembelaan diri setelah dituduh; penuduh bukan target. Sisanya offend/neutral.",
+    "source": {
+      "source_row": 4745,
+      "source_group": "7af5f6093eedb5decbc1",
+      "teks_chat": "kita butuh satu keputusan sekarang, dan pemain yang paling masuk akal untuk dieksekusi adalah si B",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 2,
+    "pesan_typo_ringan": [],
+    "case_index": 49
+  },
+  "session": {
+    "case_name": "short_history_1",
+    "participants": [
+      "Shinta",
+      "Cantika",
+      "Tisna",
+      "Niken",
+      "Khansa"
+    ],
+    "focus_player": "Khansa",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Khansa",
+        "teks_chat": "gw Civilian, tadi memang belum ikut giliran klaim.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Niken",
+        "teks_chat": "Khansa patut dicurigai dari cara mengaku role itu, rasanya seperti menyiapkan tameng.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Khansa",
+            "relasi": "offend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "025_codex_revisi1.txt"
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "job": {
+    "job_id": "r002070_v02",
+    "case_name": "mixed_relations",
+    "case_description": "Membela satu pemain dan menuduh pemain lain. Intent utama offend; simpan kedua relasi. FOKUS TAMBAHAN: Bela A dan tuduh B; variasi urutan, kata ganti, dan pembelaan dalam anak kalimat.",
+    "source": {
+      "source_row": 2070,
+      "source_group": "1fe83c295aa4b8cbbd18",
+      "teks_chat": "aku sudah menyampaikan catatan aksiku, sementara PP tidak sempat memberi respons; suara saya dan warga ke PP",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 3,
+    "pesan_typo_ringan": [],
+    "case_index": 8
+  },
+  "session": {
+    "case_name": "mixed_relations",
+    "participants": [
+      "Syifa",
+      "Prabu",
+      "Anisa",
+      "Hilmi",
+      "Banyu"
+    ],
+    "focus_player": "Prabu",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Banyu",
+        "teks_chat": "pesan dari Prabu itu menyebut kapan hasil skill terlihat.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Prabu",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Hilmi",
+        "teks_chat": "gw sudah selesai membaca pengantarnya sekarang.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Anisa",
+        "teks_chat": "aku lindungi Prabu dari vote ini, karena Syifa yang jelas-jelas menutupi urutan aksinya.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Prabu",
+            "relasi": "defend",
+            "bukti_pesan": [
+              3
+            ]
+          },
+          {
+            "pemain": "Syifa",
+            "relasi": "offend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "011_codex_revisi1.txt"
+  }
+}

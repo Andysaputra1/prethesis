@@ -1,0 +1,131 @@
+{
+  "job": {
+    "job_id": "r001824_v02",
+    "case_name": "reference_start",
+    "case_description": "Tepat 12 konteks. Penyebutan target eksplisit di pesan konteks pertama; pesan sekarang memakai kata ganti. FOKUS TAMBAHAN: Tepat 12 konteks; nama target hanya pada konteks pertama; utama dia/-nya.",
+    "source": {
+      "source_row": 1824,
+      "source_group": "6da2b37ef9010f6c3662",
+      "teks_chat": "Niko muncul cuma saat harus nuduh orang, lalu menghilang dari diskusi, pola hitman banget, vote Niko",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 13,
+    "pesan_typo_ringan": [],
+    "case_index": 7
+  },
+  "session": {
+    "case_name": "reference_start",
+    "participants": [
+      "Jauhar",
+      "Bagaskara",
+      "Kinanti",
+      "Khalisa",
+      "Rasyid"
+    ],
+    "focus_player": "Kinanti",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Bagaskara",
+        "teks_chat": "Kinanti baru ngaku Stalker, belum bilang siapa yang di-Peek.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Kinanti",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Rasyid",
+        "teks_chat": "buat semuanya, klaim sama hasil nanti kirim satu pesan atau pisah?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Jauhar",
+        "teks_chat": "bisa dipisah, asal hasilnya nyambung sama malam yang disebut.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Khalisa",
+        "teks_chat": "aku lebih gampang baca kalau dua pesan pendek sih.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Bagaskara",
+        "teks_chat": "gw biasanya taruh nomor malam dulu baru hasil.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Rasyid",
+        "teks_chat": "boleh juga, yang penting teksnya lengkap.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Jauhar",
+        "teks_chat": "ini masih sesi diskusi kok, belum kehabisan waktu.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Khalisa",
+        "teks_chat": "kalau ada hasil baru, kirim setelah klaimnya dong.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Bagaskara",
+        "teks_chat": "jangan campur laporan malam pertama dan kedua jadi satu.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Rasyid",
+        "teks_chat": "iya, aku tadi kebalik waktu baca urutan di atas.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Jauhar",
+        "teks_chat": "sekarang bagian terakhir masih pengakuan role aja nih.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Khalisa",
+        "teks_chat": "lanjut, hasil atau tanggapannya boleh dikirim.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Khalisa",
+        "teks_chat": "aku kembali ke klaim di awal: dia ngarang, karena dua versinya nggak mungkin sama-sama benar.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Kinanti",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "016_codex_revisi1.txt"
+  }
+}

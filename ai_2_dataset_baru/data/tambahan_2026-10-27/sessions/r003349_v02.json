@@ -1,0 +1,71 @@
+{
+  "job": {
+    "job_id": "r003349_v02",
+    "case_name": "witness",
+    "case_description": "Nama saksi/korban disebut, tetapi bukan target serangan atau pembelaan. FOKUS TAMBAHAN: Nama sumber/saksi/penuduh bukan target. Sertakan bantahan isi klaim Peek penuduh yang membela pengirim saja.",
+    "source": {
+      "source_row": 3349,
+      "source_group": "21817e0a52e496a3704d",
+      "teks_chat": "aku tidak membungkam siapa pun, mungkin itu efek Gag Order dari pemain lain",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 3,
+    "pesan_typo_ringan": [],
+    "case_index": 44
+  },
+  "session": {
+    "case_name": "witness",
+    "participants": [
+      "Mahesa",
+      "Naufala",
+      "Khansa",
+      "Suci",
+      "Asih"
+    ],
+    "focus_player": "Mahesa",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Khansa",
+        "teks_chat": "Mahesa menyampaikan urutan kejadian dari sebelum chat terbuka.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Mahesa",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Asih",
+        "teks_chat": "aku pengin bahas satu malam dulu baru lanjut berikutnya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Naufala",
+        "teks_chat": "aku tetap di pihak Mahesa. Menurut kronologi dari Khansa, tidak ada aksi jahat yang terbukti.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Mahesa",
+            "relasi": "defend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "010_codex_revisi1.txt"
+  }
+}

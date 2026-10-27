@@ -1,0 +1,65 @@
+{
+  "job": {
+    "job_id": "r003610_v02",
+    "case_name": "short_history_1",
+    "case_description": "Awal diskusi dengan tepat 1 pesan sebelumnya. Jangan menambah riwayat fiktif atau mengisi sampai 12. FOKUS TAMBAHAN: Satu konteks. Tepat 25 pembelaan diri setelah dituduh; penuduh bukan target. Sisanya offend/neutral.",
+    "source": {
+      "source_row": 3610,
+      "source_group": "3cd303262268db395eae",
+      "teks_chat": "eh tunggu, gw Spy kok, tadi malam nge-Guard Dimas bukan berarti gw satu tim sama dia",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 2,
+    "pesan_typo_ringan": [],
+    "case_index": 14
+  },
+  "session": {
+    "case_name": "short_history_1",
+    "participants": [
+      "Almira",
+      "Kemal",
+      "Renata",
+      "Marsha",
+      "Isna"
+    ],
+    "focus_player": "Isna",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Almira",
+        "teks_chat": "yang gw curigai Isna, kok terus menghindari pertanyaan aksi?",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Isna",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Isna",
+        "teks_chat": "yang ditulis tadi cuma potongan ucapanku. Aku nggak bersalah.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Isna",
+            "relasi": "defend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "022_codex_revisi1.txt"
+  }
+}

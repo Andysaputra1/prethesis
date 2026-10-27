@@ -1,0 +1,131 @@
+{
+  "job": {
+    "job_id": "r003478_v02",
+    "case_name": "reference_start",
+    "case_description": "Tepat 12 konteks. Penyebutan target eksplisit di pesan konteks pertama; pesan sekarang memakai kata ganti. FOKUS TAMBAHAN: Tepat 12 konteks; nama target hanya pada konteks pertama; utama dia/-nya.",
+    "source": {
+      "source_row": 3478,
+      "source_group": "672102e93661f78e83dc",
+      "teks_chat": "Aku tidak menghilang, koneksiku terputus sebentar saat diskusi berlangsung",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 13,
+    "pesan_typo_ringan": [],
+    "case_index": 24
+  },
+  "session": {
+    "case_name": "reference_start",
+    "participants": [
+      "Astri",
+      "Arum",
+      "Rizal",
+      "Jalu",
+      "Isna"
+    ],
+    "focus_player": "Arum",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Jalu",
+        "teks_chat": "Arum berhenti ngetik setelah kata tetapi, lalu mengirim sambungannya.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Arum",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Astri",
+        "teks_chat": "berarti kalimat pertama belum selesai ya?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Rizal",
+        "teks_chat": "buat semua, masih ada kelanjutannya beberapa baris di bawah.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Isna",
+        "teks_chat": "gw sedang baca dua bagian itu berurutan.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Jalu",
+        "teks_chat": "kata tetapi biasanya menghubungkan dua isi yang beda sih.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Astri",
+        "teks_chat": "iya, bagian sesudahnya ikut menentukan maksud kalimat.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Rizal",
+        "teks_chat": "sambungannya mulai dengan huruf kecil kok di layar sini.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Isna",
+        "teks_chat": "pesan lain masuk di antaranya, tapi waktu kirimnya berdekatan.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Jalu",
+        "teks_chat": "aku bisa melihat dua potongnya sekarang.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Astri",
+        "teks_chat": "kalau cuma baca separuh, bagian akhir nggak ikut terbaca.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Rizal",
+        "teks_chat": "nih, dua pesan itu masih berada pada fase diskusi yang sama.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Isna",
+        "teks_chat": "silakan tanggapi setelah dua-duanya selesai dibaca.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Isna",
+        "teks_chat": "kesalahan urutan itu bukan kejahatan. Untuk dia, aku sarankan tahan vote karena dia belum terbukti salah.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Arum",
+            "relasi": "defend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "018_codex_revisi1.txt"
+  }
+}

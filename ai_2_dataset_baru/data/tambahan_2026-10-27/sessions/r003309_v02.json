@@ -1,0 +1,78 @@
+{
+  "job": {
+    "job_id": "r003309_v02",
+    "case_name": "self",
+    "case_description": "Defend diri sendiri atau offend/vote diri sendiri sesuai label. Target = pengirim. FOKUS TAMBAHAN: Bela diri atau permintaan vote diri yang tulus; riwayat menyebut pemain lain sebagai pengalih.",
+    "source": {
+      "source_row": 3309,
+      "source_group": "74a38bf9e9e7b9ee5bdf",
+      "teks_chat": "gw bukan hitman, tadi malam target selamat bisa aja ada spy yang kerja",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 3,
+    "pesan_typo_ringan": [],
+    "case_index": 2
+  },
+  "session": {
+    "case_name": "self",
+    "participants": [
+      "Jauhar",
+      "Naufala",
+      "Syifa",
+      "Kresna",
+      "Tisna"
+    ],
+    "focus_player": "Syifa",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Jauhar",
+        "teks_chat": "nih, Kresna dan Naufala dua-duanya lagi cerita soal malam kedua.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Naufala",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          },
+          {
+            "pemain": "Kresna",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Tisna",
+        "teks_chat": "kalau ada yang mau menyampaikan role, silakan di chat.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Syifa",
+        "teks_chat": "gw bukan pelakunya, pesan yang telat muncul itu gara-gara sinyal di tempatku.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Syifa",
+            "relasi": "defend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "026_codex_revisi1.txt"
+  }
+}

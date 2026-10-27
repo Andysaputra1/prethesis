@@ -1,0 +1,65 @@
+{
+  "job": {
+    "job_id": "r000863_v02",
+    "case_name": "neutral_status",
+    "case_description": "Klaim status/role atau pertanyaan informasi saja tanpa pembelaan/serangan; target neutral sesuai ATURAN_LABEL.md. FOKUS TAMBAHAN: Neutral bertarget neutral: nama, kamu jelas, atau jawaban ke penanya khusus.",
+    "source": {
+      "source_row": 863,
+      "source_group": "7c44556210d33d4fac86",
+      "teks_chat": "serius aku Spy, jangan dipotong dulu, tadi mau bilang siapa yang aku guard",
+      "label_intent": "neutral"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 2,
+    "pesan_typo_ringan": [],
+    "case_index": 7
+  },
+  "session": {
+    "case_name": "neutral_status",
+    "participants": [
+      "Izza",
+      "Salsabila",
+      "Damar",
+      "Syauqi",
+      "Arum"
+    ],
+    "focus_player": "Syauqi",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Syauqi",
+        "teks_chat": "Izza, kamu sudah pakai skill atau baru mau menyebut role?",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Izza",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Izza",
+        "teks_chat": "jawabanku singkat: aku Stalker dan sudah menggunakan Peek sekali.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Syauqi",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "049_codex_revisi1.txt"
+  }
+}

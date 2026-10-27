@@ -1,0 +1,78 @@
+{
+  "job": {
+    "job_id": "r004683_v02",
+    "case_name": "self",
+    "case_description": "Defend diri sendiri atau offend/vote diri sendiri sesuai label. Target = pengirim. FOKUS TAMBAHAN: Bela diri atau permintaan vote diri yang tulus; riwayat menyebut pemain lain sebagai pengalih.",
+    "source": {
+      "source_row": 4683,
+      "source_group": "7a71f524b771c9e22494",
+      "teks_chat": "gw belum yakin seratus persen, cuma si C paling banyak kontradiksi, lebih baik C keluar malam ini",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 3,
+    "pesan_typo_ringan": [],
+    "case_index": 9
+  },
+  "session": {
+    "case_name": "self",
+    "participants": [
+      "Rizki",
+      "Banyu",
+      "Marsha",
+      "Sakti",
+      "Yumna"
+    ],
+    "focus_player": "Sakti",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Yumna",
+        "teks_chat": "yang barusan nanya hasil malam itu Marsha sama Rizki.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Marsha",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          },
+          {
+            "pemain": "Rizki",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Banyu",
+        "teks_chat": "siapa pun yang belum menyampaikan alasan masih bisa ngomong.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Sakti",
+        "teks_chat": "kalau memang harus ada yang dieliminasi, pilih aku aja sekarang.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Sakti",
+            "relasi": "offend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "026_codex_revisi1.txt"
+  }
+}

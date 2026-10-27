@@ -1,0 +1,85 @@
+{
+  "job": {
+    "job_id": "r004264_v02",
+    "case_name": "second_person",
+    "case_description": "Kamu/lu: gunakan pergantian pembicara dan teks yang jelas. Tanpa acuan jelas, target tidak_diketahui. FOKUS TAMBAHAN: Kamu/lu terikat pembicara jelas, termasuk bukan pengirim tepat sebelumnya.",
+    "source": {
+      "source_row": 4264,
+      "source_group": "6c776cfd909fe50f1b78",
+      "teks_chat": "nuduh gw tanpa bukti, sementara D bebas berkeliaran",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 4,
+    "pesan_typo_ringan": [],
+    "case_index": 1
+  },
+  "session": {
+    "case_name": "second_person",
+    "participants": [
+      "Rizal",
+      "Halim",
+      "Embun",
+      "Luthfan",
+      "Priska"
+    ],
+    "focus_player": "Luthfan",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Luthfan",
+        "teks_chat": "gw mau denger pendapatmu soal alibiku, Embun.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Embun",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Rizal",
+        "teks_chat": "di layar gw masih semenit buat ngobrol nih.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Luthfan",
+        "teks_chat": "Embun, aku masih nunggu pendapatmu soal klaim tadi.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Embun",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Embun",
+        "teks_chat": "balik ke yang bertanya soal klaimnya, aku curiga kamu memakai role palsu.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Luthfan",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "031_codex_revisi1.txt"
+  }
+}

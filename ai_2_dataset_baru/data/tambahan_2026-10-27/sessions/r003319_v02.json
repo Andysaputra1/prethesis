@@ -1,0 +1,85 @@
+{
+  "job": {
+    "job_id": "r003319_v02",
+    "case_name": "second_person",
+    "case_description": "Kamu/lu: gunakan pergantian pembicara dan teks yang jelas. Tanpa acuan jelas, target tidak_diketahui. FOKUS TAMBAHAN: Kamu/lu terikat pembicara jelas, termasuk bukan pengirim tepat sebelumnya.",
+    "source": {
+      "source_row": 3319,
+      "source_group": "4dbed3d5643c8ecad689",
+      "teks_chat": "lu boleh vote gw, tapi siap-siap kehilangan warga cuma gara-gara provokasi murahan",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 4,
+    "pesan_typo_ringan": [],
+    "case_index": 4
+  },
+  "session": {
+    "case_name": "second_person",
+    "participants": [
+      "Zakia",
+      "Sabrina",
+      "Kresna",
+      "Asih",
+      "Rahma"
+    ],
+    "focus_player": "Zakia",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Zakia",
+        "teks_chat": "Rahma, aku masih nunggu pendapatmu tentang urutan aksiku.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Rahma",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Rahma",
+        "teks_chat": "aku lagi membaca jawabanmu dari pesan pertama kok.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Zakia",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Sabrina",
+        "teks_chat": "masih lima puluh detik kok sebelum fase memilih.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Rahma",
+        "teks_chat": "kalau yang minta tanggapan tadi masih baca, kamu jangan menyerah; aku menolak vote ke kamu.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Zakia",
+            "relasi": "defend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "031_codex_revisi1.txt"
+  }
+}

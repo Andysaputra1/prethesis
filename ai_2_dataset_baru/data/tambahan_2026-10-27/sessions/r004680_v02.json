@@ -1,0 +1,131 @@
+{
+  "job": {
+    "job_id": "r004680_v02",
+    "case_name": "reference_start",
+    "case_description": "Tepat 12 konteks. Penyebutan target eksplisit di pesan konteks pertama; pesan sekarang memakai kata ganti. FOKUS TAMBAHAN: Tepat 12 konteks; nama target hanya pada konteks pertama; utama dia/-nya.",
+    "source": {
+      "source_row": 4680,
+      "source_group": "a561a7ad553ada729674",
+      "teks_chat": "gw agak telat, tapi si Z baru aktif setelah target ditentukan, itu pola hitman banget",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 13,
+    "pesan_typo_ringan": [],
+    "case_index": 11
+  },
+  "session": {
+    "case_name": "reference_start",
+    "participants": [
+      "Yasmin",
+      "Kemal",
+      "Haikal",
+      "Tria",
+      "Yumna"
+    ],
+    "focus_player": "Yumna",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Kemal",
+        "teks_chat": "Yumna nyebut dua malam dalam satu cerita soal aksinya.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Yumna",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Yasmin",
+        "teks_chat": "mulai dari malam pertama dulu dong, semuanya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Tria",
+        "teks_chat": "iya, kalau langsung lompat aku suka kebalik bacanya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Haikal",
+        "teks_chat": "malam pertama itu habis diskusi pembuka.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Kemal",
+        "teks_chat": "terus ada hasil, baru sesi ngobrol lagi sih.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Yasmin",
+        "teks_chat": "gw masih ingat urutan layarnya, bukan durasi tepatnya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Tria",
+        "teks_chat": "durasi nggak perlu ditebak kok kalau nggak ingat.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Haikal",
+        "teks_chat": "buat grup, sebut sebelum atau sesudah pergantian fase aja.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Kemal",
+        "teks_chat": "itu lebih gampang diikuti ketimbang angka detik.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Yasmin",
+        "teks_chat": "iya, apalagi yang baca pesan agak belakangan.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Tria",
+        "teks_chat": "sekarang dua malamnya udah bisa dipisahin nih.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Haikal",
+        "teks_chat": "oke, tanggapi ceritanya dari urutan awal dulu.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Haikal",
+        "teks_chat": "yang kusebut sus tetap orang di awal tadi; dia mengulur sampai semua lupa alasan vote.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Yumna",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "017_codex_revisi1.txt"
+  }
+}

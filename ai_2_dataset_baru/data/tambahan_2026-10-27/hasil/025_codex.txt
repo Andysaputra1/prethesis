@@ -1,0 +1,432 @@
+```json
+{
+  "results": [
+    {
+      "job_id": "r000810_v02",
+      "session": {
+        "case_name": "short_history_1",
+        "participants": [
+          "Nadya",
+          "Astri",
+          "Priska",
+          "Sekar",
+          "Aruna"
+        ],
+        "focus_player": "Sekar",
+        "panggilan": [],
+        "messages": [
+          {
+            "pengirim": "Nadya",
+            "teks_chat": "Sekar, aku curiga kamu Hitman karena belum menjawab sejak tadi.",
+            "label_intent": "offend",
+            "target": [
+              {
+                "pemain": "Sekar",
+                "relasi": "offend",
+                "bukti_pesan": [
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "pengirim": "Sekar",
+            "teks_chat": "aku tidak sedang cari alasan, ponselku sempat kehilangan sinyal saat chat dimulai.",
+            "label_intent": "defend",
+            "target": [
+              {
+                "pemain": "Sekar",
+                "relasi": "defend",
+                "bukti_pesan": [
+                  2
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "job_id": "r000190_v02",
+      "session": {
+        "case_name": "short_history_1",
+        "participants": [
+          "Kemal",
+          "Izza",
+          "Mahesa",
+          "Prita",
+          "Halim"
+        ],
+        "focus_player": "Kemal",
+        "panggilan": [],
+        "messages": [
+          {
+            "pengirim": "Kemal",
+            "teks_chat": "aku mengaku Spy dan akan menulis catatan aksi setelah ini.",
+            "label_intent": "neutral",
+            "target": []
+          },
+          {
+            "pengirim": "Halim",
+            "teks_chat": "aku nggak beli cerita Kemal; klaimnya terlalu pas untuk lepas dari tuduhan.",
+            "label_intent": "offend",
+            "target": [
+              {
+                "pemain": "Kemal",
+                "relasi": "offend",
+                "bukti_pesan": [
+                  2
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "job_id": "r003379_v02",
+      "session": {
+        "case_name": "short_history_1",
+        "participants": [
+          "Syifa",
+          "Yasmin",
+          "Kirana",
+          "Atika",
+          "Jalu"
+        ],
+        "focus_player": "Kirana",
+        "panggilan": [],
+        "messages": [
+          {
+            "pengirim": "Yasmin",
+            "teks_chat": "aku vote Kirana, diamnya seperti sedang menyembunyikan sesuatu.",
+            "label_intent": "offend",
+            "target": [
+              {
+                "pemain": "Kirana",
+                "relasi": "offend",
+                "bukti_pesan": [
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "pengirim": "Kirana",
+            "teks_chat": "aku tetap menyangkal tuduhan itu, tidak ada aksi menyerang yang bisa kulakukan.",
+            "label_intent": "defend",
+            "target": [
+              {
+                "pemain": "Kirana",
+                "relasi": "defend",
+                "bukti_pesan": [
+                  2
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "job_id": "r001346_v02",
+      "session": {
+        "case_name": "short_history_1",
+        "participants": [
+          "Rizal",
+          "Salsabila",
+          "Okta",
+          "Ratih",
+          "Yudhis"
+        ],
+        "focus_player": "Ratih",
+        "panggilan": [],
+        "messages": [
+          {
+            "pengirim": "Ratih",
+            "teks_chat": "Okta, apa role atau aksi yang ingin kamu laporkan untuk catatan ronde ini?",
+            "label_intent": "neutral",
+            "target": [
+              {
+                "pemain": "Okta",
+                "relasi": "neutral",
+                "bukti_pesan": [
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "pengirim": "Okta",
+            "teks_chat": "untuk pertanyaan yang ditujukan kepadaku, aku menggunakan Guard tadi malam.",
+            "label_intent": "neutral",
+            "target": [
+              {
+                "pemain": "Ratih",
+                "relasi": "neutral",
+                "bukti_pesan": [
+                  1
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "job_id": "r003230_v02",
+      "session": {
+        "case_name": "short_history_1",
+        "participants": [
+          "Rizal",
+          "Baskara",
+          "Rahma",
+          "Jalu",
+          "Tania"
+        ],
+        "focus_player": "Rizal",
+        "panggilan": [],
+        "messages": [
+          {
+            "pengirim": "Tania",
+            "teks_chat": "klaim Rizal terdengar palsu, aku nggak percaya role yang disebutnya.",
+            "label_intent": "offend",
+            "target": [
+              {
+                "pemain": "Rizal",
+                "relasi": "offend",
+                "bukti_pesan": [
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "pengirim": "Rizal",
+            "teks_chat": "aku Stalker dan bukan orang jahat, jangan buru-buru kunci vote ke aku.",
+            "label_intent": "defend",
+            "target": [
+              {
+                "pemain": "Rizal",
+                "relasi": "defend",
+                "bukti_pesan": [
+                  2
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "job_id": "r001416_v02",
+      "session": {
+        "case_name": "short_history_1",
+        "participants": [
+          "Rengga",
+          "Rayhan",
+          "Amel",
+          "Kautsar",
+          "Raisa"
+        ],
+        "focus_player": "Amel",
+        "panggilan": [],
+        "messages": [
+          {
+            "pengirim": "Amel",
+            "teks_chat": "aku Stalker, hasil skill akan kutuliskan terpisah.",
+            "label_intent": "neutral",
+            "target": []
+          },
+          {
+            "pengirim": "Rayhan",
+            "teks_chat": "kamu ngarang soal hasil malam itu menurutku, aku justru makin curiga.",
+            "label_intent": "offend",
+            "target": [
+              {
+                "pemain": "Amel",
+                "relasi": "offend",
+                "bukti_pesan": [
+                  1
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "job_id": "r003249_v02",
+      "session": {
+        "case_name": "short_history_1",
+        "participants": [
+          "Rizal",
+          "Utari",
+          "Syifa",
+          "Tisna",
+          "Izza"
+        ],
+        "focus_player": "Tisna",
+        "panggilan": [],
+        "messages": [
+          {
+            "pengirim": "Rizal",
+            "teks_chat": "Tisna paling sus buatku, jeda jawabnya terasa sengaja dibuat.",
+            "label_intent": "offend",
+            "target": [
+              {
+                "pemain": "Tisna",
+                "relasi": "offend",
+                "bukti_pesan": [
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "pengirim": "Tisna",
+            "teks_chat": "aku tidak bersalah. Diam sebentar tadi karena pesan belum selesai kubaca.",
+            "label_intent": "defend",
+            "target": [
+              {
+                "pemain": "Tisna",
+                "relasi": "defend",
+                "bukti_pesan": [
+                  2
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "job_id": "r001041_v02",
+      "session": {
+        "case_name": "short_history_1",
+        "participants": [
+          "Gendis",
+          "Shinta",
+          "Mahesa",
+          "Banyu",
+          "Tiara"
+        ],
+        "focus_player": "Mahesa",
+        "panggilan": [],
+        "messages": [
+          {
+            "pengirim": "Shinta",
+            "teks_chat": "Mahesa sudah mengirim catatan role dan waktu skill yang disebutnya.",
+            "label_intent": "neutral",
+            "target": [
+              {
+                "pemain": "Mahesa",
+                "relasi": "neutral",
+                "bukti_pesan": [
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "pengirim": "Banyu",
+            "teks_chat": "Mahesa tadi menyebut Guard; bisa sebutkan malam keberapa tanpa membuka nama target?",
+            "label_intent": "neutral",
+            "target": [
+              {
+                "pemain": "Mahesa",
+                "relasi": "neutral",
+                "bukti_pesan": [
+                  2
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "job_id": "r000766_v02",
+      "session": {
+        "case_name": "short_history_1",
+        "participants": [
+          "Keisha",
+          "Habib",
+          "Ferdi",
+          "Yudhis",
+          "Anindya"
+        ],
+        "focus_player": "Anindya",
+        "panggilan": [],
+        "messages": [
+          {
+            "pengirim": "Habib",
+            "teks_chat": "aku menduga Anindya yang melakukan Hostage, ceritanya belum meyakinkan.",
+            "label_intent": "offend",
+            "target": [
+              {
+                "pemain": "Anindya",
+                "relasi": "offend",
+                "bukti_pesan": [
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "pengirim": "Anindya",
+            "teks_chat": "aku cuma belum selesai menjawab, bukan berarti tuduhan Hitman itu benar.",
+            "label_intent": "defend",
+            "target": [
+              {
+                "pemain": "Anindya",
+                "relasi": "defend",
+                "bukti_pesan": [
+                  2
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "job_id": "r004745_v02",
+      "session": {
+        "case_name": "short_history_1",
+        "participants": [
+          "Shinta",
+          "Cantika",
+          "Tisna",
+          "Niken",
+          "Khansa"
+        ],
+        "focus_player": "Khansa",
+        "panggilan": [],
+        "messages": [
+          {
+            "pengirim": "Khansa",
+            "teks_chat": "role-ku Civilian, aku ingin mencatatnya dulu di chat.",
+            "label_intent": "neutral",
+            "target": []
+          },
+          {
+            "pengirim": "Niken",
+            "teks_chat": "Khansa patut dicurigai dari cara mengaku role itu, rasanya seperti menyiapkan tameng.",
+            "label_intent": "offend",
+            "target": [
+              {
+                "pemain": "Khansa",
+                "relasi": "offend",
+                "bukti_pesan": [
+                  2
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}
+```

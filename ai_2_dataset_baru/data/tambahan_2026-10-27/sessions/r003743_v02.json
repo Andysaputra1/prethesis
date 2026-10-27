@@ -1,0 +1,65 @@
+{
+  "job": {
+    "job_id": "r003743_v02",
+    "case_name": "neutral_status",
+    "case_description": "Klaim status/role atau pertanyaan informasi saja tanpa pembelaan/serangan; target neutral sesuai ATURAN_LABEL.md. FOKUS TAMBAHAN: Neutral bertarget neutral: nama, kamu jelas, atau jawaban ke penanya khusus.",
+    "source": {
+      "source_row": 3743,
+      "source_group": "f3c1ca29b1045df28b41",
+      "teks_chat": "aku tahu siapa yang mencurigakan dari peek ronde sebelumnya",
+      "label_intent": "neutral"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 2,
+    "pesan_typo_ringan": [],
+    "case_index": 24
+  },
+  "session": {
+    "case_name": "neutral_status",
+    "participants": [
+      "Ghani",
+      "Mahdi",
+      "Jauhar",
+      "Yasmin",
+      "Atika"
+    ],
+    "focus_player": "Atika",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Yasmin",
+        "teks_chat": "Atika sudah menyebut skill dan waktu penggunaannya di chat.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Atika",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Ghani",
+        "teks_chat": "Atika, boleh tuliskan role yang ingin kamu sebut tanpa menyebut target skill dulu?",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Atika",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "050_codex_revisi1.txt"
+  }
+}

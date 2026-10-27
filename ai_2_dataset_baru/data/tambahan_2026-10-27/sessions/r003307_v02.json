@@ -1,0 +1,65 @@
+{
+  "job": {
+    "job_id": "r003307_v02",
+    "case_name": "short_history_1",
+    "case_description": "Awal diskusi dengan tepat 1 pesan sebelumnya. Jangan menambah riwayat fiktif atau mengisi sampai 12. FOKUS TAMBAHAN: Satu konteks. Tepat 25 pembelaan diri setelah dituduh; penuduh bukan target. Sisanya offend/neutral.",
+    "source": {
+      "source_row": 3307,
+      "source_group": "b5e9757c53084a29bcc9",
+      "teks_chat": "bukan gw, kalau mau nuduh kasih alasan jangan cuma ikut vote",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 2,
+    "pesan_typo_ringan": [],
+    "case_index": 26
+  },
+  "session": {
+    "case_name": "short_history_1",
+    "participants": [
+      "Salma",
+      "Nadhif",
+      "Renata",
+      "Rahma",
+      "Dyah"
+    ],
+    "focus_player": "Nadhif",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Rahma",
+        "teks_chat": "Nadhif, kenapa cerita aksimu beda terus? Aku curiga kamu bohong.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Nadhif",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Nadhif",
+        "teks_chat": "aku warga biasa, jadi berhenti menuntut bukti skill dariku.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Nadhif",
+            "relasi": "defend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "023_codex_revisi1.txt"
+  }
+}

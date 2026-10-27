@@ -1,0 +1,77 @@
+{
+  "job": {
+    "job_id": "r000006_v02",
+    "case_name": "interruption",
+    "case_description": "Pembahasan target disela obrolan waktu/ronde; kaitan kembali ke target masih jelas. FOKUS TAMBAHAN: Selingan waktu lalu kembali ke target; sertakan pembelaan diri.",
+    "source": {
+      "source_row": 6,
+      "source_group": "45aa6447630969d0939b",
+      "teks_chat": "Gag Order ke D muncul tepat setelah dia menyebut nama pelaku, kemungkinan besar C Hitmannya",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 4,
+    "pesan_typo_ringan": [],
+    "case_index": 11
+  },
+  "session": {
+    "case_name": "interruption",
+    "participants": [
+      "Erlina",
+      "Yumna",
+      "Nadira",
+      "Zakia",
+      "Renata"
+    ],
+    "focus_player": "Zakia",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Nadira",
+        "teks_chat": "nih, Zakia cerita aksi malamnya sebelum menulis pilihan vote.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Zakia",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Yumna",
+        "teks_chat": "semua, masih cukup untuk pesan pendek sebelum timer habis.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Erlina",
+        "teks_chat": "iya, sesi memilih belum mulai di layar sini kok.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Renata",
+        "teks_chat": "selingan tadi nggak mengubah pilihanku, Zakia masih paling sus karena menghindari alasan vote.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Zakia",
+            "relasi": "offend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "044_codex_revisi1.txt"
+  }
+}

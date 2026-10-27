@@ -1,0 +1,131 @@
+{
+  "job": {
+    "job_id": "r000677_v02",
+    "case_name": "reference_start",
+    "case_description": "Tepat 12 konteks. Penyebutan target eksplisit di pesan konteks pertama; pesan sekarang memakai kata ganti. FOKUS TAMBAHAN: Tepat 12 konteks; nama target hanya pada konteks pertama; utama dia/-nya.",
+    "source": {
+      "source_row": 677,
+      "source_group": "7f4d05ea7b66c3b40c9d",
+      "teks_chat": "tuduhan ini terlalu maksa, dari ronde pertama sampai sekarang cerita gw konsisten",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 13,
+    "pesan_typo_ringan": [],
+    "case_index": 38
+  },
+  "session": {
+    "case_name": "reference_start",
+    "participants": [
+      "Aruna",
+      "Amel",
+      "Almira",
+      "Satya",
+      "Rayhan"
+    ],
+    "focus_player": "Satya",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Amel",
+        "teks_chat": "Satya memakai garis miring di antara dua kata hasil.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Satya",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Almira",
+        "teks_chat": "buat grup, dua kata di samping garis itu udah dijelaskan belum?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Aruna",
+        "teks_chat": "gw belum lihat penjelasan sesudahnya sih.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Rayhan",
+        "teks_chat": "di sini juga masih bentuk garis miring yang sama.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Amel",
+        "teks_chat": "kalau begitu jangan pilih salah satu kata dulu.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Almira",
+        "teks_chat": "iya, bentuk aslinya masih perlu dilihat semua.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Aruna",
+        "teks_chat": "garisnya ada kok, bukan bekas pesan terpotong.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Rayhan",
+        "teks_chat": "buat semuanya, minta penjelasan lengkap nanti kalau ada waktu dong.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Amel",
+        "teks_chat": "aku masih membaca bagian pengantarnya sekarang.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Almira",
+        "teks_chat": "nomor malam ada di awal pesan itu.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Aruna",
+        "teks_chat": "nah, teks utuhnya sudah kelihatan nih.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Rayhan",
+        "teks_chat": "silakan lanjut menanggapi bentuk hasil yang dituliskan.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Rayhan",
+        "teks_chat": "lihat lagi pembahasan pertama, dia sekadar salah ingat dan tidak patut dicurigai.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Satya",
+            "relasi": "defend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "019_codex_revisi1.txt"
+  }
+}

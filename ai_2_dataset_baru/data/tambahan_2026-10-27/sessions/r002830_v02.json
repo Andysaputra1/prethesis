@@ -1,0 +1,85 @@
+{
+  "job": {
+    "job_id": "r002830_v02",
+    "case_name": "second_person",
+    "case_description": "Kamu/lu: gunakan pergantian pembicara dan teks yang jelas. Tanpa acuan jelas, target tidak_diketahui. FOKUS TAMBAHAN: Kamu/lu terikat pembicara jelas, termasuk bukan pengirim tepat sebelumnya.",
+    "source": {
+      "source_row": 2830,
+      "source_group": "a9cd4039c4969c373aeb",
+      "teks_chat": "kalau mayoritas pilih F, gw ikut, tapi dia memang paling mencurigakan",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 4,
+    "pesan_typo_ringan": [],
+    "case_index": 15
+  },
+  "session": {
+    "case_name": "second_person",
+    "participants": [
+      "Zafran",
+      "Inaya",
+      "Safira",
+      "Habib",
+      "Pandu"
+    ],
+    "focus_player": "Pandu",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Pandu",
+        "teks_chat": "gw menunggu kamu menilai klaim yang kutulis, Safira.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Safira",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Zafran",
+        "teks_chat": "masih ada setengah menit buat percakapan terakhir nih.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Pandu",
+        "teks_chat": "aku masih bertanya ke kamu soal alibiku nih, Safira.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Safira",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Safira",
+        "teks_chat": "kalau kamu masih menunggu jawabanku soal klaim tadi, aku pilih mencurigai kamu.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Pandu",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "032_codex_revisi1.txt"
+  }
+}

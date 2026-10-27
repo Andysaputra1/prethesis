@@ -1,0 +1,78 @@
+{
+  "job": {
+    "job_id": "r002389_v02",
+    "case_name": "self",
+    "case_description": "Defend diri sendiri atau offend/vote diri sendiri sesuai label. Target = pengirim. FOKUS TAMBAHAN: Bela diri atau permintaan vote diri yang tulus; riwayat menyebut pemain lain sebagai pengalih.",
+    "source": {
+      "source_row": 2389,
+      "source_group": "bb4fde9ea45d669c0f9c",
+      "teks_chat": "aku claim sebagai Stalker; bukti Peek-ku belum berubah, jadi fokus kita tetap ke Yoga",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 3,
+    "pesan_typo_ringan": [],
+    "case_index": 49
+  },
+  "session": {
+    "case_name": "self",
+    "participants": [
+      "Halim",
+      "Nayla",
+      "Tania",
+      "Nabil",
+      "Prita"
+    ],
+    "focus_player": "Nayla",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Tania",
+        "teks_chat": "Halim dan Nabil masing-masing minta vote diselesaikan sekarang.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Halim",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          },
+          {
+            "pemain": "Nabil",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Prita",
+        "teks_chat": "gw belum menutup diskusi ini, lanjut dong yang belum selesai.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Nayla",
+        "teks_chat": "aku menerima hasil terburuknya. Daripada menunggu, vote aku keluar sekarang.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Nayla",
+            "relasi": "offend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "030_codex_revisi1.txt"
+  }
+}

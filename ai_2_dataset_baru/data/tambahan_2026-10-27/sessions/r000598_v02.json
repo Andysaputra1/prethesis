@@ -1,0 +1,78 @@
+{
+  "job": {
+    "job_id": "r000598_v02",
+    "case_name": "self",
+    "case_description": "Defend diri sendiri atau offend/vote diri sendiri sesuai label. Target = pengirim. FOKUS TAMBAHAN: Bela diri atau permintaan vote diri yang tulus; riwayat menyebut pemain lain sebagai pengalih.",
+    "source": {
+      "source_row": 598,
+      "source_group": "c46938db20b9cbb0167d",
+      "teks_chat": "bukan berarti aku defensif karena hitman, aku cuma nggak mau tribunal asal-asalan",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 3,
+    "pesan_typo_ringan": [],
+    "case_index": 28
+  },
+  "session": {
+    "case_name": "self",
+    "participants": [
+      "Hilmi",
+      "Haikal",
+      "Afifah",
+      "Yudhis",
+      "Cahya"
+    ],
+    "focus_player": "Yudhis",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Afifah",
+        "teks_chat": "Cahya dan Hilmi masing-masing mengubah angka malam yang ditulis.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Cahya",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          },
+          {
+            "pemain": "Hilmi",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Haikal",
+        "teks_chat": "gw masih menyimak sih, belum punya keputusan akhir.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Yudhis",
+        "teks_chat": "sinyalku naik turun dari tadi, makanya aku baru bisa menjawab sekarang.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Yudhis",
+            "relasi": "defend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "028_codex_revisi1.txt"
+  }
+}

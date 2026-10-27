@@ -1,0 +1,78 @@
+{
+  "job": {
+    "job_id": "r002146_v02",
+    "case_name": "self",
+    "case_description": "Defend diri sendiri atau offend/vote diri sendiri sesuai label. Target = pengirim. FOKUS TAMBAHAN: Bela diri atau permintaan vote diri yang tulus; riwayat menyebut pemain lain sebagai pengalih.",
+    "source": {
+      "source_row": 2146,
+      "source_group": "691cd5d95d3dcd937782",
+      "teks_chat": "siapa pun yang nuduh gw, role gw Civilian dan argumen kalian masih kosong",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 3,
+    "pesan_typo_ringan": [],
+    "case_index": 14
+  },
+  "session": {
+    "case_name": "self",
+    "participants": [
+      "Zahira",
+      "Aruna",
+      "Sekar",
+      "Thalia",
+      "Rizki"
+    ],
+    "focus_player": "Thalia",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Sekar",
+        "teks_chat": "dua jawaban yang belum selesai itu dari Aruna dan Zahira.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Zahira",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          },
+          {
+            "pemain": "Aruna",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Rizki",
+        "teks_chat": "semua bisa menambahkan bagian yang belum sempat disampaikan.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Thalia",
+        "teks_chat": "role-ku Stalker; aku tidak bersalah, nanti hasil pengecekanku bisa dibahas.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Thalia",
+            "relasi": "defend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "027_codex_revisi1.txt"
+  }
+}

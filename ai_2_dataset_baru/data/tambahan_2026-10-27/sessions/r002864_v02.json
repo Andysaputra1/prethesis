@@ -1,0 +1,91 @@
+{
+  "job": {
+    "job_id": "r002864_v02",
+    "case_name": "ambiguous",
+    "case_description": "Beberapa acuan sama-sama mungkin; target tidak_diketahui, bukan nama terakhir. FOKUS TAMBAHAN: Sedikitnya dua calon acuan dia sama kuat; nama terakhir bukan jawaban. Target tidak_diketahui.",
+    "source": {
+      "source_row": 2864,
+      "source_group": "d0ab16285a8bdff94b3f",
+      "teks_chat": "gw bantah keras tuduhan itu, justru Fajar yang paling cepat mengunci target tanpa analisis",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 3,
+    "pesan_typo_ringan": [],
+    "case_index": 15
+  },
+  "session": {
+    "case_name": "ambiguous",
+    "participants": [
+      "Rizki",
+      "Rosita",
+      "Anisa",
+      "Afifah",
+      "Luthfan"
+    ],
+    "focus_player": "",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Anisa",
+        "teks_chat": "dua jawaban yang belum selesai itu dari Afifah dan Luthfan.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Luthfan",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          },
+          {
+            "pemain": "Afifah",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Rosita",
+        "teks_chat": "kalau keduanya punya tambahan, masih ada waktu ngomong.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Luthfan",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          },
+          {
+            "pemain": "Afifah",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Rizki",
+        "teks_chat": "aku nggak beli pembelaannya. Dia terlalu cepat tahu arah hasil malam ini.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "tidak_diketahui",
+            "relasi": "offend",
+            "bukti_pesan": []
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "002_codex_revisi1.txt"
+  }
+}

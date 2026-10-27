@@ -1,0 +1,78 @@
+{
+  "job": {
+    "job_id": "r002592_v02",
+    "case_name": "mixed_relations",
+    "case_description": "Membela satu pemain dan menuduh pemain lain. Intent utama offend; simpan kedua relasi. FOKUS TAMBAHAN: Bela A dan tuduh B; variasi urutan, kata ganti, dan pembelaan dalam anak kalimat.",
+    "source": {
+      "source_row": 2592,
+      "source_group": "bd939fa38a31b151ada4",
+      "teks_chat": "wkwk yang langsung defensif lucu juga",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 3,
+    "pesan_typo_ringan": [],
+    "case_index": 1
+  },
+  "session": {
+    "case_name": "mixed_relations",
+    "participants": [
+      "Hilmi",
+      "Tsania",
+      "Inaya",
+      "Yudhis",
+      "Zakia"
+    ],
+    "focus_player": "Yudhis",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Zakia",
+        "teks_chat": "gw habis baca pengakuan Yudhis, ada keterangan waktunya juga.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Yudhis",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Inaya",
+        "teks_chat": "buat semua, bahas jenis skill dan hasilnya sekalian ya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Tsania",
+        "teks_chat": "aku vote Hilmi; sementara Yudhis jangan ikut diseret, hasil Peek-ku membersihkan dia.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Yudhis",
+            "relasi": "defend",
+            "bukti_pesan": [
+              3
+            ]
+          },
+          {
+            "pemain": "Hilmi",
+            "relasi": "offend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "011_codex_revisi1.txt"
+  }
+}

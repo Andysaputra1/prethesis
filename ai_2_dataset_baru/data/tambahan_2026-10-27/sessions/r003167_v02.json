@@ -1,0 +1,131 @@
+{
+  "job": {
+    "job_id": "r003167_v02",
+    "case_name": "reference_start",
+    "case_description": "Tepat 12 konteks. Penyebutan target eksplisit di pesan konteks pertama; pesan sekarang memakai kata ganti. FOKUS TAMBAHAN: Tepat 12 konteks; nama target hanya pada konteks pertama; utama dia/-nya.",
+    "source": {
+      "source_row": 3167,
+      "source_group": "94c041743ae5e1960c48",
+      "teks_chat": "Saya bukan Hitman. Jika saya pelakunya, penggunaan Gag Order pada pemain lain tidak masuk akal secara strategi",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 13,
+    "pesan_typo_ringan": [],
+    "case_index": 18
+  },
+  "session": {
+    "case_name": "reference_start",
+    "participants": [
+      "Mahira",
+      "Ghani",
+      "Jauhar",
+      "Rahma",
+      "Kemal"
+    ],
+    "focus_player": "Kemal",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Rahma",
+        "teks_chat": "Kemal bilang chat kebuka lagi sebelum vote dimulai.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Kemal",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Jauhar",
+        "teks_chat": "di layar kalian, kolom ketik sama pilihan vote muncul bareng?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Mahira",
+        "teks_chat": "nggak, kolom ketik muncul dulu di sini.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Ghani",
+        "teks_chat": "aku juga baru bisa memilih setelah jeda diskusi.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Rahma",
+        "teks_chat": "berapa lama jedanya tadi, ada yang sempat lihat?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Jauhar",
+        "teks_chat": "gw sih cuma ingat urutannya, nggak ngitung detik.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Mahira",
+        "teks_chat": "nggak apa, nggak perlu angka pasti kalau memang nggak lihat.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Ghani",
+        "teks_chat": "buat semua, perubahan ikon chat tetap beda dari hasil skill.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Rahma",
+        "teks_chat": "iya kok, ikon itu cuma soal bisa mengetik atau tidak.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Jauhar",
+        "teks_chat": "identitas korban nggak ikut diumumkan pada layar itu.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Mahira",
+        "teks_chat": "nah, informasi yang tersedia masih berupa cerita pemain nih.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Ghani",
+        "teks_chat": "oke, silakan lanjut pembahasan chat yang terbuka tadi.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Ghani",
+        "teks_chat": "buat orang yang namanya muncul pertama tadi, stop tuduh dia dulu; bukti itu lemah.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Kemal",
+            "relasi": "defend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "017_codex_revisi1.txt"
+  }
+}

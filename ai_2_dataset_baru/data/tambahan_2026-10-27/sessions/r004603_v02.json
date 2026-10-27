@@ -1,0 +1,91 @@
+{
+  "job": {
+    "job_id": "r004603_v02",
+    "case_name": "ambiguous",
+    "case_description": "Beberapa acuan sama-sama mungkin; target tidak_diketahui, bukan nama terakhir. FOKUS TAMBAHAN: Sedikitnya dua calon acuan dia sama kuat; nama terakhir bukan jawaban. Target tidak_diketahui.",
+    "source": {
+      "source_row": 4603,
+      "source_group": "be46ff4a684210de1cf2",
+      "teks_chat": "Gw civilian dan nggak punya skill, sementara Tesa terus mengarahkan semua orang ke gw; pola itu jauh lebih hitman daripada pembelaan gw",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 3,
+    "pesan_typo_ringan": [],
+    "case_index": 25
+  },
+  "session": {
+    "case_name": "ambiguous",
+    "participants": [
+      "Thalia",
+      "Cahya",
+      "Hanif",
+      "Febrian",
+      "Asih"
+    ],
+    "focus_player": "",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Cahya",
+        "teks_chat": "Hanif juga Thalia baru ngomong soal sinyal di ronde ini.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Hanif",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          },
+          {
+            "pemain": "Thalia",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Febrian",
+        "teks_chat": "yang satu belum dipilih dari keduanya untuk ditanya lebih dulu.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Hanif",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          },
+          {
+            "pemain": "Thalia",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Asih",
+        "teks_chat": "lebih baik eksekusi dia, klaimnya tidak cocok dengan aksi yang dia ceritakan sendiri.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "tidak_diketahui",
+            "relasi": "offend",
+            "bukti_pesan": []
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "003_codex_revisi1.txt"
+  }
+}

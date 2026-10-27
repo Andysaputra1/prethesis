@@ -1,0 +1,78 @@
+{
+  "job": {
+    "job_id": "r003144_v02",
+    "case_name": "self",
+    "case_description": "Defend diri sendiri atau offend/vote diri sendiri sesuai label. Target = pengirim. FOKUS TAMBAHAN: Bela diri atau permintaan vote diri yang tulus; riwayat menyebut pemain lain sebagai pengalih.",
+    "source": {
+      "source_row": 3144,
+      "source_group": "a3bd1c4df3c8fc84711c",
+      "teks_chat": "si A baru aktif saat pembahasan korban dimulai dan langsung ada Gag Order, fix gw vote A",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 3,
+    "pesan_typo_ringan": [],
+    "case_index": 11
+  },
+  "session": {
+    "case_name": "self",
+    "participants": [
+      "Kemal",
+      "Suci",
+      "Nayla",
+      "Priska",
+      "Khalisa"
+    ],
+    "focus_player": "Khalisa",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Priska",
+        "teks_chat": "Nayla serta Kemal belum nulis hasil Peek lengkap, baru pengantarnya.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Kemal",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          },
+          {
+            "pemain": "Nayla",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Suci",
+        "teks_chat": "buat grup, yang ingin menjawab boleh mulai dari role-nya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Khalisa",
+        "teks_chat": "vote diriku saja biar diskusinya selesai, aku nggak akan membantah lagi.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Khalisa",
+            "relasi": "offend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "027_codex_revisi1.txt"
+  }
+}

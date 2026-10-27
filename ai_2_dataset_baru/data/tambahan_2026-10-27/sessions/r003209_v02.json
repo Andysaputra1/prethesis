@@ -1,0 +1,78 @@
+{
+  "job": {
+    "job_id": "r003209_v02",
+    "case_name": "self",
+    "case_description": "Defend diri sendiri atau offend/vote diri sendiri sesuai label. Target = pengirim. FOKUS TAMBAHAN: Bela diri atau permintaan vote diri yang tulus; riwayat menyebut pemain lain sebagai pengalih.",
+    "source": {
+      "source_row": 3209,
+      "source_group": "ff91ba6d3ec6b7480d2d",
+      "teks_chat": "tuduhan ke aku masih asumsi, belum ada yang benar-benar membuktikan",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 3,
+    "pesan_typo_ringan": [],
+    "case_index": 8
+  },
+  "session": {
+    "case_name": "self",
+    "participants": [
+      "Priska",
+      "Khansa",
+      "Savira",
+      "Shinta",
+      "Wulan"
+    ],
+    "focus_player": "Wulan",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Khansa",
+        "teks_chat": "yang barusan nanya hasil malam itu Savira sama Priska.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Savira",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          },
+          {
+            "pemain": "Priska",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Shinta",
+        "teks_chat": "aku menunggu penjelasan berikut sambil baca pesan awal.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Wulan",
+        "teks_chat": "aku tidak punya aksi menyerang. Klaim Civilian-ku bukan alasan buat memfitnah aku.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Wulan",
+            "relasi": "defend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "026_codex_revisi1.txt"
+  }
+}

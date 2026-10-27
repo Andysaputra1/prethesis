@@ -1,0 +1,131 @@
+{
+  "job": {
+    "job_id": "r000618_v02",
+    "case_name": "reference_start",
+    "case_description": "Tepat 12 konteks. Penyebutan target eksplisit di pesan konteks pertama; pesan sekarang memakai kata ganti. FOKUS TAMBAHAN: Tepat 12 konteks; nama target hanya pada konteks pertama; utama dia/-nya.",
+    "source": {
+      "source_row": 618,
+      "source_group": "1565dce1e43cc67f7f96",
+      "teks_chat": "kalau mau eksekusi gw silakan, tapi kalian bakal kehilangan pemain yang masih netral",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 13,
+    "pesan_typo_ringan": [],
+    "case_index": 2
+  },
+  "session": {
+    "case_name": "reference_start",
+    "participants": [
+      "Noval",
+      "Marsha",
+      "Prita",
+      "Embun",
+      "Zafran"
+    ],
+    "focus_player": "Prita",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Zafran",
+        "teks_chat": "Prita bilang udah Peek, tapi kalimat hasilnya kepotong.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Prita",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Noval",
+        "teks_chat": "yang kelihatan di chat kalian sampai kata apa?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Embun",
+        "teks_chat": "di layar gw berhenti setelah kata hasilnya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Marsha",
+        "teks_chat": "belum ada nama role setelah itu, cuma titik dua.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Zafran",
+        "teks_chat": "oh, kalau cuma dari notifikasi memang kependekan sih.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Noval",
+        "teks_chat": "aku buka chat penuh, barisnya masih sama.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Embun",
+        "teks_chat": "ada sambungan di bawah nggak, semuanya?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Marsha",
+        "teks_chat": "belum muncul sampai pesan timer tadi kok.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Zafran",
+        "teks_chat": "ya udah, bagian yang belum muncul jangan ditebak dulu.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Noval",
+        "teks_chat": "aku geser ke bawah, sekarang udah mentok.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Embun",
+        "teks_chat": "hasil lengkapnya masih ditunggu nih.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Marsha",
+        "teks_chat": "kalau udah masuk, langsung bahas di sini aja.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Marsha",
+        "teks_chat": "kesimpulanku masih sama: dia jangan divote, penjelasan keterlambatannya bisa diterima.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Prita",
+            "relasi": "defend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "016_codex_revisi1.txt"
+  }
+}

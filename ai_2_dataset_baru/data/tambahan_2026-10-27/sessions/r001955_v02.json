@@ -1,0 +1,77 @@
+{
+  "job": {
+    "job_id": "r001955_v02",
+    "case_name": "interruption",
+    "case_description": "Pembahasan target disela obrolan waktu/ronde; kaitan kembali ke target masih jelas. FOKUS TAMBAHAN: Selingan waktu lalu kembali ke target; sertakan pembelaan diri.",
+    "source": {
+      "source_row": 1955,
+      "source_group": "1d276445613f463a6b42",
+      "teks_chat": "feeling gw kuat banget A itu Hitman, ayo eksekusi sekarang",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 4,
+    "pesan_typo_ringan": [],
+    "case_index": 15
+  },
+  "session": {
+    "case_name": "interruption",
+    "participants": [
+      "Raisa",
+      "Keisha",
+      "Sekar",
+      "Isna",
+      "Zulfikar"
+    ],
+    "focus_player": "Zulfikar",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Sekar",
+        "teks_chat": "aku membaca cerita Zulfikar dari awal diskusi sih.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Zulfikar",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Keisha",
+        "teks_chat": "timer diskusi baru menunjukkan angka lima puluh tiga nih.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Raisa",
+        "teks_chat": "aku lihat angka yang sama sekarang, lanjut ke bahasan awal.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Isna",
+        "teks_chat": "kita lanjut lagi, klaim Zulfikar tidak masuk akal dan aku menandainya sebagai calon pelaku.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Zulfikar",
+            "relasi": "offend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "045_codex_revisi1.txt"
+  }
+}

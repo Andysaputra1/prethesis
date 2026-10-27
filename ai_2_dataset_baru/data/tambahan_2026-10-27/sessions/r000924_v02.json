@@ -1,0 +1,71 @@
+{
+  "job": {
+    "job_id": "r000924_v02",
+    "case_name": "witness",
+    "case_description": "Nama saksi/korban disebut, tetapi bukan target serangan atau pembelaan. FOKUS TAMBAHAN: Nama sumber/saksi/penuduh bukan target. Sertakan bantahan isi klaim Peek penuduh yang membela pengirim saja.",
+    "source": {
+      "source_row": 924,
+      "source_group": "58ae04b0f1f8c20b6d2f",
+      "teks_chat": "aku bukan pembunuhnya, role yang aku pegang cuma Civilian tanpa aksi malam",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 3,
+    "pesan_typo_ringan": [],
+    "case_index": 48
+  },
+  "session": {
+    "case_name": "witness",
+    "participants": [
+      "Savira",
+      "Afifah",
+      "Nadhif",
+      "Rizal",
+      "Ghani"
+    ],
+    "focus_player": "Ghani",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Savira",
+        "teks_chat": "gw belum menanggapi, baru selesai baca pesan Ghani.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Ghani",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Rizal",
+        "teks_chat": "semuanya boleh menanggapi setelah kalimatnya lengkap.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Afifah",
+        "teks_chat": "dari yang disampaikan Savira, alasan koneksi Ghani masuk akal. Stop tuduh Ghani dulu.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Ghani",
+            "relasi": "defend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "010_codex_revisi1.txt"
+  }
+}

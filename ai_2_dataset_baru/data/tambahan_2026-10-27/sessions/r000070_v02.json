@@ -1,0 +1,71 @@
+{
+  "job": {
+    "job_id": "r000070_v02",
+    "case_name": "agreement",
+    "case_description": "Pesan sekarang menyetujui atau membantah pesan pemain lain di konteks tanpa menyebut ulang nama target. Setuju dengan tuduhan = offend pemain yang dituduh; membantah tuduhan atau setuju dengan pembelaan = defend. Identitas target diwarisi dari pesan yang ditanggapi. FOKUS TAMBAHAN: Setuju/bantah tanpa ulang nama target; sumber pendapat bukan target.",
+    "source": {
+      "source_row": 70,
+      "source_group": "881496c49b92cd37ab1b",
+      "teks_chat": "bukan aku pelakunya, si Tio terlalu cepat membela diri padahal belum dituduh",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 3,
+    "pesan_typo_ringan": [],
+    "case_index": 21
+  },
+  "session": {
+    "case_name": "agreement",
+    "participants": [
+      "Damar",
+      "Dyah",
+      "Mahira",
+      "Nabil",
+      "Cakra"
+    ],
+    "focus_player": "Damar",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Nabil",
+        "teks_chat": "ayo vote Damar, arah pembicaraannya makin mencurigakan.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Damar",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Dyah",
+        "teks_chat": "nih, timer untuk fase ngobrol turun ke tujuh belas.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Cakra",
+        "teks_chat": "iya, yang Nabil soroti itu juga terasa paling sus buatku.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Damar",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "040_codex_revisi1.txt"
+  }
+}

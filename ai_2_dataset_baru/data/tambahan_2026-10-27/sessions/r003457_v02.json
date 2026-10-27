@@ -1,0 +1,131 @@
+{
+  "job": {
+    "job_id": "r003457_v02",
+    "case_name": "reference_start",
+    "case_description": "Tepat 12 konteks. Penyebutan target eksplisit di pesan konteks pertama; pesan sekarang memakai kata ganti. FOKUS TAMBAHAN: Tepat 12 konteks; nama target hanya pada konteks pertama; utama dia/-nya.",
+    "source": {
+      "source_row": 3457,
+      "source_group": "b449e6aff34112ace8b0",
+      "teks_chat": "Sumpah bukan aku hitmannya, dari awal aku civilian dan tidak punya aksi malam",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 13,
+    "pesan_typo_ringan": [],
+    "case_index": 28
+  },
+  "session": {
+    "case_name": "reference_start",
+    "participants": [
+      "Febrian",
+      "Cantika",
+      "Halim",
+      "Salsabila",
+      "Syauqi"
+    ],
+    "focus_player": "Halim",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Salsabila",
+        "teks_chat": "Halim memisahkan pengakuan role dan cerita skill dengan titik.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Halim",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Cantika",
+        "teks_chat": "buat grup, itu dua kalimat dalam satu pesan ya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Febrian",
+        "teks_chat": "iya, keterangan waktu hanya ada di kalimat kedua.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Syauqi",
+        "teks_chat": "gw baca bagian pertama sebagai pengakuan role sih.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Salsabila",
+        "teks_chat": "kalimat kedua baru membahas aksi yang diceritakan.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Cantika",
+        "teks_chat": "titiknya ada kok, bukan cuma pergantian baris layar.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Febrian",
+        "teks_chat": "oh, jadi bukan pengakuan dua role sekaligus.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Syauqi",
+        "teks_chat": "buat semuanya, baca setiap kalimat sampai selesai dong.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Salsabila",
+        "teks_chat": "aku sudah sampai bagian nomor malamnya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Cantika",
+        "teks_chat": "waktu kirim tetap satu karena pesannya dikirim sekaligus.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Febrian",
+        "teks_chat": "nih, urutannya role dulu, lalu cerita aksinya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Syauqi",
+        "teks_chat": "silakan lanjut menyampaikan pendapat tentang pesan itu.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Syauqi",
+        "teks_chat": "dia yang disebut di pesan awal aman dari tuduhan itu, hasilku menunjukkan Civilian.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Halim",
+            "relasi": "defend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "018_codex_revisi1.txt"
+  }
+}

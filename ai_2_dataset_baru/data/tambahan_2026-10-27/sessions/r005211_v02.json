@@ -1,0 +1,78 @@
+{
+  "job": {
+    "job_id": "r005211_v02",
+    "case_name": "self",
+    "case_description": "Defend diri sendiri atau offend/vote diri sendiri sesuai label. Target = pengirim. FOKUS TAMBAHAN: Bela diri atau permintaan vote diri yang tulus; riwayat menyebut pemain lain sebagai pengalih.",
+    "source": {
+      "source_row": 5211,
+      "source_group": "2472cb783ffaa8d318db",
+      "teks_chat": "bukan aku Hitman, aku warga biasa yang konsisten dari awal",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 3,
+    "pesan_typo_ringan": [],
+    "case_index": 38
+  },
+  "session": {
+    "case_name": "self",
+    "participants": [
+      "Prabu",
+      "Rizal",
+      "Rayhan",
+      "Feby",
+      "Renata"
+    ],
+    "focus_player": "Prabu",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Renata",
+        "teks_chat": "dua orang yang masih cerita soal malam tadi itu Feby dan Rizal.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Rizal",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          },
+          {
+            "pemain": "Feby",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Rayhan",
+        "teks_chat": "semua masih bisa membuka pesan lama kalau perlu baca ulang.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Prabu",
+        "teks_chat": "percaya atau nggak, aku Civilian; jangan menuntut hasil skill yang memang nggak kupunya.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Prabu",
+            "relasi": "defend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "029_codex_revisi1.txt"
+  }
+}

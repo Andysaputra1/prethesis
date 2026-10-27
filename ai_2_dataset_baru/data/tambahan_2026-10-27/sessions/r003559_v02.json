@@ -1,0 +1,131 @@
+{
+  "job": {
+    "job_id": "r003559_v02",
+    "case_name": "reference_start",
+    "case_description": "Tepat 12 konteks. Penyebutan target eksplisit di pesan konteks pertama; pesan sekarang memakai kata ganti. FOKUS TAMBAHAN: Tepat 12 konteks; nama target hanya pada konteks pertama; utama dia/-nya.",
+    "source": {
+      "source_row": 3559,
+      "source_group": "19b9803a2fbd72abc490",
+      "teks_chat": "kalau kalian eksekusi gw, kalian bakal kehilangan Spy yang sebenarnya lagi jagain tim",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 13,
+    "pesan_typo_ringan": [],
+    "case_index": 36
+  },
+  "session": {
+    "case_name": "reference_start",
+    "participants": [
+      "Thalia",
+      "Hanif",
+      "Prita",
+      "Nadya",
+      "Tisna"
+    ],
+    "focus_player": "Nadya",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Thalia",
+        "teks_chat": "Nadya menyebut Guard dalam pertanyaan, lalu Peek dalam pernyataan.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Nadya",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Prita",
+        "teks_chat": "buat semua, jangan campur dua kalimatnya ya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Hanif",
+        "teks_chat": "yang pertama memang ada tanda tanya di ujung.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Tisna",
+        "teks_chat": "gw membacanya sebagai pertanyaan tentang skill sih.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Thalia",
+        "teks_chat": "yang kedua baru pernyataan setelah titik.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Prita",
+        "teks_chat": "tanda bacanya lengkap kok pada chat asli.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Hanif",
+        "teks_chat": "oh, jadi bukan otomatis mengaku melakukan dua aksi.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Tisna",
+        "teks_chat": "iya, bentuk pertanyaan belum merupakan pengakuan tindakan.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Thalia",
+        "teks_chat": "aku pengin bahas isi pernyataan setelah pertanyaannya dulu.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Prita",
+        "teks_chat": "buat grup, kalau menjawab nanti jelaskan bagian mana yang dimaksud.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Hanif",
+        "teks_chat": "sekarang batas kalimatnya sudah kebaca nih.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Tisna",
+        "teks_chat": "silakan lanjut tanpa mencampur dua bagian tadi.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Tisna",
+        "teks_chat": "orang di awal jangan dimasukkan daftar tersangka lagi, aku percaya dia bukan pelaku.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Nadya",
+            "relasi": "defend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "019_codex_revisi1.txt"
+  }
+}

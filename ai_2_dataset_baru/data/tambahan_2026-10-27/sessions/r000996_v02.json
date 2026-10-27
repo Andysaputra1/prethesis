@@ -1,0 +1,71 @@
+{
+  "job": {
+    "job_id": "r000996_v02",
+    "case_name": "witness",
+    "case_description": "Nama saksi/korban disebut, tetapi bukan target serangan atau pembelaan. FOKUS TAMBAHAN: Nama sumber/saksi/penuduh bukan target. Sertakan bantahan isi klaim Peek penuduh yang membela pengirim saja.",
+    "source": {
+      "source_row": 996,
+      "source_group": "ab24f3a66eaee24ebfd3",
+      "teks_chat": "kalau kalian butuh anchor, aku Spy. Vote bareng aku ke Naya, geraknya paling mencurigakan",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 3,
+    "pesan_typo_ringan": [],
+    "case_index": 13
+  },
+  "session": {
+    "case_name": "witness",
+    "participants": [
+      "Salma",
+      "Tania",
+      "Anindya",
+      "Larasati",
+      "Rasyid"
+    ],
+    "focus_player": "Tania",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Salma",
+        "teks_chat": "gw lihat Tania menjelaskan bagian waktunya di akhir kalimat.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Tania",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Anindya",
+        "teks_chat": "pesan yang tadi masuk masih terbaca di layar grup.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Rasyid",
+        "teks_chat": "aku setuju poin Salma: vote Tania, ceritanya soal Peek bertentangan dengan ucapannya sendiri.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Tania",
+            "relasi": "offend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "007_codex_revisi1.txt"
+  }
+}

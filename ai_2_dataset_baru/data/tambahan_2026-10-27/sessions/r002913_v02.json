@@ -1,0 +1,91 @@
+{
+  "job": {
+    "job_id": "r002913_v02",
+    "case_name": "ambiguous",
+    "case_description": "Beberapa acuan sama-sama mungkin; target tidak_diketahui, bukan nama terakhir. FOKUS TAMBAHAN: Sedikitnya dua calon acuan dia sama kuat; nama terakhir bukan jawaban. Target tidak_diketahui.",
+    "source": {
+      "source_row": 2913,
+      "source_group": "874fcf95eb130e0298af",
+      "teks_chat": "F menuduh G tepat setelah G mulai bicara masuk akal, ini indikasi F ingin mematikan arah diskusi",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 3,
+    "pesan_typo_ringan": [],
+    "case_index": 3
+  },
+  "session": {
+    "case_name": "ambiguous",
+    "participants": [
+      "Ghina",
+      "Savira",
+      "Salsabila",
+      "Tsania",
+      "Asih"
+    ],
+    "focus_player": "",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Asih",
+        "teks_chat": "nih, Salsabila dan Ghina dua-duanya lagi cerita soal malam kedua.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Ghina",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          },
+          {
+            "pemain": "Salsabila",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Savira",
+        "teks_chat": "kalau soal dua klaim itu, aku belum kasih kesimpulan.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Ghina",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          },
+          {
+            "pemain": "Salsabila",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Tsania",
+        "teks_chat": "gerak-geriknya bikin ragu, dia seperti sudah tahu siapa yang bakal disandera.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "tidak_diketahui",
+            "relasi": "offend",
+            "bukti_pesan": []
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "001_codex_revisi1.txt"
+  }
+}

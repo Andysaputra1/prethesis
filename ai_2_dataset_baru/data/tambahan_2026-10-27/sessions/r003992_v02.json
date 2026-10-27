@@ -1,0 +1,57 @@
+{
+  "job": {
+    "job_id": "r003992_v02",
+    "case_name": "neutral_status",
+    "case_description": "Klaim status/role atau pertanyaan informasi saja tanpa pembelaan/serangan; target neutral sesuai ATURAN_LABEL.md. FOKUS TAMBAHAN: Neutral bertarget neutral: nama, kamu jelas, atau jawaban ke penanya khusus.",
+    "source": {
+      "source_row": 3992,
+      "source_group": "27e20451a9366d3db1bc",
+      "teks_chat": "gw masih bingung sama urutan malamnya, target Spy tadi siapa?",
+      "label_intent": "neutral"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 2,
+    "pesan_typo_ringan": [],
+    "case_index": 2
+  },
+  "session": {
+    "case_name": "neutral_status",
+    "participants": [
+      "Marsha",
+      "Aksara",
+      "Almira",
+      "Yasmin",
+      "Zakia"
+    ],
+    "focus_player": "Aksara",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Aksara",
+        "teks_chat": "gw mau cerita kapan skill dipakai setelah menyebut role.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Yasmin",
+        "teks_chat": "kamu menggunakan Guard pada malam keberapa? Aku cuma ingin tahu urutannya.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Aksara",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "048_codex_revisi1.txt"
+  }
+}

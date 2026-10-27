@@ -1,0 +1,131 @@
+{
+  "job": {
+    "job_id": "r002134_v02",
+    "case_name": "reference_start",
+    "case_description": "Tepat 12 konteks. Penyebutan target eksplisit di pesan konteks pertama; pesan sekarang memakai kata ganti. FOKUS TAMBAHAN: Tepat 12 konteks; nama target hanya pada konteks pertama; utama dia/-nya.",
+    "source": {
+      "source_row": 2134,
+      "source_group": "92ce69d5aec582a57ca8",
+      "teks_chat": "gw bukan Hitman, sumpah role gw Civilian dan tuduhan ke gw ngawur",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 13,
+    "pesan_typo_ringan": [],
+    "case_index": 48
+  },
+  "session": {
+    "case_name": "reference_start",
+    "participants": [
+      "Ratih",
+      "Khansa",
+      "Pandu",
+      "Afifah",
+      "Hilmi"
+    ],
+    "focus_player": "Afifah",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Ratih",
+        "teks_chat": "Afifah bilang ini pilihan akhir pas diskusi hampir tutup.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Afifah",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Pandu",
+        "teks_chat": "buat semua, kata akhir itu dari isi pesan, bukan status tombol ya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Hilmi",
+        "teks_chat": "iya, tombolnya saat itu belum terkunci.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Khansa",
+        "teks_chat": "gw lihat pengumuman kunci baru muncul setelahnya sih.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Ratih",
+        "teks_chat": "masih ada beberapa pesan di antara kedua kejadian.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Pandu",
+        "teks_chat": "berarti belum tepat kalau waktu chat dianggap sama dengan kunci vote.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Hilmi",
+        "teks_chat": "benar kok, urutan layarnya menunjukkan ada jeda.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Khansa",
+        "teks_chat": "aku nggak sempat menghitung berapa detik persisnya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Ratih",
+        "teks_chat": "buat grup, urutannya saja cukup dulu kalau angkanya belum ada.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Pandu",
+        "teks_chat": "sekarang pernyataan di chat dan keadaan layar sudah beda jelas.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Hilmi",
+        "teks_chat": "oke nih, kita bisa kembali ke isi pilihan tersebut.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Khansa",
+        "teks_chat": "silakan lanjut tanggapan sebelum ronde berikutnya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Khansa",
+        "teks_chat": "akhirnya aku tetap membela dia. Tidak ada alasan kuat untuk membuang pemain pembuka itu.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Afifah",
+            "relasi": "defend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "020_codex_revisi1.txt"
+  }
+}

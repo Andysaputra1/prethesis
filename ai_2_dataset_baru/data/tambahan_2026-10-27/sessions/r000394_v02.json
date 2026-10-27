@@ -1,0 +1,131 @@
+{
+  "job": {
+    "job_id": "r000394_v02",
+    "case_name": "reference_start",
+    "case_description": "Tepat 12 konteks. Penyebutan target eksplisit di pesan konteks pertama; pesan sekarang memakai kata ganti. FOKUS TAMBAHAN: Tepat 12 konteks; nama target hanya pada konteks pertama; utama dia/-nya.",
+    "source": {
+      "source_row": 394,
+      "source_group": "0be6ff00f45238348521",
+      "teks_chat": "tuduhan ke gw belum ada buktinya, jangan asal vote",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 13,
+    "pesan_typo_ringan": [],
+    "case_index": 26
+  },
+  "session": {
+    "case_name": "reference_start",
+    "participants": [
+      "Astri",
+      "Hanif",
+      "Thalia",
+      "Yudhis",
+      "Anindya"
+    ],
+    "focus_player": "Hanif",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Yudhis",
+        "teks_chat": "Hanif cerita hasil akhirnya dulu, baru menjelaskan awal malam.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Hanif",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Anindya",
+        "teks_chat": "ini ceritanya mundur ya, semuanya?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Astri",
+        "teks_chat": "iya, kalimat pertama memang ringkasan akhir kejadian.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Thalia",
+        "teks_chat": "gw sih tadi keburu mengira urutan kalimat sama dengan waktunya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Yudhis",
+        "teks_chat": "kata sebelumnya muncul pada bagian kedua kok.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Anindya",
+        "teks_chat": "oh, berarti bagian kedua menceritakan hal yang lebih awal.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Astri",
+        "teks_chat": "buat grup, lihat kata sebelum dan sesudahnya juga dong.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Thalia",
+        "teks_chat": "kalau cuma nama skillnya yang dibaca, waktunya bisa tertukar.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Yudhis",
+        "teks_chat": "aku sudah baca dua kalimatnya sekaligus sekarang.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Anindya",
+        "teks_chat": "nomor malam di masing-masing bagian masih terlihat.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Astri",
+        "teks_chat": "nah, urutan kejadian mulai nyambung nih.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Thalia",
+        "teks_chat": "oke, silakan lanjut pendapat soal cerita malam itu.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Thalia",
+        "teks_chat": "pembahasan panjang ini tidak membuat dia layak divote. Aku masih percaya dia warga.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Hanif",
+            "relasi": "defend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "018_codex_revisi1.txt"
+  }
+}

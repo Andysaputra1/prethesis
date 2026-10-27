@@ -1,0 +1,71 @@
+{
+  "job": {
+    "job_id": "r003315_v02",
+    "case_name": "witness",
+    "case_description": "Nama saksi/korban disebut, tetapi bukan target serangan atau pembelaan. FOKUS TAMBAHAN: Nama sumber/saksi/penuduh bukan target. Sertakan bantahan isi klaim Peek penuduh yang membela pengirim saja.",
+    "source": {
+      "source_row": 3315,
+      "source_group": "1cab4511d21bf084849f",
+      "teks_chat": "kalau gw hitman, ngapain sengaja mancing perhatian ke diri sendiri begini?",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 3,
+    "pesan_typo_ringan": [],
+    "case_index": 22
+  },
+  "session": {
+    "case_name": "witness",
+    "participants": [
+      "Cakra",
+      "Haikal",
+      "Yudhis",
+      "Tania",
+      "Kemal"
+    ],
+    "focus_player": "Haikal",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Yudhis",
+        "teks_chat": "Haikal terdeteksi Hitman di hasil skill Peek yang kupakai.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Haikal",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Cakra",
+        "teks_chat": "gw pengin dengar isi lengkapnya, jangan cuma nama role.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Haikal",
+        "teks_chat": "klaim Peek dari Yudhis tidak sesuai role-ku, aku Stalker dan tuduhan itu salah.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Haikal",
+            "relasi": "defend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "008_codex_revisi1.txt"
+  }
+}

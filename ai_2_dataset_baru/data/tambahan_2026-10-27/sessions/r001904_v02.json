@@ -1,0 +1,78 @@
+{
+  "job": {
+    "job_id": "r001904_v02",
+    "case_name": "mixed_relations",
+    "case_description": "Membela satu pemain dan menuduh pemain lain. Intent utama offend; simpan kedua relasi. FOKUS TAMBAHAN: Bela A dan tuduh B; variasi urutan, kata ganti, dan pembelaan dalam anak kalimat.",
+    "source": {
+      "source_row": 1904,
+      "source_group": "145904ffe92980c4ea1b",
+      "teks_chat": "si Kiki tadi kena Gag Order tepat saat mulai menjelaskan alibinya, menurutku ada yang sengaja membungkam dia, fokus vote Yoga",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 3,
+    "pesan_typo_ringan": [],
+    "case_index": 43
+  },
+  "session": {
+    "case_name": "mixed_relations",
+    "participants": [
+      "Thalia",
+      "Mutiara",
+      "Amel",
+      "Luthfan",
+      "Sekar"
+    ],
+    "focus_player": "Luthfan",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Mutiara",
+        "teks_chat": "gw sempat baca pengantar klaim Luthfan sebelum hasilnya masuk.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Luthfan",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Amel",
+        "teks_chat": "gw udah sampai pesan paling bawah nih, lanjutkan.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Thalia",
+        "teks_chat": "Sekar sedang mengarang menurutku. Alasan Luthfan bisa dipercaya karena waktunya sesuai urutan chat.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Luthfan",
+            "relasi": "defend",
+            "bukti_pesan": [
+              3
+            ]
+          },
+          {
+            "pemain": "Sekar",
+            "relasi": "offend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "015_codex_revisi1.txt"
+  }
+}

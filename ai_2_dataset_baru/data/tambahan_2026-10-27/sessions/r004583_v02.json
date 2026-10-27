@@ -1,0 +1,79 @@
+{
+  "job": {
+    "job_id": "r004583_v02",
+    "case_name": "multiple_targets",
+    "case_description": "Dua atau lebih pemain menjadi target relasi yang sama secara jelas. FOKUS TAMBAHAN: Dua pemain bernama dengan relasi sama.",
+    "source": {
+      "source_row": 4583,
+      "source_group": "d7e0db33f444f565beba",
+      "teks_chat": "A dari tadi cuma lempar tuduhan, menurut gw dia hitman",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 2,
+    "pesan_typo_ringan": [],
+    "case_index": 21
+  },
+  "session": {
+    "case_name": "multiple_targets",
+    "participants": [
+      "Febi",
+      "Habib",
+      "Anisa",
+      "Zulfikar",
+      "Yasmin"
+    ],
+    "focus_player": "Febi",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Yasmin",
+        "teks_chat": "Habib sama Febi belum menulis nama role lengkap di hasilnya.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Febi",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          },
+          {
+            "pemain": "Habib",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Anisa",
+        "teks_chat": "pilihanku mengeksekusi Febi dan Habib, masing-masing punya klaim aksi yang palsu.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Febi",
+            "relasi": "offend",
+            "bukti_pesan": [
+              2
+            ]
+          },
+          {
+            "pemain": "Habib",
+            "relasi": "offend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "043_codex_revisi1.txt"
+  }
+}

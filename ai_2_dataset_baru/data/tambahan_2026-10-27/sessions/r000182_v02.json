@@ -1,0 +1,71 @@
+{
+  "job": {
+    "job_id": "r000182_v02",
+    "case_name": "witness",
+    "case_description": "Nama saksi/korban disebut, tetapi bukan target serangan atau pembelaan. FOKUS TAMBAHAN: Nama sumber/saksi/penuduh bukan target. Sertakan bantahan isi klaim Peek penuduh yang membela pengirim saja.",
+    "source": {
+      "source_row": 182,
+      "source_group": "acc9b77658153d9e568d",
+      "teks_chat": "dari cara lu ngarahin voting tanpa bukti, gw curiga lu Hitman",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 3,
+    "pesan_typo_ringan": [],
+    "case_index": 29
+  },
+  "session": {
+    "case_name": "witness",
+    "participants": [
+      "Tsania",
+      "Salma",
+      "Tisna",
+      "Hilmi",
+      "Aisyah"
+    ],
+    "focus_player": "Hilmi",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Tsania",
+        "teks_chat": "Hilmi baru menjawab pertanyaan grup tentang urutan malam.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Hilmi",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Aisyah",
+        "teks_chat": "aku belum menutup layar chat, silakan diteruskan.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Tisna",
+        "teks_chat": "yang kutangkap dari info Tsania, Hilmi sengaja menyembunyikan alasan pindah vote.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Hilmi",
+            "relasi": "offend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "008_codex_revisi1.txt"
+  }
+}

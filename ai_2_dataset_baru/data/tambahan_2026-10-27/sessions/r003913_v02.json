@@ -1,0 +1,71 @@
+{
+  "job": {
+    "job_id": "r003913_v02",
+    "case_name": "witness",
+    "case_description": "Nama saksi/korban disebut, tetapi bukan target serangan atau pembelaan. FOKUS TAMBAHAN: Nama sumber/saksi/penuduh bukan target. Sertakan bantahan isi klaim Peek penuduh yang membela pengirim saja.",
+    "source": {
+      "source_row": 3913,
+      "source_group": "4caa87b6a7fc7ed8f2a4",
+      "teks_chat": "yang paling keras nuduh gw, semalam lu ngapain dan dapat info dari mana?",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 3,
+    "pesan_typo_ringan": [],
+    "case_index": 40
+  },
+  "session": {
+    "case_name": "witness",
+    "participants": [
+      "Embun",
+      "Raisa",
+      "Haris",
+      "Arum",
+      "Utari"
+    ],
+    "focus_player": "Embun",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Utari",
+        "teks_chat": "aku membaca cerita Embun dari awal diskusi sih.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Embun",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Haris",
+        "teks_chat": "aku ngikutin obrolan ini sampai semua selesai.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Arum",
+        "teks_chat": "Embun tidak patut dieksekusi dari bukti itu, Utari sendiri cuma menyebut jeda chat.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Embun",
+            "relasi": "defend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "010_codex_revisi1.txt"
+  }
+}

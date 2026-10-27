@@ -1,0 +1,77 @@
+{
+  "job": {
+    "job_id": "r005006_v02",
+    "case_name": "interruption",
+    "case_description": "Pembahasan target disela obrolan waktu/ronde; kaitan kembali ke target masih jelas. FOKUS TAMBAHAN: Selingan waktu lalu kembali ke target; sertakan pembelaan diri.",
+    "source": {
+      "source_row": 5006,
+      "source_group": "78c8598fbf2a3786bd51",
+      "teks_chat": "gw claim stalker, peek-ku menemukan Jovan sebagai hitman, kalau ini bohong silakan eksekusi gue besok",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 4,
+    "pesan_typo_ringan": [],
+    "case_index": 13
+  },
+  "session": {
+    "case_name": "interruption",
+    "participants": [
+      "Wening",
+      "Mahesa",
+      "Utari",
+      "Haris",
+      "Mahira"
+    ],
+    "focus_player": "Mahesa",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Wening",
+        "teks_chat": "gw lihat Mahesa menjelaskan bagian waktunya di akhir kalimat.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Mahesa",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Mahira",
+        "teks_chat": "aku ngingetin saja, lima detik terakhir sudah mau mulai.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Utari",
+        "teks_chat": "oke, pengingat fase terbaca, aku kembali membaca chat.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Haris",
+        "teks_chat": "soal yang dibahas sebelum jam itu, dia berbohong menurutku. Aku mendukung vote ke dia.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Mahesa",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "044_codex_revisi1.txt"
+  }
+}

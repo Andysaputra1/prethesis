@@ -1,0 +1,77 @@
+{
+  "job": {
+    "job_id": "r000633_v02",
+    "case_name": "interruption",
+    "case_description": "Pembahasan target disela obrolan waktu/ronde; kaitan kembali ke target masih jelas. FOKUS TAMBAHAN: Selingan waktu lalu kembali ke target; sertakan pembelaan diri.",
+    "source": {
+      "source_row": 633,
+      "source_group": "28dd27269ba349129804",
+      "teks_chat": "tuduhan lu belum ada buktinya, jangan asal lempar vote ke aku",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 4,
+    "pesan_typo_ringan": [],
+    "case_index": 2
+  },
+  "session": {
+    "case_name": "interruption",
+    "participants": [
+      "Nadira",
+      "Zakia",
+      "Tania",
+      "Syakira",
+      "Atika"
+    ],
+    "focus_player": "Syakira",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Nadira",
+        "teks_chat": "Syakira nulis role dulu lalu menjelaskan skill yang dimaksud.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Syakira",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Atika",
+        "teks_chat": "di timer sini cuma sembilan belas detik lagi.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Zakia",
+        "teks_chat": "oke, pengingatnya terbaca di grup, belum perlu pindah layar.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Tania",
+        "teks_chat": "setelah selingan timer itu, aku tetap bela Syakira; penjelasan koneksinya masuk akal.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Syakira",
+            "relasi": "defend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "043_codex_revisi1.txt"
+  }
+}

@@ -1,0 +1,91 @@
+{
+  "job": {
+    "job_id": "r003396_v02",
+    "case_name": "ambiguous",
+    "case_description": "Beberapa acuan sama-sama mungkin; target tidak_diketahui, bukan nama terakhir. FOKUS TAMBAHAN: Sedikitnya dua calon acuan dia sama kuat; nama terakhir bukan jawaban. Target tidak_diketahui.",
+    "source": {
+      "source_row": 3396,
+      "source_group": "738ecaeab8baa9a4bf65",
+      "teks_chat": "kalau mau mengeksekusi gw, jawab dulu kenapa alibi si A dianggap otomatis valid",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 3,
+    "pesan_typo_ringan": [],
+    "case_index": 23
+  },
+  "session": {
+    "case_name": "ambiguous",
+    "participants": [
+      "Jalu",
+      "Nabil",
+      "Rizki",
+      "Shafa",
+      "Mahesa"
+    ],
+    "focus_player": "",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Rizki",
+        "teks_chat": "Mahesa dan Shafa belum menyebut kapan pindah vote, sih.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Shafa",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          },
+          {
+            "pemain": "Mahesa",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Jalu",
+        "teks_chat": "gw coba pahami dua jawaban itu sebelum ikut komentar.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Shafa",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          },
+          {
+            "pemain": "Mahesa",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Nabil",
+        "teks_chat": "dia sedang menutupi pelaku menurutku, semua sanggahannya cuma memutar perhatian.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "tidak_diketahui",
+            "relasi": "offend",
+            "bukti_pesan": []
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "003_codex_revisi1.txt"
+  }
+}

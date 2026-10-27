@@ -1,0 +1,100 @@
+{
+  "job": {
+    "job_id": "r000249_v02",
+    "case_name": "plural_reference",
+    "case_description": "Pesan sekarang memakai mereka/kalian/keduanya/berdua untuk dua pemain atau lebih yang jelas dari konteks, tanpa menyebut ulang nama mereka. Simpan semua pemain itu sebagai target. FOKUS TAMBAHAN: Mereka/keduanya menunjuk dua orang. Sapaan ke pemain ketiga bukan target.",
+    "source": {
+      "source_row": 249,
+      "source_group": "ff2a3aa49ad9306479ce",
+      "teks_chat": "gw rasa Sari sengaja bikin chat kacau supaya kita salah vote",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 3,
+    "pesan_typo_ringan": [],
+    "case_index": 23
+  },
+  "session": {
+    "case_name": "plural_reference",
+    "participants": [
+      "Shinta",
+      "Diandra",
+      "Gendis",
+      "Naura",
+      "Ayuning"
+    ],
+    "focus_player": "Naura",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Gendis",
+        "teks_chat": "Shinta juga Naura ganti keterangan soal malam pertama.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Naura",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          },
+          {
+            "pemain": "Shinta",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Ayuning",
+        "teks_chat": "gw lihat pertanyaan ke dua orang itu masih soal malam yang sama.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Naura",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          },
+          {
+            "pemain": "Shinta",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Diandra",
+        "teks_chat": "yang perlu diperiksa sebagai calon Hitman itu mereka, Ayuning; dua alibinya sama-sama janggal.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Naura",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          },
+          {
+            "pemain": "Shinta",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "035_codex_revisi1.txt"
+  }
+}

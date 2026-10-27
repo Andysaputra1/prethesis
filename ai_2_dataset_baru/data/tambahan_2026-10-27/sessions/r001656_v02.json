@@ -1,0 +1,131 @@
+{
+  "job": {
+    "job_id": "r001656_v02",
+    "case_name": "reference_start",
+    "case_description": "Tepat 12 konteks. Penyebutan target eksplisit di pesan konteks pertama; pesan sekarang memakai kata ganti. FOKUS TAMBAHAN: Tepat 12 konteks; nama target hanya pada konteks pertama; utama dia/-nya.",
+    "source": {
+      "source_row": 1656,
+      "source_group": "4e0280f95e90097d1ed9",
+      "teks_chat": "kalau gw Hitman, ngapain gw terang-terangan debat begini? Cek si Dito yang pasif",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 13,
+    "pesan_typo_ringan": [],
+    "case_index": 27
+  },
+  "session": {
+    "case_name": "reference_start",
+    "participants": [
+      "Zakia",
+      "Tania",
+      "Febrian",
+      "Salsabila",
+      "Niken"
+    ],
+    "focus_player": "Tania",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Febrian",
+        "teks_chat": "Tania menulis nama skill dan malamnya, tapi belum bilang sudah dipakai.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Tania",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Salsabila",
+        "teks_chat": "buat semua, ada kata sudah atau belum di pesan itu nggak?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Zakia",
+        "teks_chat": "gw belum lihat, cuma ada skill dan angka.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Niken",
+        "teks_chat": "aku juga bacanya begitu dari chat penuh.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Febrian",
+        "teks_chat": "berarti status aksinya belum jelas dari tulisan itu aja sih.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Salsabila",
+        "teks_chat": "iya, jangan tambahin satu kata seolah memang tertulis.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Zakia",
+        "teks_chat": "pesan setelahnya cuma mengingatkan waktu kok.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Niken",
+        "teks_chat": "kalau mau bahas penggunaan, bagian itu perlu dijelaskan nanti.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Febrian",
+        "teks_chat": "sekarang yang terlihat baru jenis skill dan malam.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Salsabila",
+        "teks_chat": "aku masih menunggu isi lanjutannya di sini.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Zakia",
+        "teks_chat": "timer diskusi masih jalan nih, belum masuk vote.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Niken",
+        "teks_chat": "oke, tanggapi informasi yang sudah ada dulu.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Niken",
+        "teks_chat": "aku anggap dia sedang nutupin pelaku, terutama dari cara mengubah alasan pada awal obrolan.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Tania",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "018_codex_revisi1.txt"
+  }
+}

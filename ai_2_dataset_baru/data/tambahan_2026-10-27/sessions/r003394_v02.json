@@ -1,0 +1,78 @@
+{
+  "job": {
+    "job_id": "r003394_v02",
+    "case_name": "self",
+    "case_description": "Defend diri sendiri atau offend/vote diri sendiri sesuai label. Target = pengirim. FOKUS TAMBAHAN: Bela diri atau permintaan vote diri yang tulus; riwayat menyebut pemain lain sebagai pengalih.",
+    "source": {
+      "source_row": 3394,
+      "source_group": "59eb3495aecac0e3ee16",
+      "teks_chat": "aku bukan hitman dan tidak pernah memakai Gag Order, cek urutan kejadian dulu",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 3,
+    "pesan_typo_ringan": [],
+    "case_index": 6
+  },
+  "session": {
+    "case_name": "self",
+    "participants": [
+      "Rizal",
+      "Nadira",
+      "Syakira",
+      "Gendis",
+      "Zakia"
+    ],
+    "focus_player": "Nadira",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Gendis",
+        "teks_chat": "Zakia dan Syakira sama-sama ngaku Spy di chat tadi.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Syakira",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          },
+          {
+            "pemain": "Zakia",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Rizal",
+        "teks_chat": "giliran ngomongnya masih terbuka untuk seluruh grup.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Nadira",
+        "teks_chat": "jangan anggap aku bersalah cuma karena belum mengetik, koneksiku baru balik.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Nadira",
+            "relasi": "defend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "026_codex_revisi1.txt"
+  }
+}

@@ -1,0 +1,131 @@
+{
+  "job": {
+    "job_id": "r003133_v02",
+    "case_name": "reference_start",
+    "case_description": "Tepat 12 konteks. Penyebutan target eksplisit di pesan konteks pertama; pesan sekarang memakai kata ganti. FOKUS TAMBAHAN: Tepat 12 konteks; nama target hanya pada konteks pertama; utama dia/-nya.",
+    "source": {
+      "source_row": 3133,
+      "source_group": "fd08a655280f63a5b35c",
+      "teks_chat": "si C dari tadi nyebut nama orang yang sama lalu chatnya kena mute, gw curiga dia Hitman",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 13,
+    "pesan_typo_ringan": [],
+    "case_index": 25
+  },
+  "session": {
+    "case_name": "reference_start",
+    "participants": [
+      "Haris",
+      "Ghea",
+      "Diandra",
+      "Rosita",
+      "Nadira"
+    ],
+    "focus_player": "Ghea",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Haris",
+        "teks_chat": "Ghea mengaku Civilian pada pembukaan ronde ini.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Ghea",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Nadira",
+        "teks_chat": "klaim di chat beda sama informasi sistem ya, semuanya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Rosita",
+        "teks_chat": "iya, kita baru tahu apa yang diakui di pesan.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Diandra",
+        "teks_chat": "gw sih nggak melihat pengumuman role publik di sini.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Haris",
+        "teks_chat": "game juga nggak mengumumkan identitas korban kok.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Nadira",
+        "teks_chat": "jadi obrolannya masih tentang ucapan pemain.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Rosita",
+        "teks_chat": "buat grup, hasil skill kalau ada bisa dijelaskan setelah klaim.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Diandra",
+        "teks_chat": "boleh mulai dari jenis skill lalu malam penggunaannya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Haris",
+        "teks_chat": "yang cuma menyebut role belum memberi detail aksi.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Nadira",
+        "teks_chat": "aku pengin semua jelas soal bagian mana yang sedang dibahas.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Rosita",
+        "teks_chat": "oke nih, sekarang yang di layar masih pengakuan role.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Diandra",
+        "teks_chat": "lanjut menanggapi pengakuan itu aja dulu.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Diandra",
+        "teks_chat": "setelah selingan tadi, aku balik menuduh dia; klaim tentang Peek itu jelas tidak konsisten.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Ghea",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "018_codex_revisi1.txt"
+  }
+}

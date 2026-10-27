@@ -1,0 +1,57 @@
+{
+  "job": {
+    "job_id": "r003859_v02",
+    "case_name": "neutral_status",
+    "case_description": "Klaim status/role atau pertanyaan informasi saja tanpa pembelaan/serangan; target neutral sesuai ATURAN_LABEL.md. FOKUS TAMBAHAN: Neutral bertarget neutral: nama, kamu jelas, atau jawaban ke penanya khusus.",
+    "source": {
+      "source_row": 3859,
+      "source_group": "1b0634a029b0a137c08b",
+      "teks_chat": "dari pola kemarin, siapa yang kemungkinan besar jadi target Hitman?",
+      "label_intent": "neutral"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 2,
+    "pesan_typo_ringan": [],
+    "case_index": 23
+  },
+  "session": {
+    "case_name": "neutral_status",
+    "participants": [
+      "Hafiz",
+      "Embun",
+      "Rengga",
+      "Khalisa",
+      "Ghina"
+    ],
+    "focus_player": "Embun",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Embun",
+        "teks_chat": "aku sudah mengirim klaim role untuk dibicarakan bersama.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Rengga",
+        "teks_chat": "kamu menyebut chat terbuka lagi, itu sebelum atau sesudah pergantian ronde?",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Embun",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "050_codex_revisi1.txt"
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "job": {
+    "job_id": "r002613_v02",
+    "case_name": "neutral_status",
+    "case_description": "Klaim status/role atau pertanyaan informasi saja tanpa pembelaan/serangan; target neutral sesuai ATURAN_LABEL.md. FOKUS TAMBAHAN: Neutral bertarget neutral: nama, kamu jelas, atau jawaban ke penanya khusus.",
+    "source": {
+      "source_row": 2613,
+      "source_group": "5e0d3aa3c3b55d91d2a7",
+      "teks_chat": "wah, aturan eksekusinya kejam juga",
+      "label_intent": "neutral"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 2,
+    "pesan_typo_ringan": [],
+    "case_index": 8
+  },
+  "session": {
+    "case_name": "neutral_status",
+    "participants": [
+      "Amel",
+      "Naufala",
+      "Rizal",
+      "Tria",
+      "Larasati"
+    ],
+    "focus_player": "Rizal",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Rizal",
+        "teks_chat": "gw udah nulis klaim dan siap bahas waktu penggunaan skill.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Tria",
+        "teks_chat": "kamu masih bisa memakai skill malam ini atau sudah menggunakannya?",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Rizal",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "049_codex_revisi1.txt"
+  }
+}

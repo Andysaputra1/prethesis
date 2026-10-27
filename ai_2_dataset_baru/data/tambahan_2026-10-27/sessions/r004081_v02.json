@@ -1,0 +1,131 @@
+{
+  "job": {
+    "job_id": "r004081_v02",
+    "case_name": "reference_start",
+    "case_description": "Tepat 12 konteks. Penyebutan target eksplisit di pesan konteks pertama; pesan sekarang memakai kata ganti. FOKUS TAMBAHAN: Tepat 12 konteks; nama target hanya pada konteks pertama; utama dia/-nya.",
+    "source": {
+      "source_row": 4081,
+      "source_group": "722027441e8d77146dc2",
+      "teks_chat": "kamu yakin dia Hitman? apa yang bikin kamu tidak ragu sama sekali?",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 13,
+    "pesan_typo_ringan": [],
+    "case_index": 8
+  },
+  "session": {
+    "case_name": "reference_start",
+    "participants": [
+      "Sabrina",
+      "Rengga",
+      "Mahdi",
+      "Atika",
+      "Vanya"
+    ],
+    "focus_player": "Atika",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Rengga",
+        "teks_chat": "Atika baru jelasin alasan vote setelah daftar pilihan keluar.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Atika",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Vanya",
+        "teks_chat": "daftar yang tadi itu sementara atau udah final?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Sabrina",
+        "teks_chat": "sementara, tulisan terkuncinya belum muncul.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Mahdi",
+        "teks_chat": "semua masih punya waktu mikir beberapa detik sih.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Rengga",
+        "teks_chat": "gw lihat hitungannya berhenti sebentar lalu lanjut.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Vanya",
+        "teks_chat": "di layar sini tetap turun kok, nggak sempat berhenti.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Sabrina",
+        "teks_chat": "bisa beda waktu tampilan sedikit, lihat penutupnya aja.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Mahdi",
+        "teks_chat": "buat grup, hasil akhir baru muncul setelah layar berganti.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Rengga",
+        "teks_chat": "iya, sekarang masih ada tombol untuk memilih.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Vanya",
+        "teks_chat": "alasan di chat tetap bisa dibahas sebelum kunci.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Sabrina",
+        "teks_chat": "nah, jangan ketuker antara niat dan pilihan akhir nih.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Mahdi",
+        "teks_chat": "oke, balik ngobrolin alasan yang baru masuk.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Mahdi",
+        "teks_chat": "dia tidak perlu dieksekusi. Dari rangkaian penjelasan tadi tuduhannya sudah gugur.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Atika",
+            "relasi": "defend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "016_codex_revisi1.txt"
+  }
+}

@@ -1,0 +1,91 @@
+{
+  "job": {
+    "job_id": "r000523_v02",
+    "case_name": "ambiguous",
+    "case_description": "Beberapa acuan sama-sama mungkin; target tidak_diketahui, bukan nama terakhir. FOKUS TAMBAHAN: Sedikitnya dua calon acuan dia sama kuat; nama terakhir bukan jawaban. Target tidak_diketahui.",
+    "source": {
+      "source_row": 523,
+      "source_group": "b82edec6c25ed6773bd1",
+      "teks_chat": "santai, gw memang provokatif, tapi itu bukan bukti gw Hitman",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 3,
+    "pesan_typo_ringan": [],
+    "case_index": 6
+  },
+  "session": {
+    "case_name": "ambiguous",
+    "participants": [
+      "Ratih",
+      "Baskara",
+      "Ghina",
+      "Ayuning",
+      "Mahira"
+    ],
+    "focus_player": "",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Ayuning",
+        "teks_chat": "Ghina dan Baskara sama-sama ngaku Spy di chat tadi.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Baskara",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          },
+          {
+            "pemain": "Ghina",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Mahira",
+        "teks_chat": "pesan mereka berdua belum selesai kubaca sih.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Baskara",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          },
+          {
+            "pemain": "Ghina",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Ratih",
+        "teks_chat": "belum tentu dia bohong hanya karena lupa menulis nomor ronde.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "tidak_diketahui",
+            "relasi": "defend",
+            "bukti_pesan": []
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "001_codex_revisi1.txt"
+  }
+}

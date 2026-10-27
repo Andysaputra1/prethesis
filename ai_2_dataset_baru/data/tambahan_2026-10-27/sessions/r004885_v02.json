@@ -1,0 +1,79 @@
+{
+  "job": {
+    "job_id": "r004885_v02",
+    "case_name": "multiple_targets",
+    "case_description": "Dua atau lebih pemain menjadi target relasi yang sama secara jelas. FOKUS TAMBAHAN: Dua pemain bernama dengan relasi sama.",
+    "source": {
+      "source_row": 4885,
+      "source_group": "b7086c5a562159b18899",
+      "teks_chat": "Tio belum menjawab soal target malamnya, jadi untuk voting ini aku pilih Tio",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 2,
+    "pesan_typo_ringan": [],
+    "case_index": 5
+  },
+  "session": {
+    "case_name": "multiple_targets",
+    "participants": [
+      "Tisna",
+      "Febi",
+      "Rizki",
+      "Sakti",
+      "Satya"
+    ],
+    "focus_player": "Rizki",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Febi",
+        "teks_chat": "Sakti serta Rizki belum nulis hasil Peek lengkap, baru pengantarnya.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Rizki",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          },
+          {
+            "pemain": "Sakti",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Tisna",
+        "teks_chat": "klaim Rizki palsu dan pengakuan Sakti sama nggak masuk akalnya, aku tidak percaya dua-duanya.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Rizki",
+            "relasi": "offend",
+            "bukti_pesan": [
+              2
+            ]
+          },
+          {
+            "pemain": "Sakti",
+            "relasi": "offend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "041_codex_revisi1.txt"
+  }
+}

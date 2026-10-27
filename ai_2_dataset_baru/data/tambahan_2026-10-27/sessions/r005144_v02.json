@@ -1,0 +1,85 @@
+{
+  "job": {
+    "job_id": "r005144_v02",
+    "case_name": "second_person",
+    "case_description": "Kamu/lu: gunakan pergantian pembicara dan teks yang jelas. Tanpa acuan jelas, target tidak_diketahui. FOKUS TAMBAHAN: Kamu/lu terikat pembicara jelas, termasuk bukan pengirim tepat sebelumnya.",
+    "source": {
+      "source_row": 5144,
+      "source_group": "26fd3fbee62637ce4efe",
+      "teks_chat": "aku mengaku stalker, semalam aku peek Raka dan dia bukan hitman",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 4,
+    "pesan_typo_ringan": [],
+    "case_index": 8
+  },
+  "session": {
+    "case_name": "second_person",
+    "participants": [
+      "Zakia",
+      "Cantika",
+      "Diandra",
+      "Izza",
+      "Salsabila"
+    ],
+    "focus_player": "Cantika",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Cantika",
+        "teks_chat": "Salsabila, tolong baca penjelasanku dan kasih pendapat ya.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Salsabila",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Salsabila",
+        "teks_chat": "aku belum selesai baca klaimmu, sebentar ya.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Cantika",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Diandra",
+        "teks_chat": "kolom diskusi masih terbuka, hitungannya tinggal dua puluh lima.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Salsabila",
+        "teks_chat": "buat yang tadi bertanya padaku, kamu tidak pantas dieksekusi dari bukti selemah itu.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Cantika",
+            "relasi": "defend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "031_codex_revisi1.txt"
+  }
+}

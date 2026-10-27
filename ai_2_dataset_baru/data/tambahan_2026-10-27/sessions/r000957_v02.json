@@ -1,0 +1,77 @@
+{
+  "job": {
+    "job_id": "r000957_v02",
+    "case_name": "interruption",
+    "case_description": "Pembahasan target disela obrolan waktu/ronde; kaitan kembali ke target masih jelas. FOKUS TAMBAHAN: Selingan waktu lalu kembali ke target; sertakan pembelaan diri.",
+    "source": {
+      "source_row": 957,
+      "source_group": "bd217ce82117a3aad0d3",
+      "teks_chat": "aku Spy, kalau targetku tidak diserang bukan berarti klaimku otomatis palsu",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 4,
+    "pesan_typo_ringan": [],
+    "case_index": 4
+  },
+  "session": {
+    "case_name": "interruption",
+    "participants": [
+      "Yasmin",
+      "Satya",
+      "Tsania",
+      "Atika",
+      "Kresna"
+    ],
+    "focus_player": "Yasmin",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Tsania",
+        "teks_chat": "gw menduga Yasmin pelakunya, cerita aksinya belum meyakinkan.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Yasmin",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Kresna",
+        "teks_chat": "semuanya, fase malam berikutnya belum mulai, kita masih diskusi.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Satya",
+        "teks_chat": "buat semua, timer masih sesuai, kita bisa kembali ke bahasan tadi.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Yasmin",
+        "teks_chat": "balik lagi, aku Stalker dan bukan pelaku; tuduhan sebelum bahas waktu itu salah.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Yasmin",
+            "relasi": "defend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "043_codex_revisi1.txt"
+  }
+}

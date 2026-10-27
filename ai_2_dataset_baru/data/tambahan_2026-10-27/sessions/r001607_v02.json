@@ -1,0 +1,77 @@
+{
+  "job": {
+    "job_id": "r001607_v02",
+    "case_name": "interruption",
+    "case_description": "Pembahasan target disela obrolan waktu/ronde; kaitan kembali ke target masih jelas. FOKUS TAMBAHAN: Selingan waktu lalu kembali ke target; sertakan pembelaan diri.",
+    "source": {
+      "source_row": 1607,
+      "source_group": "383d40e2c6f42b5d32bb",
+      "teks_chat": "aku bisa jelasin posisiku, tapi sebelumnya tolong tanya kenapa si Joko diam saat dituduh",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 4,
+    "pesan_typo_ringan": [],
+    "case_index": 1
+  },
+  "session": {
+    "case_name": "interruption",
+    "participants": [
+      "Jauhar",
+      "Syifa",
+      "Keisha",
+      "Aruna",
+      "Banyu"
+    ],
+    "focus_player": "Banyu",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Syifa",
+        "teks_chat": "gw habis baca pengakuan Banyu, ada keterangan waktunya juga.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Banyu",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Jauhar",
+        "teks_chat": "pengingat untuk semua, sisa diskusi tiga puluh tiga detik.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Aruna",
+        "teks_chat": "gw sudah lihat jamnya, obrolannya boleh diterusin.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Keisha",
+        "teks_chat": "oke, waktunya sudah jelas. Sekarang aku curiga Banyu yang klaimnya berubah dua kali.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Banyu",
+            "relasi": "offend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "043_codex_revisi1.txt"
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "job": {
+    "job_id": "r002345_v02",
+    "case_name": "witness",
+    "case_description": "Nama saksi/korban disebut, tetapi bukan target serangan atau pembelaan. FOKUS TAMBAHAN: Nama sumber/saksi/penuduh bukan target. Sertakan bantahan isi klaim Peek penuduh yang membela pengirim saja.",
+    "source": {
+      "source_row": 2345,
+      "source_group": "9c0fe2fc67419f1eac36",
+      "teks_chat": "oke, aku ngaku Hitman kalau itu bikin kalian panik, tapi seriusnya gw Civilian",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 3,
+    "pesan_typo_ringan": [],
+    "case_index": 16
+  },
+  "session": {
+    "case_name": "witness",
+    "participants": [
+      "Kinanti",
+      "Kemal",
+      "Halim",
+      "Deandra",
+      "Syifa"
+    ],
+    "focus_player": "Kemal",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Halim",
+        "teks_chat": "Kemal sudah menjawab soal role, tinggal bahas isi jawabannya.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Kemal",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Kinanti",
+        "teks_chat": "buat semua, kirim satu-satu aja kalau pesannya kepanjangan.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Deandra",
+        "teks_chat": "Kemal aman menurutku, penjelasan yang disampaikan lewat Halim masih konsisten.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Kemal",
+            "relasi": "defend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "007_codex_revisi1.txt"
+  }
+}

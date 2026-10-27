@@ -1,0 +1,71 @@
+{
+  "job": {
+    "job_id": "r003735_v02",
+    "case_name": "agreement",
+    "case_description": "Pesan sekarang menyetujui atau membantah pesan pemain lain di konteks tanpa menyebut ulang nama target. Setuju dengan tuduhan = offend pemain yang dituduh; membantah tuduhan atau setuju dengan pembelaan = defend. Identitas target diwarisi dari pesan yang ditanggapi. FOKUS TAMBAHAN: Setuju/bantah tanpa ulang nama target; sumber pendapat bukan target.",
+    "source": {
+      "source_row": 3735,
+      "source_group": "38fa5f2eade1d3111009",
+      "teks_chat": "jangan vote aku, role-ku penting dan aku punya info malam tadi",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 3,
+    "pesan_typo_ringan": [],
+    "case_index": 2
+  },
+  "session": {
+    "case_name": "agreement",
+    "participants": [
+      "Sabrina",
+      "Febi",
+      "Savira",
+      "Nabil",
+      "Fathia"
+    ],
+    "focus_player": "Savira",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Sabrina",
+        "teks_chat": "hasil Peek-ku ke Savira Civilian, jadi jangan vote dia dong.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Savira",
+            "relasi": "defend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Febi",
+        "teks_chat": "hitungan diskusi udah tiga puluh dua sekarang.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Nabil",
+        "teks_chat": "yang disampaikan Sabrina masuk buatku, aku ada di pihak yang sama soal tuduhan tadi.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Savira",
+            "relasi": "defend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "038_codex_revisi1.txt"
+  }
+}

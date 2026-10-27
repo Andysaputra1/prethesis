@@ -1,0 +1,78 @@
+{
+  "job": {
+    "job_id": "r000514_v02",
+    "case_name": "self",
+    "case_description": "Defend diri sendiri atau offend/vote diri sendiri sesuai label. Target = pengirim. FOKUS TAMBAHAN: Bela diri atau permintaan vote diri yang tulus; riwayat menyebut pemain lain sebagai pengalih.",
+    "source": {
+      "source_row": 514,
+      "source_group": "91714375ad6de0d86b37",
+      "teks_chat": "kalau gw jahat, ngapain gw malah dorong vote ke orang yang mencurigakan?",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 3,
+    "pesan_typo_ringan": [],
+    "case_index": 46
+  },
+  "session": {
+    "case_name": "self",
+    "participants": [
+      "Raisa",
+      "Nayla",
+      "Prita",
+      "Safira",
+      "Wening"
+    ],
+    "focus_player": "Safira",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Prita",
+        "teks_chat": "Raisa juga Nayla ganti keterangan soal malam pertama.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Nayla",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          },
+          {
+            "pemain": "Raisa",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Wening",
+        "teks_chat": "semua boleh menjawab dengan kata-kata sendiri aja.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Safira",
+        "teks_chat": "aku Stalker, bukan Hitman. Jangan paksa aku mengaku melakukan aksi yang bukan milikku.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Safira",
+            "relasi": "defend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "030_codex_revisi1.txt"
+  }
+}

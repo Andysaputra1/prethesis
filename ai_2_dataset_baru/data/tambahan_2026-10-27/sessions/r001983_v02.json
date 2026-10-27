@@ -1,0 +1,78 @@
+{
+  "job": {
+    "job_id": "r001983_v02",
+    "case_name": "self",
+    "case_description": "Defend diri sendiri atau offend/vote diri sendiri sesuai label. Target = pengirim. FOKUS TAMBAHAN: Bela diri atau permintaan vote diri yang tulus; riwayat menyebut pemain lain sebagai pengalih.",
+    "source": {
+      "source_row": 1983,
+      "source_group": "c9b92569a88472f76508",
+      "teks_chat": "kalian boleh tidak setuju, tapi kalau mau peluang menang lebih besar, coblos T sekarang",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 3,
+    "pesan_typo_ringan": [],
+    "case_index": 15
+  },
+  "session": {
+    "case_name": "self",
+    "participants": [
+      "Febi",
+      "Sabrina",
+      "Yasmin",
+      "Inaya",
+      "Suci"
+    ],
+    "focus_player": "Sabrina",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Febi",
+        "teks_chat": "dua jawaban yang belum selesai itu dari Yasmin dan Suci.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Suci",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          },
+          {
+            "pemain": "Yasmin",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Inaya",
+        "teks_chat": "gw masih membuka chat dari awal sesi ini.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Sabrina",
+        "teks_chat": "nggak usah menunggu jawabanku lagi, eksekusi aku saja lewat vote.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Sabrina",
+            "relasi": "offend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "027_codex_revisi1.txt"
+  }
+}

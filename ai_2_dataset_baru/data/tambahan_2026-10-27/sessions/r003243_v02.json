@@ -1,0 +1,71 @@
+{
+  "job": {
+    "job_id": "r003243_v02",
+    "case_name": "witness",
+    "case_description": "Nama saksi/korban disebut, tetapi bukan target serangan atau pembelaan. FOKUS TAMBAHAN: Nama sumber/saksi/penuduh bukan target. Sertakan bantahan isi klaim Peek penuduh yang membela pengirim saja.",
+    "source": {
+      "source_row": 3243,
+      "source_group": "227996d58371d469a3c5",
+      "teks_chat": "gw kena tuduhan karena timing chat, tapi timing bukan bukti role",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 3,
+    "pesan_typo_ringan": [],
+    "case_index": 10
+  },
+  "session": {
+    "case_name": "witness",
+    "participants": [
+      "Nayla",
+      "Utari",
+      "Syauqi",
+      "Naufala",
+      "Rayhan"
+    ],
+    "focus_player": "Nayla",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Utari",
+        "teks_chat": "gw sudah intip Nayla, hasilnya justru Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Nayla",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Syauqi",
+        "teks_chat": "semuanya boleh kasih pendapat, asal kalimatnya selesai dulu.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Nayla",
+        "teks_chat": "tuduhan Utari nggak membuktikan aku jahat; aku memang Spy dan tidak melakukan Hostage.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Nayla",
+            "relasi": "defend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "007_codex_revisi1.txt"
+  }
+}

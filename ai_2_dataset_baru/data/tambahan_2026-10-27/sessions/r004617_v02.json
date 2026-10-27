@@ -1,0 +1,78 @@
+{
+  "job": {
+    "job_id": "r004617_v02",
+    "case_name": "mixed_relations",
+    "case_description": "Membela satu pemain dan menuduh pemain lain. Intent utama offend; simpan kedua relasi. FOKUS TAMBAHAN: Bela A dan tuduh B; variasi urutan, kata ganti, dan pembelaan dalam anak kalimat.",
+    "source": {
+      "source_row": 4617,
+      "source_group": "9001a2e77ba187c9b91e",
+      "teks_chat": "Gw tidak punya alasan menutup-nutupi apa pun; justru Eko memakai tuduhan personal karena tidak bisa menjelaskan jejak malamnya, eksekusi Eko",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 3,
+    "pesan_typo_ringan": [],
+    "case_index": 29
+  },
+  "session": {
+    "case_name": "mixed_relations",
+    "participants": [
+      "Astri",
+      "Aisyah",
+      "Haris",
+      "Tasya",
+      "Zafran"
+    ],
+    "focus_player": "Zafran",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Tasya",
+        "teks_chat": "Zafran baru menjawab pertanyaan grup tentang urutan malam.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Zafran",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Haris",
+        "teks_chat": "kita belum selesai mengobrol soal kejadian sebelum vote.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Astri",
+        "teks_chat": "Aisyah masuk daftar vote-ku. Zafran keluar dari daftar itu karena aku yakin dia bukan Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Zafran",
+            "relasi": "defend",
+            "bukti_pesan": [
+              3
+            ]
+          },
+          {
+            "pemain": "Aisyah",
+            "relasi": "offend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "013_codex_revisi1.txt"
+  }
+}

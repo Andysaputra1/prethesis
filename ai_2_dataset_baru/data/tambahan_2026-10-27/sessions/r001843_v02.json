@@ -1,0 +1,78 @@
+{
+  "job": {
+    "job_id": "r001843_v02",
+    "case_name": "self",
+    "case_description": "Defend diri sendiri atau offend/vote diri sendiri sesuai label. Target = pengirim. FOKUS TAMBAHAN: Bela diri atau permintaan vote diri yang tulus; riwayat menyebut pemain lain sebagai pengalih.",
+    "source": {
+      "source_row": 1843,
+      "source_group": "7bd375bae30beef26831",
+      "teks_chat": "kalau belum ada bukti lebih kuat, suara kita satukan ke Rio dulu biar nggak buang vote",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 3,
+    "pesan_typo_ringan": [],
+    "case_index": 41
+  },
+  "session": {
+    "case_name": "self",
+    "participants": [
+      "Cahya",
+      "Renata",
+      "Okta",
+      "Rengga",
+      "Ayuning"
+    ],
+    "focus_player": "Okta",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Ayuning",
+        "teks_chat": "Cahya serta Rengga sama-sama menyebut chat sempat terkunci.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Cahya",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          },
+          {
+            "pemain": "Rengga",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Renata",
+        "teks_chat": "buat semuanya, silakan lanjut ke penjelasan yang tertunda.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Okta",
+        "teks_chat": "nggak apa aku dibuang sekarang, jadikan aku pilihan vote ronde ini.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Okta",
+            "relasi": "offend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "030_codex_revisi1.txt"
+  }
+}

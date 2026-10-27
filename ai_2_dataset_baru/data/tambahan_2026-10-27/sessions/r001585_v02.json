@@ -1,0 +1,71 @@
+{
+  "job": {
+    "job_id": "r001585_v02",
+    "case_name": "witness",
+    "case_description": "Nama saksi/korban disebut, tetapi bukan target serangan atau pembelaan. FOKUS TAMBAHAN: Nama sumber/saksi/penuduh bukan target. Sertakan bantahan isi klaim Peek penuduh yang membela pengirim saja.",
+    "source": {
+      "source_row": 1585,
+      "source_group": "cd22b2fd6d4ca93b9222",
+      "teks_chat": "kalau memang gw sus, kenapa bukan si C yang dari tadi memimpin tekanan ke gw?",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 3,
+    "pesan_typo_ringan": [],
+    "case_index": 23
+  },
+  "session": {
+    "case_name": "witness",
+    "participants": [
+      "Tsania",
+      "Kinanti",
+      "Rizki",
+      "Ajeng",
+      "Salma"
+    ],
+    "focus_player": "Rizki",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Salma",
+        "teks_chat": "gw belum menanggapi, baru selesai baca pesan Rizki.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Rizki",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Ajeng",
+        "teks_chat": "semua masih bisa baca pesan sebelumnya dari chat ini.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Tsania",
+        "teks_chat": "menurut cerita Salma, Rizki tahu detail yang belum dibahas; aku curiga berat.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Rizki",
+            "relasi": "offend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "008_codex_revisi1.txt"
+  }
+}

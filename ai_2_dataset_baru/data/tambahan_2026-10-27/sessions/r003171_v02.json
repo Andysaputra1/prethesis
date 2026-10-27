@@ -1,0 +1,91 @@
+{
+  "job": {
+    "job_id": "r003171_v02",
+    "case_name": "ambiguous",
+    "case_description": "Beberapa acuan sama-sama mungkin; target tidak_diketahui, bukan nama terakhir. FOKUS TAMBAHAN: Sedikitnya dua calon acuan dia sama kuat; nama terakhir bukan jawaban. Target tidak_diketahui.",
+    "source": {
+      "source_row": 3171,
+      "source_group": "fb06dc6e15b0108a7c61",
+      "teks_chat": "Bukan saya yang mengubah arah diskusi. Cek saja, sejak awal saya meminta data dan bukan mendorong vote acak",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 3,
+    "pesan_typo_ringan": [],
+    "case_index": 22
+  },
+  "session": {
+    "case_name": "ambiguous",
+    "participants": [
+      "Nayla",
+      "Afifah",
+      "Ajeng",
+      "Safira",
+      "Deandra"
+    ],
+    "focus_player": "",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Ajeng",
+        "teks_chat": "Nayla dan Afifah belum menyebut kapan pindah vote, sih.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Afifah",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          },
+          {
+            "pemain": "Nayla",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Deandra",
+        "teks_chat": "keduanya masih ngomongin fase malam, bukan hasil vote.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Afifah",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          },
+          {
+            "pemain": "Nayla",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Safira",
+        "teks_chat": "kita jangan menghukum dia karena pesannya terpotong; itu bukan pengakuan bersalah.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "tidak_diketahui",
+            "relasi": "defend",
+            "bukti_pesan": []
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "003_codex_revisi1.txt"
+  }
+}

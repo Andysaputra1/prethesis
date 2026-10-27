@@ -1,0 +1,49 @@
+{
+  "job": {
+    "job_id": "r002195_v02",
+    "case_name": "first_message_unknown",
+    "case_description": "Pesan pertama tanpa konteks memakai dia/kamu/lu tanpa acuan jelas. Intent offend/defend tetap diketahui tetapi target tidak_diketahui; roster bukan bukti lawan bicara. FOKUS TAMBAHAN: Tanpa riwayat, dia/kamu tanpa acuan; roster minimal empat.",
+    "source": {
+      "source_row": 2195,
+      "source_group": "ab4fcdc123b2df33306f",
+      "teks_chat": "gw baru nyusul bacanya, jadi biar jelas aku Civilian, bukan Hitman",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 1,
+    "pesan_typo_ringan": [],
+    "case_index": 2
+  },
+  "session": {
+    "case_name": "first_message_unknown",
+    "participants": [
+      "Marsha",
+      "Afifah",
+      "Okta",
+      "Satya",
+      "Embun"
+    ],
+    "focus_player": "",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Okta",
+        "teks_chat": "aku belum mau vote dia, orangnya belum terbukti jahat.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "tidak_diketahui",
+            "relasi": "defend",
+            "bukti_pesan": []
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "046_codex_revisi1.txt"
+  }
+}

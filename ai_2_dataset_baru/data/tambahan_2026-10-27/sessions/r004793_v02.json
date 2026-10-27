@@ -1,0 +1,131 @@
+{
+  "job": {
+    "job_id": "r004793_v02",
+    "case_name": "reference_start",
+    "case_description": "Tepat 12 konteks. Penyebutan target eksplisit di pesan konteks pertama; pesan sekarang memakai kata ganti. FOKUS TAMBAHAN: Tepat 12 konteks; nama target hanya pada konteks pertama; utama dia/-nya.",
+    "source": {
+      "source_row": 4793,
+      "source_group": "83bb2234ab7ddd7b7dfe",
+      "teks_chat": "perhatikan jawaban Edo, dia selalu menghindari pertanyaan soal malam tadi, langsung vote Edo",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 13,
+    "pesan_typo_ringan": [],
+    "case_index": 41
+  },
+  "session": {
+    "case_name": "reference_start",
+    "participants": [
+      "Wulan",
+      "Hilmi",
+      "Rengga",
+      "Almira",
+      "Sekar"
+    ],
+    "focus_player": "Almira",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Rengga",
+        "teks_chat": "Almira menulis M2, lalu menjelaskan maksudnya malam kedua.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Almira",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Hilmi",
+        "teks_chat": "penjelasannya ada di pesan berikut atau masih baris yang sama?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Sekar",
+        "teks_chat": "buat semua, itu pesan berikutnya setelah beberapa balasan.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Wulan",
+        "teks_chat": "gw sih baru ngerti setelah baca lanjutannya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Rengga",
+        "teks_chat": "huruf M di awal nggak otomatis berarti hal lain kalau udah dijelaskan.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Hilmi",
+        "teks_chat": "iya, sekarang kepanjangannya memang sudah tertulis kok.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Sekar",
+        "teks_chat": "dua pesan itu datang pada fase diskusi yang sama.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Wulan",
+        "teks_chat": "nggak ada transisi malam di antara keduanya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Rengga",
+        "teks_chat": "aku bisa melihat urutan lengkap dari atas sampai sekarang.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Hilmi",
+        "teks_chat": "buat grup, yang baca dari bawah boleh geser sedikit dulu.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Sekar",
+        "teks_chat": "nih, penjelasan angkanya sudah ketemu.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Wulan",
+        "teks_chat": "oke, lanjut bahas malam kedua yang dimaksud tadi.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Wulan",
+        "teks_chat": "untuk orang yang dibahas sebelum selingan, aku yakin dia memakai klaim role palsu.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Almira",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "020_codex_revisi1.txt"
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "job": {
+    "job_id": "r002378_v02",
+    "case_name": "neutral_status",
+    "case_description": "Klaim status/role atau pertanyaan informasi saja tanpa pembelaan/serangan; target neutral sesuai ATURAN_LABEL.md. FOKUS TAMBAHAN: Neutral bertarget neutral: nama, kamu jelas, atau jawaban ke penanya khusus.",
+    "source": {
+      "source_row": 2378,
+      "source_group": "0b9676bac0f708756e87",
+      "teks_chat": "sumpah role gw Spy, tadi malam aku Guard Naya",
+      "label_intent": "neutral"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 2,
+    "pesan_typo_ringan": [],
+    "case_index": 9
+  },
+  "session": {
+    "case_name": "neutral_status",
+    "participants": [
+      "Nayla",
+      "Diandra",
+      "Khalisa",
+      "Khansa",
+      "Noval"
+    ],
+    "focus_player": "Nayla",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Diandra",
+        "teks_chat": "Nayla menambah penjelasan setelah pengakuan role tadi.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Nayla",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Noval",
+        "teks_chat": "boleh bahas klaim Nayla sebagai Spy dulu, belum ada kesimpulan lain.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Nayla",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "049_codex_revisi1.txt"
+  }
+}

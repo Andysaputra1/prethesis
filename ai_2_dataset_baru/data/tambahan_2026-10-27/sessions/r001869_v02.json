@@ -1,0 +1,77 @@
+{
+  "job": {
+    "job_id": "r001869_v02",
+    "case_name": "interruption",
+    "case_description": "Pembahasan target disela obrolan waktu/ronde; kaitan kembali ke target masih jelas. FOKUS TAMBAHAN: Selingan waktu lalu kembali ke target; sertakan pembelaan diri.",
+    "source": {
+      "source_row": 1869,
+      "source_group": "54f521db30b62113947c",
+      "teks_chat": "jangan keburu percaya si Lala, dia sengaja bikin dua pihak ribut",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 4,
+    "pesan_typo_ringan": [],
+    "case_index": 7
+  },
+  "session": {
+    "case_name": "interruption",
+    "participants": [
+      "Ratih",
+      "Ratu",
+      "Shafa",
+      "Anisa",
+      "Savira"
+    ],
+    "focus_player": "Savira",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Anisa",
+        "teks_chat": "gw baru baca cerita Savira sampai nomor malamnya.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Savira",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Ratih",
+        "teks_chat": "buat grup, hitungan pemilihan belum dimulai sama sekali.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Shafa",
+        "teks_chat": "gw melihat angka waktunya sekarang, lanjut aja sebelum habis.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Ratu",
+        "teks_chat": "kembali ke Savira: makin kupikir, makin terlihat klaim Spy itu palsu.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Savira",
+            "relasi": "offend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "044_codex_revisi1.txt"
+  }
+}

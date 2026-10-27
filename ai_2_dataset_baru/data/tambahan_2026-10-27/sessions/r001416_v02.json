@@ -1,0 +1,57 @@
+{
+  "job": {
+    "job_id": "r001416_v02",
+    "case_name": "short_history_1",
+    "case_description": "Awal diskusi dengan tepat 1 pesan sebelumnya. Jangan menambah riwayat fiktif atau mengisi sampai 12. FOKUS TAMBAHAN: Satu konteks. Tepat 25 pembelaan diri setelah dituduh; penuduh bukan target. Sisanya offend/neutral.",
+    "source": {
+      "source_row": 1416,
+      "source_group": "7aeb7866819371b4774c",
+      "teks_chat": "jangan fokus ke aku, gerak-gerik si B lebih aneh",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 2,
+    "pesan_typo_ringan": [],
+    "case_index": 45
+  },
+  "session": {
+    "case_name": "short_history_1",
+    "participants": [
+      "Rengga",
+      "Rayhan",
+      "Amel",
+      "Kautsar",
+      "Raisa"
+    ],
+    "focus_player": "Amel",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Amel",
+        "teks_chat": "aku mau menyebut role-ku Spy, itu pengakuanku sekarang.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Rayhan",
+        "teks_chat": "kamu ngarang soal hasil malam itu menurutku, aku justru makin curiga.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Amel",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "025_codex_revisi1.txt"
+  }
+}

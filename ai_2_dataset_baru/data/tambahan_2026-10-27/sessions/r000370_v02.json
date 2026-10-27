@@ -1,0 +1,77 @@
+{
+  "job": {
+    "job_id": "r000370_v02",
+    "case_name": "interruption",
+    "case_description": "Pembahasan target disela obrolan waktu/ronde; kaitan kembali ke target masih jelas. FOKUS TAMBAHAN: Selingan waktu lalu kembali ke target; sertakan pembelaan diri.",
+    "source": {
+      "source_row": 370,
+      "source_group": "9b90b1a6ae4f1519d26e",
+      "teks_chat": "kalian boleh curiga, tapi tolong bedakan fakta dengan asumsi sebelum vote aku",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 4,
+    "pesan_typo_ringan": [],
+    "case_index": 0
+  },
+  "session": {
+    "case_name": "interruption",
+    "participants": [
+      "Pram",
+      "Mahdi",
+      "Erlina",
+      "Yudhis",
+      "Tisna"
+    ],
+    "focus_player": "Erlina",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Pram",
+        "teks_chat": "Erlina, gw curiga kamu Hitman, belum jawab dari tadi sih.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Erlina",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Tisna",
+        "teks_chat": "grup, waktu ngobrol masih sekitar satu menit kok.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Mahdi",
+        "teks_chat": "iya, di sini juga masih fase diskusi, lanjut aja semuanya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Erlina",
+        "teks_chat": "balik ke yang tadi, aku bukan Hitman. Jangan jadikan chatku yang terlambat alasan vote.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Erlina",
+            "relasi": "defend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "043_codex_revisi1.txt"
+  }
+}

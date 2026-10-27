@@ -1,0 +1,91 @@
+{
+  "job": {
+    "job_id": "r002182_v02",
+    "case_name": "ambiguous",
+    "case_description": "Beberapa acuan sama-sama mungkin; target tidak_diketahui, bukan nama terakhir. FOKUS TAMBAHAN: Sedikitnya dua calon acuan dia sama kuat; nama terakhir bukan jawaban. Target tidak_diketahui.",
+    "source": {
+      "source_row": 2182,
+      "source_group": "e402f0642372cefe714d",
+      "teks_chat": "aku mengaku sebagai Spy, semalam mengawal Damar, dan sekarang arah voting paling aman adalah ke Putri",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 3,
+    "pesan_typo_ringan": [],
+    "case_index": 43
+  },
+  "session": {
+    "case_name": "ambiguous",
+    "participants": [
+      "Ratu",
+      "Satya",
+      "Mutiara",
+      "Savira",
+      "Yumna"
+    ],
+    "focus_player": "",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Mutiara",
+        "teks_chat": "Ratu sama Satya belum menulis nama role lengkap di hasilnya.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Satya",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          },
+          {
+            "pemain": "Ratu",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Savira",
+        "teks_chat": "gw masih membandingkan waktu pada dua pesan tersebut.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Satya",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          },
+          {
+            "pemain": "Ratu",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Yumna",
+        "teks_chat": "dia layak divote lebih dulu, pola tuduhannya berubah mengikuti siapa yang ramai diserang.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "tidak_diketahui",
+            "relasi": "offend",
+            "bukti_pesan": []
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "005_codex_revisi1.txt"
+  }
+}

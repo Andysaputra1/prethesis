@@ -1,0 +1,78 @@
+{
+  "job": {
+    "job_id": "r005226_v02",
+    "case_name": "mixed_relations",
+    "case_description": "Membela satu pemain dan menuduh pemain lain. Intent utama offend; simpan kedua relasi. FOKUS TAMBAHAN: Bela A dan tuduh B; variasi urutan, kata ganti, dan pembelaan dalam anak kalimat.",
+    "source": {
+      "source_row": 5226,
+      "source_group": "3ffb1d0aea1905e200bb",
+      "teks_chat": "fix gue Spy, dan semua yang membantah malah makin sus",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 3,
+    "pesan_typo_ringan": [],
+    "case_index": 0
+  },
+  "session": {
+    "case_name": "mixed_relations",
+    "participants": [
+      "Nadhif",
+      "Kinanti",
+      "Nayla",
+      "Sakti",
+      "Anindya"
+    ],
+    "focus_player": "Sakti",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Nayla",
+        "teks_chat": "Sakti sudah cerita soal malam tadi, bagian akhirnya baru masuk nih.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Sakti",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Anindya",
+        "teks_chat": "aku baca pelan dulu, banyak pesan masuk bersamaan.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Nadhif",
+        "teks_chat": "Sakti bukan Hitman, justru Kinanti yang alibinya berubah tiap ditanya.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Sakti",
+            "relasi": "defend",
+            "bukti_pesan": [
+              3
+            ]
+          },
+          {
+            "pemain": "Kinanti",
+            "relasi": "offend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "011_codex_revisi1.txt"
+  }
+}

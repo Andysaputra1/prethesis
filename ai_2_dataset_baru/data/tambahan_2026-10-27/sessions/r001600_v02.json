@@ -1,0 +1,77 @@
+{
+  "job": {
+    "job_id": "r001600_v02",
+    "case_name": "interruption",
+    "case_description": "Pembahasan target disela obrolan waktu/ronde; kaitan kembali ke target masih jelas. FOKUS TAMBAHAN: Selingan waktu lalu kembali ke target; sertakan pembelaan diri.",
+    "source": {
+      "source_row": 1600,
+      "source_group": "41963af3ac94771a5d77",
+      "teks_chat": "fix ini pengalihan isu, si Naya nuduh gw biar perhatian nggak ke dia",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 4,
+    "pesan_typo_ringan": [],
+    "case_index": 5
+  },
+  "session": {
+    "case_name": "interruption",
+    "participants": [
+      "Feby",
+      "Nadya",
+      "Yudhis",
+      "Satya",
+      "Dyah"
+    ],
+    "focus_player": "Dyah",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Yudhis",
+        "teks_chat": "aku dengar Dyah menyebut waktu sebelum fase berganti.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Dyah",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Feby",
+        "teks_chat": "aku lihat sisa dua puluh tujuh pada jam game.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Nadya",
+        "teks_chat": "aku udah lihat sisa waktunya, silakan teruskan percakapannya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Satya",
+        "teks_chat": "cukup soal sisa menitnya, aku nggak percaya Dyah yang hasil Peek-nya berganti terus.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Dyah",
+            "relasi": "offend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "044_codex_revisi1.txt"
+  }
+}

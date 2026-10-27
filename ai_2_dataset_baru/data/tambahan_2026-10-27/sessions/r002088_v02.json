@@ -1,0 +1,65 @@
+{
+  "job": {
+    "job_id": "r002088_v02",
+    "case_name": "short_history_1",
+    "case_description": "Awal diskusi dengan tepat 1 pesan sebelumnya. Jangan menambah riwayat fiktif atau mengisi sampai 12. FOKUS TAMBAHAN: Satu konteks. Tepat 25 pembelaan diri setelah dituduh; penuduh bukan target. Sisanya offend/neutral.",
+    "source": {
+      "source_row": 2088,
+      "source_group": "5917b0ae0f5e1a45ef77",
+      "teks_chat": "lu bisa vote gw kalau mau, tapi klaim gw jelas: Civilian tanpa skill",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 2,
+    "pesan_typo_ringan": [],
+    "case_index": 32
+  },
+  "session": {
+    "case_name": "short_history_1",
+    "participants": [
+      "Nadira",
+      "Marsha",
+      "Raisa",
+      "Mahira",
+      "Gendis"
+    ],
+    "focus_player": "Mahira",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Nadira",
+        "teks_chat": "aku menuduh Mahira sebagai Hitman, klaim skillnya kelewat janggal.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Mahira",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Mahira",
+        "teks_chat": "role-ku Spy, dan tuduhan melakukan Gag Order itu salah alamat.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Mahira",
+            "relasi": "defend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "024_codex_revisi1.txt"
+  }
+}

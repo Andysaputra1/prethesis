@@ -1,0 +1,131 @@
+{
+  "job": {
+    "job_id": "r000022_v02",
+    "case_name": "reference_start",
+    "case_description": "Tepat 12 konteks. Penyebutan target eksplisit di pesan konteks pertama; pesan sekarang memakai kata ganti. FOKUS TAMBAHAN: Tepat 12 konteks; nama target hanya pada konteks pertama; utama dia/-nya.",
+    "source": {
+      "source_row": 22,
+      "source_group": "084fde11b6c0117fed98",
+      "teks_chat": "C menolak semua hipotesis tapi tidak menawarkan alternatif, gaya debatnya cuma mengaburkan jejak",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 13,
+    "pesan_typo_ringan": [],
+    "case_index": 17
+  },
+  "session": {
+    "case_name": "reference_start",
+    "participants": [
+      "Syakira",
+      "Marsha",
+      "Vanya",
+      "Zakia",
+      "Tiara"
+    ],
+    "focus_player": "Vanya",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Tiara",
+        "teks_chat": "jawaban Vanya masuk setelah pertanyaan role, sebelum pertanyaan waktu.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Vanya",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Marsha",
+        "teks_chat": "buat semuanya, tadi ada dua pertanyaan berurutan ya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Zakia",
+        "teks_chat": "yang pertama minta klaim, yang kedua minta nomor malam.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Syakira",
+        "teks_chat": "gw lihat satu jawaban mengandung dua informasi sekaligus.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Tiara",
+        "teks_chat": "jadi nggak harus ditempel ke pertanyaan paling dekat sih.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Marsha",
+        "teks_chat": "di awal ada nama role, ujungnya ada waktu.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Zakia",
+        "teks_chat": "iya kok, keduanya masih dalam satu kalimat.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Syakira",
+        "teks_chat": "pesan utuh lebih gampang dibaca daripada potongan layar.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Tiara",
+        "teks_chat": "aku geser sedikit ke atas biar dua pertanyaannya terlihat.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Marsha",
+        "teks_chat": "sekarang urutan tanya jawabnya sudah jelas.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Zakia",
+        "teks_chat": "nih, kita bisa lanjut dari isi jawaban tadi.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Syakira",
+        "teks_chat": "yang punya tanggapan, silakan kirim sebelum fase berikutnya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Syakira",
+        "teks_chat": "balik ke kasus pembuka, aku nggak percaya dia punya role seperti yang diklaimnya.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Vanya",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "017_codex_revisi1.txt"
+  }
+}

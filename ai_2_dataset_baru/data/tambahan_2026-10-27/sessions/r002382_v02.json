@@ -1,0 +1,71 @@
+{
+  "job": {
+    "job_id": "r002382_v02",
+    "case_name": "agreement",
+    "case_description": "Pesan sekarang menyetujui atau membantah pesan pemain lain di konteks tanpa menyebut ulang nama target. Setuju dengan tuduhan = offend pemain yang dituduh; membantah tuduhan atau setuju dengan pembelaan = defend. Identitas target diwarisi dari pesan yang ditanggapi. FOKUS TAMBAHAN: Setuju/bantah tanpa ulang nama target; sumber pendapat bukan target.",
+    "source": {
+      "source_row": 2382,
+      "source_group": "875bf59a78f3fb308134",
+      "teks_chat": "aku warga biasa, bukan pemain ber-role, tapi tetap yakin Tio Hitman",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 3,
+    "pesan_typo_ringan": [],
+    "case_index": 5
+  },
+  "session": {
+    "case_name": "agreement",
+    "participants": [
+      "Feby",
+      "Astri",
+      "Jauhar",
+      "Rosita",
+      "Febrian"
+    ],
+    "focus_player": "Jauhar",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Astri",
+        "teks_chat": "Jauhar ngarang hasil malam menurutku, jangan langsung dipercaya.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Jauhar",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Rosita",
+        "teks_chat": "timer ngobrol masih panjang sih, sekitar lima puluh lima.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Feby",
+        "teks_chat": "setuju sama yang barusan menjelaskan, pilihan vote itu masuk akal.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Jauhar",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "039_codex_revisi1.txt"
+  }
+}

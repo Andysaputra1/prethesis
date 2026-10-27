@@ -1,0 +1,91 @@
+{
+  "job": {
+    "job_id": "r003152_v02",
+    "case_name": "ambiguous",
+    "case_description": "Beberapa acuan sama-sama mungkin; target tidak_diketahui, bukan nama terakhir. FOKUS TAMBAHAN: Sedikitnya dua calon acuan dia sama kuat; nama terakhir bukan jawaban. Target tidak_diketahui.",
+    "source": {
+      "source_row": 3152,
+      "source_group": "3a55b13a3a5b1154e804",
+      "teks_chat": "pas pagi dimulai si A langsung menyebut target vote, tanpa bahas aksi malam, menurut gw A Hitman",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 3,
+    "pesan_typo_ringan": [],
+    "case_index": 19
+  },
+  "session": {
+    "case_name": "ambiguous",
+    "participants": [
+      "Rasyid",
+      "Cantika",
+      "Ghani",
+      "Diandra",
+      "Ratu"
+    ],
+    "focus_player": "",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Ratu",
+        "teks_chat": "Diandra juga Cantika sama-sama menyebut Stalker sebagai role-nya.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Cantika",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          },
+          {
+            "pemain": "Diandra",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Rasyid",
+        "teks_chat": "mereka berdua belum menyebut detik persisnya sih.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Cantika",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          },
+          {
+            "pemain": "Diandra",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Ghani",
+        "teks_chat": "ucapannya soal Guard palsu, aku makin yakin dia Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "tidak_diketahui",
+            "relasi": "offend",
+            "bukti_pesan": []
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "002_codex_revisi1.txt"
+  }
+}

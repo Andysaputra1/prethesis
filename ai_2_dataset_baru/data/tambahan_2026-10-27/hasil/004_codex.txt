@@ -1,0 +1,716 @@
+```json
+{
+  "results": [
+    {
+      "job_id": "r000547_v02",
+      "session": {
+        "case_name": "ambiguous",
+        "participants": [
+          "Yumna",
+          "Izza",
+          "Astri",
+          "Jalu",
+          "Mahdi"
+        ],
+        "focus_player": "",
+        "panggilan": [],
+        "messages": [
+          {
+            "pengirim": "Izza",
+            "teks_chat": "Yumna dan Astri sama-sama meminta pembahasan hasil skill dulu.",
+            "label_intent": "neutral",
+            "target": [
+              {
+                "pemain": "Astri",
+                "relasi": "neutral",
+                "bukti_pesan": [
+                  1
+                ]
+              },
+              {
+                "pemain": "Yumna",
+                "relasi": "neutral",
+                "bukti_pesan": [
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "pengirim": "Jalu",
+            "teks_chat": "dua nama itu masih kita bahas bareng, belum dipilih salah satunya.",
+            "label_intent": "neutral",
+            "target": [
+              {
+                "pemain": "Astri",
+                "relasi": "neutral",
+                "bukti_pesan": [
+                  1
+                ]
+              },
+              {
+                "pemain": "Yumna",
+                "relasi": "neutral",
+                "bukti_pesan": [
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "pengirim": "Mahdi",
+            "teks_chat": "aku nggak setuju dia disudutkan cuma karena belum mau buka role.",
+            "label_intent": "defend",
+            "target": [
+              {
+                "pemain": "tidak_diketahui",
+                "relasi": "defend",
+                "bukti_pesan": []
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "job_id": "r002307_v02",
+      "session": {
+        "case_name": "ambiguous",
+        "participants": [
+          "Mahira",
+          "Yasmin",
+          "Izza",
+          "Tasya",
+          "Satya"
+        ],
+        "focus_player": "",
+        "panggilan": [],
+        "messages": [
+          {
+            "pengirim": "Satya",
+            "teks_chat": "Mahira dan Izza sama-sama meminta pembahasan hasil skill dulu.",
+            "label_intent": "neutral",
+            "target": [
+              {
+                "pemain": "Izza",
+                "relasi": "neutral",
+                "bukti_pesan": [
+                  1
+                ]
+              },
+              {
+                "pemain": "Mahira",
+                "relasi": "neutral",
+                "bukti_pesan": [
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "pengirim": "Tasya",
+            "teks_chat": "dua nama itu masih kita bahas bareng, belum dipilih salah satunya.",
+            "label_intent": "neutral",
+            "target": [
+              {
+                "pemain": "Izza",
+                "relasi": "neutral",
+                "bukti_pesan": [
+                  1
+                ]
+              },
+              {
+                "pemain": "Mahira",
+                "relasi": "neutral",
+                "bukti_pesan": [
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "pengirim": "Yasmin",
+            "teks_chat": "dia pasti menyembunyikan sesuatu, jawaban tentang aksinya muter terus.",
+            "label_intent": "offend",
+            "target": [
+              {
+                "pemain": "tidak_diketahui",
+                "relasi": "offend",
+                "bukti_pesan": []
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "job_id": "r003240_v02",
+      "session": {
+        "case_name": "ambiguous",
+        "participants": [
+          "Niken",
+          "Naufala",
+          "Syauqi",
+          "Dyah",
+          "Safira"
+        ],
+        "focus_player": "",
+        "panggilan": [],
+        "messages": [
+          {
+            "pengirim": "Syauqi",
+            "teks_chat": "dua pesan pendek itu milik Naufala dan Niken; isinya sama-sama klaim Civilian.",
+            "label_intent": "neutral",
+            "target": [
+              {
+                "pemain": "Naufala",
+                "relasi": "neutral",
+                "bukti_pesan": [
+                  1
+                ]
+              },
+              {
+                "pemain": "Niken",
+                "relasi": "neutral",
+                "bukti_pesan": [
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "pengirim": "Safira",
+            "teks_chat": "catatan keduanya belum kupisah ke bagian masing-masing.",
+            "label_intent": "neutral",
+            "target": [
+              {
+                "pemain": "Naufala",
+                "relasi": "neutral",
+                "bukti_pesan": [
+                  1
+                ]
+              },
+              {
+                "pemain": "Niken",
+                "relasi": "neutral",
+                "bukti_pesan": [
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "pengirim": "Dyah",
+            "teks_chat": "perbedaan ejaan itu kecil banget, jangan jadikan dia tersangka dari situ.",
+            "label_intent": "defend",
+            "target": [
+              {
+                "pemain": "tidak_diketahui",
+                "relasi": "defend",
+                "bukti_pesan": []
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "job_id": "r000069_v02",
+      "session": {
+        "case_name": "ambiguous",
+        "participants": [
+          "Feby",
+          "Baskara",
+          "Delima",
+          "Jalu",
+          "Sabrina"
+        ],
+        "focus_player": "",
+        "panggilan": [],
+        "messages": [
+          {
+            "pengirim": "Feby",
+            "teks_chat": "dua pesan pendek itu milik Baskara dan Jalu; isinya sama-sama klaim Civilian.",
+            "label_intent": "neutral",
+            "target": [
+              {
+                "pemain": "Baskara",
+                "relasi": "neutral",
+                "bukti_pesan": [
+                  1
+                ]
+              },
+              {
+                "pemain": "Jalu",
+                "relasi": "neutral",
+                "bukti_pesan": [
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "pengirim": "Delima",
+            "teks_chat": "catatan keduanya belum kupisah ke bagian masing-masing.",
+            "label_intent": "neutral",
+            "target": [
+              {
+                "pemain": "Baskara",
+                "relasi": "neutral",
+                "bukti_pesan": [
+                  1
+                ]
+              },
+              {
+                "pemain": "Jalu",
+                "relasi": "neutral",
+                "bukti_pesan": [
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "pengirim": "Sabrina",
+            "teks_chat": "sekarang fokus curigai dia; pengakuannya soal Peek saling bertentangan.",
+            "label_intent": "offend",
+            "target": [
+              {
+                "pemain": "tidak_diketahui",
+                "relasi": "offend",
+                "bukti_pesan": []
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "job_id": "r002139_v02",
+      "session": {
+        "case_name": "ambiguous",
+        "participants": [
+          "Kemal",
+          "Ghea",
+          "Nirmala",
+          "Gendis",
+          "Kautsar"
+        ],
+        "focus_player": "",
+        "panggilan": [],
+        "messages": [
+          {
+            "pengirim": "Kautsar",
+            "teks_chat": "Kemal juga Gendis sudah menulis jawaban tentang alasan menunggu.",
+            "label_intent": "neutral",
+            "target": [
+              {
+                "pemain": "Gendis",
+                "relasi": "neutral",
+                "bukti_pesan": [
+                  1
+                ]
+              },
+              {
+                "pemain": "Kemal",
+                "relasi": "neutral",
+                "bukti_pesan": [
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "pengirim": "Ghea",
+            "teks_chat": "untuk dua orang itu, urutan chatnya masih kubaca bersebelahan.",
+            "label_intent": "neutral",
+            "target": [
+              {
+                "pemain": "Gendis",
+                "relasi": "neutral",
+                "bukti_pesan": [
+                  1
+                ]
+              },
+              {
+                "pemain": "Kemal",
+                "relasi": "neutral",
+                "bukti_pesan": [
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "pengirim": "Nirmala",
+            "teks_chat": "dia tetap kubela, status chat yang terkunci tidak bisa dipakai sebagai bukti pelaku.",
+            "label_intent": "defend",
+            "target": [
+              {
+                "pemain": "tidak_diketahui",
+                "relasi": "defend",
+                "bukti_pesan": []
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "job_id": "r004403_v02",
+      "session": {
+        "case_name": "ambiguous",
+        "participants": [
+          "Naura",
+          "Tania",
+          "Ratu",
+          "Ghani",
+          "Prita"
+        ],
+        "focus_player": "",
+        "panggilan": [],
+        "messages": [
+          {
+            "pengirim": "Prita",
+            "teks_chat": "Ratu juga Tania sudah menulis jawaban tentang alasan menunggu.",
+            "label_intent": "neutral",
+            "target": [
+              {
+                "pemain": "Tania",
+                "relasi": "neutral",
+                "bukti_pesan": [
+                  1
+                ]
+              },
+              {
+                "pemain": "Ratu",
+                "relasi": "neutral",
+                "bukti_pesan": [
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "pengirim": "Ghani",
+            "teks_chat": "untuk dua orang itu, urutan chatnya masih kubaca bersebelahan.",
+            "label_intent": "neutral",
+            "target": [
+              {
+                "pemain": "Tania",
+                "relasi": "neutral",
+                "bukti_pesan": [
+                  1
+                ]
+              },
+              {
+                "pemain": "Ratu",
+                "relasi": "neutral",
+                "bukti_pesan": [
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "pengirim": "Naura",
+            "teks_chat": "aku tandai dia sebagai pihak yang paling mungkin mengatur vote palsu ini.",
+            "label_intent": "offend",
+            "target": [
+              {
+                "pemain": "tidak_diketahui",
+                "relasi": "offend",
+                "bukti_pesan": []
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "job_id": "r000723_v02",
+      "session": {
+        "case_name": "ambiguous",
+        "participants": [
+          "Keisha",
+          "Nirmala",
+          "Mutiara",
+          "Dyah",
+          "Savira"
+        ],
+        "focus_player": "",
+        "panggilan": [],
+        "messages": [
+          {
+            "pengirim": "Dyah",
+            "teks_chat": "Savira dan Keisha masing-masing berhenti mengetik saat topik vote muncul.",
+            "label_intent": "neutral",
+            "target": [
+              {
+                "pemain": "Savira",
+                "relasi": "neutral",
+                "bukti_pesan": [
+                  1
+                ]
+              },
+              {
+                "pemain": "Keisha",
+                "relasi": "neutral",
+                "bukti_pesan": [
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "pengirim": "Mutiara",
+            "teks_chat": "aku masih mencatat keduanya dalam satu pembahasan.",
+            "label_intent": "neutral",
+            "target": [
+              {
+                "pemain": "Savira",
+                "relasi": "neutral",
+                "bukti_pesan": [
+                  1
+                ]
+              },
+              {
+                "pemain": "Keisha",
+                "relasi": "neutral",
+                "bukti_pesan": [
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "pengirim": "Nirmala",
+            "teks_chat": "rasanya nggak adil vote dia setelah penjelasannya sudah meluruskan salah paham.",
+            "label_intent": "defend",
+            "target": [
+              {
+                "pemain": "tidak_diketahui",
+                "relasi": "defend",
+                "bukti_pesan": []
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "job_id": "r000226_v02",
+      "session": {
+        "case_name": "ambiguous",
+        "participants": [
+          "Kirana",
+          "Haikal",
+          "Raksa",
+          "Tiara",
+          "Aksara"
+        ],
+        "focus_player": "",
+        "panggilan": [],
+        "messages": [
+          {
+            "pengirim": "Kirana",
+            "teks_chat": "Raksa dan Aksara masing-masing berhenti mengetik saat topik vote muncul.",
+            "label_intent": "neutral",
+            "target": [
+              {
+                "pemain": "Raksa",
+                "relasi": "neutral",
+                "bukti_pesan": [
+                  1
+                ]
+              },
+              {
+                "pemain": "Aksara",
+                "relasi": "neutral",
+                "bukti_pesan": [
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "pengirim": "Tiara",
+            "teks_chat": "aku masih mencatat keduanya dalam satu pembahasan.",
+            "label_intent": "neutral",
+            "target": [
+              {
+                "pemain": "Raksa",
+                "relasi": "neutral",
+                "bukti_pesan": [
+                  1
+                ]
+              },
+              {
+                "pemain": "Aksara",
+                "relasi": "neutral",
+                "bukti_pesan": [
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "pengirim": "Haikal",
+            "teks_chat": "dia bukan Spy sungguhan, klaimnya cuma jalan keluar saat terpojok.",
+            "label_intent": "offend",
+            "target": [
+              {
+                "pemain": "tidak_diketahui",
+                "relasi": "offend",
+                "bukti_pesan": []
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "job_id": "r000544_v02",
+      "session": {
+        "case_name": "ambiguous",
+        "participants": [
+          "Ratu",
+          "Tasya",
+          "Savira",
+          "Safira",
+          "Syifa"
+        ],
+        "focus_player": "",
+        "panggilan": [],
+        "messages": [
+          {
+            "pengirim": "Ratu",
+            "teks_chat": "yang belum selesai menjelaskan urutan chat ada dua, Tasya dan Syifa.",
+            "label_intent": "neutral",
+            "target": [
+              {
+                "pemain": "Syifa",
+                "relasi": "neutral",
+                "bukti_pesan": [
+                  1
+                ]
+              },
+              {
+                "pemain": "Tasya",
+                "relasi": "neutral",
+                "bukti_pesan": [
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "pengirim": "Safira",
+            "teks_chat": "dua klaim tersebut belum kita urutkan satu per satu.",
+            "label_intent": "neutral",
+            "target": [
+              {
+                "pemain": "Syifa",
+                "relasi": "neutral",
+                "bukti_pesan": [
+                  1
+                ]
+              },
+              {
+                "pemain": "Tasya",
+                "relasi": "neutral",
+                "bukti_pesan": [
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "pengirim": "Savira",
+            "teks_chat": "tolong jangan buang dia. Dia sudah memberikan alibi yang bisa diperiksa.",
+            "label_intent": "defend",
+            "target": [
+              {
+                "pemain": "tidak_diketahui",
+                "relasi": "defend",
+                "bukti_pesan": []
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "job_id": "r000139_v02",
+      "session": {
+        "case_name": "ambiguous",
+        "participants": [
+          "Arum",
+          "Pandu",
+          "Ayuning",
+          "Afifah",
+          "Salma"
+        ],
+        "focus_player": "",
+        "panggilan": [],
+        "messages": [
+          {
+            "pengirim": "Ayuning",
+            "teks_chat": "yang belum selesai menjelaskan urutan chat ada dua, Afifah dan Arum.",
+            "label_intent": "neutral",
+            "target": [
+              {
+                "pemain": "Arum",
+                "relasi": "neutral",
+                "bukti_pesan": [
+                  1
+                ]
+              },
+              {
+                "pemain": "Afifah",
+                "relasi": "neutral",
+                "bukti_pesan": [
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "pengirim": "Salma",
+            "teks_chat": "dua klaim tersebut belum kita urutkan satu per satu.",
+            "label_intent": "neutral",
+            "target": [
+              {
+                "pemain": "Arum",
+                "relasi": "neutral",
+                "bukti_pesan": [
+                  1
+                ]
+              },
+              {
+                "pemain": "Afifah",
+                "relasi": "neutral",
+                "bukti_pesan": [
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "pengirim": "Pandu",
+            "teks_chat": "kecurigaanku justru ke dia yang tiba-tiba mempercepat vote tanpa alasan jelas.",
+            "label_intent": "offend",
+            "target": [
+              {
+                "pemain": "tidak_diketahui",
+                "relasi": "offend",
+                "bukti_pesan": []
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}
+```

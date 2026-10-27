@@ -1,0 +1,594 @@
+{
+  "results": [
+    {
+      "job_id": "r003739_v02",
+      "session": {
+        "case_name": "multiple_targets",
+        "participants": [
+          "Inaya",
+          "Arum",
+          "Keisha",
+          "Syifa",
+          "Larasati"
+        ],
+        "focus_player": "Keisha",
+        "panggilan": [],
+        "messages": [
+          {
+            "pengirim": "Arum",
+            "teks_chat": "Keisha sama Larasati baru jawab setelah sama-sama diam sebentar.",
+            "label_intent": "neutral",
+            "target": [
+              {
+                "pemain": "Keisha",
+                "relasi": "neutral",
+                "bukti_pesan": [
+                  1
+                ]
+              },
+              {
+                "pemain": "Larasati",
+                "relasi": "neutral",
+                "bukti_pesan": [
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "pengirim": "Syifa",
+            "teks_chat": "Keisha dan Larasati sama-sama bersih dari hasil Peek-ku, jangan vote mereka.",
+            "label_intent": "defend",
+            "target": [
+              {
+                "pemain": "Keisha",
+                "relasi": "defend",
+                "bukti_pesan": [
+                  2
+                ]
+              },
+              {
+                "pemain": "Larasati",
+                "relasi": "defend",
+                "bukti_pesan": [
+                  2
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "job_id": "r001782_v02",
+      "session": {
+        "case_name": "multiple_targets",
+        "participants": [
+          "Shafa",
+          "Ghani",
+          "Kemal",
+          "Utari",
+          "Fathia"
+        ],
+        "focus_player": "Fathia",
+        "panggilan": [],
+        "messages": [
+          {
+            "pengirim": "Kemal",
+            "teks_chat": "nih, Shafa dan Fathia dua-duanya lagi cerita soal malam kedua.",
+            "label_intent": "neutral",
+            "target": [
+              {
+                "pemain": "Fathia",
+                "relasi": "neutral",
+                "bukti_pesan": [
+                  1
+                ]
+              },
+              {
+                "pemain": "Shafa",
+                "relasi": "neutral",
+                "bukti_pesan": [
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "pengirim": "Utari",
+            "teks_chat": "aku curiga Fathia bareng Shafa; alibi keduanya kelihatan disusun untuk menutup kejadian malam.",
+            "label_intent": "offend",
+            "target": [
+              {
+                "pemain": "Fathia",
+                "relasi": "offend",
+                "bukti_pesan": [
+                  2
+                ]
+              },
+              {
+                "pemain": "Shafa",
+                "relasi": "offend",
+                "bukti_pesan": [
+                  2
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "job_id": "r003245_v02",
+      "session": {
+        "case_name": "multiple_targets",
+        "participants": [
+          "Thalia",
+          "Ghani",
+          "Kinanti",
+          "Tania",
+          "Bagaskara"
+        ],
+        "focus_player": "Kinanti",
+        "panggilan": [],
+        "messages": [
+          {
+            "pengirim": "Tania",
+            "teks_chat": "Kinanti juga Bagaskara sempat pindah pilihan sebelum vote dikunci.",
+            "label_intent": "neutral",
+            "target": [
+              {
+                "pemain": "Kinanti",
+                "relasi": "neutral",
+                "bukti_pesan": [
+                  1
+                ]
+              },
+              {
+                "pemain": "Bagaskara",
+                "relasi": "neutral",
+                "bukti_pesan": [
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "pengirim": "Ghani",
+            "teks_chat": "jangan seret Kinanti maupun Bagaskara jadi pelaku hanya karena chatnya belum lengkap.",
+            "label_intent": "defend",
+            "target": [
+              {
+                "pemain": "Kinanti",
+                "relasi": "defend",
+                "bukti_pesan": [
+                  2
+                ]
+              },
+              {
+                "pemain": "Bagaskara",
+                "relasi": "defend",
+                "bukti_pesan": [
+                  2
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "job_id": "r001762_v02",
+      "session": {
+        "case_name": "multiple_targets",
+        "participants": [
+          "Keisha",
+          "Raisa",
+          "Cakra",
+          "Larasati",
+          "Fathia"
+        ],
+        "focus_player": "Raisa",
+        "panggilan": [],
+        "messages": [
+          {
+            "pengirim": "Fathia",
+            "teks_chat": "Cakra dan Raisa sama-sama ngaku Spy di chat tadi.",
+            "label_intent": "neutral",
+            "target": [
+              {
+                "pemain": "Raisa",
+                "relasi": "neutral",
+                "bukti_pesan": [
+                  1
+                ]
+              },
+              {
+                "pemain": "Cakra",
+                "relasi": "neutral",
+                "bukti_pesan": [
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "pengirim": "Keisha",
+            "teks_chat": "vote Cakra dan Raisa jadi pilihanku, dua klaim itu bertentangan dengan urutan malam.",
+            "label_intent": "offend",
+            "target": [
+              {
+                "pemain": "Raisa",
+                "relasi": "offend",
+                "bukti_pesan": [
+                  2
+                ]
+              },
+              {
+                "pemain": "Cakra",
+                "relasi": "offend",
+                "bukti_pesan": [
+                  2
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "job_id": "r002319_v02",
+      "session": {
+        "case_name": "multiple_targets",
+        "participants": [
+          "Nirmala",
+          "Feby",
+          "Niken",
+          "Aisyah",
+          "Astri"
+        ],
+        "focus_player": "Niken",
+        "panggilan": [],
+        "messages": [
+          {
+            "pengirim": "Astri",
+            "teks_chat": "yang barusan nanya hasil malam itu Niken sama Nirmala.",
+            "label_intent": "neutral",
+            "target": [
+              {
+                "pemain": "Niken",
+                "relasi": "neutral",
+                "bukti_pesan": [
+                  1
+                ]
+              },
+              {
+                "pemain": "Nirmala",
+                "relasi": "neutral",
+                "bukti_pesan": [
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "pengirim": "Aisyah",
+            "teks_chat": "Niken bukan Hitman, Nirmala juga aman. Aku dapat hasil Civilian untuk keduanya.",
+            "label_intent": "defend",
+            "target": [
+              {
+                "pemain": "Niken",
+                "relasi": "defend",
+                "bukti_pesan": [
+                  2
+                ]
+              },
+              {
+                "pemain": "Nirmala",
+                "relasi": "defend",
+                "bukti_pesan": [
+                  2
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "job_id": "r004885_v02",
+      "session": {
+        "case_name": "multiple_targets",
+        "participants": [
+          "Tisna",
+          "Febi",
+          "Rizki",
+          "Sakti",
+          "Satya"
+        ],
+        "focus_player": "Rizki",
+        "panggilan": [],
+        "messages": [
+          {
+            "pengirim": "Febi",
+            "teks_chat": "Sakti serta Rizki belum nulis hasil Peek lengkap, baru pengantarnya.",
+            "label_intent": "neutral",
+            "target": [
+              {
+                "pemain": "Rizki",
+                "relasi": "neutral",
+                "bukti_pesan": [
+                  1
+                ]
+              },
+              {
+                "pemain": "Sakti",
+                "relasi": "neutral",
+                "bukti_pesan": [
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "pengirim": "Tisna",
+            "teks_chat": "klaim Rizki palsu dan pengakuan Sakti sama nggak masuk akalnya, aku tidak percaya dua-duanya.",
+            "label_intent": "offend",
+            "target": [
+              {
+                "pemain": "Rizki",
+                "relasi": "offend",
+                "bukti_pesan": [
+                  2
+                ]
+              },
+              {
+                "pemain": "Sakti",
+                "relasi": "offend",
+                "bukti_pesan": [
+                  2
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "job_id": "r003688_v02",
+      "session": {
+        "case_name": "multiple_targets",
+        "participants": [
+          "Savira",
+          "Okta",
+          "Wulan",
+          "Tiara",
+          "Fathia"
+        ],
+        "focus_player": "Okta",
+        "panggilan": [],
+        "messages": [
+          {
+            "pengirim": "Wulan",
+            "teks_chat": "Okta dan Savira masing-masing bilang sudah pakai skill malam itu.",
+            "label_intent": "neutral",
+            "target": [
+              {
+                "pemain": "Okta",
+                "relasi": "neutral",
+                "bukti_pesan": [
+                  1
+                ]
+              },
+              {
+                "pemain": "Savira",
+                "relasi": "neutral",
+                "bukti_pesan": [
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "pengirim": "Fathia",
+            "teks_chat": "aku membela Savira sekaligus Okta, keterlambatan mereka bukan bukti aksi jahat.",
+            "label_intent": "defend",
+            "target": [
+              {
+                "pemain": "Okta",
+                "relasi": "defend",
+                "bukti_pesan": [
+                  2
+                ]
+              },
+              {
+                "pemain": "Savira",
+                "relasi": "defend",
+                "bukti_pesan": [
+                  2
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "job_id": "r001161_v02",
+      "session": {
+        "case_name": "multiple_targets",
+        "participants": [
+          "Vanya",
+          "Hafiz",
+          "Ayunda",
+          "Banyu",
+          "Ferdi"
+        ],
+        "focus_player": "Banyu",
+        "panggilan": [],
+        "messages": [
+          {
+            "pengirim": "Ferdi",
+            "teks_chat": "dua jawaban yang belum selesai itu dari Ayunda dan Banyu.",
+            "label_intent": "neutral",
+            "target": [
+              {
+                "pemain": "Banyu",
+                "relasi": "neutral",
+                "bukti_pesan": [
+                  1
+                ]
+              },
+              {
+                "pemain": "Ayunda",
+                "relasi": "neutral",
+                "bukti_pesan": [
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "pengirim": "Vanya",
+            "teks_chat": "yang sus menurutku Banyu serta Ayunda, mereka kompak menghindari pertanyaan tentang vote.",
+            "label_intent": "offend",
+            "target": [
+              {
+                "pemain": "Banyu",
+                "relasi": "offend",
+                "bukti_pesan": [
+                  2
+                ]
+              },
+              {
+                "pemain": "Ayunda",
+                "relasi": "offend",
+                "bukti_pesan": [
+                  2
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "job_id": "r000668_v02",
+      "session": {
+        "case_name": "multiple_targets",
+        "participants": [
+          "Isna",
+          "Kautsar",
+          "Suci",
+          "Tiara",
+          "Rayhan"
+        ],
+        "focus_player": "Tiara",
+        "panggilan": [],
+        "messages": [
+          {
+            "pengirim": "Isna",
+            "teks_chat": "Tiara sama Rayhan kirim klaim pas diskusi baru kebuka.",
+            "label_intent": "neutral",
+            "target": [
+              {
+                "pemain": "Tiara",
+                "relasi": "neutral",
+                "bukti_pesan": [
+                  1
+                ]
+              },
+              {
+                "pemain": "Rayhan",
+                "relasi": "neutral",
+                "bukti_pesan": [
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "pengirim": "Kautsar",
+            "teks_chat": "Tiara jangan dieksekusi dulu; Rayhan juga tidak pantas dihukum dari bukti selemah itu.",
+            "label_intent": "defend",
+            "target": [
+              {
+                "pemain": "Tiara",
+                "relasi": "defend",
+                "bukti_pesan": [
+                  2
+                ]
+              },
+              {
+                "pemain": "Rayhan",
+                "relasi": "defend",
+                "bukti_pesan": [
+                  2
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "job_id": "r004084_v02",
+      "session": {
+        "case_name": "multiple_targets",
+        "participants": [
+          "Nayla",
+          "Utari",
+          "Okta",
+          "Naura",
+          "Pram"
+        ],
+        "focus_player": "Naura",
+        "panggilan": [],
+        "messages": [
+          {
+            "pengirim": "Okta",
+            "teks_chat": "Nayla juga Naura sama-sama menyebut Stalker sebagai role-nya.",
+            "label_intent": "neutral",
+            "target": [
+              {
+                "pemain": "Naura",
+                "relasi": "neutral",
+                "bukti_pesan": [
+                  1
+                ]
+              },
+              {
+                "pemain": "Nayla",
+                "relasi": "neutral",
+                "bukti_pesan": [
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "pengirim": "Pram",
+            "teks_chat": "aku memasukkan Nayla dan Naura ke kandidat Hitman, perubahan alasan mereka janggal.",
+            "label_intent": "offend",
+            "target": [
+              {
+                "pemain": "Naura",
+                "relasi": "offend",
+                "bukti_pesan": [
+                  2
+                ]
+              },
+              {
+                "pemain": "Nayla",
+                "relasi": "offend",
+                "bukti_pesan": [
+                  2
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

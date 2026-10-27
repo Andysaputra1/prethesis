@@ -1,0 +1,79 @@
+[
+  {
+    "row": 5,
+    "sebelum": "catatan peek-ku: Niken aman, nggak ada hasil yang bilang dia pelaku",
+    "sesudah": "hasil Peek-ku ke Niken aman kok, nggak ada yang bilang dia pelaku",
+    "label_intent": "defend",
+    "pattern": "peek_membersihkan"
+  },
+  {
+    "row": 11,
+    "sebelum": "hasil skill Stalker-ku membersihkan Cakra, jadi aku bela dia",
+    "sesudah": "hasil skill Stalker-ku menunjukkan Cakra Civilian, jadi jangan vote dia",
+    "label_intent": "defend",
+    "pattern": "peek_membersihkan"
+  },
+  {
+    "row": 19,
+    "sebelum": "hasil peek semalam buat si L: Civilian, tolong catat pembelaan ini",
+    "sesudah": "hasil peek semalam buat si L: Civilian, jangan salah vote nih",
+    "label_intent": "defend",
+    "pattern": "peek_membersihkan"
+  },
+  {
+    "row": 30,
+    "sebelum": "Kinanti tidak masuk Hitman dari cek Peek semalam, aku bela dia",
+    "sesudah": "Kinanti tidak masuk Hitman dari cek Peek semalam, jangan buru-buru tuduh dia",
+    "label_intent": "defend",
+    "pattern": "peek_membersihkan"
+  },
+  {
+    "row": 38,
+    "sebelum": "peek ke Banyu selesai, hasilnya justru membela dia: bukan Hitman",
+    "sesudah": "peek ke Banyu selesai, hasilnya bukan Hitman kok, jadi tahan vote itu",
+    "label_intent": "defend",
+    "pattern": "peek_membersihkan"
+  },
+  {
+    "row": 45,
+    "sebelum": "Khalisa bersih dari hasil skill-ku. Gw Stalker, bukan sekadar ikut membela",
+    "sesudah": "Khalisa bersih dari hasil skill-ku. Gw Stalker, dia bukan Hitman",
+    "label_intent": "defend",
+    "pattern": "peek_membersihkan"
+  },
+  {
+    "row": 85,
+    "sebelum": "Afifah punya hasil Peek Hitman di catatanku, aku pilih vote dia",
+    "sesudah": "Afifah punya hasil Peek Hitman di layar gw, aku pilih vote dia",
+    "label_intent": "offend",
+    "pattern": "peek_memberatkan"
+  },
+  {
+    "row": 87,
+    "sebelum": "aku klaim Spy untuk dicatat di daftar role ronde ini",
+    "sesudah": "aku klaim Spy dulu, habis ini mau cerita waktu pakai Guard",
+    "label_intent": "neutral",
+    "pattern": "klaim_murni"
+  },
+  {
+    "row": 90,
+    "sebelum": "klaimku warga biasa, silakan masukkan ke catatan grup",
+    "sesudah": "klaimku warga biasa, sekarang giliran buka role kan?",
+    "label_intent": "neutral",
+    "pattern": "klaim_murni"
+  },
+  {
+    "row": 97,
+    "sebelum": "catat pengakuanku sebagai Spy, itu saja infonya",
+    "sesudah": "gw mengaku Spy, itu role yang mau kusebut di sini",
+    "label_intent": "neutral",
+    "pattern": "klaim_murni"
+  },
+  {
+    "row": 99,
+    "sebelum": "aku mengaku Civilian pada ronde ini, biar catatannya lengkap",
+    "sesudah": "aku mengaku Civilian pada ronde ini, belum ada info lain dari gw",
+    "label_intent": "neutral",
+    "pattern": "klaim_murni"
+  }
+]

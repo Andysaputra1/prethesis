@@ -1,0 +1,91 @@
+{
+  "job": {
+    "job_id": "r001736_v02",
+    "case_name": "ambiguous",
+    "case_description": "Beberapa acuan sama-sama mungkin; target tidak_diketahui, bukan nama terakhir. FOKUS TAMBAHAN: Sedikitnya dua calon acuan dia sama kuat; nama terakhir bukan jawaban. Target tidak_diketahui.",
+    "source": {
+      "source_row": 1736,
+      "source_group": "eb7c80ff0083f7c03d2d",
+      "teks_chat": "C semalam aman bukan berarti bersih, justru sekarang dia aktif menggiring kita ke target lain, gw sarankan vote C",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 3,
+    "pesan_typo_ringan": [],
+    "case_index": 17
+  },
+  "session": {
+    "case_name": "ambiguous",
+    "participants": [
+      "Cakra",
+      "Salsabila",
+      "Arum",
+      "Shafa",
+      "Sabrina"
+    ],
+    "focus_player": "",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Salsabila",
+        "teks_chat": "Shafa sama Sabrina kirim klaim pas diskusi baru kebuka.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Shafa",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          },
+          {
+            "pemain": "Sabrina",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Cakra",
+        "teks_chat": "dua orang tersebut sekarang sama-sama belum nulis lagi.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Shafa",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          },
+          {
+            "pemain": "Sabrina",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Arum",
+        "teks_chat": "dia pantas masuk kandidat vote, perubahan ceritanya terlalu besar untuk salah ketik.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "tidak_diketahui",
+            "relasi": "offend",
+            "bukti_pesan": []
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "002_codex_revisi1.txt"
+  }
+}

@@ -1,0 +1,131 @@
+{
+  "job": {
+    "job_id": "r004641_v02",
+    "case_name": "reference_start",
+    "case_description": "Tepat 12 konteks. Penyebutan target eksplisit di pesan konteks pertama; pesan sekarang memakai kata ganti. FOKUS TAMBAHAN: Tepat 12 konteks; nama target hanya pada konteks pertama; utama dia/-nya.",
+    "source": {
+      "source_row": 4641,
+      "source_group": "9136cda9cabeeda223de",
+      "teks_chat": "target voting jangan pindah-pindah, dari tadi Joni yang paling banyak bikin tuduhan kosong",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 13,
+    "pesan_typo_ringan": [],
+    "case_index": 47
+  },
+  "session": {
+    "case_name": "reference_start",
+    "participants": [
+      "Bagaskara",
+      "Ratu",
+      "Habib",
+      "Prita",
+      "Banyu"
+    ],
+    "focus_player": "Banyu",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Ratu",
+        "teks_chat": "Banyu bilang jeda chat sekitar beberapa detik.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Banyu",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Bagaskara",
+        "teks_chat": "kata sekitar ada di depan angkanya kan, semuanya?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Habib",
+        "teks_chat": "iya, berarti yang ditulis masih perkiraan durasi.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Prita",
+        "teks_chat": "gw sih nggak melihat hitungan detik lengkap waktu kejadian.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Ratu",
+        "teks_chat": "aku juga cuma mengikuti urutan pesan masuk.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Bagaskara",
+        "teks_chat": "jadi jangan mengubah perkiraan jadi angka yang pasti dong.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Habib",
+        "teks_chat": "teks lengkapnya masih memakai kata sekitar kok.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Prita",
+        "teks_chat": "buat grup, yang dilihat langsung sama yang diceritakan bisa beda jenis info.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Ratu",
+        "teks_chat": "sekarang kita cuma punya urutan chat dan penjelasan durasi.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Bagaskara",
+        "teks_chat": "aku belum menambah angka dari perkiraan sendiri.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Habib",
+        "teks_chat": "nih, kedua informasi itu bisa dibahas terpisah.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Prita",
+        "teks_chat": "oke, lanjut soal penjelasan jeda yang tadi.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Prita",
+        "teks_chat": "aku makin meragukan kejujurannya, dia seperti sudah menyiapkan jawaban palsu sejak awal.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Banyu",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "020_codex_revisi1.txt"
+  }
+}

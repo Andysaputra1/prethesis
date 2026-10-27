@@ -1,0 +1,91 @@
+{
+  "job": {
+    "job_id": "r004928_v02",
+    "case_name": "ambiguous",
+    "case_description": "Beberapa acuan sama-sama mungkin; target tidak_diketahui, bukan nama terakhir. FOKUS TAMBAHAN: Sedikitnya dua calon acuan dia sama kuat; nama terakhir bukan jawaban. Target tidak_diketahui.",
+    "source": {
+      "source_row": 4928,
+      "source_group": "7e60752fe8972409b28b",
+      "teks_chat": "aku bukan hitman, dari awal cuma ikut vote mayoritas",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 3,
+    "pesan_typo_ringan": [],
+    "case_index": 28
+  },
+  "session": {
+    "case_name": "ambiguous",
+    "participants": [
+      "Tisna",
+      "Zakia",
+      "Suci",
+      "Bagaskara",
+      "Arum"
+    ],
+    "focus_player": "",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Arum",
+        "teks_chat": "Zakia dan Bagaskara masing-masing mengubah angka malam yang ditulis.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Zakia",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          },
+          {
+            "pemain": "Bagaskara",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Tisna",
+        "teks_chat": "gw pengin tahu apakah keduanya merujuk malam pertama.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Zakia",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          },
+          {
+            "pemain": "Bagaskara",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Suci",
+        "teks_chat": "bukan dia yang layak dicurigai, jeda mengetiknya masih normal.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "tidak_diketahui",
+            "relasi": "defend",
+            "bukti_pesan": []
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "003_codex_revisi1.txt"
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "job": {
+    "job_id": "r005324_v02",
+    "case_name": "witness",
+    "case_description": "Nama saksi/korban disebut, tetapi bukan target serangan atau pembelaan. FOKUS TAMBAHAN: Nama sumber/saksi/penuduh bukan target. Sertakan bantahan isi klaim Peek penuduh yang membela pengirim saja.",
+    "source": {
+      "source_row": 5324,
+      "source_group": "eb0eac89dbe35b897e41",
+      "teks_chat": "lah chat dikunci lagi, gw belum sempat jawab",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 3,
+    "pesan_typo_ringan": [],
+    "case_index": 4
+  },
+  "session": {
+    "case_name": "witness",
+    "participants": [
+      "Lintang",
+      "Feby",
+      "Banyu",
+      "Dyah",
+      "Syakira"
+    ],
+    "focus_player": "Dyah",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Syakira",
+        "teks_chat": "Dyah baru menjawab pertanyaan grup tentang urutan malam.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Dyah",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Lintang",
+        "teks_chat": "aku belum bikin keputusan, masih baca chat yang masuk.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Feby",
+        "teks_chat": "Syakira bilang chatnya sempat terkunci; itu menjelaskan diamnya Dyah, jangan dicurigai.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Dyah",
+            "relasi": "defend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "006_codex_revisi1.txt"
+  }
+}

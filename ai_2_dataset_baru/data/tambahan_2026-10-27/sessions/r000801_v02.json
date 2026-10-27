@@ -1,0 +1,131 @@
+{
+  "job": {
+    "job_id": "r000801_v02",
+    "case_name": "reference_start",
+    "case_description": "Tepat 12 konteks. Penyebutan target eksplisit di pesan konteks pertama; pesan sekarang memakai kata ganti. FOKUS TAMBAHAN: Tepat 12 konteks; nama target hanya pada konteks pertama; utama dia/-nya.",
+    "source": {
+      "source_row": 801,
+      "source_group": "dd273eb578b65c80b7eb",
+      "teks_chat": "jangan baper sama gaya debat gw, role gw spy, bukan hitman",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 13,
+    "pesan_typo_ringan": [],
+    "case_index": 22
+  },
+  "session": {
+    "case_name": "reference_start",
+    "participants": [
+      "Yumna",
+      "Lintang",
+      "Cakra",
+      "Raisa",
+      "Habib"
+    ],
+    "focus_player": "Lintang",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Cakra",
+        "teks_chat": "Lintang mengutip kalimat soal malam tadi lalu menambahkan komentar.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Lintang",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Raisa",
+        "teks_chat": "bagian dalam tanda kutip berakhir di mana, semuanya?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Habib",
+        "teks_chat": "di layarku selesai sebelum kata sekarang.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Yumna",
+        "teks_chat": "gw baca yang setelahnya sebagai komentar tambahan sih.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Cakra",
+        "teks_chat": "iya, bentuknya sudah kalimat baru.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Raisa",
+        "teks_chat": "tanda kutip masih kelihatan kok di chat lengkap.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Habib",
+        "teks_chat": "kalau dari notifikasi, bagian awalnya kepotong sedikit.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Yumna",
+        "teks_chat": "buat grup, pakai isi chat aja untuk baca seluruhnya dong.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Cakra",
+        "teks_chat": "aku membuka pesan itu dari atas, sekarang lengkap.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Raisa",
+        "teks_chat": "komentar dan kutipannya memang berada di satu pesan.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Habib",
+        "teks_chat": "nih, batas dua bagian itu sudah terlihat jelas.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Yumna",
+        "teks_chat": "silakan lanjut dengan kalimat utuh yang tadi.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Yumna",
+        "teks_chat": "aku pasang badan buat dia yang kita bahas pertama. Hasil pengecekanku membebaskannya.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Lintang",
+            "relasi": "defend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "018_codex_revisi1.txt"
+  }
+}

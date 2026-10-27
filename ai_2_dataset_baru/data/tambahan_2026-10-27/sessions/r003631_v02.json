@@ -1,0 +1,77 @@
+{
+  "job": {
+    "job_id": "r003631_v02",
+    "case_name": "interruption",
+    "case_description": "Pembahasan target disela obrolan waktu/ronde; kaitan kembali ke target masih jelas. FOKUS TAMBAHAN: Selingan waktu lalu kembali ke target; sertakan pembelaan diri.",
+    "source": {
+      "source_row": 3631,
+      "source_group": "f20949d307e0c7e34839",
+      "teks_chat": "sumpah aku bukan Hitman, role-ku Civilian dan dari tadi cuma mengamati",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 4,
+    "pesan_typo_ringan": [],
+    "case_index": 10
+  },
+  "session": {
+    "case_name": "interruption",
+    "participants": [
+      "Suci",
+      "Safira",
+      "Delima",
+      "Diandra",
+      "Kresna"
+    ],
+    "focus_player": "Safira",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Delima",
+        "teks_chat": "aku sudah melihat jawaban Safira pada chat sebelumnya.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Safira",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Suci",
+        "teks_chat": "di pojok atas ada angka empat puluh enam untuk sisa waktu.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Kresna",
+        "teks_chat": "aku sudah melihat timernya, grup masih ada waktu sedikit.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Diandra",
+        "teks_chat": "aku lanjut soal Safira, jangan tuduh dia hanya karena sempat tidak bisa mengetik.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Safira",
+            "relasi": "defend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "044_codex_revisi1.txt"
+  }
+}

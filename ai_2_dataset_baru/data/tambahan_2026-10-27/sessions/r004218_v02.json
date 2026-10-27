@@ -1,0 +1,100 @@
+{
+  "job": {
+    "job_id": "r004218_v02",
+    "case_name": "plural_reference",
+    "case_description": "Pesan sekarang memakai mereka/kalian/keduanya/berdua untuk dua pemain atau lebih yang jelas dari konteks, tanpa menyebut ulang nama mereka. Simpan semua pemain itu sebagai target. FOKUS TAMBAHAN: Mereka/keduanya menunjuk dua orang. Sapaan ke pemain ketiga bukan target.",
+    "source": {
+      "source_row": 4218,
+      "source_group": "32301fd55d53e9eb55c5",
+      "teks_chat": "isu ini sengaja diarahkan ke aku, coba periksa siapa yang pertama kali menuduh",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 3,
+    "pesan_typo_ringan": [],
+    "case_index": 21
+  },
+  "session": {
+    "case_name": "plural_reference",
+    "participants": [
+      "Tirta",
+      "Zulfikar",
+      "Ratih",
+      "Kirana",
+      "Delima"
+    ],
+    "focus_player": "Kirana",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Delima",
+        "teks_chat": "Ratih sama Kirana belum menulis nama role lengkap di hasilnya.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Kirana",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          },
+          {
+            "pemain": "Ratih",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Tirta",
+        "teks_chat": "aku ingin membaca hasil dari keduanya sampai tuntas dong.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Kirana",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          },
+          {
+            "pemain": "Ratih",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Zulfikar",
+        "teks_chat": "aku mendukung vote ke mereka berdua, masing-masing berusaha menutupi detail aksinya.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Kirana",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          },
+          {
+            "pemain": "Ratih",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "035_codex_revisi1.txt"
+  }
+}

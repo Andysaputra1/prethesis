@@ -1,0 +1,131 @@
+{
+  "job": {
+    "job_id": "r002872_v02",
+    "case_name": "reference_start",
+    "case_description": "Tepat 12 konteks. Penyebutan target eksplisit di pesan konteks pertama; pesan sekarang memakai kata ganti. FOKUS TAMBAHAN: Tepat 12 konteks; nama target hanya pada konteks pertama; utama dia/-nya.",
+    "source": {
+      "source_row": 2872,
+      "source_group": "85c382eefd0f3dd725b4",
+      "teks_chat": "menurutku Hitman ada di antara yang langsung percaya tuduhan pertama tanpa cek fakta",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 13,
+    "pesan_typo_ringan": [],
+    "case_index": 39
+  },
+  "session": {
+    "case_name": "reference_start",
+    "participants": [
+      "Raksa",
+      "Cakra",
+      "Atika",
+      "Rahma",
+      "Nadya"
+    ],
+    "focus_player": "Rahma",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Atika",
+        "teks_chat": "Rahma menyebut waktu mengirim dan membaca sebagai dua waktu berbeda.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Rahma",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Raksa",
+        "teks_chat": "buat semua, itu ada pada dua klausa terpisah ya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Cakra",
+        "teks_chat": "iya, yang pertama diawali pas kirim, yang kedua pas baca.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Nadya",
+        "teks_chat": "gw tadi nyaris menyamakan keduanya sih.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Atika",
+        "teks_chat": "pesan bisa terbaca beberapa saat setelah masuk.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Raksa",
+        "teks_chat": "aplikasi juga nggak memaksa semua orang membaca serentak kok.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Cakra",
+        "teks_chat": "kalau ada durasi jeda, tertulis berapa lama?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Nadya",
+        "teks_chat": "di bagian ini belum ada angka detiknya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Atika",
+        "teks_chat": "ya udah, urutan waktunya aja yang bisa dipakai sekarang.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Raksa",
+        "teks_chat": "aku sudah mengikuti dari klausa pertama sampai akhir.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Cakra",
+        "teks_chat": "oke nih, dua waktu itu nggak ketuker lagi.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Nadya",
+        "teks_chat": "lanjut ke pendapat soal ceritanya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Nadya",
+        "teks_chat": "vote-ku tetap ke dia. Kronologi awalnya terlalu berlubang untuk dianggap alibi yang sah.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Rahma",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "019_codex_revisi1.txt"
+  }
+}

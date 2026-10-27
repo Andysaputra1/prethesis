@@ -1,0 +1,78 @@
+{
+  "job": {
+    "job_id": "r002127_v02",
+    "case_name": "self",
+    "case_description": "Defend diri sendiri atau offend/vote diri sendiri sesuai label. Target = pengirim. FOKUS TAMBAHAN: Bela diri atau permintaan vote diri yang tulus; riwayat menyebut pemain lain sebagai pengalih.",
+    "source": {
+      "source_row": 2127,
+      "source_group": "0a66cc77968ca3c8beda",
+      "teks_chat": "aku bukan pelaku, saya Civilian",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 3,
+    "pesan_typo_ringan": [],
+    "case_index": 12
+  },
+  "session": {
+    "case_name": "self",
+    "participants": [
+      "Aisyah",
+      "Anisa",
+      "Shafa",
+      "Cahya",
+      "Pram"
+    ],
+    "focus_player": "Shafa",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Aisyah",
+        "teks_chat": "Anisa dan Pram masing-masing bilang sudah pakai skill malam itu.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Anisa",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          },
+          {
+            "pemain": "Pram",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Cahya",
+        "teks_chat": "aku sudah melihat pengumuman fase, sekarang masih diskusi.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Shafa",
+        "teks_chat": "aku lambat balas karena pindah jaringan, bukan karena mencari alibi.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Shafa",
+            "relasi": "defend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "027_codex_revisi1.txt"
+  }
+}

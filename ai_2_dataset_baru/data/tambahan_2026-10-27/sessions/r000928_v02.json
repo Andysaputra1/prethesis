@@ -1,0 +1,65 @@
+{
+  "job": {
+    "job_id": "r000928_v02",
+    "case_name": "short_history_1",
+    "case_description": "Awal diskusi dengan tepat 1 pesan sebelumnya. Jangan menambah riwayat fiktif atau mengisi sampai 12. FOKUS TAMBAHAN: Satu konteks. Tepat 25 pembelaan diri setelah dituduh; penuduh bukan target. Sisanya offend/neutral.",
+    "source": {
+      "source_row": 928,
+      "source_group": "7310b4ab139617cdafd7",
+      "teks_chat": "aku warga biasa, perubahan vote-ku tadi cuma karena argumen si Kiki lebih masuk akal",
+      "label_intent": "neutral"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 2,
+    "pesan_typo_ringan": [],
+    "case_index": 15
+  },
+  "session": {
+    "case_name": "short_history_1",
+    "participants": [
+      "Ferdi",
+      "Feby",
+      "Shafa",
+      "Fathia",
+      "Dyah"
+    ],
+    "focus_player": "Fathia",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Dyah",
+        "teks_chat": "aku sudah melihat jawaban Fathia pada chat sebelumnya.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Fathia",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Feby",
+        "teks_chat": "Fathia, kamu masih bisa mengetik sekarang atau chat sedang terkunci?",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Fathia",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "022_codex_revisi1.txt"
+  }
+}

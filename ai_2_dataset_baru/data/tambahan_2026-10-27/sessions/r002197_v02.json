@@ -1,0 +1,65 @@
+{
+  "job": {
+    "job_id": "r002197_v02",
+    "case_name": "neutral_status",
+    "case_description": "Klaim status/role atau pertanyaan informasi saja tanpa pembelaan/serangan; target neutral sesuai ATURAN_LABEL.md. FOKUS TAMBAHAN: Neutral bertarget neutral: nama, kamu jelas, atau jawaban ke penanya khusus.",
+    "source": {
+      "source_row": 2197,
+      "source_group": "d91614cd46d8e587b3d1",
+      "teks_chat": "bentar, tadi siapa yang udah claim? gw Stalker, semalem belum sempat Peek",
+      "label_intent": "neutral"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 2,
+    "pesan_typo_ringan": [],
+    "case_index": 4
+  },
+  "session": {
+    "case_name": "neutral_status",
+    "participants": [
+      "Thalia",
+      "Febi",
+      "Baskara",
+      "Cantika",
+      "Syauqi"
+    ],
+    "focus_player": "Syauqi",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Syauqi",
+        "teks_chat": "gw ingin tanya ke kamu, Baskara, klaim role-mu apa?",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Baskara",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Baskara",
+        "teks_chat": "untuk pertanyaan kepadaku tadi, aku klaim Civilian.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Syauqi",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "048_codex_revisi1.txt"
+  }
+}

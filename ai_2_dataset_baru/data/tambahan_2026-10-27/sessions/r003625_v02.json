@@ -1,0 +1,91 @@
+{
+  "job": {
+    "job_id": "r003625_v02",
+    "case_name": "ambiguous",
+    "case_description": "Beberapa acuan sama-sama mungkin; target tidak_diketahui, bukan nama terakhir. FOKUS TAMBAHAN: Sedikitnya dua calon acuan dia sama kuat; nama terakhir bukan jawaban. Target tidak_diketahui.",
+    "source": {
+      "source_row": 3625,
+      "source_group": "bf85503492fa5867d2ac",
+      "teks_chat": "saya Civilian biasa, belum paham kenapa nama saya masuk vote padahal saya tidak punya kemampuan malam",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 3,
+    "pesan_typo_ringan": [],
+    "case_index": 2
+  },
+  "session": {
+    "case_name": "ambiguous",
+    "participants": [
+      "Anindya",
+      "Okta",
+      "Satya",
+      "Rahma",
+      "Rayhan"
+    ],
+    "focus_player": "",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Rahma",
+        "teks_chat": "nih, Anindya dan Satya dua-duanya lagi cerita soal malam kedua.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Satya",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          },
+          {
+            "pemain": "Anindya",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Okta",
+        "teks_chat": "cerita mereka berdua masuk pada ronde yang sama.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Satya",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          },
+          {
+            "pemain": "Anindya",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Rayhan",
+        "teks_chat": "jangan arahkan vote ke dia dulu; keterlambatan jawabnya masih bisa dijelaskan.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "tidak_diketahui",
+            "relasi": "defend",
+            "bukti_pesan": []
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "001_codex_revisi1.txt"
+  }
+}

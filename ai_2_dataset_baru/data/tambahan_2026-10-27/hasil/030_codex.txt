@@ -1,0 +1,586 @@
+```json
+{
+  "results": [
+    {
+      "job_id": "r003341_v02",
+      "session": {
+        "case_name": "self",
+        "participants": [
+          "Cahya",
+          "Prita",
+          "Noval",
+          "Erlina",
+          "Renata"
+        ],
+        "focus_player": "Cahya",
+        "panggilan": [],
+        "messages": [
+          {
+            "pengirim": "Noval",
+            "teks_chat": "Erlina mengaku Spy, sedangkan Prita belum menulis role.",
+            "label_intent": "neutral",
+            "target": [
+              {
+                "pemain": "Erlina",
+                "relasi": "neutral",
+                "bukti_pesan": [
+                  1
+                ]
+              },
+              {
+                "pemain": "Prita",
+                "relasi": "neutral",
+                "bukti_pesan": [
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "pengirim": "Renata",
+            "teks_chat": "semua yang belum menjelaskan boleh lanjut sekarang.",
+            "label_intent": "neutral",
+            "target": []
+          },
+          {
+            "pengirim": "Cahya",
+            "teks_chat": "aku bukan Hitman, alasan aku menunggu tadi karena belum selesai membaca laporan.",
+            "label_intent": "defend",
+            "target": [
+              {
+                "pemain": "Cahya",
+                "relasi": "defend",
+                "bukti_pesan": [
+                  3
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "job_id": "r001843_v02",
+      "session": {
+        "case_name": "self",
+        "participants": [
+          "Cahya",
+          "Renata",
+          "Okta",
+          "Rengga",
+          "Ayuning"
+        ],
+        "focus_player": "Okta",
+        "panggilan": [],
+        "messages": [
+          {
+            "pengirim": "Ayuning",
+            "teks_chat": "Cahya mengaku Spy, sedangkan Rengga belum menulis role.",
+            "label_intent": "neutral",
+            "target": [
+              {
+                "pemain": "Cahya",
+                "relasi": "neutral",
+                "bukti_pesan": [
+                  1
+                ]
+              },
+              {
+                "pemain": "Rengga",
+                "relasi": "neutral",
+                "bukti_pesan": [
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "pengirim": "Renata",
+            "teks_chat": "semua yang belum menjelaskan boleh lanjut sekarang.",
+            "label_intent": "neutral",
+            "target": []
+          },
+          {
+            "pengirim": "Okta",
+            "teks_chat": "nggak apa aku dibuang sekarang, jadikan aku pilihan vote ronde ini.",
+            "label_intent": "offend",
+            "target": [
+              {
+                "pemain": "Okta",
+                "relasi": "offend",
+                "bukti_pesan": [
+                  3
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "job_id": "r004956_v02",
+      "session": {
+        "case_name": "self",
+        "participants": [
+          "Nayla",
+          "Syakira",
+          "Diandra",
+          "Marsha",
+          "Almira"
+        ],
+        "focus_player": "Nayla",
+        "panggilan": [],
+        "messages": [
+          {
+            "pengirim": "Marsha",
+            "teks_chat": "Diandra bertanya soal nomor ronde; Syakira sedang menyalin catatan vote.",
+            "label_intent": "neutral",
+            "target": [
+              {
+                "pemain": "Syakira",
+                "relasi": "neutral",
+                "bukti_pesan": [
+                  1
+                ]
+              },
+              {
+                "pemain": "Diandra",
+                "relasi": "neutral",
+                "bukti_pesan": [
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "pengirim": "Almira",
+            "teks_chat": "silakan lanjut ke penjelasan berikutnya, waktu diskusi masih ada.",
+            "label_intent": "neutral",
+            "target": []
+          },
+          {
+            "pengirim": "Nayla",
+            "teks_chat": "aku masih membela diriku, tuduhan itu cuma mengulang potongan pesanku tanpa konteks.",
+            "label_intent": "defend",
+            "target": [
+              {
+                "pemain": "Nayla",
+                "relasi": "defend",
+                "bukti_pesan": [
+                  3
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "job_id": "r002005_v02",
+      "session": {
+        "case_name": "self",
+        "participants": [
+          "Satya",
+          "Luthfan",
+          "Lintang",
+          "Arum",
+          "Ajeng"
+        ],
+        "focus_player": "Satya",
+        "panggilan": [],
+        "messages": [
+          {
+            "pengirim": "Luthfan",
+            "teks_chat": "Lintang bertanya soal nomor ronde; Ajeng sedang menyalin catatan vote.",
+            "label_intent": "neutral",
+            "target": [
+              {
+                "pemain": "Ajeng",
+                "relasi": "neutral",
+                "bukti_pesan": [
+                  1
+                ]
+              },
+              {
+                "pemain": "Lintang",
+                "relasi": "neutral",
+                "bukti_pesan": [
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "pengirim": "Arum",
+            "teks_chat": "silakan lanjut ke penjelasan berikutnya, waktu diskusi masih ada.",
+            "label_intent": "neutral",
+            "target": []
+          },
+          {
+            "pengirim": "Satya",
+            "teks_chat": "aku nggak akan menahan keputusan, vote aku dan selesaikan pembahasan ini.",
+            "label_intent": "offend",
+            "target": [
+              {
+                "pemain": "Satya",
+                "relasi": "offend",
+                "bukti_pesan": [
+                  3
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "job_id": "r000921_v02",
+      "session": {
+        "case_name": "self",
+        "participants": [
+          "Baskara",
+          "Keisha",
+          "Satya",
+          "Cahya",
+          "Deandra"
+        ],
+        "focus_player": "Keisha",
+        "panggilan": [],
+        "messages": [
+          {
+            "pengirim": "Baskara",
+            "teks_chat": "aku mencatat pilihan Satya dan Cahya sebelum pembahasan dilanjutkan.",
+            "label_intent": "neutral",
+            "target": [
+              {
+                "pemain": "Satya",
+                "relasi": "neutral",
+                "bukti_pesan": [
+                  1
+                ]
+              },
+              {
+                "pemain": "Cahya",
+                "relasi": "neutral",
+                "bukti_pesan": [
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "pengirim": "Deandra",
+            "teks_chat": "yang ingin memberi tanggapan boleh mengetik di grup.",
+            "label_intent": "neutral",
+            "target": []
+          },
+          {
+            "pengirim": "Keisha",
+            "teks_chat": "jangan seret aku jadi pelaku, layar chatku membeku saat kalian mulai diskusi.",
+            "label_intent": "defend",
+            "target": [
+              {
+                "pemain": "Keisha",
+                "relasi": "defend",
+                "bukti_pesan": [
+                  3
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "job_id": "r003816_v02",
+      "session": {
+        "case_name": "self",
+        "participants": [
+          "Ratih",
+          "Najwa",
+          "Nayla",
+          "Larasati",
+          "Raisa"
+        ],
+        "focus_player": "Nayla",
+        "panggilan": [],
+        "messages": [
+          {
+            "pengirim": "Najwa",
+            "teks_chat": "aku mencatat pilihan Raisa dan Ratih sebelum pembahasan dilanjutkan.",
+            "label_intent": "neutral",
+            "target": [
+              {
+                "pemain": "Raisa",
+                "relasi": "neutral",
+                "bukti_pesan": [
+                  1
+                ]
+              },
+              {
+                "pemain": "Ratih",
+                "relasi": "neutral",
+                "bukti_pesan": [
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "pengirim": "Larasati",
+            "teks_chat": "yang ingin memberi tanggapan boleh mengetik di grup.",
+            "label_intent": "neutral",
+            "target": []
+          },
+          {
+            "pengirim": "Nayla",
+            "teks_chat": "jika kalian ingin menuntaskan vote, aku siap dikeluarkan. Pilih aku.",
+            "label_intent": "offend",
+            "target": [
+              {
+                "pemain": "Nayla",
+                "relasi": "offend",
+                "bukti_pesan": [
+                  3
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "job_id": "r000514_v02",
+      "session": {
+        "case_name": "self",
+        "participants": [
+          "Raisa",
+          "Nayla",
+          "Prita",
+          "Safira",
+          "Wening"
+        ],
+        "focus_player": "Safira",
+        "panggilan": [],
+        "messages": [
+          {
+            "pengirim": "Prita",
+            "teks_chat": "Nayla memakai kata Guard pada pesannya, Raisa hanya menulis nama role.",
+            "label_intent": "neutral",
+            "target": [
+              {
+                "pemain": "Nayla",
+                "relasi": "neutral",
+                "bukti_pesan": [
+                  1
+                ]
+              },
+              {
+                "pemain": "Raisa",
+                "relasi": "neutral",
+                "bukti_pesan": [
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "pengirim": "Wening",
+            "teks_chat": "catatan ronde ini masih terbuka untuk ditambahkan.",
+            "label_intent": "neutral",
+            "target": []
+          },
+          {
+            "pengirim": "Safira",
+            "teks_chat": "aku Stalker, bukan Hitman. Jangan paksa aku mengaku melakukan aksi yang bukan milikku.",
+            "label_intent": "defend",
+            "target": [
+              {
+                "pemain": "Safira",
+                "relasi": "defend",
+                "bukti_pesan": [
+                  3
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "job_id": "r003128_v02",
+      "session": {
+        "case_name": "self",
+        "participants": [
+          "Izza",
+          "Febrian",
+          "Wening",
+          "Febi",
+          "Luthfan"
+        ],
+        "focus_player": "Izza",
+        "panggilan": [],
+        "messages": [
+          {
+            "pengirim": "Luthfan",
+            "teks_chat": "Wening memakai kata Guard pada pesannya, Febi hanya menulis nama role.",
+            "label_intent": "neutral",
+            "target": [
+              {
+                "pemain": "Wening",
+                "relasi": "neutral",
+                "bukti_pesan": [
+                  1
+                ]
+              },
+              {
+                "pemain": "Febi",
+                "relasi": "neutral",
+                "bukti_pesan": [
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "pengirim": "Febrian",
+            "teks_chat": "catatan ronde ini masih terbuka untuk ditambahkan.",
+            "label_intent": "neutral",
+            "target": []
+          },
+          {
+            "pengirim": "Izza",
+            "teks_chat": "aku pasrah saja kali ini; semua vote boleh ditujukan kepadaku.",
+            "label_intent": "offend",
+            "target": [
+              {
+                "pemain": "Izza",
+                "relasi": "offend",
+                "bukti_pesan": [
+                  3
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "job_id": "r003607_v02",
+      "session": {
+        "case_name": "self",
+        "participants": [
+          "Lintang",
+          "Kresna",
+          "Okta",
+          "Thalia",
+          "Nabil"
+        ],
+        "focus_player": "Thalia",
+        "panggilan": [],
+        "messages": [
+          {
+            "pengirim": "Okta",
+            "teks_chat": "Kresna dan Lintang sudah mendapat giliran menjelaskan; sekarang lanjut ke peserta lain.",
+            "label_intent": "neutral",
+            "target": [
+              {
+                "pemain": "Lintang",
+                "relasi": "neutral",
+                "bukti_pesan": [
+                  1
+                ]
+              },
+              {
+                "pemain": "Kresna",
+                "relasi": "neutral",
+                "bukti_pesan": [
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "pengirim": "Nabil",
+            "teks_chat": "aku menyimak pesan berikutnya sambil membaca urutan chat.",
+            "label_intent": "neutral",
+            "target": []
+          },
+          {
+            "pengirim": "Thalia",
+            "teks_chat": "keterlambatanku bukan kode apa-apa, aku sempat kehilangan koneksi dan tidak bersalah.",
+            "label_intent": "defend",
+            "target": [
+              {
+                "pemain": "Thalia",
+                "relasi": "defend",
+                "bukti_pesan": [
+                  3
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "job_id": "r002389_v02",
+      "session": {
+        "case_name": "self",
+        "participants": [
+          "Halim",
+          "Nayla",
+          "Tania",
+          "Nabil",
+          "Prita"
+        ],
+        "focus_player": "Nayla",
+        "panggilan": [],
+        "messages": [
+          {
+            "pengirim": "Tania",
+            "teks_chat": "Nabil dan Halim sudah mendapat giliran menjelaskan; sekarang lanjut ke peserta lain.",
+            "label_intent": "neutral",
+            "target": [
+              {
+                "pemain": "Halim",
+                "relasi": "neutral",
+                "bukti_pesan": [
+                  1
+                ]
+              },
+              {
+                "pemain": "Nabil",
+                "relasi": "neutral",
+                "bukti_pesan": [
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "pengirim": "Prita",
+            "teks_chat": "aku menyimak pesan berikutnya sambil membaca urutan chat.",
+            "label_intent": "neutral",
+            "target": []
+          },
+          {
+            "pengirim": "Nayla",
+            "teks_chat": "aku menerima hasil terburuknya. Daripada menunggu, vote aku keluar sekarang.",
+            "label_intent": "offend",
+            "target": [
+              {
+                "pemain": "Nayla",
+                "relasi": "offend",
+                "bukti_pesan": [
+                  3
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}
+```

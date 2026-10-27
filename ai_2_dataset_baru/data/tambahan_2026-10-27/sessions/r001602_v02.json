@@ -1,0 +1,78 @@
+{
+  "job": {
+    "job_id": "r001602_v02",
+    "case_name": "mixed_relations",
+    "case_description": "Membela satu pemain dan menuduh pemain lain. Intent utama offend; simpan kedua relasi. FOKUS TAMBAHAN: Bela A dan tuduh B; variasi urutan, kata ganti, dan pembelaan dalam anak kalimat.",
+    "source": {
+      "source_row": 1602,
+      "source_group": "41ada24913f752dee2d5",
+      "teks_chat": "gw belum tentu benar, tapi pola si Tio lebih aneh daripada tuduhan kalian ke aku",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 3,
+    "pesan_typo_ringan": [],
+    "case_index": 37
+  },
+  "session": {
+    "case_name": "mixed_relations",
+    "participants": [
+      "Luthfan",
+      "Mahira",
+      "Zahira",
+      "Naura",
+      "Shinta"
+    ],
+    "focus_player": "Naura",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Luthfan",
+        "teks_chat": "Naura baru mengirim lanjutan setelah pesan pertama.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Naura",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Mahira",
+        "teks_chat": "buat semua, hasil yang cuma sebagian bisa dilengkapi dulu.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Zahira",
+        "teks_chat": "Shinta ngaku Stalker padahal hasilnya berubah terus, aku curiga. Naura tetap bersih di mataku.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Naura",
+            "relasi": "defend",
+            "bukti_pesan": [
+              3
+            ]
+          },
+          {
+            "pemain": "Shinta",
+            "relasi": "offend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "014_codex_revisi1.txt"
+  }
+}

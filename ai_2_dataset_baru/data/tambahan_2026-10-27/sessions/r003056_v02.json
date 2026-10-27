@@ -1,0 +1,77 @@
+{
+  "job": {
+    "job_id": "r003056_v02",
+    "case_name": "interruption",
+    "case_description": "Pembahasan target disela obrolan waktu/ronde; kaitan kembali ke target masih jelas. FOKUS TAMBAHAN: Selingan waktu lalu kembali ke target; sertakan pembelaan diri.",
+    "source": {
+      "source_row": 3056,
+      "source_group": "44518130130c1723ff23",
+      "teks_chat": "kalau bukan si Putra, kenapa dia terus menghindari pertanyaan soal Gag Order?",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 4,
+    "pesan_typo_ringan": [],
+    "case_index": 21
+  },
+  "session": {
+    "case_name": "interruption",
+    "participants": [
+      "Kirana",
+      "Marsha",
+      "Halim",
+      "Nadhif",
+      "Ghea"
+    ],
+    "focus_player": "Halim",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Ghea",
+        "teks_chat": "Halim menjelaskan apa yang ingin dilaporkan pada ronde ini.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Halim",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Nadhif",
+        "teks_chat": "masih tiga puluh sembilan detik di sesi diskusi kita.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Kirana",
+        "teks_chat": "iya, pengingat untuk grupnya terbaca dengan jelas.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Marsha",
+        "teks_chat": "aku ingin kembali menyorot Halim, motifnya mempercepat vote terasa seperti melindungi pelaku.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Halim",
+            "relasi": "offend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "045_codex_revisi1.txt"
+  }
+}

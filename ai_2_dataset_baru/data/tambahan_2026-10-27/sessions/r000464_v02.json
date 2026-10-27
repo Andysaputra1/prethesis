@@ -1,0 +1,78 @@
+{
+  "job": {
+    "job_id": "r000464_v02",
+    "case_name": "mixed_relations",
+    "case_description": "Membela satu pemain dan menuduh pemain lain. Intent utama offend; simpan kedua relasi. FOKUS TAMBAHAN: Bela A dan tuduh B; variasi urutan, kata ganti, dan pembelaan dalam anak kalimat.",
+    "source": {
+      "source_row": 464,
+      "source_group": "31a6d12a7f42e996064d",
+      "teks_chat": "aku tidak membela diri dengan panik, aku pakai fakta: semua prediksiku sejauh ini tepat; yang meleset terus itu si J",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 3,
+    "pesan_typo_ringan": [],
+    "case_index": 30
+  },
+  "session": {
+    "case_name": "mixed_relations",
+    "participants": [
+      "Ghina",
+      "Delima",
+      "Wardana",
+      "Mahdi",
+      "Afifah"
+    ],
+    "focus_player": "Delima",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Afifah",
+        "teks_chat": "aku dengar Delima menyebut waktu sebelum fase berganti.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Delima",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Wardana",
+        "teks_chat": "buat grup, hasil yang berbeda malam dibahas bergantian aja.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Ghina",
+        "teks_chat": "bahkan kalau Delima belum buka role, aku tetap menolak vote dia; Mahdi lebih kelihatan menutup-nutupi.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Delima",
+            "relasi": "defend",
+            "bukti_pesan": [
+              3
+            ]
+          },
+          {
+            "pemain": "Mahdi",
+            "relasi": "offend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "014_codex_revisi1.txt"
+  }
+}

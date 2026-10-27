@@ -1,0 +1,131 @@
+{
+  "job": {
+    "job_id": "r000102_v02",
+    "case_name": "reference_start",
+    "case_description": "Tepat 12 konteks. Penyebutan target eksplisit di pesan konteks pertama; pesan sekarang memakai kata ganti. FOKUS TAMBAHAN: Tepat 12 konteks; nama target hanya pada konteks pertama; utama dia/-nya.",
+    "source": {
+      "source_row": 102,
+      "source_group": "6769ad8951e03cf287f7",
+      "teks_chat": "kalau kita rangkum, si M paling banyak dapat keuntungan dari kekacauan ini, vote dia",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 13,
+    "pesan_typo_ringan": [],
+    "case_index": 1
+  },
+  "session": {
+    "case_name": "reference_start",
+    "participants": [
+      "Nayla",
+      "Ghea",
+      "Ghani",
+      "Khalisa",
+      "Kautsar"
+    ],
+    "focus_player": "Ghani",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Khalisa",
+        "teks_chat": "Ghani ganti pilihan pas hitungan vote masih jalan.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Ghani",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Ghea",
+        "teks_chat": "semua masih bisa ganti pilihan di tahap itu?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Nayla",
+        "teks_chat": "bisa, sebelum tombolnya terkunci otomatis.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Kautsar",
+        "teks_chat": "gw lihat angka suaranya sempat naik turun.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Khalisa",
+        "teks_chat": "jumlah sementara belum final sih.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Ghea",
+        "teks_chat": "terus layar hasil muncul setelah hitungannya habis, ya?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Nayla",
+        "teks_chat": "iya, bukan setiap kali ada yang pencet.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Kautsar",
+        "teks_chat": "di sini tombol vote juga sempat tetap nyala kok.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Khalisa",
+        "teks_chat": "berarti ucapan mau vote belum sama dengan suara masuk.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Ghea",
+        "teks_chat": "betul, pengumumannya baru di ujung hitungan.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Nayla",
+        "teks_chat": "aku pengin lihat alasan pindah pilihannya dulu nih.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Kautsar",
+        "teks_chat": "silakan lanjut bahas alasannya, waktunya masih cukup.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Kautsar",
+        "teks_chat": "balik ke orang di pembuka tadi, aku curiga dia sengaja mengacak kronologi.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Ghani",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "016_codex_revisi1.txt"
+  }
+}

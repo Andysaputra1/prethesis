@@ -1,0 +1,71 @@
+{
+  "job": {
+    "job_id": "r004380_v02",
+    "case_name": "agreement",
+    "case_description": "Pesan sekarang menyetujui atau membantah pesan pemain lain di konteks tanpa menyebut ulang nama target. Setuju dengan tuduhan = offend pemain yang dituduh; membantah tuduhan atau setuju dengan pembelaan = defend. Identitas target diwarisi dari pesan yang ditanggapi. FOKUS TAMBAHAN: Setuju/bantah tanpa ulang nama target; sumber pendapat bukan target.",
+    "source": {
+      "source_row": 4380,
+      "source_group": "4dac9151bde438a11bf4",
+      "teks_chat": "yang mencurigakan bukan reaksi gw, melainkan Reza yang tahu terlalu banyak soal target",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 3,
+    "pesan_typo_ringan": [],
+    "case_index": 3
+  },
+  "session": {
+    "case_name": "agreement",
+    "participants": [
+      "Febi",
+      "Rengga",
+      "Wulan",
+      "Halim",
+      "Salsabila"
+    ],
+    "focus_player": "Salsabila",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Halim",
+        "teks_chat": "vote Salsabila jadi pilihanku, alasan pindah suaranya janggal.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Salsabila",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Wulan",
+        "teks_chat": "buat seluruh pemain, tinggal setengah menit lebih dikit.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Febi",
+        "teks_chat": "aku sependapat dengan Halim; kecurigaan itu cukup kuat untuk diteruskan.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Salsabila",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "038_codex_revisi1.txt"
+  }
+}

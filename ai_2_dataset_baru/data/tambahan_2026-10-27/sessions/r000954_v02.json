@@ -1,0 +1,79 @@
+{
+  "job": {
+    "job_id": "r000954_v02",
+    "case_name": "multiple_targets",
+    "case_description": "Dua atau lebih pemain menjadi target relasi yang sama secara jelas. FOKUS TAMBAHAN: Dua pemain bernama dengan relasi sama.",
+    "source": {
+      "source_row": 954,
+      "source_group": "bf1148fc4cb867212b53",
+      "teks_chat": "klaim Spy-ku bukan asal ngomong, aku benar-benar memilih target Guard tadi malam",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 2,
+    "pesan_typo_ringan": [],
+    "case_index": 12
+  },
+  "session": {
+    "case_name": "multiple_targets",
+    "participants": [
+      "Inaya",
+      "Rasyid",
+      "Damar",
+      "Ghina",
+      "Jauhar"
+    ],
+    "focus_player": "Rasyid",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Ghina",
+        "teks_chat": "Rasyid juga Jauhar baru ngomong soal sinyal di ronde ini.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Rasyid",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          },
+          {
+            "pemain": "Jauhar",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Inaya",
+        "teks_chat": "di pihak Jauhar dan Rasyid aku berdiri, keduanya belum terbukti melakukan Hostage.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Rasyid",
+            "relasi": "defend",
+            "bukti_pesan": [
+              2
+            ]
+          },
+          {
+            "pemain": "Jauhar",
+            "relasi": "defend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "042_codex_revisi1.txt"
+  }
+}

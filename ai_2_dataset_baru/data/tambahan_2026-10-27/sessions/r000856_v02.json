@@ -1,0 +1,71 @@
+{
+  "job": {
+    "job_id": "r000856_v02",
+    "case_name": "witness",
+    "case_description": "Nama saksi/korban disebut, tetapi bukan target serangan atau pembelaan. FOKUS TAMBAHAN: Nama sumber/saksi/penuduh bukan target. Sertakan bantahan isi klaim Peek penuduh yang membela pengirim saja.",
+    "source": {
+      "source_row": 856,
+      "source_group": "9ce4eee7edac62ebda1b",
+      "teks_chat": "eh bentar, kita lagi curiga ke siapa? gw Civilian biasa, jangan salah baca diemku",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 3,
+    "pesan_typo_ringan": [],
+    "case_index": 36
+  },
+  "session": {
+    "case_name": "witness",
+    "participants": [
+      "Deandra",
+      "Erlina",
+      "Ghani",
+      "Priska",
+      "Anisa"
+    ],
+    "focus_player": "Deandra",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Anisa",
+        "teks_chat": "nih, Deandra cerita aksi malamnya sebelum menulis pilihan vote.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Deandra",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Erlina",
+        "teks_chat": "obrolan soal role belum selesai, jadi terusin dulu.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Ghani",
+        "teks_chat": "sepemikiran dengan Anisa di bagian ini: telat jawab tidak menjadikan Deandra Hitman.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Deandra",
+            "relasi": "defend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "009_codex_revisi1.txt"
+  }
+}

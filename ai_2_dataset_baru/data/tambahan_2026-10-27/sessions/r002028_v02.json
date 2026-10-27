@@ -1,0 +1,100 @@
+{
+  "job": {
+    "job_id": "r002028_v02",
+    "case_name": "plural_reference",
+    "case_description": "Pesan sekarang memakai mereka/kalian/keduanya/berdua untuk dua pemain atau lebih yang jelas dari konteks, tanpa menyebut ulang nama mereka. Simpan semua pemain itu sebagai target. FOKUS TAMBAHAN: Mereka/keduanya menunjuk dua orang. Sapaan ke pemain ketiga bukan target.",
+    "source": {
+      "source_row": 2028,
+      "source_group": "5bfb187198591eea0b7d",
+      "teks_chat": "sumpah fokus ke Rudi aja, semua bukti kecil mengarah ke dia",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 3,
+    "pesan_typo_ringan": [],
+    "case_index": 7
+  },
+  "session": {
+    "case_name": "plural_reference",
+    "participants": [
+      "Naura",
+      "Nadya",
+      "Nirmala",
+      "Raksa",
+      "Bagaskara"
+    ],
+    "focus_player": "Nirmala",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Naura",
+        "teks_chat": "dua jawaban yang belum selesai itu dari Nadya dan Nirmala.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Nirmala",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          },
+          {
+            "pemain": "Nadya",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Bagaskara",
+        "teks_chat": "aku belum menanggapi dua klaim itu karena masih membacanya.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Nirmala",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          },
+          {
+            "pemain": "Nadya",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Raksa",
+        "teks_chat": "lebih baik vote keduanya, masing-masing mengubah alibi setelah ditanya lagi.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Nirmala",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          },
+          {
+            "pemain": "Nadya",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "034_codex_revisi1.txt"
+  }
+}

@@ -1,0 +1,131 @@
+{
+  "job": {
+    "job_id": "r003525_v02",
+    "case_name": "reference_start",
+    "case_description": "Tepat 12 konteks. Penyebutan target eksplisit di pesan konteks pertama; pesan sekarang memakai kata ganti. FOKUS TAMBAHAN: Tepat 12 konteks; nama target hanya pada konteks pertama; utama dia/-nya.",
+    "source": {
+      "source_row": 3525,
+      "source_group": "0974177122cbe446d989",
+      "teks_chat": "tenang, gw Stalker. Si B aman dari hasil peek gw",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 13,
+    "pesan_typo_ringan": [],
+    "case_index": 14
+  },
+  "session": {
+    "case_name": "reference_start",
+    "participants": [
+      "Shinta",
+      "Kresna",
+      "Rasyid",
+      "Prita",
+      "Ayuning"
+    ],
+    "focus_player": "Shinta",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Kresna",
+        "teks_chat": "klaim Shinta muncul dua kali, yang kedua ada angka malamnya.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Shinta",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Prita",
+        "teks_chat": "teks yang pertama masih bisa dilihat di atas nggak?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Ayuning",
+        "teks_chat": "masih, cuma kepisah beberapa balasan grup.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Rasyid",
+        "teks_chat": "gw lihat nama role di dua pesan itu sama.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Kresna",
+        "teks_chat": "yang bertambah memang angka malam aja sih.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Prita",
+        "teks_chat": "buat semua, baca keduanya sesuai urutan kirim dulu.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Ayuning",
+        "teks_chat": "ada tanda bintang sebelum angka di pesan kedua.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Rasyid",
+        "teks_chat": "iya kok, bentuknya seperti koreksi tulisan.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Kresna",
+        "teks_chat": "alasan koreksinya belum disebut pada baris itu.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Prita",
+        "teks_chat": "aku belum melihat pesan sesudahnya menjelaskan lagi.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Ayuning",
+        "teks_chat": "dua versi tulisannya masih kelihatan nih.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Rasyid",
+        "teks_chat": "oke, sekarang pendapat tentang klaim itu bisa dilanjutkan.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Rasyid",
+        "teks_chat": "orang yang kita bahas sejak awal itu bersih menurutku, dia cuma belum selesai mengetik.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Shinta",
+            "relasi": "defend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "017_codex_revisi1.txt"
+  }
+}

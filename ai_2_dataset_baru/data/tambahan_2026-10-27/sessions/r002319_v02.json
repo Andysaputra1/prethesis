@@ -1,0 +1,79 @@
+{
+  "job": {
+    "job_id": "r002319_v02",
+    "case_name": "multiple_targets",
+    "case_description": "Dua atau lebih pemain menjadi target relasi yang sama secara jelas. FOKUS TAMBAHAN: Dua pemain bernama dengan relasi sama.",
+    "source": {
+      "source_row": 2319,
+      "source_group": "cb89a7513166a9dadefc",
+      "teks_chat": "fix aku bukan Hitman, aku warga yang cuma bisa ikut voting",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 2,
+    "pesan_typo_ringan": [],
+    "case_index": 4
+  },
+  "session": {
+    "case_name": "multiple_targets",
+    "participants": [
+      "Nirmala",
+      "Feby",
+      "Niken",
+      "Aisyah",
+      "Astri"
+    ],
+    "focus_player": "Niken",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Astri",
+        "teks_chat": "yang barusan nanya hasil malam itu Niken sama Nirmala.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Niken",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          },
+          {
+            "pemain": "Nirmala",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Aisyah",
+        "teks_chat": "Niken bukan Hitman, Nirmala juga aman. Aku dapat hasil Civilian untuk keduanya.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Niken",
+            "relasi": "defend",
+            "bukti_pesan": [
+              2
+            ]
+          },
+          {
+            "pemain": "Nirmala",
+            "relasi": "defend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "041_codex_revisi1.txt"
+  }
+}

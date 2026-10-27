@@ -1,0 +1,71 @@
+{
+  "job": {
+    "job_id": "r000576_v02",
+    "case_name": "witness",
+    "case_description": "Nama saksi/korban disebut, tetapi bukan target serangan atau pembelaan. FOKUS TAMBAHAN: Nama sumber/saksi/penuduh bukan target. Sertakan bantahan isi klaim Peek penuduh yang membela pengirim saja.",
+    "source": {
+      "source_row": 576,
+      "source_group": "e67244a43c586cd0d0da",
+      "teks_chat": "kalau aku hitman, ngapain tadi ngebantah rencana vote yang gampang itu?",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 3,
+    "pesan_typo_ringan": [],
+    "case_index": 12
+  },
+  "session": {
+    "case_name": "witness",
+    "participants": [
+      "Raksa",
+      "Naura",
+      "Tirta",
+      "Raisa",
+      "Tria"
+    ],
+    "focus_player": "Raisa",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Naura",
+        "teks_chat": "Raisa baru mengirim lanjutan setelah pesan pertama.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Raisa",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Tirta",
+        "teks_chat": "hasil malam bisa dibahas setelah pengantar klaimnya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Tria",
+        "teks_chat": "kalau mengikuti urutan yang diceritakan Naura, Raisa justru bebas dari tuduhan malam itu.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Raisa",
+            "relasi": "defend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "007_codex_revisi1.txt"
+  }
+}

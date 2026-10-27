@@ -1,0 +1,78 @@
+{
+  "job": {
+    "job_id": "r004829_v02",
+    "case_name": "mixed_relations",
+    "case_description": "Membela satu pemain dan menuduh pemain lain. Intent utama offend; simpan kedua relasi. FOKUS TAMBAHAN: Bela A dan tuduh B; variasi urutan, kata ganti, dan pembelaan dalam anak kalimat.",
+    "source": {
+      "source_row": 4829,
+      "source_group": "853d4fe6bb8ff76b7e59",
+      "teks_chat": "vote kita jangan terpencar, target paling aman buat dieksekusi adalah si W",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 3,
+    "pesan_typo_ringan": [],
+    "case_index": 46
+  },
+  "session": {
+    "case_name": "mixed_relations",
+    "participants": [
+      "Tania",
+      "Erlina",
+      "Tirta",
+      "Luthfan",
+      "Rayhan"
+    ],
+    "focus_player": "Tania",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Erlina",
+        "teks_chat": "Tania menjelaskan apa yang ingin dilaporkan pada ronde ini.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Tania",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Rayhan",
+        "teks_chat": "silakan kirim penjelasan berikutnya, kolom ketiknya masih ada.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Tirta",
+        "teks_chat": "walaupun Tania belum menjawab panjang, aku yakin dia bersih; Luthfan malah terlalu sibuk memelintir cerita.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Tania",
+            "relasi": "defend",
+            "bukti_pesan": [
+              3
+            ]
+          },
+          {
+            "pemain": "Luthfan",
+            "relasi": "offend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "015_codex_revisi1.txt"
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "job": {
+    "job_id": "r003063_v02",
+    "case_name": "witness",
+    "case_description": "Nama saksi/korban disebut, tetapi bukan target serangan atau pembelaan. FOKUS TAMBAHAN: Nama sumber/saksi/penuduh bukan target. Sertakan bantahan isi klaim Peek penuduh yang membela pengirim saja.",
+    "source": {
+      "source_row": 3063,
+      "source_group": "7df09f9d05951432b0b9",
+      "teks_chat": "mereka yang langsung kompak membela si Sari terasa seperti satu kubu Hitman",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 3,
+    "pesan_typo_ringan": [],
+    "case_index": 25
+  },
+  "session": {
+    "case_name": "witness",
+    "participants": [
+      "Sekar",
+      "Mutiara",
+      "Ghea",
+      "Utari",
+      "Priska"
+    ],
+    "focus_player": "Sekar",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Ghea",
+        "teks_chat": "Sekar sudah cerita soal malam tadi, bagian akhirnya baru masuk nih.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Sekar",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Priska",
+        "teks_chat": "buat grup, pertanyaan berikutnya boleh sekalian dikirim.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Mutiara",
+        "teks_chat": "jangan keliru sasarannya, dari kesaksian Ghea aku justru memilih vote Sekar.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Sekar",
+            "relasi": "offend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "008_codex_revisi1.txt"
+  }
+}

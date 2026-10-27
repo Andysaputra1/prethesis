@@ -1,0 +1,131 @@
+{
+  "job": {
+    "job_id": "r000602_v02",
+    "case_name": "reference_start",
+    "case_description": "Tepat 12 konteks. Penyebutan target eksplisit di pesan konteks pertama; pesan sekarang memakai kata ganti. FOKUS TAMBAHAN: Tepat 12 konteks; nama target hanya pada konteks pertama; utama dia/-nya.",
+    "source": {
+      "source_row": 602,
+      "source_group": "78438b78fe28e87acd29",
+      "teks_chat": "gw bukan Hitman, dari awal malah paling sering ngajak bahas pola vote",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 13,
+    "pesan_typo_ringan": [],
+    "case_index": 10
+  },
+  "session": {
+    "case_name": "reference_start",
+    "participants": [
+      "Bagaskara",
+      "Amel",
+      "Feby",
+      "Tania",
+      "Pram"
+    ],
+    "focus_player": "Bagaskara",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Tania",
+        "teks_chat": "Bagaskara kirim jawaban tepat setelah lampu fase malam mati.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Bagaskara",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Feby",
+        "teks_chat": "lampu fase mati dulu atau chat aktif dulu di layar kalian?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Amel",
+        "teks_chat": "di sini layarnya ganti, baru kolom ketik muncul.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Pram",
+        "teks_chat": "aku lihat urutan yang sama, nggak barengan persis.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Tania",
+        "teks_chat": "gw sih baru baca pesan setelah kolomnya terbuka.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Feby",
+        "teks_chat": "terus ada jeda sebelum tombol vote muncul.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Amel",
+        "teks_chat": "iya kok, diskusinya tetap jalan sebelum sesi memilih.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Pram",
+        "teks_chat": "buat semua, kita lagi bahas waktu kirim, bukan waktu skill ya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Tania",
+        "teks_chat": "aksi malamnya udah selesai sebelum bagian chat ini.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Feby",
+        "teks_chat": "oke, jadi dua waktunya nggak harus sama.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Amel",
+        "teks_chat": "nah, urutannya sudah nyambung nih.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Pram",
+        "teks_chat": "lanjut ke jawaban yang masuk setelah perubahan fase tadi.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Pram",
+        "teks_chat": "kembali ke dia, aku nggak melihat alasan buat menganggapnya Hitman hanya dari chat yang putus.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Bagaskara",
+            "relasi": "defend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "017_codex_revisi1.txt"
+  }
+}

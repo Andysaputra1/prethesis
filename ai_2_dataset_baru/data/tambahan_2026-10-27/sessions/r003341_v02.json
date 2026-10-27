@@ -1,0 +1,78 @@
+{
+  "job": {
+    "job_id": "r003341_v02",
+    "case_name": "self",
+    "case_description": "Defend diri sendiri atau offend/vote diri sendiri sesuai label. Target = pengirim. FOKUS TAMBAHAN: Bela diri atau permintaan vote diri yang tulus; riwayat menyebut pemain lain sebagai pengalih.",
+    "source": {
+      "source_row": 3341,
+      "source_group": "a3b9563f82f3d3fab119",
+      "teks_chat": "fix bukan aku pelakunya, malam tadi aku tidak punya aksi apa pun",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 3,
+    "pesan_typo_ringan": [],
+    "case_index": 40
+  },
+  "session": {
+    "case_name": "self",
+    "participants": [
+      "Cahya",
+      "Prita",
+      "Noval",
+      "Erlina",
+      "Renata"
+    ],
+    "focus_player": "Cahya",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Noval",
+        "teks_chat": "Erlina serta Prita sama-sama menyebut chat sempat terkunci.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Erlina",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          },
+          {
+            "pemain": "Prita",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Renata",
+        "teks_chat": "aku mendengarkan dulu sebelum mengarahkan pilihan.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Cahya",
+        "teks_chat": "aku bukan Hitman, alasan aku menunggu tadi karena belum selesai membaca laporan.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Cahya",
+            "relasi": "defend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "030_codex_revisi1.txt"
+  }
+}

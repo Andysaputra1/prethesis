@@ -1,0 +1,131 @@
+{
+  "job": {
+    "job_id": "r002284_v02",
+    "case_name": "reference_start",
+    "case_description": "Tepat 12 konteks. Penyebutan target eksplisit di pesan konteks pertama; pesan sekarang memakai kata ganti. FOKUS TAMBAHAN: Tepat 12 konteks; nama target hanya pada konteks pertama; utama dia/-nya.",
+    "source": {
+      "source_row": 2284,
+      "source_group": "f64314760d907e6f1463",
+      "teks_chat": "aku bukan hitman, role-ku spy dan malam ini harus pilih target guard yang berbeda",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 13,
+    "pesan_typo_ringan": [],
+    "case_index": 0
+  },
+  "session": {
+    "case_name": "reference_start",
+    "participants": [
+      "Asih",
+      "Naura",
+      "Mahira",
+      "Ayuning",
+      "Gendis"
+    ],
+    "focus_player": "Gendis",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Ayuning",
+        "teks_chat": "Gendis tadi jawab soal malam kedua pas fase udah ganti.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Gendis",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Mahira",
+        "teks_chat": "malam kedua itu yang barusan kelar, kan, semuanya?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Asih",
+        "teks_chat": "iya, habis diskusi yang panjang tadi baru masuk situ.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Naura",
+        "teks_chat": "gw sempat kira masih ngomongin malam pertama sih.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Ayuning",
+        "teks_chat": "nomor di pojok layar udah naik kok.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Mahira",
+        "teks_chat": "oh, berarti urutannya diskusi dulu baru aksi berikutnya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Asih",
+        "teks_chat": "buat semua, hasil skill muncul sebelum chat dibuka nggak?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Naura",
+        "teks_chat": "di layarku hasilnya dulu, baru bisa ngetik.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Ayuning",
+        "teks_chat": "aku juga lihat urutannya begitu, tanpa hitungan detik.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Mahira",
+        "teks_chat": "nah, beda waktu baca hasil sama waktu kirim pesan nih.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Asih",
+        "teks_chat": "nggak semua orang langsung ngetik begitu hasil muncul.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Naura",
+        "teks_chat": "oke, lanjut soal jawaban yang tadi masuk setelah fase ganti.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Naura",
+        "teks_chat": "setelah kita urutkan dari awal, dia tidak bersalah; jeda chat tadi bukan bukti aksi Hitman.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Gendis",
+            "relasi": "defend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "016_codex_revisi1.txt"
+  }
+}

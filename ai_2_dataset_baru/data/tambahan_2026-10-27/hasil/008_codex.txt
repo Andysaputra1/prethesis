@@ -1,0 +1,516 @@
+```json
+{
+  "results": [
+    {
+      "job_id": "r001052_v02",
+      "session": {
+        "case_name": "witness",
+        "participants": [
+          "Nadhif",
+          "Wardana",
+          "Khalisa",
+          "Savira",
+          "Larasati"
+        ],
+        "focus_player": "Savira",
+        "panggilan": [],
+        "messages": [
+          {
+            "pengirim": "Wardana",
+            "teks_chat": "aku punya salinan urutan chat Savira; nanti bisa dipakai buat pembahasan.",
+            "label_intent": "neutral",
+            "target": [
+              {
+                "pemain": "Savira",
+                "relasi": "neutral",
+                "bukti_pesan": [
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "pengirim": "Nadhif",
+            "teks_chat": "semua boleh menanggapi catatan yang sudah dibagikan.",
+            "label_intent": "neutral",
+            "target": []
+          },
+          {
+            "pengirim": "Larasati",
+            "teks_chat": "jangan lempar vote ke Savira; laporan Wardana hanya menjelaskan pesan terlambat, bukan bukti kejahatan.",
+            "label_intent": "defend",
+            "target": [
+              {
+                "pemain": "Savira",
+                "relasi": "defend",
+                "bukti_pesan": [
+                  3
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "job_id": "r003386_v02",
+      "session": {
+        "case_name": "witness",
+        "participants": [
+          "Rahma",
+          "Tisna",
+          "Diandra",
+          "Fathia",
+          "Khalisa"
+        ],
+        "focus_player": "Tisna",
+        "panggilan": [],
+        "messages": [
+          {
+            "pengirim": "Rahma",
+            "teks_chat": "aku punya salinan urutan chat Tisna; nanti bisa dipakai buat pembahasan.",
+            "label_intent": "neutral",
+            "target": [
+              {
+                "pemain": "Tisna",
+                "relasi": "neutral",
+                "bukti_pesan": [
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "pengirim": "Fathia",
+            "teks_chat": "urutan pesannya masih tersimpan di chat grup.",
+            "label_intent": "neutral",
+            "target": []
+          },
+          {
+            "pengirim": "Khalisa",
+            "teks_chat": "Rahma mengingatkan satu detail yang penting: pengakuan Tisna palsu menurutku.",
+            "label_intent": "offend",
+            "target": [
+              {
+                "pemain": "Tisna",
+                "relasi": "offend",
+                "bukti_pesan": [
+                  3
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "job_id": "r003315_v02",
+      "session": {
+        "case_name": "witness",
+        "participants": [
+          "Cakra",
+          "Haikal",
+          "Yudhis",
+          "Tania",
+          "Kemal"
+        ],
+        "focus_player": "Haikal",
+        "panggilan": [],
+        "messages": [
+          {
+            "pengirim": "Yudhis",
+            "teks_chat": "hasil Peek yang aku laporkan menyebut Haikal Hitman, aku curiga Haikal.",
+            "label_intent": "offend",
+            "target": [
+              {
+                "pemain": "Haikal",
+                "relasi": "offend",
+                "bukti_pesan": [
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "pengirim": "Cakra",
+            "teks_chat": "silakan lanjut, kolom diskusinya masih terbuka.",
+            "label_intent": "neutral",
+            "target": []
+          },
+          {
+            "pengirim": "Haikal",
+            "teks_chat": "klaim Peek dari Yudhis tidak sesuai role-ku, aku Stalker dan tuduhan itu salah.",
+            "label_intent": "defend",
+            "target": [
+              {
+                "pemain": "Haikal",
+                "relasi": "defend",
+                "bukti_pesan": [
+                  3
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "job_id": "r001585_v02",
+      "session": {
+        "case_name": "witness",
+        "participants": [
+          "Tsania",
+          "Kinanti",
+          "Rizki",
+          "Ajeng",
+          "Salma"
+        ],
+        "focus_player": "Rizki",
+        "panggilan": [],
+        "messages": [
+          {
+            "pengirim": "Salma",
+            "teks_chat": "catatanku tentang Rizki sudah kubagikan ke grup sebelum sesi ini.",
+            "label_intent": "neutral",
+            "target": [
+              {
+                "pemain": "Rizki",
+                "relasi": "neutral",
+                "bukti_pesan": [
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "pengirim": "Ajeng",
+            "teks_chat": "kita masih membahas ringkasan ronde ini.",
+            "label_intent": "neutral",
+            "target": []
+          },
+          {
+            "pengirim": "Tsania",
+            "teks_chat": "menurut catatan yang dibagikan Salma, Rizki tahu detail yang belum dibahas; aku curiga berat.",
+            "label_intent": "offend",
+            "target": [
+              {
+                "pemain": "Rizki",
+                "relasi": "offend",
+                "bukti_pesan": [
+                  3
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "job_id": "r003253_v02",
+      "session": {
+        "case_name": "witness",
+        "participants": [
+          "Damar",
+          "Afifah",
+          "Ayuning",
+          "Ghina",
+          "Kirana"
+        ],
+        "focus_player": "Afifah",
+        "panggilan": [],
+        "messages": [
+          {
+            "pengirim": "Ghina",
+            "teks_chat": "aku menyimpan laporan soal Afifah, termasuk bagian nomor malam dan klaim role.",
+            "label_intent": "neutral",
+            "target": [
+              {
+                "pemain": "Afifah",
+                "relasi": "neutral",
+                "bukti_pesan": [
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "pengirim": "Ayuning",
+            "teks_chat": "aku sedang menyalin pesan ke catatan sendiri.",
+            "label_intent": "neutral",
+            "target": []
+          },
+          {
+            "pengirim": "Kirana",
+            "teks_chat": "aku percaya pembelaan Afifah setelah dengar penjelasan Ghina, waktunya masih cocok.",
+            "label_intent": "defend",
+            "target": [
+              {
+                "pemain": "Afifah",
+                "relasi": "defend",
+                "bukti_pesan": [
+                  3
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "job_id": "r003063_v02",
+      "session": {
+        "case_name": "witness",
+        "participants": [
+          "Sekar",
+          "Mutiara",
+          "Ghea",
+          "Utari",
+          "Priska"
+        ],
+        "focus_player": "Sekar",
+        "panggilan": [],
+        "messages": [
+          {
+            "pengirim": "Ghea",
+            "teks_chat": "aku menyimpan laporan soal Sekar, termasuk bagian nomor malam dan klaim role.",
+            "label_intent": "neutral",
+            "target": [
+              {
+                "pemain": "Sekar",
+                "relasi": "neutral",
+                "bukti_pesan": [
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "pengirim": "Priska",
+            "teks_chat": "semua boleh menanggapi catatan yang sudah dibagikan.",
+            "label_intent": "neutral",
+            "target": []
+          },
+          {
+            "pengirim": "Mutiara",
+            "teks_chat": "jangan keliru sasarannya, dari kesaksian Ghea aku justru memilih vote Sekar.",
+            "label_intent": "offend",
+            "target": [
+              {
+                "pemain": "Sekar",
+                "relasi": "offend",
+                "bukti_pesan": [
+                  3
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "job_id": "r003626_v02",
+      "session": {
+        "case_name": "witness",
+        "participants": [
+          "Embun",
+          "Cahya",
+          "Baskara",
+          "Mutiara",
+          "Shafa"
+        ],
+        "focus_player": "Baskara",
+        "panggilan": [],
+        "messages": [
+          {
+            "pengirim": "Mutiara",
+            "teks_chat": "hasil Peek yang aku laporkan menyebut Baskara Hitman, aku curiga Baskara.",
+            "label_intent": "offend",
+            "target": [
+              {
+                "pemain": "Baskara",
+                "relasi": "offend",
+                "bukti_pesan": [
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "pengirim": "Cahya",
+            "teks_chat": "urutan pesannya masih tersimpan di chat grup.",
+            "label_intent": "neutral",
+            "target": []
+          },
+          {
+            "pengirim": "Baskara",
+            "teks_chat": "aku menolak kesimpulan Mutiara tentang diriku; beda pendapat bukan bukti aku pelaku.",
+            "label_intent": "defend",
+            "target": [
+              {
+                "pemain": "Baskara",
+                "relasi": "defend",
+                "bukti_pesan": [
+                  3
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "job_id": "r000284_v02",
+      "session": {
+        "case_name": "witness",
+        "participants": [
+          "Zafran",
+          "Ratih",
+          "Rizki",
+          "Kautsar",
+          "Aksara"
+        ],
+        "focus_player": "Kautsar",
+        "panggilan": [],
+        "messages": [
+          {
+            "pengirim": "Rizki",
+            "teks_chat": "ada ringkasan pesan Kautsar di catatanku; isinya bisa kita baca bersama.",
+            "label_intent": "neutral",
+            "target": [
+              {
+                "pemain": "Kautsar",
+                "relasi": "neutral",
+                "bukti_pesan": [
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "pengirim": "Aksara",
+            "teks_chat": "silakan lanjut, kolom diskusinya masih terbuka.",
+            "label_intent": "neutral",
+            "target": []
+          },
+          {
+            "pengirim": "Zafran",
+            "teks_chat": "Kautsar seperti menyiapkan alibi palsu, itu kesimpulanku dari cerita Rizki tadi.",
+            "label_intent": "offend",
+            "target": [
+              {
+                "pemain": "Kautsar",
+                "relasi": "offend",
+                "bukti_pesan": [
+                  3
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "job_id": "r005143_v02",
+      "session": {
+        "case_name": "witness",
+        "participants": [
+          "Anisa",
+          "Ratih",
+          "Najwa",
+          "Niken",
+          "Raisa"
+        ],
+        "focus_player": "Niken",
+        "panggilan": [],
+        "messages": [
+          {
+            "pengirim": "Raisa",
+            "teks_chat": "aku baru selesai menyalin keterangan Niken ke ringkasan ronde.",
+            "label_intent": "neutral",
+            "target": [
+              {
+                "pemain": "Niken",
+                "relasi": "neutral",
+                "bukti_pesan": [
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "pengirim": "Ratih",
+            "teks_chat": "kita masih membahas ringkasan ronde ini.",
+            "label_intent": "neutral",
+            "target": []
+          },
+          {
+            "pengirim": "Anisa",
+            "teks_chat": "hasil yang diceritakan Raisa menunjukkan Niken Civilian, jadi aku bela Niken.",
+            "label_intent": "defend",
+            "target": [
+              {
+                "pemain": "Niken",
+                "relasi": "defend",
+                "bukti_pesan": [
+                  3
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "job_id": "r000182_v02",
+      "session": {
+        "case_name": "witness",
+        "participants": [
+          "Tsania",
+          "Salma",
+          "Tisna",
+          "Hilmi",
+          "Aisyah"
+        ],
+        "focus_player": "Hilmi",
+        "panggilan": [],
+        "messages": [
+          {
+            "pengirim": "Tsania",
+            "teks_chat": "aku baru selesai menyalin keterangan Hilmi ke ringkasan ronde.",
+            "label_intent": "neutral",
+            "target": [
+              {
+                "pemain": "Hilmi",
+                "relasi": "neutral",
+                "bukti_pesan": [
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "pengirim": "Aisyah",
+            "teks_chat": "aku sedang menyalin pesan ke catatan sendiri.",
+            "label_intent": "neutral",
+            "target": []
+          },
+          {
+            "pengirim": "Tisna",
+            "teks_chat": "yang kutangkap dari info Tsania, Hilmi sengaja menyembunyikan alasan pindah vote.",
+            "label_intent": "offend",
+            "target": [
+              {
+                "pemain": "Hilmi",
+                "relasi": "offend",
+                "bukti_pesan": [
+                  3
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}
+```

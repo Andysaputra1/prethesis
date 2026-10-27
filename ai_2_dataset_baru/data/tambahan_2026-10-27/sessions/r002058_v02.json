@@ -1,0 +1,77 @@
+{
+  "job": {
+    "job_id": "r002058_v02",
+    "case_name": "interruption",
+    "case_description": "Pembahasan target disela obrolan waktu/ronde; kaitan kembali ke target masih jelas. FOKUS TAMBAHAN: Selingan waktu lalu kembali ke target; sertakan pembelaan diri.",
+    "source": {
+      "source_row": 2058,
+      "source_group": "ef463bf5b52d474c2035",
+      "teks_chat": "V kena Gag Order tepat setelah menyebut urutan malam, jadi vote tribunal kita arahkan ke W",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 4,
+    "pesan_typo_ringan": [],
+    "case_index": 23
+  },
+  "session": {
+    "case_name": "interruption",
+    "participants": [
+      "Nadya",
+      "Haris",
+      "Izza",
+      "Amel",
+      "Khansa"
+    ],
+    "focus_player": "Khansa",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Haris",
+        "teks_chat": "gw belum menanggapi, baru selesai baca pesan Khansa.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Khansa",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Nadya",
+        "teks_chat": "semuanya, tersisa delapan belas detik buat kalimat terakhir.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Izza",
+        "teks_chat": "oke kok, waktunya belum habis, lanjutkan saja obrolannya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Amel",
+        "teks_chat": "oke timer lanjut, aku akan vote Khansa. Cerita soal Guard-nya kedengaran ngarang.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Khansa",
+            "relasi": "offend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "045_codex_revisi1.txt"
+  }
+}

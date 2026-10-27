@@ -1,0 +1,65 @@
+{
+  "job": {
+    "job_id": "r001157_v02",
+    "case_name": "neutral_status",
+    "case_description": "Klaim status/role atau pertanyaan informasi saja tanpa pembelaan/serangan; target neutral sesuai ATURAN_LABEL.md. FOKUS TAMBAHAN: Neutral bertarget neutral: nama, kamu jelas, atau jawaban ke penanya khusus.",
+    "source": {
+      "source_row": 1157,
+      "source_group": "5dbc431705e5c8018103",
+      "teks_chat": "Stalker, lu sudah pernah peek si D belum? kalau iya, kasih hasilnya sekarang sebelum tribunal ditutup",
+      "label_intent": "neutral"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 2,
+    "pesan_typo_ringan": [],
+    "case_index": 1
+  },
+  "session": {
+    "case_name": "neutral_status",
+    "participants": [
+      "Wardana",
+      "Habib",
+      "Almira",
+      "Rasyid",
+      "Baskara"
+    ],
+    "focus_player": "Habib",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Habib",
+        "teks_chat": "Almira, role apa yang mau kamu ungkap sekarang?",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Almira",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Almira",
+        "teks_chat": "aku Spy, menjawab pertanyaanmu barusan soal role.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Habib",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "048_codex_revisi1.txt"
+  }
+}

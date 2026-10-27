@@ -1,0 +1,57 @@
+{
+  "job": {
+    "job_id": "r000257_v02",
+    "case_name": "short_history_1",
+    "case_description": "Awal diskusi dengan tepat 1 pesan sebelumnya. Jangan menambah riwayat fiktif atau mengisi sampai 12. FOKUS TAMBAHAN: Satu konteks. Tepat 25 pembelaan diri setelah dituduh; penuduh bukan target. Sisanya offend/neutral.",
+    "source": {
+      "source_row": 257,
+      "source_group": "7fdfc75a9c6589540e6a",
+      "teks_chat": "si Maya kelihatan seperti sedang mengarahkan kita ke kambing hitam, kemungkinan dia Hitman",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 2,
+    "pesan_typo_ringan": [],
+    "case_index": 29
+  },
+  "session": {
+    "case_name": "short_history_1",
+    "participants": [
+      "Feby",
+      "Thalia",
+      "Nadira",
+      "Mahdi",
+      "Isna"
+    ],
+    "focus_player": "Feby",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Feby",
+        "teks_chat": "gw Stalker dan sudah pernah Peek sejak permainan mulai.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Isna",
+        "teks_chat": "aku curiga kamu sengaja memakai klaim itu buat menghindari vote.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Feby",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "023_codex_revisi1.txt"
+  }
+}

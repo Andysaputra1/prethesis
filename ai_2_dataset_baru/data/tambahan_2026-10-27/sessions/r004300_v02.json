@@ -1,0 +1,71 @@
+{
+  "job": {
+    "job_id": "r004300_v02",
+    "case_name": "witness",
+    "case_description": "Nama saksi/korban disebut, tetapi bukan target serangan atau pembelaan. FOKUS TAMBAHAN: Nama sumber/saksi/penuduh bukan target. Sertakan bantahan isi klaim Peek penuduh yang membela pengirim saja.",
+    "source": {
+      "source_row": 4300,
+      "source_group": "1a0c3eeca8c46cd99424",
+      "teks_chat": "telat jawab bukan berarti jahat, justru Sinta yang jawabannya berubah-ubah",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 3,
+    "pesan_typo_ringan": [],
+    "case_index": 43
+  },
+  "session": {
+    "case_name": "witness",
+    "participants": [
+      "Sakti",
+      "Kirana",
+      "Halim",
+      "Delima",
+      "Mahdi"
+    ],
+    "focus_player": "Kirana",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Halim",
+        "teks_chat": "gw sempat baca pengantar klaim Kirana sebelum hasilnya masuk.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Kirana",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Delima",
+        "teks_chat": "semua bisa membaca klaim yang sudah dikirim di atas.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Sakti",
+        "teks_chat": "hasil yang disebut Halim memberatkan Kirana; aku akan taruh vote ke Kirana.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Kirana",
+            "relasi": "offend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "010_codex_revisi1.txt"
+  }
+}

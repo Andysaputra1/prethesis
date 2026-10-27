@@ -1,0 +1,91 @@
+{
+  "job": {
+    "job_id": "r003965_v02",
+    "case_name": "ambiguous",
+    "case_description": "Beberapa acuan sama-sama mungkin; target tidak_diketahui, bukan nama terakhir. FOKUS TAMBAHAN: Sedikitnya dua calon acuan dia sama kuat; nama terakhir bukan jawaban. Target tidak_diketahui.",
+    "source": {
+      "source_row": 3965,
+      "source_group": "b7dbb9f6bb5ebf29d29d",
+      "teks_chat": "Kenapa F tiba-tiba yakin G aman? Kalian punya info guard atau cuma tebakan?",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 3,
+    "pesan_typo_ringan": [],
+    "case_index": 41
+  },
+  "session": {
+    "case_name": "ambiguous",
+    "participants": [
+      "Bagaskara",
+      "Kautsar",
+      "Pram",
+      "Aksara",
+      "Najwa"
+    ],
+    "focus_player": "",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Aksara",
+        "teks_chat": "Kautsar serta Najwa sama-sama menyebut chat sempat terkunci.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Kautsar",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          },
+          {
+            "pemain": "Najwa",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Pram",
+        "teks_chat": "aku lihat jawaban keduanya masih sebatas yang tadi.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Kautsar",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          },
+          {
+            "pemain": "Najwa",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Bagaskara",
+        "teks_chat": "dia terdengar ngarang waktu menyebut hasil skill, jangan jadikan omongannya patokan.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "tidak_diketahui",
+            "relasi": "offend",
+            "bukti_pesan": []
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "005_codex_revisi1.txt"
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "job": {
+    "job_id": "r004266_v02",
+    "case_name": "witness",
+    "case_description": "Nama saksi/korban disebut, tetapi bukan target serangan atau pembelaan. FOKUS TAMBAHAN: Nama sumber/saksi/penuduh bukan target. Sertakan bantahan isi klaim Peek penuduh yang membela pengirim saja.",
+    "source": {
+      "source_row": 4266,
+      "source_group": "225a049f7b36f2c75515",
+      "teks_chat": "gw nggak ikut debat, tapi pilihan paling aman menurutku vote F",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 3,
+    "pesan_typo_ringan": [],
+    "case_index": 17
+  },
+  "session": {
+    "case_name": "witness",
+    "participants": [
+      "Aisyah",
+      "Nadya",
+      "Keisha",
+      "Najwa",
+      "Tisna"
+    ],
+    "focus_player": "Nadya",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Aisyah",
+        "teks_chat": "pesan Nadya masih tentang malam yang baru selesai.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Nadya",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Najwa",
+        "teks_chat": "aku sudah lihat bagian awal obrolannya kok.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Tisna",
+        "teks_chat": "dari obrolanku dengan Aisyah, Nadya ternyata mengubah target klaimnya; itu mencurigakan.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Nadya",
+            "relasi": "offend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "007_codex_revisi1.txt"
+  }
+}

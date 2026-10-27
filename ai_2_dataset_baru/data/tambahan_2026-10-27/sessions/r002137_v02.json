@@ -1,0 +1,77 @@
+{
+  "job": {
+    "job_id": "r002137_v02",
+    "case_name": "interruption",
+    "case_description": "Pembahasan target disela obrolan waktu/ronde; kaitan kembali ke target masih jelas. FOKUS TAMBAHAN: Selingan waktu lalu kembali ke target; sertakan pembelaan diri.",
+    "source": {
+      "source_row": 2137,
+      "source_group": "c038840df2c350b14eb5",
+      "teks_chat": "fix gw bukan Hitman, role gw Stalker dan info gw belum kepake",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 4,
+    "pesan_typo_ringan": [],
+    "case_index": 16
+  },
+  "session": {
+    "case_name": "interruption",
+    "participants": [
+      "Kirana",
+      "Tsania",
+      "Dyah",
+      "Rengga",
+      "Salma"
+    ],
+    "focus_player": "Tsania",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Rengga",
+        "teks_chat": "aku menuduh Tsania sebagai Hitman, klaim skillnya kelewat janggal.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Tsania",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Dyah",
+        "teks_chat": "semuanya, pengumuman sepuluh detik lagi sudah terlihat.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Salma",
+        "teks_chat": "iya nih, kolom ketik masih aktif buat grup.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Tsania",
+        "teks_chat": "aku belum selesai tadi: jangan vote aku, role-ku Civilian dan tidak punya skill menyerang.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Tsania",
+            "relasi": "defend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "045_codex_revisi1.txt"
+  }
+}

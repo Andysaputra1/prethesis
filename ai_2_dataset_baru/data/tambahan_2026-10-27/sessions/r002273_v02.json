@@ -1,0 +1,131 @@
+{
+  "job": {
+    "job_id": "r002273_v02",
+    "case_name": "reference_start",
+    "case_description": "Tepat 12 konteks. Penyebutan target eksplisit di pesan konteks pertama; pesan sekarang memakai kata ganti. FOKUS TAMBAHAN: Tepat 12 konteks; nama target hanya pada konteks pertama; utama dia/-nya.",
+    "source": {
+      "source_row": 2273,
+      "source_group": "47fe334bb3253ccfc9e9",
+      "teks_chat": "lu boleh curiga, tapi gw sebenarnya spy yang sedang cari pola serangan",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 13,
+    "pesan_typo_ringan": [],
+    "case_index": 46
+  },
+  "session": {
+    "case_name": "reference_start",
+    "participants": [
+      "Nadira",
+      "Naufala",
+      "Damar",
+      "Tisna",
+      "Haikal"
+    ],
+    "focus_player": "Naufala",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Haikal",
+        "teks_chat": "Naufala membuka dengan klaim Stalker, lalu menulis hasil setelah titik dua.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Naufala",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Nadira",
+        "teks_chat": "buat grup, hasilnya memang masih satu pesan dengan klaim ya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Tisna",
+        "teks_chat": "iya, tanda titik duanya menghubungkan dua bagian itu.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Damar",
+        "teks_chat": "gw baca pengakuan role dulu baru isi hasilnya sih.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Haikal",
+        "teks_chat": "nomor malam ditulis setelah kalimat hasil.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Nadira",
+        "teks_chat": "itu beda dari jam pesan masuk yang terlihat di layar.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Tisna",
+        "teks_chat": "betul kok, aksi malam sudah lewat saat diskusi dimulai.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Damar",
+        "teks_chat": "buat semua, kalau membahas waktu jangan ketuker dua hal itu dong.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Haikal",
+        "teks_chat": "aku sekarang sudah sampai bagian angka malamnya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Nadira",
+        "teks_chat": "belum ada pesan tambahan setelah laporan lengkap ini.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Tisna",
+        "teks_chat": "oke nih, klaim, hasil, dan waktunya sudah terbaca semua.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Damar",
+        "teks_chat": "silakan teruskan pendapat tentang laporan itu.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Damar",
+        "teks_chat": "jangan tuduh dia dari perkiraan waktu saja, masih ada pembelaan yang masuk akal untuknya.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Naufala",
+            "relasi": "defend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "020_codex_revisi1.txt"
+  }
+}

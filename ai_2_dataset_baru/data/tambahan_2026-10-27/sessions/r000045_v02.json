@@ -1,0 +1,91 @@
+{
+  "job": {
+    "job_id": "r000045_v02",
+    "case_name": "ambiguous",
+    "case_description": "Beberapa acuan sama-sama mungkin; target tidak_diketahui, bukan nama terakhir. FOKUS TAMBAHAN: Sedikitnya dua calon acuan dia sama kuat; nama terakhir bukan jawaban. Target tidak_diketahui.",
+    "source": {
+      "source_row": 45,
+      "source_group": "797b830da9b03ed1b313",
+      "teks_chat": "aku ikut kecurigaan ke Seno, alasannya berubah-ubah terus",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 3,
+    "pesan_typo_ringan": [],
+    "case_index": 7
+  },
+  "session": {
+    "case_name": "ambiguous",
+    "participants": [
+      "Cantika",
+      "Afifah",
+      "Larasati",
+      "Ghina",
+      "Tsania"
+    ],
+    "focus_player": "",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Tsania",
+        "teks_chat": "Afifah dan Larasati sama-sama ngaku Spy di chat tadi.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Larasati",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          },
+          {
+            "pemain": "Afifah",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Cantika",
+        "teks_chat": "keduanya menyebut waktu yang sama dalam cerita itu.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Larasati",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          },
+          {
+            "pemain": "Afifah",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Ghina",
+        "teks_chat": "kalau harus pilih sekarang, aku vote dia karena alasan pindah pilihannya janggal.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "tidak_diketahui",
+            "relasi": "offend",
+            "bukti_pesan": []
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "001_codex_revisi1.txt"
+  }
+}

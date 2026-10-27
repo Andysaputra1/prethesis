@@ -1,0 +1,79 @@
+{
+  "job": {
+    "job_id": "r000668_v02",
+    "case_name": "multiple_targets",
+    "case_description": "Dua atau lebih pemain menjadi target relasi yang sama secara jelas. FOKUS TAMBAHAN: Dua pemain bernama dengan relasi sama.",
+    "source": {
+      "source_row": 668,
+      "source_group": "feb02265e945db961916",
+      "teks_chat": "gw udah jelasin posisi gw dari awal dan jawabannya tetap sama, aku bukan Hitman",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 2,
+    "pesan_typo_ringan": [],
+    "case_index": 8
+  },
+  "session": {
+    "case_name": "multiple_targets",
+    "participants": [
+      "Isna",
+      "Kautsar",
+      "Suci",
+      "Tiara",
+      "Rayhan"
+    ],
+    "focus_player": "Tiara",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Isna",
+        "teks_chat": "Tiara sama Rayhan kirim klaim pas diskusi baru kebuka.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Tiara",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          },
+          {
+            "pemain": "Rayhan",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Kautsar",
+        "teks_chat": "Tiara jangan dieksekusi dulu; Rayhan juga tidak pantas dihukum dari bukti selemah itu.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Tiara",
+            "relasi": "defend",
+            "bukti_pesan": [
+              2
+            ]
+          },
+          {
+            "pemain": "Rayhan",
+            "relasi": "defend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "041_codex_revisi1.txt"
+  }
+}

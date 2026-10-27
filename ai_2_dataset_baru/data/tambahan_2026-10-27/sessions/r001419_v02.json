@@ -1,0 +1,78 @@
+{
+  "job": {
+    "job_id": "r001419_v02",
+    "case_name": "mixed_relations",
+    "case_description": "Membela satu pemain dan menuduh pemain lain. Intent utama offend; simpan kedua relasi. FOKUS TAMBAHAN: Bela A dan tuduh B; variasi urutan, kata ganti, dan pembelaan dalam anak kalimat.",
+    "source": {
+      "source_row": 1419,
+      "source_group": "115d1ec2958f9e5d3cc1",
+      "teks_chat": "kalau mau vote aku silakan, tapi si E lebih fix hitman",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 3,
+    "pesan_typo_ringan": [],
+    "case_index": 33
+  },
+  "session": {
+    "case_name": "mixed_relations",
+    "participants": [
+      "Ferdi",
+      "Noval",
+      "Nirmala",
+      "Amel",
+      "Syakira"
+    ],
+    "focus_player": "Ferdi",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Amel",
+        "teks_chat": "pesan dari Ferdi itu menyebut kapan hasil skill terlihat.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Ferdi",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Nirmala",
+        "teks_chat": "aku ingin urutan kejadian dijelaskan dari awal sampai akhir.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Syakira",
+        "teks_chat": "aku curiga Noval memasang tuduhan palsu; Ferdi tidak melakukan aksi yang dituduhkan itu.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Ferdi",
+            "relasi": "defend",
+            "bukti_pesan": [
+              3
+            ]
+          },
+          {
+            "pemain": "Noval",
+            "relasi": "offend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "014_codex_revisi1.txt"
+  }
+}

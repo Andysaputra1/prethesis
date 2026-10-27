@@ -1,0 +1,131 @@
+{
+  "job": {
+    "job_id": "r002355_v02",
+    "case_name": "reference_start",
+    "case_description": "Tepat 12 konteks. Penyebutan target eksplisit di pesan konteks pertama; pesan sekarang memakai kata ganti. FOKUS TAMBAHAN: Tepat 12 konteks; nama target hanya pada konteks pertama; utama dia/-nya.",
+    "source": {
+      "source_row": 2355,
+      "source_group": "f4c608530ea16759d7ff",
+      "teks_chat": "gue bukan Hitman, aku Civilian dan mau ikut aliansi kecil",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 13,
+    "pesan_typo_ringan": [],
+    "case_index": 16
+  },
+  "session": {
+    "case_name": "reference_start",
+    "participants": [
+      "Aisyah",
+      "Kresna",
+      "Tisna",
+      "Aruna",
+      "Halim"
+    ],
+    "focus_player": "Kresna",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Halim",
+        "teks_chat": "Kresna menyebut aksinya kemarin, tanpa angka malam.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Kresna",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Tisna",
+        "teks_chat": "kemarin itu hari beneran atau ronde sebelumnya sih?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Aisyah",
+        "teks_chat": "buat semua, di game biasanya yang dimaksud malam sebelum ini.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Aruna",
+        "teks_chat": "iya, tapi kata kemarin sendiri belum menyebut angka.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Halim",
+        "teks_chat": "gw pengin pakai malam pertama atau kedua aja.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Tisna",
+        "teks_chat": "boleh, lebih gampang cocok dengan urutan fase.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Aisyah",
+        "teks_chat": "permainan ini udah melewati dua malam kok.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Aruna",
+        "teks_chat": "malam yang baru kelar berarti yang kedua.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Halim",
+        "teks_chat": "kalau bahas yang lebih awal, bilang malam pertama dong.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Tisna",
+        "teks_chat": "aku tadi sempat baca dua cerita itu bersamaan.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Aisyah",
+        "teks_chat": "sekarang udah kebayang jarak waktunya nih.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Aruna",
+        "teks_chat": "oke, kembali ke keterangan aksi yang tadi.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Aruna",
+        "teks_chat": "dia bukan Hitman. Klaim yang kita bahas pertama masih cocok dengan urutan kejadian.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Kresna",
+            "relasi": "defend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "017_codex_revisi1.txt"
+  }
+}

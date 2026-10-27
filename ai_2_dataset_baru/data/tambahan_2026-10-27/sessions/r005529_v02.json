@@ -1,0 +1,65 @@
+{
+  "job": {
+    "job_id": "r005529_v02",
+    "case_name": "short_history_1",
+    "case_description": "Awal diskusi dengan tepat 1 pesan sebelumnya. Jangan menambah riwayat fiktif atau mengisi sampai 12. FOKUS TAMBAHAN: Satu konteks. Tepat 25 pembelaan diri setelah dituduh; penuduh bukan target. Sisanya offend/neutral.",
+    "source": {
+      "source_row": 5529,
+      "source_group": "102f7785ab09e771abb6",
+      "teks_chat": "aku baru join, ini langsung mulai atau gimana?",
+      "label_intent": "neutral"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 2,
+    "pesan_typo_ringan": [],
+    "case_index": 7
+  },
+  "session": {
+    "case_name": "short_history_1",
+    "participants": [
+      "Syifa",
+      "Rengga",
+      "Baskara",
+      "Ratih",
+      "Shafa"
+    ],
+    "focus_player": "Baskara",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Rengga",
+        "teks_chat": "pesan dari Baskara itu menyebut kapan hasil skill terlihat.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Baskara",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Ratih",
+        "teks_chat": "Baskara, hasil Peek yang disebut tadi keluar pada ronde berapa?",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Baskara",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "021_codex_revisi1.txt"
+  }
+}

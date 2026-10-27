@@ -1,0 +1,78 @@
+{
+  "job": {
+    "job_id": "r004956_v02",
+    "case_name": "self",
+    "case_description": "Defend diri sendiri atau offend/vote diri sendiri sesuai label. Target = pengirim. FOKUS TAMBAHAN: Bela diri atau permintaan vote diri yang tulus; riwayat menyebut pemain lain sebagai pengalih.",
+    "source": {
+      "source_row": 4956,
+      "source_group": "3ac04d65ebe21b1cb95d",
+      "teks_chat": "aku bukan hitman, paling aman anggap aku civilian dulu",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 3,
+    "pesan_typo_ringan": [],
+    "case_index": 42
+  },
+  "session": {
+    "case_name": "self",
+    "participants": [
+      "Nayla",
+      "Syakira",
+      "Diandra",
+      "Marsha",
+      "Almira"
+    ],
+    "focus_player": "Nayla",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Marsha",
+        "teks_chat": "Diandra sama Syakira belum menulis nama role lengkap di hasilnya.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Syakira",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          },
+          {
+            "pemain": "Diandra",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Almira",
+        "teks_chat": "yang sedang membaca bisa menanggapi setelah selesai.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Nayla",
+        "teks_chat": "aku masih membela diriku, tuduhan itu cuma mengulang potongan pesanku tanpa konteks.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Nayla",
+            "relasi": "defend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "030_codex_revisi1.txt"
+  }
+}

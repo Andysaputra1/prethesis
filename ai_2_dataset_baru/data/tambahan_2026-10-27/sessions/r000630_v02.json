@@ -1,0 +1,131 @@
+{
+  "job": {
+    "job_id": "r000630_v02",
+    "case_name": "reference_start",
+    "case_description": "Tepat 12 konteks. Penyebutan target eksplisit di pesan konteks pertama; pesan sekarang memakai kata ganti. FOKUS TAMBAHAN: Tepat 12 konteks; nama target hanya pada konteks pertama; utama dia/-nya.",
+    "source": {
+      "source_row": 630,
+      "source_group": "fe28b56aba6a34622a75",
+      "teks_chat": "gw yakin ada yang sengaja framing gw, karena timing tuduhannya terlalu pas",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 13,
+    "pesan_typo_ringan": [],
+    "case_index": 23
+  },
+  "session": {
+    "case_name": "reference_start",
+    "participants": [
+      "Tiara",
+      "Ghea",
+      "Ferdi",
+      "Nabil",
+      "Tsania"
+    ],
+    "focus_player": "Ghea",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Ferdi",
+        "teks_chat": "Ghea menjelaskan vote sebelum daftar hasil akhir muncul.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Ghea",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Tiara",
+        "teks_chat": "daftar awal tadi masih bisa berubah, ya, semuanya?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Tsania",
+        "teks_chat": "bisa, hitungannya belum habis waktu itu.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Nabil",
+        "teks_chat": "gw baru melihat tulisan final setelah layar berganti.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Ferdi",
+        "teks_chat": "aku sih memisahkan alasan di chat dari hasil tombol.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Tiara",
+        "teks_chat": "soalnya pesan bisa dikirim sebelum pilihan dikunci.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Tsania",
+        "teks_chat": "iya kok, waktu kirimnya lebih awal dari pengumuman akhir.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Nabil",
+        "teks_chat": "buat grup, kalau bicara hasil, tunggu tulisan final dong.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Ferdi",
+        "teks_chat": "sekarang kita masih membahas alasan memilih.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Tiara",
+        "teks_chat": "aku belum mengaitkannya dengan suara yang belum diumumkan.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Tsania",
+        "teks_chat": "udah jelas nih beda rencana sama hasil akhirnya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Nabil",
+        "teks_chat": "oke, kembali ke penjelasan vote yang sempat masuk tadi.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Nabil",
+        "teks_chat": "dia pantas disorot lebih keras, alasan yang diajukan sejak pembuka ternyata saling bertabrakan.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Ghea",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "018_codex_revisi1.txt"
+  }
+}

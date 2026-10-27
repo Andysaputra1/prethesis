@@ -1,0 +1,131 @@
+{
+  "job": {
+    "job_id": "r002908_v02",
+    "case_name": "reference_start",
+    "case_description": "Tepat 12 konteks. Penyebutan target eksplisit di pesan konteks pertama; pesan sekarang memakai kata ganti. FOKUS TAMBAHAN: Tepat 12 konteks; nama target hanya pada konteks pertama; utama dia/-nya.",
+    "source": {
+      "source_row": 2908,
+      "source_group": "739329a24f8900b4b597",
+      "teks_chat": "Si A mendadak membungkam B lewat Gag Order, lalu narasinya berubah total, A harus dieksekusi",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 13,
+    "pesan_typo_ringan": [],
+    "case_index": 49
+  },
+  "session": {
+    "case_name": "reference_start",
+    "participants": [
+      "Savira",
+      "Deandra",
+      "Dyah",
+      "Anindya",
+      "Zakia"
+    ],
+    "focus_player": "Deandra",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Savira",
+        "teks_chat": "Deandra cerita klaim, skill, dan waktu malam dalam satu pesan panjang.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Deandra",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Zakia",
+        "teks_chat": "buat semua, aku baca pelan dari kalimat pertama dulu.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Anindya",
+        "teks_chat": "yang awal itu menyebut role yang diakui.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Dyah",
+        "teks_chat": "gw baru nemu nama skill pada kalimat kedua sih.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Savira",
+        "teks_chat": "iya, lalu bagian akhir memberi nomor malam.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Zakia",
+        "teks_chat": "kalau dibaca berurutan, tiga informasinya masih nyambung.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Anindya",
+        "teks_chat": "waktu kirim pesannya cuma satu kok, karena diketik sekaligus.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Dyah",
+        "teks_chat": "itu nggak berarti tiga kejadian di dalamnya berlangsung bersamaan.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Savira",
+        "teks_chat": "buat grup, lihat penghubung waktunya juga dong.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Zakia",
+        "teks_chat": "aku sudah sampai titik terakhir sekarang.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Anindya",
+        "teks_chat": "nih, pesan panjangnya selesai dibaca tanpa dipotong isinya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Dyah",
+        "teks_chat": "oke, lanjut ke pendapat tentang cerita malam tadi.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Dyah",
+        "teks_chat": "aku sudah membandingkan ceritanya; dia yang sedang kita bahas itu paling layak dieksekusi.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Deandra",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "020_codex_revisi1.txt"
+  }
+}

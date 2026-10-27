@@ -1,0 +1,78 @@
+{
+  "job": {
+    "job_id": "r005101_v02",
+    "case_name": "self",
+    "case_description": "Defend diri sendiri atau offend/vote diri sendiri sesuai label. Target = pengirim. FOKUS TAMBAHAN: Bela diri atau permintaan vote diri yang tulus; riwayat menyebut pemain lain sebagai pengalih.",
+    "source": {
+      "source_row": 5101,
+      "source_group": "5aee357ba1bd4f918ffb",
+      "teks_chat": "gue Stalker, jadi wajar kalau tadi nanya identitas orang",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 3,
+    "pesan_typo_ringan": [],
+    "case_index": 4
+  },
+  "session": {
+    "case_name": "self",
+    "participants": [
+      "Kautsar",
+      "Erlina",
+      "Ayuning",
+      "Habib",
+      "Cahya"
+    ],
+    "focus_player": "Cahya",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Ayuning",
+        "teks_chat": "Kautsar juga Habib sempat pindah pilihan sebelum vote dikunci.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Kautsar",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          },
+          {
+            "pemain": "Habib",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Erlina",
+        "teks_chat": "aku masih ada di layar diskusi kok, lanjut aja.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Cahya",
+        "teks_chat": "aku Spy, jadi tuduhan kalau aku yang melakukan Hostage itu nggak cocok.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Cahya",
+            "relasi": "defend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "026_codex_revisi1.txt"
+  }
+}

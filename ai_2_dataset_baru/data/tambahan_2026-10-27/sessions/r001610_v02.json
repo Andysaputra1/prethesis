@@ -1,0 +1,78 @@
+{
+  "job": {
+    "job_id": "r001610_v02",
+    "case_name": "self",
+    "case_description": "Defend diri sendiri atau offend/vote diri sendiri sesuai label. Target = pengirim. FOKUS TAMBAHAN: Bela diri atau permintaan vote diri yang tulus; riwayat menyebut pemain lain sebagai pengalih.",
+    "source": {
+      "source_row": 1610,
+      "source_group": "a3b48c9bae904c44d93f",
+      "teks_chat": "lu terlalu fokus ke satu target, padahal si Rina dari tadi mengarahkan vote ke siapa pun yang beda pendapat",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 3,
+    "pesan_typo_ringan": [],
+    "case_index": 19
+  },
+  "session": {
+    "case_name": "self",
+    "participants": [
+      "Sekar",
+      "Arum",
+      "Ratih",
+      "Pram",
+      "Kinanti"
+    ],
+    "focus_player": "Pram",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Sekar",
+        "teks_chat": "Kinanti juga Ratih sama-sama menyebut Stalker sebagai role-nya.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Ratih",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          },
+          {
+            "pemain": "Kinanti",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Arum",
+        "teks_chat": "sekarang yang belum menjelaskan punya waktu sebentar lagi.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Pram",
+        "teks_chat": "aku terima jadi sasaran akhir. Arahkan vote kalian ke aku.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Pram",
+            "relasi": "offend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "027_codex_revisi1.txt"
+  }
+}

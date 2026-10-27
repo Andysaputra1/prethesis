@@ -1,0 +1,131 @@
+{
+  "job": {
+    "job_id": "r004359_v02",
+    "case_name": "reference_start",
+    "case_description": "Tepat 12 konteks. Penyebutan target eksplisit di pesan konteks pertama; pesan sekarang memakai kata ganti. FOKUS TAMBAHAN: Tepat 12 konteks; nama target hanya pada konteks pertama; utama dia/-nya.",
+    "source": {
+      "source_row": 4359,
+      "source_group": "7beae4bb466d7a831450",
+      "teks_chat": "kalau gw Hitman, kenapa malah Naya yang dari tadi mengarahkan semua tuduhan ke satu orang?",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 13,
+    "pesan_typo_ringan": [],
+    "case_index": 31
+  },
+  "session": {
+    "case_name": "reference_start",
+    "participants": [
+      "Rosita",
+      "Dyah",
+      "Ferdi",
+      "Utari",
+      "Inaya"
+    ],
+    "focus_player": "Inaya",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Ferdi",
+        "teks_chat": "Inaya ngomong soal koneksi setelah chat aktif kembali.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Inaya",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Rosita",
+        "teks_chat": "buat semua, yang terlihat di layar cuma waktu pesannya masuk ya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Utari",
+        "teks_chat": "iya, waktu mulai ngetik nggak ditunjukkan ke grup.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Dyah",
+        "teks_chat": "gw sih baru baca setelah layar diskusi terbuka.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Ferdi",
+        "teks_chat": "status chat sama kondisi jaringan memang beda informasi.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Rosita",
+        "teks_chat": "ikon kunci juga nggak menjelaskan penyebab jaringan kok.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Utari",
+        "teks_chat": "kalau bahas durasi, ada angka yang disebut di pesan nggak?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Dyah",
+        "teks_chat": "belum ada angka persis, cuma kata sebentar.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Ferdi",
+        "teks_chat": "oh, jangan diubah jadi jumlah detik tertentu dulu.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Rosita",
+        "teks_chat": "aku bisa mengikuti urutan masuk pesannya sekarang.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Utari",
+        "teks_chat": "nih, bagian itu terjadi sebelum kesempatan vote.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Dyah",
+        "teks_chat": "oke, silakan lanjut soal penjelasan koneksinya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Dyah",
+        "teks_chat": "tidak usah percaya dia soal aksi malam itu. Dari rangkaian tadi klaimnya terlihat palsu.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Inaya",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "019_codex_revisi1.txt"
+  }
+}

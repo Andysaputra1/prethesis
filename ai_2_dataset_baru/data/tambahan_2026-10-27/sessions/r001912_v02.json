@@ -1,0 +1,85 @@
+{
+  "job": {
+    "job_id": "r001912_v02",
+    "case_name": "second_person",
+    "case_description": "Kamu/lu: gunakan pergantian pembicara dan teks yang jelas. Tanpa acuan jelas, target tidak_diketahui. FOKUS TAMBAHAN: Kamu/lu terikat pembicara jelas, termasuk bukan pengirim tepat sebelumnya.",
+    "source": {
+      "source_row": 1912,
+      "source_group": "befd15112b06b2000f50",
+      "teks_chat": "si Putri kelihatan sengaja memancing konflik antara dua pemain lain, jangan biarkan strategi itu berhasil, vote Putri",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 4,
+    "pesan_typo_ringan": [],
+    "case_index": 19
+  },
+  "session": {
+    "case_name": "second_person",
+    "participants": [
+      "Lintang",
+      "Haris",
+      "Ajeng",
+      "Wardana",
+      "Ferdi"
+    ],
+    "focus_player": "Haris",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Haris",
+        "teks_chat": "gw nanya ke kamu soal klaimku, Lintang, bukan ke grup dulu.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Lintang",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Ajeng",
+        "teks_chat": "nih, hitungan menuju pemilihan mulai kedip.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Haris",
+        "teks_chat": "gw nunggu kamu menanggapi penjelasan awal tadi, Lintang.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Lintang",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Lintang",
+        "teks_chat": "lu minta aku menilai, kan? Menurutku kamu mengubah cerita buat meloloskan diri.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Haris",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "032_codex_revisi1.txt"
+  }
+}

@@ -1,0 +1,91 @@
+{
+  "job": {
+    "job_id": "r003201_v02",
+    "case_name": "ambiguous",
+    "case_description": "Beberapa acuan sama-sama mungkin; target tidak_diketahui, bukan nama terakhir. FOKUS TAMBAHAN: Sedikitnya dua calon acuan dia sama kuat; nama terakhir bukan jawaban. Target tidak_diketahui.",
+    "source": {
+      "source_row": 3201,
+      "source_group": "583472b62ca8356075bb",
+      "teks_chat": "bukan sus, cuma irit bicara aja",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 3,
+    "pesan_typo_ringan": [],
+    "case_index": 10
+  },
+  "session": {
+    "case_name": "ambiguous",
+    "participants": [
+      "Thalia",
+      "Kirana",
+      "Ratu",
+      "Raksa",
+      "Mahdi"
+    ],
+    "focus_player": "",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Raksa",
+        "teks_chat": "Thalia serta Mahdi belum nulis hasil Peek lengkap, baru pengantarnya.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Mahdi",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          },
+          {
+            "pemain": "Thalia",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Kirana",
+        "teks_chat": "dua klaim tadi belum kita urutkan satu-satu.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Mahdi",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          },
+          {
+            "pemain": "Thalia",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Ratu",
+        "teks_chat": "kasih dia ruang menjawab, tuduhan Hitman itu belum punya pegangan.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "tidak_diketahui",
+            "relasi": "defend",
+            "bukti_pesan": []
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "002_codex_revisi1.txt"
+  }
+}

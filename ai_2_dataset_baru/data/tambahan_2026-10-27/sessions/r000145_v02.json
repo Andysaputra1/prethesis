@@ -1,0 +1,91 @@
+{
+  "job": {
+    "job_id": "r000145_v02",
+    "case_name": "ambiguous",
+    "case_description": "Beberapa acuan sama-sama mungkin; target tidak_diketahui, bukan nama terakhir. FOKUS TAMBAHAN: Sedikitnya dua calon acuan dia sama kuat; nama terakhir bukan jawaban. Target tidak_diketahui.",
+    "source": {
+      "source_row": 145,
+      "source_group": "7b8c7cbb1b52675ac9cd",
+      "teks_chat": "Sus, baru ngeh kenapa Reno ngotot banget vote Nisa padahal alasannya belum jelas, Reno kayaknya Hitman",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 3,
+    "pesan_typo_ringan": [],
+    "case_index": 21
+  },
+  "session": {
+    "case_name": "ambiguous",
+    "participants": [
+      "Ratu",
+      "Ghea",
+      "Prita",
+      "Halim",
+      "Cahya"
+    ],
+    "focus_player": "",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Ghea",
+        "teks_chat": "gw baca Halim dan Ratu cerita soal jeda chat dengan urutan yang sama.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Halim",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          },
+          {
+            "pemain": "Ratu",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Cahya",
+        "teks_chat": "aku belum misahin pembahasan mereka jadi dua topik.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Halim",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          },
+          {
+            "pemain": "Ratu",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Prita",
+        "teks_chat": "yang bikin aku waspada itu dia, selalu mengajak pindah topik pas ditanya alasan vote.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "tidak_diketahui",
+            "relasi": "offend",
+            "bukti_pesan": []
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "003_codex_revisi1.txt"
+  }
+}

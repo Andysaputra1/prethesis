@@ -1,0 +1,57 @@
+{
+  "job": {
+    "job_id": "r001315_v02",
+    "case_name": "neutral_status",
+    "case_description": "Klaim status/role atau pertanyaan informasi saja tanpa pembelaan/serangan; target neutral sesuai ATURAN_LABEL.md. FOKUS TAMBAHAN: Neutral bertarget neutral: nama, kamu jelas, atau jawaban ke penanya khusus.",
+    "source": {
+      "source_row": 1315,
+      "source_group": "4370fd9837a9de3000ce",
+      "teks_chat": "Stalker, cooldown Peek-mu sudah kepakai atau belum?",
+      "label_intent": "neutral"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 2,
+    "pesan_typo_ringan": [],
+    "case_index": 17
+  },
+  "session": {
+    "case_name": "neutral_status",
+    "participants": [
+      "Kinanti",
+      "Diandra",
+      "Nabil",
+      "Mahdi",
+      "Cantika"
+    ],
+    "focus_player": "Nabil",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Nabil",
+        "teks_chat": "aku selesai mengetik laporan waktu aksiku semalam.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Cantika",
+        "teks_chat": "kamu ingin menuliskan hasil Peek lengkap atau cukup ringkasannya?",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Nabil",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "050_codex_revisi1.txt"
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "job": {
+    "job_id": "r005082_v02",
+    "case_name": "neutral_status",
+    "case_description": "Klaim status/role atau pertanyaan informasi saja tanpa pembelaan/serangan; target neutral sesuai ATURAN_LABEL.md. FOKUS TAMBAHAN: Neutral bertarget neutral: nama, kamu jelas, atau jawaban ke penanya khusus.",
+    "source": {
+      "source_row": 5082,
+      "source_group": "fba22c4cebdd934d3e4b",
+      "teks_chat": "kalau mau percaya, aku claim Spy dari sekarang",
+      "label_intent": "neutral"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 2,
+    "pesan_typo_ringan": [],
+    "case_index": 14
+  },
+  "session": {
+    "case_name": "neutral_status",
+    "participants": [
+      "Rayhan",
+      "Habib",
+      "Mahira",
+      "Renata",
+      "Satya"
+    ],
+    "focus_player": "Satya",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Satya",
+        "teks_chat": "gw sedang membuka obrolan soal role pada ronde ini.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Renata",
+        "teks_chat": "klaim kamu tadi Civilian, betul? Aku ingin menyalin tanpa salah tulis.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Satya",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "049_codex_revisi1.txt"
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "job": {
+    "job_id": "r001929_v02",
+    "case_name": "multiple_targets",
+    "case_description": "Dua atau lebih pemain menjadi target relasi yang sama secara jelas. FOKUS TAMBAHAN: Dua pemain bernama dengan relasi sama.",
+    "source": {
+      "source_row": 1929,
+      "source_group": "df68b11b56d86f617193",
+      "teks_chat": "katanya mayoritas pilih Tono, tapi belum ada alasan kuat; gw lebih curiga sama Vina yang muter-muter",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 2,
+    "pesan_typo_ringan": [],
+    "case_index": 15
+  },
+  "session": {
+    "case_name": "multiple_targets",
+    "participants": [
+      "Erlina",
+      "Gendis",
+      "Feby",
+      "Ghea",
+      "Zahira"
+    ],
+    "focus_player": "Zahira",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Ghea",
+        "teks_chat": "Gendis serta Zahira sama-sama minta hasil skill dibahas lebih dulu.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Zahira",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          },
+          {
+            "pemain": "Gendis",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Feby",
+        "teks_chat": "Gendis itu bohong menurutku, begitu juga Zahira yang ceritanya ikut berubah.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Zahira",
+            "relasi": "offend",
+            "bukti_pesan": [
+              2
+            ]
+          },
+          {
+            "pemain": "Gendis",
+            "relasi": "offend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "042_codex_revisi1.txt"
+  }
+}

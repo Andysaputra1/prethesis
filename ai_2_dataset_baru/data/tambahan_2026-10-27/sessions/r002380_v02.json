@@ -1,0 +1,49 @@
+{
+  "job": {
+    "job_id": "r002380_v02",
+    "case_name": "first_message_unknown",
+    "case_description": "Pesan pertama tanpa konteks memakai dia/kamu/lu tanpa acuan jelas. Intent offend/defend tetap diketahui tetapi target tidak_diketahui; roster bukan bukti lawan bicara. FOKUS TAMBAHAN: Tanpa riwayat, dia/kamu tanpa acuan; roster minimal empat.",
+    "source": {
+      "source_row": 2380,
+      "source_group": "0a3af45f177acf587b54",
+      "teks_chat": "claim jelas: aku Stalker, teori gw soal Sinta masih paling masuk akal",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 1,
+    "pesan_typo_ringan": [],
+    "case_index": 15
+  },
+  "session": {
+    "case_name": "first_message_unknown",
+    "participants": [
+      "Thalia",
+      "Lintang",
+      "Aruna",
+      "Prita",
+      "Izza"
+    ],
+    "focus_player": "",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Lintang",
+        "teks_chat": "aku ingin vote kamu dulu, ada sesuatu yang sus dari kesanmu.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "tidak_diketahui",
+            "relasi": "offend",
+            "bukti_pesan": []
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "047_codex_revisi1.txt"
+  }
+}

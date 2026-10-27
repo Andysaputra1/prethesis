@@ -1,0 +1,57 @@
+{
+  "job": {
+    "job_id": "r002906_v02",
+    "case_name": "rhetorical_question",
+    "case_description": "Pesan sekarang berbentuk pertanyaan retoris yang sebenarnya menuduh atau membela, misalnya 'kenapa Andy diam terus?' (offend) atau 'masa sih Andy Hitman?' (defend). Bukan pertanyaan informasi. FOKUS TAMBAHAN: Pertanyaan retoris offend/defend mengacu pembicara terakhir.",
+    "source": {
+      "source_row": 2906,
+      "source_group": "9830606b93598b27a8f7",
+      "teks_chat": "Kalian perhatikan X, dia langsung membela Y setelah Y dituduh, kemungkinan besar mereka satu kubu",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 2,
+    "pesan_typo_ringan": [],
+    "case_index": 1
+  },
+  "session": {
+    "case_name": "rhetorical_question",
+    "participants": [
+      "Pandu",
+      "Prita",
+      "Aruna",
+      "Aisyah",
+      "Yudhis"
+    ],
+    "focus_player": "Yudhis",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Yudhis",
+        "teks_chat": "gw mengaku Spy, urutan Guard yang kupakai sudah kujelaskan.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Aisyah",
+        "teks_chat": "orang kayak lu ngaku Spy tapi menghindar terus, jangan-jangan klaimmu ngarang?",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Yudhis",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "036_codex_revisi1.txt"
+  }
+}

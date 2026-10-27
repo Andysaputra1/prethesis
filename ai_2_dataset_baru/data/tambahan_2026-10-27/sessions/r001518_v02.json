@@ -1,0 +1,78 @@
+{
+  "job": {
+    "job_id": "r001518_v02",
+    "case_name": "self",
+    "case_description": "Defend diri sendiri atau offend/vote diri sendiri sesuai label. Target = pengirim. FOKUS TAMBAHAN: Bela diri atau permintaan vote diri yang tulus; riwayat menyebut pemain lain sebagai pengalih.",
+    "source": {
+      "source_row": 1518,
+      "source_group": "8991ff94ee1a59736eca",
+      "teks_chat": "si B sengaja mancing reaksi gw, tapi dia belum jawab soal alibinya sendiri",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 3,
+    "pesan_typo_ringan": [],
+    "case_index": 39
+  },
+  "session": {
+    "case_name": "self",
+    "participants": [
+      "Thalia",
+      "Tirta",
+      "Mahira",
+      "Almira",
+      "Najwa"
+    ],
+    "focus_player": "Mahira",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Najwa",
+        "teks_chat": "dua orang yang masih cerita soal malam tadi itu Tirta dan Thalia.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Thalia",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          },
+          {
+            "pemain": "Tirta",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Almira",
+        "teks_chat": "nih, belum ada tombol kunci pada fase chat sekarang.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Mahira",
+        "teks_chat": "biar cepat, aku siap jadi korban vote kalian. Aku menerima tanpa syarat.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Mahira",
+            "relasi": "offend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "029_codex_revisi1.txt"
+  }
+}

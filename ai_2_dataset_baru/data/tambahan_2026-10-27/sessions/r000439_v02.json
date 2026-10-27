@@ -1,0 +1,71 @@
+{
+  "job": {
+    "job_id": "r000439_v02",
+    "case_name": "agreement",
+    "case_description": "Pesan sekarang menyetujui atau membantah pesan pemain lain di konteks tanpa menyebut ulang nama target. Setuju dengan tuduhan = offend pemain yang dituduh; membantah tuduhan atau setuju dengan pembelaan = defend. Identitas target diwarisi dari pesan yang ditanggapi. FOKUS TAMBAHAN: Setuju/bantah tanpa ulang nama target; sumber pendapat bukan target.",
+    "source": {
+      "source_row": 439,
+      "source_group": "429d839af37c57e964a7",
+      "teks_chat": "aku memang sempat mencurigakan, tapi itu karena info yang aku punya terbatas",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 3,
+    "pesan_typo_ringan": [],
+    "case_index": 18
+  },
+  "session": {
+    "case_name": "agreement",
+    "participants": [
+      "Nayla",
+      "Naufala",
+      "Raisa",
+      "Cahya",
+      "Raksa"
+    ],
+    "focus_player": "Raksa",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Nayla",
+        "teks_chat": "Raksa bukan pelakunya menurutku, jeda chat itu bukan bukti.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Raksa",
+            "relasi": "defend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Cahya",
+        "teks_chat": "angka sebelas udah muncul di timer diskusi.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Raisa",
+        "teks_chat": "setuju, jangan menghukum orang yang dibahas cuma dari jeda chat seperti penjelasan Nayla.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Raksa",
+            "relasi": "defend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "040_codex_revisi1.txt"
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "job": {
+    "job_id": "r000565_v02",
+    "case_name": "witness",
+    "case_description": "Nama saksi/korban disebut, tetapi bukan target serangan atau pembelaan. FOKUS TAMBAHAN: Nama sumber/saksi/penuduh bukan target. Sertakan bantahan isi klaim Peek penuduh yang membela pengirim saja.",
+    "source": {
+      "source_row": 565,
+      "source_group": "354880eeaf76e6396685",
+      "teks_chat": "jangan eksekusi aku cuma gara-gara aku jarang chat",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 3,
+    "pesan_typo_ringan": [],
+    "case_index": 42
+  },
+  "session": {
+    "case_name": "witness",
+    "participants": [
+      "Marsha",
+      "Cantika",
+      "Larasati",
+      "Wardana",
+      "Asih"
+    ],
+    "focus_player": "Cantika",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Wardana",
+        "teks_chat": "Cantika bukan aman dari hasilku, Peek-ku menyebut Hitman kok.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Cantika",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Marsha",
+        "teks_chat": "gw baru sampai akhir pesan yang panjang itu nih.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Cantika",
+        "teks_chat": "aku memang belum membalas pesan Wardana, tetapi itu karena sinyalku putus, bukan karena bersalah.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Cantika",
+            "relasi": "defend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "010_codex_revisi1.txt"
+  }
+}

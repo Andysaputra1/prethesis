@@ -1,0 +1,71 @@
+{
+  "job": {
+    "job_id": "r001753_v02",
+    "case_name": "witness",
+    "case_description": "Nama saksi/korban disebut, tetapi bukan target serangan atau pembelaan. FOKUS TAMBAHAN: Nama sumber/saksi/penuduh bukan target. Sertakan bantahan isi klaim Peek penuduh yang membela pengirim saja.",
+    "source": {
+      "source_row": 1753,
+      "source_group": "7ba8d92d1a437d49055b",
+      "teks_chat": "gak yakin seratus persen, tapi Reno paling aman buat kita eksekusi",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 3,
+    "pesan_typo_ringan": [],
+    "case_index": 41
+  },
+  "session": {
+    "case_name": "witness",
+    "participants": [
+      "Jalu",
+      "Yudhis",
+      "Zulfikar",
+      "Yumna",
+      "Syakira"
+    ],
+    "focus_player": "Yudhis",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Jalu",
+        "teks_chat": "Yudhis sudah menjawab soal role, tinggal bahas isi jawabannya.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Yudhis",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Yumna",
+        "teks_chat": "kalau ada info lain, tulis di chat sebelum fasenya ganti.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Zulfikar",
+        "teks_chat": "coba baca pesan Jalu, yang bikin aku curiga Yudhis itu pergantian klaimnya.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Yudhis",
+            "relasi": "offend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "010_codex_revisi1.txt"
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "job": {
+    "job_id": "r004944_v02",
+    "case_name": "neutral_status",
+    "case_description": "Klaim status/role atau pertanyaan informasi saja tanpa pembelaan/serangan; target neutral sesuai ATURAN_LABEL.md. FOKUS TAMBAHAN: Neutral bertarget neutral: nama, kamu jelas, atau jawaban ke penanya khusus.",
+    "source": {
+      "source_row": 4944,
+      "source_group": "67c5dd707fdae5fda254",
+      "teks_chat": "aku claim spy, kalau salah ya silakan cek dari aksi malam",
+      "label_intent": "neutral"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 2,
+    "pesan_typo_ringan": [],
+    "case_index": 6
+  },
+  "session": {
+    "case_name": "neutral_status",
+    "participants": [
+      "Vanya",
+      "Wening",
+      "Syakira",
+      "Gendis",
+      "Zahira"
+    ],
+    "focus_player": "Gendis",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Syakira",
+        "teks_chat": "Gendis sudah selesai ngetik alasannya soal pilihan vote.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Gendis",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Vanya",
+        "teks_chat": "Gendis sudah menyebut status chatnya, sekarang apakah Zahira juga bisa mengetik?",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Gendis",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              2
+            ]
+          },
+          {
+            "pemain": "Zahira",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "049_codex_revisi1.txt"
+  }
+}

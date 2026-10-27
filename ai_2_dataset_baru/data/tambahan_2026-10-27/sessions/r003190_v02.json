@@ -1,0 +1,71 @@
+{
+  "job": {
+    "job_id": "r003190_v02",
+    "case_name": "agreement",
+    "case_description": "Pesan sekarang menyetujui atau membantah pesan pemain lain di konteks tanpa menyebut ulang nama target. Setuju dengan tuduhan = offend pemain yang dituduh; membantah tuduhan atau setuju dengan pembelaan = defend. Identitas target diwarisi dari pesan yang ditanggapi. FOKUS TAMBAHAN: Setuju/bantah tanpa ulang nama target; sumber pendapat bukan target.",
+    "source": {
+      "source_row": 3190,
+      "source_group": "c673496c8807e5cd2118",
+      "teks_chat": "gw cuma diem karena nunggu yang lain ngomong, bukan berarti mencurigakan",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 3,
+    "pesan_typo_ringan": [],
+    "case_index": 22
+  },
+  "session": {
+    "case_name": "agreement",
+    "participants": [
+      "Rengga",
+      "Okta",
+      "Deandra",
+      "Tiara",
+      "Kirana"
+    ],
+    "focus_player": "Okta",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Rengga",
+        "teks_chat": "Okta aman dari tuduhan itu, aku nggak melihat alasan vote dia.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Okta",
+            "relasi": "defend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Tiara",
+        "teks_chat": "semua yang masih mengetik punya sisa waktu sekitar dua puluh detik.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Deandra",
+        "teks_chat": "betul sekali, aku mempertahankan pembelaan yang disampaikan tadi.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Okta",
+            "relasi": "defend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "040_codex_revisi1.txt"
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "job": {
+    "job_id": "r003218_v02",
+    "case_name": "interruption",
+    "case_description": "Pembahasan target disela obrolan waktu/ronde; kaitan kembali ke target masih jelas. FOKUS TAMBAHAN: Selingan waktu lalu kembali ke target; sertakan pembelaan diri.",
+    "source": {
+      "source_row": 3218,
+      "source_group": "6ca6b061b8f8d44a557a",
+      "teks_chat": "tuduhan lu ke gw cuma karena gw beda pendapat, itu bukan bukti",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 4,
+    "pesan_typo_ringan": [],
+    "case_index": 24
+  },
+  "session": {
+    "case_name": "interruption",
+    "participants": [
+      "Bagaskara",
+      "Pandu",
+      "Keisha",
+      "Rizal",
+      "Tasya"
+    ],
+    "focus_player": "Keisha",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Bagaskara",
+        "teks_chat": "aku menandai Keisha sebagai calon pelaku, pengakuannya terlalu janggal.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Keisha",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Pandu",
+        "teks_chat": "pengingat singkat, kolom diskusi masih buka sekitar empat puluh detik.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Rizal",
+        "teks_chat": "gw udah baca pengumumannya, sekarang kembali ke topik sebelum timer.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Keisha",
+        "teks_chat": "sebelum topiknya hilang, aku tetap membela diriku; tuduhan awal tadi tidak punya dasar.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Keisha",
+            "relasi": "defend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "045_codex_revisi1.txt"
+  }
+}

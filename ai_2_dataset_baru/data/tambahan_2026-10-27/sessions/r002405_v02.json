@@ -1,0 +1,131 @@
+{
+  "job": {
+    "job_id": "r002405_v02",
+    "case_name": "reference_start",
+    "case_description": "Tepat 12 konteks. Penyebutan target eksplisit di pesan konteks pertama; pesan sekarang memakai kata ganti. FOKUS TAMBAHAN: Tepat 12 konteks; nama target hanya pada konteks pertama; utama dia/-nya.",
+    "source": {
+      "source_row": 2405,
+      "source_group": "bb6acb3db5d000785ddb",
+      "teks_chat": "gw bukan role penting, cuma warga; tetap saja menurut gw Seno Hitman dan vote gw fix ke dia",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 13,
+    "pesan_typo_ringan": [],
+    "case_index": 45
+  },
+  "session": {
+    "case_name": "reference_start",
+    "participants": [
+      "Marsha",
+      "Tria",
+      "Hilmi",
+      "Prita",
+      "Tasya"
+    ],
+    "focus_player": "Tria",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Hilmi",
+        "teks_chat": "Tria memakai kata tadi untuk chat dan juga untuk malam.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Tria",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Tasya",
+        "teks_chat": "buat semuanya, dua tadi itu beda kalimat kan?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Prita",
+        "teks_chat": "iya, salah satunya ngomongin kirim pesan.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Marsha",
+        "teks_chat": "yang satunya lagi membahas aksi waktu malam sih.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Hilmi",
+        "teks_chat": "gw sempat kira dua-duanya menunjuk detik yang sama.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Tasya",
+        "teks_chat": "padahal nomor malam hanya disebut pada kalimat kedua kok.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Prita",
+        "teks_chat": "kalimat pertama belum memberi angka waktu.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Marsha",
+        "teks_chat": "buat grup, baca kata tadi bareng kegiatan yang dibicarakan dong.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Hilmi",
+        "teks_chat": "itu lebih jelas daripada memakai satu waktu untuk semuanya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Tasya",
+        "teks_chat": "aku sudah pisahkan maksud dua kalimat itu waktu membaca.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Prita",
+        "teks_chat": "nih, urutannya mulai masuk sekarang.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Marsha",
+        "teks_chat": "oke, lanjut ke cerita yang disampaikan pada awal pembahasan.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Marsha",
+        "teks_chat": "kembali ke pemain pertama tadi: pola jawabnya mencurigakan, aku mendukung vote dia.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Tria",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "020_codex_revisi1.txt"
+  }
+}

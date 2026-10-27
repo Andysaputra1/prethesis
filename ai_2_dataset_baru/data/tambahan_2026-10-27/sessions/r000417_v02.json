@@ -1,0 +1,131 @@
+{
+  "job": {
+    "job_id": "r000417_v02",
+    "case_name": "reference_start",
+    "case_description": "Tepat 12 konteks. Penyebutan target eksplisit di pesan konteks pertama; pesan sekarang memakai kata ganti. FOKUS TAMBAHAN: Tepat 12 konteks; nama target hanya pada konteks pertama; utama dia/-nya.",
+    "source": {
+      "source_row": 417,
+      "source_group": "9c4d53c525b7b0d8c399",
+      "teks_chat": "kalau ada bukti konkret, sebutin, jangan cuma bilang feeling",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 13,
+    "pesan_typo_ringan": [],
+    "case_index": 6
+  },
+  "session": {
+    "case_name": "reference_start",
+    "participants": [
+      "Mahesa",
+      "Yasmin",
+      "Ratu",
+      "Atika",
+      "Khalisa"
+    ],
+    "focus_player": "Yasmin",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Mahesa",
+        "teks_chat": "Yasmin nulis ronde dua, lalu nyebut malam pertama.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Yasmin",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Khalisa",
+        "teks_chat": "eh, ronde diskusi sama nomor malam belum tentu sama ya?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Atika",
+        "teks_chat": "iya, pembukaan permainan kan belum ada malam.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Ratu",
+        "teks_chat": "gw tadi menghitung dari chat pertama sih.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Mahesa",
+        "teks_chat": "kalau hitung aksi, mulainya setelah fase malam terbuka.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Khalisa",
+        "teks_chat": "oh begitu, pantes dua istilahnya beda.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Atika",
+        "teks_chat": "buat semua, pakai sebutan malam kalau ngomongin skill dong.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Ratu",
+        "teks_chat": "biar angka diskusi nggak ketuker dengan waktu aksi.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Mahesa",
+        "teks_chat": "di pojok layar fase sekarang masih diskusi kok.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Khalisa",
+        "teks_chat": "aku lihat tulisan yang sama di sini.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Atika",
+        "teks_chat": "udah jelas nih urutan pembukaan, malam, lalu diskusi.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Ratu",
+        "teks_chat": "silakan lanjut, kita pakai hitungan itu untuk ngobrol.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Ratu",
+        "teks_chat": "soal dia yang tadi jadi bahasan awal, aku bela. Salah sebut ronde tidak otomatis berarti pelaku.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Yasmin",
+            "relasi": "defend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "016_codex_revisi1.txt"
+  }
+}

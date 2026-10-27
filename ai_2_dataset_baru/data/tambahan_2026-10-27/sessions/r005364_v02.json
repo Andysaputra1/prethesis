@@ -1,0 +1,65 @@
+{
+  "job": {
+    "job_id": "r005364_v02",
+    "case_name": "short_history_1",
+    "case_description": "Awal diskusi dengan tepat 1 pesan sebelumnya. Jangan menambah riwayat fiktif atau mengisi sampai 12. FOKUS TAMBAHAN: Satu konteks. Tepat 25 pembelaan diri setelah dituduh; penuduh bukan target. Sisanya offend/neutral.",
+    "source": {
+      "source_row": 5364,
+      "source_group": "937e4ca377d18c0ae0ab",
+      "teks_chat": "ternyata tidak ada polisi di game ini",
+      "label_intent": "neutral"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 2,
+    "pesan_typo_ringan": [],
+    "case_index": 27
+  },
+  "session": {
+    "case_name": "short_history_1",
+    "participants": [
+      "Tasya",
+      "Anindya",
+      "Larasati",
+      "Mahira",
+      "Renata"
+    ],
+    "focus_player": "Renata",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Renata",
+        "teks_chat": "apa yang ingin kamu laporkan soal role malam ini, Larasati?",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Larasati",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Larasati",
+        "teks_chat": "aku belum memakai Peek. Itu yang bisa kujawab untuk pertanyaanmu.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Renata",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "023_codex_revisi1.txt"
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "job": {
+    "job_id": "r003006_v02",
+    "case_name": "self",
+    "case_description": "Defend diri sendiri atau offend/vote diri sendiri sesuai label. Target = pengirim. FOKUS TAMBAHAN: Bela diri atau permintaan vote diri yang tulus; riwayat menyebut pemain lain sebagai pengalih.",
+    "source": {
+      "source_row": 3006,
+      "source_group": "6c31ec1bc4527a0e67d7",
+      "teks_chat": "aku belum punya bukti mutlak, tapi indikasinya paling banyak mengarah ke Intan",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 3,
+    "pesan_typo_ringan": [],
+    "case_index": 31
+  },
+  "session": {
+    "case_name": "self",
+    "participants": [
+      "Mahdi",
+      "Vanya",
+      "Ferdi",
+      "Tisna",
+      "Zahira"
+    ],
+    "focus_player": "Mahdi",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Zahira",
+        "teks_chat": "Tisna serta Ferdi sama-sama minta hasil skill dibahas lebih dulu.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Ferdi",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          },
+          {
+            "pemain": "Tisna",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Vanya",
+        "teks_chat": "di layar sini obrolannya masih terus jalan.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Mahdi",
+        "teks_chat": "tetapkan saja aku sebagai pilihan vote terakhir, aku sudah pasrah.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Mahdi",
+            "relasi": "offend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "029_codex_revisi1.txt"
+  }
+}

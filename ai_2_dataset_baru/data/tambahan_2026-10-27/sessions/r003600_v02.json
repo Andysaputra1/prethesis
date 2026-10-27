@@ -1,0 +1,131 @@
+{
+  "job": {
+    "job_id": "r003600_v02",
+    "case_name": "reference_start",
+    "case_description": "Tepat 12 konteks. Penyebutan target eksplisit di pesan konteks pertama; pesan sekarang memakai kata ganti. FOKUS TAMBAHAN: Tepat 12 konteks; nama target hanya pada konteks pertama; utama dia/-nya.",
+    "source": {
+      "source_row": 3600,
+      "source_group": "2e53680163d94f1d4c7c",
+      "teks_chat": "aku stalker, informasi malamku jelas, Jihan jahat, gak usah muter lagi",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 13,
+    "pesan_typo_ringan": [],
+    "case_index": 5
+  },
+  "session": {
+    "case_name": "reference_start",
+    "participants": [
+      "Tania",
+      "Zulfikar",
+      "Utari",
+      "Tirta",
+      "Anisa"
+    ],
+    "focus_player": "Tirta",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Utari",
+        "teks_chat": "Tirta bilang akses chat sempat kekunci sebelum sesi ini.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Tirta",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Anisa",
+        "teks_chat": "kalau chat terkunci, tombol kirimnya abu-abu kan?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Tania",
+        "teks_chat": "di tampilan game memang begitu, nggak bisa dipencet.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Zulfikar",
+        "teks_chat": "buat semua, ikon kunci beda sama indikator mengetik ya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Utari",
+        "teks_chat": "iya, posisi keduanya juga beda kok.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Anisa",
+        "teks_chat": "gw kadang nggak lihat ikon kalau chat lagi penuh.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Tania",
+        "teks_chat": "notifikasi cuma nampilin teks, bukan seluruh tampilan.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Zulfikar",
+        "teks_chat": "berarti dari notifikasi doang belum kelihatan status kirimnya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Utari",
+        "teks_chat": "betul sih, mending lihat layar game kalau bahas itu.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Anisa",
+        "teks_chat": "identitas korban juga nggak diumumin ke kita semua.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Tania",
+        "teks_chat": "nah, yang tersedia baru cerita di chat nih.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Zulfikar",
+        "teks_chat": "aku mau dengar tanggapan soal cerita itu sekarang.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Zulfikar",
+        "teks_chat": "setelah dengar semua urutan ini, aku malah yakin dia menutupi sesuatu.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Tirta",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "016_codex_revisi1.txt"
+  }
+}

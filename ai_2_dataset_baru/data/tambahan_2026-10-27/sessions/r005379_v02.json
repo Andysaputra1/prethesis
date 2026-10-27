@@ -1,0 +1,72 @@
+{
+  "job": {
+    "job_id": "r005379_v02",
+    "case_name": "neutral_status",
+    "case_description": "Klaim status/role atau pertanyaan informasi saja tanpa pembelaan/serangan; target neutral sesuai ATURAN_LABEL.md. FOKUS TAMBAHAN: Neutral bertarget neutral: nama, kamu jelas, atau jawaban ke penanya khusus.",
+    "source": {
+      "source_row": 5379,
+      "source_group": "e747cdaae95b7fff1b1a",
+      "teks_chat": "bentar, tadi siapa yang jadi korban?",
+      "label_intent": "neutral"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 2,
+    "pesan_typo_ringan": [],
+    "case_index": 15
+  },
+  "session": {
+    "case_name": "neutral_status",
+    "participants": [
+      "Tirta",
+      "Sakti",
+      "Luthfan",
+      "Nirmala",
+      "Wening"
+    ],
+    "focus_player": "Wening",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Luthfan",
+        "teks_chat": "aku membaca cerita Wening dari awal diskusi sih.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Wening",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Tirta",
+        "teks_chat": "apakah Wening dan Nirmala sudah menyampaikan role masing-masing di ronde ini?",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Wening",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              2
+            ]
+          },
+          {
+            "pemain": "Nirmala",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "050_codex_revisi1.txt"
+  }
+}

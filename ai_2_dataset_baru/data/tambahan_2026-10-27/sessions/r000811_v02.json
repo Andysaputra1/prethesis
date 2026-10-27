@@ -1,0 +1,131 @@
+{
+  "job": {
+    "job_id": "r000811_v02",
+    "case_name": "reference_start",
+    "case_description": "Tepat 12 konteks. Penyebutan target eksplisit di pesan konteks pertama; pesan sekarang memakai kata ganti. FOKUS TAMBAHAN: Tepat 12 konteks; nama target hanya pada konteks pertama; utama dia/-nya.",
+    "source": {
+      "source_row": 811,
+      "source_group": "b0906f2b6064ccd3432e",
+      "teks_chat": "jangan lempar kesalahan ke gw, role-ku civilian dan argumen kalian belum ada buktinya",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 13,
+    "pesan_typo_ringan": [],
+    "case_index": 32
+  },
+  "session": {
+    "case_name": "reference_start",
+    "participants": [
+      "Pram",
+      "Raisa",
+      "Ayuning",
+      "Diandra",
+      "Raksa"
+    ],
+    "focus_player": "Ayuning",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Raksa",
+        "teks_chat": "Ayuning menyebut skill malamnya tanpa menulis nama penerima.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Ayuning",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Raisa",
+        "teks_chat": "buat grup, memang belum ada nama di akhir kalimat itu?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Diandra",
+        "teks_chat": "iya, setelah kata skill langsung keterangan waktu.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Pram",
+        "teks_chat": "gw baca sampai habis, masih belum ada siapa pun disebut.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Raksa",
+        "teks_chat": "berarti yang tersedia baru jenis aksi dan malamnya sih.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Raisa",
+        "teks_chat": "jangan isi nama dari pembahasan lain dulu dong.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Diandra",
+        "teks_chat": "pesan sesudahnya juga belum memberi tambahan kok.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Pram",
+        "teks_chat": "kalau nanti ada kelanjutan, bisa dilihat sesuai urutan.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Raksa",
+        "teks_chat": "aku pengin tahu teks lengkapnya tanpa ikut menebak.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Raisa",
+        "teks_chat": "yang belum ditulis tetap belum jadi informasi buat grup.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Diandra",
+        "teks_chat": "oke nih, batas isi pesannya sudah jelas.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Pram",
+        "teks_chat": "lanjut tanggapi bagian yang memang sudah disampaikan.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Pram",
+        "teks_chat": "aku rasa dia bersih, bukan seperti yang dikhawatirkan di awal. Penjelasannya masih masuk akal.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Ayuning",
+            "relasi": "defend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "019_codex_revisi1.txt"
+  }
+}

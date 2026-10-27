@@ -1,0 +1,71 @@
+{
+  "job": {
+    "job_id": "r000777_v02",
+    "case_name": "witness",
+    "case_description": "Nama saksi/korban disebut, tetapi bukan target serangan atau pembelaan. FOKUS TAMBAHAN: Nama sumber/saksi/penuduh bukan target. Sertakan bantahan isi klaim Peek penuduh yang membela pengirim saja.",
+    "source": {
+      "source_row": 777,
+      "source_group": "87bd87565581a90b2357",
+      "teks_chat": "role-ku Spy, kalau nggak percaya ya terserah",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 3,
+    "pesan_typo_ringan": [],
+    "case_index": 38
+  },
+  "session": {
+    "case_name": "witness",
+    "participants": [
+      "Sabrina",
+      "Wulan",
+      "Cakra",
+      "Wardana",
+      "Febrian"
+    ],
+    "focus_player": "Cakra",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Sabrina",
+        "teks_chat": "aku dapat hasil Hitman waktu Peek Cakra malam kedua.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Cakra",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Wulan",
+        "teks_chat": "buat semuanya, bagian nomor malam jangan lupa disebut.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Cakra",
+        "teks_chat": "yang dikutip Sabrina bukan sangkalan role-ku; aku tetap warga dan tidak membunuh siapa pun.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Cakra",
+            "relasi": "defend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "009_codex_revisi1.txt"
+  }
+}

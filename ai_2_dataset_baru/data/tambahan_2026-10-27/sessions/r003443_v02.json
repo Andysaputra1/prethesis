@@ -1,0 +1,77 @@
+{
+  "job": {
+    "job_id": "r003443_v02",
+    "case_name": "interruption",
+    "case_description": "Pembahasan target disela obrolan waktu/ronde; kaitan kembali ke target masih jelas. FOKUS TAMBAHAN: Selingan waktu lalu kembali ke target; sertakan pembelaan diri.",
+    "source": {
+      "source_row": 3443,
+      "source_group": "9823f797f385cee4fb9b",
+      "teks_chat": "jangan bawa-bawa nama gw, yang pakai Gag Order jelas bukan dari pihak gw",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 4,
+    "pesan_typo_ringan": [],
+    "case_index": 22
+  },
+  "session": {
+    "case_name": "interruption",
+    "participants": [
+      "Ayuning",
+      "Kirana",
+      "Marsha",
+      "Nadhif",
+      "Larasati"
+    ],
+    "focus_player": "Larasati",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Nadhif",
+        "teks_chat": "yang baru mengirim cerita soal aksi itu Larasati.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Larasati",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Ayuning",
+        "teks_chat": "aku baru lihat timer lewat dari semenit ke lima puluhan.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Kirana",
+        "teks_chat": "di layar sini masih ada kesempatan mengirim pesan juga.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Marsha",
+        "teks_chat": "tentang Larasati yang dibahas sebelum selingan, aku percaya dia warga dan menolak eksekusinya.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Larasati",
+            "relasi": "defend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "045_codex_revisi1.txt"
+  }
+}

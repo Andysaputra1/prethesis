@@ -1,0 +1,131 @@
+{
+  "job": {
+    "job_id": "r005057_v02",
+    "case_name": "reference_start",
+    "case_description": "Tepat 12 konteks. Penyebutan target eksplisit di pesan konteks pertama; pesan sekarang memakai kata ganti. FOKUS TAMBAHAN: Tepat 12 konteks; nama target hanya pada konteks pertama; utama dia/-nya.",
+    "source": {
+      "source_row": 5057,
+      "source_group": "3924873b549eac2f06c1",
+      "teks_chat": "gue Stalker dan Peek-ku belum dipakai, jadi jangan maksa aku buka info sekarang",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 13,
+    "pesan_typo_ringan": [],
+    "case_index": 30
+  },
+  "session": {
+    "case_name": "reference_start",
+    "participants": [
+      "Utari",
+      "Amel",
+      "Salsabila",
+      "Deandra",
+      "Ajeng"
+    ],
+    "focus_player": "Ajeng",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Salsabila",
+        "teks_chat": "Ajeng menyebut warga biasa lalu memakai kata Civilian.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Ajeng",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Deandra",
+        "teks_chat": "dua istilah itu sama maksudnya kan, semuanya?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Utari",
+        "teks_chat": "iya, di game ini warga biasa itu Civilian.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Amel",
+        "teks_chat": "gw tadinya kira ada dua informasi berbeda sih.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Salsabila",
+        "teks_chat": "nggak, masih satu pengakuan role pada pesan itu.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Deandra",
+        "teks_chat": "ada cerita aksi malam setelahnya atau cuma klaim?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Utari",
+        "teks_chat": "yang terlihat cuma klaim kok, belum ada jenis skill.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Amel",
+        "teks_chat": "oh, berarti bagian waktunya juga belum dijelaskan.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Salsabila",
+        "teks_chat": "buat grup, nanti kalau ada hasil baru kirim terpisah aja.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Deandra",
+        "teks_chat": "biar mudah membedakan pengakuan dan laporan malam.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Utari",
+        "teks_chat": "sekarang udah jelas nih istilah yang dipakai.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Amel",
+        "teks_chat": "oke, tanggapi pengakuan yang tadi dulu.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Amel",
+        "teks_chat": "aku bela orang yang pertama dibahas: dia sudah punya alasan wajar, jangan jadikan korban vote.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Ajeng",
+            "relasi": "defend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "019_codex_revisi1.txt"
+  }
+}

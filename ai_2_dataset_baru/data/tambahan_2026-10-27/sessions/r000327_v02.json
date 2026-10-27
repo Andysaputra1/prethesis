@@ -1,0 +1,78 @@
+{
+  "job": {
+    "job_id": "r000327_v02",
+    "case_name": "self",
+    "case_description": "Defend diri sendiri atau offend/vote diri sendiri sesuai label. Target = pengirim. FOKUS TAMBAHAN: Bela diri atau permintaan vote diri yang tulus; riwayat menyebut pemain lain sebagai pengalih.",
+    "source": {
+      "source_row": 327,
+      "source_group": "e9974b93db5022e9bf65",
+      "teks_chat": "dia mengaku punya teori kuat, padahal isinya cuma lempar nama dan kabur dari diskusi",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 3,
+    "pesan_typo_ringan": [],
+    "case_index": 21
+  },
+  "session": {
+    "case_name": "self",
+    "participants": [
+      "Syauqi",
+      "Rengga",
+      "Kinanti",
+      "Nayla",
+      "Kemal"
+    ],
+    "focus_player": "Rengga",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Nayla",
+        "teks_chat": "gw baca Kemal dan Kinanti cerita soal jeda chat dengan urutan yang sama.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Kemal",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          },
+          {
+            "pemain": "Kinanti",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Syauqi",
+        "teks_chat": "grupnya masih bisa menerima pesan baru nih.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Rengga",
+        "teks_chat": "aku sudah nggak mau debat, vote aku saja dan lanjutkan rondenya.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Rengga",
+            "relasi": "offend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "028_codex_revisi1.txt"
+  }
+}

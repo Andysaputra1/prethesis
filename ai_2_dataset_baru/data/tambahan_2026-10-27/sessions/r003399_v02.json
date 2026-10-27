@@ -1,0 +1,71 @@
+{
+  "job": {
+    "job_id": "r003399_v02",
+    "case_name": "witness",
+    "case_description": "Nama saksi/korban disebut, tetapi bukan target serangan atau pembelaan. FOKUS TAMBAHAN: Nama sumber/saksi/penuduh bukan target. Sertakan bantahan isi klaim Peek penuduh yang membela pengirim saja.",
+    "source": {
+      "source_row": 3399,
+      "source_group": "720d66df74299329a209",
+      "teks_chat": "kalau aku Hitman, ngapain bikin tuduhan seterbuka ini?",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 3,
+    "pesan_typo_ringan": [],
+    "case_index": 32
+  },
+  "session": {
+    "case_name": "witness",
+    "participants": [
+      "Febrian",
+      "Rosita",
+      "Nadya",
+      "Atika",
+      "Zahira"
+    ],
+    "focus_player": "Atika",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Febrian",
+        "teks_chat": "gw baru baca cerita Atika sampai nomor malamnya.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Atika",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Zahira",
+        "teks_chat": "kalau ada jawaban lanjutan, biarkan selesai dulu baru dibaca bareng.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Rosita",
+        "teks_chat": "ada penjelasan dari Febrian yang membebaskan Atika, jangan lanjutkan tuduhan itu.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Atika",
+            "relasi": "defend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "009_codex_revisi1.txt"
+  }
+}

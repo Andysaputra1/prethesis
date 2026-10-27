@@ -1,0 +1,85 @@
+{
+  "job": {
+    "job_id": "r000346_v02",
+    "case_name": "second_person",
+    "case_description": "Kamu/lu: gunakan pergantian pembicara dan teks yang jelas. Tanpa acuan jelas, target tidak_diketahui. FOKUS TAMBAHAN: Kamu/lu terikat pembicara jelas, termasuk bukan pengirim tepat sebelumnya.",
+    "source": {
+      "source_row": 346,
+      "source_group": "fabab94f3190b6bccd28",
+      "teks_chat": "si P langsung mengubah arah voting ketika namanya mulai dibahas, menurut catatanku dia Hitman",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 4,
+    "pesan_typo_ringan": [],
+    "case_index": 21
+  },
+  "session": {
+    "case_name": "second_person",
+    "participants": [
+      "Wardana",
+      "Prabu",
+      "Khansa",
+      "Ayunda",
+      "Tania"
+    ],
+    "focus_player": "Wardana",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Wardana",
+        "teks_chat": "aku ingin tanggapan dari kamu soal role tadi, Khansa.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Khansa",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Prabu",
+        "teks_chat": "angka waktunya turun ke dua puluh, tinggal sebentar.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Wardana",
+        "teks_chat": "Khansa, sekarang bisa kasih pendapat soal urutan aksiku?",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Khansa",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Khansa",
+        "teks_chat": "kamu yang tadi minta pendapatku soal role malah bikin aku curiga, klaimnya nggak nyambung.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Wardana",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "033_codex_revisi1.txt"
+  }
+}

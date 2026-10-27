@@ -1,0 +1,65 @@
+{
+  "job": {
+    "job_id": "r003846_v02",
+    "case_name": "neutral_status",
+    "case_description": "Klaim status/role atau pertanyaan informasi saja tanpa pembelaan/serangan; target neutral sesuai ATURAN_LABEL.md. FOKUS TAMBAHAN: Neutral bertarget neutral: nama, kamu jelas, atau jawaban ke penanya khusus.",
+    "source": {
+      "source_row": 3846,
+      "source_group": "a81cbfdf74c1879de33b",
+      "teks_chat": "saya Civilian, saya hanya mengikuti alur diskusi lalu ikut voting",
+      "label_intent": "neutral"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 2,
+    "pesan_typo_ringan": [],
+    "case_index": 21
+  },
+  "session": {
+    "case_name": "neutral_status",
+    "participants": [
+      "Ferdi",
+      "Mahira",
+      "Astri",
+      "Ghani",
+      "Yumna"
+    ],
+    "focus_player": "Yumna",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Mahira",
+        "teks_chat": "Yumna menjelaskan apa yang ingin dilaporkan pada ronde ini.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Yumna",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Ghani",
+        "teks_chat": "aku mau memastikan satu hal: Yumna yang mengaku Spy tadi, kan?",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Yumna",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "050_codex_revisi1.txt"
+  }
+}

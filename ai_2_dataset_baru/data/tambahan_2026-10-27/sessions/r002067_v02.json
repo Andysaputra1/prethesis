@@ -1,0 +1,91 @@
+{
+  "job": {
+    "job_id": "r002067_v02",
+    "case_name": "ambiguous",
+    "case_description": "Beberapa acuan sama-sama mungkin; target tidak_diketahui, bukan nama terakhir. FOKUS TAMBAHAN: Sedikitnya dua calon acuan dia sama kuat; nama terakhir bukan jawaban. Target tidak_diketahui.",
+    "source": {
+      "source_row": 2067,
+      "source_group": "008849b8304832a7a95f",
+      "teks_chat": "pada diskusi pertama LL masih bisa bicara, lalu mendadak terkena Gag Order; mari keluarkan LL sekarang",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 3,
+    "pesan_typo_ringan": [],
+    "case_index": 13
+  },
+  "session": {
+    "case_name": "ambiguous",
+    "participants": [
+      "Kresna",
+      "Safira",
+      "Raksa",
+      "Yumna",
+      "Feby"
+    ],
+    "focus_player": "",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Raksa",
+        "teks_chat": "Yumna dan Safira masing-masing bilang sudah pakai skill malam itu.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Yumna",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          },
+          {
+            "pemain": "Safira",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Kresna",
+        "teks_chat": "aku belum tahu kedua orang itu mau nambah penjelasan atau nggak.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Yumna",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          },
+          {
+            "pemain": "Safira",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Feby",
+        "teks_chat": "dia terus mendorong orang lain membuka role, motifnya mencurigakan buatku.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "tidak_diketahui",
+            "relasi": "offend",
+            "bukti_pesan": []
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "002_codex_revisi1.txt"
+  }
+}

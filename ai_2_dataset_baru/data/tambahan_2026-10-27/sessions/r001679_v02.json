@@ -1,0 +1,131 @@
+{
+  "job": {
+    "job_id": "r001679_v02",
+    "case_name": "reference_start",
+    "case_description": "Tepat 12 konteks. Penyebutan target eksplisit di pesan konteks pertama; pesan sekarang memakai kata ganti. FOKUS TAMBAHAN: Tepat 12 konteks; nama target hanya pada konteks pertama; utama dia/-nya.",
+    "source": {
+      "source_row": 1679,
+      "source_group": "816b471dd530d81fb9b9",
+      "teks_chat": "aku tidak akan mengalihkan topik, memang masalah utamanya ada di gerakan Putri",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 13,
+    "pesan_typo_ringan": [],
+    "case_index": 35
+  },
+  "session": {
+    "case_name": "reference_start",
+    "participants": [
+      "Pram",
+      "Zulfikar",
+      "Yudhis",
+      "Febi",
+      "Jalu"
+    ],
+    "focus_player": "Pram",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Febi",
+        "teks_chat": "klaim Pram kelihatan setengah kalimat di notifikasi tadi.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Pram",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Zulfikar",
+        "teks_chat": "ada yang buka chat utuhnya, semuanya?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Yudhis",
+        "teks_chat": "aku buka, masih ada satu bagian setelah teks yang kepotong.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Jalu",
+        "teks_chat": "gw sih baru lihat nomor malam pada bagian belakang.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Febi",
+        "teks_chat": "oh, jadi bukan pesan baru yang datang belakangan.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Zulfikar",
+        "teks_chat": "bukan, waktu kirimnya sama kok, masih satu pesan.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Yudhis",
+        "teks_chat": "buat grup, layar kecil bisa memotong notifikasi dong.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Jalu",
+        "teks_chat": "iya, yang dipakai untuk baca isi lengkap tetap chatnya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Febi",
+        "teks_chat": "aku sudah geser sampai tanda titik paling akhir.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Zulfikar",
+        "teks_chat": "sekarang seluruh pengakuan dan waktunya kelihatan.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Yudhis",
+        "teks_chat": "nih, nggak perlu menebak sambungan kalimatnya lagi.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Jalu",
+        "teks_chat": "oke, lanjut ke isi pesan lengkap itu.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Jalu",
+        "teks_chat": "dia seperti sengaja mengaburkan nomor malam dalam klaimnya; aku curiga itu alibi palsu.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Pram",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "019_codex_revisi1.txt"
+  }
+}

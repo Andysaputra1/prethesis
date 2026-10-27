@@ -1,0 +1,65 @@
+{
+  "job": {
+    "job_id": "r002768_v02",
+    "case_name": "short_history_1",
+    "case_description": "Awal diskusi dengan tepat 1 pesan sebelumnya. Jangan menambah riwayat fiktif atau mengisi sampai 12. FOKUS TAMBAHAN: Satu konteks. Tepat 25 pembelaan diri setelah dituduh; penuduh bukan target. Sisanya offend/neutral.",
+    "source": {
+      "source_row": 2768,
+      "source_group": "5ef160c3cf77a6548bdb",
+      "teks_chat": "barusan sistem ngumumin satu pemain jadi hostage",
+      "label_intent": "neutral"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 2,
+    "pesan_typo_ringan": [],
+    "case_index": 31
+  },
+  "session": {
+    "case_name": "short_history_1",
+    "participants": [
+      "Zakia",
+      "Nirmala",
+      "Sabrina",
+      "Arum",
+      "Tania"
+    ],
+    "focus_player": "Sabrina",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Arum",
+        "teks_chat": "Sabrina menyebut hasil skill di pesan yang barusan lewat.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Sabrina",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Tania",
+        "teks_chat": "boleh jelaskan urutan aksi malamnya, Sabrina? Aku ingin tahu runtutnya.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Sabrina",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "024_codex_revisi1.txt"
+  }
+}

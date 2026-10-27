@@ -1,0 +1,78 @@
+{
+  "job": {
+    "job_id": "r003582_v02",
+    "case_name": "mixed_relations",
+    "case_description": "Membela satu pemain dan menuduh pemain lain. Intent utama offend; simpan kedua relasi. FOKUS TAMBAHAN: Bela A dan tuduh B; variasi urutan, kata ganti, dan pembelaan dalam anak kalimat.",
+    "source": {
+      "source_row": 3582,
+      "source_group": "ddf8d563bf1ec543000c",
+      "teks_chat": "aku bukan hitman, role-ku civilian, tapi Arga jelas lagi bikin alibi palsu",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 3,
+    "pesan_typo_ringan": [],
+    "case_index": 22
+  },
+  "session": {
+    "case_name": "mixed_relations",
+    "participants": [
+      "Almira",
+      "Keisha",
+      "Zakia",
+      "Gendis",
+      "Naufala"
+    ],
+    "focus_player": "Naufala",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Keisha",
+        "teks_chat": "yang baru mengirim cerita soal aksi itu Naufala.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Naufala",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Almira",
+        "teks_chat": "grup masih ada waktu menanyakan bagian yang belum jelas.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Gendis",
+        "teks_chat": "aku rasa Naufala bersih walau jawabannya pendek, tapi pola vote Zakia seperti cari aman buat Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Naufala",
+            "relasi": "defend",
+            "bukti_pesan": [
+              3
+            ]
+          },
+          {
+            "pemain": "Zakia",
+            "relasi": "offend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "013_codex_revisi1.txt"
+  }
+}

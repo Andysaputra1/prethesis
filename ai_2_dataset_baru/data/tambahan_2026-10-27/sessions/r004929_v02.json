@@ -1,0 +1,57 @@
+{
+  "job": {
+    "job_id": "r004929_v02",
+    "case_name": "neutral_status",
+    "case_description": "Klaim status/role atau pertanyaan informasi saja tanpa pembelaan/serangan; target neutral sesuai ATURAN_LABEL.md. FOKUS TAMBAHAN: Neutral bertarget neutral: nama, kamu jelas, atau jawaban ke penanya khusus.",
+    "source": {
+      "source_row": 4929,
+      "source_group": "b2b2d09c9742f8c25b9b",
+      "teks_chat": "gw spy, tapi belum bisa buka siapa yang gw guard",
+      "label_intent": "neutral"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 2,
+    "pesan_typo_ringan": [],
+    "case_index": 11
+  },
+  "session": {
+    "case_name": "neutral_status",
+    "participants": [
+      "Anindya",
+      "Rengga",
+      "Rahma",
+      "Luthfan",
+      "Fathia"
+    ],
+    "focus_player": "Luthfan",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Luthfan",
+        "teks_chat": "aku mau menjelaskan hasil Peek tanpa memotong kalimatnya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Rahma",
+        "teks_chat": "kamu sedang melaporkan hasil skill atau baru menyatakan role?",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Luthfan",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "049_codex_revisi1.txt"
+  }
+}

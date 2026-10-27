@@ -1,0 +1,71 @@
+{
+  "job": {
+    "job_id": "r001014_v02",
+    "case_name": "witness",
+    "case_description": "Nama saksi/korban disebut, tetapi bukan target serangan atau pembelaan. FOKUS TAMBAHAN: Nama sumber/saksi/penuduh bukan target. Sertakan bantahan isi klaim Peek penuduh yang membela pengirim saja.",
+    "source": {
+      "source_row": 1014,
+      "source_group": "afdb665bb41833b5f165",
+      "teks_chat": "aku Spy, tapi jangan sebut-sebut target guard-ku. Cukup percaya kalau aku punya alasan bela dia",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 3,
+    "pesan_typo_ringan": [],
+    "case_index": 14
+  },
+  "session": {
+    "case_name": "witness",
+    "participants": [
+      "Rizki",
+      "Zafran",
+      "Syifa",
+      "Tasya",
+      "Zahira"
+    ],
+    "focus_player": "Zahira",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Rizki",
+        "teks_chat": "hasil Stalker-ku bilang Zahira Hitman, bukan Civilian.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Zahira",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Zafran",
+        "teks_chat": "ayo lanjut, masih ada beberapa hal yang ingin kudengar.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Zahira",
+        "teks_chat": "aku tidak mengaku Hitman. Kutipan yang dibawa Rizki itu cuma bagian kalimatku.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Zahira",
+            "relasi": "defend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "007_codex_revisi1.txt"
+  }
+}

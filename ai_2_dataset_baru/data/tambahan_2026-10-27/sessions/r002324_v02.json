@@ -1,0 +1,57 @@
+{
+  "job": {
+    "job_id": "r002324_v02",
+    "case_name": "short_history_1",
+    "case_description": "Awal diskusi dengan tepat 1 pesan sebelumnya. Jangan menambah riwayat fiktif atau mengisi sampai 12. FOKUS TAMBAHAN: Satu konteks. Tepat 25 pembelaan diri setelah dituduh; penuduh bukan target. Sisanya offend/neutral.",
+    "source": {
+      "source_row": 2324,
+      "source_group": "6752993b2edf6d08823c",
+      "teks_chat": "gw civilian, tapi feeling kuat si Bimo Hitman dari cara dia ngeles",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 2,
+    "pesan_typo_ringan": [],
+    "case_index": 33
+  },
+  "session": {
+    "case_name": "short_history_1",
+    "participants": [
+      "Satya",
+      "Okta",
+      "Priska",
+      "Mahira",
+      "Ghani"
+    ],
+    "focus_player": "Priska",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Priska",
+        "teks_chat": "aku bilang Civilian dari sekarang supaya nggak perlu tanya role lagi.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Okta",
+        "teks_chat": "jangan percaya pengakuan Priska, kedengarannya cuma cari aman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Priska",
+            "relasi": "offend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "024_codex_revisi1.txt"
+  }
+}

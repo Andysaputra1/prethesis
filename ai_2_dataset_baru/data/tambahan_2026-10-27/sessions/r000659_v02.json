@@ -1,0 +1,77 @@
+{
+  "job": {
+    "job_id": "r000659_v02",
+    "case_name": "interruption",
+    "case_description": "Pembahasan target disela obrolan waktu/ronde; kaitan kembali ke target masih jelas. FOKUS TAMBAHAN: Selingan waktu lalu kembali ke target; sertakan pembelaan diri.",
+    "source": {
+      "source_row": 659,
+      "source_group": "6711eb93a76c2f43c1c7",
+      "teks_chat": "aku tidak pernah menyuruh siapa pun menutup suara, jadi jangan kaitkan aku dengan Gag Order",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 4,
+    "pesan_typo_ringan": [],
+    "case_index": 18
+  },
+  "session": {
+    "case_name": "interruption",
+    "participants": [
+      "Shafa",
+      "Embun",
+      "Almira",
+      "Anisa",
+      "Gendis"
+    ],
+    "focus_player": "Anisa",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Almira",
+        "teks_chat": "gw sempat baca pengantar klaim Anisa sebelum hasilnya masuk.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Anisa",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Gendis",
+        "teks_chat": "fase ngobrol masih aktif kok, ada dua puluh empat detik.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Shafa",
+        "teks_chat": "oke, belum ada layar hasil vote, kita masih bisa ngobrol.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Embun",
+        "teks_chat": "balik ke orang tadi, dia tidak bersalah dari hasil Peek-ku. Tolong tahan vote itu.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Anisa",
+            "relasi": "defend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "045_codex_revisi1.txt"
+  }
+}

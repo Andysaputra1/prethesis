@@ -1,0 +1,131 @@
+{
+  "job": {
+    "job_id": "r003764_v02",
+    "case_name": "reference_start",
+    "case_description": "Tepat 12 konteks. Penyebutan target eksplisit di pesan konteks pertama; pesan sekarang memakai kata ganti. FOKUS TAMBAHAN: Tepat 12 konteks; nama target hanya pada konteks pertama; utama dia/-nya.",
+    "source": {
+      "source_row": 3764,
+      "source_group": "ced09357e2a92459b4c3",
+      "teks_chat": "semalam gw peek si A, dia bersih, jadi jangan asal lempar vote ke dia",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 13,
+    "pesan_typo_ringan": [],
+    "case_index": 4
+  },
+  "session": {
+    "case_name": "reference_start",
+    "participants": [
+      "Delima",
+      "Marsha",
+      "Cakra",
+      "Jalu",
+      "Khansa"
+    ],
+    "focus_player": "Marsha",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Jalu",
+        "teks_chat": "pesan Marsha berhenti di kata malam, angkanya belum masuk.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Marsha",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Cakra",
+        "teks_chat": "semua lihat baris yang sama atau layar gw aja?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Delima",
+        "teks_chat": "aku juga belum lihat angkanya setelah kata itu.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Khansa",
+        "teks_chat": "di sini ada titik tiga dari orang yang lagi mengetik.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Jalu",
+        "teks_chat": "oh, berarti pesan sambungannya mungkin masih ditulis sih.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Cakra",
+        "teks_chat": "tapi titik tiga bukan hasil aksi, cuma indikator chat.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Delima",
+        "teks_chat": "iya kok, itu muncul kalau kolom ketik lagi dipakai.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Khansa",
+        "teks_chat": "buat semuanya, jangan ubah topik dulu, sambungannya bentar lagi.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Jalu",
+        "teks_chat": "gw masih bisa lihat pesan awal di atas.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Cakra",
+        "teks_chat": "kalau lanjutannya datang, baca sekalian dari awal ya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Delima",
+        "teks_chat": "nih, kolom chat masih aktif, belum masuk fase vote.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Khansa",
+        "teks_chat": "oke, pembahasan malamnya bisa diterusin sekarang.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Khansa",
+        "teks_chat": "dia aman kok dari hasil Peek-ku; pembahasan waktunya tadi tidak mengubah itu.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Marsha",
+            "relasi": "defend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "016_codex_revisi1.txt"
+  }
+}

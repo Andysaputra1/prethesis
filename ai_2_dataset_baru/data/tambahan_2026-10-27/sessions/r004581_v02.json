@@ -1,0 +1,131 @@
+{
+  "job": {
+    "job_id": "r004581_v02",
+    "case_name": "reference_start",
+    "case_description": "Tepat 12 konteks. Penyebutan target eksplisit di pesan konteks pertama; pesan sekarang memakai kata ganti. FOKUS TAMBAHAN: Tepat 12 konteks; nama target hanya pada konteks pertama; utama dia/-nya.",
+    "source": {
+      "source_row": 4581,
+      "source_group": "a5d0bbcf83a6338954b8",
+      "teks_chat": "si K kelihatan banget ngikutin alur, tapi gak pernah kasih alasan",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 13,
+    "pesan_typo_ringan": [],
+    "case_index": 21
+  },
+  "session": {
+    "case_name": "reference_start",
+    "participants": [
+      "Niken",
+      "Banyu",
+      "Tisna",
+      "Febrian",
+      "Tiara"
+    ],
+    "focus_player": "Tisna",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Banyu",
+        "teks_chat": "Tisna baru bilang mau lapor Peek, hasilnya belum ditulis.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Tisna",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Febrian",
+        "teks_chat": "buat grup, itu masih pengantar kan, belum hasil lengkap?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Tiara",
+        "teks_chat": "iya, kalimatnya berhenti di kata sebentar.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Niken",
+        "teks_chat": "gw sih menunggu lanjutannya masuk dulu.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Banyu",
+        "teks_chat": "kolom ketik masih aktif, nggak terkunci kok.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Febrian",
+        "teks_chat": "pesan pendek bisa dikirim setelahnya kalau memang belum selesai.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Tiara",
+        "teks_chat": "ada yang lihat balasan hasil di bawah pesan timer?",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Niken",
+        "teks_chat": "aku belum, yang paling akhir masih pengumuman waktu.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Banyu",
+        "teks_chat": "oh ya sudah, berarti hasilnya belum kelihatan di sini.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Febrian",
+        "teks_chat": "jangan isi kata yang belum tertulis dari dugaan aja.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Tiara",
+        "teks_chat": "ini aku udah sampai pesan paling bawah nih.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Niken",
+        "teks_chat": "oke, yang ingin menanggapi pengantarnya boleh lanjut.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Niken",
+        "teks_chat": "yang di awal tadi tetap kandidat Hitman bagiku; caranya menyusun alibi terasa dibuat-buat.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Tisna",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "018_codex_revisi1.txt"
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "job": {
+    "job_id": "r003343_v02",
+    "case_name": "multiple_targets",
+    "case_description": "Dua atau lebih pemain menjadi target relasi yang sama secara jelas. FOKUS TAMBAHAN: Dua pemain bernama dengan relasi sama.",
+    "source": {
+      "source_row": 3343,
+      "source_group": "804d8334e33749e6976d",
+      "teks_chat": "gw memang salah baca situasi, tapi itu bukan berarti gw hitman",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 2,
+    "pesan_typo_ringan": [],
+    "case_index": 24
+  },
+  "session": {
+    "case_name": "multiple_targets",
+    "participants": [
+      "Aruna",
+      "Embun",
+      "Habib",
+      "Wardana",
+      "Sabrina"
+    ],
+    "focus_player": "Sabrina",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Embun",
+        "teks_chat": "Sabrina dan Habib masing-masing minta vote diselesaikan sekarang.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Sabrina",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          },
+          {
+            "pemain": "Habib",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Wardana",
+        "teks_chat": "jangan ada vote ke Habib maupun Sabrina dari dugaan itu, mereka masih bisa dipercaya.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Sabrina",
+            "relasi": "defend",
+            "bukti_pesan": [
+              2
+            ]
+          },
+          {
+            "pemain": "Habib",
+            "relasi": "defend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "043_codex_revisi1.txt"
+  }
+}

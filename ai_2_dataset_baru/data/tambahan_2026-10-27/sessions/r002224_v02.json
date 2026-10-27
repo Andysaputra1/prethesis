@@ -1,0 +1,78 @@
+{
+  "job": {
+    "job_id": "r002224_v02",
+    "case_name": "self",
+    "case_description": "Defend diri sendiri atau offend/vote diri sendiri sesuai label. Target = pengirim. FOKUS TAMBAHAN: Bela diri atau permintaan vote diri yang tulus; riwayat menyebut pemain lain sebagai pengalih.",
+    "source": {
+      "source_row": 2224,
+      "source_group": "177ba3aca175b6259420",
+      "teks_chat": "telat ikut debat, jadi langsung jelas aja: gw bukan Hitman, gw Spy",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 3,
+    "pesan_typo_ringan": [],
+    "case_index": 10
+  },
+  "session": {
+    "case_name": "self",
+    "participants": [
+      "Ratih",
+      "Gendis",
+      "Marsha",
+      "Zulfikar",
+      "Mutiara"
+    ],
+    "focus_player": "Gendis",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Mutiara",
+        "teks_chat": "Ratih serta Marsha belum nulis hasil Peek lengkap, baru pengantarnya.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Marsha",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          },
+          {
+            "pemain": "Ratih",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Zulfikar",
+        "teks_chat": "gw dengarkan dulu, keputusan bisa setelah ceritanya selesai.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Gendis",
+        "teks_chat": "yang kulakukan tadi cuma membaca urutan vote, aku bukan Hitman yang kalian cari.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Gendis",
+            "relasi": "defend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "027_codex_revisi1.txt"
+  }
+}

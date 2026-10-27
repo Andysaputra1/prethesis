@@ -1,0 +1,71 @@
+{
+  "job": {
+    "job_id": "r002961_v02",
+    "case_name": "witness",
+    "case_description": "Nama saksi/korban disebut, tetapi bukan target serangan atau pembelaan. FOKUS TAMBAHAN: Nama sumber/saksi/penuduh bukan target. Sertakan bantahan isi klaim Peek penuduh yang membela pengirim saja.",
+    "source": {
+      "source_row": 2961,
+      "source_group": "484aeb8dae6c30fc988f",
+      "teks_chat": "si J tadi bela si K habis-habisan, sekarang malah ikut vote dia, fix panik",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 3,
+    "pesan_typo_ringan": [],
+    "case_index": 37
+  },
+  "session": {
+    "case_name": "witness",
+    "participants": [
+      "Marsha",
+      "Nadya",
+      "Rizal",
+      "Yudhis",
+      "Cantika"
+    ],
+    "focus_player": "Rizal",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Yudhis",
+        "teks_chat": "Rizal baru mengirim lanjutan setelah pesan pertama.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Rizal",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Nadya",
+        "teks_chat": "aku masih bisa melihat pesan dari pembukaan ronde.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Cantika",
+        "teks_chat": "aku minta vote Rizal, mengacu pada perubahan alibi yang dilaporkan Yudhis.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Rizal",
+            "relasi": "offend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "009_codex_revisi1.txt"
+  }
+}

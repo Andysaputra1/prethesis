@@ -1,0 +1,65 @@
+{
+  "job": {
+    "job_id": "r000693_v02",
+    "case_name": "short_history_1",
+    "case_description": "Awal diskusi dengan tepat 1 pesan sebelumnya. Jangan menambah riwayat fiktif atau mengisi sampai 12. FOKUS TAMBAHAN: Satu konteks. Tepat 25 pembelaan diri setelah dituduh; penuduh bukan target. Sisanya offend/neutral.",
+    "source": {
+      "source_row": 693,
+      "source_group": "7f1da667b00923689906",
+      "teks_chat": "aku tidak menyandera siapa pun tadi malam, peranku bukan Hitman",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 2,
+    "pesan_typo_ringan": [],
+    "case_index": 30
+  },
+  "session": {
+    "case_name": "short_history_1",
+    "participants": [
+      "Tisna",
+      "Syauqi",
+      "Tsania",
+      "Noval",
+      "Asih"
+    ],
+    "focus_player": "Syauqi",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Tsania",
+        "teks_chat": "Syauqi itu sus, selalu nunggu arah vote baru memberi alasan.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Syauqi",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Syauqi",
+        "teks_chat": "aku bukan Hitman hanya karena tidak ikut ramai, aku sedang membaca pesan yang tertinggal.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Syauqi",
+            "relasi": "defend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "024_codex_revisi1.txt"
+  }
+}

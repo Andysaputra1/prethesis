@@ -1,0 +1,78 @@
+{
+  "job": {
+    "job_id": "r003721_v02",
+    "case_name": "self",
+    "case_description": "Defend diri sendiri atau offend/vote diri sendiri sesuai label. Target = pengirim. FOKUS TAMBAHAN: Bela diri atau permintaan vote diri yang tulus; riwayat menyebut pemain lain sebagai pengalih.",
+    "source": {
+      "source_row": 3721,
+      "source_group": "ce21a6b5a726d3b425b2",
+      "teks_chat": "si paling yakin belum tentu punya info, aku Stalker dan peek-ku bilang Eko aman",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 3,
+    "pesan_typo_ringan": [],
+    "case_index": 30
+  },
+  "session": {
+    "case_name": "self",
+    "participants": [
+      "Isna",
+      "Ratih",
+      "Ghani",
+      "Shafa",
+      "Rosita"
+    ],
+    "focus_player": "Rosita",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Isna",
+        "teks_chat": "Shafa serta Ratih sama-sama minta hasil skill dibahas lebih dulu.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Ratih",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          },
+          {
+            "pemain": "Shafa",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Ghani",
+        "teks_chat": "semua yang belum ngomong bisa masuk setelah ini dong.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Rosita",
+        "teks_chat": "aku klaim Spy dan menolak tuduhan itu, aksiku bukan untuk menyandera.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Rosita",
+            "relasi": "defend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "029_codex_revisi1.txt"
+  }
+}

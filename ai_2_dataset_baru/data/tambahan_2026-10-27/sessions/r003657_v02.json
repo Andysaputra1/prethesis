@@ -1,0 +1,71 @@
+{
+  "job": {
+    "job_id": "r003657_v02",
+    "case_name": "witness",
+    "case_description": "Nama saksi/korban disebut, tetapi bukan target serangan atau pembelaan. FOKUS TAMBAHAN: Nama sumber/saksi/penuduh bukan target. Sertakan bantahan isi klaim Peek penuduh yang membela pengirim saja.",
+    "source": {
+      "source_row": 3657,
+      "source_group": "113a9ecd122c98098926",
+      "teks_chat": "bukan aku yang aneh, gw cuma civilian yang mancing hitman keluar",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 3,
+    "pesan_typo_ringan": [],
+    "case_index": 8
+  },
+  "session": {
+    "case_name": "witness",
+    "participants": [
+      "Rengga",
+      "Safira",
+      "Nadya",
+      "Kinanti",
+      "Tisna"
+    ],
+    "focus_player": "Rengga",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Tisna",
+        "teks_chat": "pesan dari Rengga itu menyebut kapan hasil skill terlihat.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Rengga",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Safira",
+        "teks_chat": "kalau mau bahas hasil skill, sebut malamnya juga ya semuanya.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Nadya",
+        "teks_chat": "aku sepaham dengan Tisna soal ini, Rengga belum layak masuk daftar eksekusi.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Rengga",
+            "relasi": "defend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "006_codex_revisi1.txt"
+  }
+}

@@ -1,0 +1,1116 @@
+```json
+{
+  "results": [
+    {
+      "job_id": "r003298_v02",
+      "session": {
+        "case_name": "reference_start",
+        "participants": [
+          "Haris",
+          "Khalisa",
+          "Rizki",
+          "Kinanti",
+          "Feby"
+        ],
+        "focus_player": "Haris",
+        "panggilan": [],
+        "messages": [
+          {
+            "pengirim": "Rizki",
+            "teks_chat": "catatan urutan aksi Haris belum diberi nomor malam.",
+            "label_intent": "neutral",
+            "target": [
+              {
+                "pemain": "Haris",
+                "relasi": "neutral",
+                "bukti_pesan": [
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "pengirim": "Khalisa",
+            "teks_chat": "buat semua, kita pakai nomor malam dari awal permainan atau setelah ronde pembuka?",
+            "label_intent": "neutral",
+            "target": []
+          },
+          {
+            "pengirim": "Feby",
+            "teks_chat": "di catatanku, malam pertama dihitung sesudah diskusi pembuka.",
+            "label_intent": "neutral",
+            "target": []
+          },
+          {
+            "pengirim": "Kinanti",
+            "teks_chat": "aku memakai hitungan yang sama untuk daftar aksi.",
+            "label_intent": "neutral",
+            "target": []
+          },
+          {
+            "pengirim": "Rizki",
+            "teks_chat": "kalau begitu kolom tanpa nomor jangan langsung dimasukkan ke malam kedua.",
+            "label_intent": "neutral",
+            "target": []
+          },
+          {
+            "pengirim": "Khalisa",
+            "teks_chat": "ada yang punya urutan pesan sebelum transisi ronde? Tolong tulis waktunya saja.",
+            "label_intent": "neutral",
+            "target": []
+          },
+          {
+            "pengirim": "Feby",
+            "teks_chat": "di layar tercatat pesan masuk sebelum transisi, tetapi baru kubaca setelahnya.",
+            "label_intent": "neutral",
+            "target": []
+          },
+          {
+            "pengirim": "Kinanti",
+            "teks_chat": "waktu diterima dan waktu dibaca memang dua catatan terpisah.",
+            "label_intent": "neutral",
+            "target": []
+          },
+          {
+            "pengirim": "Rizki",
+            "teks_chat": "aku akan taruh keduanya di kolom berbeda supaya tidak tertukar.",
+            "label_intent": "neutral",
+            "target": []
+          },
+          {
+            "pengirim": "Khalisa",
+            "teks_chat": "urutan yang kita bahas masih catatan klaim, belum kepastian aksi sebenarnya.",
+            "label_intent": "neutral",
+            "target": []
+          },
+          {
+            "pengirim": "Feby",
+            "teks_chat": "setuju, nama role yang diklaim juga perlu dipisah dari waktu pesan.",
+            "label_intent": "neutral",
+            "target": []
+          },
+          {
+            "pengirim": "Kinanti",
+            "teks_chat": "oke, nomor malam sudah bisa dibaca dengan aturan yang sama sekarang.",
+            "label_intent": "neutral",
+            "target": []
+          },
+          {
+            "pengirim": "Kinanti",
+            "teks_chat": "jangan kita buang dia setelah bahas sejauh ini, ada penjelasan masuk akal buat jedanya.",
+            "label_intent": "defend",
+            "target": [
+              {
+                "pemain": "Haris",
+                "relasi": "defend",
+                "bukti_pesan": [
+                  1
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "job_id": "r004581_v02",
+      "session": {
+        "case_name": "reference_start",
+        "participants": [
+          "Niken",
+          "Banyu",
+          "Tisna",
+          "Febrian",
+          "Tiara"
+        ],
+        "focus_player": "Tisna",
+        "panggilan": [],
+        "messages": [
+          {
+            "pengirim": "Banyu",
+            "teks_chat": "pada catatan vote, Tisna mengganti pilihan sebelum hitungan terakhir.",
+            "label_intent": "neutral",
+            "target": [
+              {
+                "pemain": "Tisna",
+                "relasi": "neutral",
+                "bukti_pesan": [
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "pengirim": "Febrian",
+            "teks_chat": "untuk semua yang mencatat, perubahan pilihan ini terjadi sebelum atau sesudah tombol dikunci?",
+            "label_intent": "neutral",
+            "target": []
+          },
+          {
+            "pengirim": "Tiara",
+            "teks_chat": "aku merekamnya sebelum kunci vote muncul.",
+            "label_intent": "neutral",
+            "target": []
+          },
+          {
+            "pengirim": "Niken",
+            "teks_chat": "angka di layar saat itu masih bisa berubah.",
+            "label_intent": "neutral",
+            "target": []
+          },
+          {
+            "pengirim": "Banyu",
+            "teks_chat": "berarti daftar sementara jangan disebut hasil akhir dulu.",
+            "label_intent": "neutral",
+            "target": []
+          },
+          {
+            "pengirim": "Febrian",
+            "teks_chat": "ada yang ingat berapa kali layar diperbarui? Pertanyaannya untuk siapa pun yang lihat.",
+            "label_intent": "neutral",
+            "target": []
+          },
+          {
+            "pengirim": "Tiara",
+            "teks_chat": "aku lihat dua pembaruan pada jeda yang sama.",
+            "label_intent": "neutral",
+            "target": []
+          },
+          {
+            "pengirim": "Niken",
+            "teks_chat": "dua pembaruan layar belum memberi jumlah pemain yang mengganti pilihan.",
+            "label_intent": "neutral",
+            "target": []
+          },
+          {
+            "pengirim": "Banyu",
+            "teks_chat": "iya, kita hanya mencatat tampilan yang terlihat.",
+            "label_intent": "neutral",
+            "target": []
+          },
+          {
+            "pengirim": "Febrian",
+            "teks_chat": "hasil akhir baru muncul sesudah hitungan berhenti.",
+            "label_intent": "neutral",
+            "target": []
+          },
+          {
+            "pengirim": "Tiara",
+            "teks_chat": "aku pisahkan catatan sebelum kunci dan sesudah kunci.",
+            "label_intent": "neutral",
+            "target": []
+          },
+          {
+            "pengirim": "Niken",
+            "teks_chat": "sekarang kronologi perubahan tampilannya sudah jelas untuk dibaca bersama.",
+            "label_intent": "neutral",
+            "target": []
+          },
+          {
+            "pengirim": "Niken",
+            "teks_chat": "yang di awal tadi tetap kandidat Hitman bagiku; caranya menyusun alibi terasa dibuat-buat.",
+            "label_intent": "offend",
+            "target": [
+              {
+                "pemain": "Tisna",
+                "relasi": "offend",
+                "bukti_pesan": [
+                  1
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "job_id": "r000801_v02",
+      "session": {
+        "case_name": "reference_start",
+        "participants": [
+          "Yumna",
+          "Lintang",
+          "Cakra",
+          "Raisa",
+          "Habib"
+        ],
+        "focus_player": "Lintang",
+        "panggilan": [],
+        "messages": [
+          {
+            "pengirim": "Cakra",
+            "teks_chat": "pesan Lintang tentang hasil Peek tertulis tanpa tanda baca.",
+            "label_intent": "neutral",
+            "target": [
+              {
+                "pemain": "Lintang",
+                "relasi": "neutral",
+                "bukti_pesan": [
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "pengirim": "Raisa",
+            "teks_chat": "semua yang membaca, kita salin teks hasilnya dulu atau tafsiran masing-masing?",
+            "label_intent": "neutral",
+            "target": []
+          },
+          {
+            "pengirim": "Habib",
+            "teks_chat": "aku memilih menyalin teks yang terlihat terlebih dahulu.",
+            "label_intent": "neutral",
+            "target": []
+          },
+          {
+            "pengirim": "Yumna",
+            "teks_chat": "bagian sebelum titik dua itu pengantar klaim, sesudahnya hasil yang dilaporkan.",
+            "label_intent": "neutral",
+            "target": []
+          },
+          {
+            "pengirim": "Cakra",
+            "teks_chat": "format di chat mungkin tidak menyimpan pergantian baris.",
+            "label_intent": "neutral",
+            "target": []
+          },
+          {
+            "pengirim": "Raisa",
+            "teks_chat": "ada yang melihat baris aslinya? Tolong jawab ke grup tanpa menyebut tebakan role.",
+            "label_intent": "neutral",
+            "target": []
+          },
+          {
+            "pengirim": "Habib",
+            "teks_chat": "aku lihat satu baris saja, tetapi ada spasi panjang di tengah.",
+            "label_intent": "neutral",
+            "target": []
+          },
+          {
+            "pengirim": "Yumna",
+            "teks_chat": "spasi itu akan kutandai, belum kuterjemahkan jadi dua hasil.",
+            "label_intent": "neutral",
+            "target": []
+          },
+          {
+            "pengirim": "Cakra",
+            "teks_chat": "aku juga memisahkan kata Peek dari nama role dalam catatan.",
+            "label_intent": "neutral",
+            "target": []
+          },
+          {
+            "pengirim": "Raisa",
+            "teks_chat": "klaim hasil masih harus dibaca sebagai ucapan pemain, bukan pengumuman sistem.",
+            "label_intent": "neutral",
+            "target": []
+          },
+          {
+            "pengirim": "Habib",
+            "teks_chat": "iya, catatan grup akan memakai tanda kutip untuk laporan tersebut.",
+            "label_intent": "neutral",
+            "target": []
+          },
+          {
+            "pengirim": "Yumna",
+            "teks_chat": "teksnya sudah tersalin, setelah ini kita bisa membahas maknanya.",
+            "label_intent": "neutral",
+            "target": []
+          },
+          {
+            "pengirim": "Yumna",
+            "teks_chat": "aku pasang badan buat dia yang kita bahas pertama. Hasil pengecekanku membebaskannya.",
+            "label_intent": "defend",
+            "target": [
+              {
+                "pemain": "Lintang",
+                "relasi": "defend",
+                "bukti_pesan": [
+                  1
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "job_id": "r000630_v02",
+      "session": {
+        "case_name": "reference_start",
+        "participants": [
+          "Tiara",
+          "Ghea",
+          "Ferdi",
+          "Nabil",
+          "Tsania"
+        ],
+        "focus_player": "Ghea",
+        "panggilan": [],
+        "messages": [
+          {
+            "pengirim": "Ferdi",
+            "teks_chat": "klaim Spy Ghea ditulis sebelum pembahasan aksi malam dibuka.",
+            "label_intent": "neutral",
+            "target": [
+              {
+                "pemain": "Ghea",
+                "relasi": "neutral",
+                "bukti_pesan": [
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "pengirim": "Tiara",
+            "teks_chat": "buat semuanya, mari bedakan jam klaim role dan jam laporan aksi.",
+            "label_intent": "neutral",
+            "target": []
+          },
+          {
+            "pengirim": "Tsania",
+            "teks_chat": "klaim role hanya menyebut identitas yang diakui.",
+            "label_intent": "neutral",
+            "target": []
+          },
+          {
+            "pengirim": "Nabil",
+            "teks_chat": "laporan aksi menambahkan malam dan jenis skill yang disebut.",
+            "label_intent": "neutral",
+            "target": []
+          },
+          {
+            "pengirim": "Ferdi",
+            "teks_chat": "aku membuat dua kolom agar urutannya tidak menyatu.",
+            "label_intent": "neutral",
+            "target": []
+          },
+          {
+            "pengirim": "Tiara",
+            "teks_chat": "ada yang mencatat kapan sesi tanya aksi dimulai? Siapa pun boleh jawab.",
+            "label_intent": "neutral",
+            "target": []
+          },
+          {
+            "pengirim": "Tsania",
+            "teks_chat": "di layar, sesi tanya baru berjalan setelah tiga pesan berikutnya.",
+            "label_intent": "neutral",
+            "target": []
+          },
+          {
+            "pengirim": "Nabil",
+            "teks_chat": "aku punya urutan tampilan yang sama.",
+            "label_intent": "neutral",
+            "target": []
+          },
+          {
+            "pengirim": "Ferdi",
+            "teks_chat": "jadi jam membaca klaim bukan otomatis waktu skill digunakan.",
+            "label_intent": "neutral",
+            "target": []
+          },
+          {
+            "pengirim": "Tiara",
+            "teks_chat": "catatan ini akan memakai waktu pesan untuk chat saja.",
+            "label_intent": "neutral",
+            "target": []
+          },
+          {
+            "pengirim": "Tsania",
+            "teks_chat": "untuk aksi malam, nomor malam tetap ditulis terpisah.",
+            "label_intent": "neutral",
+            "target": []
+          },
+          {
+            "pengirim": "Nabil",
+            "teks_chat": "oke, batas antara klaim role dan laporan aksi sudah kita sepakati.",
+            "label_intent": "neutral",
+            "target": []
+          },
+          {
+            "pengirim": "Nabil",
+            "teks_chat": "dia pantas disorot lebih keras, alasan yang diajukan sejak pembuka ternyata saling bertabrakan.",
+            "label_intent": "offend",
+            "target": [
+              {
+                "pemain": "Ghea",
+                "relasi": "offend",
+                "bukti_pesan": [
+                  1
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "job_id": "r003478_v02",
+      "session": {
+        "case_name": "reference_start",
+        "participants": [
+          "Astri",
+          "Arum",
+          "Rizal",
+          "Jalu",
+          "Isna"
+        ],
+        "focus_player": "Arum",
+        "panggilan": [],
+        "messages": [
+          {
+            "pengirim": "Jalu",
+            "teks_chat": "chat Arum sempat terpotong pada bagian penjelasan ronde.",
+            "label_intent": "neutral",
+            "target": [
+              {
+                "pemain": "Arum",
+                "relasi": "neutral",
+                "bukti_pesan": [
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "pengirim": "Astri",
+            "teks_chat": "untuk semua pembaca, potongan yang terlihat berakhir di kata apa?",
+            "label_intent": "neutral",
+            "target": []
+          },
+          {
+            "pengirim": "Rizal",
+            "teks_chat": "layarku berhenti setelah kata malam, belum ada angkanya.",
+            "label_intent": "neutral",
+            "target": []
+          },
+          {
+            "pengirim": "Isna",
+            "teks_chat": "aku juga belum melihat angka pada baris itu.",
+            "label_intent": "neutral",
+            "target": []
+          },
+          {
+            "pengirim": "Jalu",
+            "teks_chat": "ada pesan lanjutan masuk, tetapi posisinya terpisah oleh beberapa balasan.",
+            "label_intent": "neutral",
+            "target": []
+          },
+          {
+            "pengirim": "Astri",
+            "teks_chat": "ada yang sempat menyalin urutannya? Tolong kirim bagian teks, bukan kesimpulan.",
+            "label_intent": "neutral",
+            "target": []
+          },
+          {
+            "pengirim": "Rizal",
+            "teks_chat": "salinanku punya dua baris dengan jarak waktu beberapa detik.",
+            "label_intent": "neutral",
+            "target": []
+          },
+          {
+            "pengirim": "Isna",
+            "teks_chat": "kita catat dua baris itu sebagai dua waktu kirim dahulu.",
+            "label_intent": "neutral",
+            "target": []
+          },
+          {
+            "pengirim": "Jalu",
+            "teks_chat": "belum ada alasan teknis yang tercantum di potongan pertama.",
+            "label_intent": "neutral",
+            "target": []
+          },
+          {
+            "pengirim": "Astri",
+            "teks_chat": "aku akan beri tanda bahwa bagian angka baru muncul di baris lanjutan.",
+            "label_intent": "neutral",
+            "target": []
+          },
+          {
+            "pengirim": "Rizal",
+            "teks_chat": "catatan yang belum lengkap jangan ditambah kata hasil tebakan.",
+            "label_intent": "neutral",
+            "target": []
+          },
+          {
+            "pengirim": "Isna",
+            "teks_chat": "oke, potongan teks dan sambungannya sudah tertata untuk dibaca ulang.",
+            "label_intent": "neutral",
+            "target": []
+          },
+          {
+            "pengirim": "Isna",
+            "teks_chat": "kesalahan urutan itu bukan kejahatan. Untuk dia, aku sarankan tahan vote karena dia belum terbukti salah.",
+            "label_intent": "defend",
+            "target": [
+              {
+                "pemain": "Arum",
+                "relasi": "defend",
+                "bukti_pesan": [
+                  1
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "job_id": "r003133_v02",
+      "session": {
+        "case_name": "reference_start",
+        "participants": [
+          "Haris",
+          "Ghea",
+          "Diandra",
+          "Rosita",
+          "Nadira"
+        ],
+        "focus_player": "Ghea",
+        "panggilan": [],
+        "messages": [
+          {
+            "pengirim": "Haris",
+            "teks_chat": "di ringkasan diskusi, Ghea menyebut chat terkunci selama jeda.",
+            "label_intent": "neutral",
+            "target": [
+              {
+                "pemain": "Ghea",
+                "relasi": "neutral",
+                "bukti_pesan": [
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "pengirim": "Nadira",
+            "teks_chat": "buat seluruh grup, apakah waktu chat terkunci dicatat terpisah dari transisi malam?",
+            "label_intent": "neutral",
+            "target": []
+          },
+          {
+            "pengirim": "Rosita",
+            "teks_chat": "aku menaruhnya sebagai peristiwa tampilan, bukan penanda role.",
+            "label_intent": "neutral",
+            "target": []
+          },
+          {
+            "pengirim": "Diandra",
+            "teks_chat": "di catatanku juga hanya tertulis akses chat berubah.",
+            "label_intent": "neutral",
+            "target": []
+          },
+          {
+            "pengirim": "Haris",
+            "teks_chat": "identitas korban tidak menjadi pengumuman publik yang bisa kita salin.",
+            "label_intent": "neutral",
+            "target": []
+          },
+          {
+            "pengirim": "Nadira",
+            "teks_chat": "ada yang ingat jeda tampilannya? Silakan jawab kalau memang melihat.",
+            "label_intent": "neutral",
+            "target": []
+          },
+          {
+            "pengirim": "Rosita",
+            "teks_chat": "layarku memperlihatkan ikon kunci lalu kembali ke kolom ketik.",
+            "label_intent": "neutral",
+            "target": []
+          },
+          {
+            "pengirim": "Diandra",
+            "teks_chat": "aku tidak sempat menulis durasi persis, hanya urutan ikonnya.",
+            "label_intent": "neutral",
+            "target": []
+          },
+          {
+            "pengirim": "Haris",
+            "teks_chat": "urutan itu bisa disimpan tanpa menambahkan dugaan penyebab.",
+            "label_intent": "neutral",
+            "target": []
+          },
+          {
+            "pengirim": "Nadira",
+            "teks_chat": "nama skill yang disebut pemain tetap masuk kolom klaim.",
+            "label_intent": "neutral",
+            "target": []
+          },
+          {
+            "pengirim": "Rosita",
+            "teks_chat": "status layar masuk kolom pengamatan, keduanya beda jenis catatan.",
+            "label_intent": "neutral",
+            "target": []
+          },
+          {
+            "pengirim": "Diandra",
+            "teks_chat": "baik, bagian yang terlihat dan bagian yang diklaim sudah dipisah sekarang.",
+            "label_intent": "neutral",
+            "target": []
+          },
+          {
+            "pengirim": "Diandra",
+            "teks_chat": "setelah selingan tadi, aku balik menuduh dia; klaim tentang Peek itu jelas tidak konsisten.",
+            "label_intent": "offend",
+            "target": [
+              {
+                "pemain": "Ghea",
+                "relasi": "offend",
+                "bukti_pesan": [
+                  1
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "job_id": "r000394_v02",
+      "session": {
+        "case_name": "reference_start",
+        "participants": [
+          "Astri",
+          "Hanif",
+          "Thalia",
+          "Yudhis",
+          "Anindya"
+        ],
+        "focus_player": "Hanif",
+        "panggilan": [],
+        "messages": [
+          {
+            "pengirim": "Yudhis",
+            "teks_chat": "ada dua penulisan nomor ronde pada catatan Hanif.",
+            "label_intent": "neutral",
+            "target": [
+              {
+                "pemain": "Hanif",
+                "relasi": "neutral",
+                "bukti_pesan": [
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "pengirim": "Anindya",
+            "teks_chat": "semua yang menyusun ringkasan, tolong pastikan malam dan ronde tidak dianggap satu nomor.",
+            "label_intent": "neutral",
+            "target": []
+          },
+          {
+            "pengirim": "Astri",
+            "teks_chat": "aku menyimpan nomor malam dalam kolom aksinya.",
+            "label_intent": "neutral",
+            "target": []
+          },
+          {
+            "pengirim": "Thalia",
+            "teks_chat": "nomor ronde diskusi ada di kolom lain pada catatanku.",
+            "label_intent": "neutral",
+            "target": []
+          },
+          {
+            "pengirim": "Yudhis",
+            "teks_chat": "kalau dua jenis nomor digabung, urutan akan sulit dibaca.",
+            "label_intent": "neutral",
+            "target": []
+          },
+          {
+            "pengirim": "Anindya",
+            "teks_chat": "ada yang masih menyimpan format awal? Tolong jelaskan judul kolomnya ke grup.",
+            "label_intent": "neutral",
+            "target": []
+          },
+          {
+            "pengirim": "Astri",
+            "teks_chat": "format awal cuma punya satu judul waktu tanpa membedakan jenisnya.",
+            "label_intent": "neutral",
+            "target": []
+          },
+          {
+            "pengirim": "Thalia",
+            "teks_chat": "aku akan menambahkan judul yang lebih jelas pada salinanku.",
+            "label_intent": "neutral",
+            "target": []
+          },
+          {
+            "pengirim": "Yudhis",
+            "teks_chat": "angka lama tetap disimpan apa adanya dulu.",
+            "label_intent": "neutral",
+            "target": []
+          },
+          {
+            "pengirim": "Anindya",
+            "teks_chat": "koreksi format tidak berarti kita sudah memilih versi cerita tertentu.",
+            "label_intent": "neutral",
+            "target": []
+          },
+          {
+            "pengirim": "Astri",
+            "teks_chat": "iya, kedua penulisan akan tetap tampak di ringkasan.",
+            "label_intent": "neutral",
+            "target": []
+          },
+          {
+            "pengirim": "Thalia",
+            "teks_chat": "sekarang kita bisa membaca perbedaannya tanpa tertukar jenis nomor.",
+            "label_intent": "neutral",
+            "target": []
+          },
+          {
+            "pengirim": "Thalia",
+            "teks_chat": "pembahasan panjang ini tidak membuat dia layak divote. Aku masih percaya dia warga.",
+            "label_intent": "defend",
+            "target": [
+              {
+                "pemain": "Hanif",
+                "relasi": "defend",
+                "bukti_pesan": [
+                  1
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "job_id": "r001656_v02",
+      "session": {
+        "case_name": "reference_start",
+        "participants": [
+          "Zakia",
+          "Tania",
+          "Febrian",
+          "Salsabila",
+          "Niken"
+        ],
+        "focus_player": "Tania",
+        "panggilan": [],
+        "messages": [
+          {
+            "pengirim": "Febrian",
+            "teks_chat": "pengakuan Stalker Tania belum menyertakan nama target Peek.",
+            "label_intent": "neutral",
+            "target": [
+              {
+                "pemain": "Tania",
+                "relasi": "neutral",
+                "bukti_pesan": [
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "pengirim": "Salsabila",
+            "teks_chat": "buat semua, mari pisahkan pernyataan role dari rincian hasil skill.",
+            "label_intent": "neutral",
+            "target": []
+          },
+          {
+            "pengirim": "Zakia",
+            "teks_chat": "aku mencatat role yang diakui pada bagian pertama.",
+            "label_intent": "neutral",
+            "target": []
+          },
+          {
+            "pengirim": "Niken",
+            "teks_chat": "bagian hasil masih berupa ruang untuk teks laporan berikutnya.",
+            "label_intent": "neutral",
+            "target": []
+          },
+          {
+            "pengirim": "Febrian",
+            "teks_chat": "klaim saja tidak menyebut siapa yang diperiksa.",
+            "label_intent": "neutral",
+            "target": []
+          },
+          {
+            "pengirim": "Salsabila",
+            "teks_chat": "apakah ada teks hasil di pesan lanjutan? Siapa pun yang membaca boleh menyalinnya.",
+            "label_intent": "neutral",
+            "target": []
+          },
+          {
+            "pengirim": "Zakia",
+            "teks_chat": "di salinanku belum ada teks hasil pada urutan itu.",
+            "label_intent": "neutral",
+            "target": []
+          },
+          {
+            "pengirim": "Niken",
+            "teks_chat": "aku tandai kosong, bukan menambahkan nama dari dugaan.",
+            "label_intent": "neutral",
+            "target": []
+          },
+          {
+            "pengirim": "Febrian",
+            "teks_chat": "nama target skill dan pemain yang mengirim laporan harus berada di kolom berbeda.",
+            "label_intent": "neutral",
+            "target": []
+          },
+          {
+            "pengirim": "Salsabila",
+            "teks_chat": "iya, supaya nama pengirim tidak terbaca sebagai hasil Peek.",
+            "label_intent": "neutral",
+            "target": []
+          },
+          {
+            "pengirim": "Zakia",
+            "teks_chat": "urutan pesan tetap kita pertahankan ketika menulis ringkasannya.",
+            "label_intent": "neutral",
+            "target": []
+          },
+          {
+            "pengirim": "Niken",
+            "teks_chat": "catatan role dan bagian yang belum dilaporkan sudah jelas terpisah.",
+            "label_intent": "neutral",
+            "target": []
+          },
+          {
+            "pengirim": "Niken",
+            "teks_chat": "aku anggap dia sedang nutupin pelaku, terutama dari cara mengubah alasan pada awal obrolan.",
+            "label_intent": "offend",
+            "target": [
+              {
+                "pemain": "Tania",
+                "relasi": "offend",
+                "bukti_pesan": [
+                  1
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "job_id": "r003457_v02",
+      "session": {
+        "case_name": "reference_start",
+        "participants": [
+          "Febrian",
+          "Cantika",
+          "Halim",
+          "Salsabila",
+          "Syauqi"
+        ],
+        "focus_player": "Halim",
+        "panggilan": [],
+        "messages": [
+          {
+            "pengirim": "Salsabila",
+            "teks_chat": "alasan perpindahan vote Halim disebut setelah daftar pilihan dibacakan.",
+            "label_intent": "neutral",
+            "target": [
+              {
+                "pemain": "Halim",
+                "relasi": "neutral",
+                "bukti_pesan": [
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "pengirim": "Cantika",
+            "teks_chat": "untuk semua pencatat, kapan daftar sementara dibuka di layar?",
+            "label_intent": "neutral",
+            "target": []
+          },
+          {
+            "pengirim": "Febrian",
+            "teks_chat": "di layarku setelah pembahasan aksi malam selesai.",
+            "label_intent": "neutral",
+            "target": []
+          },
+          {
+            "pengirim": "Syauqi",
+            "teks_chat": "aku juga baru melihat daftar pada bagian itu.",
+            "label_intent": "neutral",
+            "target": []
+          },
+          {
+            "pengirim": "Salsabila",
+            "teks_chat": "alasan memilih ada di chat, sedangkan pilihan tercatat di tampilan vote.",
+            "label_intent": "neutral",
+            "target": []
+          },
+          {
+            "pengirim": "Cantika",
+            "teks_chat": "ada yang menyimpan urutan keduanya? Tolong bagikan urutan saja kepada grup.",
+            "label_intent": "neutral",
+            "target": []
+          },
+          {
+            "pengirim": "Febrian",
+            "teks_chat": "aku menulis tampilan daftar dulu, baru beberapa pesan alasan setelahnya.",
+            "label_intent": "neutral",
+            "target": []
+          },
+          {
+            "pengirim": "Syauqi",
+            "teks_chat": "ringkasanku akan memakai urutan tersebut untuk waktu chat.",
+            "label_intent": "neutral",
+            "target": []
+          },
+          {
+            "pengirim": "Salsabila",
+            "teks_chat": "isi alasan tetap disalin lengkap tanpa ditambah tafsiran.",
+            "label_intent": "neutral",
+            "target": []
+          },
+          {
+            "pengirim": "Cantika",
+            "teks_chat": "perbedaan waktu membaca pesan tidak akan kuanggap sebagai perubahan pilihan.",
+            "label_intent": "neutral",
+            "target": []
+          },
+          {
+            "pengirim": "Febrian",
+            "teks_chat": "iya, yang kita catat cuma kapan informasi itu terlihat.",
+            "label_intent": "neutral",
+            "target": []
+          },
+          {
+            "pengirim": "Syauqi",
+            "teks_chat": "sekarang daftar pilihan dan alasan tertulis bisa dibandingkan tanpa tercampur.",
+            "label_intent": "neutral",
+            "target": []
+          },
+          {
+            "pengirim": "Syauqi",
+            "teks_chat": "dia yang disebut di pesan awal aman dari tuduhan itu, hasilku menunjukkan Civilian.",
+            "label_intent": "defend",
+            "target": [
+              {
+                "pemain": "Halim",
+                "relasi": "defend",
+                "bukti_pesan": [
+                  1
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "job_id": "r001572_v02",
+      "session": {
+        "case_name": "reference_start",
+        "participants": [
+          "Rasyid",
+          "Isna",
+          "Mutiara",
+          "Rengga",
+          "Zulfikar"
+        ],
+        "focus_player": "Zulfikar",
+        "panggilan": [],
+        "messages": [
+          {
+            "pengirim": "Isna",
+            "teks_chat": "laporan Guard Zulfikar mencantumkan kata aman tanpa penjelasan tambahan.",
+            "label_intent": "neutral",
+            "target": [
+              {
+                "pemain": "Zulfikar",
+                "relasi": "neutral",
+                "bukti_pesan": [
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "pengirim": "Rengga",
+            "teks_chat": "buat semua, kita perlu menulis hasil laporan persis sebelum membuat ringkasannya.",
+            "label_intent": "neutral",
+            "target": []
+          },
+          {
+            "pengirim": "Mutiara",
+            "teks_chat": "aku menyimpan kata aman sebagai kutipan, belum menggantinya dengan nama role.",
+            "label_intent": "neutral",
+            "target": []
+          },
+          {
+            "pengirim": "Rasyid",
+            "teks_chat": "laporan Guard tidak sama dengan laporan Peek.",
+            "label_intent": "neutral",
+            "target": []
+          },
+          {
+            "pengirim": "Isna",
+            "teks_chat": "jenis skill pada catatan harus tetap terlihat.",
+            "label_intent": "neutral",
+            "target": []
+          },
+          {
+            "pengirim": "Rengga",
+            "teks_chat": "ada yang punya versi teks lengkap? Tolong salin ke grup kalau ada.",
+            "label_intent": "neutral",
+            "target": []
+          },
+          {
+            "pengirim": "Mutiara",
+            "teks_chat": "salinanku hanya menambahkan keterangan tadi malam di bagian akhir.",
+            "label_intent": "neutral",
+            "target": []
+          },
+          {
+            "pengirim": "Rasyid",
+            "teks_chat": "berarti bagian waktu bisa dicatat tanpa mengubah kata hasilnya.",
+            "label_intent": "neutral",
+            "target": []
+          },
+          {
+            "pengirim": "Isna",
+            "teks_chat": "aku membuat kolom skill supaya dua jenis laporan tidak tertukar.",
+            "label_intent": "neutral",
+            "target": []
+          },
+          {
+            "pengirim": "Rengga",
+            "teks_chat": "klaim pemain tetap klaim, kita belum memperoleh kepastian role dari sistem.",
+            "label_intent": "neutral",
+            "target": []
+          },
+          {
+            "pengirim": "Mutiara",
+            "teks_chat": "iya, jangan menaruh kata Civilian kalau tidak tertulis dalam laporan itu.",
+            "label_intent": "neutral",
+            "target": []
+          },
+          {
+            "pengirim": "Rasyid",
+            "teks_chat": "kutipan hasil dan jenis skillnya sudah selesai dirapikan di catatan.",
+            "label_intent": "neutral",
+            "target": []
+          },
+          {
+            "pengirim": "Rasyid",
+            "teks_chat": "kita kembali ke alibi pembuka. Aku curiga dia mengarang jeda chat supaya lolos.",
+            "label_intent": "offend",
+            "target": [
+              {
+                "pemain": "Zulfikar",
+                "relasi": "offend",
+                "bukti_pesan": [
+                  1
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}
+```

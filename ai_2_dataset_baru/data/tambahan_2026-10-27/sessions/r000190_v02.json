@@ -1,0 +1,57 @@
+{
+  "job": {
+    "job_id": "r000190_v02",
+    "case_name": "short_history_1",
+    "case_description": "Awal diskusi dengan tepat 1 pesan sebelumnya. Jangan menambah riwayat fiktif atau mengisi sampai 12. FOKUS TAMBAHAN: Satu konteks. Tepat 25 pembelaan diri setelah dituduh; penuduh bukan target. Sisanya offend/neutral.",
+    "source": {
+      "source_row": 190,
+      "source_group": "884f89fe943634a58b95",
+      "teks_chat": "Aldi diam terus, lalu muncul cuma buat nuduh orang; gw rasa dia Hitman",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 2,
+    "pesan_typo_ringan": [],
+    "case_index": 41
+  },
+  "session": {
+    "case_name": "short_history_1",
+    "participants": [
+      "Kemal",
+      "Izza",
+      "Mahesa",
+      "Prita",
+      "Halim"
+    ],
+    "focus_player": "Kemal",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Kemal",
+        "teks_chat": "gw nulis klaim Stalker dulu sebelum bahas hasil skill.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Halim",
+        "teks_chat": "aku nggak beli cerita Kemal; klaimnya terlalu pas untuk lepas dari tuduhan.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Kemal",
+            "relasi": "offend",
+            "bukti_pesan": [
+              2
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "025_codex_revisi1.txt"
+  }
+}

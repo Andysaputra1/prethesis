@@ -1,0 +1,78 @@
+{
+  "job": {
+    "job_id": "r000118_v02",
+    "case_name": "mixed_relations",
+    "case_description": "Membela satu pemain dan menuduh pemain lain. Intent utama offend; simpan kedua relasi. FOKUS TAMBAHAN: Bela A dan tuduh B; variasi urutan, kata ganti, dan pembelaan dalam anak kalimat.",
+    "source": {
+      "source_row": 118,
+      "source_group": "a7e126d9e8a8a26ef6d4",
+      "teks_chat": "si G muncul dengan pembelaan panjang sebelum ada yang menuduh, seolah-olah sudah menyiapkan alibi",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 3,
+    "pesan_typo_ringan": [],
+    "case_index": 48
+  },
+  "session": {
+    "case_name": "mixed_relations",
+    "participants": [
+      "Ratih",
+      "Ghina",
+      "Pandu",
+      "Ayuning",
+      "Naura"
+    ],
+    "focus_player": "Ghina",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Ratih",
+        "teks_chat": "gw belum menanggapi, baru selesai baca pesan Ghina.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Ghina",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Pandu",
+        "teks_chat": "gw masih mengikuti apa yang dibicarakan sejak tadi.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Naura",
+        "teks_chat": "aku tidak setuju Ghina dieksekusi, tetapi kelakuan Ayuning menghindari pertanyaan aksi jelas sus.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Ghina",
+            "relasi": "defend",
+            "bukti_pesan": [
+              3
+            ]
+          },
+          {
+            "pemain": "Ayuning",
+            "relasi": "offend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "015_codex_revisi1.txt"
+  }
+}

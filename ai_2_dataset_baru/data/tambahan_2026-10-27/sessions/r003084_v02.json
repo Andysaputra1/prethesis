@@ -1,0 +1,77 @@
+{
+  "job": {
+    "job_id": "r003084_v02",
+    "case_name": "interruption",
+    "case_description": "Pembahasan target disela obrolan waktu/ronde; kaitan kembali ke target masih jelas. FOKUS TAMBAHAN: Selingan waktu lalu kembali ke target; sertakan pembelaan diri.",
+    "source": {
+      "source_row": 3084,
+      "source_group": "61caaed91a3161b7fc5b",
+      "teks_chat": "kita jangan pecah suara, fokus dulu ke si V yang alibinya bertentangan sendiri",
+      "label_intent": "offend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 4,
+    "pesan_typo_ringan": [],
+    "case_index": 9
+  },
+  "session": {
+    "case_name": "interruption",
+    "participants": [
+      "Astri",
+      "Dyah",
+      "Isna",
+      "Salsabila",
+      "Ratu"
+    ],
+    "focus_player": "Isna",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Dyah",
+        "teks_chat": "Isna menambah penjelasan setelah pengakuan role tadi.",
+        "label_intent": "neutral",
+        "target": [
+          {
+            "pemain": "Isna",
+            "relasi": "neutral",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Salsabila",
+        "teks_chat": "nih, fase chat masih berjalan selama sekitar setengah menit.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Ratu",
+        "teks_chat": "semua masih bisa mengetik selama hitungan itu berjalan.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Astri",
+        "teks_chat": "sebelum waktu habis, aku pilih vote Isna; penjelasan aksinya nggak cocok.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Isna",
+            "relasi": "offend",
+            "bukti_pesan": [
+              4
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "044_codex_revisi1.txt"
+  }
+}

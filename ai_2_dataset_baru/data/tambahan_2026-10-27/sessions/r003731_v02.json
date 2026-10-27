@@ -1,0 +1,71 @@
+{
+  "job": {
+    "job_id": "r003731_v02",
+    "case_name": "witness",
+    "case_description": "Nama saksi/korban disebut, tetapi bukan target serangan atau pembelaan. FOKUS TAMBAHAN: Nama sumber/saksi/penuduh bukan target. Sertakan bantahan isi klaim Peek penuduh yang membela pengirim saja.",
+    "source": {
+      "source_row": 3731,
+      "source_group": "0699756366300c672c15",
+      "teks_chat": "kalau aku hitman, ngapain dari tadi nuduh orang sekeras ini",
+      "label_intent": "defend"
+    },
+    "context_limit": 12,
+    "jumlah_pesan": 3,
+    "pesan_typo_ringan": [],
+    "case_index": 34
+  },
+  "session": {
+    "case_name": "witness",
+    "participants": [
+      "Yumna",
+      "Tirta",
+      "Renata",
+      "Zakia",
+      "Isna"
+    ],
+    "focus_player": "Isna",
+    "panggilan": [],
+    "messages": [
+      {
+        "pengirim": "Zakia",
+        "teks_chat": "laporan Peek-ku memberatkan Isna, role-nya Hitman.",
+        "label_intent": "offend",
+        "target": [
+          {
+            "pemain": "Isna",
+            "relasi": "offend",
+            "bukti_pesan": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "pengirim": "Tirta",
+        "teks_chat": "lanjut ke hasil malamnya aja, semuanya masih di sini.",
+        "label_intent": "neutral",
+        "target": []
+      },
+      {
+        "pengirim": "Isna",
+        "teks_chat": "jangan vote aku berdasarkan tuduhan Zakia itu; aku tidak punya aksi Hostage.",
+        "label_intent": "defend",
+        "target": [
+          {
+            "pemain": "Isna",
+            "relasi": "defend",
+            "bukti_pesan": [
+              3
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "model_verification_passed": false,
+  "generation_settings": {
+    "provider": "manual_web",
+    "model": "codex_revisi1",
+    "source_file": "009_codex_revisi1.txt"
+  }
+}
