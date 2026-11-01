@@ -3,14 +3,14 @@ skenario,role,chat,vote,aksi,tersangka/kambing,urgensi,npc_decision,lulus,catata
 02 Bot dituduh dua pemain,civilian,bela_diri → Nara,tidak_bisa → —,tidak_bisa → —,Andi,0.25,wait → —,True,,fuzzy
 03 Korban Gag menuduh Dodi,civilian,tuduh → Dodi,tidak_bisa → —,tidak_bisa → —,Dodi,0.25,wait → —,True,,fuzzy
 04 Vote setelah pola Gag,civilian,tuduh → Dodi,vote → Dodi,tidak_bisa → —,Dodi,0.25,vote → Dodi,True,,fuzzy
-05 Korban Hostage menuduh Budi,civilian,tuduh → Budi,tidak_bisa → —,tidak_bisa → —,Budi,0.44,wait → —,True,,fuzzy
-06 Vote setelah pola Hostage,civilian,tuduh → Budi,vote → Budi,tidak_bisa → —,Budi,0.48,vote → Budi,True,,fuzzy
-07 Membela dugaan korban Hostage,civilian,bela_orang → Eka,tidak_bisa → —,tidak_bisa → —,Andi,0.44,wait → —,True,,fuzzy
-08 Tidak ikut vote korban Hostage,civilian,bela_orang → Eka,abstain → —,tidak_bisa → —,Andi,0.48,wait → —,True,,fuzzy
+05 Korban Hostage menuduh Budi,civilian,tuduh → Budi,tidak_bisa → —,tidak_bisa → —,Budi,0.5,wait → —,True,,fuzzy
+06 Vote setelah pola Hostage,civilian,tuduh → Budi,vote → Budi,tidak_bisa → —,Budi,0.5,vote → Budi,True,,fuzzy
+07 Membela korban Hostage yang dituduh,civilian,bela_orang → Eka,tidak_bisa → —,tidak_bisa → —,Andi,0.5,wait → —,True,,fuzzy
+08 Tidak ikut vote korban Hostage,civilian,bela_orang → Eka,abstain → —,tidak_bisa → —,Andi,0.5,wait → —,True,,fuzzy
 09 Pendorong eksekusi warga,civilian,tuduh → Dodi,tidak_bisa → —,tidak_bisa → —,Dodi,0.5,wait → —,True,,fuzzy
 10 Budi terus menyerang bot,civilian,bela_diri → Nara,tidak_bisa → —,tidak_bisa → —,Budi,0.25,wait → —,True,,fuzzy
 11 Bentrok klaim Stalker,civilian,tanya_info → —,tidak_bisa → —,tidak_bisa → —,Citra,0.25,wait → —,True,,fuzzy
-12 Akhir game kritis,civilian,tuduh → Andi,vote → Andi,tidak_bisa → —,Andi,0.96,vote → Andi,True,,fuzzy
+12 Akhir game kritis,civilian,tuduh → Andi,vote → Andi,tidak_bisa → —,Andi,1.0,vote → Andi,True,,fuzzy
 13 Tuduhan tanpa bukti dibela,civilian,tunggu → —,tidak_bisa → —,tidak_bisa → —,Citra,0.25,wait → —,True,,fuzzy
 14 Pengalihan berulang,civilian,tunggu → —,tidak_bisa → —,tidak_bisa → —,Budi,0.25,wait → —,True,,fuzzy
 15 Bot di-Gag setelah menuduh,civilian,tuduh → Dodi,tidak_bisa → —,tidak_bisa → —,Dodi,0.25,wait → —,True,,fuzzy
@@ -28,9 +28,9 @@ skenario,role,chat,vote,aksi,tersangka/kambing,urgensi,npc_decision,lulus,catata
 27 Hitman memakai Gag,hitman,bela_diri → Nara,tidak_bisa → —,gag → Citra,Andi,0.25,gag → Citra,True,,fuzzy
 28 Hitman menyimpan Gag,hitman,tunggu → —,tidak_bisa → —,tunggu → —,Andi,0.25,wait → —,True,,fuzzy
 29 Hitman vote kambing hitam,hitman,tunggu → —,vote → Budi,tidak_bisa → —,Budi,0.25,vote → Budi,True,,fuzzy
-30 Hitman memimpin suara,hitman,bela_diri → Nara,vote → Eka,tidak_bisa → —,Andi,0.38,vote → Eka,True,,fuzzy
-31 Hitman tidak menyandera korbannya,hitman,tunggu → —,tidak_bisa → —,hostage → Andi,Andi,0.49,hostage → Andi,True,,fuzzy
-32 Hitman: Gag belum tersedia,hitman,tunggu → —,tidak_bisa → —,tidak_bisa → —,Andi,0.25,wait → —,True,,fuzzy
+30 Hitman memimpin suara,hitman,bela_diri → Nara,vote → Eka,tidak_bisa → —,Andi,0.25,vote → Eka,True,,fuzzy
+31 Hitman tidak menyandera korbannya,hitman,tunggu → —,tidak_bisa → —,hostage → Andi,Andi,0.5,hostage → Andi,True,,fuzzy
+32 Hitman: Gag belum tersedia,hitman,tunggu → —,tidak_bisa → —,tidak_bisa → —,Andi,0.5,wait → —,True,,fuzzy
 33 Warga ditanya langsung,civilian,jawab → —,tidak_bisa → —,tidak_bisa → —,Andi,0.25,wait → —,True,,fuzzy
 34 Hitman ditanya langsung,hitman,jawab → —,tidak_bisa → —,tunggu → —,Andi,0.25,wait → —,True,,fuzzy
 35 Hitman tidak menuduh rekan,hitman,bela_orang → Dodi,tidak_bisa → —,tunggu → —,Andi,0.75,wait → —,True,,fuzzy
@@ -38,8 +38,8 @@ skenario,role,chat,vote,aksi,tersangka/kambing,urgensi,npc_decision,lulus,catata
 37 Hitman mengikuti target Hostage rekan,hitman,tunggu → —,tidak_bisa → —,hostage → Budi,Andi,0.75,hostage → Budi,True,,fuzzy
 38 Hitman tidak menyandera rekan,hitman,tunggu → —,tidak_bisa → —,hostage → Budi,Budi,0.75,hostage → Budi,True,,fuzzy
 39 Gag bersama sudah dipakai rekan,hitman,bela_diri → Nara,tidak_bisa → —,tidak_bisa → —,Andi,0.75,wait → —,True,,fuzzy
-40 Perburuan berlanjut setelah satu Hitman dieksekusi,stalker,tuduh → Budi,tidak_bisa → —,tidak_bisa → —,Budi,0.69,wait → —,True,,fuzzy
-41 Syndicate hampir unggul,civilian,info_sandera → Citra,vote → Andi,tidak_bisa → —,Andi,1.0,vote → Andi,True,,fuzzy
+40 Perburuan berlanjut setelah satu Hitman dieksekusi,stalker,tuduh → Budi,tidak_bisa → —,tidak_bisa → —,Budi,0.75,wait → —,True,,fuzzy
+41 Syndicate hampir unggul,civilian,tunggu → —,vote → Andi,tidak_bisa → —,Andi,1.0,vote → Andi,True,,fuzzy
 42 Eksekusi warga menurut pengumuman,civilian,tuduh → Dodi,tidak_bisa → —,tidak_bisa → —,Dodi,1.0,wait → —,True,,fuzzy
 43 Eksekusi Hitman menurut pengumuman,civilian,bela_orang → Citra,tidak_bisa → —,tidak_bisa → —,Citra,0.5,wait → —,True,,fuzzy
 44 Hitman tidak memakai eksekusi rekan (dengan pengumuman),hitman,bela_diri → Nara,tidak_bisa → —,tunggu → —,Andi,0.5,wait → —,True,,fuzzy
@@ -50,7 +50,7 @@ skenario,role,chat,vote,aksi,tersangka/kambing,urgensi,npc_decision,lulus,catata
 49 Pertanyaan untuk semua tidak memaksa jawaban,civilian,tunggu → —,tidak_bisa → —,tidak_bisa → —,Andi,0.25,wait → —,True,,fuzzy
 50 Sudah menjawab tidak menjawab lagi,civilian,tunggu → —,tidak_bisa → —,tidak_bisa → —,Andi,0.25,wait → —,True,,fuzzy
 51 Jatah chat habis tidak menjawab,civilian,tunggu → —,tidak_bisa → —,tidak_bisa → —,Andi,0.25,wait → —,True,,fuzzy
-52 Ditanya saat ada tersangka kuat,civilian,jawab → Budi,tidak_bisa → —,tidak_bisa → —,Budi,0.44,wait → —,True,,fuzzy
+52 Ditanya saat ada tersangka kuat,civilian,jawab → Budi,tidak_bisa → —,tidak_bisa → —,Budi,0.5,wait → —,True,,fuzzy
 53 Hitman dipanggil menjawab seperti warga,hitman,jawab → —,tidak_bisa → —,tunggu → —,Andi,0.25,wait → —,True,,fuzzy
 54 Pemain keluar: penuduhnya tidak disalahkan,civilian,bela_orang → Citra,tidak_bisa → —,tidak_bisa → —,Dodi,0.5,wait → —,True,,fuzzy
 55 Hitman memilih ulang setelah target keluar,hitman,tunggu → —,tidak_bisa → —,hostage → Budi,Budi,0.5,hostage → Budi,True,,fuzzy
