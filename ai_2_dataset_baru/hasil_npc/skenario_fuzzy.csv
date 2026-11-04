@@ -9,7 +9,7 @@ skenario,role,chat,vote,aksi,tersangka/kambing,warga_terdesak,npc_decision,lulus
 08 Tidak ikut vote korban Hostage,civilian,bela_orang → Eka,abstain → —,tidak_bisa → —,Andi,0.5,wait → —,True,,fuzzy
 09 Pendorong eksekusi warga,civilian,tuduh → Dodi,tidak_bisa → —,tidak_bisa → —,Dodi,0.5,wait → —,True,,fuzzy
 10 Budi terus menyerang bot,civilian,bela_diri → Nara,tidak_bisa → —,tidak_bisa → —,Budi,0.25,wait → —,True,,fuzzy
-11 Bentrok klaim Stalker,civilian,tanya_info → —,tidak_bisa → —,tidak_bisa → —,Citra,0.25,wait → —,True,,fuzzy
+11 Bentrok klaim Stalker,civilian,tanya_info → —,tidak_bisa → —,tidak_bisa → —,Andi,0.25,wait → —,True,,fuzzy
 12 Akhir game kritis,civilian,tuduh → Andi,vote → Andi,tidak_bisa → —,Andi,1.0,vote → Andi,True,,fuzzy
 13 Tuduhan tanpa bukti dibela,civilian,tunggu → —,tidak_bisa → —,tidak_bisa → —,Citra,0.25,wait → —,True,,fuzzy
 14 Pengalihan berulang,civilian,tunggu → —,tidak_bisa → —,tidak_bisa → —,Budi,0.25,wait → —,True,,fuzzy
@@ -24,7 +24,7 @@ skenario,role,chat,vote,aksi,tersangka/kambing,warga_terdesak,npc_decision,lulus
 23 Spy disandera tidak bisa beraksi,spy,tunggu → —,tidak_bisa → —,tidak_bisa → —,Dodi,0.25,wait → —,True,,fuzzy
 24 Hitman dituduh,hitman,bela_diri → Nara,tidak_bisa → —,tunggu → —,Andi,0.25,wait → —,True,,fuzzy
 25 Hitman menyandera pengaku Stalker,hitman,tunggu → —,tidak_bisa → —,hostage → Andi,Andi,0.25,hostage → Andi,True,,fuzzy
-26 Hitman memilih target yang pasti tidak dijaga,hitman,tunggu → —,tidak_bisa → —,hostage → Eka,Andi,0.25,hostage → Eka,True,,fuzzy
+26 Hostage gagal semalam tidak membuat target diutamakan,hitman,tunggu → —,tidak_bisa → —,hostage → Citra,Andi,0.25,hostage → Citra,True,,fuzzy
 27 Hitman memakai Gag,hitman,bela_diri → Nara,tidak_bisa → —,gag → Citra,Andi,0.25,gag → Citra,True,,fuzzy
 28 Hitman menyimpan Gag,hitman,tunggu → —,tidak_bisa → —,tunggu → —,Andi,0.25,wait → —,True,,fuzzy
 29 Hitman vote kambing hitam,hitman,tunggu → —,vote → Budi,tidak_bisa → —,Budi,0.25,vote → Budi,True,,fuzzy
@@ -39,10 +39,10 @@ skenario,role,chat,vote,aksi,tersangka/kambing,warga_terdesak,npc_decision,lulus
 38 Hitman tidak menyandera rekan,hitman,tunggu → —,tidak_bisa → —,hostage → Budi,Budi,0.75,hostage → Budi,True,,fuzzy
 39 Gag bersama sudah dipakai rekan,hitman,bela_diri → Nara,tidak_bisa → —,tidak_bisa → —,Andi,0.75,wait → —,True,,fuzzy
 40 Perburuan berlanjut setelah satu Hitman dieksekusi,stalker,tuduh → Budi,tidak_bisa → —,tidak_bisa → —,Budi,0.75,wait → —,True,,fuzzy
-41 Syndicate hampir unggul,civilian,tunggu → —,vote → Andi,tidak_bisa → —,Andi,1.0,vote → Andi,True,,fuzzy
+41 Syndicate hampir unggul,civilian,tuduh → Andi,vote → Andi,tidak_bisa → —,Andi,1.0,vote → Andi,True,,fuzzy
 42 Eksekusi warga menurut pengumuman,civilian,tuduh → Dodi,tidak_bisa → —,tidak_bisa → —,Dodi,1.0,wait → —,True,,fuzzy
-43 Eksekusi Hitman menurut pengumuman,civilian,bela_orang → Citra,tidak_bisa → —,tidak_bisa → —,Citra,0.5,wait → —,True,,fuzzy
-44 Hitman tidak memakai eksekusi rekan (dengan pengumuman),hitman,bela_diri → Nara,tidak_bisa → —,tunggu → —,Andi,0.5,wait → —,True,,fuzzy
+43 Eksekusi Hitman menurut pengumuman,civilian,tuduh → Budi,tidak_bisa → —,tidak_bisa → —,Budi,0.5,wait → —,True,,fuzzy
+44 Hitman tidak memakai eksekusi rekan (dengan pengumuman),hitman,bela_diri → Nara,tidak_bisa → —,tunggu → —,Budi,0.5,wait → —,True,,fuzzy
 45 Hitman tidak memakai eksekusi rekan (tanpa pengumuman),hitman,bela_diri → Nara,tidak_bisa → —,tunggu → —,Andi,0.5,wait → —,True,,fuzzy
 46 Dipanggil nama tanpa tanda tanya,civilian,jawab → —,tidak_bisa → —,tidak_bisa → —,Andi,0.25,wait → —,True,,fuzzy
 47 Dipanggil lewat panggilan,civilian,jawab → —,tidak_bisa → —,tidak_bisa → —,Andi,0.25,wait → —,True,,fuzzy
@@ -54,7 +54,34 @@ skenario,role,chat,vote,aksi,tersangka/kambing,warga_terdesak,npc_decision,lulus
 53 Hitman dipanggil menjawab seperti warga,hitman,jawab → —,tidak_bisa → —,tunggu → —,Andi,0.25,wait → —,True,,fuzzy
 54 Pemain keluar: penuduhnya tidak disalahkan,civilian,bela_orang → Citra,tidak_bisa → —,tidak_bisa → —,Dodi,0.5,wait → —,True,,fuzzy
 55 Hitman memilih ulang setelah target keluar,hitman,tunggu → —,tidak_bisa → —,hostage → Budi,Budi,0.5,hostage → Budi,True,,fuzzy
-56 Hitman: pilihan ulang malam tercatat,hitman,tunggu → —,tidak_bisa → —,hostage → Eka,Budi,0.5,hostage → Eka,True,,fuzzy
+56 Hitman: pilihan ulang malam tercatat,hitman,tunggu → —,tidak_bisa → —,hostage → Citra,Budi,0.5,hostage → Citra,True,,fuzzy
 57 Anti-gema: tuduhan ketiga tidak diulang,civilian,bela_orang → Citra,tidak_bisa → —,tidak_bisa → —,Dodi,0.25,wait → —,True,,fuzzy
 58 Sudah mengungkap: tidak menuduh lagi,stalker,tunggu → —,vote → Dodi,tidak_bisa → —,Dodi,0.25,vote → Dodi,True,,fuzzy
 59 Hitman tidak membuka vote,hitman,tunggu → —,abstain → —,tidak_bisa → —,Andi,0.25,wait → —,True,,fuzzy
+60 Tekanan dan dukungan: tiap orang sekali,civilian,bela_orang → Citra,tidak_bisa → —,tidak_bisa → —,Citra,0.25,wait → —,True,,fuzzy
+61 Alihkan tuduhan: hanya menuduh = 1,civilian,tunggu → —,tidak_bisa → —,tidak_bisa → —,Budi,0.25,wait → —,True,,fuzzy
+"62 Alihkan tuduhan: membela diri sekaligus menuduh = 0,5",civilian,tunggu → —,tidak_bisa → —,tidak_bisa → —,Budi,0.25,wait → —,True,,fuzzy
+63 Alihkan tuduhan: hanya membela = 0,civilian,tunggu → —,tidak_bisa → —,tidak_bisa → —,Budi,0.25,wait → —,True,,fuzzy
+64 Alihkan tuduhan: tidak membalas tidak dihitung,civilian,tunggu → —,tidak_bisa → —,tidak_bisa → —,Budi,0.25,wait → —,True,,fuzzy
+65 Alihkan tuduhan: jumlah nilai dibagi jumlah balasan,civilian,tunggu → —,tidak_bisa → —,tidak_bisa → —,Citra,0.25,wait → —,True,,fuzzy
+66 Alihkan tuduhan: meluruh dan hanya fase yang sama,civilian,bela_orang → Citra,tunggu → —,tidak_bisa → —,Budi,0.25,wait → —,True,,fuzzy
+67 Menuduh orang baik: dua ronde berturut-turut,civilian,bela_diri → Nara,tidak_bisa → —,tidak_bisa → —,Citra,0.25,wait → —,True,,fuzzy
+68 Mengaku Peek bot lalu menyebutnya Hitman,civilian,tuduh → Andi,tidak_bisa → —,tidak_bisa → —,Andi,0.25,wait → —,True,,fuzzy
+69 Hitman tidak memakai bukti pasti baik,hitman,bela_diri → Nara,tidak_bisa → —,tunggu → —,Andi,0.25,wait → —,True,,fuzzy
+70 Spy room 2 mengenali pengaku palsu,spy,tuduh → Andi,tidak_bisa → —,tidak_bisa → —,Andi,0.25,wait → —,True,,fuzzy
+71 Spy room 1 melihat pengaku Spy,spy,tuduh → Andi,tidak_bisa → —,tidak_bisa → —,Andi,0.25,wait → —,True,,fuzzy
+"72 Tuduhan Peek tidak meluruh, mengaku sendirian bukan bukti",civilian,tuduh → Citra,tidak_bisa → —,tidak_bisa → —,Citra,0.25,wait → —,True,,fuzzy
+73 Pengaku bentrok: tuduhan Peek tidak dihitung,civilian,tanya_info → —,tidak_bisa → —,tidak_bisa → —,Andi,0.25,wait → —,True,,fuzzy
+74 Stalker tahu kedua pengaku bohong,stalker,tuduh → Andi,tidak_bisa → —,tidak_bisa → —,Andi,0.25,wait → —,True,,fuzzy
+75 Klaim bersih terbukti salah,civilian,tuduh → Eka,tidak_bisa → —,tidak_bisa → —,Eka,0.5,wait → —,True,,fuzzy
+76 Klaim bersih belum terbukti salah,civilian,tanya_info → —,tidak_bisa → —,tidak_bisa → —,Andi,0.25,wait → —,True,,fuzzy
+77 Memihak Hitman menurut hasil Peek,stalker,ungkap → Dodi (klaim),tidak_bisa → —,tidak_bisa → —,Dodi,0.75,wait → —,True,,fuzzy
+78 Publik tidak memakai pengetahuan rekan,hitman,tanya_info → —,tidak_bisa → —,tunggu → —,Andi,0.75,wait → —,True,,fuzzy
+79 Memihak Hitman yang keluar,civilian,tuduh → Budi,tidak_bisa → —,tidak_bisa → —,Budi,0.5,wait → —,True,,fuzzy
+80 Klaim Civilian bukan bentrok,civilian,tunggu → —,tidak_bisa → —,tidak_bisa → —,Andi,0.25,wait → —,True,,fuzzy
+81 Fitur Hitman: tuduhan ke tim dan jejak,hitman,bela_diri → Nara,tidak_bisa → —,tunggu → —,Andi,1.0,wait → —,True,,fuzzy
+82 Fitur Hitman: vote ronde ini dan klaim yang bicara,hitman,bela_diri → Nara,vote → Andi,tidak_bisa → —,Andi,0.75,vote → Andi,True,,fuzzy
+83 Menyebut bot tanpa pertanyaan dijawab,civilian,jawab → —,tidak_bisa → —,tidak_bisa → —,Andi,0.25,wait → —,True,,fuzzy
+84 Menyebut bot dalam pembelaan bukan pertanyaan,civilian,tunggu → —,tidak_bisa → —,tidak_bisa → —,Andi,0.25,wait → —,True,,fuzzy
+85 Sudah membela diri: pemilih lama tidak dihitung lagi,civilian,tunggu → —,tunggu → —,tidak_bisa → —,Andi,0.25,wait → —,True,,fuzzy
+86 Vote pasti melewati Hitman yang sudah mati,stalker,ungkap → Budi (klaim),vote → Budi,tidak_bisa → —,Budi,0.5,vote → Budi,True,,fuzzy
