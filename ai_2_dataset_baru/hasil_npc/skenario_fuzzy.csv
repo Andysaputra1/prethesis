@@ -52,7 +52,7 @@ skenario,role,chat,vote,aksi,tersangka/kambing,warga_terdesak,npc_decision,lulus
 51 Jatah chat habis tidak menjawab,civilian,tunggu → —,tidak_bisa → —,tidak_bisa → —,Andi,0.25,wait → —,True,,fuzzy
 52 Ditanya saat ada tersangka kuat,civilian,jawab → Budi,tidak_bisa → —,tidak_bisa → —,Budi,0.5,wait → —,True,,fuzzy
 53 Hitman dipanggil menjawab seperti warga,hitman,jawab → —,tidak_bisa → —,tunggu → —,Andi,0.25,wait → —,True,,fuzzy
-54 Pemain keluar: penuduhnya tidak disalahkan,civilian,bela_orang → Citra,tidak_bisa → —,tidak_bisa → —,Dodi,0.5,wait → —,True,,fuzzy
+54 Pemain keluar: penuduhnya tidak disalahkan,civilian,bela_orang → Citra,tidak_bisa → —,tidak_bisa → —,Citra,0.5,wait → —,True,,fuzzy
 55 Hitman memilih ulang setelah target keluar,hitman,tunggu → —,tidak_bisa → —,hostage → Budi,Budi,0.5,hostage → Budi,True,,fuzzy
 56 Hitman: pilihan ulang malam tercatat,hitman,tunggu → —,tidak_bisa → —,hostage → Citra,Budi,0.5,hostage → Citra,True,,fuzzy
 57 Anti-gema: tuduhan ketiga tidak diulang,civilian,bela_orang → Citra,tidak_bisa → —,tidak_bisa → —,Dodi,0.25,wait → —,True,,fuzzy
@@ -85,3 +85,6 @@ skenario,role,chat,vote,aksi,tersangka/kambing,warga_terdesak,npc_decision,lulus
 84 Menyebut bot dalam pembelaan bukan pertanyaan,civilian,tunggu → —,tidak_bisa → —,tidak_bisa → —,Andi,0.25,wait → —,True,,fuzzy
 85 Sudah membela diri: pemilih lama tidak dihitung lagi,civilian,tunggu → —,tunggu → —,tidak_bisa → —,Andi,0.25,wait → —,True,,fuzzy
 86 Vote pasti melewati Hitman yang sudah mati,stalker,ungkap → Budi (klaim),vote → Budi,tidak_bisa → —,Budi,0.5,vote → Budi,True,,fuzzy
+87 Korban Hostage tidak menaikkan tekanan,civilian,tuduh → Budi,tidak_bisa → —,tidak_bisa → —,Budi,0.5,wait → —,True,,fuzzy
+88 Yang tersingkir tidak dihitung,civilian,tanya_info → —,tidak_bisa → —,tidak_bisa → —,Budi,0.5,wait → —,True,,fuzzy
+89 Klaim bersih dari pengaku yang disandera,civilian,tanya_info → —,tidak_bisa → —,tidak_bisa → —,Andi,0.5,wait → —,True,,fuzzy
