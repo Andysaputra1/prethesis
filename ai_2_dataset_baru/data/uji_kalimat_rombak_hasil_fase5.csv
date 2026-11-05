@@ -1,0 +1,21 @@
+kasus,jenis,teks,intent_harapan,intent_model,conf,intent_cocok,conf_ge_060,target_harapan,target_model,target_cocok
+1,bela_diri terlalu_awal,"Jangan vote aku, masih terlalu awal, buktinya belum ada.",defend,defend,1.0,True,True,"{""Nara"": ""defend""}","{""Nara"": ""defend""}",True
+1,bela_diri bahaya_salah_vote,"Jangan vote aku, kalau salah vote kita bisa kalah.",defend,defend,1.0,True,True,"{""Nara"": ""defend""}","{""Nara"": ""defend""}",True
+2,bela_orang terlalu_awal,Masih terlalu awal buat nuduh Budi.,defend,offend,1.0,False,True,"{""Budi"": ""defend""}","{""Budi"": ""offend""}",False
+2,bela_orang ada_pembela,"Tuduhan ke Budi masih pendapat, ada yang membela juga.",defend,defend,0.654,True,True,"{""Budi"": ""defend""}","{""Budi"": ""defend""}",True
+2,bela_orang belum_ada_bukti,Belum ada bukti kuat kalau Budi Hitman.,defend,defend,0.953,True,True,"{""Budi"": ""defend""}","{""Budi"": ""defend""}",True
+2,bela_orang belum_ada_bukti_bahaya,Belum ada bukti kuat kalau Budi Hitman. Kalau salah vote kita bisa kalah.,defend,defend,1.0,True,True,"{""Budi"": ""defend""}","{""Budi"": ""defend""}",True
+2,bela_orang yakin_bersih,Aku yakin Budi bukan Hitman.,defend,defend,1.0,True,True,"{""Budi"": ""defend""}","{""Budi"": ""defend""}",True
+5,tanya_info gali_tersangka,"Budi, gimana penjelasanmu? Budi menjawab tuduhan dengan mengalihkan ke pemain lain.",neutral,offend,1.0,False,True,"{""Budi"": ""neutral""}","{""Budi"": ""offend""}",False
+6,bela_diri tunjuk_orang,"Aku bukan Hitman, yang lebih mencurigakan justru Budi.",offend,offend,1.0,True,True,"{""Nara"": ""defend"", ""Budi"": ""offend""}","{""Nara"": ""defend"", ""Budi"": ""offend""}",True
+6,bela_diri tunjuk_orang_bahaya,"Aku bukan Hitman, yang lebih mencurigakan justru Budi. Kalau salah vote kita bisa kalah.",offend,offend,1.0,True,True,"{""Nara"": ""defend"", ""Budi"": ""offend""}","{""Nara"": ""defend"", ""Budi"": ""offend""}",True
+7,tuduh balik_tuduh,"Andi nuduh aku tanpa bukti, justru dia yang aneh.",offend,offend,1.0,True,True,"{""Nara"": ""defend"", ""Andi"": ""offend""}","{""Nara"": ""offend""}",False
+8a,bela_diri role_bukti_aksi spy,"Jangan vote aku, aku Spy, semalam aku jaga Budi.",defend,defend,1.0,True,True,"{""Nara"": ""defend""}","{""Nara"": ""defend""}",True
+8a,bela_diri buka_role spy,"Jangan vote aku, aku Spy.",defend,defend,1.0,True,True,"{""Nara"": ""defend""}","{""Nara"": ""defend""}",True
+8b,bela_diri role_bukti_aksi stalker,"Jangan vote aku, aku Stalker, semalam aku peek Budi, dia bukan Hitman.",defend,defend,1.0,True,True,"{""Nara"": ""defend"", ""Budi"": ""defend""}","{""Nara"": ""defend""}",False
+8b,bela_diri buka_role stalker,"Jangan vote aku, aku Stalker.",defend,defend,1.0,True,True,"{""Nara"": ""defend""}","{""Nara"": ""defend""}",True
+8c,bela_diri buka_role civilian,"Jangan vote aku, aku cuma Civilian.",defend,defend,1.0,True,True,"{""Nara"": ""defend""}","{""Nara"": ""defend""}",True
+9,jawab jawaban_role,Aku orang baik kok.,defend,defend,1.0,True,True,"{""Nara"": ""defend""}","{""Nara"": ""defend"", ""Andi"": ""defend""}",False
+10,bela_orang diklaim_bersih,Andi yang ngaku Stalker bilang Budi bersih.,defend,defend,1.0,True,True,"{""Budi"": ""defend""}","{""Budi"": ""defend""}",True
+13,"tulis tangan, sapaan",Halo Dodi.,neutral,neutral,1.0,True,True,"{""Dodi"": ""neutral""}","{""Dodi"": ""neutral""}",True
+13,"tulis tangan, sapaan","Dodi, masih di sana?",neutral,neutral,1.0,True,True,"{""Dodi"": ""neutral""}","{""Dodi"": ""neutral""}",True
