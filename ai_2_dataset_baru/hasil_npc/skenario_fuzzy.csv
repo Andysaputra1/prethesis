@@ -153,7 +153,7 @@ skenario,role,chat,vote,aksi,tersangka/kambing,warga_terdesak,npc_decision,lulus
 154 Hitman memelintir bukti publik,hitman,tuduh/pelintir_bukti → Budi,tidak_bisa → —,tidak_bisa → —,Budi,0.25,wait → —,True,,fuzzy
 155 Hitman belum dicurigai tidak balik menuduh,hitman,tanya_info/ruangan_hening → —,tidak_bisa → —,tidak_bisa → —,Andi,0.25,wait → —,True,,fuzzy
 156 Klaim Peek palsu hanya sekali per game,hitman,tuduh/balik_tuduh → Andi,vote → Andi,tidak_bisa → —,Andi,0.25,vote → Andi,True,,fuzzy
-157 Sudah mengaku role lain tidak mengaku Stalker,hitman,tuduh/balik_tuduh → Andi,vote → Andi,tidak_bisa → —,Andi,0.25,vote → Andi,True,,fuzzy
+157 Klaim Peek palsu tetap boleh sesudah mengaku role lain,hitman,tuduh/klaim_peek → Andi (klaim),vote → Andi,tidak_bisa → —,Andi,0.25,vote → Andi,True,,fuzzy
 158 Anti-gema melewati korban Gag,hitman,tuduh/balik_tuduh → Andi,tidak_bisa → —,tidak_bisa → —,Andi,0.25,wait → —,True,,fuzzy
 159 Warga tidak menuduh target yang sama dua kali dalam satu fase,civilian,bela_orang/belum_ada_bukti → Citra,tidak_bisa → —,tidak_bisa → —,Dodi,0.25,wait → —,True,,fuzzy
 160 Bela orang belum ada bukti: civilian,civilian,bela_orang/belum_ada_bukti → Citra,tidak_bisa → —,tidak_bisa → —,Citra,0.25,wait → —,True,,fuzzy
