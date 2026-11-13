@@ -126,15 +126,16 @@ Penjelasan lengkap cara dataset dibuat, setiap kasus, dan contohnya ada di dokum
 
 ## Dokumen penjelasan
 
-Panel game (menu **08 Dokumen**) memuat dokumen HTML yang dibangun dari notebook-notebook ini. Teks dan kodenya diambil langsung dari notebook, jadi isinya selalu sama:
+Panel game (menu **08 Dokumen**) memuat dokumen HTML yang dibangun dari notebook dan dataset di repo ini. Kartunya bertanda **Training**. Teks, sel kode, dan keluarannya diambil dari notebook saat dokumen dibangun, jadi isinya sama dengan notebook pada saat itu. Bila notebook berubah, dokumennya perlu dibangun ulang:
 
-| Dokumen | Dari notebook |
-| --- | --- |
-| Kode NLU Intent, Kode NLU Target, Diagram Alir NLU, Dataset NLU | `nlu_baru.ipynb`, `nlu_target.ipynb`, folder `data/` |
-| Kode Fuzzy, Diagram Alir Fuzzy | `npc_fuzzy.ipynb` |
-| Kode NLG | `npc_nlg.ipynb` |
+| Dokumen | Sumber di repo ini | Pembangun (di folder `communicationfolder/` milik Games) |
+| --- | --- | --- |
+| Kode NLU Intent, Kode NLU Target, Diagram Alir NLU | `nlu_baru.ipynb`, `nlu_target.ipynb`, artefak di `models/` | `kode-ai-2026-10-26/sumber/` |
+| Dataset NLU | folder `data/`, `nlu_baru.ipynb`, `nlu_target.ipynb` | `dataset-nlu-2026-11-13/sumber/` |
+| Kode Fuzzy, Diagram Alir Fuzzy | `npc_fuzzy.ipynb` | `kode-ai-2026-10-26/sumber/` |
+| Kode NLG | `npc_nlg.ipynb` | `kode-ai-2026-10-26/sumber/` |
 
-Kode pembangun dokumen ada di repo Games, folder `communicationfolder/kode-ai-2026-10-26/sumber/`. Kalau notebook diubah, bangun ulang dokumennya dari sana.
+Folder `communicationfolder/` hanya ada di komputer pengembang dan tidak ikut Git repo Games. Cara menjalankan tiap pembangun ada di README folder pembangunnya. Panel juga memuat dokumen bertanda **Backend** (dibangun dari kode game, misalnya Proses AI, Bedah Otak Fuzzy, dan Cara Kerja Bot) dan **Panduan** (Peta Dokumen), yang tidak bergantung pada notebook di sini.
 
 ## Arsip
 
