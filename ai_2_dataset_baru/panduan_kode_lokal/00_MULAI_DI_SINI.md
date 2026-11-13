@@ -1,5 +1,7 @@
 # Mulai di sini: bagaimana bot kita berpikir?
 
+> **ARSIP (1 Oktober 2026).** Panduan ini masih menjelaskan tiga metode (Fuzzy, Utility AI, Behavior Tree) dan susunan backend lama (`services/npc_brain`, folder `generated/`). Game sekarang hanya memakai Fuzzy, dengan kode di `Games/backend/app/bot/`. Untuk versi terbaru, baca [README.md di root repo](../../README.md) dan dokumen di panel game (menu 08).
+
 Panduan lokal — dibaca dari kode pada 1 Oktober 2026. Ditulis untuk pembaca yang baru belajar pemrograman. Buka panduan ini berdampingan dengan notebook, lalu gunakan Ctrl+F untuk mencari nama fungsi yang disebut.
 
 ## Bayangkan permainan detektif di kelas
