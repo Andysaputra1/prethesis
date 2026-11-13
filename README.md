@@ -8,7 +8,7 @@ Otak bot terdiri dari tiga bagian. Masing-masing punya notebook sendiri di folde
 | --- | --- | --- | --- |
 | **NLU** (IndoBERT) | Membaca chat pemain: niatnya apa (menuduh, membela, netral) dan siapa yang dituju | `nlu_baru.ipynb` (Model 1, intent), `nlu_target.ipynb` (Model 2, target) | `backend/app/bot/nlu.py` |
 | **Fuzzy Mamdani** | Menimbang bukti, lalu memutuskan bicara apa, vote siapa, dan skill malam ke siapa | `npc_fuzzy.ipynb` | `backend/app/bot/fuzzy_controller.py`, folder `backend/app/bot/fuzzy/`, `backend/app/bot/ingatan.py` |
-| **NLG** | Mengubah keputusan menjadi kalimat chat, lewat templat atau LLM (OpenRouter) | `npc_nlg.ipynb` | `backend/app/bot/nlg.py` |
+| **NLG** | Mengubah keputusan menjadi kalimat chat, lewat templat atau LLM (OpenRouter) | `npc_nlg.ipynb` | `backend/app/bot/nlg_controller.py` (main controller: urutan tahap), folder `backend/app/bot/nlg/` (satu file per tahap: `prompt.py`, `penulis.py`, `aturan.py`, `templat.py`, `pengaturan.py`) |
 
 ## Hubungan notebook dengan game
 
@@ -89,7 +89,7 @@ a_skripsi/
 
 Kalau tidak ada kunci sama sekali, notebook tetap berjalan sampai selesai: kalimat ditulis dengan templat, dan bagian evaluasi LLM dilewati.
 
-Model OpenRouter bawaan notebook adalah `qwen/qwen3-14b`, sama dengan bawaan di `nlg.py`. Server game bisa memakai model lain lewat `NPC_OPENROUTER_MODEL` atau pilihan di panel. Server produksi sekarang memakai `google/gemini-2.5-flash`.
+Model OpenRouter bawaan notebook adalah `qwen/qwen3-14b`, sama dengan bawaan di `backend/app/bot/nlg/penulis.py` (`MODEL_OPENROUTER`). Server game bisa memakai model lain lewat `NPC_OPENROUTER_MODEL` atau pilihan di panel. Server produksi sekarang memakai `google/gemini-2.5-flash`.
 
 ## Memindahkan model ke game
 
